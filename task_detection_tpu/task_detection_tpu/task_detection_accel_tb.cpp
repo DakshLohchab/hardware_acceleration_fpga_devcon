@@ -1,31 +1,37 @@
-#include <ap_int.h>
+#include <iostream>
 
-extern "C" {
-
-void task_detection_accel(
+extern void task_detection_accel(
     float* input,
     float* output,
     int task_id,
     int top_k
-)
+);
+
+int main()
 {
-#pragma HLS INTERFACE m_axi port=input  offset=slave bundle=gmem0
-#pragma HLS INTERFACE m_axi port=output offset=slave bundle=gmem1
-
-#pragma HLS INTERFACE s_axilite port=task_id bundle=control
-#pragma HLS INTERFACE s_axilite port=top_k   bundle=control
-
-#pragma HLS INTERFACE s_axilite port=return bundle=control
-
-    float sum = 0.0f;
+    float input[180];
+    float output[1];
 
     for(int i=0;i<180;i++)
+        input[i] = 1.0f;
+
+    task_detection_accel(
+        input,
+        output,
+        9,
+        3
+    );
+
+    std::cout << "Output = "
+              << output[0]
+              << std::endl;
+
+    if(output[0] == 180.0f)
     {
-#pragma HLS PIPELINE II=1
-        sum += input[i];
+        std::cout << "PASS" << std::endl;
+        return 0;
     }
 
-    output[0] = sum;
-}
-
+    std::cout << "FAIL" << std::endl;
+    return 1;
 }
