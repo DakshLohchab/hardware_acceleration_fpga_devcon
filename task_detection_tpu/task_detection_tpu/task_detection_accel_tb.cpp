@@ -1,6 +1,6 @@
 #include <iostream>
 
-extern void task_detection_accel(
+extern "C" void task_detection_accel(
     float* input,
     float* output,
     int task_id,
