@@ -1,0 +1,480 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 37, Column: 5 }
+Function:        task_detection_accel
+Args:            
+  - Callee:          'linear_180_256(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 11, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 39, Column: 5 }
+Function:        task_detection_accel
+Args:            
+  - Callee:          'linear_256_128(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 56, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 41, Column: 5 }
+Function:        task_detection_accel
+Args:            
+  - Callee:          'linear_128_64(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 43, Column: 5 }
+Function:        task_detection_accel
+Args:            
+  - Callee:          'linear_64_1(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 146, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 37, Column: 5 }
+Function:        task_detection_accel
+Args:            
+  - Callee:          'linear_180_256(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 11, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 39, Column: 5 }
+Function:        task_detection_accel
+Args:            
+  - Callee:          'linear_256_128(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 56, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 41, Column: 5 }
+Function:        task_detection_accel
+Args:            
+  - Callee:          'linear_128_64(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 101, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 43, Column: 5 }
+Function:        task_detection_accel
+Args:            
+  - Callee:          'linear_64_1(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 146, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_task_detection_accel_ir
+Args:            
+  - Callee:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_task_detection_accel_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'linear_180_256(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 11, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'linear_256_128(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 56, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'linear_128_64(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 101, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'linear_64_1(float*, float*)'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 146, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: task_detection_accel.cpp, Line: 29, Column: 22 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '180'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        inputseq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_29_1
+  - String:          ' '
+  - LoopLoc:         'task_detection_accel.cpp:29:22'
+  - String:          ' '
+  - Function:        task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 32, Column: 21 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.4
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: task_detection_accel.cpp, Line: 29, Column: 22 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 29, Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          inputseq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_29_1
+  - String:          ' '
+  - LoopLoc:         'task_detection_accel.cpp:29:22'
+  - String:          ' '
+  - Function:        task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_23_2
+  - String:          '> at '
+  - LoopLoc:         'mlp_engine.cpp:23:30'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mlp_engine.cpp, Line: 23, Column: 30 }
+Function:        task_detection_accel
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  task_detection_accel
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_23_2
+  - String:          ' '
+  - LoopLoc:         'mlp_engine.cpp:23:30'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 23, Column: 30 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_68_2
+  - String:          '> at '
+  - LoopLoc:         'mlp_engine.cpp:68:30'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mlp_engine.cpp, Line: 68, Column: 30 }
+Function:        task_detection_accel
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  task_detection_accel
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_68_2
+  - String:          ' '
+  - LoopLoc:         'mlp_engine.cpp:68:30'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 68, Column: 30 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_113_2
+  - String:          '> at '
+  - LoopLoc:         'mlp_engine.cpp:113:31'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mlp_engine.cpp, Line: 113, Column: 31 }
+Function:        task_detection_accel
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  task_detection_accel
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_113_2
+  - String:          ' '
+  - LoopLoc:         'mlp_engine.cpp:113:31'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 113, Column: 31 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_156_1
+  - String:          '> at '
+  - LoopLoc:         'mlp_engine.cpp:156:27'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mlp_engine.cpp, Line: 156, Column: 27 }
+Function:        task_detection_accel
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  task_detection_accel
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_156_1
+  - String:          ' '
+  - LoopLoc:         'mlp_engine.cpp:156:27'
+    DebugLoc:        { File: mlp_engine.cpp, Line: 156, Column: 27 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: mlp_engine.cpp, Line: 148, Column: 0 }
+Function:        task_detection_accel
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete variable=linear_64_1(float*, float*)::bias'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  task_detection_accel
+  - String:          ' '
+  - VarLoc:          'mlp_engine.cpp:148:0'
+  - String:          ' '
+  - PragmaInferReason: config_array_partition -complete_threshold 4
+  - VarName:         'linear_64_1(float*, float*)::bias'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: mlp_engine.cpp, Line: 148, Column: 0 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Partitioning small array '''
+  - Value:           'linear_64_1(float*, float*)::bias'
+  - String:          ''' due to array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: mlp_engine.cpp, Line: 147, Column: 0 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Partitioning array '''
+  - Value:           'linear_64_1(float*, float*)::weights'
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' due to constant index.'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mlp_engine.cpp, Line: 147, Column: 0 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11linear_64_1PfS_E7weights
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mlp_engine.cpp, Line: 148, Column: 0 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ11linear_64_1PfS_E4bias
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: task_detection_accel.cpp, Line: 29, Column: 22 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '180'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_29_1
+  - String:          ' '
+  - LoopLoc:         'task_detection_accel.cpp:29:22'
+  - String:          ' '
+  - Function:        task_detection_accel
+    DebugLoc:        { File: task_detection_accel.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: task_detection_accel.cpp, Line: 29, Column: 22 }
+Function:        task_detection_accel
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '180'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_29_1
+  - String:          '''('
+  - LoopLoc:         'task_detection_accel.cpp:29:22'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

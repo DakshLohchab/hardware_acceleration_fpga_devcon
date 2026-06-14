@@ -1,0 +1,157 @@
+
+
+================================================================
+== Vitis HLS Report for 'task_detection_accel_Pipeline_VITIS_LOOP_29_1'
+================================================================
+* Date:           Sun Jun 14 16:33:25 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        task_detection_tpu
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k325t-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |      183|      183|  1.830 us|  1.830 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_29_1  |      181|      181|         3|          1|          1|   180|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.02>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [task_detection_accel.cpp:29]   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln29_read = read i62 @_ssdm_op_Read.ap_auto.i62, i62 %sext_ln29"   --->   Operation 7 'read' 'sext_ln29_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln29_cast = sext i62 %sext_ln29_read"   --->   Operation 8 'sext' 'sext_ln29_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem0, void @empty_14, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_12, void @empty_11, void @empty_13, i32 16, i32 16, i32 16, i32 16, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0, i32 4"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.83ns)   --->   "%store_ln29 = store i8 0, i8 %i" [task_detection_accel.cpp:29]   --->   Operation 10 'store' 'store_ln29' <Predicate = true> <Delay = 0.83>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 11 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%i_1 = load i8 %i" [task_detection_accel.cpp:29]   --->   Operation 12 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem0"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (1.35ns)   --->   "%icmp_ln29 = icmp_eq  i8 %i_1, i8 180" [task_detection_accel.cpp:29]   --->   Operation 14 'icmp' 'icmp_ln29' <Predicate = true> <Delay = 1.35> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.35> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (1.35ns)   --->   "%add_ln29 = add i8 %i_1, i8 1" [task_detection_accel.cpp:29]   --->   Operation 15 'add' 'add_ln29' <Predicate = true> <Delay = 1.35> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.35> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln29 = br i1 %icmp_ln29, void %for.inc.split, void %for.end.exitStub" [task_detection_accel.cpp:29]   --->   Operation 16 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.83ns)   --->   "%store_ln29 = store i8 %add_ln29, i8 %i" [task_detection_accel.cpp:29]   --->   Operation 17 'store' 'store_ln29' <Predicate = (!icmp_ln29)> <Delay = 0.83>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%gmem0_addr = getelementptr i32 %gmem0, i64 %sext_ln29_cast" [task_detection_accel.cpp:29]   --->   Operation 18 'getelementptr' 'gmem0_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] ( I:7.30ns O:7.30ns )   --->   "%gmem0_addr_read = read i32 @_ssdm_op_Read.m_axi.i32.p1i32, i32 %gmem0_addr" [task_detection_accel.cpp:32]   --->   Operation 19 'read' 'gmem0_addr_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 111 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 28 [1/1] (0.83ns)   --->   "%ret_ln0 = ret"   --->   Operation 28 'ret' 'ret_ln0' <Predicate = (icmp_ln29)> <Delay = 0.83>
+
+State 3 <SV = 2> <Delay = 2.26>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln29 = zext i8 %i_1" [task_detection_accel.cpp:29]   --->   Operation 20 'zext' 'zext_ln29' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%specpipeline_ln31 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_13" [task_detection_accel.cpp:31]   --->   Operation 21 'specpipeline' 'specpipeline_ln31' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%speclooptripcount_ln29 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 180, i64 180, i64 180" [task_detection_accel.cpp:29]   --->   Operation 22 'speclooptripcount' 'speclooptripcount_ln29' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln29 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [task_detection_accel.cpp:29]   --->   Operation 23 'specloopname' 'specloopname_ln29' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%bitcast_ln32 = bitcast i32 %gmem0_addr_read" [task_detection_accel.cpp:32]   --->   Operation 24 'bitcast' 'bitcast_ln32' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%in_buf_addr = getelementptr i32 %in_buf, i64 0, i64 %zext_ln29" [task_detection_accel.cpp:32]   --->   Operation 25 'getelementptr' 'in_buf_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] ( I:2.26ns O:2.26ns )   --->   "%store_ln32 = store i32 %bitcast_ln32, i8 %in_buf_addr" [task_detection_accel.cpp:32]   --->   Operation 26 'store' 'store_ln32' <Predicate = true> <Delay = 2.26> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 180> <RAM>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln29 = br void %for.inc" [task_detection_accel.cpp:29]   --->   Operation 27 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.023ns
+The critical path consists of the following:
+	'store' operation ('store_ln29', task_detection_accel.cpp:29) of constant 0 8 bit on local variable 'i', task_detection_accel.cpp:29 [8]  (0.833 ns)
+	'load' operation 8 bit ('i', task_detection_accel.cpp:29) on local variable 'i', task_detection_accel.cpp:29 [11]  (0.000 ns)
+	'add' operation 8 bit ('add_ln29', task_detection_accel.cpp:29) [14]  (1.357 ns)
+	'store' operation ('store_ln29', task_detection_accel.cpp:29) of variable 'add_ln29', task_detection_accel.cpp:29 8 bit on local variable 'i', task_detection_accel.cpp:29 [26]  (0.833 ns)
+
+ <State 2>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 32 bit ('gmem0_addr', task_detection_accel.cpp:29) [17]  (0.000 ns)
+	bus read operation ('gmem0_addr_read', task_detection_accel.cpp:32) on port 'gmem0' (task_detection_accel.cpp:32) [22]  (7.300 ns)
+
+ <State 3>: 2.266ns
+The critical path consists of the following:
+	'getelementptr' operation 8 bit ('in_buf_addr', task_detection_accel.cpp:32) [24]  (0.000 ns)
+	'store' operation ('store_ln32', task_detection_accel.cpp:32) of variable 'bitcast_ln32', task_detection_accel.cpp:32 32 bit on array 'in_buf' [25]  (2.266 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

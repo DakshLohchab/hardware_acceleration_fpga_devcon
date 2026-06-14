@@ -6,6 +6,7 @@
       "--gcc-toolchain=/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls",
       "-hls-syn-headers-dir=/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=task_detection_accel",
       "-c",
       "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp"
     ],
@@ -18,6 +19,7 @@
       "--gcc-toolchain=/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls",
       "-hls-syn-headers-dir=/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=task_detection_accel",
       "-c",
       "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp"
     ],

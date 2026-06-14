@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/task_detection_tpu.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Jun 14 16:32:21 2026",
+ "timestampMillis": "1781434941086",
+ "buildStep": {
+  "cmdId": "e47f0a17-b47f-4308-a1ed-ce995cdde10b",
+  "name": "v++",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/logs/task_detection_tpu.steps.log",
+  "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/hls_config.cfg --work_dir task_detection_tpu ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/hls_config.cfg",
+   "--work_dir",
+   "task_detection_tpu"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/hls_config.cfg",
+    "content": "part=xc7k325tffg900-2\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\ntb.file=./task_detection_accel_tb.cpp\nsyn.file=./task_detection_accel.cpp\nsyn.file=mlp_engine.cpp\nsyn.top=task_detection_accel"
+   }
+  ],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jun 14 16:32:21 2026",
+ "timestampMillis": "1781434941087",
+ "status": {
+  "cmdId": "e47f0a17-b47f-4308-a1ed-ce995cdde10b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Jun 14 16:32:39 2026",
+ "timestampMillis": "1781434959569",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "task_detection_accel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp",
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jun 14 16:32:39 2026",
+ "timestampMillis": "1781434959571",
+ "buildStep": {
+  "cmdId": "eb517cf1-8cfe-4673-815a-4eacda00c709",
+  "name": "",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jun 14 16:32:39 2026",
+ "timestampMillis": "1781434959572",
+ "status": {
+  "cmdId": "eb517cf1-8cfe-4673-815a-4eacda00c709",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jun 14 16:32:39 2026",
+ "timestampMillis": "1781434959572",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jun 14 16:32:39 2026",
+ "timestampMillis": "1781434959573",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jun 14 16:32:39 2026",
+ "timestampMillis": "1781434959573",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jun 14 16:33:34 2026",
+ "timestampMillis": "1781435014339",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jun 14 16:33:34 2026",
+ "timestampMillis": "1781435014341",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jun 14 16:33:34 2026",
+ "timestampMillis": "1781435014342",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jun 14 16:33:34 2026",
+ "timestampMillis": "1781435014342",
+ "status": {
+  "cmdId": "eb517cf1-8cfe-4673-815a-4eacda00c709",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jun 14 16:33:35 2026",
+ "timestampMillis": "1781435015638",
+ "status": {
+  "cmdId": "e47f0a17-b47f-4308-a1ed-ce995cdde10b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jun 14 16:33:36 2026",
+ "timestampMillis": "1781435016069",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/reports/v++_compile_task_detection_tpu_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jun 14 16:33:36 2026",
+ "timestampMillis": "1781435016074",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/reports/.db/v++_compile_task_detection_tpu_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

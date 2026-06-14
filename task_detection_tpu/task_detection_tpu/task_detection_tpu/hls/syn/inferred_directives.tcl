@@ -1,0 +1,15 @@
+# Inferred from syn.array_partition.complete_threshold=4
+set_directive_array_partition task_detection_accel/linear_64_1(float*, float*)::bias -dim=1 -type=complete linear_64_1(float*, float*)::bias
+# Inferred from syn.compile.pipeline_loops=64
+set_directive_pipeline task_detection_accel/VITIS_LOOP_23_2
+set_directive_pipeline task_detection_accel/VITIS_LOOP_68_2
+set_directive_pipeline task_detection_accel/VITIS_LOOP_113_2
+set_directive_pipeline task_detection_accel/VITIS_LOOP_156_1
+# Inferred from Performance Budgeter performance directives
+set_directive_loop_flatten task_detection_accel/VITIS_LOOP_19_1
+set_directive_loop_flatten task_detection_accel/VITIS_LOOP_64_1
+set_directive_loop_flatten task_detection_accel/VITIS_LOOP_109_1
+# Inferred from performance & pipeline pragmas/directives
+set_directive_loop_flatten task_detection_accel/VITIS_LOOP_32_3
+set_directive_loop_flatten task_detection_accel/VITIS_LOOP_77_3
+set_directive_loop_flatten task_detection_accel/VITIS_LOOP_122_3

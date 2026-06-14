@@ -23,3 +23,11 @@ cfg.set_values(key="syn.file", values=["./task_detection_accel.cpp", "mlp_engine
 
 comp.run(operation="C_SIMULATION")
 
+cfg.set_values(key="syn.file", values=["./task_detection_accel.cpp", "mlp_engine.cpp", "tpu_core.cpp"])
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="SYNTHESIS")
+

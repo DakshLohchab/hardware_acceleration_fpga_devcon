@@ -1,0 +1,83 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="mlp_engine.cpp:34:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_180_256" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=256 max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="mlp_engine.cpp:40:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_180_256" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="mlp_engine.cpp:79:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_256_128" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=128" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="mlp_engine.cpp:85:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_256_128" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="mlp_engine.cpp:124:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_128_64" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=64 max=64" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="mlp_engine.cpp:130:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_128_64" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="mlp_engine.cpp:168:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_64_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="task_detection_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=task_detection_accel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="task_detection_accel.cpp:13:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="task_detection_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="task_detection_accel.cpp:14:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="task_detection_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output offset=slave bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="task_detection_accel.cpp:16:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="task_detection_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=task_id bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="task_detection_accel.cpp:17:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="task_detection_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=top_k bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="task_detection_accel.cpp:18:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="task_detection_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="task_detection_accel.cpp:31:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="task_detection_accel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="task_detection_accel.cpp:12:0" msg_body="Inlining function 'linear_180_256(float*, float*)' into 'task_detection_accel'">
+        <args Callee="linear_180_256(float*, float*)" Callee-DebugLoc="File mlp_engine.cpp Line 11 Column 0" Caller="task_detection_accel" Caller-DebugLoc="File task_detection_accel.cpp Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="task_detection_accel.cpp:12:0" msg_body="Inlining function 'linear_256_128(float*, float*)' into 'task_detection_accel'">
+        <args Callee="linear_256_128(float*, float*)" Callee-DebugLoc="File mlp_engine.cpp Line 56 Column 0" Caller="task_detection_accel" Caller-DebugLoc="File task_detection_accel.cpp Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="task_detection_accel.cpp:12:0" msg_body="Inlining function 'linear_128_64(float*, float*)' into 'task_detection_accel'">
+        <args Callee="linear_128_64(float*, float*)" Callee-DebugLoc="File mlp_engine.cpp Line 101 Column 0" Caller="task_detection_accel" Caller-DebugLoc="File task_detection_accel.cpp Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="task_detection_accel.cpp:12:0" msg_body="Inlining function 'linear_64_1(float*, float*)' into 'task_detection_accel'">
+        <args Callee="linear_64_1(float*, float*)" Callee-DebugLoc="File mlp_engine.cpp Line 146 Column 0" Caller="task_detection_accel" Caller-DebugLoc="File task_detection_accel.cpp Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mlp_engine.cpp:23:30" msg_body="pipeline   1 task_detection_accel config_compile -pipeline_loops 64VITIS_LOOP_23_2 mlp_engine.cpp:23:30">
+        <args LoopLoc="mlp_engine.cpp:23:30" LoopLoc-DebugLoc="File mlp_engine.cpp Line 23 Column 30" LoopName="VITIS_LOOP_23_2" PragmaFunction="task_detection_accel" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mlp_engine.cpp:68:30" msg_body="pipeline   1 task_detection_accel config_compile -pipeline_loops 64VITIS_LOOP_68_2 mlp_engine.cpp:68:30">
+        <args LoopLoc="mlp_engine.cpp:68:30" LoopLoc-DebugLoc="File mlp_engine.cpp Line 68 Column 30" LoopName="VITIS_LOOP_68_2" PragmaFunction="task_detection_accel" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mlp_engine.cpp:113:31" msg_body="pipeline   1 task_detection_accel config_compile -pipeline_loops 64VITIS_LOOP_113_2 mlp_engine.cpp:113:31">
+        <args LoopLoc="mlp_engine.cpp:113:31" LoopLoc-DebugLoc="File mlp_engine.cpp Line 113 Column 31" LoopName="VITIS_LOOP_113_2" PragmaFunction="task_detection_accel" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mlp_engine.cpp:156:27" msg_body="pipeline   1 task_detection_accel config_compile -pipeline_loops 64VITIS_LOOP_156_1 mlp_engine.cpp:156:27">
+        <args LoopLoc="mlp_engine.cpp:156:27" LoopLoc-DebugLoc="File mlp_engine.cpp Line 156 Column 27" LoopName="VITIS_LOOP_156_1" PragmaFunction="task_detection_accel" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mlp_engine.cpp:148:0" msg_body="array_partition dim=1 type=complete variable=linear_64_1(float*, float*)::bias 1 task_detection_accel mlp_engine.cpp:148:0 config_array_partition -complete_threshold 4linear_64_1(float*, float*)::bias">
+        <args PragmaFunction="task_detection_accel" PragmaInferReason="config_array_partition -complete_threshold 4" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete variable=linear_64_1(float*, float*)::bias" PragmaType="array_partition" VarLoc="mlp_engine.cpp:148:0" VarName="linear_64_1(float*, float*)::bias"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="mlp_engine.cpp:148:0" msg_body="Partitioning small array 'linear_64_1(float*, float*)::bias' due to array size.">
+        <args Value="linear_64_1(float*, float*)::bias"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="mlp_engine.cpp:147:0" msg_body="Partitioning array 'linear_64_1(float*, float*)::weights' dimension 1 due to constant index.">
+        <args Dim="1" Value="linear_64_1(float*, float*)::weights"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mlp_engine.cpp:147:0" msg_body="Applying array_partition to '_ZZ11linear_64_1PfS_E7weights': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11linear_64_1PfS_E7weights"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="mlp_engine.cpp:148:0" msg_body="Applying array_partition to '_ZZ11linear_64_1PfS_E4bias': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ11linear_64_1PfS_E4bias"/>
+    </msg>
+</xilinx:hls_fe_msgs>

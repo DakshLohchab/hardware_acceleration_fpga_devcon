@@ -1,3 +1,3 @@
 relativeroot=/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu
-original_argv=--mode hls --csim --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/hls_config.cfg --work_dir task_detection_tpu 
+original_argv=-c --mode hls --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/hls_config.cfg --work_dir task_detection_tpu 
 

@@ -18,7 +18,11 @@ void task_detection_accel(
 #pragma HLS INTERFACE s_axilite port=return  bundle=control
 
     float in_buf[180];
-    float out_buf[256];
+
+    float l1[256];
+    float l2[128];
+    float l3[64];
+    float l4[1];
 
     // DDR -> Local Buffer
 
@@ -28,20 +32,19 @@ void task_detection_accel(
         in_buf[i] = input[i];
     }
 
-    // Compute
+    // Full MLP Dataflow
 
-    linear_180_256(
-        in_buf,
-        out_buf
-    );
+    linear_180_256(in_buf, l1);
+
+    linear_256_128(l1, l2);
+
+    linear_128_64(l2, l3);
+
+    linear_64_1(l3, l4);
 
     // Local Buffer -> DDR
 
-    for(int i = 0; i < 256; i++)
-    {
-#pragma HLS PIPELINE II=1
-        output[i] = out_buf[i];
-    }
+    output[0] = l4[0];
 }
 
 }

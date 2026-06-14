@@ -1,0 +1,22 @@
+directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=task_detection_accel_XLX_SEP_ PragmaOptions=name=task_detection_accel_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=task_detection_accel
+^
+task_detection_accel.cpp:13:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=task_detection_accel_XLX_SEP_ PragmaOptions=m_axi port=input offset=slave bundle=gmem0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=input offset=slave bundle=gmem0
+^
+task_detection_accel.cpp:14:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=task_detection_accel_XLX_SEP_ PragmaOptions=m_axi port=output offset=slave bundle=gmem1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=output offset=slave bundle=gmem1
+^
+task_detection_accel.cpp:16:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=task_detection_accel_XLX_SEP_ PragmaOptions=s_axilite port=task_id bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=task_id bundle=control
+^
+task_detection_accel.cpp:17:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=task_detection_accel_XLX_SEP_ PragmaOptions=s_axilite port=top_k bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=top_k bundle=control
+^
+task_detection_accel.cpp:18:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=task_detection_accel_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=control
+^
+task_detection_accel.cpp:31:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=task_detection_accel_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+7 warnings generated.

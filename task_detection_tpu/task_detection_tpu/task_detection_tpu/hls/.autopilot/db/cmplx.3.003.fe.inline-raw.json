@@ -1,0 +1,24 @@
+{
+  "0": {
+    "basicblocks": 39,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "task_detection_accel.cpp",
+    "fileloc": 6,
+    "instructions": 172,
+    "loads": {
+      "G": 12,
+      "L": 5,
+      "T": 1
+    },
+    "memory_accesses": 14,
+    "name": "task_detection_accel",
+    "stores": {
+      "G": 12,
+      "L": 5,
+      "T": 1
+    },
+    "total_instructions": 172
+  }
+}
