@@ -1,7 +1,8 @@
 INFO: [SIM 2] *************** CSIM start ***************
    Compiling ../../../../task_detection_accel_tb.cpp in debug mode
+   Compiling ../../../../mlp_engine.cpp in debug mode
+   Compiling ../../../../task_detection_accel.cpp in debug mode
    Generating csim.exe
-Output = 180
-PASS
+PASS: all outputs ≈ 1.8
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

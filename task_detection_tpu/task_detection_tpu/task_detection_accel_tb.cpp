@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 extern "C" void task_detection_accel(
     float* input,
@@ -10,10 +11,12 @@ extern "C" void task_detection_accel(
 int main()
 {
     float input[180];
-    float output[1];
+    float output[256];
 
-    for(int i=0;i<180;i++)
+    for(int i = 0; i < 180; i++)
+    {
         input[i] = 1.0f;
+    }
 
     task_detection_accel(
         input,
@@ -22,16 +25,32 @@ int main()
         3
     );
 
-    std::cout << "Output = "
-              << output[0]
-              << std::endl;
+    bool pass = true;
 
-    if(output[0] == 180.0f)
+    for(int o = 0; o < 256; o++)
     {
-        std::cout << "PASS" << std::endl;
+        if(std::fabs(output[o] - 1.8f) > 0.001f)
+        {
+            std::cout
+                << "FAIL at neuron "
+                << o
+                << " got "
+                << output[o]
+                << std::endl;
+
+            pass = false;
+            break;
+        }
+    }
+
+    if(pass)
+    {
+        std::cout
+            << "PASS: all outputs ≈ 1.8"
+            << std::endl;
+
         return 0;
     }
 
-    std::cout << "FAIL" << std::endl;
     return 1;
 }

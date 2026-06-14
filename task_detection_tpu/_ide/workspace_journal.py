@@ -19,3 +19,7 @@ comp.run(operation="C_SIMULATION")
 
 comp.run(operation="C_SIMULATION")
 
+cfg.set_values(key="syn.file", values=["./task_detection_accel.cpp", "mlp_engine.cpp"])
+
+comp.run(operation="C_SIMULATION")
+

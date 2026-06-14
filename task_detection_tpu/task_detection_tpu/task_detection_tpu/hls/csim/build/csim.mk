@@ -23,7 +23,7 @@ __USE_VCXX_CLANG__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../task_detection_accel_tb.cpp ../../../../task_detection_accel.cpp
+HLS_SOURCES = ../../../../task_detection_accel_tb.cpp ../../../../mlp_engine.cpp ../../../../task_detection_accel.cpp
 
 override TARGET := csim.exe
 
@@ -88,6 +88,12 @@ $(ObjDir)/task_detection_accel_tb.o: ../../../../task_detection_accel_tb.cpp $(O
 	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/task_detection_accel_tb.d
+
+$(ObjDir)/mlp_engine.o: ../../../../mlp_engine.cpp $(ObjDir)/.dir csim.mk
+	$(Echo) "   Compiling ../../../../mlp_engine.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel= $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/mlp_engine.d
 
 $(ObjDir)/task_detection_accel.o: ../../../../task_detection_accel.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../task_detection_accel.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
