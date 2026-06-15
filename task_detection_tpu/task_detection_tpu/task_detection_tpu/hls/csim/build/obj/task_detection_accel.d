@@ -17,4 +17,4 @@ obj/task_detection_accel.o: ../../../../task_detection_accel.cpp \
   /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h \
   /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_ref.h \
   /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_special.h \
-  ../../../../mlp_engine.h
+  ../../../../mlp_engine.h ../../../../types.h

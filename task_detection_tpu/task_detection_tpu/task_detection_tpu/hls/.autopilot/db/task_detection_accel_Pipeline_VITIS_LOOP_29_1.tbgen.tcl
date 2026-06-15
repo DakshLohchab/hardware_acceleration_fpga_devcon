@@ -15,15 +15,15 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 12
+set cdfgNum 15
 set C_modelName {task_detection_accel_Pipeline_VITIS_LOOP_29_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict in_buf { MEM_WIDTH 32 MEM_SIZE 720 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict in_buf { MEM_WIDTH 16 MEM_SIZE 360 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ gmem0 int 32 regular {axi_master 0}  }
 	{ sext_ln29 int 62 regular  }
-	{ in_buf float 32 regular {array 180 { 0 3 } 0 1 }  }
+	{ in_buf int 16 regular {array 180 { 0 3 } 0 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -31,7 +31,7 @@ set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "gmem0", "interface" : "axi_master", "bitwidth" : 32, "direction" : "READONLY", "id_num" : 0, "bitSlice":[ {"cElement": [{"cName": "input_r","offset": { "type": "dynamic","port_name": "input_r","bundle": "control_r"},"direction": "READONLY"}]}]} , 
  	{ "Name" : "sext_ln29", "interface" : "wire", "bitwidth" : 62, "direction" : "READONLY"} , 
- 	{ "Name" : "in_buf", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "in_buf", "interface" : "memory", "bitwidth" : 16, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 57
 set portList { 
@@ -91,7 +91,7 @@ set portList {
 	{ in_buf_address0 sc_out sc_lv 8 signal 2 } 
 	{ in_buf_ce0 sc_out sc_logic 1 signal 2 } 
 	{ in_buf_we0 sc_out sc_logic 1 signal 2 } 
-	{ in_buf_d0 sc_out sc_lv 32 signal 2 } 
+	{ in_buf_d0 sc_out sc_lv 16 signal 2 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -150,18 +150,18 @@ set NewPortList {[
  	{ "name": "in_buf_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "in_buf", "role": "address0" }} , 
  	{ "name": "in_buf_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in_buf", "role": "ce0" }} , 
  	{ "name": "in_buf_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in_buf", "role": "we0" }} , 
- 	{ "name": "in_buf_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "in_buf", "role": "d0" }}  ]}
+ 	{ "name": "in_buf_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "in_buf", "role": "d0" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	task_detection_accel_Pipeline_VITIS_LOOP_29_1 {
 		gmem0 {Type I LastRead 1 FirstWrite -1}
 		sext_ln29 {Type I LastRead 0 FirstWrite -1}
-		in_buf {Type O LastRead -1 FirstWrite 2}}}
+		in_buf {Type O LastRead -1 FirstWrite 4}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "183", "Max" : "183"}
+	{"Name" : "Latency", "Min" : "185", "Max" : "185"}
 	, {"Name" : "Interval", "Min" : "181", "Max" : "181"}
 ]}
 
@@ -172,5 +172,5 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	 { m_axi {  { m_axi_gmem0_0_AWVALID VALID 1 1 }  { m_axi_gmem0_0_AWREADY READY 0 1 }  { m_axi_gmem0_0_AWADDR ADDR 1 64 }  { m_axi_gmem0_0_AWID ID 1 1 }  { m_axi_gmem0_0_AWLEN SIZE 1 32 }  { m_axi_gmem0_0_AWSIZE BURST 1 3 }  { m_axi_gmem0_0_AWBURST LOCK 1 2 }  { m_axi_gmem0_0_AWLOCK CACHE 1 2 }  { m_axi_gmem0_0_AWCACHE PROT 1 4 }  { m_axi_gmem0_0_AWPROT QOS 1 3 }  { m_axi_gmem0_0_AWQOS REGION 1 4 }  { m_axi_gmem0_0_AWREGION USER 1 4 }  { m_axi_gmem0_0_AWUSER DATA 1 1 }  { m_axi_gmem0_0_WVALID VALID 1 1 }  { m_axi_gmem0_0_WREADY READY 0 1 }  { m_axi_gmem0_0_WDATA FIFONUM 1 32 }  { m_axi_gmem0_0_WSTRB STRB 1 4 }  { m_axi_gmem0_0_WLAST LAST 1 1 }  { m_axi_gmem0_0_WID ID 1 1 }  { m_axi_gmem0_0_WUSER DATA 1 1 }  { m_axi_gmem0_0_ARVALID VALID 1 1 }  { m_axi_gmem0_0_ARREADY READY 0 1 }  { m_axi_gmem0_0_ARADDR ADDR 1 64 }  { m_axi_gmem0_0_ARID ID 1 1 }  { m_axi_gmem0_0_ARLEN SIZE 1 32 }  { m_axi_gmem0_0_ARSIZE BURST 1 3 }  { m_axi_gmem0_0_ARBURST LOCK 1 2 }  { m_axi_gmem0_0_ARLOCK CACHE 1 2 }  { m_axi_gmem0_0_ARCACHE PROT 1 4 }  { m_axi_gmem0_0_ARPROT QOS 1 3 }  { m_axi_gmem0_0_ARQOS REGION 1 4 }  { m_axi_gmem0_0_ARREGION USER 1 4 }  { m_axi_gmem0_0_ARUSER DATA 1 1 }  { m_axi_gmem0_0_RVALID VALID 0 1 }  { m_axi_gmem0_0_RREADY READY 1 1 }  { m_axi_gmem0_0_RDATA FIFONUM 0 32 }  { m_axi_gmem0_0_RLAST LAST 0 1 }  { m_axi_gmem0_0_RID ID 0 1 }  { m_axi_gmem0_0_RFIFONUM LEN 0 9 }  { m_axi_gmem0_0_RUSER DATA 0 1 }  { m_axi_gmem0_0_RRESP RESP 0 2 }  { m_axi_gmem0_0_BVALID VALID 0 1 }  { m_axi_gmem0_0_BREADY READY 1 1 }  { m_axi_gmem0_0_BRESP RESP 0 2 }  { m_axi_gmem0_0_BID ID 0 1 }  { m_axi_gmem0_0_BUSER DATA 0 1 } } }
 	sext_ln29 { ap_none {  { sext_ln29 in_data 0 62 } } }
-	in_buf { ap_memory {  { in_buf_address0 mem_address 1 8 }  { in_buf_ce0 mem_ce 1 1 }  { in_buf_we0 mem_we 1 1 }  { in_buf_d0 mem_din 1 32 } } }
+	in_buf { ap_memory {  { in_buf_address0 mem_address 1 8 }  { in_buf_ce0 mem_ce 1 1 }  { in_buf_we0 mem_we 1 1 }  { in_buf_d0 mem_din 1 16 } } }
 }

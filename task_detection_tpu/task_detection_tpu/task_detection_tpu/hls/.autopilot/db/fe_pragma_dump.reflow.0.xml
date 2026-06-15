@@ -1,15 +1,74 @@
 <pragmas>
-<pragma file="mlp_engine.cpp" line="34" pragmaType="loop_tripcount" parentfunction="linear_180_256" min="256" max="256" avg="256"/>
-<pragma file="mlp_engine.cpp" line="40" pragmaType="pipeline" parentfunction="linear_180_256" off="0" ii="1" rewind="0" style=""/>
-<pragma file="mlp_engine.cpp" line="168" pragmaType="pipeline" parentfunction="linear_64_1" off="0" ii="1" rewind="0" style=""/>
+<pragma file="mlp_engine.cpp" line="45" pragmaType="unroll" parentfunction="linear_180_256" factor="-1" skip_exit_check="0"/>
+<pragma file="mlp_engine.cpp" line="52" pragmaType="pipeline" parentfunction="linear_180_256" off="0" ii="1" rewind="0" style=""/>
+<pragma file="mlp_engine.cpp" line="70" pragmaType="unroll" parentfunction="linear_180_256" factor="-1" skip_exit_check="0"/>
+<pragma file="mlp_engine.cpp" line="59" pragmaType="unroll" parentfunction="linear_180_256" factor="-1" skip_exit_check="0"/>
+<pragma file="mlp_engine.cpp" line="15" pragmaType="array_partition" parentfunction="linear_180_256" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ14linear_180_256P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_E7weights"/>
+<pragma file="mlp_engine.cpp" line="40" pragmaType="array_partition" parentfunction="linear_180_256" dim="1" factor="0" mode="complete" dynamic="0" variable="acc"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<11, false>::RType<12, true>::minus operator-<11, false, 12, true>(ap_int_base<11, false> const&, ap_int_base<12, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(float)" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="720" pragmaType="inline" parentfunction="doubleToRawBits" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 12, true>::plus ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="762" pragmaType="inline" parentfunction="rawBitsToFloat" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator float() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="to_float" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="countLeadingZeros" off="0" region="0" recursive="0"/>
+<pragma file="mlp_engine.cpp" line="182" pragmaType="unroll" parentfunction="linear_128_64" factor="-1" skip_exit_check="0"/>
+<pragma file="mlp_engine.cpp" line="188" pragmaType="pipeline" parentfunction="linear_128_64" off="0" ii="1" rewind="0" style=""/>
+<pragma file="mlp_engine.cpp" line="203" pragmaType="unroll" parentfunction="linear_128_64" factor="-1" skip_exit_check="0"/>
+<pragma file="mlp_engine.cpp" line="194" pragmaType="unroll" parentfunction="linear_128_64" factor="-1" skip_exit_check="0"/>
+<pragma file="mlp_engine.cpp" line="153" pragmaType="array_partition" parentfunction="linear_128_64" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ13linear_128_64P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_E7weights"/>
+<pragma file="mlp_engine.cpp" line="178" pragmaType="array_partition" parentfunction="linear_128_64" dim="1" factor="0" mode="complete" dynamic="0" variable="acc"/>
+<pragma file="mlp_engine.cpp" line="239" pragmaType="pipeline" parentfunction="linear_64_1" off="0" ii="1" rewind="0" style=""/>
 <pragma file="task_detection_accel.cpp" line="31" pragmaType="pipeline" parentfunction="task_detection_accel" off="0" ii="1" rewind="0" style=""/>
-<pragma file="task_detection_accel.cpp" line="13" pragmaType="interface" parentfunction="task_detection_accel" mode="m_axi" port="input" bundle="gmem0" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="task_detection_accel.cpp" line="14" pragmaType="interface" parentfunction="task_detection_accel" mode="m_axi" port="output" bundle="gmem1" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="task_detection_accel.cpp" line="16" pragmaType="interface" parentfunction="task_detection_accel" mode="s_axilite" port="task_id" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="task_detection_accel.cpp" line="17" pragmaType="interface" parentfunction="task_detection_accel" mode="s_axilite" port="top_k" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="task_detection_accel.cpp" line="18" pragmaType="interface" parentfunction="task_detection_accel" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="mlp_engine.cpp" line="79" pragmaType="loop_tripcount" parentfunction="linear_256_128" min="128" max="128" avg="128"/>
-<pragma file="mlp_engine.cpp" line="85" pragmaType="pipeline" parentfunction="linear_256_128" off="0" ii="1" rewind="0" style=""/>
-<pragma file="mlp_engine.cpp" line="124" pragmaType="loop_tripcount" parentfunction="linear_128_64" min="64" max="64" avg="64"/>
-<pragma file="mlp_engine.cpp" line="130" pragmaType="pipeline" parentfunction="linear_128_64" off="0" ii="1" rewind="0" style=""/>
+<pragma file="task_detection_accel.cpp" line="14" pragmaType="interface" parentfunction="task_detection_accel" mode="m_axi" port="input" bundle="gmem0" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="task_detection_accel.cpp" line="15" pragmaType="interface" parentfunction="task_detection_accel" mode="m_axi" port="output" bundle="gmem1" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="task_detection_accel.cpp" line="17" pragmaType="interface" parentfunction="task_detection_accel" mode="s_axilite" port="task_id" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="task_detection_accel.cpp" line="18" pragmaType="interface" parentfunction="task_detection_accel" mode="s_axilite" port="top_k" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="task_detection_accel.cpp" line="19" pragmaType="interface" parentfunction="task_detection_accel" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi13ELb1EEC2EDB13_" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi12ELb1EEC2EDB12_" off="0" region="0" recursive="0"/>
+<pragma file="mlp_engine.cpp" line="116" pragmaType="unroll" parentfunction="linear_256_128" factor="-1" skip_exit_check="0"/>
+<pragma file="mlp_engine.cpp" line="122" pragmaType="pipeline" parentfunction="linear_256_128" off="0" ii="1" rewind="0" style=""/>
+<pragma file="mlp_engine.cpp" line="137" pragmaType="unroll" parentfunction="linear_256_128" factor="-1" skip_exit_check="0"/>
+<pragma file="mlp_engine.cpp" line="128" pragmaType="unroll" parentfunction="linear_256_128" factor="-1" skip_exit_check="0"/>
+<pragma file="mlp_engine.cpp" line="87" pragmaType="array_partition" parentfunction="linear_256_128" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ14linear_256_128P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_E7weights"/>
+<pragma file="mlp_engine.cpp" line="112" pragmaType="array_partition" parentfunction="linear_256_128" dim="1" factor="0" mode="complete" dynamic="0" variable="acc"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<13, true>::ap_int_base<12, true>(ap_int_base<12, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<13, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<13>::ap_int<13, true>(ap_int_base<13, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi55ELb1EEC2EDB55_" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDU1_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<13, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<55, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, true>& ap_int_base<12, true>::operator=<13, true>(ap_int_base<13, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(float)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 6, true>::mult ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<54, true>::operator-() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<33, 13, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDB33_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
 </pragmas>

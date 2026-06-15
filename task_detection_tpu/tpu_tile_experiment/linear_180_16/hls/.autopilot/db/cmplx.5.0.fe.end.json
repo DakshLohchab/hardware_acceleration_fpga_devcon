@@ -1,0 +1,67 @@
+{
+    "1": {
+        "name": "linear_180_16_Pipeline_VITIS_LOOP_190_1_VITIS_LOOP_192_2",
+        "file": "..\/task_detection_tpu\/mlp_engine.cpp",
+        "fileloc": "190",
+        "instructions": "77",
+        "total_instructions": "77",
+        "calls": "",
+        "basicblocks": "21",
+        "memory_accesses": "22",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "16",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "linear_180_16_Pipeline_VITIS_LOOP_211_4",
+        "file": "..\/task_detection_tpu\/mlp_engine.cpp",
+        "fileloc": "211",
+        "instructions": "178",
+        "total_instructions": "178",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "51",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "16",
+            "L": "33",
+            "T": "1"
+        },
+        "stores": {
+            "L": "34"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "linear_180_16",
+        "file": "mlp_engine.cpp",
+        "fileloc": "179",
+        "instructions": "92",
+        "total_instructions": "347",
+        "calls": "1 2",
+        "basicblocks": "3",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "1",
+            "L": "16"
+        },
+        "stores": {
+            "G": "1",
+            "T": "16"
+        }
+    }
+}

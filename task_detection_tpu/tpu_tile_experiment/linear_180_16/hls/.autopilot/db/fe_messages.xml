@@ -1,0 +1,65 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:34:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_180_256" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=256 max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:40:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_180_256" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:79:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_256_128" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=128" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:85:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_256_128" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:124:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_128_64" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=64 max=64" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:130:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_128_64" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:168:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_64_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="linear_180_16" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=linear_180_16" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:203:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_180_16" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:207:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_180_16" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:213:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_180_16" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:219:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_180_16" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/mlp_engine.cpp:226:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="linear_180_16" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/mlp_engine.cpp:217:27" msg_body="Loop 'VITIS_LOOP_217_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_217_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/mlp_engine.cpp:183:0" msg_body="Unrolling loop 'VITIS_LOOP_224_6' (../task_detection_tpu/mlp_engine.cpp:224:23) in function 'linear_180_16' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../task_detection_tpu/mlp_engine.cpp:224:23" LoopName="VITIS_LOOP_224_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/mlp_engine.cpp:183:0" msg_body="Unrolling loop 'VITIS_LOOP_217_5' (../task_detection_tpu/mlp_engine.cpp:217:27) in function 'linear_180_16' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../task_detection_tpu/mlp_engine.cpp:217:27" LoopName="VITIS_LOOP_217_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/mlp_engine.cpp:183:0" msg_body="Unrolling loop 'VITIS_LOOP_205_3' (../task_detection_tpu/mlp_engine.cpp:205:23) in function 'linear_180_16' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../task_detection_tpu/mlp_engine.cpp:205:23" LoopName="VITIS_LOOP_205_3"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../task_detection_tpu/mlp_engine.cpp:192:31" msg_body="pipeline   1 linear_180_16 config_compile -pipeline_loops 64VITIS_LOOP_192_2 ../task_detection_tpu/mlp_engine.cpp:192:31">
+        <args LoopLoc="../task_detection_tpu/mlp_engine.cpp:192:31" LoopLoc-DebugLoc="File ../task_detection_tpu/mlp_engine.cpp Line 192 Column 31" LoopName="VITIS_LOOP_192_2" PragmaFunction="linear_180_16" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../task_detection_tpu/mlp_engine.cpp:184:0" msg_body="array_partition dim=1 type=complete  variable=linear_180_16(float*, float*)::weights 1 linear_180_16 ../task_detection_tpu/mlp_engine.cpp:184:0 ../task_detection_tpu/mlp_engine.cpp:213:1linear_180_16(float*, float*)::weights">
+        <args PragmaFunction="linear_180_16" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=linear_180_16(float*, float*)::weights" PragmaSrcLoc="../task_detection_tpu/mlp_engine.cpp:213:1" PragmaSrcLoc-DebugLoc="File ../task_detection_tpu/mlp_engine.cpp Line 213 Column 1" PragmaType="array_partition" VarLoc="../task_detection_tpu/mlp_engine.cpp:184:0" VarName="linear_180_16(float*, float*)::weights"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../task_detection_tpu/mlp_engine.cpp:213:1" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'linear_180_16(float*, float*)::weights' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="linear_180_16(float*, float*)::weights" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../task_detection_tpu/mlp_engine.cpp:184:0" msg_body="Applying array_partition to '_ZZ13linear_180_16PfS_E7weights': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ13linear_180_16PfS_E7weights"/>
+    </msg>
+</xilinx:hls_fe_msgs>

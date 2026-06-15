@@ -1,0 +1,40 @@
+../task_detection_tpu/mlp_engine.cpp:34:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_180_256_XLX_SEP_ PragmaOptions=min=256 max=256_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=256 max=256
+^
+../task_detection_tpu/mlp_engine.cpp:40:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_180_256_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+../task_detection_tpu/mlp_engine.cpp:79:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_256_128_XLX_SEP_ PragmaOptions=min=128 max=128_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=128 max=128
+^
+../task_detection_tpu/mlp_engine.cpp:85:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_256_128_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+../task_detection_tpu/mlp_engine.cpp:124:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_128_64_XLX_SEP_ PragmaOptions=min=64 max=64_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS LOOP_TRIPCOUNT min=64 max=64
+^
+../task_detection_tpu/mlp_engine.cpp:130:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_128_64_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+../task_detection_tpu/mlp_engine.cpp:168:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_64_1_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=linear_180_16_XLX_SEP_ PragmaOptions=name=linear_180_16_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=linear_180_16
+^
+../task_detection_tpu/mlp_engine.cpp:203:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_180_16_XLX_SEP_ PragmaOptions=variable=acc complete_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=acc complete
+^
+../task_detection_tpu/mlp_engine.cpp:207:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_180_16_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+../task_detection_tpu/mlp_engine.cpp:213:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_180_16_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+../task_detection_tpu/mlp_engine.cpp:219:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_180_16_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+../task_detection_tpu/mlp_engine.cpp:226:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=linear_180_16_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+13 warnings generated.

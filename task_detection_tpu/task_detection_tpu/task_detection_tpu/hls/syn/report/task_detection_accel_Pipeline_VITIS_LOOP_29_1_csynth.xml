@@ -22,12 +22,12 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>183</Best-caseLatency>
-<Average-caseLatency>183</Average-caseLatency>
-<Worst-caseLatency>183</Worst-caseLatency>
-<Best-caseRealTimeLatency>1.830 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.830 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>1.830 us</Worst-caseRealTimeLatency>
+<Best-caseLatency>185</Best-caseLatency>
+<Average-caseLatency>185</Average-caseLatency>
+<Worst-caseLatency>185</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.850 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.850 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.850 us</Worst-caseRealTimeLatency>
 <Interval-min>181</Interval-min>
 <Interval-max>181</Interval-max>
 <PerformancePragma>-</PerformancePragma>
@@ -37,10 +37,10 @@
 <Slack>7.30</Slack>
 <TripCount>180</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>181</Latency>
-<AbsoluteTimeLatency>1810</AbsoluteTimeLatency>
+<Latency>183</Latency>
+<AbsoluteTimeLatency>1830</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
+<PipelineDepth>5</PipelineDepth>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
@@ -63,8 +63,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>62</FF>
-<LUT>79</LUT>
+<FF>208</FF>
+<LUT>685</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -703,7 +703,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

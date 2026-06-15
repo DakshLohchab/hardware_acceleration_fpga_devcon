@@ -54829,26 +54829,42 @@ operator/(const complex<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> &__x, cons
 
 
 
+# 1 "./types.h" 1
+
+
+
+
+
+
+typedef ap_fixed<16,6> data_t;
+# 5 "./mlp_engine.h" 2
+
 void linear_180_256(
-    float input[180],
-    float output[256]
+    data_t input[180],
+    data_t output[256]
 );
 
 void linear_256_128(
-    float input[256],
-    float output[128]
+    data_t input[256],
+    data_t output[128]
 );
 
 void linear_128_64(
-    float input[128],
-    float output[64]
+    data_t input[128],
+    data_t output[64]
 );
 
 void linear_64_1(
-    float input[64],
-    float output[1]
+    data_t input[64],
+    data_t output[1]
+);
+
+void linear_180_16(
+    data_t input[180],
+    data_t output[16]
 );
 # 3 "task_detection_accel.cpp" 2
+
 
 extern "C" {
 
@@ -54861,7 +54877,7 @@ __attribute__((sdx_kernel("task_detection_accel", 0))) void task_detection_accel
 {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=task_detection_accel
-# 12 "task_detection_accel.cpp"
+# 13 "task_detection_accel.cpp"
 
 #pragma HLS INTERFACE m_axi port=input offset=slave bundle=gmem0
 #pragma HLS INTERFACE m_axi port=output offset=slave bundle=gmem1
@@ -54870,34 +54886,28 @@ __attribute__((sdx_kernel("task_detection_accel", 0))) void task_detection_accel
 #pragma HLS INTERFACE s_axilite port=top_k bundle=control
 #pragma HLS INTERFACE s_axilite port=return bundle=control
 
-    float in_buf[180];
+    data_t in_buf[180];
 
-    float l1[256];
-    float l2[128];
-    float l3[64];
-    float l4[1];
-
+    data_t l1[256];
+    data_t l2[128];
+    data_t l3[64];
+    data_t l4[1];
 
 
     VITIS_LOOP_29_1: for(int i = 0; i < 180; i++)
     {
 #pragma HLS PIPELINE II=1
-        in_buf[i] = input[i];
+        in_buf[i] = (data_t)input[i];
     }
 
 
-
     linear_180_256(in_buf, l1);
-
     linear_256_128(l1, l2);
-
     linear_128_64(l2, l3);
-
     linear_64_1(l3, l4);
 
 
-
-    output[0] = l4[0];
+    output[0] = (float)l4[0];
 }
 
 }

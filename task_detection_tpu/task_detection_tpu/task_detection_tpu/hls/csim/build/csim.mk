@@ -91,12 +91,12 @@ $(ObjDir)/task_detection_accel_tb.o: ../../../../task_detection_accel_tb.cpp $(O
 
 $(ObjDir)/mlp_engine.o: ../../../../mlp_engine.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../mlp_engine.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel= $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=task_detection_accel $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/mlp_engine.d
 
 $(ObjDir)/task_detection_accel.o: ../../../../task_detection_accel.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../task_detection_accel.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel= $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=task_detection_accel $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/task_detection_accel.d

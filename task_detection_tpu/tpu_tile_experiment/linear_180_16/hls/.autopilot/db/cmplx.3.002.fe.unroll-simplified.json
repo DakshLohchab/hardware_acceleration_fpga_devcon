@@ -1,0 +1,23 @@
+{
+  "0": {
+    "basicblocks": 9,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "mlp_engine.cpp",
+    "fileloc": 179,
+    "instructions": 191,
+    "loads": {
+      "G": 17,
+      "T": 1
+    },
+    "memory_accesses": 34,
+    "name": "linear_180_16",
+    "stores": {
+      "G": 2,
+      "L": 32,
+      "T": 16
+    },
+    "total_instructions": 191
+  }
+}

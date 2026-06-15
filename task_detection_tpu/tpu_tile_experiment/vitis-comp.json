@@ -1,0 +1,14 @@
+{
+  "name": "tpu_tile_experiment",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "linear_180_16"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component",
+  "templateFlow": "VITIS"
+}

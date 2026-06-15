@@ -1,0 +1,100 @@
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:202:9: remark: Added loop label VITIS_LOOP_19_1:   [xilinx-label-all-loops]
+        for(int o = 0; o < 256; o++)
+        ^
+        VITIS_LOOP_19_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:202:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:206:13: remark: Added loop label VITIS_LOOP_23_2:   [xilinx-label-all-loops]
+            for(int i = 0; i < 180; i++)
+            ^
+            VITIS_LOOP_23_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:206:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:215:5: remark: Added loop label VITIS_LOOP_32_3:   [xilinx-label-all-loops]
+    for(int o = 0; o < 256; o++)
+    ^
+    VITIS_LOOP_32_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:215:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:221:9: remark: Added loop label VITIS_LOOP_38_4:   [xilinx-label-all-loops]
+        for(int i = 0; i < 180; i++)
+        ^
+        VITIS_LOOP_38_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:221:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:247:9: remark: Added loop label VITIS_LOOP_64_1:   [xilinx-label-all-loops]
+        for(int o = 0; o < 128; o++)
+        ^
+        VITIS_LOOP_64_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:247:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:251:13: remark: Added loop label VITIS_LOOP_68_2:   [xilinx-label-all-loops]
+            for(int i = 0; i < 256; i++)
+            ^
+            VITIS_LOOP_68_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:251:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:260:5: remark: Added loop label VITIS_LOOP_77_3:   [xilinx-label-all-loops]
+    for(int o = 0; o < 128; o++)
+    ^
+    VITIS_LOOP_77_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:260:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:266:9: remark: Added loop label VITIS_LOOP_83_4:   [xilinx-label-all-loops]
+        for(int i = 0; i < 256; i++)
+        ^
+        VITIS_LOOP_83_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:266:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:292:9: remark: Added loop label VITIS_LOOP_109_1:   [xilinx-label-all-loops]
+        for(int o = 0; o < 64; o++)
+        ^
+        VITIS_LOOP_109_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:292:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:296:13: remark: Added loop label VITIS_LOOP_113_2:   [xilinx-label-all-loops]
+            for(int i = 0; i < 128; i++)
+            ^
+            VITIS_LOOP_113_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:296:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:305:5: remark: Added loop label VITIS_LOOP_122_3:   [xilinx-label-all-loops]
+    for(int o = 0; o < 64; o++)
+    ^
+    VITIS_LOOP_122_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:305:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:311:9: remark: Added loop label VITIS_LOOP_128_4:   [xilinx-label-all-loops]
+        for(int i = 0; i < 128; i++)
+        ^
+        VITIS_LOOP_128_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:311:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:339:9: remark: Added loop label VITIS_LOOP_156_1:   [xilinx-label-all-loops]
+        for(int i = 0; i < 64; i++)
+        ^
+        VITIS_LOOP_156_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:339:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:349:5: remark: Added loop label VITIS_LOOP_166_2:   [xilinx-label-all-loops]
+    for(int i = 0; i < 64; i++)
+    ^
+    VITIS_LOOP_166_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:349:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:377:9: remark: Added loop label VITIS_LOOP_190_1:   [xilinx-label-all-loops]
+        for(int o = 0; o < 16; o++)
+        ^
+        VITIS_LOOP_190_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:377:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:379:13: remark: Added loop label VITIS_LOOP_192_2:   [xilinx-label-all-loops]
+            for(int i = 0; i < 180; i++)
+            ^
+            VITIS_LOOP_192_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:379:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:392:5: remark: Added loop label VITIS_LOOP_205_3:   [xilinx-label-all-loops]
+    for(int o = 0; o < 16; o++)
+    ^
+    VITIS_LOOP_205_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:392:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:398:5: remark: Added loop label VITIS_LOOP_211_4:   [xilinx-label-all-loops]
+    for(int i = 0; i < 180; i++)
+    ^
+    VITIS_LOOP_211_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:398:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:404:9: remark: Added loop label VITIS_LOOP_217_5:   [xilinx-label-all-loops]
+        for(int o = 0; o < 16; o++)
+        ^
+        VITIS_LOOP_217_5: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:404:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:411:5: remark: Added loop label VITIS_LOOP_224_6:   [xilinx-label-all-loops]
+    for(int o = 0; o < 16; o++)
+    ^
+    VITIS_LOOP_224_6: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_experiment/linear_180_16/hls/.autopilot/db/mlp_engine.pp.0.cpp:411:5: note: FIX-IT applied suggested code changes

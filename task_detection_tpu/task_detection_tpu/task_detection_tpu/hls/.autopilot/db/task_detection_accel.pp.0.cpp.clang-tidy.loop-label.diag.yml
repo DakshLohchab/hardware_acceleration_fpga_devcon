@@ -56,7 +56,7 @@ Diagnostics:
       FileOffset:      29
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/task_detection_accel.pp.0.cpp'
-          Offset:          2345854
+          Offset:          2346015
           Length:          0
           ReplacementText: 'VITIS_LOOP_29_1: '
     Level:           Remark

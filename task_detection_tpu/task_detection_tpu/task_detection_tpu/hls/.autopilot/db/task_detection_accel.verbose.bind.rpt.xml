@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'task_detection_accel'" level="0">
-<item name = "Date">Sun Jun 14 16:33:27 2026
+<item name = "Date">Mon Jun 15 17:44:40 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">task_detection_tpu</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 53.553 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,22 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">87339, 174451, 4.677 ms, 9.342 ms, 87340, 174452, no</column>
+<column name="">5745, 92857, 57.450 us, 0.929 ms, 5746, 92858, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_29_1_fu_177">task_detection_accel_Pipeline_VITIS_LOOP_29_1, 183, 183, 1.830 us, 1.830 us, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_19_1_VITIS_LOOP_23_2_fu_185">task_detection_accel_Pipeline_VITIS_LOOP_19_1_VITIS_LOOP_23_2, 46082, 46082, 0.461 ms, 0.461 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_32_3_VITIS_LOOP_38_4_fu_193">task_detection_accel_Pipeline_VITIS_LOOP_32_3_VITIS_LOOP_38_4, 46086, 46086, 2.468 ms, 2.468 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_64_1_VITIS_LOOP_68_2_fu_203">task_detection_accel_Pipeline_VITIS_LOOP_64_1_VITIS_LOOP_68_2, 32770, 32770, 0.328 ms, 0.328 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_77_3_VITIS_LOOP_83_4_fu_211">task_detection_accel_Pipeline_VITIS_LOOP_77_3_VITIS_LOOP_83_4, 32774, 32774, 1.755 ms, 1.755 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_109_1_VITIS_LOOP_113_2_fu_221">task_detection_accel_Pipeline_VITIS_LOOP_109_1_VITIS_LOOP_113_2, 8194, 8194, 81.940 us, 81.940 us, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_122_3_VITIS_LOOP_128_4_fu_229">task_detection_accel_Pipeline_VITIS_LOOP_122_3_VITIS_LOOP_128_4, 8198, 8198, 0.439 ms, 0.439 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_156_1_fu_239">task_detection_accel_Pipeline_VITIS_LOOP_156_1, 66, 66, 0.660 us, 0.660 us, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_166_2_fu_245">task_detection_accel_Pipeline_VITIS_LOOP_166_2, 70, 70, 1.830 us, 1.830 us, 0, 0, loop pipeline stp</column>
+<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_29_1_fu_1223">task_detection_accel_Pipeline_VITIS_LOOP_29_1, 185, 185, 1.850 us, 1.850 us, 0, 0, loop pipeline stp</column>
+<column name="grp_linear_180_256_fu_1231">linear_180_256, 2888, 48970, 28.880 us, 0.490 ms, 2888, 48970, no</column>
+<column name="grp_linear_256_128_fu_1774">linear_256_128, 2056, 34826, 20.560 us, 0.348 ms, 2056, 34826, no</column>
+<column name="grp_linear_128_64_fu_2068">linear_128_64, 520, 8714, 5.200 us, 87.140 us, 520, 8714, no</column>
+<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_227_1_fu_2234">task_detection_accel_Pipeline_VITIS_LOOP_227_1, 66, 66, 0.660 us, 0.660 us, 0, 0, loop pipeline stp</column>
+<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_237_2_fu_2240">task_detection_accel_Pipeline_VITIS_LOOP_237_2, 69, 69, 0.690 us, 0.690 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

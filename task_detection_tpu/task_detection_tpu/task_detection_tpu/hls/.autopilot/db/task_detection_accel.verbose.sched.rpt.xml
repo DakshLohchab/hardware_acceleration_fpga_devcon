@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'task_detection_accel'" level="0">
-<item name = "Date">Sun Jun 14 16:33:27 2026
+<item name = "Date">Mon Jun 15 17:44:40 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">task_detection_tpu</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 53.553 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">87339, 174451, 4.677 ms, 9.342 ms, 87340, 174452, no</column>
+<column name="">5745, 92857, 57.450 us, 0.929 ms, 5746, 92858, no</column>
 </table>
 </item>
 <item name = "Detail">

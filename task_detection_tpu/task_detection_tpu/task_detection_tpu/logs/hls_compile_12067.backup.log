@@ -1,0 +1,604 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./task_detection_accel.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=mlp_engine.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./task_detection_accel_tb.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=task_detection_accel' from hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 4.82 seconds. CPU system time: 0.82 seconds. Elapsed time: 8.06 seconds; current allocated memory: 269.539 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'mlp_engine.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'task_detection_accel.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 13.89 seconds. CPU system time: 1.69 seconds. Elapsed time: 19.73 seconds; current allocated memory: 271.445 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 446 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,232 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 853 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 745 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 741 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,927 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,162 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,162 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,162 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,212 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,212 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,163 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,967 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,443 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,457 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,511 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_190_5' is marked as complete unroll implied by the pipeline pragma (mlp_engine.cpp:190:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_125_5' is marked as complete unroll implied by the pipeline pragma (mlp_engine.cpp:125:31)
+INFO: [HLS 214-291] Loop 'MACS' is marked as complete unroll implied by the pipeline pragma (mlp_engine.cpp:57:13)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_178_3' (mlp_engine.cpp:178:27) in function 'linear_128_64' completely with a factor of 16 (mlp_engine.cpp:149:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_190_5' (mlp_engine.cpp:190:31) in function 'linear_128_64' completely with a factor of 16 (mlp_engine.cpp:149:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_199_6' (mlp_engine.cpp:199:27) in function 'linear_128_64' completely with a factor of 16 (mlp_engine.cpp:149:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_113_3' (mlp_engine.cpp:113:27) in function 'linear_256_128' completely with a factor of 16 (mlp_engine.cpp:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_125_5' (mlp_engine.cpp:125:31) in function 'linear_256_128' completely with a factor of 16 (mlp_engine.cpp:84:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_134_6' (mlp_engine.cpp:134:27) in function 'linear_256_128' completely with a factor of 16 (mlp_engine.cpp:84:0)
+INFO: [HLS 214-186] Unrolling loop 'INIT_ACC' (mlp_engine.cpp:43:9) in function 'linear_180_256' completely with a factor of 16 (mlp_engine.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'MACS' (mlp_engine.cpp:57:13) in function 'linear_180_256' completely with a factor of 16 (mlp_engine.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'WRITE_OUT' (mlp_engine.cpp:68:9) in function 'linear_180_256' completely with a factor of 16 (mlp_engine.cpp:13:0)
+INFO: [HLS 214-178] Inlining function 'linear_64_1(float*, float*)' into 'task_detection_accel' (task_detection_accel.cpp:12:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ13linear_128_64PfS_E7weights': Complete partitioning on dimension 1. (mlp_engine.cpp:150:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ14linear_256_128PfS_E7weights': Complete partitioning on dimension 1. (mlp_engine.cpp:85:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ14linear_180_256PfS_E7weights': Complete partitioning on dimension 1. (mlp_engine.cpp:14:0)
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_162_2> at mlp_engine.cpp:162:31 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_97_2> at mlp_engine.cpp:97:30 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_26_2> at mlp_engine.cpp:26:30 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_224_1> at mlp_engine.cpp:224:27 due to pipeline_loops threshold
+INFO: [HLS 214-421] Partitioning small array 'linear_64_1(float*, float*)::bias' due to array size. (mlp_engine.cpp:216:0)
+INFO: [HLS 214-449] Partitioning array 'linear_64_1(float*, float*)::weights' dimension 1 due to constant index. (mlp_engine.cpp:215:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'linear_128_64(float*, float*)::bias' due to pipeline pragma (mlp_engine.cpp:186:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'linear_180_256(float*, float*)::bias' due to pipeline pragma (mlp_engine.cpp:52:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'linear_256_128(float*, float*)::bias' due to pipeline pragma (mlp_engine.cpp:121:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'l1' due to pipeline pragma (mlp_engine.cpp:52:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'l2' due to pipeline pragma (mlp_engine.cpp:121:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'l3' due to pipeline pragma (mlp_engine.cpp:186:1)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ14linear_256_128PfS_E4bias': Cyclic partitioning with factor 8 on dimension 1. (mlp_engine.cpp:87:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ14linear_180_256PfS_E4bias': Cyclic partitioning with factor 8 on dimension 1. (mlp_engine.cpp:16:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ13linear_128_64PfS_E4bias': Cyclic partitioning with factor 8 on dimension 1. (mlp_engine.cpp:152:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ11linear_64_1PfS_E7weights': Complete partitioning on dimension 1. (mlp_engine.cpp:215:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ11linear_64_1PfS_E4bias': Complete partitioning on dimension 1. (mlp_engine.cpp:216:0)
+INFO: [HLS 214-248] Applying array_partition to 'l1': Cyclic partitioning with factor 8 on dimension 1. (task_detection_accel.cpp:22:11)
+INFO: [HLS 214-248] Applying array_partition to 'l2': Cyclic partitioning with factor 8 on dimension 1. (task_detection_accel.cpp:23:11)
+INFO: [HLS 214-248] Applying array_partition to 'l3': Cyclic partitioning with factor 8 on dimension 1. (task_detection_accel.cpp:24:11)
+INFO: [HLS 214-115] Multiple burst reads of length 180 and bit width 32 in loop 'VITIS_LOOP_29_1'(task_detection_accel.cpp:29:22) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (task_detection_accel.cpp:29:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 31.67 seconds. CPU system time: 1.01 seconds. Elapsed time: 43.31 seconds; current allocated memory: 273.898 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 273.898 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.38 seconds; current allocated memory: 278.500 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.67 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.19 seconds; current allocated memory: 281.711 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 3.29 seconds. CPU system time: 0.03 seconds. Elapsed time: 4.06 seconds; current allocated memory: 308.965 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_93_1'(mlp_engine.cpp:93:26) and 'VITIS_LOOP_97_2'(mlp_engine.cpp:97:30) in function 'linear_256_128' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'TILE_LOOP'(mlp_engine.cpp:107:5) and 'VITIS_LOOP_119_4'(mlp_engine.cpp:119:27) in function 'linear_256_128' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_22_1'(mlp_engine.cpp:22:26) and 'VITIS_LOOP_26_2'(mlp_engine.cpp:26:30) in function 'linear_180_256' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'TILE_LOOP'(mlp_engine.cpp:36:5) and 'DOT_PRODUCT'(mlp_engine.cpp:50:9) in function 'linear_180_256' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_158_1'(mlp_engine.cpp:158:27) and 'VITIS_LOOP_162_2'(mlp_engine.cpp:162:31) in function 'linear_128_64' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'TILE_LOOP'(mlp_engine.cpp:172:5) and 'VITIS_LOOP_184_4'(mlp_engine.cpp:184:27) in function 'linear_128_64' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_93_1' (mlp_engine.cpp:93:26) in function 'linear_256_128'.
+INFO: [XFORM 203-541] Flattening a loop nest 'TILE_LOOP' (mlp_engine.cpp:107:5) in function 'linear_256_128'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_22_1' (mlp_engine.cpp:22:26) in function 'linear_180_256'.
+INFO: [XFORM 203-541] Flattening a loop nest 'TILE_LOOP' (mlp_engine.cpp:36:5) in function 'linear_180_256'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_158_1' (mlp_engine.cpp:158:27) in function 'linear_128_64'.
+INFO: [XFORM 203-541] Flattening a loop nest 'TILE_LOOP' (mlp_engine.cpp:172:5) in function 'linear_128_64'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 4.39 seconds. CPU system time: 0.13 seconds. Elapsed time: 6.56 seconds; current allocated memory: 488.086 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'task_detection_accel' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_29_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.4 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.71 seconds; current allocated memory: 491.188 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 491.188 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_180_256_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_26_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_22_1_VITIS_LOOP_26_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_22_1_VITIS_LOOP_26_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.61 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.97 seconds; current allocated memory: 502.613 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.47 seconds; current allocated memory: 502.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_180_256_Pipeline_TILE_LOOP_DOT_PRODUCT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'TILE_LOOP_DOT_PRODUCT'.
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_s', mlp_engine.cpp:61) (combination delay: 52.720 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_14', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_13', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_12', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_11', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_10', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_9', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_8', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_7', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_6', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_5', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_4', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_3', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_2', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_1', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add', mlp_engine.cpp:61) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_DOT_PRODUCT''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'fadd' operation 32 bit ('add49_s', mlp_engine.cpp:61) to 'store' operation ('empty_125_write_ln61', mlp_engine.cpp:61) of variable 'add49_s', mlp_engine.cpp:61 32 bit on local variable 'empty_125' (combination delay: 53.553 ns) to honor II or Latency constraint in region 'TILE_LOOP_DOT_PRODUCT'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'TILE_LOOP_DOT_PRODUCT'
+WARNING: [HLS 200-871] Estimated clock period (53.553 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'linear_180_256_Pipeline_TILE_LOOP_DOT_PRODUCT' consists of the following:
+	'load' operation 32 bit ('p_load', mlp_engine.cpp:61) on local variable 'empty_125' [384]  (0.000 ns)
+	'fadd' operation 32 bit ('add49_s', mlp_engine.cpp:61) [948]  (52.720 ns)
+	'store' operation ('empty_125_write_ln61', mlp_engine.cpp:61) of variable 'add49_s', mlp_engine.cpp:61 32 bit on local variable 'empty_125' [987]  (0.833 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.58 seconds. CPU system time: 0.03 seconds. Elapsed time: 2.6 seconds; current allocated memory: 505.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.38 seconds; current allocated memory: 505.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_180_256' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 505.434 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 505.547 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_256_128_Pipeline_VITIS_LOOP_93_1_VITIS_LOOP_97_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_93_1_VITIS_LOOP_97_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_93_1_VITIS_LOOP_97_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.59 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.76 seconds; current allocated memory: 513.262 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 513.262 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_256_128_Pipeline_TILE_LOOP_VITIS_LOOP_119_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'TILE_LOOP_VITIS_LOOP_119_4'.
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_14', mlp_engine.cpp:128) (combination delay: 52.720 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_13', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_12', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_11', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_10', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_s', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_9', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_8', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_7', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_6', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_5', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_4', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_3', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_2', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_1', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add', mlp_engine.cpp:128) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_119_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'fadd' operation 32 bit ('add49_14', mlp_engine.cpp:128) to 'store' operation ('empty_49_write_ln128', mlp_engine.cpp:128) of variable 'add49_14', mlp_engine.cpp:128 32 bit on local variable 'empty_49' (combination delay: 53.553 ns) to honor II or Latency constraint in region 'TILE_LOOP_VITIS_LOOP_119_4'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'TILE_LOOP_VITIS_LOOP_119_4'
+WARNING: [HLS 200-871] Estimated clock period (53.553 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'linear_256_128_Pipeline_TILE_LOOP_VITIS_LOOP_119_4' consists of the following:
+	'load' operation 32 bit ('p_load', mlp_engine.cpp:128) on local variable 'empty_49' [263]  (0.000 ns)
+	'fadd' operation 32 bit ('add49_14', mlp_engine.cpp:128) [589]  (52.720 ns)
+	'store' operation ('empty_49_write_ln128', mlp_engine.cpp:128) of variable 'add49_14', mlp_engine.cpp:128 32 bit on local variable 'empty_49' [628]  (0.833 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.73 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.05 seconds; current allocated memory: 516.145 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 516.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_256_128' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 516.145 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 516.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_128_64_Pipeline_VITIS_LOOP_158_1_VITIS_LOOP_162_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_158_1_VITIS_LOOP_162_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_158_1_VITIS_LOOP_162_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.33 seconds; current allocated memory: 520.336 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 520.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_128_64_Pipeline_TILE_LOOP_VITIS_LOOP_184_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'TILE_LOOP_VITIS_LOOP_184_4'.
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_s', mlp_engine.cpp:193) (combination delay: 52.720 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_14', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_13', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_12', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_11', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_10', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_9', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_8', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_7', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_6', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_5', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_4', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_3', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_2', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add49_1', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('add', mlp_engine.cpp:193) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'TILE_LOOP_VITIS_LOOP_184_4''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'fadd' operation 32 bit ('add49_s', mlp_engine.cpp:193) to 'store' operation ('empty_197_write_ln193', mlp_engine.cpp:193) of variable 'add49_s', mlp_engine.cpp:193 32 bit on local variable 'empty_197' (combination delay: 53.553 ns) to honor II or Latency constraint in region 'TILE_LOOP_VITIS_LOOP_184_4'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'TILE_LOOP_VITIS_LOOP_184_4'
+WARNING: [HLS 200-871] Estimated clock period (53.553 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'linear_128_64_Pipeline_TILE_LOOP_VITIS_LOOP_184_4' consists of the following:
+	'load' operation 32 bit ('p_load', mlp_engine.cpp:193) on local variable 'empty_197' [199]  (0.000 ns)
+	'fadd' operation 32 bit ('add49_s', mlp_engine.cpp:193) [397]  (52.720 ns)
+	'store' operation ('empty_197_write_ln193', mlp_engine.cpp:193) of variable 'add49_s', mlp_engine.cpp:193 32 bit on local variable 'empty_197' [436]  (0.833 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.42 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.8 seconds; current allocated memory: 522.711 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 522.711 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'linear_128_64' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 522.711 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 522.711 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_224_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_224_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_224_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 522.766 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 522.766 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_234_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_234_2'.
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fadd' operation 32 bit ('acc', mlp_engine.cpp:237->task_detection_accel.cpp:43) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'VITIS_LOOP_234_2''.
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-887] Cannot meet target clock period from 'fadd' operation 32 bit ('acc', mlp_engine.cpp:237->task_detection_accel.cpp:43) to 'store' operation ('acc_write_ln232', mlp_engine.cpp:232->task_detection_accel.cpp:43) of variable 'acc', mlp_engine.cpp:237->task_detection_accel.cpp:43 32 bit on local variable 'acc', mlp_engine.cpp:232->task_detection_accel.cpp:43 (combination delay: 13.486 ns) to honor II or Latency constraint in region 'VITIS_LOOP_234_2'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'VITIS_LOOP_234_2'
+WARNING: [HLS 200-871] Estimated clock period (26.139 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'task_detection_accel_Pipeline_VITIS_LOOP_234_2' consists of the following:
+	'fadd' operation 32 bit ('acc', mlp_engine.cpp:237->task_detection_accel.cpp:43) [50]  (12.653 ns)
+	'store' operation ('acc_write_ln232', mlp_engine.cpp:232->task_detection_accel.cpp:43) of variable 'acc', mlp_engine.cpp:237->task_detection_accel.cpp:43 32 bit on local variable 'acc', mlp_engine.cpp:232->task_detection_accel.cpp:43 [52]  (0.833 ns)
+	'load' operation 32 bit ('acc_load', mlp_engine.cpp:237->task_detection_accel.cpp:43) on local variable 'acc', mlp_engine.cpp:232->task_detection_accel.cpp:43 [22]  (0.000 ns)
+	'fadd' operation 32 bit ('acc', mlp_engine.cpp:237->task_detection_accel.cpp:43) [50]  (12.653 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 523.191 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 523.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 523.820 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 524.793 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'task_detection_accel_Pipeline_VITIS_LOOP_29_1' pipeline 'VITIS_LOOP_29_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_29_1/m_axi_gmem0_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_29_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 525.902 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_180_256_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_26_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'linear_180_256_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_26_2' pipeline 'VITIS_LOOP_22_1_VITIS_LOOP_26_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_180_256_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_26_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.42 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.59 seconds; current allocated memory: 540.113 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_180_256_Pipeline_TILE_LOOP_DOT_PRODUCT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'linear_180_256_Pipeline_TILE_LOOP_DOT_PRODUCT' pipeline 'TILE_LOOP_DOT_PRODUCT' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_1_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 15 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_32_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_180_256_Pipeline_TILE_LOOP_DOT_PRODUCT'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.01 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.41 seconds; current allocated memory: 567.230 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_180_256' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'initialized_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2309_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2313_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2317_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2321_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2325_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2329_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2333_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2337_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2341_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2345_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2349_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2353_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2357_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2361_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_180_256/grp_fu_2365_p_opcode' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 15 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_180_256'.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_linear_180_256_linear_180_256_float_float_weights_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_linear_180_256_linear_180_256_float_float_bias_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.89 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.2 seconds; current allocated memory: 600.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_256_128_Pipeline_VITIS_LOOP_93_1_VITIS_LOOP_97_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'linear_256_128_Pipeline_VITIS_LOOP_93_1_VITIS_LOOP_97_2' pipeline 'VITIS_LOOP_93_1_VITIS_LOOP_97_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_256_128_Pipeline_VITIS_LOOP_93_1_VITIS_LOOP_97_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.63 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.51 seconds; current allocated memory: 613.711 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_256_128_Pipeline_TILE_LOOP_VITIS_LOOP_119_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'linear_256_128_Pipeline_TILE_LOOP_VITIS_LOOP_119_4' pipeline 'TILE_LOOP_VITIS_LOOP_119_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_1_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 15 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_32_1_1': 17 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_256_128_Pipeline_TILE_LOOP_VITIS_LOOP_119_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.58 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.82 seconds; current allocated memory: 629.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_256_128' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'initialized_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2309_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2313_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2317_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2321_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2325_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2329_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2333_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2337_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2341_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2345_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2349_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2353_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2357_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2361_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_256_128/grp_fu_2365_p_opcode' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 15 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_256_128'.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_linear_256_128_linear_256_128_float_float_weights_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_linear_256_128_linear_256_128_float_float_bias_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.56 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.79 seconds; current allocated memory: 649.973 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_128_64_Pipeline_VITIS_LOOP_158_1_VITIS_LOOP_162_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_128_64_Pipeline_VITIS_LOOP_158_1_VITIS_LOOP_162_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.43 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.57 seconds; current allocated memory: 656.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_128_64_Pipeline_TILE_LOOP_VITIS_LOOP_184_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'linear_128_64_Pipeline_TILE_LOOP_VITIS_LOOP_184_4' pipeline 'TILE_LOOP_VITIS_LOOP_184_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_1_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 15 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_32_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_128_64_Pipeline_TILE_LOOP_VITIS_LOOP_184_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.48 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.66 seconds; current allocated memory: 666.906 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'linear_128_64' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'initialized_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2309_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2313_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2317_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2321_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2325_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2329_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2333_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2337_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2341_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2345_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2349_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2353_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2357_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2361_p_opcode' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'linear_128_64/grp_fu_2365_p_opcode' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 15 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'linear_128_64'.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_linear_128_64_linear_128_64_float_float_weights_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_linear_128_64_linear_128_64_float_float_bias_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.46 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.6 seconds; current allocated memory: 680.406 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_224_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_224_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.25 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.37 seconds; current allocated memory: 686.250 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_234_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'task_detection_accel_Pipeline_VITIS_LOOP_234_2' pipeline 'VITIS_LOOP_234_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_234_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 687.277 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/output_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/task_id' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/top_k' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'task_detection_accel' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'initialized' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'task_id', 'top_k' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Bundling port 'input_r' and 'output_r' to AXI-Lite port control_r.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 15 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel'.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_linear_64_1_float_float_weights_4_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_in_buf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_l1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_l2_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_l3_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.4 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.57 seconds; current allocated memory: 691.234 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.07 seconds. CPU system time: 0.12 seconds. Elapsed time: 1.5 seconds; current allocated memory: 703.219 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2.25 seconds. CPU system time: 0.16 seconds. Elapsed time: 3.6 seconds; current allocated memory: 721.270 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for task_detection_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for task_detection_accel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 18.67 MHz
+INFO: [HLS 200-112] Total CPU user time: 77.3 seconds. Total CPU system time: 4.8 seconds. Total elapsed time: 110.71 seconds; peak allocated memory: 721.270 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 2m 2s

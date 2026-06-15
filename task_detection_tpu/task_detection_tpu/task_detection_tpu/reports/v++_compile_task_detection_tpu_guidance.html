@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2025.2 (lin64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Sun Jun 14 16:33:35 2026</td></tr>
+<tr><td><b>Date</b></td><td>Mon Jun 15 17:44:57 2026</td></tr>
 <tr><td><b>Host</b></td><td>localhost.localdomain running 64-bit Red Hat Enterprise Linux 10.2 (Coughlan)"
 RELEASE_TYPE=stable</td></tr>
 <tr><td><b>Command</b></td><td>/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/hls_config.cfg --work_dir task_detection_tpu </td></tr>
@@ -3417,7 +3417,7 @@ RELEASE_TYPE=stable</td></tr>
 <tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
 </table>
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
-<pre>Violations found: 29
+<pre>Violations found: 13
 </pre>
 <pre>Rule Specs Violated: 3
 </pre>
@@ -3435,7 +3435,7 @@ RELEASE_TYPE=stable</td></tr>
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">15</td>
+<td align="left">10</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3446,27 +3446,6 @@ RELEASE_TYPE=stable</td></tr>
 </tr>
 <tr>
 <td align="left">5</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=41">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a>) to 'store' operation ('acc_1_write_ln36', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=36">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=41">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a> 32 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=36">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a> (combination delay: 53.553 ns) to honor II or Latency constraint in region 'VITIS_LOOP_32_3_VITIS_LOOP_38_4'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">19</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">12</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3476,44 +3455,7 @@ RELEASE_TYPE=stable</td></tr>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">26</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">The critical path in module 'task_detection_accel_Pipeline_VITIS_LOOP_166_2' consists of the following:
-	'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=169">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a>) [25]  (12.653 ns)
-	'store' operation ('acc_write_ln164', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=164">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=169">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a> 32 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=164">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a> [27]  (0.833 ns)
-	'load' operation 32 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=169">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=164">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a> [15]  (0.000 ns)
-	'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=169">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a>) [25]  (12.653 ns)
-
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">16</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">Cannot meet target clock period in 'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=131">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a>) (combination delay: 52.720 ns) to honor II constraint (II=1) in region 'loop 'VITIS_LOOP_122_3_VITIS_LOOP_128_4''.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">13</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">27</td>
+<td align="left">11</td>
 <td align="left">Interface</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3523,113 +3465,13 @@ RELEASE_TYPE=stable</td></tr>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">17</td>
+<td align="left">12</td>
 <td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=131">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a>) to 'store' operation ('acc_write_ln126', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=126">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=131">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a> 32 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=126">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a> (combination delay: 53.553 ns) to honor II or Latency constraint in region 'VITIS_LOOP_122_3_VITIS_LOOP_128_4'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.task_detection_accel.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">24</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.task_detection_accel.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">22</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">Cannot meet target clock period in 'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=169">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a>) (combination delay: 12.653 ns) to honor II constraint (II=1) in region 'loop 'VITIS_LOOP_166_2''.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.task_detection_accel.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">25</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.task_detection_accel.Kernel</td>
 <td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">23</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=169">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a>) to 'store' operation ('acc_write_ln164', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=164">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=169">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a> 32 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=164">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=43">task_detection_accel.cpp</a> (combination delay: 13.486 ns) to honor II or Latency constraint in region 'VITIS_LOOP_166_2'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">10</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">Cannot meet target clock period in 'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=86">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a>) (combination delay: 52.720 ns) to honor II constraint (II=1) in region 'loop 'VITIS_LOOP_77_3_VITIS_LOOP_83_4''.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">20</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">The critical path in module 'task_detection_accel_Pipeline_VITIS_LOOP_122_3_VITIS_LOOP_128_4' consists of the following:
-	'load' operation 32 bit ('acc_load', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=131">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=126">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a> [38]  (0.000 ns)
-	'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=131">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a>) [49]  (52.720 ns)
-	'store' operation ('acc_write_ln126', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=126">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=131">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a> 32 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=126">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=41">task_detection_accel.cpp</a> [58]  (0.833 ns)
-
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">Cannot meet target clock period from 'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=86">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a>) to 'store' operation ('acc_write_ln81', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=81">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=86">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a> 32 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=81">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a> (combination delay: 53.553 ns) to honor II or Latency constraint in region 'VITIS_LOOP_77_3_VITIS_LOOP_83_4'.
-</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
@@ -3644,28 +3486,23 @@ RELEASE_TYPE=stable</td></tr>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">21</td>
+<td align="left">13</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.task_detection_accel.Kernel</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">8</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.task_detection_accel.Throughput</td>
 <td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">The critical path in module 'task_detection_accel_Pipeline_VITIS_LOOP_32_3_VITIS_LOOP_38_4' consists of the following:
-	'load' operation 32 bit ('acc_1_load', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=41">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=36">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a> [38]  (0.000 ns)
-	'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=41">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a>) [49]  (52.720 ns)
-	'store' operation ('acc_1_write_ln36', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=36">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=41">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a> 32 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=36">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a> [58]  (0.833 ns)
-
-</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
@@ -3675,16 +3512,6 @@ RELEASE_TYPE=stable</td></tr>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.task_detection_accel.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">28</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
 <td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
@@ -3699,53 +3526,37 @@ RELEASE_TYPE=stable</td></tr>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">7</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">29</td>
-<td align="left">Kernel</td>
+<td align="left">2</td>
+<td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.task_detection_accel.Throughput</td>
 <td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">14</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
+<td align="left">7</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">The critical path in module 'task_detection_accel_Pipeline_VITIS_LOOP_77_3_VITIS_LOOP_83_4' consists of the following:
-	'load' operation 32 bit ('acc_load', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=86">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=81">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a> [38]  (0.000 ns)
-	'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=86">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a>) [49]  (52.720 ns)
-	'store' operation ('acc_write_ln81', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=81">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=86">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a> 32 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=81">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=39">task_detection_accel.cpp</a> [58]  (0.833 ns)
-
-</td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.task_detection_accel.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.task_detection_accel.Throughput</td>
+<td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">4</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.task_detection_accel.Kernel</td>
-<td align="left">Cannot meet target clock period in 'fadd' operation 32 bit ('acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp#line=41">mlp_engine.cpp</a>-><a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp#line=37">task_detection_accel.cpp</a>) (combination delay: 52.720 ns) to honor II constraint (II=1) in region 'loop 'VITIS_LOOP_32_3_VITIS_LOOP_38_4''.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">18</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>

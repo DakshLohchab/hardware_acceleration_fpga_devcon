@@ -1,38 +1,12 @@
 # This script segment is generated automatically by AutoPilot
 
-set name task_detection_accel_fmul_32ns_32ns_32_3_max_dsp_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fmul} IMPL {maxdsp} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler task_detection_accel_ctlz_16_16_1_1 BINDTYPE {op} TYPE {ctlz} IMPL {auto}
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler task_detection_accel_weights_1_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler task_detection_accel_bias_1_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler task_detection_accel_weights_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler task_detection_accel_bias_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler task_detection_accel_weights_2_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler task_detection_accel_bias_2_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler task_detection_accel_linear_64_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_41_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
@@ -105,7 +79,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 51 \
+			id 1163 \
 			corename task_detection_accel_control_axilite \
 			name task_detection_accel_control_s_axi \
 			ports {$port_control} \
@@ -151,7 +125,7 @@ dict set axilite_register_dict control_r $port_control_r
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 52 \
+			id 1164 \
 			corename task_detection_accel_control_r_axilite \
 			name task_detection_accel_control_r_s_axi \
 			ports {$port_control_r} \

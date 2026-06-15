@@ -18,33 +18,33 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>53.553</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.300</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>87339</Best-caseLatency>
-<Average-caseLatency>130895</Average-caseLatency>
-<Worst-caseLatency>174451</Worst-caseLatency>
-<Best-caseRealTimeLatency>4.677 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>7.010 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>9.342 ms</Worst-caseRealTimeLatency>
-<Interval-min>87340</Interval-min>
-<Interval-max>174452</Interval-max>
+<Best-caseLatency>5745</Best-caseLatency>
+<Average-caseLatency>49301</Average-caseLatency>
+<Worst-caseLatency>92857</Worst-caseLatency>
+<Best-caseRealTimeLatency>57.450 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.493 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.929 ms</Worst-caseRealTimeLatency>
+<Interval-min>5746</Interval-min>
+<Interval-max>92858</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>task_detection_accel.cpp:6</SourceLocation>
+<SourceLocation>task_detection_accel.cpp:7</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>218</BRAM_18K>
-<DSP>11</DSP>
-<FF>3512</FF>
-<LUT>5318</LUT>
+<BRAM_18K>131</BRAM_18K>
+<DSP>49</DSP>
+<FF>6201</FF>
+<LUT>29422</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

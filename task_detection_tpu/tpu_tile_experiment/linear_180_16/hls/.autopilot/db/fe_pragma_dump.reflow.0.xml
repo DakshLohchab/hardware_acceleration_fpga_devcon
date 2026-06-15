@@ -1,0 +1,7 @@
+<pragmas>
+<pragma file="../task_detection_tpu/mlp_engine.cpp" line="226" pragmaType="unroll" parentfunction="linear_180_16" factor="-1" skip_exit_check="0"/>
+<pragma file="../task_detection_tpu/mlp_engine.cpp" line="213" pragmaType="pipeline" parentfunction="linear_180_16" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../task_detection_tpu/mlp_engine.cpp" line="219" pragmaType="unroll" parentfunction="linear_180_16" factor="-1" skip_exit_check="0"/>
+<pragma file="../task_detection_tpu/mlp_engine.cpp" line="207" pragmaType="unroll" parentfunction="linear_180_16" factor="-1" skip_exit_check="0"/>
+<pragma file="../task_detection_tpu/mlp_engine.cpp" line="203" pragmaType="array_partition" parentfunction="linear_180_16" dim="1" factor="0" mode="complete" dynamic="0" variable="acc"/>
+</pragmas>

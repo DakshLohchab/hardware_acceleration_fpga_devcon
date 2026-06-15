@@ -3,170 +3,266 @@ MainSourceFile:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_
 Diagnostics:
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_19_1:  '
-      FilePath:        mlp_engine.cpp
-      FileOffset:      19
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          9994
+          Offset:          280607
           Length:          0
-          ReplacementText: 'VITIS_LOOP_19_1: '
+          ReplacementText: 'VITIS_LOOP_676_1: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_23_2:  '
-      FilePath:        mlp_engine.cpp
-      FileOffset:      23
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          10074
+          Offset:          281078
           Length:          0
-          ReplacementText: 'VITIS_LOOP_23_2: '
+          ReplacementText: 'VITIS_LOOP_690_1: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_32_3:  '
-      FilePath:        mlp_engine.cpp
-      FileOffset:      32
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          10220
+          Offset:          281550
           Length:          0
-          ReplacementText: 'VITIS_LOOP_32_3: '
+          ReplacementText: 'VITIS_LOOP_704_1: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_38_4:  '
-      FilePath:        mlp_engine.cpp
-      FileOffset:      38
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          10337
+          Offset:          628311
           Length:          0
-          ReplacementText: 'VITIS_LOOP_38_4: '
+          ReplacementText: 'VITIS_LOOP_1251_1: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_64_1:  '
+      Message:         'Added loop label VITIS_LOOP_22_1:  '
       FilePath:        mlp_engine.cpp
-      FileOffset:      64
+      FileOffset:      22
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          10703
+          Offset:          2345315
           Length:          0
-          ReplacementText: 'VITIS_LOOP_64_1: '
+          ReplacementText: 'VITIS_LOOP_22_1: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_68_2:  '
+      Message:         'Added loop label VITIS_LOOP_26_2:  '
       FilePath:        mlp_engine.cpp
-      FileOffset:      68
+      FileOffset:      26
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          10783
+          Offset:          2345395
           Length:          0
-          ReplacementText: 'VITIS_LOOP_68_2: '
+          ReplacementText: 'VITIS_LOOP_26_2: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_77_3:  '
+      Message:         'Added loop label VITIS_LOOP_94_1:  '
       FilePath:        mlp_engine.cpp
-      FileOffset:      77
+      FileOffset:      94
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          10929
+          Offset:          2346559
           Length:          0
-          ReplacementText: 'VITIS_LOOP_77_3: '
+          ReplacementText: 'VITIS_LOOP_94_1: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_83_4:  '
+      Message:         'Added loop label VITIS_LOOP_98_2:  '
       FilePath:        mlp_engine.cpp
-      FileOffset:      83
+      FileOffset:      98
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          11046
+          Offset:          2346639
           Length:          0
-          ReplacementText: 'VITIS_LOOP_83_4: '
+          ReplacementText: 'VITIS_LOOP_98_2: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_109_1:  '
+      Message:         'Added loop label VITIS_LOOP_114_3:  '
       FilePath:        mlp_engine.cpp
-      FileOffset:      109
+      FileOffset:      114
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          11408
+          Offset:          2346922
           Length:          0
-          ReplacementText: 'VITIS_LOOP_109_1: '
+          ReplacementText: 'VITIS_LOOP_114_3: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_113_2:  '
+      Message:         'Added loop label VITIS_LOOP_120_4:  '
       FilePath:        mlp_engine.cpp
-      FileOffset:      113
+      FileOffset:      120
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          11487
+          Offset:          2347040
           Length:          0
-          ReplacementText: 'VITIS_LOOP_113_2: '
+          ReplacementText: 'VITIS_LOOP_120_4: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_122_3:  '
+      Message:         'Added loop label VITIS_LOOP_126_5:  '
       FilePath:        mlp_engine.cpp
-      FileOffset:      122
+      FileOffset:      126
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          11633
+          Offset:          2347153
           Length:          0
-          ReplacementText: 'VITIS_LOOP_122_3: '
+          ReplacementText: 'VITIS_LOOP_126_5: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_128_4:  '
+      Message:         'Added loop label VITIS_LOOP_135_6:  '
       FilePath:        mlp_engine.cpp
-      FileOffset:      128
+      FileOffset:      135
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          11747
+          Offset:          2347345
           Length:          0
-          ReplacementText: 'VITIS_LOOP_128_4: '
+          ReplacementText: 'VITIS_LOOP_135_6: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_156_1:  '
+      Message:         'Added loop label VITIS_LOOP_160_1:  '
       FilePath:        mlp_engine.cpp
-      FileOffset:      156
+      FileOffset:      160
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          12127
+          Offset:          2347736
           Length:          0
-          ReplacementText: 'VITIS_LOOP_156_1: '
+          ReplacementText: 'VITIS_LOOP_160_1: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_166_2:  '
+      Message:         'Added loop label VITIS_LOOP_164_2:  '
       FilePath:        mlp_engine.cpp
-      FileOffset:      166
+      FileOffset:      164
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
-          Offset:          12276
+          Offset:          2347815
           Length:          0
-          ReplacementText: 'VITIS_LOOP_166_2: '
+          ReplacementText: 'VITIS_LOOP_164_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_180_3:  '
+      FilePath:        mlp_engine.cpp
+      FileOffset:      180
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
+          Offset:          2348098
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_180_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_186_4:  '
+      FilePath:        mlp_engine.cpp
+      FileOffset:      186
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
+          Offset:          2348216
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_186_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_192_5:  '
+      FilePath:        mlp_engine.cpp
+      FileOffset:      192
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
+          Offset:          2348329
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_192_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_201_6:  '
+      FilePath:        mlp_engine.cpp
+      FileOffset:      201
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
+          Offset:          2348521
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_201_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_227_1:  '
+      FilePath:        mlp_engine.cpp
+      FileOffset:      227
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
+          Offset:          2348870
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_227_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_237_2:  '
+      FilePath:        mlp_engine.cpp
+      FileOffset:      237
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
+          Offset:          2349020
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_237_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_264_1:  '
+      FilePath:        mlp_engine.cpp
+      FileOffset:      264
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
+          Offset:          2349397
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_264_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_266_2:  '
+      FilePath:        mlp_engine.cpp
+      FileOffset:      266
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/mlp_engine.pp.0.cpp'
+          Offset:          2349447
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_266_2: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu'
 ...
