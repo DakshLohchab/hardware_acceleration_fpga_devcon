@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../../task_detection_tpu/pe_tb.cpp in debug mode
+   Compiling ../../../../../task_detection_tpu/pe.cpp in debug mode
+   Generating csim.exe
+Starting PE Simulation...
+Cycle 1:
+  Acc   : 6 (Expected 6)
+  Out A : 2 (Expected 2)
+  Out B : 3 (Expected 3)
+Cycle 2:
+  Acc   : 12 (Expected 12)
+  Out A : 4 (Expected 4)
+  Out B : 1.5 (Expected 1.5)
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

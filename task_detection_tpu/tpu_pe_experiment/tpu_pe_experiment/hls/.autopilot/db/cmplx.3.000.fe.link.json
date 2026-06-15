@@ -1,0 +1,42 @@
+{
+  "0": {
+    "basicblocks": 33,
+    "calls": "1",
+    "control_depth": 2,
+    "def_use_depth": 2,
+    "file": "systolic_4x4.cpp",
+    "fileloc": 7,
+    "instructions": 126,
+    "loads": {
+      "G": 1,
+      "L": 3,
+      "T": 2
+    },
+    "memory_accesses": 14,
+    "name": "systolic_4x4",
+    "stores": {
+      "G": 1,
+      "L": 4,
+      "T": 1
+    },
+    "total_instructions": 555
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "pe.cpp",
+    "fileloc": 7,
+    "instructions": 16,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 6,
+    "name": "mac_pe",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 379
+  }
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "directory": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment",
+    "arguments": [
+      "/home/dlohchab/Xilinx/2025.2/Vitis/lnx64/tools/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=systolic_4x4",
+      "-c",
+      "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_2x2.cpp"
+    ],
+    "file": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_2x2.cpp"
+  },
+  {
+    "directory": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment",
+    "arguments": [
+      "/home/dlohchab/Xilinx/2025.2/Vitis/lnx64/tools/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=systolic_4x4",
+      "-c",
+      "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_4x4.cpp"
+    ],
+    "file": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_4x4.cpp"
+  },
+  {
+    "directory": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment",
+    "arguments": [
+      "/home/dlohchab/Xilinx/2025.2/Vitis/lnx64/tools/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=systolic_4x4",
+      "-c",
+      "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/pe.cpp"
+    ],
+    "file": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/pe.cpp"
+  },
+  {
+    "directory": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment",
+    "arguments": [
+      "/home/dlohchab/Xilinx/2025.2/Vitis/lnx64/tools/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/home/dlohchab/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_4x4_tb.cpp"
+    ],
+    "file": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_4x4_tb.cpp"
+  }
+]

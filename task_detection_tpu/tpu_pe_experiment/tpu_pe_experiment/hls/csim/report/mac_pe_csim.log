@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../../task_detection_tpu/systolic_2x2_tb.cpp in debug mode
+   Compiling ../../../../../task_detection_tpu/systolic_2x2.cpp in debug mode
+   Compiling ../../../../../task_detection_tpu/pe.cpp in debug mode
+   Generating csim.exe
+--- Resetting Array ---
+--- Pumping Data ---
+--- Final Output ---
+C[0][0] = 19
+C[0][1] = 12
+C[1][0] = 21
+C[1][1] = -14
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

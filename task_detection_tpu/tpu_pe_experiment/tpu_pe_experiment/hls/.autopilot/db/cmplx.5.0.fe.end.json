@@ -1,0 +1,22 @@
+{
+    "0": {
+        "name": "systolic_4x4",
+        "file": "..\/task_detection_tpu\/systolic_4x4.cpp",
+        "fileloc": "7",
+        "instructions": "233",
+        "total_instructions": "233",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "71",
+        "control_depth": "1",
+        "def_use_depth": "6",
+        "loads": {
+            "G": "16",
+            "T": "8"
+        },
+        "stores": {
+            "G": "30",
+            "T": "16"
+        }
+    }
+}

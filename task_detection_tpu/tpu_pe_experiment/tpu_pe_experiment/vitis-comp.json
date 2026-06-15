@@ -1,0 +1,9 @@
+{
+  "name": "tpu_pe_experiment",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}

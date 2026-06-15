@@ -49,3 +49,50 @@ comp.run(operation="C_SIMULATION")
 
 comp.run(operation="SYNTHESIS")
 
+comp = client.create_hls_component(name = "tpu_pe_experiment",cfg_file = ["hls_config.cfg"],template = "empty_hls_component")
+
+cfg = client.get_config_file(path="/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/hls_config.cfg")
+
+cfg.set_values(key="syn.file", values=["pe.cpp"])
+
+cfg.set_values(key="syn.file", values=[])
+
+cfg.set_values(key="syn.blackbox.file", values=[])
+
+cfg.set_values(key="syn.file", values=["../task_detection_tpu/pe.cpp"])
+
+cfg.set_values(key="tb.file", values=["../task_detection_tpu/pe_tb.cpp"])
+
+comp = client.get_component(name="tpu_pe_experiment")
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+
+cfg.set_values(key="syn.file", values=["../task_detection_tpu/pe.cpp", "../task_detection_tpu/systolic_2x2.cpp"])
+
+cfg.set_values(key="tb.file", values=["../task_detection_tpu/pe_tb.cpp", "../task_detection_tpu/systolic_2x2_tb.cpp"])
+
+cfg.set_values(key="tb.file", values=["../task_detection_tpu/systolic_2x2_tb.cpp"])
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="SYNTHESIS")
+
+cfg.set_values(key="syn.file", values=["../task_detection_tpu/pe.cpp", "../task_detection_tpu/systolic_2x2.cpp", "../task_detection_tpu/systolic_4x4.cpp"])
+
+cfg.set_values(key="tb.file", values=["../task_detection_tpu/systolic_4x4_tb.cpp"])
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+

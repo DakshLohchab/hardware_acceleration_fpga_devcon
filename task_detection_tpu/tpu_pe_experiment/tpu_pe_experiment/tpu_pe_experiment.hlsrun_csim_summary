@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/tpu_pe_experiment.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun 15 19:23:11 2026",
+ "timestampMillis": "1781531591273",
+ "buildStep": {
+  "cmdId": "235c87eb-633c-47c3-b230-ecaecabadda5",
+  "name": "vitis-run",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/logs/tpu_pe_experiment.steps.log",
+  "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/hls_config.cfg --work_dir tpu_pe_experiment ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/hls_config.cfg",
+   "--work_dir",
+   "tpu_pe_experiment"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 15 19:23:11 2026",
+ "timestampMillis": "1781531591273",
+ "status": {
+  "cmdId": "235c87eb-633c-47c3-b230-ecaecabadda5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jun 15 19:23:17 2026",
+ "timestampMillis": "1781531597829",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "systolic_4x4",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/pe.cpp",
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_2x2.cpp",
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_4x4.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun 15 19:23:17 2026",
+ "timestampMillis": "1781531597830",
+ "buildStep": {
+  "cmdId": "0fb4a709-817a-4e38-934b-05ae717510ab",
+  "name": "",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 15 19:23:17 2026",
+ "timestampMillis": "1781531597831",
+ "status": {
+  "cmdId": "0fb4a709-817a-4e38-934b-05ae717510ab",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 15 19:23:31 2026",
+ "timestampMillis": "1781531611712",
+ "status": {
+  "cmdId": "0fb4a709-817a-4e38-934b-05ae717510ab",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 15 19:23:31 2026",
+ "timestampMillis": "1781531611842",
+ "status": {
+  "cmdId": "235c87eb-633c-47c3-b230-ecaecabadda5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun 15 19:23:31 2026",
+ "timestampMillis": "1781531611843",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun 15 19:23:31 2026",
+ "timestampMillis": "1781531611843",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
