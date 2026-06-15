@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_8x8/matmul_tile_8x8/matmul_tile_8x8.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun 15 18:20:34 2026",
+ "timestampMillis": "1781527834133",
+ "buildStep": {
+  "cmdId": "3120058a-2d75-4cf0-baf5-1541eddb9486",
+  "name": "vitis-run",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_8x8/matmul_tile_8x8/logs/matmul_tile_8x8.steps.log",
+  "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_8x8/hls_config.cfg --work_dir matmul_tile_8x8 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_8x8/hls_config.cfg",
+   "--work_dir",
+   "matmul_tile_8x8"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_8x8"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 15 18:20:34 2026",
+ "timestampMillis": "1781527834134",
+ "status": {
+  "cmdId": "3120058a-2d75-4cf0-baf5-1541eddb9486",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jun 15 18:20:42 2026",
+ "timestampMillis": "1781527842874",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matmul_tile_16x16",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_core.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun 15 18:20:42 2026",
+ "timestampMillis": "1781527842876",
+ "buildStep": {
+  "cmdId": "a64e6e9d-c1f9-4f65-b02f-1b03e8d6f833",
+  "name": "",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_8x8/matmul_tile_8x8/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_tile_8x8"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 15 18:20:42 2026",
+ "timestampMillis": "1781527842876",
+ "status": {
+  "cmdId": "a64e6e9d-c1f9-4f65-b02f-1b03e8d6f833",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 15 18:20:55 2026",
+ "timestampMillis": "1781527855100",
+ "status": {
+  "cmdId": "a64e6e9d-c1f9-4f65-b02f-1b03e8d6f833",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun 15 18:20:55 2026",
+ "timestampMillis": "1781527855353",
+ "status": {
+  "cmdId": "3120058a-2d75-4cf0-baf5-1541eddb9486",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun 15 18:20:55 2026",
+ "timestampMillis": "1781527855354",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun 15 18:20:55 2026",
+ "timestampMillis": "1781527855355",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

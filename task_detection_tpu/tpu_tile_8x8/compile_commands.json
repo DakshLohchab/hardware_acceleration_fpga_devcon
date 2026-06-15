@@ -6,7 +6,7 @@
       "--gcc-toolchain=/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls",
       "-hls-syn-headers-dir=/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot",
-      "-fhlstoplevel=matmul_tile_8x8",
+      "-fhlstoplevel=matmul_tile_16x16",
       "-c",
       "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_core.cpp"
     ],

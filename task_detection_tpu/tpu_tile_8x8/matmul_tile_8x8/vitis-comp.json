@@ -1,0 +1,9 @@
+{
+  "name": "matmul_tile_8x8",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}

@@ -1,0 +1,128 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matmul_tile_16x16" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matmul_tile_16x16" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/tpu_core.cpp:9:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="matmul_tile_16x16" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=A complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/tpu_core.cpp:10:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="matmul_tile_16x16" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=B complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/tpu_core.cpp:18:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="matmul_tile_16x16" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/tpu_core.cpp:25:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="matmul_tile_16x16" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:23:13" msg_body="Loop 'K_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="K_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Unrolling loop 'K_LOOP' (../task_detection_tpu/tpu_core.cpp:23:13) in function 'matmul_tile_16x16' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../task_detection_tpu/tpu_core.cpp:23:13" LoopName="K_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Applying array_partition to 'A': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="A"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Applying array_partition to 'B': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="B"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'C' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="C"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_15' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_14' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_13' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_12' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_11' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_10' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_9' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_8' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_7' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_6' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_5' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_4' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_3' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_2' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_1' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'B_0' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="B_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_15' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_14' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_13' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_12' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_11' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_10' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_9' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_8' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_7' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_6' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_5' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_4' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_3' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_2' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_1' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/tpu_core.cpp:8:0" msg_body="Aggregating bram variable 'A_0' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="A_0"/>
+    </msg>
+</xilinx:hls_fe_msgs>

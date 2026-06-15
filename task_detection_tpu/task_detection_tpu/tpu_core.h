@@ -5,10 +5,10 @@
 
 typedef ap_fixed<16,6> data_t;
 
-void matmul_tile_8x8(
-    data_t A[8][8],
-    data_t B[8][8],
-    data_t C[8][8]
+void matmul_tile_16x16(
+    data_t A[16][16],
+    data_t B[16][16],
+    data_t C[16][16]
 );
 
 #endif

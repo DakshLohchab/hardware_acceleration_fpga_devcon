@@ -40,3 +40,12 @@ cfg.set_values(key="tb.file", values=["./task_detection_accel_tb.cpp", "tpu_tb.c
 
 comp = client.create_hls_component(name = "tpu_tile_8x8",cfg_file = ["hls_config.cfg"],template = "empty_hls_component")
 
+comp = client.get_component(name="tpu_tile_8x8")
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+
