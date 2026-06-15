@@ -2,7 +2,7 @@
   {
     "csim": false,
     "functionLabel": "",
-    "functionName": "systolic_8x8",
+    "functionName": "systolic_16x16",
     "id": 0,
     "ifcond": "",
     "insert_position": "",
@@ -12,7 +12,7 @@
       "option": [
         {
           "name": "name",
-          "value": "systolic_8x8"
+          "value": "systolic_16x16"
         }
       ]
     },

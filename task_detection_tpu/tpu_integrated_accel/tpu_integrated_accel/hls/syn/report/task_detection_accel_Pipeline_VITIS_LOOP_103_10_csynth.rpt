@@ -1,0 +1,149 @@
+
+
+================================================================
+== Vitis HLS Report for 'task_detection_accel_Pipeline_VITIS_LOOP_103_10'
+================================================================
+* Date:           Mon Jun 15 23:15:15 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        tpu_integrated_accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k325t-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.760 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       10|       10|  0.100 us|  0.100 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_103_10  |        8|        8|         2|          1|          1|     8|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      65|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|      36|    -|
+|Register         |        -|    -|      14|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|      14|     101|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      890|  840|  407600|  203800|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln103_1_fu_134_p2  |         +|   0|  0|  23|          16|          16|
+    |add_ln103_2_fu_99_p2   |         +|   0|  0|  13|           4|           1|
+    |add_ln103_fu_114_p2    |         +|   0|  0|  14|           7|           7|
+    |icmp_ln103_fu_93_p2    |      icmp|   0|  0|  13|           4|           5|
+    |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0|  65|          32|          31|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i       |   9|          2|    4|          8|
+    |i_9_fu_36                |   9|          2|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+---+----+-----+-----------+
+    |           Name          | FF| LUT| Bits| Const Bits|
+    +-------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                |  1|   0|    1|          0|
+    |ap_done_reg              |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
+    |i_9_fu_36                |  4|   0|    4|          0|
+    |zext_ln103_2_reg_151     |  7|   0|   64|         57|
+    +-------------------------+---+----+-----+-----------+
+    |Total                    | 14|   0|   71|         57|
+    +-------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+-------------------------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |                  Source Object                  |    C Type    |
++-------------------+-----+-----+------------+-------------------------------------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  task_detection_accel_Pipeline_VITIS_LOOP_103_10|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  task_detection_accel_Pipeline_VITIS_LOOP_103_10|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  task_detection_accel_Pipeline_VITIS_LOOP_103_10|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  task_detection_accel_Pipeline_VITIS_LOOP_103_10|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  task_detection_accel_Pipeline_VITIS_LOOP_103_10|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  task_detection_accel_Pipeline_VITIS_LOOP_103_10|  return value|
+|shl_ln             |   in|    7|     ap_none|                                           shl_ln|        scalar|
+|y_tile_1_address0  |  out|    3|   ap_memory|                                         y_tile_1|         array|
+|y_tile_1_ce0       |  out|    1|   ap_memory|                                         y_tile_1|         array|
+|y_tile_1_q0        |   in|   16|   ap_memory|                                         y_tile_1|         array|
+|l2_out_address0    |  out|    7|   ap_memory|                                           l2_out|         array|
+|l2_out_ce0         |  out|    1|   ap_memory|                                           l2_out|         array|
+|l2_out_we0         |  out|    1|   ap_memory|                                           l2_out|         array|
+|l2_out_d0          |  out|   16|   ap_memory|                                           l2_out|         array|
+|bias_1_address0    |  out|    7|   ap_memory|                                           bias_1|         array|
+|bias_1_ce0         |  out|    1|   ap_memory|                                           bias_1|         array|
+|bias_1_q0          |   in|    1|   ap_memory|                                           bias_1|         array|
++-------------------+-----+-----+------------+-------------------------------------------------+--------------+
+

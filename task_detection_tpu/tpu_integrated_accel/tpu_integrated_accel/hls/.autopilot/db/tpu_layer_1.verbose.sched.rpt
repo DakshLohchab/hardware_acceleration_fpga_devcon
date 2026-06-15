@@ -1,0 +1,391 @@
+
+
+================================================================
+== Vitis HLS Report for 'tpu_layer_1'
+================================================================
+* Date:           Mon Jun 15 23:15:03 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        tpu_integrated_accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k325t-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.669 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    35521|    82629|  0.355 ms|  0.826 ms|  35521|  82629|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_62_8   |    35328|    35328|      1104|          -|          -|    32|        no|
+        | + VITIS_LOOP_64_9  |     1081|     1081|        47|          -|          -|    23|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 13
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 13 
+10 --> 11 
+11 --> 12 
+12 --> 9 
+13 --> 6 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%w_tile_63_load_loc = alloca i64 1"   --->   Operation 14 'alloca' 'w_tile_63_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%w_tile_62_load_loc = alloca i64 1"   --->   Operation 15 'alloca' 'w_tile_62_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%w_tile_61_load_loc = alloca i64 1"   --->   Operation 16 'alloca' 'w_tile_61_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%w_tile_60_load_loc = alloca i64 1"   --->   Operation 17 'alloca' 'w_tile_60_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%w_tile_59_load_loc = alloca i64 1"   --->   Operation 18 'alloca' 'w_tile_59_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%w_tile_58_load_loc = alloca i64 1"   --->   Operation 19 'alloca' 'w_tile_58_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%w_tile_57_load_loc = alloca i64 1"   --->   Operation 20 'alloca' 'w_tile_57_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%w_tile_56_load_loc = alloca i64 1"   --->   Operation 21 'alloca' 'w_tile_56_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%w_tile_55_load_loc = alloca i64 1"   --->   Operation 22 'alloca' 'w_tile_55_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%w_tile_54_load_loc = alloca i64 1"   --->   Operation 23 'alloca' 'w_tile_54_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%w_tile_53_load_loc = alloca i64 1"   --->   Operation 24 'alloca' 'w_tile_53_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%w_tile_52_load_loc = alloca i64 1"   --->   Operation 25 'alloca' 'w_tile_52_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%w_tile_51_load_loc = alloca i64 1"   --->   Operation 26 'alloca' 'w_tile_51_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%w_tile_50_load_loc = alloca i64 1"   --->   Operation 27 'alloca' 'w_tile_50_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%w_tile_49_load_loc = alloca i64 1"   --->   Operation 28 'alloca' 'w_tile_49_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%w_tile_48_load_loc = alloca i64 1"   --->   Operation 29 'alloca' 'w_tile_48_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%w_tile_47_load_loc = alloca i64 1"   --->   Operation 30 'alloca' 'w_tile_47_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%w_tile_46_load_loc = alloca i64 1"   --->   Operation 31 'alloca' 'w_tile_46_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%w_tile_45_load_loc = alloca i64 1"   --->   Operation 32 'alloca' 'w_tile_45_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%w_tile_44_load_loc = alloca i64 1"   --->   Operation 33 'alloca' 'w_tile_44_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%w_tile_43_load_loc = alloca i64 1"   --->   Operation 34 'alloca' 'w_tile_43_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%w_tile_42_load_loc = alloca i64 1"   --->   Operation 35 'alloca' 'w_tile_42_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%w_tile_41_load_loc = alloca i64 1"   --->   Operation 36 'alloca' 'w_tile_41_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%w_tile_40_load_loc = alloca i64 1"   --->   Operation 37 'alloca' 'w_tile_40_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%w_tile_39_load_loc = alloca i64 1"   --->   Operation 38 'alloca' 'w_tile_39_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%w_tile_38_load_loc = alloca i64 1"   --->   Operation 39 'alloca' 'w_tile_38_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%w_tile_37_load_loc = alloca i64 1"   --->   Operation 40 'alloca' 'w_tile_37_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%w_tile_36_load_loc = alloca i64 1"   --->   Operation 41 'alloca' 'w_tile_36_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%w_tile_35_load_loc = alloca i64 1"   --->   Operation 42 'alloca' 'w_tile_35_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%w_tile_34_load_loc = alloca i64 1"   --->   Operation 43 'alloca' 'w_tile_34_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%w_tile_33_load_loc = alloca i64 1"   --->   Operation 44 'alloca' 'w_tile_33_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%w_tile_32_load_loc = alloca i64 1"   --->   Operation 45 'alloca' 'w_tile_32_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%w_tile_31_load_loc = alloca i64 1"   --->   Operation 46 'alloca' 'w_tile_31_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%w_tile_30_load_loc = alloca i64 1"   --->   Operation 47 'alloca' 'w_tile_30_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%w_tile_29_load_loc = alloca i64 1"   --->   Operation 48 'alloca' 'w_tile_29_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%w_tile_28_load_loc = alloca i64 1"   --->   Operation 49 'alloca' 'w_tile_28_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%w_tile_27_load_loc = alloca i64 1"   --->   Operation 50 'alloca' 'w_tile_27_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%w_tile_26_load_loc = alloca i64 1"   --->   Operation 51 'alloca' 'w_tile_26_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%w_tile_25_load_loc = alloca i64 1"   --->   Operation 52 'alloca' 'w_tile_25_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%w_tile_24_load_loc = alloca i64 1"   --->   Operation 53 'alloca' 'w_tile_24_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%w_tile_23_load_loc = alloca i64 1"   --->   Operation 54 'alloca' 'w_tile_23_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%w_tile_22_load_loc = alloca i64 1"   --->   Operation 55 'alloca' 'w_tile_22_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%w_tile_21_load_loc = alloca i64 1"   --->   Operation 56 'alloca' 'w_tile_21_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%w_tile_20_load_loc = alloca i64 1"   --->   Operation 57 'alloca' 'w_tile_20_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%w_tile_19_load_loc = alloca i64 1"   --->   Operation 58 'alloca' 'w_tile_19_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%w_tile_18_load_loc = alloca i64 1"   --->   Operation 59 'alloca' 'w_tile_18_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%w_tile_17_load_loc = alloca i64 1"   --->   Operation 60 'alloca' 'w_tile_17_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%w_tile_16_load_loc = alloca i64 1"   --->   Operation 61 'alloca' 'w_tile_16_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%w_tile_15_load_loc = alloca i64 1"   --->   Operation 62 'alloca' 'w_tile_15_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%w_tile_14_load_loc = alloca i64 1"   --->   Operation 63 'alloca' 'w_tile_14_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%w_tile_13_load_loc = alloca i64 1"   --->   Operation 64 'alloca' 'w_tile_13_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%w_tile_12_load_loc = alloca i64 1"   --->   Operation 65 'alloca' 'w_tile_12_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%w_tile_11_load_loc = alloca i64 1"   --->   Operation 66 'alloca' 'w_tile_11_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%w_tile_10_load_loc = alloca i64 1"   --->   Operation 67 'alloca' 'w_tile_10_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%w_tile_9_load_loc = alloca i64 1"   --->   Operation 68 'alloca' 'w_tile_9_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%w_tile_8_load_loc = alloca i64 1"   --->   Operation 69 'alloca' 'w_tile_8_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%w_tile_7_load_loc = alloca i64 1"   --->   Operation 70 'alloca' 'w_tile_7_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%w_tile_6_load_loc = alloca i64 1"   --->   Operation 71 'alloca' 'w_tile_6_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%w_tile_5_load_loc = alloca i64 1"   --->   Operation 72 'alloca' 'w_tile_5_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%w_tile_4_load_loc = alloca i64 1"   --->   Operation 73 'alloca' 'w_tile_4_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%w_tile_3_load_loc = alloca i64 1"   --->   Operation 74 'alloca' 'w_tile_3_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%w_tile_2_load_loc = alloca i64 1"   --->   Operation 75 'alloca' 'w_tile_2_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%w_tile_1_load_loc = alloca i64 1"   --->   Operation 76 'alloca' 'w_tile_1_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%w_tile_load_loc = alloca i64 1"   --->   Operation 77 'alloca' 'w_tile_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%x_padded = alloca i64 1" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 78 'alloca' 'x_padded' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%y_tile = alloca i64 1" [../task_detection_tpu/tpu_accel.cpp:63]   --->   Operation 79 'alloca' 'y_tile' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.14> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%x_tile = alloca i64 1" [../task_detection_tpu/tpu_accel.cpp:65]   --->   Operation 80 'alloca' 'x_tile' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [2/2] (0.00ns)   --->   "%call_ln0 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_46_1, i16 %input_r, i16 %x_padded"   --->   Operation 81 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 3.02>
+ST_2 : Operation 82 [1/2] (3.02ns)   --->   "%call_ln0 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_46_1, i16 %input_r, i16 %x_padded"   --->   Operation 82 'call' 'call_ln0' <Predicate = true> <Delay = 3.02> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 83 [2/2] (0.00ns)   --->   "%call_ln0 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_47_2, i16 %x_padded"   --->   Operation 83 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 3.02>
+ST_4 : Operation 84 [1/2] (3.02ns)   --->   "%call_ln0 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_47_2, i16 %x_padded"   --->   Operation 84 'call' 'call_ln0' <Predicate = true> <Delay = 3.02> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 85 [1/1] (0.00ns)   --->   "%init_2_load = load i1 %init_2" [../task_detection_tpu/tpu_accel.cpp:52]   --->   Operation 85 'load' 'init_2_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 86 [1/1] (0.00ns)   --->   "%br_ln52 = br i1 %init_2_load, void %for.inc21.preheader, void %VITIS_LOOP_62_8" [../task_detection_tpu/tpu_accel.cpp:52]   --->   Operation 86 'br' 'br_ln52' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 87 [2/2] (0.00ns)   --->   "%call_ln0 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_53_3, i1 %bias_2"   --->   Operation 87 'call' 'call_ln0' <Predicate = (!init_2_load)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 88 [2/2] (0.00ns)   --->   "%call_ln0 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_1, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_2, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_3, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_4, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_5, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_6, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_7"   --->   Operation 88 'call' 'call_ln0' <Predicate = (!init_2_load)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 3.02>
+ST_5 : Operation 89 [1/2] (3.02ns)   --->   "%call_ln0 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_53_3, i1 %bias_2"   --->   Operation 89 'call' 'call_ln0' <Predicate = (!init_2_load)> <Delay = 3.02> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 90 [1/2] (0.00ns)   --->   "%call_ln0 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_1, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_2, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_3, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_4, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_5, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_6, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_7"   --->   Operation 90 'call' 'call_ln0' <Predicate = (!init_2_load)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%store_ln59 = store i1 1, i1 %init_2" [../task_detection_tpu/tpu_accel.cpp:59]   --->   Operation 91 'store' 'store_ln59' <Predicate = (!init_2_load)> <Delay = 0.00>
+ST_5 : Operation 92 [1/1] (0.00ns)   --->   "%br_ln60 = br void %VITIS_LOOP_62_8" [../task_detection_tpu/tpu_accel.cpp:60]   --->   Operation 92 'br' 'br_ln60' <Predicate = (!init_2_load)> <Delay = 0.00>
+ST_5 : Operation 93 [1/1] (0.00ns)   --->   "%phi_mul = alloca i32 1"   --->   Operation 93 'alloca' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 94 [1/1] (0.00ns)   --->   "%out_t = alloca i32 1" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 94 'alloca' 'out_t' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 95 [1/1] (0.00ns)   --->   "%y_tile_addr = getelementptr i16 %y_tile, i64 0, i64 0" [../task_detection_tpu/tpu_accel.cpp:63]   --->   Operation 95 'getelementptr' 'y_tile_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 96 [1/1] (0.83ns)   --->   "%store_ln62 = store i6 0, i6 %out_t" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 96 'store' 'store_ln62' <Predicate = true> <Delay = 0.83>
+ST_5 : Operation 97 [1/1] (0.83ns)   --->   "%store_ln0 = store i10 0, i10 %phi_mul"   --->   Operation 97 'store' 'store_ln0' <Predicate = true> <Delay = 0.83>
+ST_5 : Operation 98 [1/1] (0.00ns)   --->   "%br_ln62 = br void %for.body65" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 98 'br' 'br_ln62' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 2.33>
+ST_6 : Operation 99 [1/1] (0.00ns)   --->   "%phi_mul_load = load i10 %phi_mul" [../task_detection_tpu/tpu_accel.cpp:68]   --->   Operation 99 'load' 'phi_mul_load' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 100 [1/1] (0.00ns)   --->   "%out_t_1 = load i6 %out_t" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 100 'load' 'out_t_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 101 [1/1] (1.35ns)   --->   "%add_ln62_1 = add i10 %phi_mul_load, i10 23" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 101 'add' 'add_ln62_1' <Predicate = true> <Delay = 1.35> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.35> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 102 [1/1] (1.18ns)   --->   "%icmp_ln62 = icmp_eq  i6 %out_t_1, i6 32" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 102 'icmp' 'icmp_ln62' <Predicate = true> <Delay = 1.18> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 103 [1/1] (1.18ns)   --->   "%add_ln62 = add i6 %out_t_1, i6 1" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 103 'add' 'add_ln62' <Predicate = true> <Delay = 1.18> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 104 [1/1] (0.00ns)   --->   "%br_ln62 = br i1 %icmp_ln62, void %for.body65.split, void %for.end128" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 104 'br' 'br_ln62' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 105 [1/1] ( I:1.14ns O:1.14ns )   --->   "%store_ln63 = store i16 0, i3 %y_tile_addr" [../task_detection_tpu/tpu_accel.cpp:63]   --->   Operation 105 'store' 'store_ln63' <Predicate = (!icmp_ln62)> <Delay = 1.14> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.14> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_6 : Operation 106 [1/1] (0.00ns)   --->   "%ret_ln74 = ret" [../task_detection_tpu/tpu_accel.cpp:74]   --->   Operation 106 'ret' 'ret_ln74' <Predicate = (icmp_ln62)> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 107 [2/2] (0.00ns)   --->   "%call_ln0 = call void @tpu_layer_1_Pipeline_5, i16 %y_tile"   --->   Operation 107 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 2.60>
+ST_8 : Operation 108 [1/1] (0.00ns)   --->   "%speclooptripcount_ln63 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32" [../task_detection_tpu/tpu_accel.cpp:63]   --->   Operation 108 'speclooptripcount' 'speclooptripcount_ln63' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 109 [1/1] (0.00ns)   --->   "%specloopname_ln62 = specloopname void @_ssdm_op_SpecLoopName, void @empty_6" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 109 'specloopname' 'specloopname_ln62' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 110 [1/2] (2.60ns)   --->   "%call_ln0 = call void @tpu_layer_1_Pipeline_5, i16 %y_tile"   --->   Operation 110 'call' 'call_ln0' <Predicate = true> <Delay = 2.60> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 111 [1/1] (0.83ns)   --->   "%br_ln64 = br void %VITIS_LOOP_66_10" [../task_detection_tpu/tpu_accel.cpp:64]   --->   Operation 111 'br' 'br_ln64' <Predicate = true> <Delay = 0.83>
+
+State 9 <SV = 8> <Delay = 4.97>
+ST_9 : Operation 112 [1/1] (0.00ns)   --->   "%in_t = phi i5 %add_ln64, void %VITIS_LOOP_66_10.split, i5 0, void %for.body65.split" [../task_detection_tpu/tpu_accel.cpp:64]   --->   Operation 112 'phi' 'in_t' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 113 [1/1] (1.10ns)   --->   "%icmp_ln64 = icmp_eq  i5 %in_t, i5 23" [../task_detection_tpu/tpu_accel.cpp:64]   --->   Operation 113 'icmp' 'icmp_ln64' <Predicate = true> <Delay = 1.10> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 114 [1/1] (1.10ns)   --->   "%add_ln64 = add i5 %in_t, i5 1" [../task_detection_tpu/tpu_accel.cpp:64]   --->   Operation 114 'add' 'add_ln64' <Predicate = true> <Delay = 1.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 115 [1/1] (0.00ns)   --->   "%br_ln64 = br i1 %icmp_ln64, void %VITIS_LOOP_66_10.split, void %VITIS_LOOP_72_12" [../task_detection_tpu/tpu_accel.cpp:64]   --->   Operation 115 'br' 'br_ln64' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln68 = zext i5 %in_t" [../task_detection_tpu/tpu_accel.cpp:68]   --->   Operation 116 'zext' 'zext_ln68' <Predicate = (!icmp_ln64)> <Delay = 0.00>
+ST_9 : Operation 117 [1/1] (1.35ns)   --->   "%add_ln68 = add i10 %phi_mul_load, i10 %zext_ln68" [../task_detection_tpu/tpu_accel.cpp:68]   --->   Operation 117 'add' 'add_ln68' <Predicate = (!icmp_ln64)> <Delay = 1.35> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.35> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 118 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i10.i3, i10 %add_ln68, i3 0" [../task_detection_tpu/tpu_accel.cpp:68]   --->   Operation 118 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln64)> <Delay = 0.00>
+ST_9 : Operation 119 [1/1] (0.00ns)   --->   "%shl_ln1 = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i5.i3, i5 %in_t, i3 0" [../task_detection_tpu/tpu_accel.cpp:67]   --->   Operation 119 'bitconcatenate' 'shl_ln1' <Predicate = (!icmp_ln64)> <Delay = 0.00>
+ST_9 : Operation 120 [2/2] (3.62ns)   --->   "%call_ln68 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_66_10, i13 %tmp, i8 %shl_ln1, i16 %x_padded, i16 %x_tile, i4 %w_tile_load_loc, i4 %w_tile_1_load_loc, i4 %w_tile_2_load_loc, i4 %w_tile_3_load_loc, i4 %w_tile_4_load_loc, i4 %w_tile_5_load_loc, i4 %w_tile_6_load_loc, i4 %w_tile_7_load_loc, i4 %w_tile_8_load_loc, i4 %w_tile_9_load_loc, i4 %w_tile_10_load_loc, i4 %w_tile_11_load_loc, i4 %w_tile_12_load_loc, i4 %w_tile_13_load_loc, i4 %w_tile_14_load_loc, i4 %w_tile_15_load_loc, i4 %w_tile_16_load_loc, i4 %w_tile_17_load_loc, i4 %w_tile_18_load_loc, i4 %w_tile_19_load_loc, i4 %w_tile_20_load_loc, i4 %w_tile_21_load_loc, i4 %w_tile_22_load_loc, i4 %w_tile_23_load_loc, i4 %w_tile_24_load_loc, i4 %w_tile_25_load_loc, i4 %w_tile_26_load_loc, i4 %w_tile_27_load_loc, i4 %w_tile_28_load_loc, i4 %w_tile_29_load_loc, i4 %w_tile_30_load_loc, i4 %w_tile_31_load_loc, i4 %w_tile_32_load_loc, i4 %w_tile_33_load_loc, i4 %w_tile_34_load_loc, i4 %w_tile_35_load_loc, i4 %w_tile_36_load_loc, i4 %w_tile_37_load_loc, i4 %w_tile_38_load_loc, i4 %w_tile_39_load_loc, i4 %w_tile_40_load_loc, i4 %w_tile_41_load_loc, i4 %w_tile_42_load_loc, i4 %w_tile_43_load_loc, i4 %w_tile_44_load_loc, i4 %w_tile_45_load_loc, i4 %w_tile_46_load_loc, i4 %w_tile_47_load_loc, i4 %w_tile_48_load_loc, i4 %w_tile_49_load_loc, i4 %w_tile_50_load_loc, i4 %w_tile_51_load_loc, i4 %w_tile_52_load_loc, i4 %w_tile_53_load_loc, i4 %w_tile_54_load_loc, i4 %w_tile_55_load_loc, i4 %w_tile_56_load_loc, i4 %w_tile_57_load_loc, i4 %w_tile_58_load_loc, i4 %w_tile_59_load_loc, i4 %w_tile_60_load_loc, i4 %w_tile_61_load_loc, i4 %w_tile_62_load_loc, i4 %w_tile_63_load_loc, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_1, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_2, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_3, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_4, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_5, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_6, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_7" [../task_detection_tpu/tpu_accel.cpp:68]   --->   Operation 120 'call' 'call_ln68' <Predicate = (!icmp_ln64)> <Delay = 3.62> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 121 [1/1] (0.00ns)   --->   "%trunc_ln72 = trunc i6 %out_t_1" [../task_detection_tpu/tpu_accel.cpp:72]   --->   Operation 121 'trunc' 'trunc_ln72' <Predicate = (icmp_ln64)> <Delay = 0.00>
+ST_9 : Operation 122 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i5.i3, i5 %trunc_ln72, i3 0" [../task_detection_tpu/tpu_accel.cpp:72]   --->   Operation 122 'bitconcatenate' 'shl_ln' <Predicate = (icmp_ln64)> <Delay = 0.00>
+ST_9 : Operation 123 [2/2] (2.50ns)   --->   "%call_ln72 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_72_12, i8 %shl_ln, i16 %y_tile, i16 %output_r, i1 %bias_2" [../task_detection_tpu/tpu_accel.cpp:72]   --->   Operation 123 'call' 'call_ln72' <Predicate = (icmp_ln64)> <Delay = 2.50> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 124 [1/1] (0.83ns)   --->   "%store_ln62 = store i6 %add_ln62, i6 %out_t" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 124 'store' 'store_ln62' <Predicate = (icmp_ln64)> <Delay = 0.83>
+ST_9 : Operation 125 [1/1] (0.83ns)   --->   "%store_ln62 = store i10 %add_ln62_1, i10 %phi_mul" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 125 'store' 'store_ln62' <Predicate = (icmp_ln64)> <Delay = 0.83>
+
+State 10 <SV = 9> <Delay = 2.68>
+ST_10 : Operation 126 [1/2] (2.68ns)   --->   "%call_ln68 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_66_10, i13 %tmp, i8 %shl_ln1, i16 %x_padded, i16 %x_tile, i4 %w_tile_load_loc, i4 %w_tile_1_load_loc, i4 %w_tile_2_load_loc, i4 %w_tile_3_load_loc, i4 %w_tile_4_load_loc, i4 %w_tile_5_load_loc, i4 %w_tile_6_load_loc, i4 %w_tile_7_load_loc, i4 %w_tile_8_load_loc, i4 %w_tile_9_load_loc, i4 %w_tile_10_load_loc, i4 %w_tile_11_load_loc, i4 %w_tile_12_load_loc, i4 %w_tile_13_load_loc, i4 %w_tile_14_load_loc, i4 %w_tile_15_load_loc, i4 %w_tile_16_load_loc, i4 %w_tile_17_load_loc, i4 %w_tile_18_load_loc, i4 %w_tile_19_load_loc, i4 %w_tile_20_load_loc, i4 %w_tile_21_load_loc, i4 %w_tile_22_load_loc, i4 %w_tile_23_load_loc, i4 %w_tile_24_load_loc, i4 %w_tile_25_load_loc, i4 %w_tile_26_load_loc, i4 %w_tile_27_load_loc, i4 %w_tile_28_load_loc, i4 %w_tile_29_load_loc, i4 %w_tile_30_load_loc, i4 %w_tile_31_load_loc, i4 %w_tile_32_load_loc, i4 %w_tile_33_load_loc, i4 %w_tile_34_load_loc, i4 %w_tile_35_load_loc, i4 %w_tile_36_load_loc, i4 %w_tile_37_load_loc, i4 %w_tile_38_load_loc, i4 %w_tile_39_load_loc, i4 %w_tile_40_load_loc, i4 %w_tile_41_load_loc, i4 %w_tile_42_load_loc, i4 %w_tile_43_load_loc, i4 %w_tile_44_load_loc, i4 %w_tile_45_load_loc, i4 %w_tile_46_load_loc, i4 %w_tile_47_load_loc, i4 %w_tile_48_load_loc, i4 %w_tile_49_load_loc, i4 %w_tile_50_load_loc, i4 %w_tile_51_load_loc, i4 %w_tile_52_load_loc, i4 %w_tile_53_load_loc, i4 %w_tile_54_load_loc, i4 %w_tile_55_load_loc, i4 %w_tile_56_load_loc, i4 %w_tile_57_load_loc, i4 %w_tile_58_load_loc, i4 %w_tile_59_load_loc, i4 %w_tile_60_load_loc, i4 %w_tile_61_load_loc, i4 %w_tile_62_load_loc, i4 %w_tile_63_load_loc, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_1, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_2, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_3, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_4, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_5, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_6, i4 %tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_7" [../task_detection_tpu/tpu_accel.cpp:68]   --->   Operation 126 'call' 'call_ln68' <Predicate = true> <Delay = 2.68> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 1.43>
+ST_11 : Operation 127 [1/1] (0.00ns)   --->   "%w_tile_load = load i4 %w_tile_load_loc"   --->   Operation 127 'load' 'w_tile_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 128 [1/1] (0.00ns)   --->   "%w_tile_1_load = load i4 %w_tile_1_load_loc"   --->   Operation 128 'load' 'w_tile_1_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 129 [1/1] (0.00ns)   --->   "%w_tile_2_load = load i4 %w_tile_2_load_loc"   --->   Operation 129 'load' 'w_tile_2_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 130 [1/1] (0.00ns)   --->   "%w_tile_3_load = load i4 %w_tile_3_load_loc"   --->   Operation 130 'load' 'w_tile_3_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 131 [1/1] (0.00ns)   --->   "%w_tile_4_load = load i4 %w_tile_4_load_loc"   --->   Operation 131 'load' 'w_tile_4_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 132 [1/1] (0.00ns)   --->   "%w_tile_5_load = load i4 %w_tile_5_load_loc"   --->   Operation 132 'load' 'w_tile_5_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 133 [1/1] (0.00ns)   --->   "%w_tile_6_load = load i4 %w_tile_6_load_loc"   --->   Operation 133 'load' 'w_tile_6_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 134 [1/1] (0.00ns)   --->   "%w_tile_7_load = load i4 %w_tile_7_load_loc"   --->   Operation 134 'load' 'w_tile_7_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 135 [1/1] (0.00ns)   --->   "%w_tile_8_load = load i4 %w_tile_8_load_loc"   --->   Operation 135 'load' 'w_tile_8_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 136 [1/1] (0.00ns)   --->   "%w_tile_9_load = load i4 %w_tile_9_load_loc"   --->   Operation 136 'load' 'w_tile_9_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 137 [1/1] (0.00ns)   --->   "%w_tile_10_load = load i4 %w_tile_10_load_loc"   --->   Operation 137 'load' 'w_tile_10_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 138 [1/1] (0.00ns)   --->   "%w_tile_11_load = load i4 %w_tile_11_load_loc"   --->   Operation 138 'load' 'w_tile_11_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 139 [1/1] (0.00ns)   --->   "%w_tile_12_load = load i4 %w_tile_12_load_loc"   --->   Operation 139 'load' 'w_tile_12_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 140 [1/1] (0.00ns)   --->   "%w_tile_13_load = load i4 %w_tile_13_load_loc"   --->   Operation 140 'load' 'w_tile_13_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 141 [1/1] (0.00ns)   --->   "%w_tile_14_load = load i4 %w_tile_14_load_loc"   --->   Operation 141 'load' 'w_tile_14_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 142 [1/1] (0.00ns)   --->   "%w_tile_15_load = load i4 %w_tile_15_load_loc"   --->   Operation 142 'load' 'w_tile_15_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 143 [1/1] (0.00ns)   --->   "%w_tile_16_load = load i4 %w_tile_16_load_loc"   --->   Operation 143 'load' 'w_tile_16_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 144 [1/1] (0.00ns)   --->   "%w_tile_17_load = load i4 %w_tile_17_load_loc"   --->   Operation 144 'load' 'w_tile_17_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 145 [1/1] (0.00ns)   --->   "%w_tile_18_load = load i4 %w_tile_18_load_loc"   --->   Operation 145 'load' 'w_tile_18_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 146 [1/1] (0.00ns)   --->   "%w_tile_19_load = load i4 %w_tile_19_load_loc"   --->   Operation 146 'load' 'w_tile_19_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 147 [1/1] (0.00ns)   --->   "%w_tile_20_load = load i4 %w_tile_20_load_loc"   --->   Operation 147 'load' 'w_tile_20_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 148 [1/1] (0.00ns)   --->   "%w_tile_21_load = load i4 %w_tile_21_load_loc"   --->   Operation 148 'load' 'w_tile_21_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 149 [1/1] (0.00ns)   --->   "%w_tile_22_load = load i4 %w_tile_22_load_loc"   --->   Operation 149 'load' 'w_tile_22_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 150 [1/1] (0.00ns)   --->   "%w_tile_23_load = load i4 %w_tile_23_load_loc"   --->   Operation 150 'load' 'w_tile_23_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 151 [1/1] (0.00ns)   --->   "%w_tile_24_load = load i4 %w_tile_24_load_loc"   --->   Operation 151 'load' 'w_tile_24_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 152 [1/1] (0.00ns)   --->   "%w_tile_25_load = load i4 %w_tile_25_load_loc"   --->   Operation 152 'load' 'w_tile_25_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 153 [1/1] (0.00ns)   --->   "%w_tile_26_load = load i4 %w_tile_26_load_loc"   --->   Operation 153 'load' 'w_tile_26_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 154 [1/1] (0.00ns)   --->   "%w_tile_27_load = load i4 %w_tile_27_load_loc"   --->   Operation 154 'load' 'w_tile_27_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 155 [1/1] (0.00ns)   --->   "%w_tile_28_load = load i4 %w_tile_28_load_loc"   --->   Operation 155 'load' 'w_tile_28_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 156 [1/1] (0.00ns)   --->   "%w_tile_29_load = load i4 %w_tile_29_load_loc"   --->   Operation 156 'load' 'w_tile_29_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 157 [1/1] (0.00ns)   --->   "%w_tile_30_load = load i4 %w_tile_30_load_loc"   --->   Operation 157 'load' 'w_tile_30_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 158 [1/1] (0.00ns)   --->   "%w_tile_31_load = load i4 %w_tile_31_load_loc"   --->   Operation 158 'load' 'w_tile_31_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 159 [1/1] (0.00ns)   --->   "%w_tile_32_load = load i4 %w_tile_32_load_loc"   --->   Operation 159 'load' 'w_tile_32_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 160 [1/1] (0.00ns)   --->   "%w_tile_33_load = load i4 %w_tile_33_load_loc"   --->   Operation 160 'load' 'w_tile_33_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 161 [1/1] (0.00ns)   --->   "%w_tile_34_load = load i4 %w_tile_34_load_loc"   --->   Operation 161 'load' 'w_tile_34_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 162 [1/1] (0.00ns)   --->   "%w_tile_35_load = load i4 %w_tile_35_load_loc"   --->   Operation 162 'load' 'w_tile_35_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 163 [1/1] (0.00ns)   --->   "%w_tile_36_load = load i4 %w_tile_36_load_loc"   --->   Operation 163 'load' 'w_tile_36_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 164 [1/1] (0.00ns)   --->   "%w_tile_37_load = load i4 %w_tile_37_load_loc"   --->   Operation 164 'load' 'w_tile_37_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 165 [1/1] (0.00ns)   --->   "%w_tile_38_load = load i4 %w_tile_38_load_loc"   --->   Operation 165 'load' 'w_tile_38_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 166 [1/1] (0.00ns)   --->   "%w_tile_39_load = load i4 %w_tile_39_load_loc"   --->   Operation 166 'load' 'w_tile_39_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 167 [1/1] (0.00ns)   --->   "%w_tile_40_load = load i4 %w_tile_40_load_loc"   --->   Operation 167 'load' 'w_tile_40_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 168 [1/1] (0.00ns)   --->   "%w_tile_41_load = load i4 %w_tile_41_load_loc"   --->   Operation 168 'load' 'w_tile_41_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 169 [1/1] (0.00ns)   --->   "%w_tile_42_load = load i4 %w_tile_42_load_loc"   --->   Operation 169 'load' 'w_tile_42_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 170 [1/1] (0.00ns)   --->   "%w_tile_43_load = load i4 %w_tile_43_load_loc"   --->   Operation 170 'load' 'w_tile_43_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 171 [1/1] (0.00ns)   --->   "%w_tile_44_load = load i4 %w_tile_44_load_loc"   --->   Operation 171 'load' 'w_tile_44_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 172 [1/1] (0.00ns)   --->   "%w_tile_45_load = load i4 %w_tile_45_load_loc"   --->   Operation 172 'load' 'w_tile_45_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 173 [1/1] (0.00ns)   --->   "%w_tile_46_load = load i4 %w_tile_46_load_loc"   --->   Operation 173 'load' 'w_tile_46_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 174 [1/1] (0.00ns)   --->   "%w_tile_47_load = load i4 %w_tile_47_load_loc"   --->   Operation 174 'load' 'w_tile_47_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 175 [1/1] (0.00ns)   --->   "%w_tile_48_load = load i4 %w_tile_48_load_loc"   --->   Operation 175 'load' 'w_tile_48_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 176 [1/1] (0.00ns)   --->   "%w_tile_49_load = load i4 %w_tile_49_load_loc"   --->   Operation 176 'load' 'w_tile_49_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 177 [1/1] (0.00ns)   --->   "%w_tile_50_load = load i4 %w_tile_50_load_loc"   --->   Operation 177 'load' 'w_tile_50_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 178 [1/1] (0.00ns)   --->   "%w_tile_51_load = load i4 %w_tile_51_load_loc"   --->   Operation 178 'load' 'w_tile_51_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 179 [1/1] (0.00ns)   --->   "%w_tile_52_load = load i4 %w_tile_52_load_loc"   --->   Operation 179 'load' 'w_tile_52_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 180 [1/1] (0.00ns)   --->   "%w_tile_53_load = load i4 %w_tile_53_load_loc"   --->   Operation 180 'load' 'w_tile_53_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 181 [1/1] (0.00ns)   --->   "%w_tile_54_load = load i4 %w_tile_54_load_loc"   --->   Operation 181 'load' 'w_tile_54_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 182 [1/1] (0.00ns)   --->   "%w_tile_55_load = load i4 %w_tile_55_load_loc"   --->   Operation 182 'load' 'w_tile_55_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 183 [1/1] (0.00ns)   --->   "%w_tile_56_load = load i4 %w_tile_56_load_loc"   --->   Operation 183 'load' 'w_tile_56_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 184 [1/1] (0.00ns)   --->   "%w_tile_57_load = load i4 %w_tile_57_load_loc"   --->   Operation 184 'load' 'w_tile_57_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 185 [1/1] (0.00ns)   --->   "%w_tile_58_load = load i4 %w_tile_58_load_loc"   --->   Operation 185 'load' 'w_tile_58_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 186 [1/1] (0.00ns)   --->   "%w_tile_59_load = load i4 %w_tile_59_load_loc"   --->   Operation 186 'load' 'w_tile_59_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 187 [1/1] (0.00ns)   --->   "%w_tile_60_load = load i4 %w_tile_60_load_loc"   --->   Operation 187 'load' 'w_tile_60_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 188 [1/1] (0.00ns)   --->   "%w_tile_61_load = load i4 %w_tile_61_load_loc"   --->   Operation 188 'load' 'w_tile_61_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 189 [1/1] (0.00ns)   --->   "%w_tile_62_load = load i4 %w_tile_62_load_loc"   --->   Operation 189 'load' 'w_tile_62_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 190 [1/1] (0.00ns)   --->   "%w_tile_63_load = load i4 %w_tile_63_load_loc"   --->   Operation 190 'load' 'w_tile_63_load' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 191 [2/2] (1.43ns)   --->   "%call_ln70 = call void @run_mac_tile, i4 %w_tile_load, i4 %w_tile_1_load, i4 %w_tile_2_load, i4 %w_tile_3_load, i4 %w_tile_4_load, i4 %w_tile_5_load, i4 %w_tile_6_load, i4 %w_tile_7_load, i4 %w_tile_8_load, i4 %w_tile_9_load, i4 %w_tile_10_load, i4 %w_tile_11_load, i4 %w_tile_12_load, i4 %w_tile_13_load, i4 %w_tile_14_load, i4 %w_tile_15_load, i4 %w_tile_16_load, i4 %w_tile_17_load, i4 %w_tile_18_load, i4 %w_tile_19_load, i4 %w_tile_20_load, i4 %w_tile_21_load, i4 %w_tile_22_load, i4 %w_tile_23_load, i4 %w_tile_24_load, i4 %w_tile_25_load, i4 %w_tile_26_load, i4 %w_tile_27_load, i4 %w_tile_28_load, i4 %w_tile_29_load, i4 %w_tile_30_load, i4 %w_tile_31_load, i4 %w_tile_32_load, i4 %w_tile_33_load, i4 %w_tile_34_load, i4 %w_tile_35_load, i4 %w_tile_36_load, i4 %w_tile_37_load, i4 %w_tile_38_load, i4 %w_tile_39_load, i4 %w_tile_40_load, i4 %w_tile_41_load, i4 %w_tile_42_load, i4 %w_tile_43_load, i4 %w_tile_44_load, i4 %w_tile_45_load, i4 %w_tile_46_load, i4 %w_tile_47_load, i4 %w_tile_48_load, i4 %w_tile_49_load, i4 %w_tile_50_load, i4 %w_tile_51_load, i4 %w_tile_52_load, i4 %w_tile_53_load, i4 %w_tile_54_load, i4 %w_tile_55_load, i4 %w_tile_56_load, i4 %w_tile_57_load, i4 %w_tile_58_load, i4 %w_tile_59_load, i4 %w_tile_60_load, i4 %w_tile_61_load, i4 %w_tile_62_load, i4 %w_tile_63_load, i16 %x_tile, i16 %y_tile, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_96, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_97, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_48, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_98, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_49, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_99, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_50, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_190, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_51, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_189, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_52, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_188, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_53, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_187, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_186, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_185, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_54, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_1, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_184, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_55, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_2, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_183, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_56, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_3, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_182, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_57, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_4, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_181, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_58, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_5, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_180, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_59, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_6, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_179, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_7, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_178, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_8, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_177, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_60, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_9, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_176, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_61, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_10, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_175, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_62, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_11, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_174, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_63, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_12, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_173, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_64, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_13, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_172, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_65, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_14, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_171, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_15, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_170, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_16, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_169, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_66, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_17, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_168, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_67, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_18, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_167, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_68, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_19, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_166, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_69, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_20, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_165, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_70, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_21, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_164, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_71, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_22, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_163, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_23, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_162, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_24, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_161, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_72, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_25, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_160, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_73, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_26, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_159, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_74, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_27, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_158, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_75, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_28, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_157, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_76, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_29, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_156, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_77, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_30, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_155, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_31, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_154, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_32, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_153, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_78, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_33, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_152, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_79, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_34, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_151, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_80, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_35, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_150, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_81, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_36, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_149, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_82, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_37, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_148, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_83, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_38, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_147, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_39, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_40, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_84, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_41, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_85, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_42, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_86, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_43, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_87, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_44, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_88, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_45, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_89, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_46, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_146, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_47, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_90, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_91, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_92, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_93, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_94, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_95, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_145" [../task_detection_tpu/tpu_accel.cpp:70]   --->   Operation 191 'call' 'call_ln70' <Predicate = true> <Delay = 1.43> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 192 [1/1] (0.00ns)   --->   "%speclooptripcount_ln65 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 23, i64 23, i64 23" [../task_detection_tpu/tpu_accel.cpp:65]   --->   Operation 192 'speclooptripcount' 'speclooptripcount_ln65' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 193 [1/1] (0.00ns)   --->   "%specloopname_ln64 = specloopname void @_ssdm_op_SpecLoopName, void @empty_32" [../task_detection_tpu/tpu_accel.cpp:64]   --->   Operation 193 'specloopname' 'specloopname_ln64' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 194 [1/2] (0.00ns)   --->   "%call_ln70 = call void @run_mac_tile, i4 %w_tile_load, i4 %w_tile_1_load, i4 %w_tile_2_load, i4 %w_tile_3_load, i4 %w_tile_4_load, i4 %w_tile_5_load, i4 %w_tile_6_load, i4 %w_tile_7_load, i4 %w_tile_8_load, i4 %w_tile_9_load, i4 %w_tile_10_load, i4 %w_tile_11_load, i4 %w_tile_12_load, i4 %w_tile_13_load, i4 %w_tile_14_load, i4 %w_tile_15_load, i4 %w_tile_16_load, i4 %w_tile_17_load, i4 %w_tile_18_load, i4 %w_tile_19_load, i4 %w_tile_20_load, i4 %w_tile_21_load, i4 %w_tile_22_load, i4 %w_tile_23_load, i4 %w_tile_24_load, i4 %w_tile_25_load, i4 %w_tile_26_load, i4 %w_tile_27_load, i4 %w_tile_28_load, i4 %w_tile_29_load, i4 %w_tile_30_load, i4 %w_tile_31_load, i4 %w_tile_32_load, i4 %w_tile_33_load, i4 %w_tile_34_load, i4 %w_tile_35_load, i4 %w_tile_36_load, i4 %w_tile_37_load, i4 %w_tile_38_load, i4 %w_tile_39_load, i4 %w_tile_40_load, i4 %w_tile_41_load, i4 %w_tile_42_load, i4 %w_tile_43_load, i4 %w_tile_44_load, i4 %w_tile_45_load, i4 %w_tile_46_load, i4 %w_tile_47_load, i4 %w_tile_48_load, i4 %w_tile_49_load, i4 %w_tile_50_load, i4 %w_tile_51_load, i4 %w_tile_52_load, i4 %w_tile_53_load, i4 %w_tile_54_load, i4 %w_tile_55_load, i4 %w_tile_56_load, i4 %w_tile_57_load, i4 %w_tile_58_load, i4 %w_tile_59_load, i4 %w_tile_60_load, i4 %w_tile_61_load, i4 %w_tile_62_load, i4 %w_tile_63_load, i16 %x_tile, i16 %y_tile, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_96, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_97, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_48, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_98, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_49, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_99, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_50, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_190, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_51, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_189, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_52, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_188, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_53, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_187, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_186, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_185, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_54, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_1, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_184, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_55, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_2, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_183, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_56, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_3, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_182, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_57, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_4, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_181, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_58, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_5, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_180, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_59, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_6, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_179, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_7, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_178, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_8, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_177, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_60, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_9, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_176, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_61, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_10, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_175, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_62, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_11, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_174, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_63, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_12, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_173, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_64, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_13, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_172, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_65, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_14, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_171, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_15, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_170, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_16, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_169, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_66, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_17, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_168, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_67, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_18, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_167, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_68, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_19, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_166, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_69, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_20, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_165, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_70, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_21, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_164, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_71, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_22, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_163, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_23, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_162, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_24, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_161, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_72, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_25, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_160, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_73, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_26, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_159, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_74, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_27, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_158, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_75, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_28, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_157, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_76, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_29, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_156, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_77, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_30, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_155, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_31, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_154, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_32, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_153, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_78, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_33, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_152, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_79, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_34, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_151, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_80, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_35, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_150, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_81, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_36, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_149, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_82, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_37, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_148, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_83, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_38, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_147, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_39, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_40, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_84, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_41, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_85, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_42, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_86, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_43, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_87, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_44, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_88, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_45, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_89, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_46, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_146, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_47, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_90, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_91, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_92, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_93, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_94, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_95, i16 %p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_145" [../task_detection_tpu/tpu_accel.cpp:70]   --->   Operation 194 'call' 'call_ln70' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 195 [1/1] (0.00ns)   --->   "%br_ln64 = br void %VITIS_LOOP_66_10" [../task_detection_tpu/tpu_accel.cpp:64]   --->   Operation 195 'br' 'br_ln64' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 9> <Delay = 2.68>
+ST_13 : Operation 196 [1/2] (2.68ns)   --->   "%call_ln72 = call void @tpu_layer_1_Pipeline_VITIS_LOOP_72_12, i8 %shl_ln, i16 %y_tile, i16 %output_r, i1 %bias_2" [../task_detection_tpu/tpu_accel.cpp:72]   --->   Operation 196 'call' 'call_ln72' <Predicate = true> <Delay = 2.68> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 197 [1/1] (0.00ns)   --->   "%br_ln62 = br void %for.body65" [../task_detection_tpu/tpu_accel.cpp:62]   --->   Operation 197 'br' 'br_ln62' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 3.023ns
+The critical path consists of the following:
+	'call' operation ('call_ln0') to 'tpu_layer_1_Pipeline_VITIS_LOOP_46_1' [226]  (3.023 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 3.023ns
+The critical path consists of the following:
+	'call' operation ('call_ln0') to 'tpu_layer_1_Pipeline_VITIS_LOOP_47_2' [227]  (3.023 ns)
+
+ <State 5>: 3.022ns
+The critical path consists of the following:
+	'call' operation ('call_ln0') to 'tpu_layer_1_Pipeline_VITIS_LOOP_53_3' [231]  (3.022 ns)
+
+ <State 6>: 2.336ns
+The critical path consists of the following:
+	'load' operation 10 bit ('phi_mul_load', ../task_detection_tpu/tpu_accel.cpp:68) on local variable 'phi_mul' [243]  (0.000 ns)
+	'add' operation 10 bit ('add_ln62_1', ../task_detection_tpu/tpu_accel.cpp:62) [245]  (1.354 ns)
+	blocking operation 0.98175 ns on control path)
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 2.600ns
+The critical path consists of the following:
+	'call' operation ('call_ln0') to 'tpu_layer_1_Pipeline_5' [253]  (2.600 ns)
+
+ <State 9>: 4.977ns
+The critical path consists of the following:
+	'phi' operation 5 bit ('in_t', ../task_detection_tpu/tpu_accel.cpp:64) with incoming values : ('add_ln64', ../task_detection_tpu/tpu_accel.cpp:64) [256]  (0.000 ns)
+	'add' operation 10 bit ('add_ln68', ../task_detection_tpu/tpu_accel.cpp:68) [262]  (1.354 ns)
+	'call' operation ('call_ln68', ../task_detection_tpu/tpu_accel.cpp:68) to 'tpu_layer_1_Pipeline_VITIS_LOOP_66_10' [267]  (3.623 ns)
+
+ <State 10>: 2.685ns
+The critical path consists of the following:
+	'call' operation ('call_ln68', ../task_detection_tpu/tpu_accel.cpp:68) to 'tpu_layer_1_Pipeline_VITIS_LOOP_66_10' [267]  (2.685 ns)
+
+ <State 11>: 1.440ns
+The critical path consists of the following:
+	'load' operation 4 bit ('w_tile_load') on local variable 'w_tile_load_loc' [268]  (0.000 ns)
+	'call' operation ('call_ln70', ../task_detection_tpu/tpu_accel.cpp:70) to 'run_mac_tile' [332]  (1.440 ns)
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 2.685ns
+The critical path consists of the following:
+	'call' operation ('call_ln72', ../task_detection_tpu/tpu_accel.cpp:72) to 'tpu_layer_1_Pipeline_VITIS_LOOP_72_12' [337]  (2.685 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

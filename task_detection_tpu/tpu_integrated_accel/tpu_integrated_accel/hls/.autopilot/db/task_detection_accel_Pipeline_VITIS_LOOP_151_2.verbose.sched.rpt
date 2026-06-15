@@ -1,0 +1,189 @@
+
+
+================================================================
+== Vitis HLS Report for 'task_detection_accel_Pipeline_VITIS_LOOP_151_2'
+================================================================
+* Date:           Mon Jun 15 23:15:05 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        tpu_integrated_accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k325t-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.813 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       69|       69|  0.690 us|  0.690 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_151_2  |       67|       67|         5|          1|          1|    64|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 5
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 5, States = { 1 2 3 4 5 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.09>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%acc = alloca i32 1" [../task_detection_tpu/tpu_accel.cpp:150->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 8 'alloca' 'acc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 9 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.83ns)   --->   "%store_ln151 = store i7 0, i7 %i" [../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 10 'store' 'store_ln151' <Predicate = true> <Delay = 0.83>
+ST_1 : Operation 11 [1/1] (0.83ns)   --->   "%store_ln150 = store i16 0, i16 %acc" [../task_detection_tpu/tpu_accel.cpp:150->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 11 'store' 'store_ln150' <Predicate = true> <Delay = 0.83>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body5.i"   --->   Operation 12 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%i_7 = load i7 %i" [../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 13 'load' 'i_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (1.27ns)   --->   "%icmp_ln151 = icmp_eq  i7 %i_7, i7 64" [../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 14 'icmp' 'icmp_ln151' <Predicate = true> <Delay = 1.27> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.27> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (1.27ns)   --->   "%add_ln151 = add i7 %i_7, i7 1" [../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 15 'add' 'add_ln151' <Predicate = true> <Delay = 1.27> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.27> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln151 = br i1 %icmp_ln151, void %for.body5.i.split, void %_Z14scalar_layer_4P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EERS2_.exit_ifconv.exitStub" [../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 16 'br' 'br_ln151' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln151 = zext i7 %i_7" [../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 17 'zext' 'zext_ln151' <Predicate = (!icmp_ln151)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%l3_out_addr = getelementptr i16 %l3_out, i64 0, i64 %zext_ln151" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 18 'getelementptr' 'l3_out_addr' <Predicate = (!icmp_ln151)> <Delay = 0.00>
+ST_1 : Operation 19 [2/2] (2.26ns)   --->   "%l3_out_load = load i6 %l3_out_addr" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 19 'load' 'l3_out_load' <Predicate = (!icmp_ln151)> <Delay = 2.26> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 64> <RAM>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%weights_addr = getelementptr i4 %weights, i64 0, i64 %zext_ln151" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 20 'getelementptr' 'weights_addr' <Predicate = (!icmp_ln151)> <Delay = 0.00>
+ST_1 : Operation 21 [2/2] (1.14ns)   --->   "%weights_load = load i6 %weights_addr" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 21 'load' 'weights_load' <Predicate = (!icmp_ln151)> <Delay = 1.14> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.14> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 4> <Depth = 64> <RAM>
+ST_1 : Operation 22 [1/1] (0.83ns)   --->   "%store_ln151 = store i7 %add_ln151, i7 %i" [../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 22 'store' 'store_ln151' <Predicate = (!icmp_ln151)> <Delay = 0.83>
+
+State 2 <SV = 1> <Delay = 3.28>
+ST_2 : Operation 23 [1/2] ( I:2.26ns O:2.26ns )   --->   "%l3_out_load = load i6 %l3_out_addr" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 23 'load' 'l3_out_load' <Predicate = true> <Delay = 2.26> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 64> <RAM>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%sext_ln153 = sext i16 %l3_out_load" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 24 'sext' 'sext_ln153' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/2] ( I:1.14ns O:1.14ns )   --->   "%weights_load = load i6 %weights_addr" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 25 'load' 'weights_load' <Predicate = true> <Delay = 1.14> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 1.14> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 4> <Depth = 64> <RAM>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln153 = zext i4 %weights_load" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 26 'zext' 'zext_ln153' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [3/3] (1.02ns) (grouped into DSP with root node add_ln153)   --->   "%mul_ln153 = mul i20 %zext_ln153, i20 %sext_ln153" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 27 'mul' 'mul_ln153' <Predicate = true> <Delay = 1.02> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.54> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 3 <SV = 2> <Delay = 1.02>
+ST_3 : Operation 28 [2/3] (1.02ns) (grouped into DSP with root node add_ln153)   --->   "%mul_ln153 = mul i20 %zext_ln153, i20 %sext_ln153" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 28 'mul' 'mul_ln153' <Predicate = true> <Delay = 1.02> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.54> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 1.49>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%acc_load_1 = load i16 %acc" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 29 'load' 'acc_load_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/3] (0.00ns) (grouped into DSP with root node add_ln153)   --->   "%mul_ln153 = mul i20 %zext_ln153, i20 %sext_ln153" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 30 'mul' 'mul_ln153' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.54> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%shl_ln5 = bitconcatenate i26 @_ssdm_op_BitConcatenate.i26.i16.i10, i16 %acc_load_1, i10 0" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 31 'bitconcatenate' 'shl_ln5' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns) (grouped into DSP with root node add_ln153)   --->   "%sext_ln153_1 = sext i20 %mul_ln153" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 32 'sext' 'sext_ln153_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [2/2] (1.49ns) (root node of the DSP)   --->   "%add_ln153 = add i26 %shl_ln5, i26 %sext_ln153_1" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 33 'add' 'add_ln153' <Predicate = true> <Delay = 1.49> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.54> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%acc_load = load i16 %acc"   --->   Operation 41 'load' 'acc_load' <Predicate = (icmp_ln151)> <Delay = 0.00>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %acc_out, i16 %acc_load"   --->   Operation 42 'write' 'write_ln0' <Predicate = (icmp_ln151)> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.83ns)   --->   "%ret_ln0 = ret"   --->   Operation 43 'ret' 'ret_ln0' <Predicate = (icmp_ln151)> <Delay = 0.83>
+
+State 5 <SV = 4> <Delay = 3.81>
+ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%specpipeline_ln152 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_22" [../task_detection_tpu/tpu_accel.cpp:152->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 34 'specpipeline' 'specpipeline_ln152' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%speclooptripcount_ln150 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64" [../task_detection_tpu/tpu_accel.cpp:150->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 35 'speclooptripcount' 'speclooptripcount_ln150' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%specloopname_ln151 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 36 'specloopname' 'specloopname_ln151' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 37 [1/2] (1.49ns) (root node of the DSP)   --->   "%add_ln153 = add i26 %shl_ln5, i26 %sext_ln153_1" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 37 'add' 'add_ln153' <Predicate = true> <Delay = 1.49> <CoreInst = "DSP48">   --->   Core 116 'DSP48' <Latency = 3> <II = 1> <Delay = 1.54> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%acc_1 = partselect i16 @_ssdm_op_PartSelect.i16.i26.i32.i32, i26 %add_ln153, i32 10, i32 25" [../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 38 'partselect' 'acc_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.83ns)   --->   "%store_ln150 = store i16 %acc_1, i16 %acc" [../task_detection_tpu/tpu_accel.cpp:150->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 39 'store' 'store_ln150' <Predicate = true> <Delay = 0.83>
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln151 = br void %for.body5.i" [../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182]   --->   Operation 40 'br' 'br_ln151' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.099ns
+The critical path consists of the following:
+	'store' operation ('store_ln151', ../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182) of constant 0 7 bit on local variable 'i', ../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182 [6]  (0.833 ns)
+	'load' operation 7 bit ('i', ../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182) on local variable 'i', ../task_detection_tpu/tpu_accel.cpp:151->../task_detection_tpu/tpu_accel.cpp:182 [10]  (0.000 ns)
+	'getelementptr' operation 6 bit ('l3_out_addr', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182) [20]  (0.000 ns)
+	'load' operation 16 bit ('l3_out_load', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182) on array 'l3_out' [21]  (2.266 ns)
+
+ <State 2>: 3.286ns
+The critical path consists of the following:
+	'load' operation 16 bit ('l3_out_load', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182) on array 'l3_out' [21]  (2.266 ns)
+	'mul' operation 20 bit of DSP[29] ('mul_ln153', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182) [26]  (1.020 ns)
+
+ <State 3>: 1.020ns
+The critical path consists of the following:
+	'mul' operation 20 bit of DSP[29] ('mul_ln153', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182) [26]  (1.020 ns)
+
+ <State 4>: 1.490ns
+The critical path consists of the following:
+	'load' operation 16 bit ('acc_load_1', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182) on local variable 'acc', ../task_detection_tpu/tpu_accel.cpp:150->../task_detection_tpu/tpu_accel.cpp:182 [15]  (0.000 ns)
+	'add' operation 26 bit of DSP[29] ('add_ln153', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182) [29]  (1.490 ns)
+
+ <State 5>: 3.813ns
+The critical path consists of the following:
+	'add' operation 26 bit of DSP[29] ('add_ln153', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182) [29]  (1.490 ns)
+	'store' operation ('store_ln150', ../task_detection_tpu/tpu_accel.cpp:150->../task_detection_tpu/tpu_accel.cpp:182) of variable 'acc', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182 16 bit on local variable 'acc', ../task_detection_tpu/tpu_accel.cpp:150->../task_detection_tpu/tpu_accel.cpp:182 [32]  (0.833 ns)
+	'load' operation 16 bit ('acc_load_1', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182) on local variable 'acc', ../task_detection_tpu/tpu_accel.cpp:150->../task_detection_tpu/tpu_accel.cpp:182 [15]  (0.000 ns)
+	'add' operation 26 bit of DSP[29] ('add_ln153', ../task_detection_tpu/tpu_accel.cpp:153->../task_detection_tpu/tpu_accel.cpp:182) [29]  (1.490 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

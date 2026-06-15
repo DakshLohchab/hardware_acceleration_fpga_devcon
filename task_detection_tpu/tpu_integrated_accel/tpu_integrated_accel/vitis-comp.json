@@ -1,0 +1,9 @@
+{
+  "name": "tpu_integrated_accel",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}

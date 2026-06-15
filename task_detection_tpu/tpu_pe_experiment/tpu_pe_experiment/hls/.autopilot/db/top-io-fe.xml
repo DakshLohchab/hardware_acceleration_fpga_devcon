@@ -1,18 +1,18 @@
 <root versionMajor = "1" versionMinor = "5">
-  <kernel src_name="systolic_8x8" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+  <kernel src_name="systolic_16x16" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
     <args>
-      <arg id="0" access_type="r" src_name="A_in" src_type="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="8">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="A_in" hw_bitwidth="16" hw_size_or_depth="8" hw_kernel_support="false">
+      <arg id="0" access_type="r" src_name="A_in" src_type="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="16">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="A_in" hw_bitwidth="16" hw_size_or_depth="16" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="1" access_type="r" src_name="B_in" src_type="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="8">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="B_in" hw_bitwidth="16" hw_size_or_depth="8" hw_kernel_support="false">
+      <arg id="1" access_type="r" src_name="B_in" src_type="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="16">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="B_in" hw_bitwidth="16" hw_size_or_depth="16" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>
-      <arg id="2" access_type="w" src_name="C_out" src_type="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="64">
-        <hw hw_usage="data" hw_interface="BRAM" hw_name="C_out" hw_bitwidth="16" hw_size_or_depth="64" hw_kernel_support="false">
+      <arg id="2" access_type="w" src_name="C_out" src_type="ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="256">
+        <hw hw_usage="data" hw_interface="BRAM" hw_name="C_out" hw_bitwidth="16" hw_size_or_depth="256" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0"/>
         </hw>
       </arg>

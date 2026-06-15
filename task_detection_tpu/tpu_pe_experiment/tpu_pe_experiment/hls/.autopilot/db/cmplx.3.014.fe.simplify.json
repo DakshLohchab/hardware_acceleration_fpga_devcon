@@ -1,22 +1,22 @@
 {
   "0": {
-    "basicblocks": 132,
+    "basicblocks": 516,
     "calls": "",
     "control_depth": 2,
     "def_use_depth": 6,
-    "file": "systolic_8x8.cpp",
+    "file": "systolic_16x16.cpp",
     "fileloc": 7,
-    "instructions": 1343,
+    "instructions": 5247,
     "loads": {
-      "G": 64,
-      "T": 16
+      "G": 261,
+      "T": 32
     },
-    "memory_accesses": 336,
-    "name": "systolic_8x8",
+    "memory_accesses": 1317,
+    "name": "systolic_16x16",
     "stores": {
-      "G": 192,
-      "T": 64
+      "G": 768,
+      "T": 256
     },
-    "total_instructions": 1343
+    "total_instructions": 5247
   }
 }

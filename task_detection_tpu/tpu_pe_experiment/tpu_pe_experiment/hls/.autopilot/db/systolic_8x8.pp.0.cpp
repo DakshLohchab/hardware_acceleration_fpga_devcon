@@ -54849,7 +54849,7 @@ void mac_pe(
 );
 # 5 "../task_detection_tpu/systolic_8x8.h" 2
 
-__attribute__((sdx_kernel("systolic_8x8", 0))) void systolic_8x8(
+void systolic_8x8(
     data_t A_in[8],
     data_t B_in[8],
     data_t C_out[8][8],
@@ -54861,17 +54861,13 @@ __attribute__((sdx_kernel("systolic_8x8", 0))) void systolic_8x8(
 
 
 
-__attribute__((sdx_kernel("systolic_8x8", 0))) void systolic_8x8(
+void systolic_8x8(
     data_t A_in[8],
     data_t B_in[8],
     data_t C_out[8][8],
     bool reset
 )
 {
-#line 1 "directive"
-#pragma HLSDIRECTIVE TOP name=systolic_8x8
-# 13 "../task_detection_tpu/systolic_8x8.cpp"
-
 #pragma HLS PIPELINE II=1
 
 

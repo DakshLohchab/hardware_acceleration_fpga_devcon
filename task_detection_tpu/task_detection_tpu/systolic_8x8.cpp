@@ -13,48 +13,52 @@ void systolic_8x8(
 {
 #pragma HLS PIPELINE II=1
 
-    // Static accumulators
     static data_t acc[8][8];
 #pragma HLS ARRAY_PARTITION variable=acc complete dim=0
 
-    // Interconnect wires
-    // a_wire needs 9 columns: 1 for input, 8 for PE outputs
-    data_t a_wire[8][9];
+    static data_t a_wire[8][9];
 #pragma HLS ARRAY_PARTITION variable=a_wire complete dim=0
 
-    // b_wire needs 9 rows: 1 for input, 8 for PE outputs
-    data_t b_wire[9][8];
+    static data_t b_wire[9][8];
 #pragma HLS ARRAY_PARTITION variable=b_wire complete dim=0
 
-    // 1. Route external inputs into the wire grid
+    if (reset) {
+        for(int i = 0; i < 8; i++) {
+#pragma HLS UNROLL
+            for(int j = 0; j < 9; j++) {
+#pragma HLS UNROLL
+                a_wire[i][j] = 0;
+                b_wire[j][i] = 0;
+            }
+        }
+    }
+
     for(int i = 0; i < 8; i++) {
 #pragma HLS UNROLL
         a_wire[i][0] = A_in[i];
         b_wire[0][i] = B_in[i];
     }
 
-    // 2. Instantiate the 8x8 PE Grid (64 PEs)
-    for(int i = 0; i < 8; i++) {
+    // CRITICAL FIX: Loop backwards for accurate C-simulation
+    for(int i = 7; i >= 0; i--) {
 #pragma HLS UNROLL
-        for(int j = 0; j < 8; j++) {
+        for(int j = 7; j >= 0; j--) {
 #pragma HLS UNROLL
             
             if (reset) {
                 acc[i][j] = 0;
             }
 
-            // Each PE reads from its top/left wires and writes to its bottom/right wires
             mac_pe(
-                a_wire[i][j],     // in_a
-                b_wire[i][j],     // in_b
-                a_wire[i][j+1],   // out_a (forward right)
-                b_wire[i+1][j],   // out_b (forward down)
-                acc[i][j]         // accumulator
+                a_wire[i][j],     
+                b_wire[i][j],     
+                a_wire[i][j+1],   
+                b_wire[i+1][j],   
+                acc[i][j]         
             );
         }
     }
 
-    // 3. Route accumulators to output
     for(int i = 0; i < 8; i++) {
 #pragma HLS UNROLL
         for(int j = 0; j < 8; j++) {

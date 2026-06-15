@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../../task_detection_tpu/systolic_16x16_tb.cpp in debug mode
+   Compiling ../../../../../task_detection_tpu/systolic_16x16.cpp in debug mode
+   Compiling ../../../../../task_detection_tpu/systolic_8x8.cpp in debug mode
+   Compiling ../../../../../task_detection_tpu/systolic_4x4.cpp in debug mode
+   Compiling ../../../../../task_detection_tpu/systolic_2x2.cpp in debug mode
+   Compiling ../../../../../task_detection_tpu/pe.cpp in debug mode
+   Generating csim.exe
+--- Resetting Array ---
+--- Pumping Skewed Data (31 cycles) ---
+--- Final Output (Showing Top-Left 4x4 for brevity) ---
+16	30	-22	-12	
+15	-32	-19	-8	
+14	30	-16	-4	
+13	28	-19	0	
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

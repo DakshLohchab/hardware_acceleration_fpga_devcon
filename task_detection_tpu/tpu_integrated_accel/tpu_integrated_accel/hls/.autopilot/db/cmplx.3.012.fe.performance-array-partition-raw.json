@@ -1,0 +1,83 @@
+{
+  "0": {
+    "basicblocks": 230,
+    "calls": "2 1 1",
+    "control_depth": 4,
+    "def_use_depth": 10,
+    "file": "tpu_accel.cpp",
+    "fileloc": 162,
+    "instructions": 1691,
+    "loads": {
+      "G": 22,
+      "L": 5
+    },
+    "memory_accesses": 197,
+    "name": "task_detection_accel",
+    "stores": {
+      "G": 22,
+      "L": 137,
+      "T": 1
+    },
+    "total_instructions": 15342
+  },
+  "1": {
+    "basicblocks": 294,
+    "calls": "3",
+    "control_depth": 4,
+    "def_use_depth": 6,
+    "file": "tpu_accel.cpp",
+    "fileloc": 6,
+    "instructions": 2788,
+    "loads": {
+      "G": 352,
+      "L": 74
+    },
+    "memory_accesses": 1123,
+    "name": "run_mac_tile",
+    "stores": {
+      "G": 544,
+      "L": 193
+    },
+    "total_instructions": 4293
+  },
+  "2": {
+    "basicblocks": 108,
+    "calls": "1",
+    "control_depth": 4,
+    "def_use_depth": 4,
+    "file": "tpu_accel.cpp",
+    "fileloc": 44,
+    "instructions": 772,
+    "loads": {
+      "G": 10,
+      "L": 3
+    },
+    "memory_accesses": 99,
+    "name": "tpu_layer_1",
+    "stores": {
+      "G": 10,
+      "L": 70
+    },
+    "total_instructions": 5065
+  },
+  "3": {
+    "basicblocks": 129,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "systolic_8x8.cpp",
+    "fileloc": 7,
+    "instructions": 1505,
+    "loads": {
+      "G": 176,
+      "L": 16
+    },
+    "memory_accesses": 736,
+    "name": "systolic_8x8",
+    "stores": {
+      "G": 480,
+      "L": 64
+    },
+    "total_instructions": 1505
+  }
+}

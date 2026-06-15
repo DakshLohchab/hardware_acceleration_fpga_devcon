@@ -1,0 +1,74 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 13870, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 39319, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 18600, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 18493, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 18478, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 17324, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 17324, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate, 17324, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 17324, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 17328, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 17328, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 13635, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 15342, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 11292, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 11304, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  9439, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="task_detection_accel" col1="tpu_accel.cpp:162" col2="13870" col3="18478" col4="17328" col5="11292" col6="9439">
+                    <row id="1" col0="tpu_layer_1" col1="tpu_accel.cpp:44" col2="4082" col3="6118" col4="5734" col5="3715" col6="3097">
+                        <row id="6" col0="run_mac_tile" col1="tpu_accel.cpp:6" col2="2742" col3="5999" col4="5612" col5="3076" col6="2614">
+                            <row id="5" col0="systolic_8x8" col1="systolic_8x8.cpp:7" col2="2064" col2_disp="2,064 (3 calls)" col3="5724" col3_disp="5,724 (3 calls)" col4="5337" col4_disp="5,337 (3 calls)" col5="301" col6="302">
+                                <row id="4" col0="mac_pe" col1="pe.cpp:7" col2="1137" col2_disp="1,137 (3 calls)" col3="3456" col3_disp="3,456 (192 calls)" col4="3456" col4_disp="3,456 (192 calls)" col5="" col6=""/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="3" col0="tpu_layer_2" col1="tpu_accel.cpp:79" col2="3993" col3="" col4="" col5="" col6="">
+                        <row id="6" col0="run_mac_tile" col1="tpu_accel.cpp:6" col2="2742" col3="" col4="" col5="" col6="">
+                            <row id="5" col0="systolic_8x8" col1="systolic_8x8.cpp:7" col2="2064" col2_disp="2,064 (3 calls)" col3="" col4="" col5="" col6="">
+                                <row id="4" col0="mac_pe" col1="pe.cpp:7" col2="1137" col2_disp="1,137 (3 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="2" col0="tpu_layer_3" col1="tpu_accel.cpp:110" col2="3993" col3="" col4="" col5="" col6="">
+                        <row id="6" col0="run_mac_tile" col1="tpu_accel.cpp:6" col2="2742" col3="" col4="" col5="" col6="">
+                            <row id="5" col0="systolic_8x8" col1="systolic_8x8.cpp:7" col2="2064" col2_disp="2,064 (3 calls)" col3="" col4="" col5="" col6="">
+                                <row id="4" col0="mac_pe" col1="pe.cpp:7" col2="1137" col2_disp="1,137 (3 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="7" col0="scalar_layer_4" col1="tpu_accel.cpp:141" col2="1218" col3="" col4="" col5="" col6=""/>
+                    <row id="6" col0="run_mac_tile" col1="tpu_accel.cpp:6" col2="" col3="11998" col3_disp="11,998 (2 calls)" col4="11224" col4_disp="11,224 (2 calls)" col5="6152" col5_disp="6,152 (2 calls)" col6="5228" col6_disp="5,228 (2 calls)">
+                        <row id="5" col0="systolic_8x8" col1="systolic_8x8.cpp:7" col2="" col3="11448" col3_disp="11,448 (6 calls)" col4="10674" col4_disp="10,674 (6 calls)" col5="602" col5_disp="  602 (2 calls)" col6="604" col6_disp=" 604 (2 calls)">
+                            <row id="4" col0="mac_pe" col1="pe.cpp:7" col2="" col3="6912" col3_disp="6,912 (384 calls)" col4="6912" col4_disp="6,912 (384 calls)" col5="" col6=""/>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>

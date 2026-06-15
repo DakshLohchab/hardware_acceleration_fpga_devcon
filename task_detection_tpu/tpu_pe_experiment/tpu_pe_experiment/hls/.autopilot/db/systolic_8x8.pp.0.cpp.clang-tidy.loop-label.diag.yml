@@ -56,7 +56,7 @@ Diagnostics:
       FileOffset:      30
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_8x8.pp.0.cpp'
-          Offset:          2345731
+          Offset:          2345527
           Length:          0
           ReplacementText: 'VITIS_LOOP_30_1: '
     Level:           Remark
@@ -68,7 +68,7 @@ Diagnostics:
       FileOffset:      37
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_8x8.pp.0.cpp'
-          Offset:          2345855
+          Offset:          2345651
           Length:          0
           ReplacementText: 'VITIS_LOOP_37_2: '
     Level:           Remark
@@ -80,7 +80,7 @@ Diagnostics:
       FileOffset:      39
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_8x8.pp.0.cpp'
-          Offset:          2345911
+          Offset:          2345707
           Length:          0
           ReplacementText: 'VITIS_LOOP_39_3: '
     Level:           Remark
@@ -92,7 +92,7 @@ Diagnostics:
       FileOffset:      58
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_8x8.pp.0.cpp'
-          Offset:          2346239
+          Offset:          2346035
           Length:          0
           ReplacementText: 'VITIS_LOOP_58_4: '
     Level:           Remark
@@ -104,7 +104,7 @@ Diagnostics:
       FileOffset:      60
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_8x8.pp.0.cpp'
-          Offset:          2346295
+          Offset:          2346091
           Length:          0
           ReplacementText: 'VITIS_LOOP_60_5: '
     Level:           Remark

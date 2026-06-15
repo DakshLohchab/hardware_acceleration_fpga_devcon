@@ -1,0 +1,19 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../../task_detection_tpu/systolic_16x16.cpp in debug mode
+   Generating csim.exe
+--- Starting Integrated TPU Accelerator Simulation ---
+--- Layer 1 Output (First 10 values) ---
+Output[0] = 1.75781 (Expected: 1.8)
+Output[1] = 1.75781 (Expected: 1.8)
+Output[2] = 1.75781 (Expected: 1.8)
+Output[3] = 1.75781 (Expected: 1.8)
+Output[4] = 1.75781 (Expected: 1.8)
+Output[5] = 1.75781 (Expected: 1.8)
+Output[6] = 1.75781 (Expected: 1.8)
+Output[7] = 1.75781 (Expected: 1.8)
+Output[8] = 1.75781 (Expected: 1.8)
+Output[9] = 1.75781 (Expected: 1.8)
+
+SUCCESS: Hardware math matches expected results!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

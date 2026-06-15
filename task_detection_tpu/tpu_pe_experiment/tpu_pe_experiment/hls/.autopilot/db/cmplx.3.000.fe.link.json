@@ -4,7 +4,7 @@
     "calls": "1",
     "control_depth": 2,
     "def_use_depth": 2,
-    "file": "systolic_8x8.cpp",
+    "file": "systolic_16x16.cpp",
     "fileloc": 7,
     "instructions": 126,
     "loads": {
@@ -13,7 +13,7 @@
       "T": 2
     },
     "memory_accesses": 14,
-    "name": "systolic_8x8",
+    "name": "systolic_16x16",
     "stores": {
       "G": 1,
       "L": 4,

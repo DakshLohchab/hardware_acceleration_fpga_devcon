@@ -1,5 +1,5 @@
 
-set TopModule "systolic_8x8"
+set TopModule "systolic_16x16"
 set ClockPeriod 10
 set ClockList ap_clk
 set AxiliteClockList {}
@@ -24,7 +24,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix systolic_8x8_
+set RtlSubPrefix systolic_16x16_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -40,10 +40,10 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7k325t:-ffg900:-2
-set SourceFiles {sc {} c {../../../task_detection_tpu/systolic_8x8.cpp ../../../task_detection_tpu/systolic_4x4.cpp ../../../task_detection_tpu/systolic_2x2.cpp ../../../task_detection_tpu/pe.cpp}}
-set SourceFlags {sc {} c {{} {} {} {}}}
+set SourceFiles {sc {} c {../../../task_detection_tpu/systolic_16x16.cpp ../../../task_detection_tpu/systolic_8x8.cpp ../../../task_detection_tpu/systolic_4x4.cpp ../../../task_detection_tpu/systolic_2x2.cpp ../../../task_detection_tpu/pe.cpp}}
+set SourceFlags {sc {} c {{} {} {} {} {}}}
 set DirectiveFile {}
-set TBFiles {verilog /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8_tb.cpp bc /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8_tb.cpp vhdl /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8_tb.cpp sc /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8_tb.cpp cas /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8_tb.cpp c {}}
+set TBFiles {verilog /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_16x16_tb.cpp bc /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_16x16_tb.cpp vhdl /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_16x16_tb.cpp sc /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_16x16_tb.cpp cas /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_16x16_tb.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

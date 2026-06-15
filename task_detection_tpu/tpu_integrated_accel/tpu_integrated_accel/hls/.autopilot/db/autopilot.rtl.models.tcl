@@ -1,0 +1,70 @@
+set SynModuleInfo {
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_170_1 MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_170_1 RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_170_1
+    SUBMODULES {
+      {MODELNAME task_detection_accel_fpext_32ns_64_2_no_dsp_1 RTLNAME task_detection_accel_fpext_32ns_64_2_no_dsp_1 BINDTYPE op TYPE fpext IMPL auto LATENCY 1 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_sparsemux_9_3_16_1_1 RTLNAME task_detection_accel_sparsemux_9_3_16_1_1 BINDTYPE op TYPE sparsemux IMPL onehotencoding_realdef}
+      {MODELNAME task_detection_accel_flow_control_loop_pipe_sequential_init RTLNAME task_detection_accel_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME task_detection_accel_flow_control_loop_pipe_sequential_init_U}
+    }
+  }
+  {SRCNAME tpu_layer_1_Pipeline_VITIS_LOOP_46_1 MODELNAME tpu_layer_1_Pipeline_VITIS_LOOP_46_1 RTLNAME task_detection_accel_tpu_layer_1_Pipeline_VITIS_LOOP_46_1}
+  {SRCNAME tpu_layer_1_Pipeline_VITIS_LOOP_47_2 MODELNAME tpu_layer_1_Pipeline_VITIS_LOOP_47_2 RTLNAME task_detection_accel_tpu_layer_1_Pipeline_VITIS_LOOP_47_2}
+  {SRCNAME tpu_layer_1_Pipeline_VITIS_LOOP_53_3 MODELNAME tpu_layer_1_Pipeline_VITIS_LOOP_53_3 RTLNAME task_detection_accel_tpu_layer_1_Pipeline_VITIS_LOOP_53_3}
+  {SRCNAME tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_ MODELNAME tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_s RTLNAME task_detection_accel_tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_s
+    SUBMODULES {
+      {MODELNAME task_detection_accel_mac_muladd_6ns_5ns_5ns_10_4_1 RTLNAME task_detection_accel_mac_muladd_6ns_5ns_5ns_10_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+    }
+  }
+  {SRCNAME tpu_layer_1_Pipeline_5 MODELNAME tpu_layer_1_Pipeline_5 RTLNAME task_detection_accel_tpu_layer_1_Pipeline_5}
+  {SRCNAME tpu_layer_1_Pipeline_VITIS_LOOP_66_10 MODELNAME tpu_layer_1_Pipeline_VITIS_LOOP_66_10 RTLNAME task_detection_accel_tpu_layer_1_Pipeline_VITIS_LOOP_66_10}
+  {SRCNAME systolic_8x8 MODELNAME systolic_8x8 RTLNAME task_detection_accel_systolic_8x8}
+  {SRCNAME run_mac_tile_Pipeline_PUMP_LOOP MODELNAME run_mac_tile_Pipeline_PUMP_LOOP RTLNAME task_detection_accel_run_mac_tile_Pipeline_PUMP_LOOP
+    SUBMODULES {
+      {MODELNAME task_detection_accel_sparsemux_17_4_4_1_1 RTLNAME task_detection_accel_sparsemux_17_4_4_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+      {MODELNAME task_detection_accel_mac_muladd_16s_16s_26s_26_4_1 RTLNAME task_detection_accel_mac_muladd_16s_16s_26s_26_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+      {MODELNAME task_detection_accel_mac_muladd_16s_4ns_26s_26_4_1 RTLNAME task_detection_accel_mac_muladd_16s_4ns_26s_26_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
+    }
+  }
+  {SRCNAME run_mac_tile_Pipeline_FLUSH_LOOP MODELNAME run_mac_tile_Pipeline_FLUSH_LOOP RTLNAME task_detection_accel_run_mac_tile_Pipeline_FLUSH_LOOP}
+  {SRCNAME run_mac_tile MODELNAME run_mac_tile RTLNAME task_detection_accel_run_mac_tile}
+  {SRCNAME tpu_layer_1_Pipeline_VITIS_LOOP_72_12 MODELNAME tpu_layer_1_Pipeline_VITIS_LOOP_72_12 RTLNAME task_detection_accel_tpu_layer_1_Pipeline_VITIS_LOOP_72_12}
+  {SRCNAME tpu_layer_1 MODELNAME tpu_layer_1 RTLNAME task_detection_accel_tpu_layer_1
+    SUBMODULES {
+      {MODELNAME task_detection_accel_tpu_layer_1_bias_2_RAM_AUTO_1R1W RTLNAME task_detection_accel_tpu_layer_1_bias_2_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_Abkb RTLNAME task_detection_accel_tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_Abkb BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_tpu_layer_1_x_padded_RAM_AUTO_1R1W RTLNAME task_detection_accel_tpu_layer_1_x_padded_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_tpu_layer_1_y_tile_RAM_AUTO_1R1W RTLNAME task_detection_accel_tpu_layer_1_y_tile_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_tpu_layer_1_x_tile_RAM_AUTO_1R1W RTLNAME task_detection_accel_tpu_layer_1_x_tile_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_84_1 MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_84_1 RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_84_1}
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VI MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VI RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VI}
+  {SRCNAME task_detection_accel_Pipeline_4 MODELNAME task_detection_accel_Pipeline_4 RTLNAME task_detection_accel_task_detection_accel_Pipeline_4}
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_97_8 MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_97_8 RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_97_8}
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_103_10 MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_103_10 RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_103_10}
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_115_1 MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_115_1 RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_115_1}
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4 MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4 RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4}
+  {SRCNAME task_detection_accel_Pipeline_9 MODELNAME task_detection_accel_Pipeline_9 RTLNAME task_detection_accel_task_detection_accel_Pipeline_9}
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_128_8 MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_128_8 RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_128_8}
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_134_10 MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_134_10 RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_134_10}
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_146_1 MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_146_1 RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_146_1}
+  {SRCNAME task_detection_accel_Pipeline_VITIS_LOOP_151_2 MODELNAME task_detection_accel_Pipeline_VITIS_LOOP_151_2 RTLNAME task_detection_accel_task_detection_accel_Pipeline_VITIS_LOOP_151_2}
+  {SRCNAME task_detection_accel MODELNAME task_detection_accel RTLNAME task_detection_accel IS_TOP 1
+    SUBMODULES {
+      {MODELNAME task_detection_accel_ctlz_16_16_1_1 RTLNAME task_detection_accel_ctlz_16_16_1_1 BINDTYPE op TYPE ctlz IMPL auto}
+      {MODELNAME task_detection_accel_bias_1_RAM_AUTO_1R1W RTLNAME task_detection_accel_bias_1_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_tpu_layer_2_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_AUTO_1R1W RTLNAME task_detection_accel_tpu_layer_2_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_bias_RAM_AUTO_1R1W RTLNAME task_detection_accel_bias_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_tpu_layer_3_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_AUTO_1R1W RTLNAME task_detection_accel_tpu_layer_3_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_weights_RAM_AUTO_1R1W RTLNAME task_detection_accel_weights_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_x_tile_RAM_AUTO_1R1W RTLNAME task_detection_accel_x_tile_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_in_buf_RAM_AUTO_1R1W RTLNAME task_detection_accel_in_buf_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_l1_out_RAM_AUTO_1R1W RTLNAME task_detection_accel_l1_out_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_l2_out_RAM_AUTO_1R1W RTLNAME task_detection_accel_l2_out_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_l3_out_RAM_AUTO_1R1W RTLNAME task_detection_accel_l3_out_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME task_detection_accel_gmem0_m_axi RTLNAME task_detection_accel_gmem0_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
+      {MODELNAME task_detection_accel_gmem1_m_axi RTLNAME task_detection_accel_gmem1_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
+      {MODELNAME task_detection_accel_control_s_axi RTLNAME task_detection_accel_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
+      {MODELNAME task_detection_accel_control_r_s_axi RTLNAME task_detection_accel_control_r_s_axi BINDTYPE interface TYPE interface_s_axilite}
+    }
+  }
+}

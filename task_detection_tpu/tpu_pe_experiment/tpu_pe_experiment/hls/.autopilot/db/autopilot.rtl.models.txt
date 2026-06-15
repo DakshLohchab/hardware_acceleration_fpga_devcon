@@ -1,3 +1,3 @@
-systolic_8x8_mul_16s_16s_26_1_1
-systolic_8x8_mac_muladd_16s_16s_26s_26_4_1
-systolic_8x8
+systolic_16x16_mul_16s_16s_26_1_1
+systolic_16x16_mac_muladd_16s_16s_26s_26_4_1
+systolic_16x16

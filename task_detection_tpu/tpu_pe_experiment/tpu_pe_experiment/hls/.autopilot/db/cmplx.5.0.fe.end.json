@@ -1,22 +1,22 @@
 {
     "0": {
-        "name": "systolic_8x8",
-        "file": "..\/task_detection_tpu\/systolic_8x8.cpp",
+        "name": "systolic_16x16",
+        "file": "..\/task_detection_tpu\/systolic_16x16.cpp",
         "fileloc": "7",
-        "instructions": "841",
-        "total_instructions": "841",
+        "instructions": "3209",
+        "total_instructions": "3209",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "271",
+        "memory_accesses": "1055",
         "control_depth": "1",
         "def_use_depth": "6",
         "loads": {
-            "G": "64",
-            "T": "16"
+            "G": "256",
+            "T": "32"
         },
         "stores": {
-            "G": "126",
-            "T": "64"
+            "G": "510",
+            "T": "256"
         }
     }
 }

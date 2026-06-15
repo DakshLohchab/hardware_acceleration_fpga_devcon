@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Mon Jun 15 19:41:19 2026",
- "timestampMillis": "1781532679974",
+ "dateTimestamp": "Mon Jun 15 20:00:17 2026",
+ "timestampMillis": "1781533817423",
  "buildStep": {
-  "cmdId": "624eb6af-098b-40bc-a5da-a580b82dac18",
+  "cmdId": "b202a582-3588-42c1-9380-21257a458921",
   "name": "vitis-run",
   "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/logs/tpu_pe_experiment.steps.log",
   "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/hls_config.cfg --work_dir tpu_pe_experiment ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun 15 19:41:19 2026",
- "timestampMillis": "1781532679974",
+ "dateTimestamp": "Mon Jun 15 20:00:17 2026",
+ "timestampMillis": "1781533817423",
  "status": {
-  "cmdId": "624eb6af-098b-40bc-a5da-a580b82dac18",
+  "cmdId": "b202a582-3588-42c1-9380-21257a458921",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Mon Jun 15 19:41:25 2026",
- "timestampMillis": "1781532685580",
+ "dateTimestamp": "Mon Jun 15 20:00:24 2026",
+ "timestampMillis": "1781533824006",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -58,7 +58,7 @@
    {
     "base": {
      "type": "KERNEL",
-     "name": "systolic_8x8",
+     "name": "systolic_16x16",
      "file": "",
      "reports": [],
      "uuid": ""
@@ -67,7 +67,8 @@
      "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/pe.cpp",
      "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_2x2.cpp",
      "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_4x4.cpp",
-     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.cpp"
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.cpp",
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_16x16.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -83,10 +84,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Jun 15 19:41:25 2026",
- "timestampMillis": "1781532685582",
+ "dateTimestamp": "Mon Jun 15 20:00:24 2026",
+ "timestampMillis": "1781533824008",
  "buildStep": {
-  "cmdId": "be61cfda-d4ce-4968-91fb-269d74dcbf60",
+  "cmdId": "bdb17c8a-56d0-4a97-a409-0c78371ea971",
   "name": "",
   "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/hls.log",
   "commandLine": "",
@@ -99,10 +100,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun 15 19:41:25 2026",
- "timestampMillis": "1781532685582",
+ "dateTimestamp": "Mon Jun 15 20:00:24 2026",
+ "timestampMillis": "1781533824008",
  "status": {
-  "cmdId": "be61cfda-d4ce-4968-91fb-269d74dcbf60",
+  "cmdId": "bdb17c8a-56d0-4a97-a409-0c78371ea971",
   "state": "CS_RUNNING"
  }
 }
@@ -110,10 +111,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun 15 19:41:41 2026",
- "timestampMillis": "1781532701928",
+ "dateTimestamp": "Mon Jun 15 20:00:43 2026",
+ "timestampMillis": "1781533843986",
  "status": {
-  "cmdId": "be61cfda-d4ce-4968-91fb-269d74dcbf60",
+  "cmdId": "bdb17c8a-56d0-4a97-a409-0c78371ea971",
   "state": "CS_PASSED"
  }
 }
@@ -121,10 +122,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun 15 19:41:42 2026",
- "timestampMillis": "1781532702081",
+ "dateTimestamp": "Mon Jun 15 20:00:44 2026",
+ "timestampMillis": "1781533844145",
  "status": {
-  "cmdId": "624eb6af-098b-40bc-a5da-a580b82dac18",
+  "cmdId": "b202a582-3588-42c1-9380-21257a458921",
   "state": "CS_PASSED"
  }
 }
@@ -132,8 +133,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun 15 19:41:42 2026",
- "timestampMillis": "1781532702081",
+ "dateTimestamp": "Mon Jun 15 20:00:44 2026",
+ "timestampMillis": "1781533844147",
  "report": {
   "path": "",
   "name": "",
@@ -146,8 +147,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun 15 19:41:42 2026",
- "timestampMillis": "1781532702082",
+ "dateTimestamp": "Mon Jun 15 20:00:44 2026",
+ "timestampMillis": "1781533844148",
  "report": {
   "path": "",
   "name": "",
