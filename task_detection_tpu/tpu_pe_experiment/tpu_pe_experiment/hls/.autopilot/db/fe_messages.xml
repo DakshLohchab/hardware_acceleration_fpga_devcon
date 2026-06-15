@@ -1,6 +1,33 @@
 <xilinx:hls_fe_msgs>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="directive" ARG_PragmaFunction="systolic_4x4" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=systolic_4x4" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="systolic_8x8" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=systolic_8x8" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/systolic_8x8.cpp:14:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_8x8" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/systolic_8x8.cpp:18:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_8x8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/systolic_8x8.cpp:23:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_8x8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a_wire complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/systolic_8x8.cpp:27:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_8x8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b_wire complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/systolic_8x8.cpp:31:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_8x8" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/systolic_8x8.cpp:38:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_8x8" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/systolic_8x8.cpp:40:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_8x8" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/systolic_8x8.cpp:59:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_8x8" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/systolic_8x8.cpp:61:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_8x8" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/systolic_4x4.cpp:14:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="systolic_4x4" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
@@ -44,49 +71,49 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../task_detection_tpu/pe.cpp:15:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="mac_pe" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:58:22" msg_body="Loop 'VITIS_LOOP_58_4' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:58:22" msg_body="Loop 'VITIS_LOOP_58_4' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_58_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:60:26" msg_body="Loop 'VITIS_LOOP_60_5' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:60:26" msg_body="Loop 'VITIS_LOOP_60_5' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_60_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:37:22" msg_body="Loop 'VITIS_LOOP_37_2' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:37:22" msg_body="Loop 'VITIS_LOOP_37_2' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_37_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:39:26" msg_body="Loop 'VITIS_LOOP_39_3' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:39:26" msg_body="Loop 'VITIS_LOOP_39_3' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_39_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:30:22" msg_body="Loop 'VITIS_LOOP_30_1' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:30:22" msg_body="Loop 'VITIS_LOOP_30_1' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_30_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_58_4' (../task_detection_tpu/systolic_4x4.cpp:58:22) in function 'systolic_4x4' completely with a factor of 4">
-        <args Factor="4" LoopLoc="../task_detection_tpu/systolic_4x4.cpp:58:22" LoopName="VITIS_LOOP_58_4"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_58_4' (../task_detection_tpu/systolic_8x8.cpp:58:22) in function 'systolic_8x8' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../task_detection_tpu/systolic_8x8.cpp:58:22" LoopName="VITIS_LOOP_58_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_60_5' (../task_detection_tpu/systolic_4x4.cpp:60:26) in function 'systolic_4x4' completely with a factor of 4">
-        <args Factor="4" LoopLoc="../task_detection_tpu/systolic_4x4.cpp:60:26" LoopName="VITIS_LOOP_60_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_60_5' (../task_detection_tpu/systolic_8x8.cpp:60:26) in function 'systolic_8x8' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../task_detection_tpu/systolic_8x8.cpp:60:26" LoopName="VITIS_LOOP_60_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_37_2' (../task_detection_tpu/systolic_4x4.cpp:37:22) in function 'systolic_4x4' completely with a factor of 4">
-        <args Factor="4" LoopLoc="../task_detection_tpu/systolic_4x4.cpp:37:22" LoopName="VITIS_LOOP_37_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_37_2' (../task_detection_tpu/systolic_8x8.cpp:37:22) in function 'systolic_8x8' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../task_detection_tpu/systolic_8x8.cpp:37:22" LoopName="VITIS_LOOP_37_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_39_3' (../task_detection_tpu/systolic_4x4.cpp:39:26) in function 'systolic_4x4' completely with a factor of 4">
-        <args Factor="4" LoopLoc="../task_detection_tpu/systolic_4x4.cpp:39:26" LoopName="VITIS_LOOP_39_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_39_3' (../task_detection_tpu/systolic_8x8.cpp:39:26) in function 'systolic_8x8' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../task_detection_tpu/systolic_8x8.cpp:39:26" LoopName="VITIS_LOOP_39_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_30_1' (../task_detection_tpu/systolic_4x4.cpp:30:22) in function 'systolic_4x4' completely with a factor of 4">
-        <args Factor="4" LoopLoc="../task_detection_tpu/systolic_4x4.cpp:30:22" LoopName="VITIS_LOOP_30_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_30_1' (../task_detection_tpu/systolic_8x8.cpp:30:22) in function 'systolic_8x8' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../task_detection_tpu/systolic_8x8.cpp:30:22" LoopName="VITIS_LOOP_30_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:17:0" msg_body="Applying array_partition to '_ZZ12systolic_4x4P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA4_S2_bE3acc': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
-        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ12systolic_4x4P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA4_S2_bE3acc"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:17:0" msg_body="Applying array_partition to '_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE3acc': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE3acc"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:22:12" msg_body="Applying array_partition to 'a_wire': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:22:12" msg_body="Applying array_partition to 'a_wire': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
         <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="a_wire"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:26:12" msg_body="Applying array_partition to 'b_wire': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:26:12" msg_body="Applying array_partition to 'b_wire': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
         <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="b_wire"/>
     </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:13:0" msg_body="Aggregating bram variable 'C_out' with compact=bit mode in 16-bits">
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:13:0" msg_body="Aggregating bram variable 'C_out' with compact=bit mode in 16-bits">
         <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="bram" Name="C_out"/>
     </msg>
-    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_4x4.cpp:47:13" msg_body="Automatically inlining function 'mac_pe(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' to improve effectiveness of pipeline pragma in function 'systolic_4x4(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4], bool)'">
-        <args Callee="mac_pe(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File ../task_detection_tpu/pe.cpp Line 14 Column 0" Caller="systolic_4x4(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4], bool)" Caller-DebugLoc="File ../task_detection_tpu/systolic_4x4.cpp Line 13 Column 0"/>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="../task_detection_tpu/systolic_8x8.cpp:47:13" msg_body="Automatically inlining function 'mac_pe(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)' to improve effectiveness of pipeline pragma in function 'systolic_8x8(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [8], bool)'">
+        <args Callee="mac_pe(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;)" Callee-DebugLoc="File ../task_detection_tpu/pe.cpp Line 14 Column 0" Caller="systolic_8x8(ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [8], bool)" Caller-DebugLoc="File ../task_detection_tpu/systolic_8x8.cpp Line 13 Column 0"/>
     </msg>
 </xilinx:hls_fe_msgs>

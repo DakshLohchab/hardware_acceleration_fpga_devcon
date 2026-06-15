@@ -18,28 +18,28 @@
       ^
       VITIS_LOOP_1251_1: 
 /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:5844:7: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54891:5: remark: Added loop label VITIS_LOOP_30_1:   [xilinx-label-all-loops]
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54887:5: remark: Added loop label VITIS_LOOP_30_1:   [xilinx-label-all-loops]
     for(int i = 0; i < 4; i++) {
     ^
     VITIS_LOOP_30_1: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54891:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54898:5: remark: Added loop label VITIS_LOOP_37_2:   [xilinx-label-all-loops]
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54887:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54894:5: remark: Added loop label VITIS_LOOP_37_2:   [xilinx-label-all-loops]
     for(int i = 0; i < 4; i++) {
     ^
     VITIS_LOOP_37_2: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54898:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54900:9: remark: Added loop label VITIS_LOOP_39_3:   [xilinx-label-all-loops]
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54894:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54896:9: remark: Added loop label VITIS_LOOP_39_3:   [xilinx-label-all-loops]
         for(int j = 0; j < 4; j++) {
         ^
         VITIS_LOOP_39_3: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54900:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54919:5: remark: Added loop label VITIS_LOOP_58_4:   [xilinx-label-all-loops]
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54896:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54915:5: remark: Added loop label VITIS_LOOP_58_4:   [xilinx-label-all-loops]
     for(int i = 0; i < 4; i++) {
     ^
     VITIS_LOOP_58_4: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54919:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54921:9: remark: Added loop label VITIS_LOOP_60_5:   [xilinx-label-all-loops]
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54915:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54917:9: remark: Added loop label VITIS_LOOP_60_5:   [xilinx-label-all-loops]
         for(int j = 0; j < 4; j++) {
         ^
         VITIS_LOOP_60_5: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54921:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_pe_experiment/tpu_pe_experiment/hls/.autopilot/db/systolic_4x4.pp.0.cpp:54917:9: note: FIX-IT applied suggested code changes

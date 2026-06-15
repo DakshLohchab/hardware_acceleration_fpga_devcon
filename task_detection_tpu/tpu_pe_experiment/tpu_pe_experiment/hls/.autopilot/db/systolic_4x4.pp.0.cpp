@@ -54849,7 +54849,7 @@ void mac_pe(
 );
 # 5 "../task_detection_tpu/systolic_4x4.h" 2
 
-__attribute__((sdx_kernel("systolic_4x4", 0))) void systolic_4x4(
+void systolic_4x4(
     data_t A_in[4],
     data_t B_in[4],
     data_t C_out[4][4],
@@ -54861,17 +54861,13 @@ __attribute__((sdx_kernel("systolic_4x4", 0))) void systolic_4x4(
 
 
 
-__attribute__((sdx_kernel("systolic_4x4", 0))) void systolic_4x4(
+void systolic_4x4(
     data_t A_in[4],
     data_t B_in[4],
     data_t C_out[4][4],
     bool reset
 )
 {
-#line 1 "directive"
-#pragma HLSDIRECTIVE TOP name=systolic_4x4
-# 13 "../task_detection_tpu/systolic_4x4.cpp"
-
 #pragma HLS PIPELINE II=1
 
 

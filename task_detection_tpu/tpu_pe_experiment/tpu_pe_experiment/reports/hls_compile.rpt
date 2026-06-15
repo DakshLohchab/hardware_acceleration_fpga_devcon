@@ -1,10 +1,10 @@
 
 
 ================================================================
-== Synthesis Summary Report of 'systolic_4x4'
+== Synthesis Summary Report of 'systolic_8x8'
 ================================================================
 + General Information: 
-    * Date:           Mon Jun 15 19:25:35 2026
+    * Date:           Mon Jun 15 19:44:31 2026
     * Version:        2025.2 (Build 6295257 on Nov 14 2025)
     * Project:        tpu_pe_experiment
     * Solution:       hls (Vivado IP Flow Target)
@@ -13,12 +13,12 @@
     
 
 * Performance & Resource Estimates: 
-+----------------+------+---------------------+----------+---------+------+----------+---------+---------+------+------+---------+------------+-----------+-----+
-|     Modules    | Issue|                     | Iteration|         | Trip |          |      Latency      |      |      |         |            |           |     |
-|     & Loops    | Type |    Violation Type   |  Latency | Interval| Count| Pipelined| (cycles)|   (ns)  | Slack| BRAM |   DSP   |     FF     |    LUT    | URAM|
-+----------------+------+---------------------+----------+---------+------+----------+---------+---------+------+------+---------+------------+-----------+-----+
-|+ systolic_4x4  |    II|  Resource Limitation|         -|        8|     -|       yes|       11|  110.000|  1.30|     -|  30 (3%)|  1090 (~0%)|  711 (~0%)|    -|
-+----------------+------+---------------------+----------+---------+------+----------+---------+---------+------+------+---------+------------+-----------+-----+
++----------------+------+---------------------+----------+---------+------+----------+---------+---------+------+------+-----------+------------+-----------+-----+
+|     Modules    | Issue|                     | Iteration|         | Trip |          |      Latency      |      |      |           |            |           |     |
+|     & Loops    | Type |    Violation Type   |  Latency | Interval| Count| Pipelined| (cycles)|   (ns)  | Slack| BRAM |    DSP    |     FF     |    LUT    | URAM|
++----------------+------+---------------------+----------+---------+------+----------+---------+---------+------+------+-----------+------------+-----------+-----+
+|+ systolic_8x8  |    II|  Resource Limitation|         -|       32|     -|       yes|       35|  350.000|  1.30|     -|  126 (15%)|  3482 (~0%)|  2630 (1%)|    -|
++----------------+------+---------------------+----------+---------+------+----------+---------+---------+------+------+-----------+------------+-----------+-----+
     II Violation Information: docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
     Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
 
@@ -30,16 +30,16 @@
 +----------------+-----------+----------+
 | Port           | Direction | Bitwidth |
 +----------------+-----------+----------+
-| A_in_address0  | out       | 2        |
-| A_in_address1  | out       | 2        |
+| A_in_address0  | out       | 3        |
+| A_in_address1  | out       | 3        |
 | A_in_q0        | in        | 16       |
 | A_in_q1        | in        | 16       |
-| B_in_address0  | out       | 2        |
-| B_in_address1  | out       | 2        |
+| B_in_address0  | out       | 3        |
+| B_in_address1  | out       | 3        |
 | B_in_q0        | in        | 16       |
 | B_in_q1        | in        | 16       |
-| C_out_address0 | out       | 4        |
-| C_out_address1 | out       | 4        |
+| C_out_address0 | out       | 6        |
+| C_out_address1 | out       | 6        |
 | C_out_d0       | out       | 16       |
 | C_out_d1       | out       | 16       |
 +----------------+-----------+----------+
@@ -105,57 +105,201 @@
 ================================================================
 == Bind Op Report
 ================================================================
-+-------------------------------------+-----+--------+-------------+-----+-----------+---------+
-| Name                                | DSP | Pragma | Variable    | Op  | Impl      | Latency |
-+-------------------------------------+-----+--------+-------------+-----+-----------+---------+
-| + systolic_4x4                      | 30  |        |             |     |           |         |
-|   mul_16s_16s_26_1_1_U1             | 1   |        | mul_ln18    | mul | auto      | 0       |
-|   add_ln18_fu_549_p2                |     |        | add_ln18    | add | fabric    | 0       |
-|   mac_muladd_16s_16s_26s_26_4_1_U16 | 1   |        | mul_ln18_15 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U16 | 1   |        | add_ln18_1  | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U18 | 1   |        | mul_ln18_16 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U18 | 1   |        | add_ln18_2  | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U19 | 1   |        | mul_ln18_17 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U19 | 1   |        | add_ln18_3  | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U17 | 1   |        | mul_ln18_18 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U17 | 1   |        | add_ln18_4  | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U20 | 1   |        | mul_ln18_19 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U20 | 1   |        | add_ln18_5  | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U21 | 1   |        | mul_ln18_20 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U21 | 1   |        | add_ln18_6  | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U22 | 1   |        | mul_ln18_21 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U22 | 1   |        | add_ln18_7  | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U23 | 1   |        | mul_ln18_22 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U23 | 1   |        | add_ln18_8  | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U24 | 1   |        | mul_ln18_23 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U24 | 1   |        | add_ln18_9  | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U25 | 1   |        | mul_ln18_24 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U25 | 1   |        | add_ln18_10 | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U26 | 1   |        | mul_ln18_25 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U26 | 1   |        | add_ln18_11 | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U27 | 1   |        | mul_ln18_26 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U27 | 1   |        | add_ln18_12 | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U28 | 1   |        | mul_ln18_27 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U28 | 1   |        | add_ln18_13 | add | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U29 | 1   |        | mul_ln18_28 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U29 | 1   |        | add_ln18_14 | add | dsp_slice | 3       |
-|   mul_16s_16s_26_1_1_U2             | 1   |        | mul_ln18_1  | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U3             | 1   |        | mul_ln18_2  | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U4             | 1   |        | mul_ln18_3  | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U5             | 1   |        | mul_ln18_4  | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U6             | 1   |        | mul_ln18_5  | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U7             | 1   |        | mul_ln18_6  | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U8             | 1   |        | mul_ln18_7  | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U9             | 1   |        | mul_ln18_8  | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U10            | 1   |        | mul_ln18_9  | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U11            | 1   |        | mul_ln18_10 | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U12            | 1   |        | mul_ln18_11 | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U13            | 1   |        | mul_ln18_12 | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U14            | 1   |        | mul_ln18_13 | mul | auto      | 0       |
-|   mul_16s_16s_26_1_1_U15            | 1   |        | mul_ln18_14 | mul | auto      | 0       |
-|   mac_muladd_16s_16s_26s_26_4_1_U30 | 1   |        | mul_ln18_29 | mul | dsp_slice | 3       |
-|   mac_muladd_16s_16s_26s_26_4_1_U30 | 1   |        | add_ln18_15 | add | dsp_slice | 3       |
-+-------------------------------------+-----+--------+-------------+-----+-----------+---------+
++--------------------------------------+-----+--------+--------------+-----+-----------+---------+
+| Name                                 | DSP | Pragma | Variable     | Op  | Impl      | Latency |
++--------------------------------------+-----+--------+--------------+-----+-----------+---------+
+| + systolic_8x8                       | 126 |        |              |     |           |         |
+|   mul_16s_16s_26_1_1_U1              | 1   |        | mul_ln18     | mul | auto      | 0       |
+|   add_ln18_fu_1747_p2                |     |        | add_ln18     | add | fabric    | 0       |
+|   mac_muladd_16s_16s_26s_26_4_1_U64  | 1   |        | mul_ln18_63  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U64  | 1   |        | add_ln18_1   | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U66  | 1   |        | mul_ln18_64  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U66  | 1   |        | add_ln18_2   | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U67  | 1   |        | mul_ln18_65  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U67  | 1   |        | add_ln18_3   | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U68  | 1   |        | mul_ln18_66  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U68  | 1   |        | add_ln18_4   | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U69  | 1   |        | mul_ln18_67  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U69  | 1   |        | add_ln18_5   | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U70  | 1   |        | mul_ln18_68  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U70  | 1   |        | add_ln18_6   | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U71  | 1   |        | mul_ln18_69  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U71  | 1   |        | add_ln18_7   | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U65  | 1   |        | mul_ln18_70  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U65  | 1   |        | add_ln18_8   | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U72  | 1   |        | mul_ln18_71  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U72  | 1   |        | add_ln18_9   | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U73  | 1   |        | mul_ln18_72  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U73  | 1   |        | add_ln18_10  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U74  | 1   |        | mul_ln18_73  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U74  | 1   |        | add_ln18_11  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U75  | 1   |        | mul_ln18_74  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U75  | 1   |        | add_ln18_12  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U76  | 1   |        | mul_ln18_75  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U76  | 1   |        | add_ln18_13  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U77  | 1   |        | mul_ln18_76  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U77  | 1   |        | add_ln18_14  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U78  | 1   |        | mul_ln18_77  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U78  | 1   |        | add_ln18_15  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U79  | 1   |        | mul_ln18_78  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U79  | 1   |        | add_ln18_16  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U80  | 1   |        | mul_ln18_79  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U80  | 1   |        | add_ln18_17  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U81  | 1   |        | mul_ln18_80  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U81  | 1   |        | add_ln18_18  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U82  | 1   |        | mul_ln18_81  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U82  | 1   |        | add_ln18_19  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U83  | 1   |        | mul_ln18_82  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U83  | 1   |        | add_ln18_20  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U84  | 1   |        | mul_ln18_83  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U84  | 1   |        | add_ln18_21  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U85  | 1   |        | mul_ln18_84  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U85  | 1   |        | add_ln18_22  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U86  | 1   |        | mul_ln18_85  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U86  | 1   |        | add_ln18_23  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U87  | 1   |        | mul_ln18_86  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U87  | 1   |        | add_ln18_24  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U88  | 1   |        | mul_ln18_87  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U88  | 1   |        | add_ln18_25  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U89  | 1   |        | mul_ln18_88  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U89  | 1   |        | add_ln18_26  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U90  | 1   |        | mul_ln18_89  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U90  | 1   |        | add_ln18_27  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U91  | 1   |        | mul_ln18_90  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U91  | 1   |        | add_ln18_28  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U92  | 1   |        | mul_ln18_91  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U92  | 1   |        | add_ln18_29  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U93  | 1   |        | mul_ln18_92  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U93  | 1   |        | add_ln18_30  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U94  | 1   |        | mul_ln18_93  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U94  | 1   |        | add_ln18_31  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U95  | 1   |        | mul_ln18_94  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U95  | 1   |        | add_ln18_32  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U96  | 1   |        | mul_ln18_95  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U96  | 1   |        | add_ln18_33  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U97  | 1   |        | mul_ln18_96  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U97  | 1   |        | add_ln18_34  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U98  | 1   |        | mul_ln18_97  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U98  | 1   |        | add_ln18_35  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U99  | 1   |        | mul_ln18_98  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U99  | 1   |        | add_ln18_36  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U100 | 1   |        | mul_ln18_99  | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U100 | 1   |        | add_ln18_37  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U101 | 1   |        | mul_ln18_100 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U101 | 1   |        | add_ln18_38  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U102 | 1   |        | mul_ln18_101 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U102 | 1   |        | add_ln18_39  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U103 | 1   |        | mul_ln18_102 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U103 | 1   |        | add_ln18_40  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U104 | 1   |        | mul_ln18_103 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U104 | 1   |        | add_ln18_41  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U105 | 1   |        | mul_ln18_104 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U105 | 1   |        | add_ln18_42  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U106 | 1   |        | mul_ln18_105 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U106 | 1   |        | add_ln18_43  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U107 | 1   |        | mul_ln18_106 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U107 | 1   |        | add_ln18_44  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U108 | 1   |        | mul_ln18_107 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U108 | 1   |        | add_ln18_45  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U109 | 1   |        | mul_ln18_108 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U109 | 1   |        | add_ln18_46  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U110 | 1   |        | mul_ln18_109 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U110 | 1   |        | add_ln18_47  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U111 | 1   |        | mul_ln18_110 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U111 | 1   |        | add_ln18_48  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U112 | 1   |        | mul_ln18_111 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U112 | 1   |        | add_ln18_49  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U113 | 1   |        | mul_ln18_112 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U113 | 1   |        | add_ln18_50  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U114 | 1   |        | mul_ln18_113 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U114 | 1   |        | add_ln18_51  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U115 | 1   |        | mul_ln18_114 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U115 | 1   |        | add_ln18_52  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U116 | 1   |        | mul_ln18_115 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U116 | 1   |        | add_ln18_53  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U117 | 1   |        | mul_ln18_116 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U117 | 1   |        | add_ln18_54  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U118 | 1   |        | mul_ln18_117 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U118 | 1   |        | add_ln18_55  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U119 | 1   |        | mul_ln18_118 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U119 | 1   |        | add_ln18_56  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U120 | 1   |        | mul_ln18_119 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U120 | 1   |        | add_ln18_57  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U121 | 1   |        | mul_ln18_120 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U121 | 1   |        | add_ln18_58  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U122 | 1   |        | mul_ln18_121 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U122 | 1   |        | add_ln18_59  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U123 | 1   |        | mul_ln18_122 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U123 | 1   |        | add_ln18_60  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U124 | 1   |        | mul_ln18_123 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U124 | 1   |        | add_ln18_61  | add | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U125 | 1   |        | mul_ln18_124 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U125 | 1   |        | add_ln18_62  | add | dsp_slice | 3       |
+|   mul_16s_16s_26_1_1_U2              | 1   |        | mul_ln18_1   | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U3              | 1   |        | mul_ln18_2   | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U4              | 1   |        | mul_ln18_3   | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U5              | 1   |        | mul_ln18_4   | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U6              | 1   |        | mul_ln18_5   | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U7              | 1   |        | mul_ln18_6   | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U8              | 1   |        | mul_ln18_7   | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U9              | 1   |        | mul_ln18_8   | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U10             | 1   |        | mul_ln18_9   | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U11             | 1   |        | mul_ln18_10  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U12             | 1   |        | mul_ln18_11  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U13             | 1   |        | mul_ln18_12  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U14             | 1   |        | mul_ln18_13  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U15             | 1   |        | mul_ln18_14  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U16             | 1   |        | mul_ln18_15  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U17             | 1   |        | mul_ln18_16  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U18             | 1   |        | mul_ln18_17  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U19             | 1   |        | mul_ln18_18  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U20             | 1   |        | mul_ln18_19  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U21             | 1   |        | mul_ln18_20  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U22             | 1   |        | mul_ln18_21  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U23             | 1   |        | mul_ln18_22  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U24             | 1   |        | mul_ln18_23  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U25             | 1   |        | mul_ln18_24  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U26             | 1   |        | mul_ln18_25  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U27             | 1   |        | mul_ln18_26  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U28             | 1   |        | mul_ln18_27  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U29             | 1   |        | mul_ln18_28  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U30             | 1   |        | mul_ln18_29  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U31             | 1   |        | mul_ln18_30  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U32             | 1   |        | mul_ln18_31  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U33             | 1   |        | mul_ln18_32  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U34             | 1   |        | mul_ln18_33  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U35             | 1   |        | mul_ln18_34  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U36             | 1   |        | mul_ln18_35  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U37             | 1   |        | mul_ln18_36  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U38             | 1   |        | mul_ln18_37  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U39             | 1   |        | mul_ln18_38  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U40             | 1   |        | mul_ln18_39  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U41             | 1   |        | mul_ln18_40  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U42             | 1   |        | mul_ln18_41  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U43             | 1   |        | mul_ln18_42  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U44             | 1   |        | mul_ln18_43  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U45             | 1   |        | mul_ln18_44  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U46             | 1   |        | mul_ln18_45  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U47             | 1   |        | mul_ln18_46  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U48             | 1   |        | mul_ln18_47  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U49             | 1   |        | mul_ln18_48  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U50             | 1   |        | mul_ln18_49  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U51             | 1   |        | mul_ln18_50  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U52             | 1   |        | mul_ln18_51  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U53             | 1   |        | mul_ln18_52  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U54             | 1   |        | mul_ln18_53  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U55             | 1   |        | mul_ln18_54  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U56             | 1   |        | mul_ln18_55  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U57             | 1   |        | mul_ln18_56  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U58             | 1   |        | mul_ln18_57  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U59             | 1   |        | mul_ln18_58  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U60             | 1   |        | mul_ln18_59  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U61             | 1   |        | mul_ln18_60  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U62             | 1   |        | mul_ln18_61  | mul | auto      | 0       |
+|   mul_16s_16s_26_1_1_U63             | 1   |        | mul_ln18_62  | mul | auto      | 0       |
+|   mac_muladd_16s_16s_26s_26_4_1_U126 | 1   |        | mul_ln18_125 | mul | dsp_slice | 3       |
+|   mac_muladd_16s_16s_26s_26_4_1_U126 | 1   |        | add_ln18_63  | add | dsp_slice | 3       |
++--------------------------------------+-----+--------+--------------+-----+-----------+---------+
 
 
 ================================================================
@@ -184,6 +328,15 @@
 | UNROLL          |                                | in systolic_4x4 (../task_detection_tpu/systolic_4x4.cpp:40) |
 | UNROLL          |                                | in systolic_4x4 (../task_detection_tpu/systolic_4x4.cpp:59) |
 | UNROLL          |                                | in systolic_4x4 (../task_detection_tpu/systolic_4x4.cpp:61) |
+| PIPELINE        | ii=1                           | in systolic_8x8 (../task_detection_tpu/systolic_8x8.cpp:14) |
+| ARRAY_PARTITION | variable=acc complete dim=0    | in systolic_8x8 (../task_detection_tpu/systolic_8x8.cpp:18) |
+| ARRAY_PARTITION | variable=a_wire complete dim=0 | in systolic_8x8 (../task_detection_tpu/systolic_8x8.cpp:23) |
+| ARRAY_PARTITION | variable=b_wire complete dim=0 | in systolic_8x8 (../task_detection_tpu/systolic_8x8.cpp:27) |
+| UNROLL          |                                | in systolic_8x8 (../task_detection_tpu/systolic_8x8.cpp:31) |
+| UNROLL          |                                | in systolic_8x8 (../task_detection_tpu/systolic_8x8.cpp:38) |
+| UNROLL          |                                | in systolic_8x8 (../task_detection_tpu/systolic_8x8.cpp:40) |
+| UNROLL          |                                | in systolic_8x8 (../task_detection_tpu/systolic_8x8.cpp:59) |
+| UNROLL          |                                | in systolic_8x8 (../task_detection_tpu/systolic_8x8.cpp:61) |
 +-----------------+--------------------------------+-------------------------------------------------------------+
 
 

@@ -1,3 +1,3 @@
 set ModuleHierarchy {[{
-"Name" : "systolic_4x4", "RefName" : "systolic_4x4","ID" : "0","Type" : "pipeline"
+"Name" : "systolic_8x8", "RefName" : "systolic_8x8","ID" : "0","Type" : "pipeline"
 }]}

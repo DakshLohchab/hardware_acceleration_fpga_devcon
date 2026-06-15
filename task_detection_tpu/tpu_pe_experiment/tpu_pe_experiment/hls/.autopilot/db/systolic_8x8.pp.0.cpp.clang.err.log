@@ -1,0 +1,31 @@
+directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=systolic_8x8_XLX_SEP_ PragmaOptions=name=systolic_8x8_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=systolic_8x8
+^
+../task_detection_tpu/systolic_8x8.cpp:14:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_8x8_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=1
+^
+../task_detection_tpu/systolic_8x8.cpp:18:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_8x8_XLX_SEP_ PragmaOptions=variable=acc complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=acc complete dim=0
+^
+../task_detection_tpu/systolic_8x8.cpp:23:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_8x8_XLX_SEP_ PragmaOptions=variable=a_wire complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=a_wire complete dim=0
+^
+../task_detection_tpu/systolic_8x8.cpp:27:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_8x8_XLX_SEP_ PragmaOptions=variable=b_wire complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS ARRAY_PARTITION variable=b_wire complete dim=0
+^
+../task_detection_tpu/systolic_8x8.cpp:31:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_8x8_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+../task_detection_tpu/systolic_8x8.cpp:38:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_8x8_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+../task_detection_tpu/systolic_8x8.cpp:40:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_8x8_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+../task_detection_tpu/systolic_8x8.cpp:59:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_8x8_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+../task_detection_tpu/systolic_8x8.cpp:61:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=systolic_8x8_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+10 warnings generated.

@@ -21,15 +21,15 @@
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 6, true>::mult ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
-<pragma file="../task_detection_tpu/systolic_4x4.cpp" line="14" pragmaType="pipeline" parentfunction="systolic_4x4" off="0" ii="1" style=""/>
-<pragma file="../task_detection_tpu/systolic_4x4.cpp" line="59" pragmaType="unroll" parentfunction="systolic_4x4" factor="-1" skip_exit_check="0"/>
-<pragma file="../task_detection_tpu/systolic_4x4.cpp" line="61" pragmaType="unroll" parentfunction="systolic_4x4" factor="-1" skip_exit_check="0"/>
-<pragma file="../task_detection_tpu/systolic_4x4.cpp" line="38" pragmaType="unroll" parentfunction="systolic_4x4" factor="-1" skip_exit_check="0"/>
-<pragma file="../task_detection_tpu/systolic_4x4.cpp" line="40" pragmaType="unroll" parentfunction="systolic_4x4" factor="-1" skip_exit_check="0"/>
-<pragma file="../task_detection_tpu/systolic_4x4.cpp" line="31" pragmaType="unroll" parentfunction="systolic_4x4" factor="-1" skip_exit_check="0"/>
-<pragma file="../task_detection_tpu/systolic_4x4.cpp" line="18" pragmaType="array_partition" parentfunction="systolic_4x4" dim="0" factor="0" mode="complete" dynamic="0" variable="_ZZ12systolic_4x4P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA4_S2_bE3acc"/>
-<pragma file="../task_detection_tpu/systolic_4x4.cpp" line="23" pragmaType="array_partition" parentfunction="systolic_4x4" dim="0" factor="0" mode="complete" dynamic="0" variable="a_wire"/>
-<pragma file="../task_detection_tpu/systolic_4x4.cpp" line="27" pragmaType="array_partition" parentfunction="systolic_4x4" dim="0" factor="0" mode="complete" dynamic="0" variable="b_wire"/>
+<pragma file="../task_detection_tpu/systolic_8x8.cpp" line="14" pragmaType="pipeline" parentfunction="systolic_8x8" off="0" ii="1" style=""/>
+<pragma file="../task_detection_tpu/systolic_8x8.cpp" line="59" pragmaType="unroll" parentfunction="systolic_8x8" factor="-1" skip_exit_check="0"/>
+<pragma file="../task_detection_tpu/systolic_8x8.cpp" line="61" pragmaType="unroll" parentfunction="systolic_8x8" factor="-1" skip_exit_check="0"/>
+<pragma file="../task_detection_tpu/systolic_8x8.cpp" line="38" pragmaType="unroll" parentfunction="systolic_8x8" factor="-1" skip_exit_check="0"/>
+<pragma file="../task_detection_tpu/systolic_8x8.cpp" line="40" pragmaType="unroll" parentfunction="systolic_8x8" factor="-1" skip_exit_check="0"/>
+<pragma file="../task_detection_tpu/systolic_8x8.cpp" line="31" pragmaType="unroll" parentfunction="systolic_8x8" factor="-1" skip_exit_check="0"/>
+<pragma file="../task_detection_tpu/systolic_8x8.cpp" line="18" pragmaType="array_partition" parentfunction="systolic_8x8" dim="0" factor="0" mode="complete" dynamic="0" variable="_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE3acc"/>
+<pragma file="../task_detection_tpu/systolic_8x8.cpp" line="23" pragmaType="array_partition" parentfunction="systolic_8x8" dim="0" factor="0" mode="complete" dynamic="0" variable="a_wire"/>
+<pragma file="../task_detection_tpu/systolic_8x8.cpp" line="27" pragmaType="array_partition" parentfunction="systolic_8x8" dim="0" factor="0" mode="complete" dynamic="0" variable="b_wire"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
 </pragmas>

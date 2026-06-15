@@ -23,7 +23,7 @@ __USE_VCXX_CLANG__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../../task_detection_tpu/systolic_4x4_tb.cpp ../../../../../task_detection_tpu/systolic_4x4.cpp ../../../../../task_detection_tpu/systolic_2x2.cpp ../../../../../task_detection_tpu/pe.cpp
+HLS_SOURCES = ../../../../../task_detection_tpu/systolic_8x8_tb.cpp ../../../../../task_detection_tpu/systolic_8x8.cpp ../../../../../task_detection_tpu/systolic_4x4.cpp ../../../../../task_detection_tpu/systolic_2x2.cpp ../../../../../task_detection_tpu/pe.cpp
 
 override TARGET := csim.exe
 
@@ -83,26 +83,32 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/systolic_4x4_tb.o: ../../../../../task_detection_tpu/systolic_4x4_tb.cpp $(ObjDir)/.dir csim.mk
-	$(Echo) "   Compiling ../../../../../task_detection_tpu/systolic_4x4_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/systolic_8x8_tb.o: ../../../../../task_detection_tpu/systolic_8x8_tb.cpp $(ObjDir)/.dir csim.mk
+	$(Echo) "   Compiling ../../../../../task_detection_tpu/systolic_8x8_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/systolic_4x4_tb.d
+-include $(ObjDir)/systolic_8x8_tb.d
+
+$(ObjDir)/systolic_8x8.o: ../../../../../task_detection_tpu/systolic_8x8.cpp $(ObjDir)/.dir csim.mk
+	$(Echo) "   Compiling ../../../../../task_detection_tpu/systolic_8x8.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=systolic_8x8 $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/systolic_8x8.d
 
 $(ObjDir)/systolic_4x4.o: ../../../../../task_detection_tpu/systolic_4x4.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../../task_detection_tpu/systolic_4x4.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=systolic_4x4 $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=systolic_8x8 $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/systolic_4x4.d
 
 $(ObjDir)/systolic_2x2.o: ../../../../../task_detection_tpu/systolic_2x2.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../../task_detection_tpu/systolic_2x2.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=systolic_4x4 $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=systolic_8x8 $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/systolic_2x2.d
 
 $(ObjDir)/pe.o: ../../../../../task_detection_tpu/pe.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../../task_detection_tpu/pe.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=systolic_4x4 $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=systolic_8x8 $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/pe.d

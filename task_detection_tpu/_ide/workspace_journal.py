@@ -96,3 +96,13 @@ comp.run(operation="C_SIMULATION")
 
 comp.run(operation="SYNTHESIS")
 
+cfg.set_values(key="syn.file", values=["../task_detection_tpu/pe.cpp", "../task_detection_tpu/systolic_2x2.cpp", "../task_detection_tpu/systolic_4x4.cpp", "../task_detection_tpu/systolic_8x8.cpp"])
+
+cfg.set_values(key="tb.file", values=["../task_detection_tpu/systolic_8x8_tb.cpp"])
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="SYNTHESIS")
+

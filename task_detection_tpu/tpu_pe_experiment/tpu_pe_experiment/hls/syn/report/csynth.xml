@@ -6,7 +6,7 @@
         <unit>ns</unit>
         <ProductFamily>kintex7</ProductFamily>
         <Part>xc7k325t-ffg900-2</Part>
-        <TopModelName>systolic_4x4</TopModelName>
+        <TopModelName>systolic_8x8</TopModelName>
         <TargetClockPeriod>10.00</TargetClockPeriod>
         <ClockUncertainty>2.70</ClockUncertainty>
         <TargetInitiationInterval>1</TargetInitiationInterval>
@@ -20,29 +20,29 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>11</Best-caseLatency>
-            <Average-caseLatency>11</Average-caseLatency>
-            <Worst-caseLatency>11</Worst-caseLatency>
-            <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
-            <PipelineInitiationInterval>8</PipelineInitiationInterval>
-            <PipelineDepth>12</PipelineDepth>
-            <Interval-min>8</Interval-min>
-            <Interval-max>8</Interval-max>
+            <Best-caseLatency>35</Best-caseLatency>
+            <Average-caseLatency>35</Average-caseLatency>
+            <Worst-caseLatency>35</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.350 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.350 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.350 us</Worst-caseRealTimeLatency>
+            <PipelineInitiationInterval>32</PipelineInitiationInterval>
+            <PipelineDepth>36</PipelineDepth>
+            <Interval-min>32</Interval-min>
+            <Interval-max>32</Interval-max>
             <PerformancePragma>-</PerformancePragma>
         </SummaryOfOverallLatency>
         <SummaryOfViolations>
             <IssueType>-</IssueType>
             <ViolationType>-</ViolationType>
-            <SourceLocation>../task_detection_tpu/systolic_4x4.cpp:62</SourceLocation>
+            <SourceLocation>../task_detection_tpu/systolic_8x8.cpp:62</SourceLocation>
         </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <DSP>30</DSP>
-            <FF>1090</FF>
-            <LUT>711</LUT>
+            <DSP>126</DSP>
+            <FF>3482</FF>
+            <LUT>2630</LUT>
             <BRAM_18K>0</BRAM_18K>
             <URAM>0</URAM>
         </Resources>
@@ -57,7 +57,7 @@
     <InterfaceSummary>
         <RtlPorts>
             <name>ap_clk</name>
-            <Object>systolic_4x4</Object>
+            <Object>systolic_8x8</Object>
             <Type>return value</Type>
             <Scope/>
             <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -68,7 +68,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>ap_rst</name>
-            <Object>systolic_4x4</Object>
+            <Object>systolic_8x8</Object>
             <Type>return value</Type>
             <Scope/>
             <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -79,7 +79,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>ap_start</name>
-            <Object>systolic_4x4</Object>
+            <Object>systolic_8x8</Object>
             <Type>return value</Type>
             <Scope/>
             <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -90,7 +90,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>ap_done</name>
-            <Object>systolic_4x4</Object>
+            <Object>systolic_8x8</Object>
             <Type>return value</Type>
             <Scope/>
             <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -101,7 +101,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>ap_idle</name>
-            <Object>systolic_4x4</Object>
+            <Object>systolic_8x8</Object>
             <Type>return value</Type>
             <Scope/>
             <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -112,7 +112,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>ap_ready</name>
-            <Object>systolic_4x4</Object>
+            <Object>systolic_8x8</Object>
             <Type>return value</Type>
             <Scope/>
             <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -129,7 +129,7 @@
             <IOProtocol>ap_memory</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>2</Bits>
+            <Bits>3</Bits>
             <Attribute>address</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -165,7 +165,7 @@
             <IOProtocol>ap_memory</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>2</Bits>
+            <Bits>3</Bits>
             <Attribute>address</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -201,7 +201,7 @@
             <IOProtocol>ap_memory</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>2</Bits>
+            <Bits>3</Bits>
             <Attribute>address</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -237,7 +237,7 @@
             <IOProtocol>ap_memory</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>2</Bits>
+            <Bits>3</Bits>
             <Attribute>address</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -273,7 +273,7 @@
             <IOProtocol>ap_memory</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>4</Bits>
+            <Bits>6</Bits>
             <Attribute>address</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -321,7 +321,7 @@
             <IOProtocol>ap_memory</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
-            <Bits>4</Bits>
+            <Bits>6</Bits>
             <Attribute>address</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -376,13 +376,13 @@
     </InterfaceSummary>
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="2">
-            <ModuleName>systolic_4x4</ModuleName>
-            <BindInstances>mul_16s_16s_26_1_1_U1 add_ln18_fu_549_p2 mac_muladd_16s_16s_26s_26_4_1_U16 mac_muladd_16s_16s_26s_26_4_1_U16 mac_muladd_16s_16s_26s_26_4_1_U18 mac_muladd_16s_16s_26s_26_4_1_U18 mac_muladd_16s_16s_26s_26_4_1_U19 mac_muladd_16s_16s_26s_26_4_1_U19 mac_muladd_16s_16s_26s_26_4_1_U17 mac_muladd_16s_16s_26s_26_4_1_U17 mac_muladd_16s_16s_26s_26_4_1_U20 mac_muladd_16s_16s_26s_26_4_1_U20 mac_muladd_16s_16s_26s_26_4_1_U21 mac_muladd_16s_16s_26s_26_4_1_U21 mac_muladd_16s_16s_26s_26_4_1_U22 mac_muladd_16s_16s_26s_26_4_1_U22 mac_muladd_16s_16s_26s_26_4_1_U23 mac_muladd_16s_16s_26s_26_4_1_U23 mac_muladd_16s_16s_26s_26_4_1_U24 mac_muladd_16s_16s_26s_26_4_1_U24 mac_muladd_16s_16s_26s_26_4_1_U25 mac_muladd_16s_16s_26s_26_4_1_U25 mac_muladd_16s_16s_26s_26_4_1_U26 mac_muladd_16s_16s_26s_26_4_1_U26 mac_muladd_16s_16s_26s_26_4_1_U27 mac_muladd_16s_16s_26s_26_4_1_U27 mac_muladd_16s_16s_26s_26_4_1_U28 mac_muladd_16s_16s_26s_26_4_1_U28 mac_muladd_16s_16s_26s_26_4_1_U29 mac_muladd_16s_16s_26s_26_4_1_U29 mul_16s_16s_26_1_1_U2 mul_16s_16s_26_1_1_U3 mul_16s_16s_26_1_1_U4 mul_16s_16s_26_1_1_U5 mul_16s_16s_26_1_1_U6 mul_16s_16s_26_1_1_U7 mul_16s_16s_26_1_1_U8 mul_16s_16s_26_1_1_U9 mul_16s_16s_26_1_1_U10 mul_16s_16s_26_1_1_U11 mul_16s_16s_26_1_1_U12 mul_16s_16s_26_1_1_U13 mul_16s_16s_26_1_1_U14 mul_16s_16s_26_1_1_U15 mac_muladd_16s_16s_26s_26_4_1_U30 mac_muladd_16s_16s_26s_26_4_1_U30</BindInstances>
+            <ModuleName>systolic_8x8</ModuleName>
+            <BindInstances>mul_16s_16s_26_1_1_U1 add_ln18_fu_1747_p2 mac_muladd_16s_16s_26s_26_4_1_U64 mac_muladd_16s_16s_26s_26_4_1_U64 mac_muladd_16s_16s_26s_26_4_1_U66 mac_muladd_16s_16s_26s_26_4_1_U66 mac_muladd_16s_16s_26s_26_4_1_U67 mac_muladd_16s_16s_26s_26_4_1_U67 mac_muladd_16s_16s_26s_26_4_1_U68 mac_muladd_16s_16s_26s_26_4_1_U68 mac_muladd_16s_16s_26s_26_4_1_U69 mac_muladd_16s_16s_26s_26_4_1_U69 mac_muladd_16s_16s_26s_26_4_1_U70 mac_muladd_16s_16s_26s_26_4_1_U70 mac_muladd_16s_16s_26s_26_4_1_U71 mac_muladd_16s_16s_26s_26_4_1_U71 mac_muladd_16s_16s_26s_26_4_1_U65 mac_muladd_16s_16s_26s_26_4_1_U65 mac_muladd_16s_16s_26s_26_4_1_U72 mac_muladd_16s_16s_26s_26_4_1_U72 mac_muladd_16s_16s_26s_26_4_1_U73 mac_muladd_16s_16s_26s_26_4_1_U73 mac_muladd_16s_16s_26s_26_4_1_U74 mac_muladd_16s_16s_26s_26_4_1_U74 mac_muladd_16s_16s_26s_26_4_1_U75 mac_muladd_16s_16s_26s_26_4_1_U75 mac_muladd_16s_16s_26s_26_4_1_U76 mac_muladd_16s_16s_26s_26_4_1_U76 mac_muladd_16s_16s_26s_26_4_1_U77 mac_muladd_16s_16s_26s_26_4_1_U77 mac_muladd_16s_16s_26s_26_4_1_U78 mac_muladd_16s_16s_26s_26_4_1_U78 mac_muladd_16s_16s_26s_26_4_1_U79 mac_muladd_16s_16s_26s_26_4_1_U79 mac_muladd_16s_16s_26s_26_4_1_U80 mac_muladd_16s_16s_26s_26_4_1_U80 mac_muladd_16s_16s_26s_26_4_1_U81 mac_muladd_16s_16s_26s_26_4_1_U81 mac_muladd_16s_16s_26s_26_4_1_U82 mac_muladd_16s_16s_26s_26_4_1_U82 mac_muladd_16s_16s_26s_26_4_1_U83 mac_muladd_16s_16s_26s_26_4_1_U83 mac_muladd_16s_16s_26s_26_4_1_U84 mac_muladd_16s_16s_26s_26_4_1_U84 mac_muladd_16s_16s_26s_26_4_1_U85 mac_muladd_16s_16s_26s_26_4_1_U85 mac_muladd_16s_16s_26s_26_4_1_U86 mac_muladd_16s_16s_26s_26_4_1_U86 mac_muladd_16s_16s_26s_26_4_1_U87 mac_muladd_16s_16s_26s_26_4_1_U87 mac_muladd_16s_16s_26s_26_4_1_U88 mac_muladd_16s_16s_26s_26_4_1_U88 mac_muladd_16s_16s_26s_26_4_1_U89 mac_muladd_16s_16s_26s_26_4_1_U89 mac_muladd_16s_16s_26s_26_4_1_U90 mac_muladd_16s_16s_26s_26_4_1_U90 mac_muladd_16s_16s_26s_26_4_1_U91 mac_muladd_16s_16s_26s_26_4_1_U91 mac_muladd_16s_16s_26s_26_4_1_U92 mac_muladd_16s_16s_26s_26_4_1_U92 mac_muladd_16s_16s_26s_26_4_1_U93 mac_muladd_16s_16s_26s_26_4_1_U93 mac_muladd_16s_16s_26s_26_4_1_U94 mac_muladd_16s_16s_26s_26_4_1_U94 mac_muladd_16s_16s_26s_26_4_1_U95 mac_muladd_16s_16s_26s_26_4_1_U95 mac_muladd_16s_16s_26s_26_4_1_U96 mac_muladd_16s_16s_26s_26_4_1_U96 mac_muladd_16s_16s_26s_26_4_1_U97 mac_muladd_16s_16s_26s_26_4_1_U97 mac_muladd_16s_16s_26s_26_4_1_U98 mac_muladd_16s_16s_26s_26_4_1_U98 mac_muladd_16s_16s_26s_26_4_1_U99 mac_muladd_16s_16s_26s_26_4_1_U99 mac_muladd_16s_16s_26s_26_4_1_U100 mac_muladd_16s_16s_26s_26_4_1_U100 mac_muladd_16s_16s_26s_26_4_1_U101 mac_muladd_16s_16s_26s_26_4_1_U101 mac_muladd_16s_16s_26s_26_4_1_U102 mac_muladd_16s_16s_26s_26_4_1_U102 mac_muladd_16s_16s_26s_26_4_1_U103 mac_muladd_16s_16s_26s_26_4_1_U103 mac_muladd_16s_16s_26s_26_4_1_U104 mac_muladd_16s_16s_26s_26_4_1_U104 mac_muladd_16s_16s_26s_26_4_1_U105 mac_muladd_16s_16s_26s_26_4_1_U105 mac_muladd_16s_16s_26s_26_4_1_U106 mac_muladd_16s_16s_26s_26_4_1_U106 mac_muladd_16s_16s_26s_26_4_1_U107 mac_muladd_16s_16s_26s_26_4_1_U107 mac_muladd_16s_16s_26s_26_4_1_U108 mac_muladd_16s_16s_26s_26_4_1_U108 mac_muladd_16s_16s_26s_26_4_1_U109 mac_muladd_16s_16s_26s_26_4_1_U109 mac_muladd_16s_16s_26s_26_4_1_U110 mac_muladd_16s_16s_26s_26_4_1_U110 mac_muladd_16s_16s_26s_26_4_1_U111 mac_muladd_16s_16s_26s_26_4_1_U111 mac_muladd_16s_16s_26s_26_4_1_U112 mac_muladd_16s_16s_26s_26_4_1_U112 mac_muladd_16s_16s_26s_26_4_1_U113 mac_muladd_16s_16s_26s_26_4_1_U113 mac_muladd_16s_16s_26s_26_4_1_U114 mac_muladd_16s_16s_26s_26_4_1_U114 mac_muladd_16s_16s_26s_26_4_1_U115 mac_muladd_16s_16s_26s_26_4_1_U115 mac_muladd_16s_16s_26s_26_4_1_U116 mac_muladd_16s_16s_26s_26_4_1_U116 mac_muladd_16s_16s_26s_26_4_1_U117 mac_muladd_16s_16s_26s_26_4_1_U117 mac_muladd_16s_16s_26s_26_4_1_U118 mac_muladd_16s_16s_26s_26_4_1_U118 mac_muladd_16s_16s_26s_26_4_1_U119 mac_muladd_16s_16s_26s_26_4_1_U119 mac_muladd_16s_16s_26s_26_4_1_U120 mac_muladd_16s_16s_26s_26_4_1_U120 mac_muladd_16s_16s_26s_26_4_1_U121 mac_muladd_16s_16s_26s_26_4_1_U121 mac_muladd_16s_16s_26s_26_4_1_U122 mac_muladd_16s_16s_26s_26_4_1_U122 mac_muladd_16s_16s_26s_26_4_1_U123 mac_muladd_16s_16s_26s_26_4_1_U123 mac_muladd_16s_16s_26s_26_4_1_U124 mac_muladd_16s_16s_26s_26_4_1_U124 mac_muladd_16s_16s_26s_26_4_1_U125 mac_muladd_16s_16s_26s_26_4_1_U125 mul_16s_16s_26_1_1_U2 mul_16s_16s_26_1_1_U3 mul_16s_16s_26_1_1_U4 mul_16s_16s_26_1_1_U5 mul_16s_16s_26_1_1_U6 mul_16s_16s_26_1_1_U7 mul_16s_16s_26_1_1_U8 mul_16s_16s_26_1_1_U9 mul_16s_16s_26_1_1_U10 mul_16s_16s_26_1_1_U11 mul_16s_16s_26_1_1_U12 mul_16s_16s_26_1_1_U13 mul_16s_16s_26_1_1_U14 mul_16s_16s_26_1_1_U15 mul_16s_16s_26_1_1_U16 mul_16s_16s_26_1_1_U17 mul_16s_16s_26_1_1_U18 mul_16s_16s_26_1_1_U19 mul_16s_16s_26_1_1_U20 mul_16s_16s_26_1_1_U21 mul_16s_16s_26_1_1_U22 mul_16s_16s_26_1_1_U23 mul_16s_16s_26_1_1_U24 mul_16s_16s_26_1_1_U25 mul_16s_16s_26_1_1_U26 mul_16s_16s_26_1_1_U27 mul_16s_16s_26_1_1_U28 mul_16s_16s_26_1_1_U29 mul_16s_16s_26_1_1_U30 mul_16s_16s_26_1_1_U31 mul_16s_16s_26_1_1_U32 mul_16s_16s_26_1_1_U33 mul_16s_16s_26_1_1_U34 mul_16s_16s_26_1_1_U35 mul_16s_16s_26_1_1_U36 mul_16s_16s_26_1_1_U37 mul_16s_16s_26_1_1_U38 mul_16s_16s_26_1_1_U39 mul_16s_16s_26_1_1_U40 mul_16s_16s_26_1_1_U41 mul_16s_16s_26_1_1_U42 mul_16s_16s_26_1_1_U43 mul_16s_16s_26_1_1_U44 mul_16s_16s_26_1_1_U45 mul_16s_16s_26_1_1_U46 mul_16s_16s_26_1_1_U47 mul_16s_16s_26_1_1_U48 mul_16s_16s_26_1_1_U49 mul_16s_16s_26_1_1_U50 mul_16s_16s_26_1_1_U51 mul_16s_16s_26_1_1_U52 mul_16s_16s_26_1_1_U53 mul_16s_16s_26_1_1_U54 mul_16s_16s_26_1_1_U55 mul_16s_16s_26_1_1_U56 mul_16s_16s_26_1_1_U57 mul_16s_16s_26_1_1_U58 mul_16s_16s_26_1_1_U59 mul_16s_16s_26_1_1_U60 mul_16s_16s_26_1_1_U61 mul_16s_16s_26_1_1_U62 mul_16s_16s_26_1_1_U63 mac_muladd_16s_16s_26s_26_4_1_U126 mac_muladd_16s_16s_26s_26_4_1_U126</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>systolic_4x4</Name>
+            <Name>systolic_8x8</Name>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -391,34 +391,34 @@
                     <EstimatedClockPeriod>6.004</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>11</Best-caseLatency>
-                    <Average-caseLatency>11</Average-caseLatency>
-                    <Worst-caseLatency>11</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>8</PipelineInitiationInterval>
-                    <PipelineDepth>12</PipelineDepth>
+                    <Best-caseLatency>35</Best-caseLatency>
+                    <Average-caseLatency>35</Average-caseLatency>
+                    <Worst-caseLatency>35</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.350 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.350 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.350 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>32</PipelineInitiationInterval>
+                    <PipelineDepth>36</PipelineDepth>
                     <PipelineType>yes</PipelineType>
                     <PerformancePragma>-</PerformancePragma>
                 </SummaryOfOverallLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>../task_detection_tpu/systolic_4x4.cpp:62</SourceLocation>
+                    <SourceLocation>../task_detection_tpu/systolic_8x8.cpp:62</SourceLocation>
                 </SummaryOfViolations>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <DSP>30</DSP>
+                    <DSP>126</DSP>
                     <AVAIL_DSP>840</AVAIL_DSP>
-                    <UTIL_DSP>3</UTIL_DSP>
-                    <FF>1090</FF>
+                    <UTIL_DSP>15</UTIL_DSP>
+                    <FF>3482</FF>
                     <AVAIL_FF>407600</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>711</LUT>
+                    <LUT>2630</LUT>
                     <AVAIL_LUT>203800</AVAIL_LUT>
-                    <UTIL_LUT>~0</UTIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>890</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
@@ -429,35 +429,131 @@
             </AreaEstimates>
             <BindNodes>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U1" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln18_fu_549_p2" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U16" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_15" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U16" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_1" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U18" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_16" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U18" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_2" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U19" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_17" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U19" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_3" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U17" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_18" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U17" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_4" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U20" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_19" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U20" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_5" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U21" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_20" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U21" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_6" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U22" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_21" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U22" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_7" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U23" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_22" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U23" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_8" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U24" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_23" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U24" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_9" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U25" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_24" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U25" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_10" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U26" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_25" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U26" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_11" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U27" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_26" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U27" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_12" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U28" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_27" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U28" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_13" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U29" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_28" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U29" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln18_fu_1747_p2" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U64" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_63" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U64" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U66" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_64" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U66" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U67" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_65" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U67" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U68" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_66" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U68" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U69" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_67" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U69" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U70" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_68" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U70" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U71" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_69" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U71" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U65" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_70" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U65" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U72" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_71" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U72" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_9" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U73" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_72" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U73" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_10" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U74" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_73" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U74" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_11" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U75" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_74" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U75" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_12" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U76" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_75" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U76" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_13" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U77" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_76" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U77" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_14" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U78" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_77" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U78" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U79" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_78" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U79" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_16" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U80" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_79" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U80" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_17" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U81" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_80" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U81" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_18" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U82" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_81" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U82" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_19" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U83" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_82" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U83" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_20" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U84" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_83" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U84" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_21" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U85" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_84" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U85" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_22" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U86" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_85" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U86" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_23" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U87" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_86" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U87" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_24" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U88" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_87" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U88" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_25" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U89" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_88" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U89" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_26" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U90" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_89" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U90" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_27" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U91" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_90" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U91" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_28" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U92" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_91" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U92" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_29" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U93" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_92" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U93" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_30" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U94" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_93" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U94" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_31" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U95" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_94" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U95" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_32" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U96" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_95" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U96" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_33" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U97" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_96" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U97" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_34" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U98" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_97" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U98" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_35" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U99" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_98" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U99" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_36" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U100" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_99" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U100" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_37" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U101" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_100" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U101" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_38" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U102" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_101" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U102" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_39" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U103" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_102" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U103" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_40" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U104" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_103" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U104" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_41" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U105" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_104" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U105" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_42" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U106" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_105" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U106" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_43" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U107" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_106" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U107" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_44" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U108" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_107" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U108" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U109" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_108" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U109" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U110" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_109" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U110" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U111" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_110" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U111" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_48" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U112" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_111" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U112" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_49" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U113" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_112" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U113" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_50" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U114" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_113" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U114" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_51" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U115" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_114" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U115" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_52" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U116" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_115" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U116" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_53" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U117" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_116" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U117" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_54" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U118" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_117" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U118" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_55" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U119" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_118" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U119" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_56" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U120" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_119" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U120" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_57" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U121" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_120" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U121" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_58" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U122" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_121" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U122" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_59" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U123" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_122" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U123" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_60" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U124" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_123" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U124" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_61" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U125" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_124" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U125" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_62" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U2" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_1" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U3" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_2" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U4" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_3" VISIBLE="true"/>
@@ -472,8 +568,56 @@
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U13" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_12" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U14" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_13" VISIBLE="true"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U15" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_14" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U30" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_29" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U30" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U16" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_15" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U17" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_16" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U18" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_17" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U19" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_18" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U20" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_19" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U21" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_20" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U22" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_21" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U23" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_22" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U24" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_23" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U25" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_24" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U26" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_25" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U27" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_26" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U28" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_27" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U29" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_28" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U30" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_29" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U31" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_30" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U32" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_31" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U33" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_32" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U34" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_33" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U35" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_34" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U36" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_35" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U37" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_36" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U38" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_37" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U39" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_38" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U40" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_39" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U41" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_40" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U42" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_41" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U43" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_42" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U44" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_43" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U45" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_44" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U46" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_45" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U47" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U48" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_47" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U49" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_48" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U50" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_49" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U51" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_50" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U52" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_51" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U53" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_52" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U54" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_53" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U55" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_54" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U56" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_55" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U57" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_56" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U58" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_57" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U59" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_58" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U60" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_59" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U61" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_60" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U62" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_61" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_26_1_1_U63" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_62" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U126" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln18_125" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_26s_26_4_1_U126" SOURCE="../task_detection_tpu/pe.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln18_63" VISIBLE="true"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
@@ -555,7 +699,7 @@
                 <port>ap_start</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="A_in_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="2">
+        <Interface InterfaceName="A_in_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="3">
             <portMaps>
                 <portMap portMapName="A_in_address0">DATA</portMap>
             </portMaps>
@@ -577,7 +721,7 @@
                 <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="A_in"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="A_in_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="2">
+        <Interface InterfaceName="A_in_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="3">
             <portMaps>
                 <portMap portMapName="A_in_address1">DATA</portMap>
             </portMaps>
@@ -599,7 +743,7 @@
                 <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="A_in"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="B_in_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="2">
+        <Interface InterfaceName="B_in_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="3">
             <portMaps>
                 <portMap portMapName="B_in_address0">DATA</portMap>
             </portMaps>
@@ -621,7 +765,7 @@
                 <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="B_in"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="B_in_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="2">
+        <Interface InterfaceName="B_in_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="3">
             <portMaps>
                 <portMap portMapName="B_in_address1">DATA</portMap>
             </portMaps>
@@ -643,7 +787,7 @@
                 <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="B_in"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="C_out_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="4">
+        <Interface InterfaceName="C_out_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="6">
             <portMaps>
                 <portMap portMapName="C_out_address0">DATA</portMap>
             </portMaps>
@@ -665,7 +809,7 @@
                 <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="C_out"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="C_out_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="4">
+        <Interface InterfaceName="C_out_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="6">
             <portMaps>
                 <portMap portMapName="C_out_address1">DATA</portMap>
             </portMaps>
@@ -704,16 +848,16 @@
             <item name="AP_MEMORY">
                 <table>
                     <keys size="3">Port, Direction, Bitwidth</keys>
-                    <column name="A_in_address0">out, 2</column>
-                    <column name="A_in_address1">out, 2</column>
+                    <column name="A_in_address0">out, 3</column>
+                    <column name="A_in_address1">out, 3</column>
                     <column name="A_in_q0">in, 16</column>
                     <column name="A_in_q1">in, 16</column>
-                    <column name="B_in_address0">out, 2</column>
-                    <column name="B_in_address1">out, 2</column>
+                    <column name="B_in_address0">out, 3</column>
+                    <column name="B_in_address1">out, 3</column>
                     <column name="B_in_q0">in, 16</column>
                     <column name="B_in_q1">in, 16</column>
-                    <column name="C_out_address0">out, 4</column>
-                    <column name="C_out_address1">out, 4</column>
+                    <column name="C_out_address0">out, 6</column>
+                    <column name="C_out_address1">out, 6</column>
                     <column name="C_out_d0">out, 16</column>
                     <column name="C_out_d1">out, 16</column>
                 </table>
@@ -789,5 +933,14 @@
         <Pragma type="unroll" location="../task_detection_tpu/systolic_4x4.cpp:40" status="valid" parentFunction="systolic_4x4" variable="" isDirective="0" options=""/>
         <Pragma type="unroll" location="../task_detection_tpu/systolic_4x4.cpp:59" status="valid" parentFunction="systolic_4x4" variable="" isDirective="0" options=""/>
         <Pragma type="unroll" location="../task_detection_tpu/systolic_4x4.cpp:61" status="valid" parentFunction="systolic_4x4" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../task_detection_tpu/systolic_8x8.cpp:14" status="valid" parentFunction="systolic_8x8" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="array_partition" location="../task_detection_tpu/systolic_8x8.cpp:18" status="valid" parentFunction="systolic_8x8" variable="acc" isDirective="0" options="variable=acc complete dim=0"/>
+        <Pragma type="array_partition" location="../task_detection_tpu/systolic_8x8.cpp:23" status="valid" parentFunction="systolic_8x8" variable="a_wire" isDirective="0" options="variable=a_wire complete dim=0"/>
+        <Pragma type="array_partition" location="../task_detection_tpu/systolic_8x8.cpp:27" status="valid" parentFunction="systolic_8x8" variable="b_wire" isDirective="0" options="variable=b_wire complete dim=0"/>
+        <Pragma type="unroll" location="../task_detection_tpu/systolic_8x8.cpp:31" status="valid" parentFunction="systolic_8x8" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../task_detection_tpu/systolic_8x8.cpp:38" status="valid" parentFunction="systolic_8x8" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../task_detection_tpu/systolic_8x8.cpp:40" status="valid" parentFunction="systolic_8x8" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../task_detection_tpu/systolic_8x8.cpp:59" status="valid" parentFunction="systolic_8x8" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="../task_detection_tpu/systolic_8x8.cpp:61" status="valid" parentFunction="systolic_8x8" variable="" isDirective="0" options=""/>
     </PragmaReport>
 </profile>

@@ -1,25 +1,25 @@
 {
   "0": {
-    "basicblocks": 33,
-    "calls": "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+    "basicblocks": 129,
+    "calls": "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
     "control_depth": 1,
     "def_use_depth": 2,
-    "file": "systolic_4x4.cpp",
+    "file": "systolic_8x8.cpp",
     "fileloc": 7,
-    "instructions": 207,
+    "instructions": 763,
     "loads": {
-      "G": 16,
-      "L": 27,
-      "T": 8
-    },
-    "memory_accesses": 107,
-    "name": "systolic_4x4",
-    "stores": {
-      "G": 16,
-      "L": 8,
+      "G": 64,
+      "L": 119,
       "T": 16
     },
-    "total_instructions": 495
+    "memory_accesses": 407,
+    "name": "systolic_8x8",
+    "stores": {
+      "G": 64,
+      "L": 16,
+      "T": 64
+    },
+    "total_instructions": 1915
   },
   "1": {
     "basicblocks": 3,
