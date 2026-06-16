@@ -1,0 +1,1499 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./conv2d_core.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/conv2d_core.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./conv2d_tb.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/conv2d_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=conv2d_v2' from hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 5.1 seconds. CPU system time: 0.8 seconds. Elapsed time: 8.89 seconds; current allocated memory: 269.512 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'conv2d_core.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 12.55 seconds. CPU system time: 1.21 seconds. Elapsed time: 17.02 seconds; current allocated memory: 271.094 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 778 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 16,741 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,687 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,618 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,618 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 200-1995] There were 191,448 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,852 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,286 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,412 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,363 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,496 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,477 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,073 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,888 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,743 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,787 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_53_9' is marked as complete unroll implied by the pipeline pragma (conv2d_core.cpp:53:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_56_10' is marked as complete unroll implied by the pipeline pragma (conv2d_core.cpp:56:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_77_11' is marked as complete unroll implied by the pipeline pragma (conv2d_core.cpp:77:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_82_12' is marked as complete unroll implied by the pipeline pragma (conv2d_core.cpp:82:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_84_13' is marked as complete unroll implied by the pipeline pragma (conv2d_core.cpp:84:43)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_86_14' is marked as complete unroll implied by the pipeline pragma (conv2d_core.cpp:86:47)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_53_9' (conv2d_core.cpp:53:30) in function 'conv2d_v2' completely with a factor of 3 (conv2d_core.cpp:11:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_56_10' (conv2d_core.cpp:56:35) in function 'conv2d_v2' completely with a factor of 3 (conv2d_core.cpp:11:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_77_11' (conv2d_core.cpp:77:35) in function 'conv2d_v2' completely with a factor of 16 (conv2d_core.cpp:11:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_82_12' (conv2d_core.cpp:82:39) in function 'conv2d_v2' completely with a factor of 3 (conv2d_core.cpp:11:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_84_13' (conv2d_core.cpp:84:43) in function 'conv2d_v2' completely with a factor of 3 (conv2d_core.cpp:11:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_86_14' (conv2d_core.cpp:86:47) in function 'conv2d_v2' completely with a factor of 3 (conv2d_core.cpp:11:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_38_6' (conv2d_core.cpp:38:30) in function 'conv2d_v2' completely with a factor of 3 (conv2d_core.cpp:11:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_28_3' (conv2d_core.cpp:28:30) in function 'conv2d_v2' completely with a factor of 16 (conv2d_core.cpp:11:0)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (conv2d_core.cpp:13:12)
+INFO: [HLS 214-248] Applying array_partition to 'window': Complete partitioning on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3. (conv2d_core.cpp:18:12)
+INFO: [HLS 214-248] Applying array_partition to 'weights': Complete partitioning on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3. Complete partitioning on dimension 4. (conv2d_core.cpp:11:0)
+INFO: [HLS 214-248] Applying array_partition to 'bias': Complete partitioning on dimension 1. (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'out_stream' with compact=bit mode in 256-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_15_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_14_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_13_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_12_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_11_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_10_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_9_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_8_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_7_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_6_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_5_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_4_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_3_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_2_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_1_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_2_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_2_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_2_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_2_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_2_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_2_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_2_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_2_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_2_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_1_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_1_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_1_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_1_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_1_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_1_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_1_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_1_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_1_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_0_2_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_0_2_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_0_2_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_0_1_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_0_1_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_0_1_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_0_0_2' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_0_0_1' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'weights_0_0_0_0' with compact=bit mode in 16-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'in_stream' with compact=bit mode in 48-bits (conv2d_core.cpp:11:0)
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_27_2> at conv2d_core.cpp:27:26 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_37_5> at conv2d_core.cpp:37:26 due to pipeline_loops threshold
+INFO: [HLS 214-449] Partitioning array 'p_out' dimension 1 due to constant index. (conv2d_core.cpp:74:29)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_0_0' due to pipeline pragma (conv2d_core.cpp:13:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_0_1' due to pipeline pragma (conv2d_core.cpp:13:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_1_0' due to pipeline pragma (conv2d_core.cpp:13:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_1_1' due to pipeline pragma (conv2d_core.cpp:13:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_2_0' due to pipeline pragma (conv2d_core.cpp:13:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_2_1' due to pipeline pragma (conv2d_core.cpp:13:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_0_0': Complete partitioning on dimension 1. (conv2d_core.cpp:13:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_0_1': Complete partitioning on dimension 1. (conv2d_core.cpp:13:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_1_0': Complete partitioning on dimension 1. (conv2d_core.cpp:13:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_1_1': Complete partitioning on dimension 1. (conv2d_core.cpp:13:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_2_0': Complete partitioning on dimension 1. (conv2d_core.cpp:13:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_2_1': Complete partitioning on dimension 1. (conv2d_core.cpp:13:12)
+INFO: [HLS 214-248] Applying array_partition to 'p_out': Complete partitioning on dimension 1. (conv2d_core.cpp:74:29)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 32.61 seconds. CPU system time: 1.26 seconds. Elapsed time: 42.11 seconds; current allocated memory: 282.168 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 282.168 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.07 seconds. CPU system time: 0.03 seconds. Elapsed time: 2.7 seconds; current allocated memory: 295.012 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 3.88 seconds; current allocated memory: 296.270 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (conv2d_core.cpp:40:34) to (conv2d_core.cpp:40:34) in function 'conv2d_v2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (conv2d_core.cpp:40:34) to (conv2d_core.cpp:40:34) in function 'conv2d_v2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (conv2d_core.cpp:40:34) to (conv2d_core.cpp:40:34) in function 'conv2d_v2'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4.73 seconds. CPU system time: 0.05 seconds. Elapsed time: 7.69 seconds; current allocated memory: 342.766 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_26_1'(conv2d_core.cpp:26:22) and 'VITIS_LOOP_27_2'(conv2d_core.cpp:27:26) in function 'conv2d_v2' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_36_4'(conv2d_core.cpp:36:22) and 'VITIS_LOOP_37_5'(conv2d_core.cpp:37:26) in function 'conv2d_v2' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_46_7'(conv2d_core.cpp:46:22) and 'VITIS_LOOP_47_8'(conv2d_core.cpp:47:26) in function 'conv2d_v2' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_26_1' (conv2d_core.cpp:26:22) in function 'conv2d_v2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_36_4' (conv2d_core.cpp:36:22) in function 'conv2d_v2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_46_7' (conv2d_core.cpp:46:22) in function 'conv2d_v2'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2.48 seconds. CPU system time: 0.03 seconds. Elapsed time: 3.05 seconds; current allocated memory: 365.539 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv2d_v2' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d_v2_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_27_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_1_VITIS_LOOP_27_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_26_1_VITIS_LOOP_27_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.94 seconds. CPU system time: 0.06 seconds. Elapsed time: 3.56 seconds; current allocated memory: 365.539 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 365.539 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d_v2_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_36_4_VITIS_LOOP_37_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_36_4_VITIS_LOOP_37_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 365.539 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 365.539 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d_v2_Pipeline_VITIS_LOOP_46_7_VITIS_LOOP_47_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_431) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_430) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_429) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_428) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_427) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_426) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_425) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_424) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_423) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_422) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_421) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_420) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_419) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_418) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_417) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_416) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_415) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_414) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_413) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_412) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_411) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_410) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_409) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_408) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_407) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_406) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_405) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_404) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_403) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_402) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_401) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_400) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_399) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_398) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_397) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_396) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_395) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_394) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_393) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_392) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_391) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_390) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_389) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_388) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_387) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_386) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_385) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_384) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_383) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_382) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_381) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_380) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_379) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_378) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_377) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_376) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_375) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_374) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_373) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_372) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_371) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_370) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_369) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_368) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_367) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_366) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_365) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_364) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_363) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_362) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_361) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_360) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_359) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_358) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_357) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_356) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_355) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_354) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_353) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_352) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_351) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_350) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_349) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_348) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_347) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_346) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_345) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_344) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_343) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_342) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_341) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_340) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_339) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_338) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_337) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_336) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_335) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_334) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_333) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_332) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_331) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_330) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_329) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_328) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_327) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_326) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_325) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_324) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_323) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_322) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_321) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_320) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_319) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_318) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_317) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_316) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_315) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_314) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_313) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_312) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_311) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_310) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_309) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_308) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_307) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_306) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_305) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_304) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_303) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_302) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_301) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_300) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_299) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_298) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_297) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_296) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_295) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_294) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_293) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_292) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_291) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_290) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_289) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_288) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_287) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_286) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_285) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_284) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_283) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_282) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_281) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_280) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_279) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_278) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_277) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_276) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_275) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_274) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_273) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_272) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_271) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_270) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_269) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_268) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_267) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_266) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_265) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_264) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_263) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_262) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_261) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_260) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_259) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_258) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_257) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_256) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_255) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_254) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_253) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_252) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_251) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_250) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_249) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_248) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_247) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_246) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_245) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_244) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_243) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_242) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_241) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_240) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_239) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_238) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_237) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_236) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_235) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_234) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_233) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_232) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_231) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_230) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_229) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_228) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_227) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_226) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_225) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_224) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_223) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_222) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_221) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_220) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_219) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_218) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_217) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_216) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_215) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_214) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_213) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_212) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_211) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_210) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_209) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_208) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_207) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_206) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_205) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_204) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_203) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_202) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_201) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_200) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_199) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_198) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_197) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_196) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_195) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_194) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_193) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_192) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_191) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_190) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_189) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_188) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_187) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_186) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_185) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_184) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_183) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_182) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_181) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_180) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_179) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_178) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_177) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_176) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_175) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_174) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_173) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_172) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_171) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_170) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_169) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_168) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_167) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_166) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_165) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_164) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_163) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_162) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_161) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_160) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_159) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_158) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_157) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_156) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_155) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_154) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_153) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_152) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_151) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_150) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_149) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_148) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_147) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_146) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_145) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_144) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_143) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_142) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_141) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_140) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_139) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_138) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_137) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_136) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_135) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_134) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_133) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_132) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_131) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_130) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_129) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_128) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_127) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_126) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_125) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_124) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_123) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_122) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_121) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_120) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_119) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_118) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_117) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_116) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_115) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_114) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_113) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_112) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_111) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_110) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_109) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_108) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_107) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_106) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_105) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_104) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_103) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_102) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_101) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_100) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_99) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_98) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_96) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_95) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_94) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_93) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_92) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_91) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_90) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_89) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_88) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_87) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_86) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_85) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_84) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_83) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_82) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_81) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_80) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_78) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_77) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_76) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_75) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_74) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_73) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_72) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_71) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_70) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_69) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_68) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_67) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_66) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_65) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_64) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_51) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln88) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_46_7_VITIS_LOOP_47_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 31, loop 'VITIS_LOOP_46_7_VITIS_LOOP_47_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4.47 seconds. CPU system time: 0.05 seconds. Elapsed time: 6.03 seconds; current allocated memory: 381.758 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.47 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.87 seconds; current allocated memory: 381.758 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d_v2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.5 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.77 seconds; current allocated memory: 388.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.28 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.35 seconds; current allocated memory: 391.742 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d_v2_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_27_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d_v2_Pipeline_VITIS_LOOP_26_1_VITIS_LOOP_27_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.42 seconds; current allocated memory: 392.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d_v2_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d_v2_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.33 seconds; current allocated memory: 396.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d_v2_Pipeline_VITIS_LOOP_46_7_VITIS_LOOP_47_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2d_v2_Pipeline_VITIS_LOOP_46_7_VITIS_LOOP_47_8' pipeline 'VITIS_LOOP_46_7_VITIS_LOOP_47_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'conv2d_v2_Pipeline_VITIS_LOOP_46_7_VITIS_LOOP_47_8' is 11338 from HDL expression: ((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_26s_26_4_1': 432 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_16_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d_v2_Pipeline_VITIS_LOOP_46_7_VITIS_LOOP_47_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5.51 seconds. CPU system time: 0.1 seconds. Elapsed time: 6.4 seconds; current allocated memory: 443.777 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d_v2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/in_stream' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_0_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_1_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_2_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_3_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_4_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_5_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_6_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_7_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_8_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_9_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_10_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_11_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_12_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_13_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_14_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_0_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_0_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_0_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_0_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_0_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_0_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_0_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_0_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_0_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_1_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_1_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_1_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_1_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_1_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_1_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_1_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_1_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_1_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_2_0_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_2_0_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_2_0_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_2_1_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_2_1_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_2_1_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_2_2_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_2_2_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/weights_15_2_2_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_5' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_6' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_7' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_8' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_9' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_10' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_11' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_12' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_13' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_14' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/bias_15' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv2d_v2/out_stream' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv2d_v2' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-104] Estimated max fanout for 'conv2d_v2' is 7329 from HDL expression: (1'b1 == ap_CS_fsm_state3)
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d_v2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.85 seconds. CPU system time: 0.15 seconds. Elapsed time: 4.59 seconds; current allocated memory: 509.027 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.12 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.53 seconds; current allocated memory: 509.027 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 6.68 seconds. CPU system time: 0.15 seconds. Elapsed time: 10.41 seconds; current allocated memory: 530.652 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv2d_v2.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv2d_v2.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 247.83 MHz
+INFO: [HLS 200-112] Total CPU user time: 87.49 seconds. Total CPU system time: 4.16 seconds. Total elapsed time: 123.29 seconds; peak allocated memory: 530.652 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 2m 14s

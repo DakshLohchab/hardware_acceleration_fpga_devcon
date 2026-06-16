@@ -1,0 +1,250 @@
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:2269:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:2269:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:2283:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:2283:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:2297:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:2297:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:5836:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:5836:7: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54993:5: remark: Added loop label VITIS_LOOP_19_1:   [xilinx-label-all-loops]
+    for(int ic=0; ic<3; ic++) {
+    ^
+    VITIS_LOOP_19_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54993:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54994:9: remark: Added loop label VITIS_LOOP_20_2:   [xilinx-label-all-loops]
+        for(int r=0; r<2; r++) for(int c=0; c<16; c++) line_buf[ic][r][c] = 0;
+        ^
+        VITIS_LOOP_20_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54994:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54994:32: remark: Added loop label VITIS_LOOP_20_3:   [xilinx-label-all-loops]
+        for(int r=0; r<2; r++) for(int c=0; c<16; c++) line_buf[ic][r][c] = 0;
+                               ^
+                               VITIS_LOOP_20_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54994:32: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54995:9: remark: Added loop label VITIS_LOOP_21_4:   [xilinx-label-all-loops]
+        for(int r=0; r<3; r++) for(int c=0; c<3; c++) window[ic][r][c] = 0;
+        ^
+        VITIS_LOOP_21_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54995:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54995:32: remark: Added loop label VITIS_LOOP_21_5:   [xilinx-label-all-loops]
+        for(int r=0; r<3; r++) for(int c=0; c<3; c++) window[ic][r][c] = 0;
+                               ^
+                               VITIS_LOOP_21_5: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54995:32: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54998:5: remark: Added loop label VITIS_LOOP_24_6:   [xilinx-label-all-loops]
+    for (int row = 0; row < 16; row++) {
+    ^
+    VITIS_LOOP_24_6: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54998:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54999:9: remark: Added loop label VITIS_LOOP_25_7:   [xilinx-label-all-loops]
+        for (int col = 0; col < 16; col++) {
+        ^
+        VITIS_LOOP_25_7: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:54999:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55003:13: remark: Added loop label VITIS_LOOP_29_8:   [xilinx-label-all-loops]
+            for (int ic = 0; ic < 3; ic++) {
+            ^
+            VITIS_LOOP_29_8: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55003:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55005:17: remark: Added loop label VITIS_LOOP_31_9:   [xilinx-label-all-loops]
+                for (int r = 0; r < 3; r++) {
+                ^
+                VITIS_LOOP_31_9: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55005:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55019:17: remark: Added loop label VITIS_LOOP_45_10:   [xilinx-label-all-loops]
+                for (int oc = 0; oc < 16; oc++) {
+                ^
+                VITIS_LOOP_45_10: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55019:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55022:21: remark: Added loop label VITIS_LOOP_48_11:   [xilinx-label-all-loops]
+                    for (int ic = 0; ic < 3; ic++) {
+                    ^
+                    VITIS_LOOP_48_11: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55022:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55024:25: remark: Added loop label VITIS_LOOP_50_12:   [xilinx-label-all-loops]
+                        for (int r = 0; r < 3; r++) {
+                        ^
+                        VITIS_LOOP_50_12: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55024:25: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55026:29: remark: Added loop label VITIS_LOOP_52_13:   [xilinx-label-all-loops]
+                            for (int c = 0; c < 3; c++) {
+                            ^
+                            VITIS_LOOP_52_13: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55026:29: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55044:5: remark: Added loop label VITIS_LOOP_70_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < (16 - 2) * (16 - 2); i++) {
+    ^
+    VITIS_LOOP_70_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55044:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55048:9: remark: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < 16; c++) {
+        ^
+        VITIS_LOOP_74_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55048:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55072:5: remark: Added loop label VITIS_LOOP_98_1:   [xilinx-label-all-loops]
+    for(int ic=0; ic<16; ic++) {
+    ^
+    VITIS_LOOP_98_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55072:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55073:9: remark: Added loop label VITIS_LOOP_99_2:   [xilinx-label-all-loops]
+        for(int r=0; r<2; r++) for(int c=0; c<(16 - 2); c++) line_buf[ic][r][c] = 0;
+        ^
+        VITIS_LOOP_99_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55073:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55073:32: remark: Added loop label VITIS_LOOP_99_3:   [xilinx-label-all-loops]
+        for(int r=0; r<2; r++) for(int c=0; c<(16 - 2); c++) line_buf[ic][r][c] = 0;
+                               ^
+                               VITIS_LOOP_99_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55073:32: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55074:9: remark: Added loop label VITIS_LOOP_100_4:   [xilinx-label-all-loops]
+        for(int r=0; r<3; r++) for(int c=0; c<3; c++) window[ic][r][c] = 0;
+        ^
+        VITIS_LOOP_100_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55074:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55074:32: remark: Added loop label VITIS_LOOP_100_5:   [xilinx-label-all-loops]
+        for(int r=0; r<3; r++) for(int c=0; c<3; c++) window[ic][r][c] = 0;
+                               ^
+                               VITIS_LOOP_100_5: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55074:32: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55077:5: remark: Added loop label VITIS_LOOP_103_6:   [xilinx-label-all-loops]
+    for (int row = 0; row < (16 - 2); row++) {
+    ^
+    VITIS_LOOP_103_6: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55077:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55078:9: remark: Added loop label VITIS_LOOP_104_7:   [xilinx-label-all-loops]
+        for (int col = 0; col < (16 - 2); col++) {
+        ^
+        VITIS_LOOP_104_7: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55078:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55081:13: remark: Added loop label VITIS_LOOP_107_8:   [xilinx-label-all-loops]
+            for (int ic = 0; ic < 16; ic++) {
+            ^
+            VITIS_LOOP_107_8: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55081:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55083:17: remark: Added loop label VITIS_LOOP_109_9:   [xilinx-label-all-loops]
+                for (int r = 0; r < 3; r++) {
+                ^
+                VITIS_LOOP_109_9: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55083:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55097:17: remark: Added loop label VITIS_LOOP_123_10:   [xilinx-label-all-loops]
+                for (int oc = 0; oc < 32; oc += 2) {
+                ^
+                VITIS_LOOP_123_10: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55097:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55102:21: remark: Added loop label VITIS_LOOP_128_11:   [xilinx-label-all-loops]
+                    for (int ic = 0; ic < 16; ic++) {
+                    ^
+                    VITIS_LOOP_128_11: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55102:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55104:25: remark: Added loop label VITIS_LOOP_130_12:   [xilinx-label-all-loops]
+                        for (int r = 0; r < 3; r++) {
+                        ^
+                        VITIS_LOOP_130_12: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55104:25: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55106:29: remark: Added loop label VITIS_LOOP_132_13:   [xilinx-label-all-loops]
+                            for (int c = 0; c < 3; c++) {
+                            ^
+                            VITIS_LOOP_132_13: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55106:29: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55130:5: remark: Added loop label VITIS_LOOP_156_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < ((16 - 2) - 2); r++) {
+    ^
+    VITIS_LOOP_156_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55130:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55134:9: remark: Added loop label VITIS_LOOP_160_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < ((16 - 2) - 2); c++) {
+        ^
+        VITIS_LOOP_160_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55134:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55140:17: remark: Added loop label VITIS_LOOP_166_3:   [xilinx-label-all-loops]
+                for(int ch = 0; ch < 32; ch++) {
+                ^
+                VITIS_LOOP_166_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55140:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55147:17: remark: Added loop label VITIS_LOOP_173_4:   [xilinx-label-all-loops]
+                for(int ch = 0; ch < 32; ch++) {
+                ^
+                VITIS_LOOP_173_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55147:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55154:21: remark: Added loop label VITIS_LOOP_180_5:   [xilinx-label-all-loops]
+                    for(int ch = 0; ch < 32; ch++) {
+                    ^
+                    VITIS_LOOP_180_5: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55154:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55161:21: remark: Added loop label VITIS_LOOP_187_6:   [xilinx-label-all-loops]
+                    for(int ch = 0; ch < 32; ch++) {
+                    ^
+                    VITIS_LOOP_187_6: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55161:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55177:5: remark: Added loop label VITIS_LOOP_203_1:   [xilinx-label-all-loops]
+    for(int i = 0; i < 16 * 16; i++) {
+    ^
+    VITIS_LOOP_203_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55177:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55180:9: remark: Added loop label VITIS_LOOP_206_2:   [xilinx-label-all-loops]
+        for(int c = 0; c < 3; c++) p.ch[c] = image_in[i * 3 + c];
+        ^
+        VITIS_LOOP_206_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55180:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55186:5: remark: Added loop label VITIS_LOOP_212_1:   [xilinx-label-all-loops]
+    for(int i = 0; i < (((16 - 2) - 2) / 2) * (((16 - 2) - 2) / 2); i++) {
+    ^
+    VITIS_LOOP_212_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55186:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55189:9: remark: Added loop label VITIS_LOOP_215_2:   [xilinx-label-all-loops]
+        for(int c = 0; c < 32; c++) image_out[i * 32 + c] = p.ch[c];
+        ^
+        VITIS_LOOP_215_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55189:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55247:5: remark: Added loop label VITIS_LOOP_269_1:   [xilinx-label-all-loops]
+    for(int oc=0; oc<16; oc++) {
+    ^
+    VITIS_LOOP_269_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55247:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55250:9: remark: Added loop label VITIS_LOOP_272_2:   [xilinx-label-all-loops]
+        for(int ic=0; ic<3; ic++) {
+        ^
+        VITIS_LOOP_272_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55250:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55251:13: remark: Added loop label VITIS_LOOP_273_3:   [xilinx-label-all-loops]
+            for(int r=0; r<3; r++) {
+            ^
+            VITIS_LOOP_273_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55251:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55252:17: remark: Added loop label VITIS_LOOP_274_4:   [xilinx-label-all-loops]
+                for(int c=0; c<3; c++) {
+                ^
+                VITIS_LOOP_274_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55252:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55260:5: remark: Added loop label VITIS_LOOP_282_5:   [xilinx-label-all-loops]
+    for(int oc=0; oc<32; oc++) {
+    ^
+    VITIS_LOOP_282_5: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55260:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55263:9: remark: Added loop label VITIS_LOOP_285_6:   [xilinx-label-all-loops]
+        for(int ic=0; ic<16; ic++) {
+        ^
+        VITIS_LOOP_285_6: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55263:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55264:13: remark: Added loop label VITIS_LOOP_286_7:   [xilinx-label-all-loops]
+            for(int r=0; r<3; r++) {
+            ^
+            VITIS_LOOP_286_7: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55264:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55265:17: remark: Added loop label VITIS_LOOP_287_8:   [xilinx-label-all-loops]
+                for(int c=0; c<3; c++) {
+                ^
+                VITIS_LOOP_287_8: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_2/yolo_backbone_2/hls/.autopilot/db/yolo_backbone_2.pp.0.cpp:55265:17: note: FIX-IT applied suggested code changes

@@ -1,0 +1,328 @@
+---
+MainSourceFile:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          280583
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          281054
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          281526
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          628287
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_7_1:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      7
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2348913
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_7_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_10_2:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      10
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2349004
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_10_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_19_1:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      19
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2349229
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_19_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_22_2:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      22
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2349353
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_22_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_45_1:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      45
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2349879
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_45_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_46_2:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      46
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2349919
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_46_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_47_3:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      47
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2349960
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_47_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_54_4:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      54
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2350084
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_54_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_55_5:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      55
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2350124
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_55_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_56_6:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      56
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2350165
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_56_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_63_7:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      63
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2350286
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_63_7: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_64_8:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      64
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2350331
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_64_8: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_69_9:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      69
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2350456
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_69_9: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_71_10:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      71
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2350524
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_71_10: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_87_11:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      87
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2351088
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_87_11: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_90_12:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      90
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2351204
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_90_12: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_92_13:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      92
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2351280
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_92_13: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_94_14:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      94
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2351357
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_94_14: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_148_1:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      148
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2352936
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_148_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_149_2:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      149
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2352977
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_149_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_150_3:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      150
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2353021
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_150_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_151_4:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      151
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2353066
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_151_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_160_5:  '
+      FilePath:        yolo_conv.cpp
+      FileOffset:      160
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/.autopilot/db/yolo_conv.pp.0.cpp'
+          Offset:          2353324
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_160_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment'
+...

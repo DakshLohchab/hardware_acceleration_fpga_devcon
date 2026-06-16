@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../yolo_backbone_2_tb.cpp in debug mode
+   Compiling ../../../../yolo_backbone_2.cpp in debug mode
+   Generating csim.exe
+--- Starting YOLO Backbone V2 Simulation ---
+Processed 1152 final spatially-pooled pixels.
+SUCCESS: MaxPool downsampling and Native AXI verified!
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 256
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

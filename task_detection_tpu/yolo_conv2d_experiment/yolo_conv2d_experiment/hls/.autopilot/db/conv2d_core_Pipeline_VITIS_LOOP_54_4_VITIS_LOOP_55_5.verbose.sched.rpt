@@ -1,0 +1,146 @@
+
+
+================================================================
+== Vitis HLS Report for 'conv2d_core_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5'
+================================================================
+* Date:           Tue Jun 16 23:20:24 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        yolo_conv2d_experiment
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k325t-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.003 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       11|       11|  0.110 us|  0.110 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_54_4_VITIS_LOOP_55_5  |        9|        9|         1|          1|          1|     9|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%r = alloca i32 1" [yolo_conv.cpp:55]   --->   Operation 4 'alloca' 'r' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%ic = alloca i32 1" [yolo_conv.cpp:54]   --->   Operation 5 'alloca' 'ic' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%indvar_flatten6 = alloca i32 1"   --->   Operation 6 'alloca' 'indvar_flatten6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.83ns)   --->   "%store_ln0 = store i4 0, i4 %indvar_flatten6"   --->   Operation 7 'store' 'store_ln0' <Predicate = true> <Delay = 0.83>
+ST_1 : Operation 8 [1/1] (0.83ns)   --->   "%store_ln54 = store i2 0, i2 %ic" [yolo_conv.cpp:54]   --->   Operation 8 'store' 'store_ln54' <Predicate = true> <Delay = 0.83>
+ST_1 : Operation 9 [1/1] (0.83ns)   --->   "%store_ln55 = store i2 0, i2 %r" [yolo_conv.cpp:55]   --->   Operation 9 'store' 'store_ln55' <Predicate = true> <Delay = 0.83>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_56_6"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%r_1 = load i2 %r" [yolo_conv.cpp:55]   --->   Operation 11 'load' 'r_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%indvar_flatten6_load = load i4 %indvar_flatten6" [yolo_conv.cpp:54]   --->   Operation 12 'load' 'indvar_flatten6_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.01ns)   --->   "%icmp_ln54 = icmp_eq  i4 %indvar_flatten6_load, i4 9" [yolo_conv.cpp:54]   --->   Operation 13 'icmp' 'icmp_ln54' <Predicate = true> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (1.01ns)   --->   "%add_ln54 = add i4 %indvar_flatten6_load, i4 1" [yolo_conv.cpp:54]   --->   Operation 14 'add' 'add_ln54' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln54 = br i1 %icmp_ln54, void %for.inc47, void %VITIS_LOOP_63_7.exitStub" [yolo_conv.cpp:54]   --->   Operation 15 'br' 'br_ln54' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%ic_load = load i2 %ic" [yolo_conv.cpp:54]   --->   Operation 16 'load' 'ic_load' <Predicate = (!icmp_ln54)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_54_4_VITIS_LOOP_55_5_str"   --->   Operation 17 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln54)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 9, i64 9, i64 9"   --->   Operation 18 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = (!icmp_ln54)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.85ns)   --->   "%add_ln54_1 = add i2 %ic_load, i2 1" [yolo_conv.cpp:54]   --->   Operation 19 'add' 'add_ln54_1' <Predicate = (!icmp_ln54)> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.85ns)   --->   "%icmp_ln55 = icmp_eq  i2 %r_1, i2 3" [yolo_conv.cpp:55]   --->   Operation 20 'icmp' 'icmp_ln55' <Predicate = (!icmp_ln54)> <Delay = 0.85> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.48ns)   --->   "%select_ln54 = select i1 %icmp_ln55, i2 %add_ln54_1, i2 %ic_load" [yolo_conv.cpp:54]   --->   Operation 21 'select' 'select_ln54' <Predicate = (!icmp_ln54)> <Delay = 0.48> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.48> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln55 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_17" [yolo_conv.cpp:55]   --->   Operation 22 'specpipeline' 'specpipeline_ln55' <Predicate = (!icmp_ln54)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i2.i32, i2 %select_ln54, i32 1" [yolo_conv.cpp:58]   --->   Operation 23 'bitselect' 'tmp' <Predicate = (!icmp_ln54)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln58 = br i1 %tmp, void %arrayidx4034.2.exit, void %arrayidx4034.case.2_ifconv" [yolo_conv.cpp:58]   --->   Operation 24 'br' 'br_ln58' <Predicate = (!icmp_ln54)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln58 = br void %arrayidx4034.2.exit" [yolo_conv.cpp:58]   --->   Operation 25 'br' 'br_ln58' <Predicate = (!icmp_ln54 & tmp)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.85ns)   --->   "%add_ln55 = add i2 %r_1, i2 1" [yolo_conv.cpp:55]   --->   Operation 26 'add' 'add_ln55' <Predicate = (!icmp_ln54)> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.48ns)   --->   "%select_ln55 = select i1 %icmp_ln55, i2 1, i2 %add_ln55" [yolo_conv.cpp:55]   --->   Operation 27 'select' 'select_ln55' <Predicate = (!icmp_ln54)> <Delay = 0.48> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.48> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.83ns)   --->   "%store_ln54 = store i4 %add_ln54, i4 %indvar_flatten6" [yolo_conv.cpp:54]   --->   Operation 28 'store' 'store_ln54' <Predicate = (!icmp_ln54)> <Delay = 0.83>
+ST_1 : Operation 29 [1/1] (0.83ns)   --->   "%store_ln54 = store i2 %select_ln54, i2 %ic" [yolo_conv.cpp:54]   --->   Operation 29 'store' 'store_ln54' <Predicate = (!icmp_ln54)> <Delay = 0.83>
+ST_1 : Operation 30 [1/1] (0.83ns)   --->   "%store_ln55 = store i2 %select_ln55, i2 %r" [yolo_conv.cpp:55]   --->   Operation 30 'store' 'store_ln55' <Predicate = (!icmp_ln54)> <Delay = 0.83>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln55 = br void %VITIS_LOOP_56_6" [yolo_conv.cpp:55]   --->   Operation 31 'br' 'br_ln55' <Predicate = (!icmp_ln54)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.83ns)   --->   "%ret_ln0 = ret"   --->   Operation 32 'ret' 'ret_ln0' <Predicate = (icmp_ln54)> <Delay = 0.83>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 3.003ns
+The critical path consists of the following:
+	'store' operation ('store_ln54', yolo_conv.cpp:54) of constant 0 2 bit on local variable 'ic', yolo_conv.cpp:54 [5]  (0.833 ns)
+	'load' operation 2 bit ('ic_load', yolo_conv.cpp:54) on local variable 'ic', yolo_conv.cpp:54 [15]  (0.000 ns)
+	'add' operation 2 bit ('add_ln54_1', yolo_conv.cpp:54) [18]  (0.850 ns)
+	'select' operation 2 bit ('select_ln54', yolo_conv.cpp:54) [20]  (0.487 ns)
+	'store' operation ('store_ln54', yolo_conv.cpp:54) of variable 'select_ln54', yolo_conv.cpp:54 2 bit on local variable 'ic', yolo_conv.cpp:54 [30]  (0.833 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,128 @@
+{
+  "0": {
+    "basicblocks": 25,
+    "calls": "1",
+    "control_depth": 2,
+    "def_use_depth": 5,
+    "file": "yolo_backbone_2.cpp",
+    "fileloc": 241,
+    "instructions": 3205,
+    "loads": {
+      "T": 173
+    },
+    "memory_accesses": 913,
+    "name": "yolo_backbone_v2",
+    "stores": {
+      "L": 738
+    },
+    "total_instructions": 14249
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "5 6 7 2 3 4",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "yolo_backbone_2.cpp",
+    "fileloc": 219,
+    "instructions": 17,
+    "memory_accesses": 0,
+    "name": "process_yolo_block",
+    "total_instructions": 11044
+  },
+  "2": {
+    "basicblocks": 248,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 435,
+    "file": "yolo_backbone_2.cpp",
+    "fileloc": 85,
+    "instructions": 4542,
+    "loads": {
+      "L": 354
+    },
+    "memory_accesses": 406,
+    "name": "conv_layer_2",
+    "stores": {
+      "L": 66
+    },
+    "total_instructions": 4863
+  },
+  "3": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 40,
+    "file": "yolo_backbone_2.cpp",
+    "fileloc": 151,
+    "instructions": 603,
+    "loads": {
+      "L": 64
+    },
+    "memory_accesses": 130,
+    "name": "max_pool_2x2",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 1020
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "yolo_backbone_2.cpp",
+    "fileloc": 211,
+    "instructions": 136,
+    "memory_accesses": 33,
+    "name": "store_image",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 329
+  },
+  "5": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 7,
+    "file": "yolo_backbone_2.cpp",
+    "fileloc": 202,
+    "instructions": 20,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 4,
+    "name": "load_image",
+    "total_instructions": 41
+  },
+  "6": {
+    "basicblocks": 61,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 88,
+    "file": "yolo_backbone_2.cpp",
+    "fileloc": 6,
+    "instructions": 4296,
+    "loads": {
+      "L": 466
+    },
+    "memory_accesses": 513,
+    "name": "conv_layer_1",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 4427
+  },
+  "7": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 23,
+    "file": "yolo_backbone_2.cpp",
+    "fileloc": 69,
+    "instructions": 138,
+    "memory_accesses": 2,
+    "name": "leaky_relu_1",
+    "total_instructions": 347
+  }
+}

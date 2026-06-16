@@ -1,0 +1,307 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'conv_layer_1_Pipeline_VITIS_LOOP_19_1'" level="0">
+<item name = "Date">Wed Jun 17 00:16:12 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">yolo_backbone_2</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k325t-ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 2.516 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">5, 5, 50.000 ns, 50.000 ns, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_19_1">3, 3, 1, 1, 1, 3, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 20, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 27, -</column>
+<column name="Register">-, -, 4, -, -</column>
+<specialColumn name="Available">890, 840, 407600, 203800, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln19_fu_1006_p2">+, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln19_fu_1000_p2">icmp, 0, 0, 10, 2, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_ic_2">9, 2, 2, 4</column>
+<column name="ic_fu_220">9, 2, 2, 4</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ic_fu_220">2, 0, 2, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, conv_layer_1_Pipeline_VITIS_LOOP_19_1, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, conv_layer_1_Pipeline_VITIS_LOOP_19_1, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, conv_layer_1_Pipeline_VITIS_LOOP_19_1, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, conv_layer_1_Pipeline_VITIS_LOOP_19_1, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, conv_layer_1_Pipeline_VITIS_LOOP_19_1, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, conv_layer_1_Pipeline_VITIS_LOOP_19_1, return value</column>
+<column name="line_buf_511">out, 16, ap_vld, line_buf_511, pointer</column>
+<column name="line_buf_511_ap_vld">out, 1, ap_vld, line_buf_511, pointer</column>
+<column name="line_buf_512">out, 16, ap_vld, line_buf_512, pointer</column>
+<column name="line_buf_512_ap_vld">out, 1, ap_vld, line_buf_512, pointer</column>
+<column name="line_buf_513">out, 16, ap_vld, line_buf_513, pointer</column>
+<column name="line_buf_513_ap_vld">out, 1, ap_vld, line_buf_513, pointer</column>
+<column name="line_buf_514">out, 16, ap_vld, line_buf_514, pointer</column>
+<column name="line_buf_514_ap_vld">out, 1, ap_vld, line_buf_514, pointer</column>
+<column name="line_buf_515">out, 16, ap_vld, line_buf_515, pointer</column>
+<column name="line_buf_515_ap_vld">out, 1, ap_vld, line_buf_515, pointer</column>
+<column name="line_buf_516">out, 16, ap_vld, line_buf_516, pointer</column>
+<column name="line_buf_516_ap_vld">out, 1, ap_vld, line_buf_516, pointer</column>
+<column name="line_buf_517">out, 16, ap_vld, line_buf_517, pointer</column>
+<column name="line_buf_517_ap_vld">out, 1, ap_vld, line_buf_517, pointer</column>
+<column name="line_buf_518">out, 16, ap_vld, line_buf_518, pointer</column>
+<column name="line_buf_518_ap_vld">out, 1, ap_vld, line_buf_518, pointer</column>
+<column name="line_buf_519">out, 16, ap_vld, line_buf_519, pointer</column>
+<column name="line_buf_519_ap_vld">out, 1, ap_vld, line_buf_519, pointer</column>
+<column name="line_buf_520">out, 16, ap_vld, line_buf_520, pointer</column>
+<column name="line_buf_520_ap_vld">out, 1, ap_vld, line_buf_520, pointer</column>
+<column name="line_buf_521">out, 16, ap_vld, line_buf_521, pointer</column>
+<column name="line_buf_521_ap_vld">out, 1, ap_vld, line_buf_521, pointer</column>
+<column name="line_buf_522">out, 16, ap_vld, line_buf_522, pointer</column>
+<column name="line_buf_522_ap_vld">out, 1, ap_vld, line_buf_522, pointer</column>
+<column name="line_buf_523">out, 16, ap_vld, line_buf_523, pointer</column>
+<column name="line_buf_523_ap_vld">out, 1, ap_vld, line_buf_523, pointer</column>
+<column name="line_buf_524">out, 16, ap_vld, line_buf_524, pointer</column>
+<column name="line_buf_524_ap_vld">out, 1, ap_vld, line_buf_524, pointer</column>
+<column name="line_buf_525">out, 16, ap_vld, line_buf_525, pointer</column>
+<column name="line_buf_525_ap_vld">out, 1, ap_vld, line_buf_525, pointer</column>
+<column name="line_buf_526">out, 16, ap_vld, line_buf_526, pointer</column>
+<column name="line_buf_526_ap_vld">out, 1, ap_vld, line_buf_526, pointer</column>
+<column name="line_buf_527">out, 16, ap_vld, line_buf_527, pointer</column>
+<column name="line_buf_527_ap_vld">out, 1, ap_vld, line_buf_527, pointer</column>
+<column name="line_buf_528">out, 16, ap_vld, line_buf_528, pointer</column>
+<column name="line_buf_528_ap_vld">out, 1, ap_vld, line_buf_528, pointer</column>
+<column name="line_buf_529">out, 16, ap_vld, line_buf_529, pointer</column>
+<column name="line_buf_529_ap_vld">out, 1, ap_vld, line_buf_529, pointer</column>
+<column name="line_buf_530">out, 16, ap_vld, line_buf_530, pointer</column>
+<column name="line_buf_530_ap_vld">out, 1, ap_vld, line_buf_530, pointer</column>
+<column name="line_buf_531">out, 16, ap_vld, line_buf_531, pointer</column>
+<column name="line_buf_531_ap_vld">out, 1, ap_vld, line_buf_531, pointer</column>
+<column name="line_buf_532">out, 16, ap_vld, line_buf_532, pointer</column>
+<column name="line_buf_532_ap_vld">out, 1, ap_vld, line_buf_532, pointer</column>
+<column name="line_buf_533">out, 16, ap_vld, line_buf_533, pointer</column>
+<column name="line_buf_533_ap_vld">out, 1, ap_vld, line_buf_533, pointer</column>
+<column name="line_buf_534">out, 16, ap_vld, line_buf_534, pointer</column>
+<column name="line_buf_534_ap_vld">out, 1, ap_vld, line_buf_534, pointer</column>
+<column name="line_buf_535">out, 16, ap_vld, line_buf_535, pointer</column>
+<column name="line_buf_535_ap_vld">out, 1, ap_vld, line_buf_535, pointer</column>
+<column name="line_buf_536">out, 16, ap_vld, line_buf_536, pointer</column>
+<column name="line_buf_536_ap_vld">out, 1, ap_vld, line_buf_536, pointer</column>
+<column name="line_buf_537">out, 16, ap_vld, line_buf_537, pointer</column>
+<column name="line_buf_537_ap_vld">out, 1, ap_vld, line_buf_537, pointer</column>
+<column name="line_buf_538">out, 16, ap_vld, line_buf_538, pointer</column>
+<column name="line_buf_538_ap_vld">out, 1, ap_vld, line_buf_538, pointer</column>
+<column name="line_buf_539">out, 16, ap_vld, line_buf_539, pointer</column>
+<column name="line_buf_539_ap_vld">out, 1, ap_vld, line_buf_539, pointer</column>
+<column name="line_buf_540">out, 16, ap_vld, line_buf_540, pointer</column>
+<column name="line_buf_540_ap_vld">out, 1, ap_vld, line_buf_540, pointer</column>
+<column name="line_buf_541">out, 16, ap_vld, line_buf_541, pointer</column>
+<column name="line_buf_541_ap_vld">out, 1, ap_vld, line_buf_541, pointer</column>
+<column name="line_buf_542">out, 16, ap_vld, line_buf_542, pointer</column>
+<column name="line_buf_542_ap_vld">out, 1, ap_vld, line_buf_542, pointer</column>
+<column name="line_buf_574">out, 16, ap_vld, line_buf_574, pointer</column>
+<column name="line_buf_574_ap_vld">out, 1, ap_vld, line_buf_574, pointer</column>
+<column name="line_buf_573">out, 16, ap_vld, line_buf_573, pointer</column>
+<column name="line_buf_573_ap_vld">out, 1, ap_vld, line_buf_573, pointer</column>
+<column name="line_buf_572">out, 16, ap_vld, line_buf_572, pointer</column>
+<column name="line_buf_572_ap_vld">out, 1, ap_vld, line_buf_572, pointer</column>
+<column name="line_buf_571">out, 16, ap_vld, line_buf_571, pointer</column>
+<column name="line_buf_571_ap_vld">out, 1, ap_vld, line_buf_571, pointer</column>
+<column name="line_buf_570">out, 16, ap_vld, line_buf_570, pointer</column>
+<column name="line_buf_570_ap_vld">out, 1, ap_vld, line_buf_570, pointer</column>
+<column name="line_buf_569">out, 16, ap_vld, line_buf_569, pointer</column>
+<column name="line_buf_569_ap_vld">out, 1, ap_vld, line_buf_569, pointer</column>
+<column name="line_buf_568">out, 16, ap_vld, line_buf_568, pointer</column>
+<column name="line_buf_568_ap_vld">out, 1, ap_vld, line_buf_568, pointer</column>
+<column name="line_buf_567">out, 16, ap_vld, line_buf_567, pointer</column>
+<column name="line_buf_567_ap_vld">out, 1, ap_vld, line_buf_567, pointer</column>
+<column name="line_buf_566">out, 16, ap_vld, line_buf_566, pointer</column>
+<column name="line_buf_566_ap_vld">out, 1, ap_vld, line_buf_566, pointer</column>
+<column name="line_buf_565">out, 16, ap_vld, line_buf_565, pointer</column>
+<column name="line_buf_565_ap_vld">out, 1, ap_vld, line_buf_565, pointer</column>
+<column name="line_buf_564">out, 16, ap_vld, line_buf_564, pointer</column>
+<column name="line_buf_564_ap_vld">out, 1, ap_vld, line_buf_564, pointer</column>
+<column name="line_buf_563">out, 16, ap_vld, line_buf_563, pointer</column>
+<column name="line_buf_563_ap_vld">out, 1, ap_vld, line_buf_563, pointer</column>
+<column name="line_buf_562">out, 16, ap_vld, line_buf_562, pointer</column>
+<column name="line_buf_562_ap_vld">out, 1, ap_vld, line_buf_562, pointer</column>
+<column name="line_buf_561">out, 16, ap_vld, line_buf_561, pointer</column>
+<column name="line_buf_561_ap_vld">out, 1, ap_vld, line_buf_561, pointer</column>
+<column name="line_buf_560">out, 16, ap_vld, line_buf_560, pointer</column>
+<column name="line_buf_560_ap_vld">out, 1, ap_vld, line_buf_560, pointer</column>
+<column name="line_buf_559">out, 16, ap_vld, line_buf_559, pointer</column>
+<column name="line_buf_559_ap_vld">out, 1, ap_vld, line_buf_559, pointer</column>
+<column name="line_buf_558">out, 16, ap_vld, line_buf_558, pointer</column>
+<column name="line_buf_558_ap_vld">out, 1, ap_vld, line_buf_558, pointer</column>
+<column name="line_buf_557">out, 16, ap_vld, line_buf_557, pointer</column>
+<column name="line_buf_557_ap_vld">out, 1, ap_vld, line_buf_557, pointer</column>
+<column name="line_buf_556">out, 16, ap_vld, line_buf_556, pointer</column>
+<column name="line_buf_556_ap_vld">out, 1, ap_vld, line_buf_556, pointer</column>
+<column name="line_buf_555">out, 16, ap_vld, line_buf_555, pointer</column>
+<column name="line_buf_555_ap_vld">out, 1, ap_vld, line_buf_555, pointer</column>
+<column name="line_buf_554">out, 16, ap_vld, line_buf_554, pointer</column>
+<column name="line_buf_554_ap_vld">out, 1, ap_vld, line_buf_554, pointer</column>
+<column name="line_buf_553">out, 16, ap_vld, line_buf_553, pointer</column>
+<column name="line_buf_553_ap_vld">out, 1, ap_vld, line_buf_553, pointer</column>
+<column name="line_buf_552">out, 16, ap_vld, line_buf_552, pointer</column>
+<column name="line_buf_552_ap_vld">out, 1, ap_vld, line_buf_552, pointer</column>
+<column name="line_buf_551">out, 16, ap_vld, line_buf_551, pointer</column>
+<column name="line_buf_551_ap_vld">out, 1, ap_vld, line_buf_551, pointer</column>
+<column name="line_buf_550">out, 16, ap_vld, line_buf_550, pointer</column>
+<column name="line_buf_550_ap_vld">out, 1, ap_vld, line_buf_550, pointer</column>
+<column name="line_buf_549">out, 16, ap_vld, line_buf_549, pointer</column>
+<column name="line_buf_549_ap_vld">out, 1, ap_vld, line_buf_549, pointer</column>
+<column name="line_buf_548">out, 16, ap_vld, line_buf_548, pointer</column>
+<column name="line_buf_548_ap_vld">out, 1, ap_vld, line_buf_548, pointer</column>
+<column name="line_buf_547">out, 16, ap_vld, line_buf_547, pointer</column>
+<column name="line_buf_547_ap_vld">out, 1, ap_vld, line_buf_547, pointer</column>
+<column name="line_buf_546">out, 16, ap_vld, line_buf_546, pointer</column>
+<column name="line_buf_546_ap_vld">out, 1, ap_vld, line_buf_546, pointer</column>
+<column name="line_buf_545">out, 16, ap_vld, line_buf_545, pointer</column>
+<column name="line_buf_545_ap_vld">out, 1, ap_vld, line_buf_545, pointer</column>
+<column name="line_buf_544">out, 16, ap_vld, line_buf_544, pointer</column>
+<column name="line_buf_544_ap_vld">out, 1, ap_vld, line_buf_544, pointer</column>
+<column name="line_buf_543">out, 16, ap_vld, line_buf_543, pointer</column>
+<column name="line_buf_543_ap_vld">out, 1, ap_vld, line_buf_543, pointer</column>
+<column name="line_buf_510">out, 16, ap_vld, line_buf_510, pointer</column>
+<column name="line_buf_510_ap_vld">out, 1, ap_vld, line_buf_510, pointer</column>
+<column name="line_buf_509">out, 16, ap_vld, line_buf_509, pointer</column>
+<column name="line_buf_509_ap_vld">out, 1, ap_vld, line_buf_509, pointer</column>
+<column name="line_buf_508">out, 16, ap_vld, line_buf_508, pointer</column>
+<column name="line_buf_508_ap_vld">out, 1, ap_vld, line_buf_508, pointer</column>
+<column name="line_buf_507">out, 16, ap_vld, line_buf_507, pointer</column>
+<column name="line_buf_507_ap_vld">out, 1, ap_vld, line_buf_507, pointer</column>
+<column name="line_buf_506">out, 16, ap_vld, line_buf_506, pointer</column>
+<column name="line_buf_506_ap_vld">out, 1, ap_vld, line_buf_506, pointer</column>
+<column name="line_buf_505">out, 16, ap_vld, line_buf_505, pointer</column>
+<column name="line_buf_505_ap_vld">out, 1, ap_vld, line_buf_505, pointer</column>
+<column name="line_buf_504">out, 16, ap_vld, line_buf_504, pointer</column>
+<column name="line_buf_504_ap_vld">out, 1, ap_vld, line_buf_504, pointer</column>
+<column name="line_buf_503">out, 16, ap_vld, line_buf_503, pointer</column>
+<column name="line_buf_503_ap_vld">out, 1, ap_vld, line_buf_503, pointer</column>
+<column name="line_buf_502">out, 16, ap_vld, line_buf_502, pointer</column>
+<column name="line_buf_502_ap_vld">out, 1, ap_vld, line_buf_502, pointer</column>
+<column name="line_buf_501">out, 16, ap_vld, line_buf_501, pointer</column>
+<column name="line_buf_501_ap_vld">out, 1, ap_vld, line_buf_501, pointer</column>
+<column name="line_buf_500">out, 16, ap_vld, line_buf_500, pointer</column>
+<column name="line_buf_500_ap_vld">out, 1, ap_vld, line_buf_500, pointer</column>
+<column name="line_buf_499">out, 16, ap_vld, line_buf_499, pointer</column>
+<column name="line_buf_499_ap_vld">out, 1, ap_vld, line_buf_499, pointer</column>
+<column name="line_buf_498">out, 16, ap_vld, line_buf_498, pointer</column>
+<column name="line_buf_498_ap_vld">out, 1, ap_vld, line_buf_498, pointer</column>
+<column name="line_buf_497">out, 16, ap_vld, line_buf_497, pointer</column>
+<column name="line_buf_497_ap_vld">out, 1, ap_vld, line_buf_497, pointer</column>
+<column name="line_buf_496">out, 16, ap_vld, line_buf_496, pointer</column>
+<column name="line_buf_496_ap_vld">out, 1, ap_vld, line_buf_496, pointer</column>
+<column name="line_buf_495">out, 16, ap_vld, line_buf_495, pointer</column>
+<column name="line_buf_495_ap_vld">out, 1, ap_vld, line_buf_495, pointer</column>
+<column name="line_buf_494">out, 16, ap_vld, line_buf_494, pointer</column>
+<column name="line_buf_494_ap_vld">out, 1, ap_vld, line_buf_494, pointer</column>
+<column name="line_buf_493">out, 16, ap_vld, line_buf_493, pointer</column>
+<column name="line_buf_493_ap_vld">out, 1, ap_vld, line_buf_493, pointer</column>
+<column name="line_buf_492">out, 16, ap_vld, line_buf_492, pointer</column>
+<column name="line_buf_492_ap_vld">out, 1, ap_vld, line_buf_492, pointer</column>
+<column name="line_buf_491">out, 16, ap_vld, line_buf_491, pointer</column>
+<column name="line_buf_491_ap_vld">out, 1, ap_vld, line_buf_491, pointer</column>
+<column name="line_buf_490">out, 16, ap_vld, line_buf_490, pointer</column>
+<column name="line_buf_490_ap_vld">out, 1, ap_vld, line_buf_490, pointer</column>
+<column name="line_buf_489">out, 16, ap_vld, line_buf_489, pointer</column>
+<column name="line_buf_489_ap_vld">out, 1, ap_vld, line_buf_489, pointer</column>
+<column name="line_buf_488">out, 16, ap_vld, line_buf_488, pointer</column>
+<column name="line_buf_488_ap_vld">out, 1, ap_vld, line_buf_488, pointer</column>
+<column name="line_buf_487">out, 16, ap_vld, line_buf_487, pointer</column>
+<column name="line_buf_487_ap_vld">out, 1, ap_vld, line_buf_487, pointer</column>
+<column name="line_buf_486">out, 16, ap_vld, line_buf_486, pointer</column>
+<column name="line_buf_486_ap_vld">out, 1, ap_vld, line_buf_486, pointer</column>
+<column name="line_buf_485">out, 16, ap_vld, line_buf_485, pointer</column>
+<column name="line_buf_485_ap_vld">out, 1, ap_vld, line_buf_485, pointer</column>
+<column name="line_buf_484">out, 16, ap_vld, line_buf_484, pointer</column>
+<column name="line_buf_484_ap_vld">out, 1, ap_vld, line_buf_484, pointer</column>
+<column name="line_buf_483">out, 16, ap_vld, line_buf_483, pointer</column>
+<column name="line_buf_483_ap_vld">out, 1, ap_vld, line_buf_483, pointer</column>
+<column name="line_buf_482">out, 16, ap_vld, line_buf_482, pointer</column>
+<column name="line_buf_482_ap_vld">out, 1, ap_vld, line_buf_482, pointer</column>
+<column name="line_buf_481">out, 16, ap_vld, line_buf_481, pointer</column>
+<column name="line_buf_481_ap_vld">out, 1, ap_vld, line_buf_481, pointer</column>
+<column name="line_buf_480">out, 16, ap_vld, line_buf_480, pointer</column>
+<column name="line_buf_480_ap_vld">out, 1, ap_vld, line_buf_480, pointer</column>
+<column name="line_buf">out, 16, ap_vld, line_buf, pointer</column>
+<column name="line_buf_ap_vld">out, 1, ap_vld, line_buf, pointer</column>
+</table>
+</item>
+</section>
+</profile>

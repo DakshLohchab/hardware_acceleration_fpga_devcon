@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_1/yolo_backbone_1/yolo_backbone_1.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Jun 16 23:47:49 2026",
+ "timestampMillis": "1781633869259",
+ "buildStep": {
+  "cmdId": "0ac4be45-c76b-4f92-ba42-23443205e73f",
+  "name": "vitis-run",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_1/yolo_backbone_1/logs/yolo_backbone_1.steps.log",
+  "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_1/hls_config.cfg --work_dir yolo_backbone_1 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_1/hls_config.cfg",
+   "--work_dir",
+   "yolo_backbone_1"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 23:47:49 2026",
+ "timestampMillis": "1781633869260",
+ "status": {
+  "cmdId": "0ac4be45-c76b-4f92-ba42-23443205e73f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Jun 16 23:47:56 2026",
+ "timestampMillis": "1781633876690",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "yolo_backbone_block",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_1/yolo_block.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jun 16 23:47:56 2026",
+ "timestampMillis": "1781633876691",
+ "buildStep": {
+  "cmdId": "78b2b8b7-c08c-4fe5-81ba-2a0437ed99d4",
+  "name": "",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_1/yolo_backbone_1/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 23:47:56 2026",
+ "timestampMillis": "1781633876692",
+ "status": {
+  "cmdId": "78b2b8b7-c08c-4fe5-81ba-2a0437ed99d4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 23:48:04 2026",
+ "timestampMillis": "1781633884338",
+ "status": {
+  "cmdId": "78b2b8b7-c08c-4fe5-81ba-2a0437ed99d4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 23:48:04 2026",
+ "timestampMillis": "1781633884627",
+ "status": {
+  "cmdId": "0ac4be45-c76b-4f92-ba42-23443205e73f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 23:48:04 2026",
+ "timestampMillis": "1781633884628",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 23:48:04 2026",
+ "timestampMillis": "1781633884628",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

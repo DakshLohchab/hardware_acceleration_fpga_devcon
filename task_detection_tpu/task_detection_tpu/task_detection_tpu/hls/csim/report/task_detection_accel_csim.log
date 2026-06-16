@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../tpu_tb.cpp in debug mode
+   Compiling ../../../../task_detection_accel_tb.cpp in debug mode
+   Compiling ../../../../tpu_core.cpp in debug mode
+   Compiling ../../../../mlp_engine.cpp in debug mode
+   Compiling ../../../../task_detection_accel.cpp in debug mode
+   Generating csim.exe
+ld.lld: error: duplicate symbol: main
+>>> defined at tpu_tb.cpp:5 (../../../../tpu_tb.cpp:5)
+>>>            obj/tpu_tb.o:(main)
+>>> defined at task_detection_accel_tb.cpp:11 (../../../../task_detection_accel_tb.cpp:11)
+>>>            obj/task_detection_accel_tb.o:(.text+0x0)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile.rules:333: csim.exe] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

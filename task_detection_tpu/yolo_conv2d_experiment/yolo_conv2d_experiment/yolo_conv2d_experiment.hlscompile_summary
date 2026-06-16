@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/yolo_conv2d_experiment.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Jun 16 23:18:22 2026",
+ "timestampMillis": "1781632102206",
+ "buildStep": {
+  "cmdId": "1e394af9-e165-4dd9-b03c-d49e854e62b9",
+  "name": "v++",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/logs/yolo_conv2d_experiment.steps.log",
+  "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/hls_config.cfg --work_dir yolo_conv2d_experiment ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/hls_config.cfg",
+   "--work_dir",
+   "yolo_conv2d_experiment"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/hls_config.cfg",
+    "content": "part=xc7k325tffg900-2\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=yolo_conv_layer\nsyn.file=./yolo_conv.cpp\ntb.file=./yolo_conv_tb.cpp"
+   }
+  ],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 23:18:22 2026",
+ "timestampMillis": "1781632102212",
+ "status": {
+  "cmdId": "1e394af9-e165-4dd9-b03c-d49e854e62b9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Jun 16 23:18:31 2026",
+ "timestampMillis": "1781632111162",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "yolo_conv_layer",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Jun 16 23:18:31 2026",
+ "timestampMillis": "1781632111166",
+ "buildStep": {
+  "cmdId": "8109b58d-f86d-4e24-b445-eac9df4f1c86",
+  "name": "",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 23:18:31 2026",
+ "timestampMillis": "1781632111167",
+ "status": {
+  "cmdId": "8109b58d-f86d-4e24-b445-eac9df4f1c86",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 23:18:31 2026",
+ "timestampMillis": "1781632111167",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 23:18:31 2026",
+ "timestampMillis": "1781632111169",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 23:18:31 2026",
+ "timestampMillis": "1781632111171",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 23:21:05 2026",
+ "timestampMillis": "1781632265282",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 23:21:05 2026",
+ "timestampMillis": "1781632265285",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 23:21:05 2026",
+ "timestampMillis": "1781632265286",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 23:21:05 2026",
+ "timestampMillis": "1781632265286",
+ "status": {
+  "cmdId": "8109b58d-f86d-4e24-b445-eac9df4f1c86",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Jun 16 23:21:07 2026",
+ "timestampMillis": "1781632267015",
+ "status": {
+  "cmdId": "1e394af9-e165-4dd9-b03c-d49e854e62b9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 23:21:07 2026",
+ "timestampMillis": "1781632267083",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/reports/v++_compile_yolo_conv2d_experiment_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Jun 16 23:21:07 2026",
+ "timestampMillis": "1781632267085",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/reports/.db/v++_compile_yolo_conv2d_experiment_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

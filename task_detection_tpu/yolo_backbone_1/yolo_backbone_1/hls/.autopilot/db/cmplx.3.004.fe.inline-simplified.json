@@ -1,0 +1,110 @@
+{
+  "0": {
+    "basicblocks": 1043,
+    "calls": "1",
+    "control_depth": 8,
+    "def_use_depth": 13,
+    "file": "yolo_block.cpp",
+    "fileloc": 225,
+    "instructions": 8169,
+    "loads": {
+      "T": 173
+    },
+    "memory_accesses": 346,
+    "name": "yolo_backbone_block",
+    "stores": {
+      "L": 173
+    },
+    "total_instructions": 18652
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "3 6 4 5 2",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "yolo_block.cpp",
+    "fileloc": 205,
+    "instructions": 14,
+    "memory_accesses": 0,
+    "name": "process_yolo_block",
+    "total_instructions": 10483
+  },
+  "2": {
+    "basicblocks": 291,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 19,
+    "file": "yolo_block.cpp",
+    "fileloc": 194,
+    "instructions": 1864,
+    "memory_accesses": 33,
+    "name": "store_image",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 1864
+  },
+  "3": {
+    "basicblocks": 21,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 14,
+    "file": "yolo_block.cpp",
+    "fileloc": 182,
+    "instructions": 146,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 4,
+    "name": "load_image",
+    "total_instructions": 146
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 21,
+    "file": "yolo_block.cpp",
+    "fileloc": 80,
+    "instructions": 138,
+    "memory_accesses": 2,
+    "name": "leaky_relu_1",
+    "total_instructions": 138
+  },
+  "5": {
+    "basicblocks": 15,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 435,
+    "file": "yolo_block.cpp",
+    "fileloc": 103,
+    "instructions": 3708,
+    "loads": {
+      "L": 450
+    },
+    "memory_accesses": 309,
+    "name": "conv_layer_2",
+    "stores": {
+      "L": 51
+    },
+    "total_instructions": 3708
+  },
+  "6": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 87,
+    "file": "yolo_block.cpp",
+    "fileloc": 6,
+    "instructions": 4613,
+    "loads": {
+      "L": 484
+    },
+    "memory_accesses": 509,
+    "name": "conv_layer_1",
+    "stores": {
+      "L": 41
+    },
+    "total_instructions": 4613
+  }
+}

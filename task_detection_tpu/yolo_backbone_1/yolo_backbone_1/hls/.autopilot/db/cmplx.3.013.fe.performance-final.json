@@ -1,0 +1,101 @@
+{
+  "0": {
+    "basicblocks": 1926,
+    "calls": "6",
+    "control_depth": 7,
+    "def_use_depth": 12,
+    "file": "yolo_block.cpp",
+    "fileloc": 225,
+    "instructions": 11189,
+    "memory_accesses": 475,
+    "name": "yolo_backbone_block",
+    "stores": {
+      "L": 290
+    },
+    "total_instructions": 22861
+  },
+  "1": {
+    "basicblocks": 31,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 100,
+    "file": "yolo_block.cpp",
+    "fileloc": 6,
+    "instructions": 4171,
+    "loads": {
+      "L": 96
+    },
+    "memory_accesses": 292,
+    "name": "conv_layer_1",
+    "stores": {
+      "L": 192
+    },
+    "total_instructions": 4301
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 23,
+    "file": "yolo_block.cpp",
+    "fileloc": 80,
+    "instructions": 138,
+    "memory_accesses": 2,
+    "name": "leaky_relu_1",
+    "total_instructions": 346
+  },
+  "3": {
+    "basicblocks": 291,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 20,
+    "file": "yolo_block.cpp",
+    "fileloc": 194,
+    "instructions": 1834,
+    "memory_accesses": 33,
+    "name": "store_image",
+    "total_instructions": 2026
+  },
+  "4": {
+    "basicblocks": 21,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 15,
+    "file": "yolo_block.cpp",
+    "fileloc": 182,
+    "instructions": 145,
+    "memory_accesses": 4,
+    "name": "load_image",
+    "total_instructions": 166
+  },
+  "5": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 435,
+    "file": "yolo_block.cpp",
+    "fileloc": 103,
+    "instructions": 4499,
+    "loads": {
+      "L": 354
+    },
+    "memory_accesses": 293,
+    "name": "conv_layer_2",
+    "stores": {
+      "L": 482
+    },
+    "total_instructions": 4819
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "4 1 2 5 3",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "yolo_block.cpp",
+    "fileloc": 205,
+    "instructions": 14,
+    "memory_accesses": 0,
+    "name": "process_yolo_block",
+    "total_instructions": 11672
+  }
+}

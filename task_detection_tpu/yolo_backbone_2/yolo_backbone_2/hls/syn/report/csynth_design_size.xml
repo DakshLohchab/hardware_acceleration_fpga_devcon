@@ -1,0 +1,55 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,   3160, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,  32132, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  11098, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  10586, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  10584, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 144053 *, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  12957, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate,  12967, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  14249, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  16074, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,  14366, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  14393, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  17043, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  15634, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  15706, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  15777, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="yolo_backbone_v2" col1="yolo_backbone_2.cpp:241" col2="3160" col3="10584" col4="16074" col5="15634" col6="15777">
+                    <row id="4" col0="process_yolo_block" col1="yolo_backbone_2.cpp:219" col2="3000" col3="9681" col4="11242" col5="12595" col6="12379">
+                        <row id="2" col0="load_image" col1="yolo_backbone_2.cpp:202" col2="38" col3="20" col4="40" col5="40" col6="34"/>
+                        <row id="3" col0="conv_layer_1" col1="yolo_backbone_2.cpp:6" col2="765" col3="4589" col4="4372" col5="4301" col6="4287"/>
+                        <row id="6" col0="leaky_relu_1" col1="yolo_backbone_2.cpp:69" col2="756" col3="138" col4="346" col5="346" col6="310"/>
+                        <row id="1" col0="conv_layer_2" col1="yolo_backbone_2.cpp:85" col2="1170" col3="3688" col4="5246" col5="6701" col6="6659"/>
+                        <row id="5" col0="max_pool_2x2" col1="yolo_backbone_2.cpp:151" col2="189" col3="1093" col4="923" col5="892" col6="828"/>
+                        <row id="7" col0="store_image" col1="yolo_backbone_2.cpp:211" col2="40" col3="136" col4="298" col5="298" col6="237"/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>

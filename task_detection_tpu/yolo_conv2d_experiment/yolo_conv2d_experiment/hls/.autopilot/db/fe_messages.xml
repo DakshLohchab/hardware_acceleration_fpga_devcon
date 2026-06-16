@@ -1,0 +1,227 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:8:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="load_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:11:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="load_image" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:20:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="store_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:23:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="store_image" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:39:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buf complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:40:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buf complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:43:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:48:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:57:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:65:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:70:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:72:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:88:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:91:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:93:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:95:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv2d_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:117:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="process_image" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yolo_conv_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=yolo_conv_layer" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:132:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_conv_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=image_in offset=slave bundle=gmem0 depth=768" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:133:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_conv_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=weights_in offset=slave bundle=gmem1 depth=432" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:134:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_conv_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=bias_in offset=slave bundle=gmem2 depth=16" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:135:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_conv_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=image_out offset=slave bundle=gmem3 depth=3136" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:138:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_conv_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:142:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_conv_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_weights complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:145:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_conv_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_bias complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:152:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_conv_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_conv.cpp:161:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_conv_layer" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_conv.cpp:22:26" msg_body="Loop 'VITIS_LOOP_22_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_22_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_conv.cpp:69:30" msg_body="Loop 'VITIS_LOOP_69_9' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_69_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_conv.cpp:71:35" msg_body="Loop 'VITIS_LOOP_71_10' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_71_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_conv.cpp:87:35" msg_body="Loop 'VITIS_LOOP_87_11' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_87_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_conv.cpp:90:39" msg_body="Loop 'VITIS_LOOP_90_12' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_90_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_conv.cpp:92:43" msg_body="Loop 'VITIS_LOOP_92_13' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_92_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_conv.cpp:94:47" msg_body="Loop 'VITIS_LOOP_94_14' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_94_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_conv.cpp:10:26" msg_body="Loop 'VITIS_LOOP_10_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_10_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_conv.cpp:18:0" msg_body="Unrolling loop 'VITIS_LOOP_22_2' (yolo_conv.cpp:22:26) in function 'store_image' completely with a factor of 16">
+        <args Factor="16" LoopLoc="yolo_conv.cpp:22:26" LoopName="VITIS_LOOP_22_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_conv.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_69_9' (yolo_conv.cpp:69:30) in function 'conv2d_core' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_conv.cpp:69:30" LoopName="VITIS_LOOP_69_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_conv.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_71_10' (yolo_conv.cpp:71:35) in function 'conv2d_core' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_conv.cpp:71:35" LoopName="VITIS_LOOP_71_10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_conv.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_87_11' (yolo_conv.cpp:87:35) in function 'conv2d_core' completely with a factor of 16">
+        <args Factor="16" LoopLoc="yolo_conv.cpp:87:35" LoopName="VITIS_LOOP_87_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_conv.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_90_12' (yolo_conv.cpp:90:39) in function 'conv2d_core' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_conv.cpp:90:39" LoopName="VITIS_LOOP_90_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_conv.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_92_13' (yolo_conv.cpp:92:43) in function 'conv2d_core' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_conv.cpp:92:43" LoopName="VITIS_LOOP_92_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_conv.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_94_14' (yolo_conv.cpp:94:47) in function 'conv2d_core' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_conv.cpp:94:47" LoopName="VITIS_LOOP_94_14"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_conv.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_56_6' (yolo_conv.cpp:56:30) in function 'conv2d_core' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_conv.cpp:56:30" LoopName="VITIS_LOOP_56_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_conv.cpp:37:0" msg_body="Unrolling loop 'VITIS_LOOP_47_3' (yolo_conv.cpp:47:30) in function 'conv2d_core' completely with a factor of 16">
+        <args Factor="16" LoopLoc="yolo_conv.cpp:47:30" LoopName="VITIS_LOOP_47_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_conv.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_10_2' (yolo_conv.cpp:10:26) in function 'load_image' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_conv.cpp:10:26" LoopName="VITIS_LOOP_10_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="yolo_conv.cpp:116:0" msg_body="Skipping array undecay on variable length array 'image_in'.">
+        <args ArrayName="image_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="yolo_conv.cpp:116:0" msg_body="Skipping array undecay on variable length array 'image_out'.">
+        <args ArrayName="image_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Applying array_partition to 'line_buf': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="line_buf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:42:12" msg_body="Applying array_partition to 'window': Complete partitioning on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
+        <args Dim="islist 1 2 3" Mode="islist Complete Complete Complete" UOName="window"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:141:12" msg_body="Applying array_partition to 'local_weights': Complete partitioning on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3. Complete partitioning on dimension 4.">
+        <args Dim="islist 1 2 3 4" Mode="islist Complete Complete Complete Complete" UOName="local_weights"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:144:12" msg_body="Applying array_partition to 'local_bias': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="local_bias"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="yolo_conv.cpp:118:29" msg_body="Aggregating fifo (hls::stream) variable 'stream_in' with compact=bit mode in 48-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="48" HwTyName="fifo (hls::stream)" Name="stream_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="yolo_conv.cpp:119:30" msg_body="Aggregating fifo (hls::stream) variable 'stream_out' with compact=bit mode in 256-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="256" HwTyName="fifo (hls::stream)" Name="stream_out"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_conv.cpp:46:26" msg_body="pipeline   1 conv2d_core config_compile -pipeline_loops 64VITIS_LOOP_46_2 yolo_conv.cpp:46:26">
+        <args LoopLoc="yolo_conv.cpp:46:26" LoopLoc-DebugLoc="File yolo_conv.cpp Line 46 Column 26" LoopName="VITIS_LOOP_46_2" PragmaFunction="conv2d_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_conv.cpp:55:26" msg_body="pipeline   1 conv2d_core config_compile -pipeline_loops 64VITIS_LOOP_55_5 yolo_conv.cpp:55:26">
+        <args LoopLoc="yolo_conv.cpp:55:26" LoopLoc-DebugLoc="File yolo_conv.cpp Line 55 Column 26" LoopName="VITIS_LOOP_55_5" PragmaFunction="conv2d_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="yolo_conv.cpp:86:29" msg_body="Partitioning array 'p_out' dimension 1 due to constant index.">
+        <args Dim="1" Value="p_out"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_0_0 1 conv2d_core yolo_conv.cpp:38:12 line_buf_0_0">
+        <args PragmaFunction="conv2d_core" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_0_0" PragmaType="array_partition" VarLoc="yolo_conv.cpp:38:12" VarName="line_buf_0_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_0_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_0_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_0_1 1 conv2d_core yolo_conv.cpp:38:12 line_buf_0_1">
+        <args PragmaFunction="conv2d_core" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_0_1" PragmaType="array_partition" VarLoc="yolo_conv.cpp:38:12" VarName="line_buf_0_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_0_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_0_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_1_0 1 conv2d_core yolo_conv.cpp:38:12 line_buf_1_0">
+        <args PragmaFunction="conv2d_core" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_1_0" PragmaType="array_partition" VarLoc="yolo_conv.cpp:38:12" VarName="line_buf_1_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_1_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_1_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_1_1 1 conv2d_core yolo_conv.cpp:38:12 line_buf_1_1">
+        <args PragmaFunction="conv2d_core" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_1_1" PragmaType="array_partition" VarLoc="yolo_conv.cpp:38:12" VarName="line_buf_1_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_1_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_1_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_2_0 1 conv2d_core yolo_conv.cpp:38:12 line_buf_2_0">
+        <args PragmaFunction="conv2d_core" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_2_0" PragmaType="array_partition" VarLoc="yolo_conv.cpp:38:12" VarName="line_buf_2_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_2_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_2_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_2_1 1 conv2d_core yolo_conv.cpp:38:12 line_buf_2_1">
+        <args PragmaFunction="conv2d_core" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_2_1" PragmaType="array_partition" VarLoc="yolo_conv.cpp:38:12" VarName="line_buf_2_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_2_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_2_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Applying array_partition to 'line_buf_0_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_0_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Applying array_partition to 'line_buf_0_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_0_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Applying array_partition to 'line_buf_1_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_1_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Applying array_partition to 'line_buf_1_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_1_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Applying array_partition to 'line_buf_2_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_2_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:38:12" msg_body="Applying array_partition to 'line_buf_2_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_2_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_conv.cpp:86:29" msg_body="Applying array_partition to 'p_out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="p_out"/>
+    </msg>
+</xilinx:hls_fe_msgs>

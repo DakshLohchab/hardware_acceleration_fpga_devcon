@@ -1,0 +1,8 @@
+INFO: [SIM 2] *************** CSIM start ***************
+make: 'csim.exe' is up to date.
+--- Starting Conv2D v2 (3-In, 16-Out) Simulation ---
+Generated 196 valid pixels.
+SUCCESS: 3D Line Buffer and 432-MAC Engine are perfect!
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 256
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

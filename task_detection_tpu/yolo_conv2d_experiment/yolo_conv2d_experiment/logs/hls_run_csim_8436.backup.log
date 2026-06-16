@@ -1,0 +1,33 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./conv2d_core.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/conv2d_core.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./conv2d_tb.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/conv2d_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=conv2d_3x3' from hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../conv2d_tb.cpp in debug mode
+   Compiling ../../../../conv2d_core.cpp in debug mode
+../../../../conv2d_core.cpp:1:10: fatal error: 'conv2d_v2.h' file not found
+#include "conv2d_v2.h"
+         ^~~~~~~~~~~~~
+1 error generated.
+make: *** [csim.mk:94: obj/conv2d_core.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: CSIM Failed
+INFO: [HLS 200-112] Total CPU user time: 6.95 seconds. Total CPU system time: 1.15 seconds. Total elapsed time: 16.62 seconds; peak allocated memory: 269.496 MB.

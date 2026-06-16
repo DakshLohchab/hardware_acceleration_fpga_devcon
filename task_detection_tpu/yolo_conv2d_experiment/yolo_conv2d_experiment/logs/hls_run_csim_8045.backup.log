@@ -1,0 +1,315 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./conv2d_core.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/conv2d_core.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./conv2d_tb.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/conv2d_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=conv2d_3x3' from hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../conv2d_tb.cpp in debug mode
+../../../../conv2d_tb.cpp:46:30: error: use of overloaded operator '<' is ambiguous (with operand types 'data_t' (aka 'ap_fixed<16, 6>') and 'float')
+            if (p_out.ch[oc] < 0.26f || p_out.ch[oc] > 0.28f) {
+                ~~~~~~~~~~~~ ^ ~~~~~
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:1667:3: note: candidate function
+  DOUBLE_CMP_AF(<)
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:1664:29: note: expanded from macro 'DOUBLE_CMP_AF'
+  AP_INLINE AP_NODEBUG bool operator Sym(double d) const { return to_double() Sym d; }
+                            ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2376:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(bool, 1, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2377:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(char, 8, CHAR_IS_SIGNED)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2378:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(signed char, 8, true)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2379:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned char, 8, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2380:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(short, _AP_SIZE_short, true)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2381:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned short, _AP_SIZE_short, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2382:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(int, _AP_SIZE_int, true)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2383:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned int, _AP_SIZE_int, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2384:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(long, _AP_SIZE_long, true)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2385:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned long, _AP_SIZE_long, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2386:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(ap_slong, _AP_SIZE_ap_slong, true)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2387:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(ap_ulong, _AP_SIZE_ap_slong, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2370:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(<, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(float, float)
+            if (p_out.ch[oc] < 0.26f || p_out.ch[oc] > 0.28f) {
+                             ^
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(double, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(long double, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(__float128, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(int, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(long, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(long long, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(__int128, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(unsigned int, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(unsigned long, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(unsigned long long, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(unsigned __int128, float)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(float, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(double, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(long double, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(__float128, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(int, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(long, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(long long, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(__int128, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(unsigned int, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(unsigned long, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(unsigned long long, double)
+../../../../conv2d_tb.cpp:46:30: note: built-in candidate operator<(unsigned __int128, double)
+../../../../conv2d_tb.cpp:46:54: error: use of overloaded operator '>' is ambiguous (with operand types 'data_t' (aka 'ap_fixed<16, 6>') and 'float')
+            if (p_out.ch[oc] < 0.26f || p_out.ch[oc] > 0.28f) {
+                                        ~~~~~~~~~~~~ ^ ~~~~~
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:1666:3: note: candidate function
+  DOUBLE_CMP_AF(>)
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:1664:29: note: expanded from macro 'DOUBLE_CMP_AF'
+  AP_INLINE AP_NODEBUG bool operator Sym(double d) const { return to_double() Sym d; }
+                            ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2376:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(bool, 1, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2377:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(char, 8, CHAR_IS_SIGNED)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2378:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(signed char, 8, true)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2379:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned char, 8, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2380:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(short, _AP_SIZE_short, true)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2381:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned short, _AP_SIZE_short, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2382:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(int, _AP_SIZE_int, true)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2383:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned int, _AP_SIZE_int, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2384:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(long, _AP_SIZE_long, true)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2385:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(unsigned long, _AP_SIZE_long, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2386:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(ap_slong, _AP_SIZE_ap_slong, true)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2387:1: note: candidate function [with _AP_W = 16, _AP_I = 6, _AP_S = true, _AP_Q = AP_TRN, _AP_O = AP_WRAP, _AP_N = 0]
+ALL_AF_OP_WITH_INT(ap_ulong, _AP_SIZE_ap_slong, false)
+^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2369:3: note: expanded from macro 'ALL_AF_OP_WITH_INT'
+  AF_REL_OP_WITH_INT(>, C_TYPE, (BITS), (SIGN))           \
+  ^
+/home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_base.h:2315:49: note: expanded from macro 'AF_REL_OP_WITH_INT'
+  HLS_CONSTEXPR_EXTRA AP_INLINE AP_NODEBUG bool operator REL_OP(                                              \
+                                                ^
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(float, float)
+            if (p_out.ch[oc] < 0.26f || p_out.ch[oc] > 0.28f) {
+                                                     ^
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(double, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(long double, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(__float128, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(int, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(long, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(long long, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(__int128, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(unsigned int, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(unsigned long, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(unsigned long long, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(unsigned __int128, float)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(float, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(double, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(long double, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(__float128, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(int, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(long, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(long long, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(__int128, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(unsigned int, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(unsigned long, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(unsigned long long, double)
+../../../../conv2d_tb.cpp:46:54: note: built-in candidate operator>(unsigned __int128, double)
+2 errors generated.
+make: *** [csim.mk:88: obj/conv2d_tb.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: CSIM Failed
+INFO: [HLS 200-112] Total CPU user time: 6.94 seconds. Total CPU system time: 0.96 seconds. Total elapsed time: 11.97 seconds; peak allocated memory: 269.496 MB.

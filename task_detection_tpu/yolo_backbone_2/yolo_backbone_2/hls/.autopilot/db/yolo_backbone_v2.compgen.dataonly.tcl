@@ -1,0 +1,67 @@
+# This script segment is generated automatically by AutoPilot
+
+set axilite_register_dict [dict create]
+set port_control {
+ap_start { }
+ap_done { }
+ap_ready { }
+ap_idle { }
+interrupt {
+}
+}
+dict set axilite_register_dict control $port_control
+
+
+set port_control_r {
+image_in { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 16
+	offset_end 27
+}
+l1_weights_in { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 28
+	offset_end 39
+}
+l1_bias_in { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 40
+	offset_end 51
+}
+l2_weights_in { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 52
+	offset_end 63
+}
+l2_bias_in { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 64
+	offset_end 75
+}
+image_out { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 76
+	offset_end 87
+}
+}
+dict set axilite_register_dict control_r $port_control_r
+
+

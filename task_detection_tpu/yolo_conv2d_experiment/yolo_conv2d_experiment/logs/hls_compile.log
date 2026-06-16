@@ -1,0 +1,1361 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./yolo_conv.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./yolo_conv_tb.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=yolo_conv_layer' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 5.02 seconds. CPU system time: 0.92 seconds. Elapsed time: 12.52 seconds; current allocated memory: 269.539 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'yolo_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 12.68 seconds. CPU system time: 1.29 seconds. Elapsed time: 19.29 seconds; current allocated memory: 271.336 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 2,290 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 18,457 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 6,019 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,879 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 5,848 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,230 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,826 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,830 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,072 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 13,693 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 10,520 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,758 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,354 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,169 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,115 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,139 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_22_2' is marked as complete unroll implied by the pipeline pragma (yolo_conv.cpp:22:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_69_9' is marked as complete unroll implied by the pipeline pragma (yolo_conv.cpp:69:30)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_71_10' is marked as complete unroll implied by the pipeline pragma (yolo_conv.cpp:71:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_87_11' is marked as complete unroll implied by the pipeline pragma (yolo_conv.cpp:87:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_90_12' is marked as complete unroll implied by the pipeline pragma (yolo_conv.cpp:90:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_92_13' is marked as complete unroll implied by the pipeline pragma (yolo_conv.cpp:92:43)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_94_14' is marked as complete unroll implied by the pipeline pragma (yolo_conv.cpp:94:47)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_10_2' is marked as complete unroll implied by the pipeline pragma (yolo_conv.cpp:10:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_22_2' (yolo_conv.cpp:22:26) in function 'store_image' completely with a factor of 16 (yolo_conv.cpp:18:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_69_9' (yolo_conv.cpp:69:30) in function 'conv2d_core' completely with a factor of 3 (yolo_conv.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_71_10' (yolo_conv.cpp:71:35) in function 'conv2d_core' completely with a factor of 3 (yolo_conv.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_87_11' (yolo_conv.cpp:87:35) in function 'conv2d_core' completely with a factor of 16 (yolo_conv.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_90_12' (yolo_conv.cpp:90:39) in function 'conv2d_core' completely with a factor of 3 (yolo_conv.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_92_13' (yolo_conv.cpp:92:43) in function 'conv2d_core' completely with a factor of 3 (yolo_conv.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_94_14' (yolo_conv.cpp:94:47) in function 'conv2d_core' completely with a factor of 3 (yolo_conv.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_56_6' (yolo_conv.cpp:56:30) in function 'conv2d_core' completely with a factor of 3 (yolo_conv.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_47_3' (yolo_conv.cpp:47:30) in function 'conv2d_core' completely with a factor of 16 (yolo_conv.cpp:37:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_10_2' (yolo_conv.cpp:10:26) in function 'load_image' completely with a factor of 3 (yolo_conv.cpp:6:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'image_in'. (yolo_conv.cpp:116:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'image_out'. (yolo_conv.cpp:116:0)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (yolo_conv.cpp:38:12)
+INFO: [HLS 214-248] Applying array_partition to 'window': Complete partitioning on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3. (yolo_conv.cpp:42:12)
+INFO: [HLS 214-248] Applying array_partition to 'local_weights': Complete partitioning on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3. Complete partitioning on dimension 4. (yolo_conv.cpp:141:12)
+INFO: [HLS 214-248] Applying array_partition to 'local_bias': Complete partitioning on dimension 1. (yolo_conv.cpp:144:12)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'stream_in' with compact=bit mode in 48-bits (yolo_conv.cpp:118:29)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'stream_out' with compact=bit mode in 256-bits (yolo_conv.cpp:119:30)
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_46_2> at yolo_conv.cpp:46:26 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_55_5> at yolo_conv.cpp:55:26 due to pipeline_loops threshold
+INFO: [HLS 214-449] Partitioning array 'p_out' dimension 1 due to constant index. (yolo_conv.cpp:86:29)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_0_0' due to pipeline pragma (yolo_conv.cpp:38:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_0_1' due to pipeline pragma (yolo_conv.cpp:38:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_1_0' due to pipeline pragma (yolo_conv.cpp:38:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_1_1' due to pipeline pragma (yolo_conv.cpp:38:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_2_0' due to pipeline pragma (yolo_conv.cpp:38:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_2_1' due to pipeline pragma (yolo_conv.cpp:38:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_0_0': Complete partitioning on dimension 1. (yolo_conv.cpp:38:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_0_1': Complete partitioning on dimension 1. (yolo_conv.cpp:38:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_1_0': Complete partitioning on dimension 1. (yolo_conv.cpp:38:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_1_1': Complete partitioning on dimension 1. (yolo_conv.cpp:38:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_2_0': Complete partitioning on dimension 1. (yolo_conv.cpp:38:12)
+INFO: [HLS 214-248] Applying array_partition to 'line_buf_2_1': Complete partitioning on dimension 1. (yolo_conv.cpp:38:12)
+INFO: [HLS 214-248] Applying array_partition to 'p_out': Complete partitioning on dimension 1. (yolo_conv.cpp:86:29)
+INFO: [HLS 214-115] Multiple burst reads of length 768 and bit width 32 in loop 'VITIS_LOOP_7_1'(yolo_conv.cpp:7:21) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (yolo_conv.cpp:7:21)
+INFO: [HLS 214-115] Multiple burst writes of length 3136 and bit width 32 in loop 'VITIS_LOOP_19_1'(yolo_conv.cpp:19:22) has been inferred on bundle 'gmem3'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (yolo_conv.cpp:19:22)
+INFO: [HLS 214-115] Multiple burst reads of length 432 and bit width 32 in loop 'VITIS_LOOP_148_1'(yolo_conv.cpp:148:23) has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (yolo_conv.cpp:148:23)
+INFO: [HLS 214-115] Multiple burst reads of length 16 and bit width 32 in loop 'VITIS_LOOP_160_5'(yolo_conv.cpp:160:23) has been inferred on bundle 'gmem2'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (yolo_conv.cpp:160:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 23.49 seconds. CPU system time: 1.16 seconds. Elapsed time: 42.74 seconds; current allocated memory: 276.777 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 276.777 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.14 seconds. CPU system time: 0.03 seconds. Elapsed time: 4.15 seconds; current allocated memory: 288.859 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.57 seconds; current allocated memory: 297.984 MB.
+WARNING: [HLS 200-805] An internal stream 'stream_in' (yolo_conv.cpp:118) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'stream_out' (yolo_conv.cpp:119) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [HLS 200-1947] Using 'stable' for argument 'gmem0' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'image_in' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_0_0_0.val1' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_0_0_1.val2' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_0_0_2.val3' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_0_1_0.val4' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_0_1_1.val5' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_0_1_2.val6' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_0_2_0.val7' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_0_2_1.val8' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_0_2_2.val9' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_1_0_0.val10' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_1_0_1.val11' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_1_0_2.val12' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_1_1_0.val13' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_1_1_1.val14' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_1_1_2.val15' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_1_2_0.val16' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_1_2_1.val17' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_1_2_2.val18' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_2_0_0.val19' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_2_0_1.val20' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_2_0_2.val21' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_2_1_0.val22' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_2_1_1.val23' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_2_1_2.val24' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_2_2_0.val25' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_2_2_1.val26' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_0_2_2_2.val27' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_0_0_0.val28' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_0_0_1.val29' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_0_0_2.val30' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_0_1_0.val31' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_0_1_1.val32' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_0_1_2.val33' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_0_2_0.val34' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_0_2_1.val35' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_0_2_2.val36' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_1_0_0.val37' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_1_0_1.val38' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_1_0_2.val39' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_1_1_0.val40' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_1_1_1.val41' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_1_1_2.val42' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_1_2_0.val43' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_1_2_1.val44' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_1_2_2.val45' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_2_0_0.val46' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_2_0_1.val47' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_2_0_2.val48' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_2_1_0.val49' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_2_1_1.val50' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_2_1_2.val51' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_2_2_0.val52' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_2_2_1.val53' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_1_2_2_2.val54' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_0_0_0.val55' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_0_0_1.val56' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_0_0_2.val57' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_0_1_0.val58' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_0_1_1.val59' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_0_1_2.val60' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_0_2_0.val61' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_0_2_1.val62' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_0_2_2.val63' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_1_0_0.val64' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_1_0_1.val65' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_1_0_2.val66' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_1_1_0.val67' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_1_1_1.val68' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_1_1_2.val69' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_1_2_0.val70' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_1_2_1.val71' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_1_2_2.val72' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_2_0_0.val73' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_2_0_1.val74' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_2_0_2.val75' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_2_1_0.val76' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_2_1_1.val77' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_2_1_2.val78' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_2_2_0.val79' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_2_2_1.val80' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_2_2_2_2.val81' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_0_0_0.val82' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_0_0_1.val83' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_0_0_2.val84' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_0_1_0.val85' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_0_1_1.val86' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_0_1_2.val87' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_0_2_0.val88' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_0_2_1.val89' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_0_2_2.val90' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_1_0_0.val91' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_1_0_1.val92' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_1_0_2.val93' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_1_1_0.val94' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_1_1_1.val95' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_1_1_2.val96' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_1_2_0.val97' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_1_2_1.val98' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_1_2_2.val99' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_2_0_0.val100' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_2_0_1.val101' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_2_0_2.val102' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_2_1_0.val103' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_2_1_1.val104' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_2_1_2.val105' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_2_2_0.val106' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_2_2_1.val107' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_3_2_2_2.val108' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_0_0_0.val109' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_0_0_1.val110' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_0_0_2.val111' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_0_1_0.val112' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_0_1_1.val113' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_0_1_2.val114' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_0_2_0.val115' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_0_2_1.val116' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_0_2_2.val117' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_1_0_0.val118' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_1_0_1.val119' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_1_0_2.val120' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_1_1_0.val121' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_1_1_1.val122' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_1_1_2.val123' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_1_2_0.val124' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_1_2_1.val125' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_1_2_2.val126' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_2_0_0.val127' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_2_0_1.val128' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_2_0_2.val129' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_2_1_0.val130' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_2_1_1.val131' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_2_1_2.val132' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_2_2_0.val133' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_2_2_1.val134' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_4_2_2_2.val135' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_0_0_0.val136' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_0_0_1.val137' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_0_0_2.val138' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_0_1_0.val139' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_0_1_1.val140' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_0_1_2.val141' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_0_2_0.val142' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_0_2_1.val143' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_0_2_2.val144' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_1_0_0.val145' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_1_0_1.val146' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_1_0_2.val147' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_1_1_0.val148' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_1_1_1.val149' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_1_1_2.val150' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_1_2_0.val151' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_1_2_1.val152' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_1_2_2.val153' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_2_0_0.val154' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_2_0_1.val155' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_2_0_2.val156' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_2_1_0.val157' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_2_1_1.val158' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_2_1_2.val159' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_2_2_0.val160' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_2_2_1.val161' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_5_2_2_2.val162' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_0_0_0.val163' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_0_0_1.val164' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_0_0_2.val165' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_0_1_0.val166' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_0_1_1.val167' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_0_1_2.val168' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_0_2_0.val169' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_0_2_1.val170' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_0_2_2.val171' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_1_0_0.val172' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_1_0_1.val173' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_1_0_2.val174' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_1_1_0.val175' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_1_1_1.val176' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_1_1_2.val177' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_1_2_0.val178' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_1_2_1.val179' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_1_2_2.val180' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_2_0_0.val181' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_2_0_1.val182' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_2_0_2.val183' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_2_1_0.val184' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_2_1_1.val185' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_2_1_2.val186' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_2_2_0.val187' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_2_2_1.val188' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_6_2_2_2.val189' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_0_0_0.val190' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_0_0_1.val191' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_0_0_2.val192' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_0_1_0.val193' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_0_1_1.val194' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_0_1_2.val195' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_0_2_0.val196' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_0_2_1.val197' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_0_2_2.val198' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_1_0_0.val199' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_1_0_1.val200' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_1_0_2.val201' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_1_1_0.val202' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_1_1_1.val203' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_1_1_2.val204' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_1_2_0.val205' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_1_2_1.val206' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_1_2_2.val207' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_2_0_0.val208' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_2_0_1.val209' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_2_0_2.val210' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_2_1_0.val211' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_2_1_1.val212' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_2_1_2.val213' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_2_2_0.val214' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_2_2_1.val215' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_7_2_2_2.val216' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_0_0_0.val217' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_0_0_1.val218' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_0_0_2.val219' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_0_1_0.val220' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_0_1_1.val221' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_0_1_2.val222' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_0_2_0.val223' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_0_2_1.val224' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_0_2_2.val225' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_1_0_0.val226' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_1_0_1.val227' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_1_0_2.val228' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_1_1_0.val229' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_1_1_1.val230' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_1_1_2.val231' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_1_2_0.val232' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_1_2_1.val233' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_1_2_2.val234' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_2_0_0.val235' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_2_0_1.val236' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_2_0_2.val237' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_2_1_0.val238' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_2_1_1.val239' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_2_1_2.val240' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_2_2_0.val241' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_2_2_1.val242' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_8_2_2_2.val243' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_0_0_0.val244' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_0_0_1.val245' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_0_0_2.val246' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_0_1_0.val247' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_0_1_1.val248' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_0_1_2.val249' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_0_2_0.val250' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_0_2_1.val251' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_0_2_2.val252' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_1_0_0.val253' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_1_0_1.val254' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_1_0_2.val255' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_1_1_0.val256' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_1_1_1.val257' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_1_1_2.val258' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_1_2_0.val259' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_1_2_1.val260' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_1_2_2.val261' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_2_0_0.val262' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_2_0_1.val263' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_2_0_2.val264' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_2_1_0.val265' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_2_1_1.val266' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_2_1_2.val267' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_2_2_0.val268' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_2_2_1.val269' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_9_2_2_2.val270' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_0_0_0.val271' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_0_0_1.val272' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_0_0_2.val273' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_0_1_0.val274' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_0_1_1.val275' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_0_1_2.val276' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_0_2_0.val277' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_0_2_1.val278' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_0_2_2.val279' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_1_0_0.val280' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_1_0_1.val281' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_1_0_2.val282' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_1_1_0.val283' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_1_1_1.val284' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_1_1_2.val285' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_1_2_0.val286' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_1_2_1.val287' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_1_2_2.val288' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_2_0_0.val289' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_2_0_1.val290' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_2_0_2.val291' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_2_1_0.val292' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_2_1_1.val293' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_2_1_2.val294' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_2_2_0.val295' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_2_2_1.val296' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_10_2_2_2.val297' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_0_0_0.val298' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_0_0_1.val299' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_0_0_2.val300' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_0_1_0.val301' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_0_1_1.val302' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_0_1_2.val303' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_0_2_0.val304' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_0_2_1.val305' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_0_2_2.val306' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_1_0_0.val307' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_1_0_1.val308' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_1_0_2.val309' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_1_1_0.val310' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_1_1_1.val311' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_1_1_2.val312' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_1_2_0.val313' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_1_2_1.val314' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_1_2_2.val315' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_2_0_0.val316' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_2_0_1.val317' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_2_0_2.val318' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_2_1_0.val319' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_2_1_1.val320' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_2_1_2.val321' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_2_2_0.val322' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_2_2_1.val323' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_11_2_2_2.val324' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_0_0_0.val325' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_0_0_1.val326' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_0_0_2.val327' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_0_1_0.val328' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_0_1_1.val329' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_0_1_2.val330' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_0_2_0.val331' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_0_2_1.val332' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_0_2_2.val333' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_1_0_0.val334' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_1_0_1.val335' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_1_0_2.val336' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_1_1_0.val337' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_1_1_1.val338' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_1_1_2.val339' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_1_2_0.val340' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_1_2_1.val341' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_1_2_2.val342' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_2_0_0.val343' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_2_0_1.val344' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_2_0_2.val345' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_2_1_0.val346' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_2_1_1.val347' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_2_1_2.val348' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_2_2_0.val349' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_2_2_1.val350' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_12_2_2_2.val351' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_0_0_0.val352' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_0_0_1.val353' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_0_0_2.val354' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_0_1_0.val355' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_0_1_1.val356' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_0_1_2.val357' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_0_2_0.val358' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_0_2_1.val359' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_0_2_2.val360' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_1_0_0.val361' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_1_0_1.val362' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_1_0_2.val363' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_1_1_0.val364' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_1_1_1.val365' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_1_1_2.val366' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_1_2_0.val367' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_1_2_1.val368' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_1_2_2.val369' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_2_0_0.val370' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_2_0_1.val371' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_2_0_2.val372' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_2_1_0.val373' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_2_1_1.val374' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_2_1_2.val375' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_2_2_0.val376' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_2_2_1.val377' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_13_2_2_2.val378' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_0_0_0.val379' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_0_0_1.val380' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_0_0_2.val381' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_0_1_0.val382' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_0_1_1.val383' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_0_1_2.val384' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_0_2_0.val385' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_0_2_1.val386' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_0_2_2.val387' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_1_0_0.val388' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_1_0_1.val389' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_1_0_2.val390' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_1_1_0.val391' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_1_1_1.val392' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_1_1_2.val393' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_1_2_0.val394' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_1_2_1.val395' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_1_2_2.val396' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_2_0_0.val397' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_2_0_1.val398' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_2_0_2.val399' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_2_1_0.val400' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_2_1_1.val401' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_2_1_2.val402' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_2_2_0.val403' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_2_2_1.val404' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_14_2_2_2.val405' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_0_0_0.val406' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_0_0_1.val407' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_0_0_2.val408' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_0_1_0.val409' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_0_1_1.val410' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_0_1_2.val411' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_0_2_0.val412' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_0_2_1.val413' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_0_2_2.val414' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_1_0_0.val415' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_1_0_1.val416' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_1_0_2.val417' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_1_1_0.val418' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_1_1_1.val419' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_1_1_2.val420' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_1_2_0.val421' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_1_2_1.val422' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_1_2_2.val423' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_2_0_0.val424' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_2_0_1.val425' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_2_0_2.val426' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_2_1_0.val427' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_2_1_1.val428' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_2_1_2.val429' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_2_2_0.val430' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_2_2_1.val431' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_weights_15_2_2_2.val432' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_0.val433' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_1.val434' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_2.val435' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_3.val436' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_4.val437' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_5.val438' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_6.val439' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_7.val440' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_8.val441' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_9.val442' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_10.val443' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_11.val444' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_12.val445' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_13.val446' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_14.val447' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'local_bias_15.val448' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'image_out' of dataflow function 'process_image' (yolo_conv.cpp:117:1).
+INFO: [XFORM 203-712] Applying dataflow to function 'process_image' (yolo_conv.cpp:117:1), detected/extracted 3 process function(s): 
+	 'load_image'
+	 'conv2d_core'
+	 'store_image'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:152:1) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:154:49) to (yolo_conv.cpp:154:49) in function 'yolo_conv_layer'... converting 32 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:160:42) to (yolo_conv.cpp:162:24) in function 'yolo_conv_layer'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:20:1) to (yolo_conv.cpp:19:22) in function 'store_image'... converting 33 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:8:1) to (yolo_conv.cpp:7:21) in function 'load_image'... converting 19 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:58:34) to (yolo_conv.cpp:58:34) in function 'conv2d_core'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:58:34) to (yolo_conv.cpp:58:34) in function 'conv2d_core'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv.cpp:58:34) to (yolo_conv.cpp:58:34) in function 'conv2d_core'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 9.19 seconds. CPU system time: 0.06 seconds. Elapsed time: 12.75 seconds; current allocated memory: 342.129 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_150_3'(yolo_conv.cpp:150:31) and 'VITIS_LOOP_151_4'(yolo_conv.cpp:151:35) in function 'yolo_conv_layer' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_149_2'(yolo_conv.cpp:149:27) and 'VITIS_LOOP_150_3'(yolo_conv.cpp:150:31) in function 'yolo_conv_layer' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_148_1'(yolo_conv.cpp:148:23) and 'VITIS_LOOP_149_2'(yolo_conv.cpp:149:27) in function 'yolo_conv_layer' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_45_1'(yolo_conv.cpp:45:22) and 'VITIS_LOOP_46_2'(yolo_conv.cpp:46:26) in function 'conv2d_core' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_54_4'(yolo_conv.cpp:54:22) and 'VITIS_LOOP_55_5'(yolo_conv.cpp:55:26) in function 'conv2d_core' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_63_7'(yolo_conv.cpp:63:22) and 'VITIS_LOOP_64_8'(yolo_conv.cpp:64:26) in function 'conv2d_core' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_150_3' (yolo_conv.cpp:150:31) in function 'yolo_conv_layer'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_149_2' (yolo_conv.cpp:149:27) in function 'yolo_conv_layer'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_148_1' (yolo_conv.cpp:148:23) in function 'yolo_conv_layer'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_45_1' (yolo_conv.cpp:45:22) in function 'conv2d_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_54_4' (yolo_conv.cpp:54:22) in function 'conv2d_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_63_7' (yolo_conv.cpp:63:22) in function 'conv2d_core'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 8.42 seconds. CPU system time: 0.1 seconds. Elapsed time: 10.98 seconds; current allocated memory: 460.457 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_conv_layer' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITIS_LOOP_151_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITIS_LOOP_151_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 6.44 seconds. CPU system time: 0.14 seconds. Elapsed time: 9.03 seconds; current allocated memory: 489.977 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.96 seconds. CPU system time: 0.03 seconds. Elapsed time: 2.44 seconds; current allocated memory: 489.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_160_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_160_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.57 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.94 seconds; current allocated memory: 489.977 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 489.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_image_Pipeline_VITIS_LOOP_7_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_7_1'.
+WARNING: [HLS 200-448] Lower bound of II is 3 due to multiple bus read operation ('gmem0_addr_read', yolo_conv.cpp:12) on port 'gmem0' (yolo_conv.cpp:12), bus read operation ('gmem0_addr_read_1', yolo_conv.cpp:12) on port 'gmem0' (yolo_conv.cpp:12), bus read operation ('gmem0_addr_read_2', yolo_conv.cpp:12) on port 'gmem0' (yolo_conv.cpp:12) accessing 'gmem0' m_axi read
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 7, loop 'VITIS_LOOP_7_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 489.977 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 489.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'load_image' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 489.977 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 489.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d_core_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_45_1_VITIS_LOOP_46_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_45_1_VITIS_LOOP_46_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.37 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.66 seconds; current allocated memory: 489.977 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 489.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d_core_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_4_VITIS_LOOP_55_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_54_4_VITIS_LOOP_55_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 489.977 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 489.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d_core_Pipeline_VITIS_LOOP_63_7_VITIS_LOOP_64_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_431) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_430) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_429) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_428) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_427) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_426) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_425) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_424) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_423) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_422) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_421) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_420) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_419) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_418) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_417) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_416) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_415) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_414) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_413) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_412) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_411) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_410) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_409) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_408) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_407) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_406) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_405) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_404) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_403) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_402) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_401) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_400) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_399) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_398) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_397) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_396) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_395) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_394) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_393) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_392) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_391) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_390) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_389) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_388) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_387) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_386) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_385) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_384) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_383) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_382) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_381) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_380) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_379) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_378) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_377) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_376) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_375) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_374) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_373) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_372) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_371) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_370) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_369) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_368) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_367) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_366) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_365) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_364) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_363) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_362) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_361) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_360) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_359) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_358) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_357) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_356) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_355) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_354) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_353) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_352) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_351) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_350) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_349) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_348) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_347) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_346) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_345) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_344) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_343) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_342) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_341) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_340) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_339) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_338) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_337) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_336) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_335) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_334) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_333) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_332) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_331) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_330) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_329) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_328) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_327) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_326) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_325) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_324) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_323) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_322) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_321) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_320) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_319) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_318) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_317) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_316) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_315) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_314) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_313) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_312) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_311) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_310) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_309) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_308) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_307) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_306) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_305) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_304) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_303) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_302) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_301) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_300) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_299) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_298) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_297) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_296) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_295) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_294) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_293) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_292) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_291) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_290) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_289) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_288) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_287) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_286) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_285) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_284) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_283) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_282) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_281) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_280) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_279) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_278) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_277) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_276) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_275) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_274) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_273) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_272) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_271) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_270) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_269) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_268) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_267) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_266) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_265) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_264) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_263) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_262) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_261) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_260) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_259) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_258) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_257) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_256) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_255) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_254) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_253) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_252) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_251) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_250) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_249) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_248) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_247) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_246) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_245) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_244) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_243) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_242) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_241) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_240) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_239) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_238) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_237) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_236) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_235) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_234) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_233) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_232) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_231) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_230) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_229) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_228) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_227) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_226) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_225) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_224) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_223) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_222) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_221) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_220) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_219) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_218) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_217) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_216) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_215) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_214) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_213) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_212) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_211) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_210) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_209) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_208) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_207) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_206) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_205) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_204) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_203) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_202) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_201) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_200) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_199) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_198) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_197) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_196) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_195) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_194) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_193) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_192) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_191) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_190) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_189) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_188) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_187) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_186) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_185) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_184) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_183) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_182) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_181) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_180) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_179) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_178) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_177) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_176) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_175) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_174) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_173) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_172) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_171) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_170) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_169) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_168) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_167) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_166) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_165) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_164) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_163) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_162) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_161) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_160) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_159) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_158) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_157) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_156) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_155) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_154) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_153) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_152) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_151) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_150) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_149) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_148) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_147) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_146) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_145) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_144) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_143) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_142) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_141) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_140) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_139) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_138) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_137) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_136) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_135) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_134) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_133) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_132) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_131) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_130) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_129) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_128) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_127) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_126) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_125) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_124) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_123) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_122) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_121) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_120) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_119) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_118) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_117) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_116) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_115) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_114) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_113) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_112) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_111) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_110) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_109) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_108) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_107) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_106) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_105) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_104) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_103) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_102) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_101) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_100) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_99) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_98) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_96) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_95) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_94) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_93) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_92) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_91) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_90) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_89) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_88) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_87) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_86) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_85) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_84) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_83) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_82) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_81) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_80) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_78) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_77) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_76) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_75) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_74) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_73) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_72) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_71) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_70) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_69) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_68) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_67) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_66) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_65) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_64) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_51) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln96) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_63_7_VITIS_LOOP_64_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 31, loop 'VITIS_LOOP_63_7_VITIS_LOOP_64_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3.63 seconds. CPU system time: 0.04 seconds. Elapsed time: 5.29 seconds; current allocated memory: 508.336 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.16 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.54 seconds; current allocated memory: 508.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv2d_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.1 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.55 seconds; current allocated memory: 512.664 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 514.160 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store_image_Pipeline_VITIS_LOOP_19_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_19_1'.
+WARNING: [HLS 200-448] Lower bound of II is 16 due to multiple bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24), bus write operation ('gmem3_addr_write_ln24', yolo_conv.cpp:24) on port 'gmem3' (yolo_conv.cpp:24) accessing 'gmem3' m_axi write
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 19, loop 'VITIS_LOOP_19_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.47 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.75 seconds; current allocated memory: 518.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 518.738 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'store_image' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 518.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 518.738 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'process_image' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.32 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.53 seconds; current allocated memory: 522.289 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.21 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.79 seconds; current allocated memory: 523.586 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_conv_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.45 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.65 seconds; current allocated memory: 531.223 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.33 seconds; current allocated memory: 531.223 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI' pipeline 'VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITIS_LOOP_151_4' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI/m_axi_gmem1_0_ARUSER' to 0.
+INFO: [RTGEN 206-104] Estimated max fanout for 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI' is 6912 from HDL expression: ((1'b0 == ap_block_pp0_stage0_subdone_grp0_done_reg) & (1'b0 == ap_block_pp0_stage0_01001_grp0) & (ap_loop_exit_ready_pp0_iter3_reg == 1'b1) & (icmp_ln148_reg_12926_pp0_iter2_reg == 1'd1))
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_layer_Pipeline_VITIS_LOOP_148_1_VITIS_LOOP_149_2_VITIS_LOOP_150_3_VITI'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.24 seconds. CPU system time: 0.08 seconds. Elapsed time: 1.93 seconds; current allocated memory: 545.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5' pipeline 'VITIS_LOOP_160_5' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5/m_axi_gmem2_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_layer_Pipeline_VITIS_LOOP_160_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.72 seconds. CPU system time: 0.13 seconds. Elapsed time: 2.85 seconds; current allocated memory: 594.734 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_image_Pipeline_VITIS_LOOP_7_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_image_Pipeline_VITIS_LOOP_7_1' pipeline 'VITIS_LOOP_7_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'load_image_Pipeline_VITIS_LOOP_7_1/m_axi_gmem0_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_image_Pipeline_VITIS_LOOP_7_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.45 seconds; current allocated memory: 594.734 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'load_image' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'load_image'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.71 seconds; current allocated memory: 594.734 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d_core_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d_core_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.96 seconds; current allocated memory: 595.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d_core_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d_core_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.5 seconds; current allocated memory: 599.652 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d_core_Pipeline_VITIS_LOOP_63_7_VITIS_LOOP_64_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2d_core_Pipeline_VITIS_LOOP_63_7_VITIS_LOOP_64_8' pipeline 'VITIS_LOOP_63_7_VITIS_LOOP_64_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'conv2d_core_Pipeline_VITIS_LOOP_63_7_VITIS_LOOP_64_8' is 11754 from HDL expression: ((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_26s_26_4_1': 432 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_16_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d_core_Pipeline_VITIS_LOOP_63_7_VITIS_LOOP_64_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4.57 seconds. CPU system time: 0.11 seconds. Elapsed time: 5.99 seconds; current allocated memory: 646.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv2d_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'conv2d_core' is 7329 from HDL expression: (1'b1 == ap_CS_fsm_state3)
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2d_core'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2.92 seconds. CPU system time: 0.18 seconds. Elapsed time: 3.95 seconds; current allocated memory: 712.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store_image_Pipeline_VITIS_LOOP_19_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'store_image_Pipeline_VITIS_LOOP_19_1' pipeline 'VITIS_LOOP_19_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'store_image_Pipeline_VITIS_LOOP_19_1/m_axi_gmem3_0_BREADY' to 0.
+INFO: [RTGEN 206-100] Generating core module 'ctlz_16_16_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store_image_Pipeline_VITIS_LOOP_19_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.93 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.15 seconds; current allocated memory: 712.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'store_image' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'store_image'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.47 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.97 seconds; current allocated memory: 717.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_image' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_WVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_WDATA' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_WLAST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_WID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_WUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem0_0_BREADY' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'process_image/m_axi_gmem3_0_RREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_image'.
+INFO: [RTMG 210-285] Implementing FIFO 'stream_in_U(yolo_conv_layer_fifo_w48_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'stream_out_U(yolo_conv_layer_fifo_w256_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_conv2d_core_U0_U(yolo_conv_layer_start_for_conv2d_core_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_store_image_U0_U(yolo_conv_layer_start_for_store_image_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.46 seconds; current allocated memory: 719.656 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_layer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_layer/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_layer/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_layer/gmem2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_layer/gmem3' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_layer/image_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_layer/weights_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_layer/bias_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_layer/image_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_conv_layer' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Bundling port 'image_in', 'weights_in', 'bias_in' and 'image_out' to AXI-Lite port control_r.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_layer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.08 seconds. CPU system time: 0.06 seconds. Elapsed time: 1.82 seconds; current allocated memory: 738.652 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.66 seconds. CPU system time: 0.16 seconds. Elapsed time: 2.77 seconds; current allocated memory: 757.109 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_conv2d_experiment/yolo_conv2d_experiment/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2.14 seconds. CPU system time: 0.16 seconds. Elapsed time: 3.37 seconds; current allocated memory: 783.797 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for yolo_conv_layer.
+INFO: [VLOG 209-307] Generating Verilog RTL for yolo_conv_layer.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-112] Total CPU user time: 97.04 seconds. Total CPU system time: 5.1 seconds. Total elapsed time: 159.79 seconds; peak allocated memory: 783.797 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 2m 52s

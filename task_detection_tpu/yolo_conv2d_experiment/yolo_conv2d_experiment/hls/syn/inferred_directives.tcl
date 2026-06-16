@@ -1,0 +1,11 @@
+# Inferred from syn.compile.pipeline_loops=64
+set_directive_pipeline conv2d_core/VITIS_LOOP_46_2
+set_directive_pipeline conv2d_core/VITIS_LOOP_55_5
+# Inferred from Performance Budgeter performance directives
+set_directive_loop_flatten conv2d_core/VITIS_LOOP_45_1
+set_directive_loop_flatten conv2d_core/VITIS_LOOP_54_4
+# Inferred from performance & pipeline pragmas/directives
+set_directive_loop_flatten conv2d_core/VITIS_LOOP_63_7
+set_directive_loop_flatten yolo_conv_layer/VITIS_LOOP_150_3
+set_directive_loop_flatten yolo_conv_layer/VITIS_LOOP_149_2
+set_directive_loop_flatten yolo_conv_layer/VITIS_LOOP_148_1

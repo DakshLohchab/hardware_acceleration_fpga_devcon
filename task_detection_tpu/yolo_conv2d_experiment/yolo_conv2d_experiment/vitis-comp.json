@@ -1,0 +1,9 @@
+{
+  "name": "yolo_conv2d_experiment",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}

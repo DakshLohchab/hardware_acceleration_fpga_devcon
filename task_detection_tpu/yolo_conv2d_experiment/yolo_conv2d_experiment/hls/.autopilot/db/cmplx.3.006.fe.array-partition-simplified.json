@@ -1,0 +1,80 @@
+{
+  "0": {
+    "basicblocks": 889,
+    "calls": "3",
+    "control_depth": 8,
+    "def_use_depth": 11,
+    "file": "yolo_conv.cpp",
+    "fileloc": 130,
+    "instructions": 2316,
+    "loads": {
+      "T": 2
+    },
+    "memory_accesses": 660,
+    "name": "yolo_conv_layer",
+    "stores": {
+      "L": 448
+    },
+    "total_instructions": 7826
+  },
+  "1": {
+    "basicblocks": 21,
+    "calls": "",
+    "control_depth": 8,
+    "def_use_depth": 14,
+    "file": "yolo_conv.cpp",
+    "fileloc": 6,
+    "instructions": 146,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 4,
+    "name": "load_image",
+    "total_instructions": 146
+  },
+  "2": {
+    "basicblocks": 147,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 19,
+    "file": "yolo_conv.cpp",
+    "fileloc": 18,
+    "instructions": 936,
+    "memory_accesses": 17,
+    "name": "store_image",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 936
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "1 4 2",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "yolo_conv.cpp",
+    "fileloc": 111,
+    "instructions": 8,
+    "memory_accesses": 0,
+    "name": "process_image",
+    "total_instructions": 5510
+  },
+  "4": {
+    "basicblocks": 44,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 87,
+    "file": "yolo_conv.cpp",
+    "fileloc": 32,
+    "instructions": 4420,
+    "loads": {
+      "L": 466
+    },
+    "memory_accesses": 597,
+    "name": "conv2d_core",
+    "stores": {
+      "L": 118
+    },
+    "total_instructions": 4420
+  }
+}

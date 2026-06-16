@@ -1,0 +1,6 @@
+# Inferred from syn.compile.pipeline_loops=64
+set_directive_pipeline conv_layer_2/VITIS_LOOP_116_1
+set_directive_pipeline conv_layer_1/VITIS_LOOP_19_1
+# Inferred from performance & pipeline pragmas/directives
+set_directive_loop_flatten conv_layer_1/VITIS_LOOP_34_6
+set_directive_loop_flatten conv_layer_2/VITIS_LOOP_132_7 -off
