@@ -1,0 +1,176 @@
+
+
+================================================================
+== Vitis HLS Report for 'tpu_layer_1_Pipeline_VITIS_LOOP_56_1'
+================================================================
+* Date:           Tue Jun 16 19:43:11 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        tpu_integrated_accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k325t-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.616 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |      182|      182|  1.820 us|  1.820 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_56_1  |      180|      180|         2|          1|          1|   180|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      34|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|      45|    -|
+|Register         |        -|    -|      19|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|      19|      79|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      890|  840|  407600|  203800|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln56_fu_206_p2         |         +|   0|  0|  15|           8|           1|
+    |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln56_fu_200_p2        |      icmp|   0|  0|  15|           8|           8|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  34|          18|          12|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_16    |   9|          2|    8|         16|
+    |i_fu_70                  |   9|          2|    8|         16|
+    |stream_in_blk_n          |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   19|         38|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+---+----+-----+-----------+
+    |           Name          | FF| LUT| Bits| Const Bits|
+    +-------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                |  1|   0|    1|          0|
+    |ap_done_reg              |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
+    |i_fu_70                  |  8|   0|    8|          0|
+    |lshr_ln_reg_274          |  5|   0|    5|          0|
+    |trunc_ln56_reg_270       |  3|   0|    3|          0|
+    +-------------------------+---+----+-----+-----------+
+    |Total                    | 19|   0|   19|          0|
+    +-------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+--------------------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |             Source Object            |    C Type    |
++--------------------------+-----+-----+------------+--------------------------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|  tpu_layer_1_Pipeline_VITIS_LOOP_56_1|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|  tpu_layer_1_Pipeline_VITIS_LOOP_56_1|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|  tpu_layer_1_Pipeline_VITIS_LOOP_56_1|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|  tpu_layer_1_Pipeline_VITIS_LOOP_56_1|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|  tpu_layer_1_Pipeline_VITIS_LOOP_56_1|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|  tpu_layer_1_Pipeline_VITIS_LOOP_56_1|  return value|
+|stream_in_dout            |   in|   16|     ap_fifo|                             stream_in|       pointer|
+|stream_in_empty_n         |   in|    1|     ap_fifo|                             stream_in|       pointer|
+|stream_in_read            |  out|    1|     ap_fifo|                             stream_in|       pointer|
+|stream_in_num_data_valid  |   in|    3|     ap_fifo|                             stream_in|       pointer|
+|stream_in_fifo_cap        |   in|    3|     ap_fifo|                             stream_in|       pointer|
+|x_padded_7_address0       |  out|    5|   ap_memory|                            x_padded_7|         array|
+|x_padded_7_ce0            |  out|    1|   ap_memory|                            x_padded_7|         array|
+|x_padded_7_we0            |  out|    1|   ap_memory|                            x_padded_7|         array|
+|x_padded_7_d0             |  out|   16|   ap_memory|                            x_padded_7|         array|
+|x_padded_6_address0       |  out|    5|   ap_memory|                            x_padded_6|         array|
+|x_padded_6_ce0            |  out|    1|   ap_memory|                            x_padded_6|         array|
+|x_padded_6_we0            |  out|    1|   ap_memory|                            x_padded_6|         array|
+|x_padded_6_d0             |  out|   16|   ap_memory|                            x_padded_6|         array|
+|x_padded_5_address0       |  out|    5|   ap_memory|                            x_padded_5|         array|
+|x_padded_5_ce0            |  out|    1|   ap_memory|                            x_padded_5|         array|
+|x_padded_5_we0            |  out|    1|   ap_memory|                            x_padded_5|         array|
+|x_padded_5_d0             |  out|   16|   ap_memory|                            x_padded_5|         array|
+|x_padded_4_address0       |  out|    5|   ap_memory|                            x_padded_4|         array|
+|x_padded_4_ce0            |  out|    1|   ap_memory|                            x_padded_4|         array|
+|x_padded_4_we0            |  out|    1|   ap_memory|                            x_padded_4|         array|
+|x_padded_4_d0             |  out|   16|   ap_memory|                            x_padded_4|         array|
+|x_padded_3_address0       |  out|    5|   ap_memory|                            x_padded_3|         array|
+|x_padded_3_ce0            |  out|    1|   ap_memory|                            x_padded_3|         array|
+|x_padded_3_we0            |  out|    1|   ap_memory|                            x_padded_3|         array|
+|x_padded_3_d0             |  out|   16|   ap_memory|                            x_padded_3|         array|
+|x_padded_2_address0       |  out|    5|   ap_memory|                            x_padded_2|         array|
+|x_padded_2_ce0            |  out|    1|   ap_memory|                            x_padded_2|         array|
+|x_padded_2_we0            |  out|    1|   ap_memory|                            x_padded_2|         array|
+|x_padded_2_d0             |  out|   16|   ap_memory|                            x_padded_2|         array|
+|x_padded_1_address0       |  out|    5|   ap_memory|                            x_padded_1|         array|
+|x_padded_1_ce0            |  out|    1|   ap_memory|                            x_padded_1|         array|
+|x_padded_1_we0            |  out|    1|   ap_memory|                            x_padded_1|         array|
+|x_padded_1_d0             |  out|   16|   ap_memory|                            x_padded_1|         array|
+|x_padded_address0         |  out|    5|   ap_memory|                              x_padded|         array|
+|x_padded_ce0              |  out|    1|   ap_memory|                              x_padded|         array|
+|x_padded_we0              |  out|    1|   ap_memory|                              x_padded|         array|
+|x_padded_d0               |  out|   16|   ap_memory|                              x_padded|         array|
++--------------------------+-----+-----+------------+--------------------------------------+--------------+
+

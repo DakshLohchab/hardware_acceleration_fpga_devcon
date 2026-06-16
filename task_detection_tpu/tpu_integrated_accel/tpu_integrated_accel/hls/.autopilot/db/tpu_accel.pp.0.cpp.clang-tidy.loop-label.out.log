@@ -18,198 +18,348 @@
       ^
       VITIS_LOOP_1251_1: 
 /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:5848:7: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54880:5: remark: Added loop label VITIS_LOOP_9_1:   [xilinx-label-all-loops]
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55006:9: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_27_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55006:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55008:13: remark: Added loop label VITIS_LOOP_29_2:   [xilinx-label-all-loops]
+            for(int j = 0; j < 9; j++) {
+            ^
+            VITIS_LOOP_29_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55008:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55016:5: remark: Added loop label VITIS_LOOP_37_3:   [xilinx-label-all-loops]
     for(int i = 0; i < 8; i++) {
     ^
-    VITIS_LOOP_9_1: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54880:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54891:9: remark: Added loop label VITIS_LOOP_20_2:   [xilinx-label-all-loops]
+    VITIS_LOOP_37_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55016:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55022:5: remark: Added loop label VITIS_LOOP_43_4:   [xilinx-label-all-loops]
+    for(int i = 7; i >= 0; i--) {
+    ^
+    VITIS_LOOP_43_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55022:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55024:9: remark: Added loop label VITIS_LOOP_45_5:   [xilinx-label-all-loops]
+        for(int j = 7; j >= 0; j--) {
+        ^
+        VITIS_LOOP_45_5: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55024:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55031:5: remark: Added loop label VITIS_LOOP_52_6:   [xilinx-label-all-loops]
+    for(int i = 0; i < 8; i++) {
+    ^
+    VITIS_LOOP_52_6: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55031:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55033:9: remark: Added loop label VITIS_LOOP_54_7:   [xilinx-label-all-loops]
+        for(int j = 0; j < 8; j++) {
+        ^
+        VITIS_LOOP_54_7: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55033:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55062:5: remark: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+    for(int i = 0; i < 8; i++) {
+    ^
+    VITIS_LOOP_14_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55062:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55072:9: remark: Added loop label VITIS_LOOP_24_2:   [xilinx-label-all-loops]
         for (int i = 0; i < 8; i++) {
         ^
-        VITIS_LOOP_20_2: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54891:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54902:9: remark: Added loop label VITIS_LOOP_31_3:   [xilinx-label-all-loops]
-        for(int i = 0; i < 8; i++) { A_in[i] = 0; B_in[i] = 0; }
+        VITIS_LOOP_24_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55072:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55083:9: remark: Added loop label VITIS_LOOP_35_3:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
         ^
-        VITIS_LOOP_31_3: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54902:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54906:5: remark: Added loop label VITIS_LOOP_35_4:   [xilinx-label-all-loops]
+        VITIS_LOOP_35_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55083:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55091:5: remark: Added loop label VITIS_LOOP_43_4:   [xilinx-label-all-loops]
     for (int i = 0; i < 8; i++) {
     ^
-    VITIS_LOOP_35_4: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54906:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54917:5: remark: Added loop label VITIS_LOOP_46_1:   [xilinx-label-all-loops]
-    for (int i = 0; i < 180; i++) x_padded[i] = input[i];
+    VITIS_LOOP_43_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55091:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55104:5: remark: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 180; i++) {
     ^
-    VITIS_LOOP_46_1: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54917:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54918:5: remark: Added loop label VITIS_LOOP_47_2:   [xilinx-label-all-loops]
-    for (int i = 180; i < 184; i++) x_padded[i] = 0;
+    VITIS_LOOP_56_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55104:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55108:5: remark: Added loop label VITIS_LOOP_60_2:   [xilinx-label-all-loops]
+    for (int i = 180; i < 184; i++) {
     ^
-    VITIS_LOOP_47_2: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54918:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54924:9: remark: Added loop label VITIS_LOOP_53_3:   [xilinx-label-all-loops]
+    VITIS_LOOP_60_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55108:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55123:9: remark: Added loop label VITIS_LOOP_75_3:   [xilinx-label-all-loops]
         for(int i = 0; i < 256; i++) bias[i] = 0.0f;
         ^
-        VITIS_LOOP_53_3: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54924:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54925:9: remark: Added loop label VITIS_LOOP_54_4:   [xilinx-label-all-loops]
-        for(int o = 0; o < 32; o++)
+        VITIS_LOOP_75_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55123:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55124:9: remark: Added loop label VITIS_LOOP_76_4:   [xilinx-label-all-loops]
+        for(int o = 0; o < 32; o++) {
         ^
-        VITIS_LOOP_54_4: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54925:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54926:13: remark: Added loop label VITIS_LOOP_55_5:   [xilinx-label-all-loops]
-            for(int i = 0; i < 23; i++)
+        VITIS_LOOP_76_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55124:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55125:13: remark: Added loop label VITIS_LOOP_77_5:   [xilinx-label-all-loops]
+            for(int i = 0; i < 23; i++) {
             ^
-            VITIS_LOOP_55_5: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54926:13: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54927:17: remark: Added loop label VITIS_LOOP_56_6:   [xilinx-label-all-loops]
-                for(int r = 0; r < 8; r++)
+            VITIS_LOOP_77_5: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55125:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55126:17: remark: Added loop label VITIS_LOOP_78_6:   [xilinx-label-all-loops]
+                for(int r = 0; r < 8; r++) {
                 ^
-                VITIS_LOOP_56_6: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54927:17: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54928:21: remark: Added loop label VITIS_LOOP_57_7:   [xilinx-label-all-loops]
-                    for(int c = 0; c < 8; c++)
+                VITIS_LOOP_78_6: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55126:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55127:21: remark: Added loop label VITIS_LOOP_79_7:   [xilinx-label-all-loops]
+                    for(int c = 0; c < 8; c++) {
                     ^
-                    VITIS_LOOP_57_7: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54928:21: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54933:5: remark: Added loop label VITIS_LOOP_62_8:   [xilinx-label-all-loops]
-    for (int out_t = 0; out_t < 32; out_t++) {
+                    VITIS_LOOP_79_7: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55127:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55137:5: remark: Added loop label VITIS_LOOP_89_8:   [xilinx-label-all-loops]
+    for (int out_t = 0; out_t < 32; out_t += 8) {
     ^
-    VITIS_LOOP_62_8: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54933:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54935:9: remark: Added loop label VITIS_LOOP_64_9:   [xilinx-label-all-loops]
+    VITIS_LOOP_89_8: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55137:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55141:9: remark: Added loop label VITIS_LOOP_93_9:   [xilinx-label-all-loops]
         for (int in_t = 0; in_t < 23; in_t++) {
         ^
-        VITIS_LOOP_64_9: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54935:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54937:13: remark: Added loop label VITIS_LOOP_66_10:   [xilinx-label-all-loops]
+        VITIS_LOOP_93_9: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55141:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55145:13: remark: Added loop label VITIS_LOOP_97_10:   [xilinx-label-all-loops]
             for(int i = 0; i < 8; i++) {
             ^
-            VITIS_LOOP_66_10: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54937:13: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54939:17: remark: Added loop label VITIS_LOOP_68_11:   [xilinx-label-all-loops]
-                for(int j = 0; j < 8; j++) w_tile[i][j] = weights[out_t][in_t][i][j];
+            VITIS_LOOP_97_10: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55145:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55148:17: remark: Added loop label VITIS_LOOP_100_11:   [xilinx-label-all-loops]
+                for(int j = 0; j < 8; j++) {
                 ^
-                VITIS_LOOP_68_11: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54939:17: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54943:9: remark: Added loop label VITIS_LOOP_72_12:   [xilinx-label-all-loops]
-        for (int i = 0; i < 8; i++) output[out_t * 8 + i] = y_tile[i] + bias[out_t * 8 + i];
+                VITIS_LOOP_100_11: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55148:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55171:9: remark: Added loop label VITIS_LOOP_123_12:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
         ^
-        VITIS_LOOP_72_12: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54943:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54955:9: remark: Added loop label VITIS_LOOP_84_1:   [xilinx-label-all-loops]
+        VITIS_LOOP_123_12: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55171:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55175:9: remark: Added loop label VITIS_LOOP_127_13:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_127_13: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55175:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55179:9: remark: Added loop label VITIS_LOOP_131_14:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_131_14: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55179:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55183:9: remark: Added loop label VITIS_LOOP_135_15:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_135_15: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55183:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55187:9: remark: Added loop label VITIS_LOOP_139_16:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_139_16: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55187:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55191:9: remark: Added loop label VITIS_LOOP_143_17:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_143_17: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55191:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55195:9: remark: Added loop label VITIS_LOOP_147_18:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_147_18: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55195:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55199:9: remark: Added loop label VITIS_LOOP_151_19:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_151_19: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55199:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55213:5: remark: Added loop label VITIS_LOOP_165_1:   [xilinx-label-all-loops]
+    for(int i = 0; i < 256; i++) {
+    ^
+    VITIS_LOOP_165_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55213:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55228:9: remark: Added loop label VITIS_LOOP_180_2:   [xilinx-label-all-loops]
         for(int i = 0; i < 128; i++) bias[i] = 0.0f;
         ^
-        VITIS_LOOP_84_1: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54955:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54956:9: remark: Added loop label VITIS_LOOP_85_2:   [xilinx-label-all-loops]
-        for(int o = 0; o < 16; o++)
+        VITIS_LOOP_180_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55228:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55229:9: remark: Added loop label VITIS_LOOP_181_3:   [xilinx-label-all-loops]
+        for(int o = 0; o < 16; o++) {
         ^
-        VITIS_LOOP_85_2: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54956:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54957:13: remark: Added loop label VITIS_LOOP_86_3:   [xilinx-label-all-loops]
-            for(int i = 0; i < 32; i++)
+        VITIS_LOOP_181_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55229:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55230:13: remark: Added loop label VITIS_LOOP_182_4:   [xilinx-label-all-loops]
+            for(int i = 0; i < 32; i++) {
             ^
-            VITIS_LOOP_86_3: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54957:13: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54958:17: remark: Added loop label VITIS_LOOP_87_4:   [xilinx-label-all-loops]
-                for(int r = 0; r < 8; r++)
+            VITIS_LOOP_182_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55230:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55231:17: remark: Added loop label VITIS_LOOP_183_5:   [xilinx-label-all-loops]
+                for(int r = 0; r < 8; r++) {
                 ^
-                VITIS_LOOP_87_4: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54958:17: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54959:21: remark: Added loop label VITIS_LOOP_88_5:   [xilinx-label-all-loops]
-                    for(int c = 0; c < 8; c++)
+                VITIS_LOOP_183_5: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55231:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55232:21: remark: Added loop label VITIS_LOOP_184_6:   [xilinx-label-all-loops]
+                    for(int c = 0; c < 8; c++) {
                     ^
-                    VITIS_LOOP_88_5: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54959:21: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54964:5: remark: Added loop label VITIS_LOOP_93_6:   [xilinx-label-all-loops]
-    for (int out_t = 0; out_t < 16; out_t++) {
+                    VITIS_LOOP_184_6: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55232:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55242:5: remark: Added loop label VITIS_LOOP_194_7:   [xilinx-label-all-loops]
+    for (int out_t = 0; out_t < 16; out_t += 8) {
     ^
-    VITIS_LOOP_93_6: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54964:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54966:9: remark: Added loop label VITIS_LOOP_95_7:   [xilinx-label-all-loops]
+    VITIS_LOOP_194_7: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55242:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55246:9: remark: Added loop label VITIS_LOOP_198_8:   [xilinx-label-all-loops]
         for (int in_t = 0; in_t < 32; in_t++) {
         ^
-        VITIS_LOOP_95_7: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54966:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54968:13: remark: Added loop label VITIS_LOOP_97_8:   [xilinx-label-all-loops]
+        VITIS_LOOP_198_8: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55246:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55249:13: remark: Added loop label VITIS_LOOP_201_9:   [xilinx-label-all-loops]
             for(int i = 0; i < 8; i++) {
             ^
-            VITIS_LOOP_97_8: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54968:13: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54970:17: remark: Added loop label VITIS_LOOP_99_9:   [xilinx-label-all-loops]
-                for(int j = 0; j < 8; j++) w_tile[i][j] = weights[out_t][in_t][i][j];
+            VITIS_LOOP_201_9: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55249:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55252:17: remark: Added loop label VITIS_LOOP_204_10:   [xilinx-label-all-loops]
+                for(int j = 0; j < 8; j++) {
                 ^
-                VITIS_LOOP_99_9: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54970:17: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54974:9: remark: Added loop label VITIS_LOOP_103_10:   [xilinx-label-all-loops]
-        for (int i = 0; i < 8; i++) output[out_t * 8 + i] = y_tile[i] + bias[out_t * 8 + i];
+                VITIS_LOOP_204_10: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55252:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55274:9: remark: Added loop label VITIS_LOOP_226_11:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
         ^
-        VITIS_LOOP_103_10: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54974:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54986:9: remark: Added loop label VITIS_LOOP_115_1:   [xilinx-label-all-loops]
+        VITIS_LOOP_226_11: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55274:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55278:9: remark: Added loop label VITIS_LOOP_230_12:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_230_12: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55278:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55282:9: remark: Added loop label VITIS_LOOP_234_13:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_234_13: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55282:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55286:9: remark: Added loop label VITIS_LOOP_238_14:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_238_14: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55286:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55290:9: remark: Added loop label VITIS_LOOP_242_15:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_242_15: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55290:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55294:9: remark: Added loop label VITIS_LOOP_246_16:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_246_16: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55294:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55298:9: remark: Added loop label VITIS_LOOP_250_17:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_250_17: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55298:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55302:9: remark: Added loop label VITIS_LOOP_254_18:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_254_18: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55302:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55316:5: remark: Added loop label VITIS_LOOP_268_1:   [xilinx-label-all-loops]
+    for(int i = 0; i < 128; i++) {
+    ^
+    VITIS_LOOP_268_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55316:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55331:9: remark: Added loop label VITIS_LOOP_283_2:   [xilinx-label-all-loops]
         for(int i = 0; i < 64; i++) bias[i] = 0.0f;
         ^
-        VITIS_LOOP_115_1: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54986:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54987:9: remark: Added loop label VITIS_LOOP_116_2:   [xilinx-label-all-loops]
-        for(int o = 0; o < 8; o++)
+        VITIS_LOOP_283_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55331:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55332:9: remark: Added loop label VITIS_LOOP_284_3:   [xilinx-label-all-loops]
+        for(int o = 0; o < 8; o++) {
         ^
-        VITIS_LOOP_116_2: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54987:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54988:13: remark: Added loop label VITIS_LOOP_117_3:   [xilinx-label-all-loops]
-            for(int i = 0; i < 16; i++)
+        VITIS_LOOP_284_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55332:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55333:13: remark: Added loop label VITIS_LOOP_285_4:   [xilinx-label-all-loops]
+            for(int i = 0; i < 16; i++) {
             ^
-            VITIS_LOOP_117_3: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54988:13: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54989:17: remark: Added loop label VITIS_LOOP_118_4:   [xilinx-label-all-loops]
-                for(int r = 0; r < 8; r++)
+            VITIS_LOOP_285_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55333:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55334:17: remark: Added loop label VITIS_LOOP_286_5:   [xilinx-label-all-loops]
+                for(int r = 0; r < 8; r++) {
                 ^
-                VITIS_LOOP_118_4: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54989:17: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54990:21: remark: Added loop label VITIS_LOOP_119_5:   [xilinx-label-all-loops]
-                    for(int c = 0; c < 8; c++)
+                VITIS_LOOP_286_5: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55334:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55335:21: remark: Added loop label VITIS_LOOP_287_6:   [xilinx-label-all-loops]
+                    for(int c = 0; c < 8; c++) {
                     ^
-                    VITIS_LOOP_119_5: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54990:21: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54995:5: remark: Added loop label VITIS_LOOP_124_6:   [xilinx-label-all-loops]
-    for (int out_t = 0; out_t < 8; out_t++) {
+                    VITIS_LOOP_287_6: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55335:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55345:5: remark: Added loop label VITIS_LOOP_297_7:   [xilinx-label-all-loops]
+    for (int out_t = 0; out_t < 8; out_t += 8) {
     ^
-    VITIS_LOOP_124_6: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54995:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54997:9: remark: Added loop label VITIS_LOOP_126_7:   [xilinx-label-all-loops]
+    VITIS_LOOP_297_7: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55345:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55349:9: remark: Added loop label VITIS_LOOP_301_8:   [xilinx-label-all-loops]
         for (int in_t = 0; in_t < 16; in_t++) {
         ^
-        VITIS_LOOP_126_7: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54997:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54999:13: remark: Added loop label VITIS_LOOP_128_8:   [xilinx-label-all-loops]
+        VITIS_LOOP_301_8: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55349:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55352:13: remark: Added loop label VITIS_LOOP_304_9:   [xilinx-label-all-loops]
             for(int i = 0; i < 8; i++) {
             ^
-            VITIS_LOOP_128_8: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:54999:13: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55001:17: remark: Added loop label VITIS_LOOP_130_9:   [xilinx-label-all-loops]
-                for(int j = 0; j < 8; j++) w_tile[i][j] = weights[out_t][in_t][i][j];
+            VITIS_LOOP_304_9: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55352:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55355:17: remark: Added loop label VITIS_LOOP_307_10:   [xilinx-label-all-loops]
+                for(int j = 0; j < 8; j++) {
                 ^
-                VITIS_LOOP_130_9: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55001:17: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55005:9: remark: Added loop label VITIS_LOOP_134_10:   [xilinx-label-all-loops]
-        for (int i = 0; i < 8; i++) output[out_t * 8 + i] = y_tile[i] + bias[out_t * 8 + i];
+                VITIS_LOOP_307_10: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55355:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55377:9: remark: Added loop label VITIS_LOOP_329_11:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
         ^
-        VITIS_LOOP_134_10: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55005:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55017:9: remark: Added loop label VITIS_LOOP_146_1:   [xilinx-label-all-loops]
+        VITIS_LOOP_329_11: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55377:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55381:9: remark: Added loop label VITIS_LOOP_333_12:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_333_12: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55381:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55385:9: remark: Added loop label VITIS_LOOP_337_13:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_337_13: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55385:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55389:9: remark: Added loop label VITIS_LOOP_341_14:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_341_14: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55389:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55393:9: remark: Added loop label VITIS_LOOP_345_15:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_345_15: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55393:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55397:9: remark: Added loop label VITIS_LOOP_349_16:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_349_16: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55397:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55401:9: remark: Added loop label VITIS_LOOP_353_17:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_353_17: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55401:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55405:9: remark: Added loop label VITIS_LOOP_357_18:   [xilinx-label-all-loops]
+        for(int i = 0; i < 8; i++) {
+        ^
+        VITIS_LOOP_357_18: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55405:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55420:9: remark: Added loop label VITIS_LOOP_372_1:   [xilinx-label-all-loops]
         for(int i = 0; i < 64; i++) weights[i] = 0.01f;
         ^
-        VITIS_LOOP_146_1: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55017:9: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55022:5: remark: Added loop label VITIS_LOOP_151_2:   [xilinx-label-all-loops]
+        VITIS_LOOP_372_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55420:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55425:5: remark: Added loop label VITIS_LOOP_377_2:   [xilinx-label-all-loops]
     for(int i = 0; i < 64; i++) {
     ^
-    VITIS_LOOP_151_2: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55022:5: note: FIX-IT applied suggested code changes
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55045:5: remark: Added loop label VITIS_LOOP_170_1:   [xilinx-label-all-loops]
-    for(int i = 0; i < 180; i++) in_buf[i] = input[i];
+    VITIS_LOOP_377_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55425:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55454:5: remark: Added loop label VITIS_LOOP_402_1:   [xilinx-label-all-loops]
+    for(int i = 0; i < 180; i++) {
     ^
-    VITIS_LOOP_170_1: 
-/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55045:5: note: FIX-IT applied suggested code changes
+    VITIS_LOOP_402_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp:55454:5: note: FIX-IT applied suggested code changes

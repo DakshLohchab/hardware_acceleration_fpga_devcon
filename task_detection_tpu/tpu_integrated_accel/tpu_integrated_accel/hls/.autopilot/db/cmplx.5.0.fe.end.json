@@ -1,203 +1,128 @@
 {
     "1": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_115_1",
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_56_1",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "179",
-        "instructions": "16",
-        "total_instructions": "16",
+        "fileloc": "56",
+        "instructions": "43",
+        "total_instructions": "43",
         "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "3",
-        "control_depth": "1",
+        "basicblocks": "13",
+        "memory_accesses": "11",
+        "control_depth": "2",
         "def_use_depth": "1",
         "loads": {
             "L": "1"
         },
         "stores": {
-            "G": "1",
-            "L": "2"
+            "L": "10"
         },
         "loops": {
             "L": "1"
         }
     },
     "2": {
-        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_46_1",
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_234_13",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "46",
-        "instructions": "18",
-        "total_instructions": "18",
+        "fileloc": "234",
+        "instructions": "36",
+        "total_instructions": "36",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "4",
+        "memory_accesses": "3",
         "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "L": "2"
+            "L": "1"
         },
         "stores": {
-            "L": "3"
+            "L": "2"
         },
         "loops": {
             "L": "1"
         }
     },
     "3": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_97_8",
+        "name": "Block_for.end_proc",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "176",
-        "instructions": "308",
-        "total_instructions": "308",
+        "fileloc": "414",
+        "instructions": "24",
+        "total_instructions": "24",
         "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "76",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "G": "8",
-            "L": "66"
-        },
-        "stores": {
-            "L": "67"
-        },
-        "loops": {
-            "L": "1"
-        }
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "12"
     },
     "4": {
-        "name": "task_detection_accel_Pipeline_9",
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_76_4_VITIS_LOOP_77_5_VITIS_LOOP_78_6_VITIS_LOOP_",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "179",
-        "instructions": "14",
-        "total_instructions": "14",
+        "fileloc": "76",
+        "instructions": "1753",
+        "total_instructions": "1753",
         "calls": "",
-        "basicblocks": "3",
-        "memory_accesses": "3",
-        "control_depth": "0",
-        "def_use_depth": "1",
+        "basicblocks": "661",
+        "memory_accesses": "526",
+        "control_depth": "4",
+        "def_use_depth": "2",
         "loads": {
-            "L": "1"
+            "L": "7"
         },
         "stores": {
-            "L": "3"
+            "G": "512",
+            "L": "14"
         },
         "loops": {
             "L": "1"
         }
     },
     "5": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_128_8",
+        "name": "run_mac_tile<0>_Pipeline_PUMP_LOOP",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "179",
-        "instructions": "308",
-        "total_instructions": "308",
+        "fileloc": "22",
+        "instructions": "257",
+        "total_instructions": "257",
         "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "76",
-        "control_depth": "2",
+        "basicblocks": "4",
+        "memory_accesses": "32",
+        "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "G": "8",
-            "L": "66"
+            "L": "24"
         },
         "stores": {
-            "L": "67"
+            "L": "32"
         },
         "loops": {
             "L": "1"
         }
     },
     "6": {
-        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_47_2",
+        "name": "run_mac_tile<3>_Pipeline_PUMP_LOOP",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "47",
-        "instructions": "16",
-        "total_instructions": "16",
+        "fileloc": "22",
+        "instructions": "257",
+        "total_instructions": "257",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "3",
+        "memory_accesses": "32",
         "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "L": "1"
+            "L": "24"
         },
         "stores": {
-            "L": "3"
+            "L": "32"
         },
         "loops": {
             "L": "1"
         }
     },
     "7": {
-        "name": "run_mac_tile",
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_341_14",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "6",
-        "instructions": "978",
-        "total_instructions": "3767",
-        "calls": "23 21 11",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "3",
-        "loads": {
-            "G": "146",
-            "L": "301"
-        },
-        "stores": {
-            "G": "146",
-            "L": "8"
-        }
-    },
-    "8": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_103_10",
-        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "176",
-        "instructions": "26",
-        "total_instructions": "26",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "5",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "G": "1",
-            "L": "2"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "9": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_134_10",
-        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "179",
-        "instructions": "26",
-        "total_instructions": "26",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "5",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "G": "1",
-            "L": "2"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "10": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_146_1",
-        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "182",
-        "instructions": "16",
-        "total_instructions": "16",
+        "fileloc": "341",
+        "instructions": "36",
+        "total_instructions": "36",
         "calls": "",
         "basicblocks": "4",
         "memory_accesses": "3",
@@ -207,7 +132,72 @@
             "L": "1"
         },
         "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_283_2",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "283",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "13",
+        "memory_accesses": "10",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "8",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "tpu_layer_3",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "264",
+        "instructions": "1543",
+        "total_instructions": "6631",
+        "calls": "49 8 58 57 55 52 50 42 32 43 51 54 46 10 7 27 28 16 17",
+        "basicblocks": "6",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "577",
+            "L": "137"
+        },
+        "stores": {
             "G": "1",
+            "L": "130"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_337_13",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "337",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
             "L": "2"
         },
         "loops": {
@@ -215,32 +205,11 @@
         }
     },
     "11": {
-        "name": "run_mac_tile_Pipeline_FLUSH_LOOP",
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_135_15",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "29",
-        "instructions": "1207",
-        "total_instructions": "1207",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "293",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "203"
-        },
-        "stores": {
-            "L": "296"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "12": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_84_1",
-        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "176",
-        "instructions": "16",
-        "total_instructions": "16",
+        "fileloc": "135",
+        "instructions": "36",
+        "total_instructions": "36",
         "calls": "",
         "basicblocks": "4",
         "memory_accesses": "3",
@@ -250,7 +219,28 @@
             "L": "1"
         },
         "stores": {
-            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_180_2",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "180",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "13",
+        "memory_accesses": "10",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "8",
             "L": "2"
         },
         "loops": {
@@ -258,98 +248,30 @@
         }
     },
     "13": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4",
+        "name": "scalar_layer_4",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "179",
-        "instructions": "97",
-        "total_instructions": "97",
-        "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "22",
-        "control_depth": "2",
-        "def_use_depth": "2",
+        "fileloc": "367",
+        "instructions": "10",
+        "total_instructions": "57",
+        "calls": "39 35",
+        "basicblocks": "3",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1",
         "loads": {
-            "L": "7"
+            "G": "1",
+            "L": "1"
         },
         "stores": {
-            "G": "8",
-            "L": "14"
-        },
-        "loops": {
-            "L": "1"
+            "G": "1"
         }
     },
     "14": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VI",
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_151_19",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "176",
-        "instructions": "97",
-        "total_instructions": "97",
-        "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "22",
-        "control_depth": "2",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "7"
-        },
-        "stores": {
-            "G": "8",
-            "L": "14"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "15": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_170_1",
-        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "170",
-        "instructions": "61",
-        "total_instructions": "61",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "4",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "16": {
-        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_",
-        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "54",
-        "instructions": "97",
-        "total_instructions": "97",
-        "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "22",
-        "control_depth": "2",
-        "def_use_depth": "2",
-        "loads": {
-            "L": "7"
-        },
-        "stores": {
-            "G": "8",
-            "L": "14"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "17": {
-        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_53_3",
-        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "53",
-        "instructions": "16",
-        "total_instructions": "16",
+        "fileloc": "151",
+        "instructions": "36",
+        "total_instructions": "36",
         "calls": "",
         "basicblocks": "4",
         "memory_accesses": "3",
@@ -359,7 +281,72 @@
             "L": "1"
         },
         "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "tpu_layer_2",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "161",
+        "instructions": "1373",
+        "total_instructions": "6464",
+        "calls": "31 12 33 56 47 2 45 41 25 38 40 57 55 52 50 42 32 43 51",
+        "basicblocks": "9",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "577",
+            "L": "9"
+        },
+        "stores": {
             "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "16": {
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_353_17",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "353",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_357_18",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "357",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
             "L": "2"
         },
         "loops": {
@@ -367,95 +354,353 @@
         }
     },
     "18": {
-        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_72_12",
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_127_13",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "72",
-        "instructions": "26",
-        "total_instructions": "26",
+        "fileloc": "127",
+        "instructions": "36",
+        "total_instructions": "36",
         "calls": "",
         "basicblocks": "4",
-        "memory_accesses": "5",
+        "memory_accesses": "3",
         "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "G": "1",
-            "L": "2"
+            "L": "1"
         },
         "stores": {
-            "L": "3"
+            "L": "2"
         },
         "loops": {
             "L": "1"
         }
     },
     "19": {
-        "name": "task_detection_accel_Pipeline_4",
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_123_12",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "176",
-        "instructions": "14",
-        "total_instructions": "14",
+        "fileloc": "123",
+        "instructions": "36",
+        "total_instructions": "36",
         "calls": "",
-        "basicblocks": "3",
+        "basicblocks": "4",
         "memory_accesses": "3",
-        "control_depth": "0",
+        "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
             "L": "1"
         },
         "stores": {
-            "L": "3"
+            "L": "2"
         },
         "loops": {
             "L": "1"
         }
     },
     "20": {
-        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_66_10",
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_147_18",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "66",
-        "instructions": "308",
-        "total_instructions": "308",
+        "fileloc": "147",
+        "instructions": "36",
+        "total_instructions": "36",
         "calls": "",
-        "basicblocks": "13",
-        "memory_accesses": "76",
-        "control_depth": "2",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "G": "8",
-            "L": "66"
+            "L": "1"
         },
         "stores": {
-            "L": "67"
+            "L": "2"
         },
         "loops": {
             "L": "1"
         }
     },
     "21": {
-        "name": "run_mac_tile_Pipeline_PUMP_LOOP",
-        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "18",
-        "instructions": "1434",
-        "total_instructions": "1434",
+        "name": "task_detection_accel_",
+        "file": "tpu_accel.cpp",
+        "fileloc": "0",
+        "instructions": "63",
+        "total_instructions": "63",
         "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "311",
-        "control_depth": "1",
+        "basicblocks": "5",
+        "memory_accesses": "5",
+        "control_depth": "2",
         "def_use_depth": "1",
         "loads": {
-            "L": "229"
+            "L": "1"
         },
         "stores": {
-            "L": "312"
+            "L": "2"
         },
         "loops": {
             "L": "1"
         }
     },
     "22": {
-        "name": "task_detection_accel_Pipeline_VITIS_LOOP_151_2",
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_75_3",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "182",
+        "fileloc": "75",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "13",
+        "memory_accesses": "10",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "8",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
+        "name": "Block_entry_proc",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "414",
+        "instructions": "11",
+        "total_instructions": "11",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "2"
+    },
+    "24": {
+        "name": "run_mac_tile<7>_Pipeline_PUMP_LOOP",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "22",
+        "instructions": "257",
+        "total_instructions": "257",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "32",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "24"
+        },
+        "stores": {
+            "L": "32"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "25": {
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_246_16",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "246",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "run_mac_tile<4>_Pipeline_PUMP_LOOP",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "22",
+        "instructions": "257",
+        "total_instructions": "257",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "32",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "24"
+        },
+        "stores": {
+            "L": "32"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_345_15",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "345",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "28": {
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_349_16",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "349",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "run_mac_tile<2>_Pipeline_PUMP_LOOP",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "22",
+        "instructions": "257",
+        "total_instructions": "257",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "32",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "24"
+        },
+        "stores": {
+            "L": "32"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "30": {
+        "name": "run_mac_tile<5>_Pipeline_PUMP_LOOP",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "22",
+        "instructions": "257",
+        "total_instructions": "257",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "32",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "24"
+        },
+        "stores": {
+            "L": "32"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_165_1",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "165",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "13",
+        "memory_accesses": "11",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "32": {
+        "name": "run_mac_tile<5>",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "45",
+        "instructions": "114",
+        "total_instructions": "371",
+        "calls": "30",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "11",
+        "loads": {
+            "L": "8"
+        }
+    },
+    "33": {
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_181_3_VITIS_LOOP_182_4_VITIS_LOOP_183_5_VITIS_LO",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "181",
+        "instructions": "1751",
+        "total_instructions": "1751",
+        "calls": "",
+        "basicblocks": "661",
+        "memory_accesses": "526",
+        "control_depth": "4",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "G": "512",
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "34": {
+        "name": "run_mac_tile<1>_Pipeline_PUMP_LOOP",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "22",
+        "instructions": "257",
+        "total_instructions": "257",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "32",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "24"
+        },
+        "stores": {
+            "L": "32"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "35": {
+        "name": "scalar_layer_4_Pipeline_VITIS_LOOP_377_2",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "376",
         "instructions": "31",
         "total_instructions": "31",
         "calls": "",
@@ -465,97 +710,483 @@
         "def_use_depth": "1",
         "loads": {
             "G": "1",
-            "L": "4"
+            "L": "3"
         },
         "stores": {
             "L": "4"
         },
         "loops": {
             "L": "1"
+        }
+    },
+    "36": {
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_131_14",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "131",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "37": {
+        "name": "run_mac_tile<6>_Pipeline_PUMP_LOOP",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "22",
+        "instructions": "257",
+        "total_instructions": "257",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "32",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "24"
+        },
+        "stores": {
+            "L": "32"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "38": {
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_250_17",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "250",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "39": {
+        "name": "scalar_layer_4_Pipeline_VITIS_LOOP_372_1",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "372",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "40": {
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_254_18",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "254",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "41": {
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_242_15",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "242",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "42": {
+        "name": "run_mac_tile<4>",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "45",
+        "instructions": "114",
+        "total_instructions": "371",
+        "calls": "26",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "11",
+        "loads": {
+            "L": "8"
+        }
+    },
+    "43": {
+        "name": "run_mac_tile<6>",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "45",
+        "instructions": "114",
+        "total_instructions": "371",
+        "calls": "37",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "11",
+        "loads": {
+            "L": "8"
+        }
+    },
+    "44": {
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_139_16",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "139",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "45": {
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_238_14",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "238",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "46": {
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_333_12",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "333",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "47": {
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_230_12",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "230",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "48": {
+        "name": "entry_proc",
+        "file": "tpu_accel.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "49": {
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_268_1",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "268",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "13",
+        "memory_accesses": "11",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "50": {
+        "name": "run_mac_tile<3>",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "45",
+        "instructions": "114",
+        "total_instructions": "371",
+        "calls": "6",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "11",
+        "loads": {
+            "L": "8"
         }
     },
     "0": {
         "name": "task_detection_accel",
         "file": "tpu_accel.cpp",
-        "fileloc": "162",
-        "instructions": "402",
-        "total_instructions": "13404",
-        "calls": "15 25 12 14 19 8 3 7 1 13 4 9 5 7 10 22",
-        "basicblocks": "19",
+        "fileloc": "388",
+        "instructions": "43",
+        "total_instructions": "19773",
+        "calls": "48 21 53 15 9 13 3 23",
+        "basicblocks": "1",
         "memory_accesses": "0",
         "control_depth": "0",
-        "def_use_depth": "12",
-        "loads": {
-            "G": "3",
-            "L": "131"
-        },
-        "stores": {
-            "G": "3",
-            "L": "6"
-        },
-        "loops": {
-            "L": "2",
-            "N": "2"
-        }
+        "def_use_depth": "3"
     },
-    "23": {
-        "name": "systolic_8x8",
-        "file": "..\/task_detection_tpu\/systolic_8x8.cpp",
-        "fileloc": "14",
-        "instructions": "148",
-        "total_instructions": "148",
-        "calls": "",
-        "basicblocks": "1",
-        "memory_accesses": "146",
-        "control_depth": "0",
-        "def_use_depth": "0",
-        "stores": {
-            "G": "146"
-        }
-    },
-    "24": {
-        "name": "tpu_layer_1_Pipeline_5",
+    "51": {
+        "name": "run_mac_tile<7>",
         "file": "..\/task_detection_tpu\/tpu_accel.cpp",
-        "fileloc": "63",
-        "instructions": "14",
-        "total_instructions": "14",
-        "calls": "",
-        "basicblocks": "3",
-        "memory_accesses": "3",
+        "fileloc": "45",
+        "instructions": "114",
+        "total_instructions": "371",
+        "calls": "24",
+        "basicblocks": "1",
+        "memory_accesses": "0",
         "control_depth": "0",
-        "def_use_depth": "1",
+        "def_use_depth": "11",
         "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
+            "L": "8"
         }
     },
-    "25": {
+    "52": {
+        "name": "run_mac_tile<2>",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "45",
+        "instructions": "114",
+        "total_instructions": "371",
+        "calls": "29",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "11",
+        "loads": {
+            "L": "8"
+        }
+    },
+    "53": {
         "name": "tpu_layer_1",
-        "file": "tpu_accel.cpp",
-        "fileloc": "44",
-        "instructions": "176",
-        "total_instructions": "4438",
-        "calls": "2 6 17 16 24 18 20 7",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "52",
+        "instructions": "1383",
+        "total_instructions": "6476",
+        "calls": "1 22 4 19 18 36 11 44 59 20 14 57 55 52 50 42 32 43 51",
         "basicblocks": "9",
         "memory_accesses": "0",
         "control_depth": "0",
         "def_use_depth": "1",
         "loads": {
-            "G": "1",
-            "L": "66"
+            "G": "577",
+            "L": "9"
         },
         "stores": {
             "G": "1",
-            "L": "5"
+            "L": "6"
         },
         "loops": {
             "L": "1",
             "N": "1"
+        }
+    },
+    "54": {
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_329_11",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "329",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "55": {
+        "name": "run_mac_tile<1>",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "45",
+        "instructions": "114",
+        "total_instructions": "371",
+        "calls": "34",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "11",
+        "loads": {
+            "L": "8"
+        }
+    },
+    "56": {
+        "name": "tpu_layer_2_Pipeline_VITIS_LOOP_226_11",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "226",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "57": {
+        "name": "run_mac_tile<0>",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "45",
+        "instructions": "114",
+        "total_instructions": "371",
+        "calls": "5",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "11",
+        "loads": {
+            "L": "8"
+        }
+    },
+    "58": {
+        "name": "tpu_layer_3_Pipeline_VITIS_LOOP_284_3_VITIS_LOOP_285_4_VITIS_LOOP_286_5_VITIS_LO",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "284",
+        "instructions": "1748",
+        "total_instructions": "1748",
+        "calls": "",
+        "basicblocks": "661",
+        "memory_accesses": "526",
+        "control_depth": "4",
+        "def_use_depth": "2",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "G": "512",
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "59": {
+        "name": "tpu_layer_1_Pipeline_VITIS_LOOP_143_17",
+        "file": "..\/task_detection_tpu\/tpu_accel.cpp",
+        "fileloc": "143",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
         }
     }
 }

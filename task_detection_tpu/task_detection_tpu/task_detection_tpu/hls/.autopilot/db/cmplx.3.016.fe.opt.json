@@ -1,0 +1,83 @@
+{
+  "0": {
+    "basicblocks": 27,
+    "calls": "1 2 3",
+    "control_depth": 4,
+    "def_use_depth": 9,
+    "file": "task_detection_accel.cpp",
+    "fileloc": 7,
+    "instructions": 339,
+    "loads": {
+      "G": 3,
+      "L": 8
+    },
+    "memory_accesses": 12,
+    "name": "task_detection_accel",
+    "stores": {
+      "G": 3,
+      "L": 1,
+      "T": 1
+    },
+    "total_instructions": 5049
+  },
+  "1": {
+    "basicblocks": 281,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 5,
+    "file": "mlp_engine.cpp",
+    "fileloc": 8,
+    "instructions": 2412,
+    "loads": {
+      "G": 273,
+      "L": 1
+    },
+    "memory_accesses": 514,
+    "name": "linear_180_256",
+    "stores": {
+      "G": 265,
+      "L": 16
+    },
+    "total_instructions": 2412
+  },
+  "2": {
+    "basicblocks": 153,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 6,
+    "file": "mlp_engine.cpp",
+    "fileloc": 81,
+    "instructions": 1405,
+    "loads": {
+      "G": 145,
+      "L": 8
+    },
+    "memory_accesses": 265,
+    "name": "linear_256_128",
+    "stores": {
+      "G": 137,
+      "L": 16
+    },
+    "total_instructions": 1405
+  },
+  "3": {
+    "basicblocks": 89,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 6,
+    "file": "mlp_engine.cpp",
+    "fileloc": 147,
+    "instructions": 893,
+    "loads": {
+      "G": 81,
+      "L": 8
+    },
+    "memory_accesses": 137,
+    "name": "linear_128_64",
+    "stores": {
+      "G": 73,
+      "L": 16
+    },
+    "total_instructions": 893
+  }
+}

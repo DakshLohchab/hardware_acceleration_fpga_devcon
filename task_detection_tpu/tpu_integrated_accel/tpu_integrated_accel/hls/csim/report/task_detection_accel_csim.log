@@ -1,8 +1,8 @@
 INFO: [SIM 2] *************** CSIM start ***************
-   Compiling ../../../../../task_detection_tpu/tpu_accel_tb.cpp in debug mode
    Compiling ../../../../../task_detection_tpu/tpu_accel.cpp in debug mode
    Generating csim.exe
 --- Starting Full TPU Network Simulation ---
 Final Network Output: 3.25
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 256
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

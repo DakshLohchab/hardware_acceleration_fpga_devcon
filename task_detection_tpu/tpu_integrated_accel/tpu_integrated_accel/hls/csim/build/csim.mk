@@ -23,7 +23,7 @@ __USE_VCXX_CLANG__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../../task_detection_tpu/tpu_accel_tb.cpp ../../../../../task_detection_tpu/systolic_8x8.cpp ../../../../../task_detection_tpu/pe.cpp ../../../../../task_detection_tpu/tpu_accel.cpp
+HLS_SOURCES = ../../../../../task_detection_tpu/tpu_accel_tb.cpp ../../../../../task_detection_tpu/pe.cpp ../../../../../task_detection_tpu/tpu_accel.cpp
 
 override TARGET := csim.exe
 
@@ -88,12 +88,6 @@ $(ObjDir)/tpu_accel_tb.o: ../../../../../task_detection_tpu/tpu_accel_tb.cpp $(O
 	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/tpu_accel_tb.d
-
-$(ObjDir)/systolic_8x8.o: ../../../../../task_detection_tpu/systolic_8x8.cpp $(ObjDir)/.dir csim.mk
-	$(Echo) "   Compiling ../../../../../task_detection_tpu/systolic_8x8.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=task_detection_accel $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/systolic_8x8.d
 
 $(ObjDir)/pe.o: ../../../../../task_detection_tpu/pe.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../../task_detection_tpu/pe.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)

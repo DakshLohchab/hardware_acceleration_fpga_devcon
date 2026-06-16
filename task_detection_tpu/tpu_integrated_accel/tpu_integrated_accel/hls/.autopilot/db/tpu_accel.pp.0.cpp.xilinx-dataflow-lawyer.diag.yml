@@ -1,0 +1,12 @@
+---
+MainSourceFile:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '395:9'
+    FilePath:        '../task_detection_tpu/tpu_accel.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-11] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region'
+    FileOffset:      '395:9'
+    FilePath:        '../task_detection_tpu/tpu_accel.cpp'
+...

@@ -1,0 +1,971 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../task_detection_tpu/tpu_accel.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../task_detection_tpu/pe.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/pe.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../task_detection_tpu/systolic_8x8.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../task_detection_tpu/tpu_accel_tb.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=task_detection_accel' from hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 9.35 seconds. CPU system time: 1.17 seconds. Elapsed time: 14.44 seconds; current allocated memory: 269.543 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '../task_detection_tpu/systolic_8x8.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../task_detection_tpu/pe.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../task_detection_tpu/tpu_accel.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 44.08 seconds. CPU system time: 3.69 seconds. Elapsed time: 64.81 seconds; current allocated memory: 271.953 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 13,870 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 39,319 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 18,600 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 18,493 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 18,478 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 17,324 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 17,324 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 17,324 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 17,324 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 17,328 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 17,328 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 13,635 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 15,342 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11,292 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11,304 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,439 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_31_3' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/tpu_accel.cpp:31:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_20_2' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/tpu_accel.cpp:20:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_62_6' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/systolic_8x8.cpp:62:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_64_7' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/systolic_8x8.cpp:64:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_43_4' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/systolic_8x8.cpp:43:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_45_5' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/systolic_8x8.cpp:45:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_36_3' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/systolic_8x8.cpp:36:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_26_1' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/systolic_8x8.cpp:26:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_28_2' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/systolic_8x8.cpp:28:30)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_35_4' (../task_detection_tpu/tpu_accel.cpp:35:22) in function 'run_mac_tile' completely with a factor of 8 (../task_detection_tpu/tpu_accel.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_31_3' (../task_detection_tpu/tpu_accel.cpp:31:26) in function 'run_mac_tile' completely with a factor of 8 (../task_detection_tpu/tpu_accel.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_20_2' (../task_detection_tpu/tpu_accel.cpp:20:26) in function 'run_mac_tile' completely with a factor of 8 (../task_detection_tpu/tpu_accel.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_9_1' (../task_detection_tpu/tpu_accel.cpp:9:21) in function 'run_mac_tile' completely with a factor of 8 (../task_detection_tpu/tpu_accel.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_62_6' (../task_detection_tpu/systolic_8x8.cpp:62:22) in function 'systolic_8x8' completely with a factor of 8 (../task_detection_tpu/systolic_8x8.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_64_7' (../task_detection_tpu/systolic_8x8.cpp:64:26) in function 'systolic_8x8' completely with a factor of 8 (../task_detection_tpu/systolic_8x8.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_43_4' (../task_detection_tpu/systolic_8x8.cpp:43:22) in function 'systolic_8x8' completely with a factor of 8 (../task_detection_tpu/systolic_8x8.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_45_5' (../task_detection_tpu/systolic_8x8.cpp:45:26) in function 'systolic_8x8' completely with a factor of 8 (../task_detection_tpu/systolic_8x8.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_36_3' (../task_detection_tpu/systolic_8x8.cpp:36:22) in function 'systolic_8x8' completely with a factor of 8 (../task_detection_tpu/systolic_8x8.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_26_1' (../task_detection_tpu/systolic_8x8.cpp:26:26) in function 'systolic_8x8' completely with a factor of 8 (../task_detection_tpu/systolic_8x8.cpp:13:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_28_2' (../task_detection_tpu/systolic_8x8.cpp:28:30) in function 'systolic_8x8' completely with a factor of 9 (../task_detection_tpu/systolic_8x8.cpp:13:0)
+INFO: [HLS 214-178] Inlining function 'tpu_layer_2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'task_detection_accel' (../task_detection_tpu/tpu_accel.cpp:162:0)
+INFO: [HLS 214-178] Inlining function 'tpu_layer_3(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'task_detection_accel' (../task_detection_tpu/tpu_accel.cpp:162:0)
+INFO: [HLS 214-178] Inlining function 'scalar_layer_4(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'task_detection_accel' (../task_detection_tpu/tpu_accel.cpp:162:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE6b_wire': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../task_detection_tpu/systolic_8x8.cpp:22:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE6a_wire': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../task_detection_tpu/systolic_8x8.cpp:19:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE3acc': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../task_detection_tpu/systolic_8x8.cpp:16:0)
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_46_1> at ../task_detection_tpu/tpu_accel.cpp:46:22 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_47_2> at ../task_detection_tpu/tpu_accel.cpp:47:22 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_53_3> at ../task_detection_tpu/tpu_accel.cpp:53:26 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_57_7> at ../task_detection_tpu/tpu_accel.cpp:57:38 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_72_12> at ../task_detection_tpu/tpu_accel.cpp:72:27 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_66_10> at ../task_detection_tpu/tpu_accel.cpp:66:31 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< unknown> at ../task_detection_tpu/tpu_accel.cpp:63:28 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_170_1> at ../task_detection_tpu/tpu_accel.cpp:170:23 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_84_1> at ../task_detection_tpu/tpu_accel.cpp:84:26 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_88_5> at ../task_detection_tpu/tpu_accel.cpp:88:38 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_103_10> at ../task_detection_tpu/tpu_accel.cpp:103:28 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_97_8> at ../task_detection_tpu/tpu_accel.cpp:97:30 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< unknown> at ../task_detection_tpu/tpu_accel.cpp:94:28 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_115_1> at ../task_detection_tpu/tpu_accel.cpp:115:27 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_119_5> at ../task_detection_tpu/tpu_accel.cpp:119:39 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_134_10> at ../task_detection_tpu/tpu_accel.cpp:134:28 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_128_8> at ../task_detection_tpu/tpu_accel.cpp:128:31 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< unknown> at ../task_detection_tpu/tpu_accel.cpp:125:28 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_146_1> at ../task_detection_tpu/tpu_accel.cpp:146:27 due to pipeline_loops threshold
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_130_9' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/tpu_accel.cpp:130:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_99_9' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/tpu_accel.cpp:99:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_68_11' is marked as complete unroll implied by the pipeline pragma (../task_detection_tpu/tpu_accel.cpp:68:35)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_130_9' (../task_detection_tpu/tpu_accel.cpp:130:35) in function 'task_detection_accel' completely with a factor of 8 (../task_detection_tpu/tpu_accel.cpp:162:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_99_9' (../task_detection_tpu/tpu_accel.cpp:99:34) in function 'task_detection_accel' completely with a factor of 8 (../task_detection_tpu/tpu_accel.cpp:162:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_68_11' (../task_detection_tpu/tpu_accel.cpp:68:35) in function 'tpu_layer_1' completely with a factor of 8 (../task_detection_tpu/tpu_accel.cpp:44:0)
+INFO: [HLS 214-364] Automatically inlining function 'systolic_8x8(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [8], bool)' to improve effectiveness of pipeline pragma in function 'run_mac_tile(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [8], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../task_detection_tpu/tpu_accel.cpp:25:9)
+INFO: [HLS 214-364] Automatically inlining function 'systolic_8x8(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [8], bool)' to improve effectiveness of pipeline pragma in function 'run_mac_tile(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [8], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../task_detection_tpu/tpu_accel.cpp:32:9)
+INFO: [HLS 214-364] Automatically inlining function 'mac_pe(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>&)' to improve effectiveness of pipeline pragma in function 'run_mac_tile(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [8], ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (../task_detection_tpu/systolic_8x8.cpp:52:13)
+INFO: [HLS 214-364] Automatically inlining function 'mac_pe(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>&)' to improve effectiveness of pipeline pragma in function 'systolic_8x8(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [8], bool)' (../task_detection_tpu/systolic_8x8.cpp:52:13)
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_126_7'. (../task_detection_tpu/tpu_accel.cpp:126:27)
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_95_7'. (../task_detection_tpu/tpu_accel.cpp:95:26)
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_64_9'. (../task_detection_tpu/tpu_accel.cpp:64:26)
+INFO: [HLS 214-449] Partitioning array 'A_in' dimension 1 due to constant index. (../task_detection_tpu/tpu_accel.cpp:7:12)
+INFO: [HLS 214-449] Partitioning array 'B_in' dimension 1 due to constant index. (../task_detection_tpu/tpu_accel.cpp:7:21)
+INFO: [HLS 214-449] Partitioning array 'C_out' dimension 1 due to constant index. (../task_detection_tpu/tpu_accel.cpp:7:30)
+INFO: [HLS 214-449] Partitioning array 'C_out' dimension 2 due to constant index. (../task_detection_tpu/tpu_accel.cpp:7:30)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'tpu_layer_1(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)::weights' due to pipeline pragma (../task_detection_tpu/tpu_accel.cpp:49:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'tpu_layer_2(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)::weights' due to pipeline pragma (../task_detection_tpu/tpu_accel.cpp:80:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'tpu_layer_3(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)::weights' due to pipeline pragma (../task_detection_tpu/tpu_accel.cpp:111:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'w_tile' due to pipeline pragma (../task_detection_tpu/tpu_accel.cpp:19:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'w_tile' due to pipeline pragma (../task_detection_tpu/tpu_accel.cpp:19:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'w_tile.i' due to pipeline pragma (../task_detection_tpu/tpu_accel.cpp:19:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'w_tile.i' due to pipeline pragma (../task_detection_tpu/tpu_accel.cpp:19:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'w_tile.i33' due to pipeline pragma (../task_detection_tpu/tpu_accel.cpp:19:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'w_tile.i33' due to pipeline pragma (../task_detection_tpu/tpu_accel.cpp:19:1)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ11tpu_layer_3P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_E7weights': Complete partitioning on dimension 4. (../task_detection_tpu/tpu_accel.cpp:111:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ11tpu_layer_2P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_E7weights': Complete partitioning on dimension 4. (../task_detection_tpu/tpu_accel.cpp:80:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ11tpu_layer_1P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_E7weights': Complete partitioning on dimension 4. (../task_detection_tpu/tpu_accel.cpp:49:0)
+INFO: [HLS 214-248] Applying array_partition to 'A_in': Complete partitioning on dimension 1. (../task_detection_tpu/tpu_accel.cpp:7:12)
+INFO: [HLS 214-248] Applying array_partition to 'B_in': Complete partitioning on dimension 1. (../task_detection_tpu/tpu_accel.cpp:7:21)
+INFO: [HLS 214-248] Applying array_partition to 'C_out': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../task_detection_tpu/tpu_accel.cpp:7:30)
+INFO: [HLS 214-248] Applying array_partition to 'w_tile': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../task_detection_tpu/tpu_accel.cpp:65:20)
+INFO: [HLS 214-248] Applying array_partition to 'w_tile.i33': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../task_detection_tpu/tpu_accel.cpp:127:20)
+INFO: [HLS 214-248] Applying array_partition to 'w_tile.i': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../task_detection_tpu/tpu_accel.cpp:96:20)
+INFO: [HLS 214-115] Multiple burst reads of length 180 and bit width 32 in loop 'VITIS_LOOP_170_1'(../task_detection_tpu/tpu_accel.cpp:170:23) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../task_detection_tpu/tpu_accel.cpp:170:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 14.58 seconds. CPU system time: 0.96 seconds. Elapsed time: 23.7 seconds; current allocated memory: 279.520 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 279.520 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.56 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.74 seconds; current allocated memory: 287.363 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.56 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.65 seconds; current allocated memory: 289.852 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../task_detection_tpu/tpu_accel.cpp:170:31) to (../task_detection_tpu/tpu_accel.cpp:170:23) in function 'task_detection_accel'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../task_detection_tpu/tpu_accel.cpp:181:12) to (../task_detection_tpu/tpu_accel.cpp:185:1) in function 'task_detection_accel'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../task_detection_tpu/tpu_accel.cpp:19:1) to (../task_detection_tpu/tpu_accel.cpp:18:5) in function 'run_mac_tile'... converting 17 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2.58 seconds. CPU system time: 0.03 seconds. Elapsed time: 3.55 seconds; current allocated memory: 322.152 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_56_6'(../task_detection_tpu/tpu_accel.cpp:56:34) and 'VITIS_LOOP_57_7'(../task_detection_tpu/tpu_accel.cpp:57:38) in function 'tpu_layer_1' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_55_5'(../task_detection_tpu/tpu_accel.cpp:55:30) and 'VITIS_LOOP_56_6'(../task_detection_tpu/tpu_accel.cpp:56:34) in function 'tpu_layer_1' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_54_4'(../task_detection_tpu/tpu_accel.cpp:54:26) and 'VITIS_LOOP_55_5'(../task_detection_tpu/tpu_accel.cpp:55:30) in function 'tpu_layer_1' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_87_4'(../task_detection_tpu/tpu_accel.cpp:87:34) and 'VITIS_LOOP_88_5'(../task_detection_tpu/tpu_accel.cpp:88:38) in function 'task_detection_accel' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_86_3'(../task_detection_tpu/tpu_accel.cpp:86:30) and 'VITIS_LOOP_87_4'(../task_detection_tpu/tpu_accel.cpp:87:34) in function 'task_detection_accel' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_85_2'(../task_detection_tpu/tpu_accel.cpp:85:26) and 'VITIS_LOOP_86_3'(../task_detection_tpu/tpu_accel.cpp:86:30) in function 'task_detection_accel' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_118_4'(../task_detection_tpu/tpu_accel.cpp:118:35) and 'VITIS_LOOP_119_5'(../task_detection_tpu/tpu_accel.cpp:119:39) in function 'task_detection_accel' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_117_3'(../task_detection_tpu/tpu_accel.cpp:117:31) and 'VITIS_LOOP_118_4'(../task_detection_tpu/tpu_accel.cpp:118:35) in function 'task_detection_accel' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_116_2'(../task_detection_tpu/tpu_accel.cpp:116:27) and 'VITIS_LOOP_117_3'(../task_detection_tpu/tpu_accel.cpp:117:31) in function 'task_detection_accel' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_56_6' (../task_detection_tpu/tpu_accel.cpp:56:34) in function 'tpu_layer_1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_55_5' (../task_detection_tpu/tpu_accel.cpp:55:30) in function 'tpu_layer_1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_54_4' (../task_detection_tpu/tpu_accel.cpp:54:26) in function 'tpu_layer_1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_87_4' (../task_detection_tpu/tpu_accel.cpp:87:34) in function 'task_detection_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_86_3' (../task_detection_tpu/tpu_accel.cpp:86:30) in function 'task_detection_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_85_2' (../task_detection_tpu/tpu_accel.cpp:85:26) in function 'task_detection_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_118_4' (../task_detection_tpu/tpu_accel.cpp:118:35) in function 'task_detection_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_117_3' (../task_detection_tpu/tpu_accel.cpp:117:31) in function 'task_detection_accel'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_116_2' (../task_detection_tpu/tpu_accel.cpp:116:27) in function 'task_detection_accel'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2.41 seconds. CPU system time: 0.13 seconds. Elapsed time: 3.16 seconds; current allocated memory: 567.656 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'task_detection_accel' ...
+WARNING: [SYN 201-103] Legalizing function name 'tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_' to 'tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_s'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_170_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_170_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_170_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.77 seconds. CPU system time: 0.07 seconds. Elapsed time: 2.92 seconds; current allocated memory: 570.492 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 570.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpu_layer_1_Pipeline_VITIS_LOOP_46_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_46_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_46_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 570.828 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 570.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpu_layer_1_Pipeline_VITIS_LOOP_47_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_47_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_47_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 571.043 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 571.043 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpu_layer_1_Pipeline_VITIS_LOOP_53_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_53_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 571.219 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 571.219 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln58) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_57_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_57_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 572.613 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 572.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpu_layer_1_Pipeline_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 572.613 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 572.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpu_layer_1_Pipeline_VITIS_LOOP_66_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_66_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_66_10'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 574.469 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 574.469 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'systolic_8x8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'systolic_8x8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'systolic_8x8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 574.469 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 574.469 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_mac_tile_Pipeline_PUMP_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_43) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'PUMP_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'PUMP_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.82 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.08 seconds; current allocated memory: 586.934 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.69 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.82 seconds; current allocated memory: 586.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_mac_tile_Pipeline_FLUSH_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_35) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln18) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'FLUSH_LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'FLUSH_LOOP'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.93 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.06 seconds; current allocated memory: 595.297 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.53 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.61 seconds; current allocated memory: 595.297 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'run_mac_tile' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.57 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.68 seconds; current allocated memory: 599.930 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 599.930 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpu_layer_1_Pipeline_VITIS_LOOP_72_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_72_12'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_72_12'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 600.344 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 600.344 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tpu_layer_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 601.566 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 601.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_84_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_84_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_84_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 602.594 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 602.594 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VI' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VITIS_LOOP_88_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VITIS_LOOP_88_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 603.938 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 603.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 603.938 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 603.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_97_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_97_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_97_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 605.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 605.809 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_103_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_103_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_103_10'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 605.879 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 605.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_115_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_115_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_115_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 606.066 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 606.066 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4_VITIS_LOOP_119_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4_VITIS_LOOP_119_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 607.391 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 607.391 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 607.391 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 607.391 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_128_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_128_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_128_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 609.367 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 609.367 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_134_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_134_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_134_10'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 609.367 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 609.367 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_146_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_146_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_146_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 609.492 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 609.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel_Pipeline_VITIS_LOOP_151_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln153) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_151_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_151_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 609.844 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 609.844 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'task_detection_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 612.844 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 612.844 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_170_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'task_detection_accel_Pipeline_VITIS_LOOP_170_1' pipeline 'VITIS_LOOP_170_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'task_detection_accel_Pipeline_VITIS_LOOP_170_1/m_axi_gmem0_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_170_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.3 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.4 seconds; current allocated memory: 613.219 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpu_layer_1_Pipeline_VITIS_LOOP_46_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'tpu_layer_1_Pipeline_VITIS_LOOP_46_1' pipeline 'VITIS_LOOP_46_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpu_layer_1_Pipeline_VITIS_LOOP_46_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 614.703 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpu_layer_1_Pipeline_VITIS_LOOP_47_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpu_layer_1_Pipeline_VITIS_LOOP_47_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 615.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpu_layer_1_Pipeline_VITIS_LOOP_53_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpu_layer_1_Pipeline_VITIS_LOOP_53_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 615.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_s' pipeline 'VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_57_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_5ns_5ns_10_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpu_layer_1_Pipeline_VITIS_LOOP_54_4_VITIS_LOOP_55_5_VITIS_LOOP_56_6_VITIS_LOOP_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.17 seconds; current allocated memory: 616.887 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpu_layer_1_Pipeline_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpu_layer_1_Pipeline_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 619.449 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpu_layer_1_Pipeline_VITIS_LOOP_66_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'tpu_layer_1_Pipeline_VITIS_LOOP_66_10' pipeline 'VITIS_LOOP_66_10' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpu_layer_1_Pipeline_VITIS_LOOP_66_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.2 seconds; current allocated memory: 620.738 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'systolic_8x8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'systolic_8x8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.33 seconds; current allocated memory: 626.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_mac_tile_Pipeline_PUMP_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_mac_tile_Pipeline_PUMP_LOOP' pipeline 'PUMP_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_26s_26_4_1': 36 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_4ns_26s_26_4_1': 14 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_4_4_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_mac_tile_Pipeline_PUMP_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.99 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.13 seconds; current allocated memory: 637.980 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_mac_tile_Pipeline_FLUSH_LOOP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'run_mac_tile_Pipeline_FLUSH_LOOP' pipeline 'FLUSH_LOOP' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_26s_26_4_1': 36 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_4ns_26s_26_4_1': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_mac_tile_Pipeline_FLUSH_LOOP'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.53 seconds. CPU system time: 0.09 seconds. Elapsed time: 1.84 seconds; current allocated memory: 674.176 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'run_mac_tile' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'run_mac_tile'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.16 seconds. CPU system time: 0.09 seconds. Elapsed time: 1.48 seconds; current allocated memory: 694.488 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpu_layer_1_Pipeline_VITIS_LOOP_72_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'tpu_layer_1_Pipeline_VITIS_LOOP_72_12' pipeline 'VITIS_LOOP_72_12' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpu_layer_1_Pipeline_VITIS_LOOP_72_12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.66 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.91 seconds; current allocated memory: 715.820 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tpu_layer_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Register 'init_2' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_AUTO_1R1W' to 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_Abkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_1_RAM_AUTO_1R1W' to 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_1_RAMcud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_2_RAM_AUTO_1R1W' to 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_2_RAMdEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_3_RAM_AUTO_1R1W' to 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_3_RAMeOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_4_RAM_AUTO_1R1W' to 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_4_RAMfYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_5_RAM_AUTO_1R1W' to 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_5_RAMg8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_6_RAM_AUTO_1R1W' to 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_6_RAMhbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_7_RAM_AUTO_1R1W' to 'tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_7_RAMibs' due to the length limit 80
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tpu_layer_1'.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_tpu_layer_1_bias_2_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_tpu_layer_1_tpu_layer_1_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_Abkb' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_tpu_layer_1_x_padded_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_tpu_layer_1_y_tile_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_tpu_layer_1_x_tile_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.43 seconds; current allocated memory: 715.820 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_84_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_84_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.41 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.56 seconds; current allocated memory: 722.199 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VI' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'task_detection_accel_Pipeline_VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VI' pipeline 'VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VITIS_LOOP_88_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VI'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 722.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 725.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_97_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'task_detection_accel_Pipeline_VITIS_LOOP_97_8' pipeline 'VITIS_LOOP_97_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_97_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 726.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_103_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'task_detection_accel_Pipeline_VITIS_LOOP_103_10' pipeline 'VITIS_LOOP_103_10' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_103_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.36 seconds; current allocated memory: 732.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_115_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_115_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 732.887 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'task_detection_accel_Pipeline_VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4' pipeline 'VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4_VITIS_LOOP_119_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 733.480 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.21 seconds; current allocated memory: 736.031 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_128_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'task_detection_accel_Pipeline_VITIS_LOOP_128_8' pipeline 'VITIS_LOOP_128_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_128_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 736.801 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_134_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'task_detection_accel_Pipeline_VITIS_LOOP_134_10' pipeline 'VITIS_LOOP_134_10' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_134_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.31 seconds; current allocated memory: 742.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_146_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_146_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 743.406 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel_Pipeline_VITIS_LOOP_151_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'task_detection_accel_Pipeline_VITIS_LOOP_151_2' pipeline 'VITIS_LOOP_151_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_4ns_26s_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel_Pipeline_VITIS_LOOP_151_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.15 seconds; current allocated memory: 743.973 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'task_detection_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/output_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/task_id' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'task_detection_accel/top_k' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'task_detection_accel' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_96' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_97' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_48' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_98' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_49' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_99' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_50' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_190' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_51' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_189' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_52' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_188' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_53' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_187' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_186' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_185' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_54' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_184' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_55' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_183' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_56' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_182' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_57' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_181' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_58' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_180' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_59' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_179' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_178' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_177' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_60' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_176' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_61' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_175' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_62' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_174' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_63' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_173' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_64' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_172' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_65' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_171' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_170' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_169' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_66' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_17' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_168' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_67' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_167' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_68' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_19' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_166' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_69' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_20' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_165' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_70' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_21' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_164' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_71' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_22' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_163' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_23' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_162' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_24' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_161' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_72' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_25' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_160' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_73' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_26' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_159' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_74' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_27' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_158' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_75' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_28' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_157' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_76' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_29' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_156' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_77' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_30' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_155' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_31' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_154' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_32' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_153' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_78' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_33' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_152' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_79' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_34' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_151' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_80' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_35' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_150' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_81' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_36' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_149' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_82' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_37' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_148' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_83' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_38' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_147' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_39' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_40' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_84' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_41' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_85' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_42' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_86' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_43' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_87' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_44' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_88' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_45' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_89' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_46' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_146' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_47' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_90' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_91' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_92' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_93' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_94' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_95' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12systolic_8x8P8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA8_S2_bE_145' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'init_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'init' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'init_3' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'task_id', 'top_k' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Bundling port 'input_r' and 'output_r' to AXI-Lite port control_r.
+INFO: [RTGEN 206-100] Generating core module 'ctlz_16_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'task_detection_accel'.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_bias_1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_tpu_layer_2_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_bias_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_tpu_layer_3_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_weights_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_weights_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_x_tile_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_in_buf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_l1_out_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_l2_out_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'task_detection_accel_l3_out_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.48 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.72 seconds; current allocated memory: 754.480 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.42 seconds. CPU system time: 0.17 seconds. Elapsed time: 1.95 seconds; current allocated memory: 767.504 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2.35 seconds. CPU system time: 0.19 seconds. Elapsed time: 3.03 seconds; current allocated memory: 781.883 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for task_detection_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for task_detection_accel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-112] Total CPU user time: 94.79 seconds. Total CPU system time: 7.46 seconds. Total elapsed time: 139.6 seconds; peak allocated memory: 781.883 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 2m 32s

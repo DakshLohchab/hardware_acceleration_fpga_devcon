@@ -51,470 +51,830 @@ Diagnostics:
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_9_1:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      9
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2345516
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_9_1: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_20_2:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      20
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2345749
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_20_2: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_31_3:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      31
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2346110
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_31_3: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_35_4:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      35
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2346226
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_35_4: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_46_1:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      46
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2346408
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_46_1: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_47_2:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      47
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2346466
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_47_2: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_53_3:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      53
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2346641
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_53_3: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_54_4:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      54
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2346694
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_54_4: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_55_5:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      55
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2346734
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_55_5: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_56_6:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      56
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2346778
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_56_6: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_57_7:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      57
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2346825
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_57_7: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_62_8:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      62
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2346937
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_62_8: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_64_9:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      64
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2347020
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_64_9: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_66_10:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      66
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2347116
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_66_10: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_68_11:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      68
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2347213
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_68_11: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_72_12:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      72
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2347365
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_72_12: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_84_1:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      84
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2347645
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_84_1: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_85_2:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      85
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2347698
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_85_2: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_86_3:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      86
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2347738
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_86_3: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_87_4:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      87
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2347782
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_87_4: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_88_5:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      88
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2347829
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_88_5: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_93_6:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      93
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2347941
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_93_6: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_95_7:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      95
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2348024
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_95_7: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_97_8:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      97
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2348120
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_97_8: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_99_9:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      99
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2348214
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_99_9: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_103_10:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      103
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2348366
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_103_10: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_115_1:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      115
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2348643
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_115_1: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_116_2:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      116
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2348695
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_116_2: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_117_3:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      117
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2348734
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_117_3: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_118_4:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      118
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2348778
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_118_4: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_119_5:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      119
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2348825
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_119_5: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_124_6:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      124
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2348937
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_124_6: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_126_7:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      126
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2349019
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_126_7: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_128_8:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      128
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2349115
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_128_8: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_130_9:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      130
-      Replacements:
-        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2349209
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_130_9: '
-    Level:           Remark
-    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_134_10:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      134
+      Message:         'Added loop label VITIS_LOOP_27_1:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.h'
+      FileOffset:      27
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
           Offset:          2349361
           Length:          0
-          ReplacementText: 'VITIS_LOOP_134_10: '
+          ReplacementText: 'VITIS_LOOP_27_1: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_146_1:  '
-      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      146
+      Message:         'Added loop label VITIS_LOOP_29_2:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.h'
+      FileOffset:      29
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2349631
+          Offset:          2349421
           Length:          0
-          ReplacementText: 'VITIS_LOOP_146_1: '
+          ReplacementText: 'VITIS_LOOP_29_2: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_151_2:  '
+      Message:         'Added loop label VITIS_LOOP_37_3:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.h'
+      FileOffset:      37
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2349572
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_37_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_43_4:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.h'
+      FileOffset:      43
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2349695
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_43_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_45_5:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.h'
+      FileOffset:      45
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2349752
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_45_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_52_6:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.h'
+      FileOffset:      52
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2349951
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_52_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_54_7:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.h'
+      FileOffset:      54
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2350007
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_54_7: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_14_1:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      14
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2350696
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_14_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_24_2:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      24
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2350938
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_24_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_35_3:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      35
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2351309
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_35_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_43_4:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      43
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2351486
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_43_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_56_1:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      56
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2351763
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_56_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_60_2:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      60
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2351871
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_60_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_75_3:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      75
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2352334
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_75_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_76_4:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      76
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2352387
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_76_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_77_5:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      77
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2352429
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_77_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_78_6:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      78
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2352475
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_78_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_79_7:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      79
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2352524
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_79_7: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_89_8:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      89
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2352703
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_89_8: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_93_9:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      93
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2352940
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_93_9: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_97_10:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      97
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2353170
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_97_10: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_100_11:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      100
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2353286
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_100_11: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_123_12:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      123
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2354390
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_123_12: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_127_13:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      127
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2354528
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_127_13: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_131_14:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      131
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2354672
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_131_14: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_135_15:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      135
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2354816
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_135_15: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_139_16:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      139
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2354960
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_139_16: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_143_17:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      143
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2355104
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_143_17: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_147_18:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      147
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2355248
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_147_18: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_151_19:  '
       FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
       FileOffset:      151
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2349734
+          Offset:          2355392
           Length:          0
-          ReplacementText: 'VITIS_LOOP_151_2: '
+          ReplacementText: 'VITIS_LOOP_151_19: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_170_1:  '
+      Message:         'Added loop label VITIS_LOOP_165_1:  '
       FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
-      FileOffset:      170
+      FileOffset:      165
       Replacements:
         - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
-          Offset:          2350460
+          Offset:          2355723
           Length:          0
-          ReplacementText: 'VITIS_LOOP_170_1: '
+          ReplacementText: 'VITIS_LOOP_165_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_180_2:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      180
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2356205
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_180_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_181_3:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      181
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2356258
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_181_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_182_4:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      182
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2356300
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_182_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_183_5:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      183
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2356346
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_183_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_184_6:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      184
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2356395
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_184_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_194_7:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      194
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2356574
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_194_7: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_198_8:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      198
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2356811
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_198_8: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_201_9:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      201
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2357040
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_201_9: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_204_10:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      204
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2357156
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_204_10: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_226_11:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      226
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2358259
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_226_11: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_230_12:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      230
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2358397
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_230_12: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_234_13:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      234
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2358541
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_234_13: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_238_14:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      238
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2358685
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_238_14: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_242_15:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      242
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2358829
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_242_15: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_246_16:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      246
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2358973
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_246_16: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_250_17:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      250
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2359117
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_250_17: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_254_18:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      254
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2359261
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_254_18: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_268_1:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      268
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2359592
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_268_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_283_2:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      283
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2360072
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_283_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_284_3:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      284
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2360124
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_284_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_285_4:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      285
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2360165
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_285_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_286_5:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      286
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2360211
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_286_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_287_6:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      287
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2360260
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_287_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_297_7:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      297
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2360439
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_297_7: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_301_8:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      301
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2360675
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_301_8: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_304_9:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      304
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2360904
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_304_9: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_307_10:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      307
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2361020
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_307_10: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_329_11:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      329
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2362123
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_329_11: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_333_12:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      333
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2362261
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_333_12: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_337_13:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      337
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2362405
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_337_13: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_341_14:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      341
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2362549
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_341_14: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_345_15:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      345
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2362693
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_345_15: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_349_16:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      349
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2362837
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_349_16: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_353_17:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      353
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2362981
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_353_17: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_357_18:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      357
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2363125
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_357_18: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_372_1:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      372
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2363460
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_372_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_377_2:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      377
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2363563
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_377_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_402_1:  '
+      FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp'
+      FileOffset:      402
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/.autopilot/db/tpu_accel.pp.0.cpp'
+          Offset:          2364542
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_402_1: '
     Level:           Remark
     BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel'
 ...

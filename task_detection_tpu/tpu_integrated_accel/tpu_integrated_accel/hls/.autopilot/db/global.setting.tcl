@@ -5,10 +5,10 @@ set ClockList ap_clk
 set AxiliteClockList {}
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
-set PipelineFlag 0
+set PipelineFlag 1
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
-set noPortSwitchingFlag 0
+set noPortSwitchingFlag 1
 set FloatingPointFlag 1
 set FftOrFirFlag 0
 set NbRWValue 0
@@ -40,8 +40,8 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7k325t:-ffg900:-2
-set SourceFiles {sc {} c {../../../task_detection_tpu/systolic_8x8.cpp ../../../task_detection_tpu/pe.cpp ../../../task_detection_tpu/tpu_accel.cpp}}
-set SourceFlags {sc {} c {{} {} {}}}
+set SourceFiles {sc {} c {../../../task_detection_tpu/pe.cpp ../../../task_detection_tpu/tpu_accel.cpp}}
+set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile {}
 set TBFiles {verilog /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel_tb.cpp bc /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel_tb.cpp vhdl /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel_tb.cpp sc /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel_tb.cpp cas /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel_tb.cpp c {}}
 set SpecLanguage C

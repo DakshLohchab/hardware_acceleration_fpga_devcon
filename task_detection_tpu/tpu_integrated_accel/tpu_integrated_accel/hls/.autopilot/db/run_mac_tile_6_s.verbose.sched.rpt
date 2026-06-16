@@ -1,0 +1,234 @@
+
+
+================================================================
+== Vitis HLS Report for 'run_mac_tile_6_s'
+================================================================
+* Date:           Tue Jun 16 19:42:44 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        tpu_integrated_accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k325t-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.813 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       21|       21|  0.210 us|  0.210 us|   21|   21|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%X_7_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %X_7_val"   --->   Operation 4 'read' 'X_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%X_6_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %X_6_val"   --->   Operation 5 'read' 'X_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%X_5_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %X_5_val"   --->   Operation 6 'read' 'X_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%X_4_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %X_4_val"   --->   Operation 7 'read' 'X_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%X_3_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %X_3_val"   --->   Operation 8 'read' 'X_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%X_2_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %X_2_val"   --->   Operation 9 'read' 'X_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%X_1_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %X_1_val"   --->   Operation 10 'read' 'X_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%X_0_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %X_0_val"   --->   Operation 11 'read' 'X_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%W_7_7_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_7_7_val"   --->   Operation 12 'read' 'W_7_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%W_7_6_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_7_6_val"   --->   Operation 13 'read' 'W_7_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%W_7_5_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_7_5_val"   --->   Operation 14 'read' 'W_7_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%W_7_4_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_7_4_val"   --->   Operation 15 'read' 'W_7_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%W_7_3_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_7_3_val"   --->   Operation 16 'read' 'W_7_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%W_7_2_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_7_2_val"   --->   Operation 17 'read' 'W_7_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%W_7_1_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_7_1_val"   --->   Operation 18 'read' 'W_7_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%W_7_0_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_7_0_val"   --->   Operation 19 'read' 'W_7_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%W_6_7_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_6_7_val"   --->   Operation 20 'read' 'W_6_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%W_6_6_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_6_6_val"   --->   Operation 21 'read' 'W_6_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%W_6_5_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_6_5_val"   --->   Operation 22 'read' 'W_6_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%W_6_4_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_6_4_val"   --->   Operation 23 'read' 'W_6_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%W_6_3_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_6_3_val"   --->   Operation 24 'read' 'W_6_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%W_6_2_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_6_2_val"   --->   Operation 25 'read' 'W_6_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%W_6_1_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_6_1_val"   --->   Operation 26 'read' 'W_6_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%W_6_0_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_6_0_val"   --->   Operation 27 'read' 'W_6_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%W_5_7_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_5_7_val"   --->   Operation 28 'read' 'W_5_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%W_5_6_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_5_6_val"   --->   Operation 29 'read' 'W_5_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%W_5_5_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_5_5_val"   --->   Operation 30 'read' 'W_5_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%W_5_4_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_5_4_val"   --->   Operation 31 'read' 'W_5_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%W_5_3_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_5_3_val"   --->   Operation 32 'read' 'W_5_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%W_5_2_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_5_2_val"   --->   Operation 33 'read' 'W_5_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%W_5_1_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_5_1_val"   --->   Operation 34 'read' 'W_5_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%W_5_0_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_5_0_val"   --->   Operation 35 'read' 'W_5_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%W_4_7_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_4_7_val"   --->   Operation 36 'read' 'W_4_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%W_4_6_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_4_6_val"   --->   Operation 37 'read' 'W_4_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%W_4_5_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_4_5_val"   --->   Operation 38 'read' 'W_4_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%W_4_4_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_4_4_val"   --->   Operation 39 'read' 'W_4_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%W_4_3_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_4_3_val"   --->   Operation 40 'read' 'W_4_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%W_4_2_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_4_2_val"   --->   Operation 41 'read' 'W_4_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%W_4_1_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_4_1_val"   --->   Operation 42 'read' 'W_4_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%W_4_0_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_4_0_val"   --->   Operation 43 'read' 'W_4_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%W_3_7_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_3_7_val"   --->   Operation 44 'read' 'W_3_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%W_3_6_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_3_6_val"   --->   Operation 45 'read' 'W_3_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%W_3_5_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_3_5_val"   --->   Operation 46 'read' 'W_3_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%W_3_4_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_3_4_val"   --->   Operation 47 'read' 'W_3_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%W_3_3_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_3_3_val"   --->   Operation 48 'read' 'W_3_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%W_3_2_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_3_2_val"   --->   Operation 49 'read' 'W_3_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%W_3_1_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_3_1_val"   --->   Operation 50 'read' 'W_3_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%W_3_0_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_3_0_val"   --->   Operation 51 'read' 'W_3_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%W_2_7_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_2_7_val"   --->   Operation 52 'read' 'W_2_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%W_2_6_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_2_6_val"   --->   Operation 53 'read' 'W_2_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%W_2_5_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_2_5_val"   --->   Operation 54 'read' 'W_2_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%W_2_4_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_2_4_val"   --->   Operation 55 'read' 'W_2_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%W_2_3_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_2_3_val"   --->   Operation 56 'read' 'W_2_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%W_2_2_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_2_2_val"   --->   Operation 57 'read' 'W_2_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%W_2_1_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_2_1_val"   --->   Operation 58 'read' 'W_2_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%W_2_0_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_2_0_val"   --->   Operation 59 'read' 'W_2_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%W_1_7_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_1_7_val"   --->   Operation 60 'read' 'W_1_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%W_1_6_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_1_6_val"   --->   Operation 61 'read' 'W_1_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%W_1_5_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_1_5_val"   --->   Operation 62 'read' 'W_1_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%W_1_4_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_1_4_val"   --->   Operation 63 'read' 'W_1_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%W_1_3_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_1_3_val"   --->   Operation 64 'read' 'W_1_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%W_1_2_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_1_2_val"   --->   Operation 65 'read' 'W_1_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%W_1_1_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_1_1_val"   --->   Operation 66 'read' 'W_1_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%W_1_0_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_1_0_val"   --->   Operation 67 'read' 'W_1_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%W_0_7_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_0_7_val"   --->   Operation 68 'read' 'W_0_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%W_0_6_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_0_6_val"   --->   Operation 69 'read' 'W_0_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%W_0_5_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_0_5_val"   --->   Operation 70 'read' 'W_0_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%W_0_4_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_0_4_val"   --->   Operation 71 'read' 'W_0_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%W_0_3_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_0_3_val"   --->   Operation 72 'read' 'W_0_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%W_0_2_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_0_2_val"   --->   Operation 73 'read' 'W_0_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%W_0_1_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_0_1_val"   --->   Operation 74 'read' 'W_0_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%W_0_0_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %W_0_0_val"   --->   Operation 75 'read' 'W_0_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%C_out_133_loc = alloca i64 1"   --->   Operation 76 'alloca' 'C_out_133_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%C_out_125_loc = alloca i64 1"   --->   Operation 77 'alloca' 'C_out_125_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%C_out_117_loc = alloca i64 1"   --->   Operation 78 'alloca' 'C_out_117_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%C_out_109_loc = alloca i64 1"   --->   Operation 79 'alloca' 'C_out_109_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%C_out_101_loc = alloca i64 1"   --->   Operation 80 'alloca' 'C_out_101_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%C_out_93_loc = alloca i64 1"   --->   Operation 81 'alloca' 'C_out_93_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%C_out_92_loc = alloca i64 1"   --->   Operation 82 'alloca' 'C_out_92_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%C_out_loc = alloca i64 1"   --->   Operation 83 'alloca' 'C_out_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [2/2] (0.00ns)   --->   "%call_ln0 = call void @run_mac_tile<6>_Pipeline_PUMP_LOOP, i4 %W_0_0_val_read, i4 %W_0_1_val_read, i4 %W_0_2_val_read, i4 %W_0_3_val_read, i4 %W_0_4_val_read, i4 %W_0_5_val_read, i4 %W_0_6_val_read, i4 %W_0_7_val_read, i16 %X_0_val_read, i16 %X_1_val_read, i16 %X_2_val_read, i16 %X_3_val_read, i16 %X_4_val_read, i16 %X_5_val_read, i16 %X_6_val_read, i16 %X_7_val_read, i4 %W_1_0_val_read, i4 %W_1_1_val_read, i4 %W_1_2_val_read, i4 %W_1_3_val_read, i4 %W_1_4_val_read, i4 %W_1_5_val_read, i4 %W_1_6_val_read, i4 %W_1_7_val_read, i4 %W_2_0_val_read, i4 %W_2_1_val_read, i4 %W_2_2_val_read, i4 %W_2_3_val_read, i4 %W_2_4_val_read, i4 %W_2_5_val_read, i4 %W_2_6_val_read, i4 %W_2_7_val_read, i4 %W_3_0_val_read, i4 %W_3_1_val_read, i4 %W_3_2_val_read, i4 %W_3_3_val_read, i4 %W_3_4_val_read, i4 %W_3_5_val_read, i4 %W_3_6_val_read, i4 %W_3_7_val_read, i4 %W_4_0_val_read, i4 %W_4_1_val_read, i4 %W_4_2_val_read, i4 %W_4_3_val_read, i4 %W_4_4_val_read, i4 %W_4_5_val_read, i4 %W_4_6_val_read, i4 %W_4_7_val_read, i4 %W_5_0_val_read, i4 %W_5_1_val_read, i4 %W_5_2_val_read, i4 %W_5_3_val_read, i4 %W_5_4_val_read, i4 %W_5_5_val_read, i4 %W_5_6_val_read, i4 %W_5_7_val_read, i4 %W_6_0_val_read, i4 %W_6_1_val_read, i4 %W_6_2_val_read, i4 %W_6_3_val_read, i4 %W_6_4_val_read, i4 %W_6_5_val_read, i4 %W_6_6_val_read, i4 %W_6_7_val_read, i4 %W_7_0_val_read, i4 %W_7_1_val_read, i4 %W_7_2_val_read, i4 %W_7_3_val_read, i4 %W_7_4_val_read, i4 %W_7_5_val_read, i4 %W_7_6_val_read, i4 %W_7_7_val_read, i16 %C_out_loc, i16 %C_out_92_loc, i16 %C_out_93_loc, i16 %C_out_101_loc, i16 %C_out_109_loc, i16 %C_out_117_loc, i16 %C_out_125_loc, i16 %C_out_133_loc"   --->   Operation 84 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 85 [1/2] (0.00ns)   --->   "%call_ln0 = call void @run_mac_tile<6>_Pipeline_PUMP_LOOP, i4 %W_0_0_val_read, i4 %W_0_1_val_read, i4 %W_0_2_val_read, i4 %W_0_3_val_read, i4 %W_0_4_val_read, i4 %W_0_5_val_read, i4 %W_0_6_val_read, i4 %W_0_7_val_read, i16 %X_0_val_read, i16 %X_1_val_read, i16 %X_2_val_read, i16 %X_3_val_read, i16 %X_4_val_read, i16 %X_5_val_read, i16 %X_6_val_read, i16 %X_7_val_read, i4 %W_1_0_val_read, i4 %W_1_1_val_read, i4 %W_1_2_val_read, i4 %W_1_3_val_read, i4 %W_1_4_val_read, i4 %W_1_5_val_read, i4 %W_1_6_val_read, i4 %W_1_7_val_read, i4 %W_2_0_val_read, i4 %W_2_1_val_read, i4 %W_2_2_val_read, i4 %W_2_3_val_read, i4 %W_2_4_val_read, i4 %W_2_5_val_read, i4 %W_2_6_val_read, i4 %W_2_7_val_read, i4 %W_3_0_val_read, i4 %W_3_1_val_read, i4 %W_3_2_val_read, i4 %W_3_3_val_read, i4 %W_3_4_val_read, i4 %W_3_5_val_read, i4 %W_3_6_val_read, i4 %W_3_7_val_read, i4 %W_4_0_val_read, i4 %W_4_1_val_read, i4 %W_4_2_val_read, i4 %W_4_3_val_read, i4 %W_4_4_val_read, i4 %W_4_5_val_read, i4 %W_4_6_val_read, i4 %W_4_7_val_read, i4 %W_5_0_val_read, i4 %W_5_1_val_read, i4 %W_5_2_val_read, i4 %W_5_3_val_read, i4 %W_5_4_val_read, i4 %W_5_5_val_read, i4 %W_5_6_val_read, i4 %W_5_7_val_read, i4 %W_6_0_val_read, i4 %W_6_1_val_read, i4 %W_6_2_val_read, i4 %W_6_3_val_read, i4 %W_6_4_val_read, i4 %W_6_5_val_read, i4 %W_6_6_val_read, i4 %W_6_7_val_read, i4 %W_7_0_val_read, i4 %W_7_1_val_read, i4 %W_7_2_val_read, i4 %W_7_3_val_read, i4 %W_7_4_val_read, i4 %W_7_5_val_read, i4 %W_7_6_val_read, i4 %W_7_7_val_read, i16 %C_out_loc, i16 %C_out_92_loc, i16 %C_out_93_loc, i16 %C_out_101_loc, i16 %C_out_109_loc, i16 %C_out_117_loc, i16 %C_out_125_loc, i16 %C_out_133_loc"   --->   Operation 85 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 1.34>
+ST_3 : Operation 86 [1/1] (0.00ns)   --->   "%Y_acc_7_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %Y_acc_7_read"   --->   Operation 86 'read' 'Y_acc_7_read_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%Y_acc_6_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %Y_acc_6_read"   --->   Operation 87 'read' 'Y_acc_6_read_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%Y_acc_5_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %Y_acc_5_read"   --->   Operation 88 'read' 'Y_acc_5_read_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 89 [1/1] (0.00ns)   --->   "%Y_acc_4_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %Y_acc_4_read"   --->   Operation 89 'read' 'Y_acc_4_read_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%Y_acc_3_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %Y_acc_3_read"   --->   Operation 90 'read' 'Y_acc_3_read_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%Y_acc_2_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %Y_acc_2_read"   --->   Operation 91 'read' 'Y_acc_2_read_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%Y_acc_1_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %Y_acc_1_read"   --->   Operation 92 'read' 'Y_acc_1_read_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%Y_acc_0_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %Y_acc_0_read"   --->   Operation 93 'read' 'Y_acc_0_read_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%C_out_loc_load = load i16 %C_out_loc"   --->   Operation 94 'load' 'C_out_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 95 [1/1] (0.00ns)   --->   "%C_out_92_loc_load = load i16 %C_out_92_loc"   --->   Operation 95 'load' 'C_out_92_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 96 [1/1] (0.00ns)   --->   "%C_out_93_loc_load = load i16 %C_out_93_loc"   --->   Operation 96 'load' 'C_out_93_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%C_out_101_loc_load = load i16 %C_out_101_loc"   --->   Operation 97 'load' 'C_out_101_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%C_out_109_loc_load = load i16 %C_out_109_loc"   --->   Operation 98 'load' 'C_out_109_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 99 [1/1] (0.00ns)   --->   "%C_out_117_loc_load = load i16 %C_out_117_loc"   --->   Operation 99 'load' 'C_out_117_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 100 [1/1] (0.00ns)   --->   "%C_out_125_loc_load = load i16 %C_out_125_loc"   --->   Operation 100 'load' 'C_out_125_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 101 [1/1] (0.00ns)   --->   "%C_out_133_loc_load = load i16 %C_out_133_loc"   --->   Operation 101 'load' 'C_out_133_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 102 [1/1] (1.34ns)   --->   "%add_ln45 = add i16 %C_out_loc_load, i16 %Y_acc_0_read_2" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 102 'add' 'add_ln45' <Predicate = true> <Delay = 1.34> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 103 [1/1] (1.34ns)   --->   "%add_ln45_8 = add i16 %C_out_92_loc_load, i16 %Y_acc_1_read_2" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 103 'add' 'add_ln45_8' <Predicate = true> <Delay = 1.34> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 104 [1/1] (1.34ns)   --->   "%add_ln45_9 = add i16 %C_out_93_loc_load, i16 %Y_acc_2_read_2" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 104 'add' 'add_ln45_9' <Predicate = true> <Delay = 1.34> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 105 [1/1] (1.34ns)   --->   "%add_ln45_10 = add i16 %C_out_101_loc_load, i16 %Y_acc_3_read_2" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 105 'add' 'add_ln45_10' <Predicate = true> <Delay = 1.34> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 106 [1/1] (1.34ns)   --->   "%add_ln45_11 = add i16 %C_out_109_loc_load, i16 %Y_acc_4_read_2" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 106 'add' 'add_ln45_11' <Predicate = true> <Delay = 1.34> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 107 [1/1] (1.34ns)   --->   "%add_ln45_12 = add i16 %C_out_117_loc_load, i16 %Y_acc_5_read_2" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 107 'add' 'add_ln45_12' <Predicate = true> <Delay = 1.34> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 108 [1/1] (1.34ns)   --->   "%add_ln45_13 = add i16 %C_out_125_loc_load, i16 %Y_acc_6_read_2" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 108 'add' 'add_ln45_13' <Predicate = true> <Delay = 1.34> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 109 [1/1] (1.34ns)   --->   "%add_ln45_14 = add i16 %C_out_133_loc_load, i16 %Y_acc_7_read_2" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 109 'add' 'add_ln45_14' <Predicate = true> <Delay = 1.34> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 110 [1/1] (0.00ns)   --->   "%newret = insertvalue i128 <undef>, i16 %add_ln45" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 110 'insertvalue' 'newret' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 111 [1/1] (0.00ns)   --->   "%newret2 = insertvalue i128 %newret, i16 %add_ln45_8" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 111 'insertvalue' 'newret2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 112 [1/1] (0.00ns)   --->   "%newret4 = insertvalue i128 %newret2, i16 %add_ln45_9" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 112 'insertvalue' 'newret4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 113 [1/1] (0.00ns)   --->   "%newret6 = insertvalue i128 %newret4, i16 %add_ln45_10" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 113 'insertvalue' 'newret6' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 114 [1/1] (0.00ns)   --->   "%newret8 = insertvalue i128 %newret6, i16 %add_ln45_11" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 114 'insertvalue' 'newret8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 115 [1/1] (0.00ns)   --->   "%newret10 = insertvalue i128 %newret8, i16 %add_ln45_12" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 115 'insertvalue' 'newret10' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 116 [1/1] (0.00ns)   --->   "%newret12 = insertvalue i128 %newret10, i16 %add_ln45_13" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 116 'insertvalue' 'newret12' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 117 [1/1] (0.00ns)   --->   "%newret14 = insertvalue i128 %newret12, i16 %add_ln45_14" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 117 'insertvalue' 'newret14' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 118 [1/1] (0.00ns)   --->   "%ret_ln45 = ret i128 %newret14" [../task_detection_tpu/tpu_accel.cpp:45]   --->   Operation 118 'ret' 'ret_ln45' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 1.346ns
+The critical path consists of the following:
+	wire read operation ('Y_acc_0_read_2') on port 'Y_acc_0_read' [88]  (0.000 ns)
+	'add' operation 16 bit ('add_ln45', ../task_detection_tpu/tpu_accel.cpp:45) [178]  (1.346 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

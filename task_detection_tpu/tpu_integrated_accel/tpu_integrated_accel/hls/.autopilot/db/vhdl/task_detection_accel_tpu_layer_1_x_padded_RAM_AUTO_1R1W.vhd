@@ -12,8 +12,8 @@ entity task_detection_accel_tpu_layer_1_x_padded_RAM_AUTO_1R1W is
     generic(
         MEM_TYPE        : string    := "auto";
         DataWidth       : integer   := 16;
-        AddressWidth    : integer   := 8;
-        AddressRange    : integer   := 184
+        AddressWidth    : integer   := 5;
+        AddressRange    : integer   := 23
     );
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0);

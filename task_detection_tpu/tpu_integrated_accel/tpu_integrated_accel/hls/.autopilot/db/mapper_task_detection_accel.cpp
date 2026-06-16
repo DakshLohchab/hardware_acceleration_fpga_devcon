@@ -248,10 +248,10 @@ extern "C" void apatb_task_detection_accel_hw(volatile void * __xlx_apatb_param_
 using hls::sim::createStream;
   // Collect __xlx_input_r__tmp_vec
 std::vector<Byte<4>> __xlx_input_r__tmp_vec;
-for (size_t i = 0; i < 1; ++i){
+for (size_t i = 0; i < 180; ++i){
 __xlx_input_r__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_input_r)[i]);
 }
-  int __xlx_size_param_input_r = 1;
+  int __xlx_size_param_input_r = 180;
   int __xlx_offset_param_input_r = 0;
   int __xlx_offset_byte_param_input_r = 0*4;
   // Collect __xlx_output_r__tmp_vec

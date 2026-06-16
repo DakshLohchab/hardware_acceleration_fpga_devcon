@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'task_detection_accel'" level="0">
-<item name = "Date">Mon Jun 15 23:15:06 2026
+<item name = "Date">Tue Jun 16 19:43:10 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">tpu_integrated_accel</item>
@@ -24,36 +24,25 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">66434, 154572, 0.664 ms, 1.546 ms, 66435, 154573, no</column>
+<column name="">2798, 49906, 27.980 us, 0.499 ms, 2787, 49895, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_170_1_fu_1197">task_detection_accel_Pipeline_VITIS_LOOP_170_1, 185, 185, 1.850 us, 1.850 us, 0, 0, loop pipeline stp</column>
-<column name="grp_tpu_layer_1_fu_1205">tpu_layer_1, 35521, 82629, 0.355 ms, 0.826 ms, 35521, 82629, no</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_84_1_fu_1523">task_detection_accel_Pipeline_VITIS_LOOP_84_1, 130, 130, 1.300 us, 1.300 us, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VI_fu_1529">task_detection_accel_Pipeline_VITIS_LOOP_85_2_VITIS_LOOP_86_3_VITIS_LOOP_87_4_VI, 32770, 32770, 0.328 ms, 0.328 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_115_1_fu_1549">task_detection_accel_Pipeline_VITIS_LOOP_115_1, 66, 66, 0.660 us, 0.660 us, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4_fu_1555">task_detection_accel_Pipeline_VITIS_LOOP_116_2_VITIS_LOOP_117_3_VITIS_LOOP_118_4, 8194, 8194, 81.940 us, 81.940 us, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_4_fu_1575">task_detection_accel_Pipeline_4, 8, 8, 80.000 ns, 80.000 ns, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_97_8_fu_1580">task_detection_accel_Pipeline_VITIS_LOOP_97_8, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_103_10_fu_1668">task_detection_accel_Pipeline_VITIS_LOOP_103_10, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
-<column name="grp_run_mac_tile_fu_1677">run_mac_tile, 33, 33, 0.330 us, 0.330 us, 33, 33, no</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_146_1_fu_2039">task_detection_accel_Pipeline_VITIS_LOOP_146_1, 66, 66, 0.660 us, 0.660 us, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_9_fu_2045">task_detection_accel_Pipeline_9, 8, 8, 80.000 ns, 80.000 ns, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_128_8_fu_2050">task_detection_accel_Pipeline_VITIS_LOOP_128_8, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_134_10_fu_2138">task_detection_accel_Pipeline_VITIS_LOOP_134_10, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
-<column name="grp_task_detection_accel_Pipeline_VITIS_LOOP_151_2_fu_2147">task_detection_accel_Pipeline_VITIS_LOOP_151_2, 69, 69, 0.690 us, 0.690 us, 0, 0, loop pipeline stp</column>
+<column name="call_ln395_entry_proc_fu_3264">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_Loop_VITIS_LOOP_402_1_proc_fu_3271">Loop_VITIS_LOOP_402_1_proc, 193, 193, 1.930 us, 1.930 us, 180, 180, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_tpu_layer_1_fu_3280">tpu_layer_1, 2786, 49894, 27.860 us, 0.499 ms, 2786, 49894, no</column>
+<column name="grp_tpu_layer_2_fu_4328">tpu_layer_2, 1994, 34764, 19.940 us, 0.348 ms, 1994, 34764, no</column>
+<column name="grp_tpu_layer_3_fu_5376">tpu_layer_3, 614, 8808, 6.140 us, 88.080 us, 614, 8808, no</column>
+<column name="grp_scalar_layer_4_fu_6424">scalar_layer_4, 73, 139, 0.730 us, 1.390 us, 73, 139, no</column>
+<column name="grp_Block_for_end_proc_fu_6433">Block_for_end_proc, 1, 1, 10.000 ns, 10.000 ns, 1, 1, no</column>
+<column name="grp_Block_entry_proc_fu_6438">Block_entry_proc, 7, 7, 70.000 ns, 70.000 ns, 7, 7, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_93_6">24432, 24432, 1527, -, -, 16, no</column>
-<column name=" + VITIS_LOOP_95_7">1504, 1504, 47, -, -, 32, no</column>
-<column name="- VITIS_LOOP_124_6">6200, 6200, 775, -, -, 8, no</column>
-<column name=" + VITIS_LOOP_126_7">752, 752, 47, -, -, 16, no</column>
 </table>
 </item>
 </section>

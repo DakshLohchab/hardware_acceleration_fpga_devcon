@@ -54839,7 +54839,136 @@ operator/(const complex<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> &__x, cons
 }
 # 491 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/ap_fixed.h" 2
 # 5 "../task_detection_tpu/types.h" 2
+# 1 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream.h" 1
+# 13 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream.h"
+# 1 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream_39.h" 1
+# 23 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream_39.h"
+namespace hls {
+# 49 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream_39.h"
+template<typename __STREAM_T__, int DEPTH=0>
+class stream;
 
+template<typename __STREAM_T__>
+class stream<__STREAM_T__, 0>
+{
+  public:
+    using value_type = __STREAM_T__;
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+      (void)(name);
+    }
+
+
+  private:
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream& operator= (const stream< __STREAM_T__ >& chn) {
+        V = chn.V;
+        return *this;
+    }
+
+  public:
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator >> (__STREAM_T__& rdata) {
+        read(rdata);
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator << (const __STREAM_T__& wdata) {
+        write(wdata);
+    }
+
+
+  public:
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool empty() const {
+        return !__fpga_fifo_not_empty(&V);
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool full() const {
+        return !__fpga_fifo_not_full(&V);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void read(__STREAM_T__& dout) {
+        __fpga_fifo_pop(&V, &dout);
+    }
+
+
+    inline __attribute__((noinline)) __attribute__((nodebug)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
+        __fpga_fifo_pop(&V, &dout);
+        return flag;
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) __STREAM_T__ read() {
+        __STREAM_T__ tmp;
+        read(tmp);
+        return tmp;
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool read_nb(__STREAM_T__& dout) {
+        __STREAM_T__ tmp;
+
+        if (__fpga_fifo_nb_pop(&V, &tmp)) {
+            dout = tmp;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void write(const __STREAM_T__& din) {
+        __fpga_fifo_push(&V, &din);
+    }
+
+
+    inline __attribute__((noinline)) __attribute__((nodebug)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
+        __fpga_fifo_push(&V, &din);
+        return flag;
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool write_nb(const __STREAM_T__& din) {
+        return __fpga_fifo_nb_push(&V, &din);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned size() const {
+        return __fpga_fifo_size(&V);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned capacity() const {
+        return __fpga_fifo_capacity(&V);
+    }
+
+
+    void set_name(const char* name) { (void)(name); }
+
+  public:
+    __STREAM_T__ V __attribute__((no_ctor));
+};
+
+template<typename __STREAM_T__, int DEPTH>
+class stream : public stream<__STREAM_T__, 0> {
+  public:
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+#pragma HLS stream variable=this depth=DEPTH
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+#pragma HLS stream variable=this depth=DEPTH
+      (void)(name);
+    }
+};
+}
+# 14 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream.h" 2
+# 6 "../task_detection_tpu/types.h" 2
 
 typedef ap_fixed<16,6> data_t;
 # 5 "../task_detection_tpu/pe.h" 2
@@ -54853,12 +54982,60 @@ void mac_pe(
 );
 # 5 "../task_detection_tpu/systolic_8x8.h" 2
 
+
+template<int INSTANCE>
 void systolic_8x8(
     data_t A_in[8],
     data_t B_in[8],
     data_t C_out[8][8],
     bool reset
-);
+)
+{
+#pragma HLS PIPELINE II=1
+
+    static data_t acc[8][8];
+#pragma HLS ARRAY_PARTITION variable=acc complete dim=0
+
+    static data_t a_wire[8][9];
+#pragma HLS ARRAY_PARTITION variable=a_wire complete dim=0
+
+    static data_t b_wire[9][8];
+#pragma HLS ARRAY_PARTITION variable=b_wire complete dim=0
+
+    if (reset) {
+        VITIS_LOOP_27_1: for(int i = 0; i < 8; i++) {
+#pragma HLS UNROLL
+            VITIS_LOOP_29_2: for(int j = 0; j < 9; j++) {
+#pragma HLS UNROLL
+                a_wire[i][j] = 0;
+                b_wire[j][i] = 0;
+            }
+        }
+    }
+
+    VITIS_LOOP_37_3: for(int i = 0; i < 8; i++) {
+#pragma HLS UNROLL
+        a_wire[i][0] = A_in[i];
+        b_wire[0][i] = B_in[i];
+    }
+
+    VITIS_LOOP_43_4: for(int i = 7; i >= 0; i--) {
+#pragma HLS UNROLL
+        VITIS_LOOP_45_5: for(int j = 7; j >= 0; j--) {
+#pragma HLS UNROLL
+            if (reset) acc[i][j] = 0;
+            mac_pe(a_wire[i][j], b_wire[i][j], a_wire[i][j+1], b_wire[i+1][j], acc[i][j]);
+        }
+    }
+
+    VITIS_LOOP_52_6: for(int i = 0; i < 8; i++) {
+#pragma HLS UNROLL
+        VITIS_LOOP_54_7: for(int j = 0; j < 8; j++) {
+#pragma HLS UNROLL
+            C_out[i][j] = acc[i][j];
+        }
+    }
+}
 # 5 "../task_detection_tpu/tpu_accel.h" 2
 
 extern "C" {
@@ -54874,36 +55051,44 @@ extern "C" {
 
 
 
+template<int INSTANCE>
 void run_mac_tile(data_t W[8][8], data_t X[8], data_t Y_acc[8]) {
+#pragma HLS ARRAY_PARTITION variable=W complete dim=0
+#pragma HLS ARRAY_PARTITION variable=X complete dim=0
+#pragma HLS ARRAY_PARTITION variable=Y_acc complete dim=0
+
     data_t A_in[8], B_in[8], C_out[8][8];
 
-    VITIS_LOOP_9_1: for(int i = 0; i < 8; i++) {
+    VITIS_LOOP_14_1: for(int i = 0; i < 8; i++) {
 #pragma HLS UNROLL
         A_in[i] = 0;
         B_in[i] = 0;
     }
-    systolic_8x8(A_in, B_in, C_out, true);
+    systolic_8x8<INSTANCE>(A_in, B_in, C_out, true);
 
 PUMP_LOOP:
-
     for (int cycle = 0; cycle < 15; cycle++) {
 #pragma HLS PIPELINE II=1
-        VITIS_LOOP_20_2: for (int i = 0; i < 8; i++) {
+        VITIS_LOOP_24_2: for (int i = 0; i < 8; i++) {
 #pragma HLS UNROLL
             A_in[i] = (cycle - i >= 0 && cycle - i < 8) ? W[i][cycle - i] : (data_t)0;
             B_in[i] = (i == 0 && cycle < 8) ? X[cycle] : (data_t)0;
         }
-        systolic_8x8(A_in, B_in, C_out, false);
+        systolic_8x8<INSTANCE>(A_in, B_in, C_out, false);
     }
 
 FLUSH_LOOP:
     for (int cycle = 0; cycle < 2; cycle++) {
 #pragma HLS PIPELINE II=1
-        VITIS_LOOP_31_3: for(int i = 0; i < 8; i++) { A_in[i] = 0; B_in[i] = 0; }
-        systolic_8x8(A_in, B_in, C_out, false);
+        VITIS_LOOP_35_3: for(int i = 0; i < 8; i++) {
+#pragma HLS UNROLL
+            A_in[i] = 0;
+            B_in[i] = 0;
+        }
+        systolic_8x8<INSTANCE>(A_in, B_in, C_out, false);
     }
 
-    VITIS_LOOP_35_4: for (int i = 0; i < 8; i++) {
+    VITIS_LOOP_43_4: for (int i = 0; i < 8; i++) {
 #pragma HLS UNROLL
         Y_acc[i] += C_out[i][0];
     }
@@ -54912,116 +55097,334 @@ FLUSH_LOOP:
 
 
 
-void tpu_layer_1(data_t input[180], data_t output[256]) {
+void tpu_layer_1(hls::stream<data_t>& in_stream, hls::stream<data_t>& out_stream) {
     data_t x_padded[184];
-    VITIS_LOOP_46_1: for (int i = 0; i < 180; i++) x_padded[i] = input[i];
-    VITIS_LOOP_47_2: for (int i = 180; i < 184; i++) x_padded[i] = 0;
+#pragma HLS ARRAY_PARTITION variable=x_padded cyclic factor=8 dim=1
+
+    VITIS_LOOP_56_1: for (int i = 0; i < 180; i++) {
+#pragma HLS PIPELINE II=1
+        x_padded[i] = in_stream.read();
+    }
+    VITIS_LOOP_60_2: for (int i = 180; i < 184; i++) {
+#pragma HLS UNROLL
+        x_padded[i] = 0;
+    }
 
     static data_t weights[32][23][8][8];
+#pragma HLS ARRAY_PARTITION variable=weights cyclic factor=8 dim=1
+#pragma HLS ARRAY_PARTITION variable=weights complete dim=3
+#pragma HLS ARRAY_PARTITION variable=weights complete dim=4
+
     static data_t bias[256];
+#pragma HLS ARRAY_PARTITION variable=bias cyclic factor=8 dim=1
+
     static bool init = false;
     if (!init) {
-        VITIS_LOOP_53_3: for(int i = 0; i < 256; i++) bias[i] = 0.0f;
-        VITIS_LOOP_54_4: for(int o = 0; o < 32; o++)
-            VITIS_LOOP_55_5: for(int i = 0; i < 23; i++)
-                VITIS_LOOP_56_6: for(int r = 0; r < 8; r++)
-                    VITIS_LOOP_57_7: for(int c = 0; c < 8; c++)
+        VITIS_LOOP_75_3: for(int i = 0; i < 256; i++) bias[i] = 0.0f;
+        VITIS_LOOP_76_4: for(int o = 0; o < 32; o++) {
+            VITIS_LOOP_77_5: for(int i = 0; i < 23; i++) {
+                VITIS_LOOP_78_6: for(int r = 0; r < 8; r++) {
+                    VITIS_LOOP_79_7: for(int c = 0; c < 8; c++) {
                         weights[o][i][r][c] = 0.01f;
+                    }
+                }
+            }
+        }
         init = true;
     }
 
-    VITIS_LOOP_62_8: for (int out_t = 0; out_t < 32; out_t++) {
-        data_t y_tile[8] = {0};
-        VITIS_LOOP_64_9: for (int in_t = 0; in_t < 23; in_t++) {
-            data_t w_tile[8][8], x_tile[8];
-            VITIS_LOOP_66_10: for(int i = 0; i < 8; i++) {
+
+    VITIS_LOOP_89_8: for (int out_t = 0; out_t < 32; out_t += 8) {
+        data_t y_tile_0[8] = {0}, y_tile_1[8] = {0}, y_tile_2[8] = {0}, y_tile_3[8] = {0};
+        data_t y_tile_4[8] = {0}, y_tile_5[8] = {0}, y_tile_6[8] = {0}, y_tile_7[8] = {0};
+
+        VITIS_LOOP_93_9: for (int in_t = 0; in_t < 23; in_t++) {
+            data_t w_tile_0[8][8], w_tile_1[8][8], w_tile_2[8][8], w_tile_3[8][8];
+            data_t w_tile_4[8][8], w_tile_5[8][8], w_tile_6[8][8], w_tile_7[8][8], x_tile[8];
+
+            VITIS_LOOP_97_10: for(int i = 0; i < 8; i++) {
+#pragma HLS UNROLL
                 x_tile[i] = x_padded[in_t * 8 + i];
-                VITIS_LOOP_68_11: for(int j = 0; j < 8; j++) w_tile[i][j] = weights[out_t][in_t][i][j];
+                VITIS_LOOP_100_11: for(int j = 0; j < 8; j++) {
+#pragma HLS UNROLL
+                    w_tile_0[i][j] = weights[out_t][in_t][i][j];
+                    w_tile_1[i][j] = weights[out_t + 1][in_t][i][j];
+                    w_tile_2[i][j] = weights[out_t + 2][in_t][i][j];
+                    w_tile_3[i][j] = weights[out_t + 3][in_t][i][j];
+                    w_tile_4[i][j] = weights[out_t + 4][in_t][i][j];
+                    w_tile_5[i][j] = weights[out_t + 5][in_t][i][j];
+                    w_tile_6[i][j] = weights[out_t + 6][in_t][i][j];
+                    w_tile_7[i][j] = weights[out_t + 7][in_t][i][j];
+                }
             }
-            run_mac_tile(w_tile, x_tile, y_tile);
+
+            run_mac_tile<0>(w_tile_0, x_tile, y_tile_0);
+            run_mac_tile<1>(w_tile_1, x_tile, y_tile_1);
+            run_mac_tile<2>(w_tile_2, x_tile, y_tile_2);
+            run_mac_tile<3>(w_tile_3, x_tile, y_tile_3);
+            run_mac_tile<4>(w_tile_4, x_tile, y_tile_4);
+            run_mac_tile<5>(w_tile_5, x_tile, y_tile_5);
+            run_mac_tile<6>(w_tile_6, x_tile, y_tile_6);
+            run_mac_tile<7>(w_tile_7, x_tile, y_tile_7);
         }
-        VITIS_LOOP_72_12: for (int i = 0; i < 8; i++) output[out_t * 8 + i] = y_tile[i] + bias[out_t * 8 + i];
+
+        VITIS_LOOP_123_12: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_0[i] + bias[out_t * 8 + i]);
+        }
+        VITIS_LOOP_127_13: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_1[i] + bias[(out_t + 1) * 8 + i]);
+        }
+        VITIS_LOOP_131_14: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_2[i] + bias[(out_t + 2) * 8 + i]);
+        }
+        VITIS_LOOP_135_15: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_3[i] + bias[(out_t + 3) * 8 + i]);
+        }
+        VITIS_LOOP_139_16: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_4[i] + bias[(out_t + 4) * 8 + i]);
+        }
+        VITIS_LOOP_143_17: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_5[i] + bias[(out_t + 5) * 8 + i]);
+        }
+        VITIS_LOOP_147_18: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_6[i] + bias[(out_t + 6) * 8 + i]);
+        }
+        VITIS_LOOP_151_19: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_7[i] + bias[(out_t + 7) * 8 + i]);
+        }
     }
 }
 
 
 
 
-void tpu_layer_2(data_t input[256], data_t output[128]) {
+void tpu_layer_2(hls::stream<data_t>& in_stream, hls::stream<data_t>& out_stream) {
+    data_t local_in[256];
+#pragma HLS ARRAY_PARTITION variable=local_in cyclic factor=8 dim=1
+
+    VITIS_LOOP_165_1: for(int i = 0; i < 256; i++) {
+#pragma HLS PIPELINE II=1
+        local_in[i] = in_stream.read();
+    }
+
     static data_t weights[16][32][8][8];
+#pragma HLS ARRAY_PARTITION variable=weights cyclic factor=8 dim=1
+#pragma HLS ARRAY_PARTITION variable=weights complete dim=3
+#pragma HLS ARRAY_PARTITION variable=weights complete dim=4
+
     static data_t bias[128];
+#pragma HLS ARRAY_PARTITION variable=bias cyclic factor=8 dim=1
+
     static bool init = false;
     if (!init) {
-        VITIS_LOOP_84_1: for(int i = 0; i < 128; i++) bias[i] = 0.0f;
-        VITIS_LOOP_85_2: for(int o = 0; o < 16; o++)
-            VITIS_LOOP_86_3: for(int i = 0; i < 32; i++)
-                VITIS_LOOP_87_4: for(int r = 0; r < 8; r++)
-                    VITIS_LOOP_88_5: for(int c = 0; c < 8; c++)
+        VITIS_LOOP_180_2: for(int i = 0; i < 128; i++) bias[i] = 0.0f;
+        VITIS_LOOP_181_3: for(int o = 0; o < 16; o++) {
+            VITIS_LOOP_182_4: for(int i = 0; i < 32; i++) {
+                VITIS_LOOP_183_5: for(int r = 0; r < 8; r++) {
+                    VITIS_LOOP_184_6: for(int c = 0; c < 8; c++) {
                         weights[o][i][r][c] = 0.01f;
+                    }
+                }
+            }
+        }
         init = true;
     }
 
-    VITIS_LOOP_93_6: for (int out_t = 0; out_t < 16; out_t++) {
-        data_t y_tile[8] = {0};
-        VITIS_LOOP_95_7: for (int in_t = 0; in_t < 32; in_t++) {
-            data_t w_tile[8][8], x_tile[8];
-            VITIS_LOOP_97_8: for(int i = 0; i < 8; i++) {
-                x_tile[i] = input[in_t * 8 + i];
-                VITIS_LOOP_99_9: for(int j = 0; j < 8; j++) w_tile[i][j] = weights[out_t][in_t][i][j];
+
+    VITIS_LOOP_194_7: for (int out_t = 0; out_t < 16; out_t += 8) {
+        data_t y_tile_0[8] = {0}, y_tile_1[8] = {0}, y_tile_2[8] = {0}, y_tile_3[8] = {0};
+        data_t y_tile_4[8] = {0}, y_tile_5[8] = {0}, y_tile_6[8] = {0}, y_tile_7[8] = {0};
+
+        VITIS_LOOP_198_8: for (int in_t = 0; in_t < 32; in_t++) {
+            data_t w_tile_0[8][8], w_tile_1[8][8], w_tile_2[8][8], w_tile_3[8][8];
+            data_t w_tile_4[8][8], w_tile_5[8][8], w_tile_6[8][8], w_tile_7[8][8], x_tile[8];
+            VITIS_LOOP_201_9: for(int i = 0; i < 8; i++) {
+#pragma HLS UNROLL
+                x_tile[i] = local_in[in_t * 8 + i];
+                VITIS_LOOP_204_10: for(int j = 0; j < 8; j++) {
+#pragma HLS UNROLL
+                    w_tile_0[i][j] = weights[out_t][in_t][i][j];
+                    w_tile_1[i][j] = weights[out_t + 1][in_t][i][j];
+                    w_tile_2[i][j] = weights[out_t + 2][in_t][i][j];
+                    w_tile_3[i][j] = weights[out_t + 3][in_t][i][j];
+                    w_tile_4[i][j] = weights[out_t + 4][in_t][i][j];
+                    w_tile_5[i][j] = weights[out_t + 5][in_t][i][j];
+                    w_tile_6[i][j] = weights[out_t + 6][in_t][i][j];
+                    w_tile_7[i][j] = weights[out_t + 7][in_t][i][j];
+                }
             }
-            run_mac_tile(w_tile, x_tile, y_tile);
+            run_mac_tile<0>(w_tile_0, x_tile, y_tile_0);
+            run_mac_tile<1>(w_tile_1, x_tile, y_tile_1);
+            run_mac_tile<2>(w_tile_2, x_tile, y_tile_2);
+            run_mac_tile<3>(w_tile_3, x_tile, y_tile_3);
+            run_mac_tile<4>(w_tile_4, x_tile, y_tile_4);
+            run_mac_tile<5>(w_tile_5, x_tile, y_tile_5);
+            run_mac_tile<6>(w_tile_6, x_tile, y_tile_6);
+            run_mac_tile<7>(w_tile_7, x_tile, y_tile_7);
         }
-        VITIS_LOOP_103_10: for (int i = 0; i < 8; i++) output[out_t * 8 + i] = y_tile[i] + bias[out_t * 8 + i];
+
+        VITIS_LOOP_226_11: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_0[i] + bias[out_t * 8 + i]);
+        }
+        VITIS_LOOP_230_12: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_1[i] + bias[(out_t + 1) * 8 + i]);
+        }
+        VITIS_LOOP_234_13: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_2[i] + bias[(out_t + 2) * 8 + i]);
+        }
+        VITIS_LOOP_238_14: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_3[i] + bias[(out_t + 3) * 8 + i]);
+        }
+        VITIS_LOOP_242_15: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_4[i] + bias[(out_t + 4) * 8 + i]);
+        }
+        VITIS_LOOP_246_16: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_5[i] + bias[(out_t + 5) * 8 + i]);
+        }
+        VITIS_LOOP_250_17: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_6[i] + bias[(out_t + 6) * 8 + i]);
+        }
+        VITIS_LOOP_254_18: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_7[i] + bias[(out_t + 7) * 8 + i]);
+        }
     }
 }
 
 
 
 
-void tpu_layer_3(data_t input[128], data_t output[64]) {
+void tpu_layer_3(hls::stream<data_t>& in_stream, hls::stream<data_t>& out_stream) {
+    data_t local_in[128];
+#pragma HLS ARRAY_PARTITION variable=local_in cyclic factor=8 dim=1
+
+    VITIS_LOOP_268_1: for(int i = 0; i < 128; i++) {
+#pragma HLS PIPELINE II=1
+        local_in[i] = in_stream.read();
+    }
+
     static data_t weights[8][16][8][8];
+#pragma HLS ARRAY_PARTITION variable=weights cyclic factor=8 dim=1
+#pragma HLS ARRAY_PARTITION variable=weights complete dim=3
+#pragma HLS ARRAY_PARTITION variable=weights complete dim=4
+
     static data_t bias[64];
+#pragma HLS ARRAY_PARTITION variable=bias cyclic factor=8 dim=1
+
     static bool init = false;
     if (!init) {
-        VITIS_LOOP_115_1: for(int i = 0; i < 64; i++) bias[i] = 0.0f;
-        VITIS_LOOP_116_2: for(int o = 0; o < 8; o++)
-            VITIS_LOOP_117_3: for(int i = 0; i < 16; i++)
-                VITIS_LOOP_118_4: for(int r = 0; r < 8; r++)
-                    VITIS_LOOP_119_5: for(int c = 0; c < 8; c++)
+        VITIS_LOOP_283_2: for(int i = 0; i < 64; i++) bias[i] = 0.0f;
+        VITIS_LOOP_284_3: for(int o = 0; o < 8; o++) {
+            VITIS_LOOP_285_4: for(int i = 0; i < 16; i++) {
+                VITIS_LOOP_286_5: for(int r = 0; r < 8; r++) {
+                    VITIS_LOOP_287_6: for(int c = 0; c < 8; c++) {
                         weights[o][i][r][c] = 0.01f;
+                    }
+                }
+            }
+        }
         init = true;
     }
 
-    VITIS_LOOP_124_6: for (int out_t = 0; out_t < 8; out_t++) {
-        data_t y_tile[8] = {0};
-        VITIS_LOOP_126_7: for (int in_t = 0; in_t < 16; in_t++) {
-            data_t w_tile[8][8], x_tile[8];
-            VITIS_LOOP_128_8: for(int i = 0; i < 8; i++) {
-                x_tile[i] = input[in_t * 8 + i];
-                VITIS_LOOP_130_9: for(int j = 0; j < 8; j++) w_tile[i][j] = weights[out_t][in_t][i][j];
+
+    VITIS_LOOP_297_7: for (int out_t = 0; out_t < 8; out_t += 8) {
+        data_t y_tile_0[8] = {0}, y_tile_1[8] = {0}, y_tile_2[8] = {0}, y_tile_3[8] = {0};
+        data_t y_tile_4[8] = {0}, y_tile_5[8] = {0}, y_tile_6[8] = {0}, y_tile_7[8] = {0};
+
+        VITIS_LOOP_301_8: for (int in_t = 0; in_t < 16; in_t++) {
+            data_t w_tile_0[8][8], w_tile_1[8][8], w_tile_2[8][8], w_tile_3[8][8];
+            data_t w_tile_4[8][8], w_tile_5[8][8], w_tile_6[8][8], w_tile_7[8][8], x_tile[8];
+            VITIS_LOOP_304_9: for(int i = 0; i < 8; i++) {
+#pragma HLS UNROLL
+                x_tile[i] = local_in[in_t * 8 + i];
+                VITIS_LOOP_307_10: for(int j = 0; j < 8; j++) {
+#pragma HLS UNROLL
+                    w_tile_0[i][j] = weights[out_t][in_t][i][j];
+                    w_tile_1[i][j] = weights[out_t + 1][in_t][i][j];
+                    w_tile_2[i][j] = weights[out_t + 2][in_t][i][j];
+                    w_tile_3[i][j] = weights[out_t + 3][in_t][i][j];
+                    w_tile_4[i][j] = weights[out_t + 4][in_t][i][j];
+                    w_tile_5[i][j] = weights[out_t + 5][in_t][i][j];
+                    w_tile_6[i][j] = weights[out_t + 6][in_t][i][j];
+                    w_tile_7[i][j] = weights[out_t + 7][in_t][i][j];
+                }
             }
-            run_mac_tile(w_tile, x_tile, y_tile);
+            run_mac_tile<0>(w_tile_0, x_tile, y_tile_0);
+            run_mac_tile<1>(w_tile_1, x_tile, y_tile_1);
+            run_mac_tile<2>(w_tile_2, x_tile, y_tile_2);
+            run_mac_tile<3>(w_tile_3, x_tile, y_tile_3);
+            run_mac_tile<4>(w_tile_4, x_tile, y_tile_4);
+            run_mac_tile<5>(w_tile_5, x_tile, y_tile_5);
+            run_mac_tile<6>(w_tile_6, x_tile, y_tile_6);
+            run_mac_tile<7>(w_tile_7, x_tile, y_tile_7);
         }
-        VITIS_LOOP_134_10: for (int i = 0; i < 8; i++) output[out_t * 8 + i] = y_tile[i] + bias[out_t * 8 + i];
+
+        VITIS_LOOP_329_11: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_0[i] + bias[out_t * 8 + i]);
+        }
+        VITIS_LOOP_333_12: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_1[i] + bias[(out_t + 1) * 8 + i]);
+        }
+        VITIS_LOOP_337_13: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_2[i] + bias[(out_t + 2) * 8 + i]);
+        }
+        VITIS_LOOP_341_14: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_3[i] + bias[(out_t + 3) * 8 + i]);
+        }
+        VITIS_LOOP_345_15: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_4[i] + bias[(out_t + 4) * 8 + i]);
+        }
+        VITIS_LOOP_349_16: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_5[i] + bias[(out_t + 5) * 8 + i]);
+        }
+        VITIS_LOOP_353_17: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_6[i] + bias[(out_t + 6) * 8 + i]);
+        }
+        VITIS_LOOP_357_18: for(int i = 0; i < 8; i++) {
+#pragma HLS PIPELINE II=1
+            out_stream.write(y_tile_7[i] + bias[(out_t + 7) * 8 + i]);
+        }
     }
 }
 
 
 
 
-void scalar_layer_4(data_t input[64], data_t &output) {
+void scalar_layer_4(hls::stream<data_t>& in_stream, data_t &output) {
     static data_t weights[64];
     static data_t bias = 0.0f;
     static bool init = false;
     if (!init) {
-        VITIS_LOOP_146_1: for(int i = 0; i < 64; i++) weights[i] = 0.01f;
+        VITIS_LOOP_372_1: for(int i = 0; i < 64; i++) weights[i] = 0.01f;
         init = true;
     }
 
     data_t acc = bias;
-    VITIS_LOOP_151_2: for(int i = 0; i < 64; i++) {
+    VITIS_LOOP_377_2: for(int i = 0; i < 64; i++) {
 #pragma HLS PIPELINE II=1
-        acc += input[i] * weights[i];
+        acc += in_stream.read() * weights[i];
     }
     output = acc;
 }
@@ -55033,28 +55436,32 @@ extern "C" {
 __attribute__((sdx_kernel("task_detection_accel", 0))) void task_detection_accel(float* input, float* output, int task_id, int top_k) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=task_detection_accel
-# 162 "../task_detection_tpu/tpu_accel.cpp"
+# 388 "../task_detection_tpu/tpu_accel.cpp"
 
-#pragma HLS INTERFACE m_axi port=input offset=slave bundle=gmem0
-#pragma HLS INTERFACE m_axi port=output offset=slave bundle=gmem1
+#pragma HLS INTERFACE m_axi port=input offset=slave bundle=gmem0 depth=180
+#pragma HLS INTERFACE m_axi port=output offset=slave bundle=gmem1 depth=1
 #pragma HLS INTERFACE s_axilite port=task_id bundle=control
 #pragma HLS INTERFACE s_axilite port=top_k bundle=control
 #pragma HLS INTERFACE s_axilite port=return bundle=control
 
-    data_t in_buf[180];
-    VITIS_LOOP_170_1: for(int i = 0; i < 180; i++) in_buf[i] = input[i];
+#pragma HLS DATAFLOW
 
-    data_t l1_out[256];
-    tpu_layer_1(in_buf, l1_out);
+    hls::stream<data_t> stream_in("stream_in");
+    hls::stream<data_t> stream_l1_to_l2("stream_l1_to_l2");
+    hls::stream<data_t> stream_l2_to_l3("stream_l2_to_l3");
+    hls::stream<data_t> stream_l3_to_l4("stream_l3_to_l4");
 
-    data_t l2_out[128];
-    tpu_layer_2(l1_out, l2_out);
+    VITIS_LOOP_402_1: for(int i = 0; i < 180; i++) {
+#pragma HLS PIPELINE II=1
+        stream_in.write(input[i]);
+    }
 
-    data_t l3_out[64];
-    tpu_layer_3(l2_out, l3_out);
+    tpu_layer_1(stream_in, stream_l1_to_l2);
+    tpu_layer_2(stream_l1_to_l2, stream_l2_to_l3);
+    tpu_layer_3(stream_l2_to_l3, stream_l3_to_l4);
 
     data_t l4_out;
-    scalar_layer_4(l3_out, l4_out);
+    scalar_layer_4(stream_l3_to_l4, l4_out);
 
     output[0] = (float)l4_out;
 }

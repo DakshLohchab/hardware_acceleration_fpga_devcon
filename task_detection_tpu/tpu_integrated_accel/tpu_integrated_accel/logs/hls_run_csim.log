@@ -9,8 +9,6 @@ INFO: [HLS 200-1465] Applying config ini 'syn.file=../task_detection_tpu/tpu_acc
 INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp' to the project
 INFO: [HLS 200-1465] Applying config ini 'syn.file=../task_detection_tpu/pe.cpp' from hls_config.cfg(10)
 INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/pe.cpp' to the project
-INFO: [HLS 200-1465] Applying config ini 'syn.file=../task_detection_tpu/systolic_8x8.cpp' from hls_config.cfg(11)
-INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.cpp' to the project
 INFO: [HLS 200-1465] Applying config ini 'tb.file=../task_detection_tpu/tpu_accel_tb.cpp' from hls_config.cfg(7)
 INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel_tb.cpp' to the project
 INFO: [HLS 200-1465] Applying config ini 'syn.top=task_detection_accel' from hls_config.cfg(8)
@@ -24,12 +22,12 @@ INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Ve
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
 INFO: [HLS 200-2036] Building debug C Simulation binaries
-   Compiling ../../../../../task_detection_tpu/tpu_accel_tb.cpp in debug mode
    Compiling ../../../../../task_detection_tpu/tpu_accel.cpp in debug mode
    Generating csim.exe
 --- Starting Full TPU Network Simulation ---
 Final Network Output: 3.25
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 256
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-112] Total CPU user time: 11.96 seconds. Total CPU system time: 1.26 seconds. Total elapsed time: 20.18 seconds; peak allocated memory: 275.426 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 32s
+INFO: [HLS 200-112] Total CPU user time: 9.22 seconds. Total CPU system time: 1.12 seconds. Total elapsed time: 16.29 seconds; peak allocated memory: 269.484 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 28s

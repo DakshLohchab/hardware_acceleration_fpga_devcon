@@ -18,4 +18,6 @@ obj/pe.o: ../../../../../task_detection_tpu/pe.cpp \
   /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_int_ref.h \
   /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_int_special.h \
   /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_ref.h \
-  /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_special.h
+  /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_special.h \
+  /home/dlohchab/Xilinx/2025.2/Vitis/include/hls_stream.h \
+  /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/hls_stream_common.h

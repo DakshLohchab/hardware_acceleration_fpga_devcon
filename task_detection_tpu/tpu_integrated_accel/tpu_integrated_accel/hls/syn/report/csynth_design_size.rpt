@@ -6,54 +6,116 @@
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 | Phase         | Step                       | Instructions | Description                                                                            |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                            | 13,870       | After all functions are compiled and linked into a single design                       |
+| Compile/Link  |                            |  78,653      | After all functions are compiled and linked into a single design                       |
 |               |                            |              |                                                                                        |
 | Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                 | 39,319       | user unroll pragmas are applied                                                        |
-|               | (2) simplification         | 18,600       | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                 | 18,493       | user inline pragmas are applied                                                        |
-|               | (4) simplification         | 18,478       | simplification of applied user inline pragmas                                          |
+|               | (1) unroll                 | 317,124 *    | user unroll pragmas are applied                                                        |
+|               | (2) simplification         | 152,018 *    | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 | 151,423 *    | user inline pragmas are applied                                                        |
+|               | (4) simplification         | 151,416 *    | simplification of applied user inline pragmas                                          |
 |               |                            |              |                                                                                        |
 | Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition        | 17,324       | user array partition pragmas are applied                                               |
-|               | (2) simplification         | 17,324       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate | 17,324       | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape          | 17,324       | apply array reshape pragmas                                                            |
-|               | (5) access patterns        | 17,328       | array access pattern optmizations                                                      |
+|               | (1) array partition        | 955,425 *    | user array partition pragmas are applied                                               |
+|               | (2) simplification         | 163,847 *    | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate | 163,847 *    | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          | 163,847 *    | apply array reshape pragmas                                                            |
+|               | (5) access patterns        | 164,389 *    | array access pattern optmizations                                                      |
 |               |                            |              |                                                                                        |
 | Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification    | 17,328       | loop and instruction simplification                                                    |
-|               | (2) parallelization        | 13,635       | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition        | 15,342       | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification         | 11,292       | simplification of design after performance transformations                             |
+|               | (1) loop simplification    | 154,143 *    | loop and instruction simplification                                                    |
+|               | (2) parallelization        | 123,924 *    | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        | 120,828 *    | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         |  91,932      | simplification of design after performance transformations                             |
 |               |                            |              |                                                                                        |
 | HW Transforms |                            |              | After hardware transfomations                                                          |
-|               | (1) lowering               | 11,304       | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations          |  9,439       | high level synthesis optimizations                                                     |
+|               | (1) lowering               |  91,875      | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          |  80,492      | high level synthesis optimizations                                                     |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
 
 * Instructions per Function for each Compilation Phase
-+------------------------+--------------------+-----------------+-------------------+-------------------+-----------------+-----------------+
-| Function               | Location           | Compile/Link    | Unroll/Inline     | Array/Struct      | Performance     | HW Transforms   |
-+------------------------+--------------------+-----------------+-------------------+-------------------+-----------------+-----------------+
-| + task_detection_accel | tpu_accel.cpp:162  | 13,870          | 18,478            | 17,328            | 11,292          | 9,439           |
-|  + tpu_layer_1         | tpu_accel.cpp:44   | 4,082           | 6,118             | 5,734             | 3,715           | 3,097           |
-|   + run_mac_tile       | tpu_accel.cpp:6    | 2,742           | 5,999             | 5,612             | 3,076           | 2,614           |
-|    + systolic_8x8      | systolic_8x8.cpp:7 | 2,064 (3 calls) | 5,724 (3 calls)   | 5,337 (3 calls)   |   301           |  302            |
-|       mac_pe           | pe.cpp:7           | 1,137 (3 calls) | 3,456 (192 calls) | 3,456 (192 calls) |                 |                 |
-|  + tpu_layer_2         | tpu_accel.cpp:79   | 3,993           |                   |                   |                 |                 |
-|   + run_mac_tile       | tpu_accel.cpp:6    | 2,742           |                   |                   |                 |                 |
-|    + systolic_8x8      | systolic_8x8.cpp:7 | 2,064 (3 calls) |                   |                   |                 |                 |
-|       mac_pe           | pe.cpp:7           | 1,137 (3 calls) |                   |                   |                 |                 |
-|  + tpu_layer_3         | tpu_accel.cpp:110  | 3,993           |                   |                   |                 |                 |
-|   + run_mac_tile       | tpu_accel.cpp:6    | 2,742           |                   |                   |                 |                 |
-|    + systolic_8x8      | systolic_8x8.cpp:7 | 2,064 (3 calls) |                   |                   |                 |                 |
-|       mac_pe           | pe.cpp:7           | 1,137 (3 calls) |                   |                   |                 |                 |
-|    scalar_layer_4      | tpu_accel.cpp:141  | 1,218           |                   |                   |                 |                 |
-|  + run_mac_tile        | tpu_accel.cpp:6    |                 | 11,998 (2 calls)  | 11,224 (2 calls)  | 6,152 (2 calls) | 5,228 (2 calls) |
-|   + systolic_8x8       | systolic_8x8.cpp:7 |                 | 11,448 (6 calls)  | 10,674 (6 calls)  |   602 (2 calls) |  604 (2 calls)  |
-|      mac_pe            | pe.cpp:7           |                 | 6,912 (384 calls) | 6,912 (384 calls) |                 |                 |
-+------------------------+--------------------+-----------------+-------------------+-------------------+-----------------+-----------------+
++------------------------+-------------------+-----------------+--------------------+--------------------+-------------+---------------+
+| Function               | Location          | Compile/Link    | Unroll/Inline      | Array/Struct       | Performance | HW Transforms |
++------------------------+-------------------+-----------------+--------------------+--------------------+-------------+---------------+
+| + task_detection_accel | tpu_accel.cpp:388 | 78,653          | 151,416 *          | 164,389 *          | 91,932      | 80,492        |
+|  + tpu_layer_1         | tpu_accel.cpp:52  | 25,659          | 50,431             | 54,944             | 30,793      | 26,966        |
+|   + run_mac_tile<0>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<0>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<1>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<1>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<2>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<2>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<3>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<3>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<4>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<4>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<5>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<5>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<6>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<6>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<7>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<7>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|  + tpu_layer_2         | tpu_accel.cpp:161 | 25,590          | 50,423             | 54,936             | 30,785      | 26,958        |
+|   + run_mac_tile<0>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<0>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<1>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<1>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<2>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<2>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<3>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<3>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<4>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<4>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<5>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<5>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<6>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<6>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<7>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<7>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|  + tpu_layer_3         | tpu_accel.cpp:264 | 25,590          | 50,401             | 54,342             | 30,191      | 26,361        |
+|   + run_mac_tile<0>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<0>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<1>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<1>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<2>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<2>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<3>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<3>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<4>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<4>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<5>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<5>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<6>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<6>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|   + run_mac_tile<7>    | tpu_accel.cpp:7   | 2,745           |  5,999             |  5,661             | 3,003       | 2,541         |
+|    + systolic_8x8<7>   | systolic_8x8.h:8  | 2,064 (3 calls) |  5,724 (3 calls)   |  5,337 (3 calls)   |   301       |   302         |
+|       mac_pe           | pe.cpp:7          | 1,137 (3 calls) |  3,456 (192 calls) |  3,456 (192 calls) |             |               |
+|    scalar_layer_4      | tpu_accel.cpp:367 | 1,228           |     31             |     34             |    31       |    43         |
++------------------------+-------------------+-----------------+--------------------+--------------------+-------------+---------------+
+    * - Exceeded design size warning message threshold
 
 * Design Size Message Settings
 +---------------------------------------------+--------+------------------------------------------------------------------+

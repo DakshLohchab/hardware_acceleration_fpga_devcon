@@ -1,0 +1,33 @@
+Tue Jun 16 18:30:52 2026: Running xcd server. This server was built by gradle.
+Tue Jun 16 18:30:52 2026: Server was asked to start on port: '42747'
+Tue Jun 16 18:30:52 2026: Server is using token UUID: 'b5767b7d-d3b4-45b3-a97e-55cdc0f8b112'
+Tue Jun 16 18:30:52 2026: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Tue Jun 16 18:30:52 2026: Attempting to start server on port '42747'
+Tue Jun 16 18:30:52 2026: XCD main fifo: created main fifo '/tmp/xcdmainb5767b7d-d3b4-45b3-a97e-55cdc0f8b112', fd read = 13
+Tue Jun 16 18:30:52 2026: Running Dispatch Server
+Tue Jun 16 18:30:52 2026: Version 2.2.0
+Tue Jun 16 18:30:56 2026: Dispatch Server: Accepted socket connection from client
+Tue Jun 16 18:30:56 2026: Starting Socket connection
+Tue Jun 16 18:30:56 2026: EXCHANGE_TOKEN received, server token: b5767b7d-d3b4-45b3-a97e-55cdc0f8b112, passed token: b5767b7d-d3b4-45b3-a97e-55cdc0f8b112
+Tue Jun 16 18:30:57 2026: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Tue Jun 16 18:30:57 2026: SESSION_MGR: creating session with session uuid: 'ff2c4150-cad0-4bd8-bc43-fc47971d640c' and name 'v++_compile_task_detection_tpu'
+Tue Jun 16 18:30:57 2026: KERNEL_SVC: creating session with uuid: 'ff2c4150-cad0-4bd8-bc43-fc47971d640c' and name 'v++_compile_task_detection_tpu'
+Tue Jun 16 18:30:57 2026: GUIDANCE_SMGR: creating guidance session with uuid: 'ff2c4150-cad0-4bd8-bc43-fc47971d640c' and name 'v++_compile_task_detection_tpu'
+Tue Jun 16 18:30:57 2026: SYSTEM_DIAGRAM: creating session with uuid: 'ff2c4150-cad0-4bd8-bc43-fc47971d640c' and name 'v++_compile_task_detection_tpu'
+Tue Jun 16 18:31:05 2026: Dispatch Server: Accepted socket connection from client
+Tue Jun 16 18:31:05 2026: Starting Socket connection
+Tue Jun 16 18:33:34 2026: SESSION_MGR: closing session for UUID 'ff2c4150-cad0-4bd8-bc43-fc47971d640c' with name 'v++_compile_task_detection_tpu'
+Tue Jun 16 18:33:34 2026: KERNEL_SVC: closing session for UUID 'ff2c4150-cad0-4bd8-bc43-fc47971d640c' with name 'v++_compile_task_detection_tpu'
+Tue Jun 16 18:33:34 2026: GUIDANCE_SMGR: closing session for UUID 'ff2c4150-cad0-4bd8-bc43-fc47971d640c' with name 'v++_compile_task_detection_tpu'
+Tue Jun 16 18:33:34 2026: SYSTEM_DIAGRAM: closing session for UUID 'ff2c4150-cad0-4bd8-bc43-fc47971d640c' with name 'v++_compile_task_detection_tpu'
+Tue Jun 16 18:33:34 2026: STOP_SERVER received, server token: b5767b7d-d3b4-45b3-a97e-55cdc0f8b112, passed token: b5767b7d-d3b4-45b3-a97e-55cdc0f8b112
+Tue Jun 16 18:33:34 2026: Socket received request to stop server.
+Tue Jun 16 18:33:34 2026: Dispatch Server: do_await_stop
+Tue Jun 16 18:33:34 2026: Dispatch Server: stopping mainFifo_
+Tue Jun 16 18:33:34 2026: XCD main fifo: Stopping
+Tue Jun 16 18:33:34 2026: XCD main fifo: do_read error code: Operation canceled
+Tue Jun 16 18:33:34 2026: XCD main fifo: bytes_transferred: 0
+Tue Jun 16 18:33:34 2026: SERVER: destructor for server bound to port 42747
+Tue Jun 16 18:33:34 2026: XCD main fifo: Good unlink of /tmp/xcdmainb5767b7d-d3b4-45b3-a97e-55cdc0f8b112
+Tue Jun 16 18:33:34 2026: Server exiting with status 0.
+Tue Jun 16 18:33:35 2026: Closing log file.

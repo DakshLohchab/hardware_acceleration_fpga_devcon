@@ -1314,7 +1314,7 @@ void apatb_task_detection_accel_hw(void* __xlx_apatb_param_input_r, void* __xlx_
   port3.param = &__xlx_apatb_param_top_k;
 
 #ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port4 {
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port4 {
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port4 {
 #endif
@@ -1326,7 +1326,7 @@ void apatb_task_detection_accel_hw(void* __xlx_apatb_param_input_r, void* __xlx_
 #else
     .owriter = nullptr,
 #ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_gmem0),
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_gmem0),
 #else
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_gmem0),
 #endif
@@ -1336,7 +1336,7 @@ void apatb_task_detection_accel_hw(void* __xlx_apatb_param_input_r, void* __xlx_
   };
   port4.param = { __xlx_apatb_param_input_r };
   port4.mname = { "input_r" };
-  port4.nbytes = { 0 };
+  port4.nbytes = { 720 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port5 {
@@ -1370,7 +1370,7 @@ void apatb_task_detection_accel_hw(void* __xlx_apatb_param_input_r, void* __xlx_
   };
   port5.param = { __xlx_apatb_param_output_r };
   port5.mname = { "output_r" };
-  port5.nbytes = { 0 };
+  port5.nbytes = { 4 };
 
   try {
 #ifdef POST_CHECK

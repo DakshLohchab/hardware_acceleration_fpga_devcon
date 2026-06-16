@@ -1,0 +1,35 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../task_detection_tpu/tpu_accel.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../task_detection_tpu/pe.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/pe.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../task_detection_tpu/systolic_8x8.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../task_detection_tpu/tpu_accel_tb.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=task_detection_accel' from hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../task_detection_tpu/tpu_accel.cpp in debug mode
+   Generating csim.exe
+--- Starting Full TPU Network Simulation ---
+Final Network Output: 3.25
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 256
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 6.63 seconds. Total CPU system time: 0.98 seconds. Total elapsed time: 11.12 seconds; peak allocated memory: 275.422 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 16s

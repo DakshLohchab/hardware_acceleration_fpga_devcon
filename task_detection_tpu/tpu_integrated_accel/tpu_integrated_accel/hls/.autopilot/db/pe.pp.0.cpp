@@ -54831,7 +54831,136 @@ operator/(const complex<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> &__x, cons
 }
 # 491 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/ap_fixed.h" 2
 # 5 "../task_detection_tpu/types.h" 2
+# 1 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream.h" 1
+# 13 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream.h"
+# 1 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream_39.h" 1
+# 23 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream_39.h"
+namespace hls {
+# 49 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream_39.h"
+template<typename __STREAM_T__, int DEPTH=0>
+class stream;
 
+template<typename __STREAM_T__>
+class stream<__STREAM_T__, 0>
+{
+  public:
+    using value_type = __STREAM_T__;
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+      (void)(name);
+    }
+
+
+  private:
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const stream< __STREAM_T__ >& chn):V(chn.V) {
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream& operator= (const stream< __STREAM_T__ >& chn) {
+        V = chn.V;
+        return *this;
+    }
+
+  public:
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator >> (__STREAM_T__& rdata) {
+        read(rdata);
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator << (const __STREAM_T__& wdata) {
+        write(wdata);
+    }
+
+
+  public:
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool empty() const {
+        return !__fpga_fifo_not_empty(&V);
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool full() const {
+        return !__fpga_fifo_not_full(&V);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void read(__STREAM_T__& dout) {
+        __fpga_fifo_pop(&V, &dout);
+    }
+
+
+    inline __attribute__((noinline)) __attribute__((nodebug)) bool read_dep(__STREAM_T__& dout, volatile bool flag) {
+        __fpga_fifo_pop(&V, &dout);
+        return flag;
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) __STREAM_T__ read() {
+        __STREAM_T__ tmp;
+        read(tmp);
+        return tmp;
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool read_nb(__STREAM_T__& dout) {
+        __STREAM_T__ tmp;
+
+        if (__fpga_fifo_nb_pop(&V, &tmp)) {
+            dout = tmp;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void write(const __STREAM_T__& din) {
+        __fpga_fifo_push(&V, &din);
+    }
+
+
+    inline __attribute__((noinline)) __attribute__((nodebug)) bool write_dep(const __STREAM_T__& din, volatile bool flag) {
+        __fpga_fifo_push(&V, &din);
+        return flag;
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool write_nb(const __STREAM_T__& din) {
+        return __fpga_fifo_nb_push(&V, &din);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned size() const {
+        return __fpga_fifo_size(&V);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) unsigned capacity() const {
+        return __fpga_fifo_capacity(&V);
+    }
+
+
+    void set_name(const char* name) { (void)(name); }
+
+  public:
+    __STREAM_T__ V __attribute__((no_ctor));
+};
+
+template<typename __STREAM_T__, int DEPTH>
+class stream : public stream<__STREAM_T__, 0> {
+  public:
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream() {
+#pragma HLS stream variable=this depth=DEPTH
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) stream(const char* name) {
+#pragma HLS stream variable=this depth=DEPTH
+      (void)(name);
+    }
+};
+}
+# 14 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/hls_stream.h" 2
+# 6 "../task_detection_tpu/types.h" 2
 
 typedef ap_fixed<16,6> data_t;
 # 5 "../task_detection_tpu/pe.h" 2

@@ -1,0 +1,66 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'tpu_layer_2'" level="0">
+<item name = "Date">Tue Jun 16 19:42:59 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">tpu_integrated_accel</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k325t-ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.775 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1994, 34764, 19.940 us, 0.348 ms, 1994, 34764, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_165_1_fu_9279">tpu_layer_2_Pipeline_VITIS_LOOP_165_1, 258, 258, 2.580 us, 2.580 us, 0, 0, loop pipeline stp</column>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_180_2_fu_9301">tpu_layer_2_Pipeline_VITIS_LOOP_180_2, 130, 130, 1.300 us, 1.300 us, 0, 0, loop pipeline stp</column>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_181_3_VITIS_LOOP_182_4_VITIS_LOOP_183_5_VITIS_LO_fu_9321">tpu_layer_2_Pipeline_VITIS_LOOP_181_3_VITIS_LOOP_182_4_VITIS_LOOP_183_5_VITIS_LO, 32770, 32770, 0.328 ms, 0.328 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_run_mac_tile_0_s_fu_10349">run_mac_tile_0_s, 21, 21, 0.210 us, 0.210 us, 21, 21, no</column>
+<column name="grp_run_mac_tile_1_s_fu_10513">run_mac_tile_1_s, 21, 21, 0.210 us, 0.210 us, 21, 21, no</column>
+<column name="grp_run_mac_tile_2_s_fu_10677">run_mac_tile_2_s, 21, 21, 0.210 us, 0.210 us, 21, 21, no</column>
+<column name="grp_run_mac_tile_3_s_fu_10841">run_mac_tile_3_s, 21, 21, 0.210 us, 0.210 us, 21, 21, no</column>
+<column name="grp_run_mac_tile_4_s_fu_11005">run_mac_tile_4_s, 21, 21, 0.210 us, 0.210 us, 21, 21, no</column>
+<column name="grp_run_mac_tile_5_s_fu_11169">run_mac_tile_5_s, 21, 21, 0.210 us, 0.210 us, 21, 21, no</column>
+<column name="grp_run_mac_tile_6_s_fu_11333">run_mac_tile_6_s, 21, 21, 0.210 us, 0.210 us, 21, 21, no</column>
+<column name="grp_run_mac_tile_7_s_fu_11497">run_mac_tile_7_s, 21, 21, 0.210 us, 0.210 us, 21, 21, no</column>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_226_11_fu_11661">tpu_layer_2_Pipeline_VITIS_LOOP_226_11, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_230_12_fu_11699">tpu_layer_2_Pipeline_VITIS_LOOP_230_12, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_234_13_fu_11737">tpu_layer_2_Pipeline_VITIS_LOOP_234_13, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_238_14_fu_11775">tpu_layer_2_Pipeline_VITIS_LOOP_238_14, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_242_15_fu_11813">tpu_layer_2_Pipeline_VITIS_LOOP_242_15, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_246_16_fu_11851">tpu_layer_2_Pipeline_VITIS_LOOP_246_16, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_250_17_fu_11889">tpu_layer_2_Pipeline_VITIS_LOOP_250_17, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_tpu_layer_2_Pipeline_VITIS_LOOP_254_18_fu_11927">tpu_layer_2_Pipeline_VITIS_LOOP_254_18, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_194_7">1732, 1732, 866, -, -, 2, no</column>
+<column name=" + VITIS_LOOP_198_8">768, 768, 24, -, -, 32, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

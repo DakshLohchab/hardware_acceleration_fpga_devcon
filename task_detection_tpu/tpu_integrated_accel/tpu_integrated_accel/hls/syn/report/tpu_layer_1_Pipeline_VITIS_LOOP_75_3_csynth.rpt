@@ -1,0 +1,164 @@
+
+
+================================================================
+== Vitis HLS Report for 'tpu_layer_1_Pipeline_VITIS_LOOP_75_3'
+================================================================
+* Date:           Tue Jun 16 19:43:12 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        tpu_integrated_accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k325t-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.337 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |      258|      258|  2.580 us|  2.580 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_75_3  |      256|      256|         1|          1|          1|   256|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      33|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|      27|    -|
+|Register         |        -|    -|      11|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|      11|      60|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      890|  840|  407600|  203800|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |add_ln75_fu_194_p2   |         +|   0|  0|  16|           9|           1|
+    |icmp_ln75_fu_188_p2  |      icmp|   0|  0|  17|           9|          10|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0|  33|          18|          11|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_done_int            |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_15  |   9|          2|    9|         18|
+    |i_fu_64                |   9|          2|    9|         18|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  |  27|          6|   19|         38|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |i_fu_64      |  9|   0|    9|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        | 11|   0|   11|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------+--------------+
+|                                  RTL Ports                                 | Dir | Bits|  Protocol  |                           Source Object                           |    C Type    |
++----------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------+--------------+
+|ap_clk                                                                      |   in|    1|  ap_ctrl_hs|                               tpu_layer_1_Pipeline_VITIS_LOOP_75_3|  return value|
+|ap_rst                                                                      |   in|    1|  ap_ctrl_hs|                               tpu_layer_1_Pipeline_VITIS_LOOP_75_3|  return value|
+|ap_start                                                                    |   in|    1|  ap_ctrl_hs|                               tpu_layer_1_Pipeline_VITIS_LOOP_75_3|  return value|
+|ap_done                                                                     |  out|    1|  ap_ctrl_hs|                               tpu_layer_1_Pipeline_VITIS_LOOP_75_3|  return value|
+|ap_idle                                                                     |  out|    1|  ap_ctrl_hs|                               tpu_layer_1_Pipeline_VITIS_LOOP_75_3|  return value|
+|ap_ready                                                                    |  out|    1|  ap_ctrl_hs|                               tpu_layer_1_Pipeline_VITIS_LOOP_75_3|  return value|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_7_address0  |  out|    5|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_7|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_7_ce0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_7|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_7_we0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_7|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_7_d0        |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_7|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_6_address0  |  out|    5|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_6|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_6_ce0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_6|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_6_we0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_6|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_6_d0        |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_6|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_5_address0  |  out|    5|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_5|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_5_ce0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_5|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_5_we0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_5|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_5_d0        |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_5|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_4_address0  |  out|    5|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_4|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_4_ce0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_4|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_4_we0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_4|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_4_d0        |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_4|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_3_address0  |  out|    5|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_3|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_3_ce0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_3|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_3_we0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_3|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_3_d0        |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_3|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_2_address0  |  out|    5|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_2|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_2_ce0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_2|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_2_we0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_2|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_2_d0        |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_2|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_1_address0  |  out|    5|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_1|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_1_ce0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_1|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_1_we0       |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_1|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_1_d0        |  out|    1|   ap_memory|  tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_1|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_address0    |  out|    5|   ap_memory|    tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_ce0         |  out|    1|   ap_memory|    tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_we0         |  out|    1|   ap_memory|    tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias|         array|
+|tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias_d0          |  out|    1|   ap_memory|    tpu_layer_1_stream_ap_fixed_0_stream_ap_fixed_16_6_5_3_0_0_bias|         array|
++----------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------+--------------+
+

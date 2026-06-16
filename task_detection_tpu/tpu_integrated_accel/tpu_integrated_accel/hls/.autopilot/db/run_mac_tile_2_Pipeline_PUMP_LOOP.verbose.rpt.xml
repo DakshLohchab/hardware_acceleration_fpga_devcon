@@ -1,0 +1,290 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'run_mac_tile_2_Pipeline_PUMP_LOOP'" level="0">
+<item name = "Date">Tue Jun 16 19:43:16 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">tpu_integrated_accel</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k325t-ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 3.813 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">19, 19, 0.190 us, 0.190 us, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- PUMP_LOOP">17, 17, 4, 1, 1, 15, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, 8, -, -, -</column>
+<column name="Expression">-, -, 0, 227, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 297, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 243, -</column>
+<column name="Register">-, -, 254, -, -</column>
+<specialColumn name="Available">890, 840, 407600, 203800, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="sparsemux_17_4_16_1_1_U906">sparsemux_17_4_16_1_1, 0, 0, 0, 33, 0</column>
+<column name="sparsemux_17_4_4_1_1_U905">sparsemux_17_4_4_1_1, 0, 0, 0, 33, 0</column>
+<column name="sparsemux_17_4_4_1_1_U907">sparsemux_17_4_4_1_1, 0, 0, 0, 33, 0</column>
+<column name="sparsemux_17_4_4_1_1_U908">sparsemux_17_4_4_1_1, 0, 0, 0, 33, 0</column>
+<column name="sparsemux_17_4_4_1_1_U909">sparsemux_17_4_4_1_1, 0, 0, 0, 33, 0</column>
+<column name="sparsemux_17_4_4_1_1_U910">sparsemux_17_4_4_1_1, 0, 0, 0, 33, 0</column>
+<column name="sparsemux_17_4_4_1_1_U911">sparsemux_17_4_4_1_1, 0, 0, 0, 33, 0</column>
+<column name="sparsemux_17_4_4_1_1_U912">sparsemux_17_4_4_1_1, 0, 0, 0, 33, 0</column>
+<column name="sparsemux_17_4_4_1_1_U913">sparsemux_17_4_4_1_1, 0, 0, 0, 33, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="mac_muladd_16s_4ns_26s_26_4_1_U914">mac_muladd_16s_4ns_26s_26_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_4ns_26s_26_4_1_U915">mac_muladd_16s_4ns_26s_26_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_4ns_26s_26_4_1_U916">mac_muladd_16s_4ns_26s_26_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_4ns_26s_26_4_1_U917">mac_muladd_16s_4ns_26s_26_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_4ns_26s_26_4_1_U918">mac_muladd_16s_4ns_26s_26_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_4ns_26s_26_4_1_U919">mac_muladd_16s_4ns_26s_26_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_4ns_26s_26_4_1_U920">mac_muladd_16s_4ns_26s_26_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_4ns_26s_26_4_1_U921">mac_muladd_16s_4ns_26s_26_4_1, i0 + i1 * i2</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln22_fu_917_p2">+, 0, 0, 13, 4, 1</column>
+<column name="add_ln26_31_fu_1080_p2">+, 0, 0, 13, 5, 3</column>
+<column name="add_ln26_32_fu_1142_p2">+, 0, 0, 13, 5, 3</column>
+<column name="add_ln26_33_fu_1204_p2">+, 0, 0, 13, 5, 4</column>
+<column name="add_ln26_34_fu_1266_p2">+, 0, 0, 13, 5, 4</column>
+<column name="add_ln26_35_fu_1328_p2">+, 0, 0, 13, 5, 4</column>
+<column name="add_ln26_36_fu_1390_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln26_fu_1018_p2">+, 0, 0, 13, 5, 2</column>
+<column name="icmp_ln22_fu_911_p2">icmp, 0, 0, 13, 4, 2</column>
+<column name="icmp_ln26_26_fu_1096_p2">icmp, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln26_27_fu_1158_p2">icmp, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln26_28_fu_1220_p2">icmp, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln26_29_fu_1282_p2">icmp, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln26_30_fu_1344_p2">icmp, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln26_fu_1034_p2">icmp, 0, 0, 10, 2, 1</column>
+<column name="in_a_36_fu_1382_p3">select, 0, 0, 4, 1, 4</column>
+<column name="in_a_37_fu_1320_p3">select, 0, 0, 4, 1, 4</column>
+<column name="in_a_38_fu_1258_p3">select, 0, 0, 4, 1, 4</column>
+<column name="in_a_39_fu_1196_p3">select, 0, 0, 4, 1, 4</column>
+<column name="in_a_40_fu_1134_p3">select, 0, 0, 4, 1, 4</column>
+<column name="in_a_41_fu_1072_p3">select, 0, 0, 4, 1, 4</column>
+<column name="in_a_42_fu_998_p3">select, 0, 0, 4, 1, 1</column>
+<column name="in_a_fu_1436_p3">select, 0, 0, 4, 1, 1</column>
+<column name="in_b_72_fu_1006_p3">select, 0, 0, 16, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="B_in_fu_318">9, 2, 16, 32</column>
+<column name="C_out_36_fu_266">9, 2, 16, 32</column>
+<column name="C_out_37_fu_270">9, 2, 16, 32</column>
+<column name="C_out_38_fu_274">9, 2, 16, 32</column>
+<column name="C_out_39_fu_278">9, 2, 16, 32</column>
+<column name="C_out_40_fu_282">9, 2, 16, 32</column>
+<column name="C_out_41_fu_286">9, 2, 16, 32</column>
+<column name="C_out_42_fu_290">9, 2, 16, 32</column>
+<column name="C_out_fu_294">9, 2, 16, 32</column>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_C_out_36_load_1">9, 2, 16, 32</column>
+<column name="ap_sig_allocacmp_C_out_37_load_1">9, 2, 16, 32</column>
+<column name="ap_sig_allocacmp_C_out_38_load_1">9, 2, 16, 32</column>
+<column name="ap_sig_allocacmp_C_out_39_load_1">9, 2, 16, 32</column>
+<column name="ap_sig_allocacmp_C_out_40_load_1">9, 2, 16, 32</column>
+<column name="ap_sig_allocacmp_C_out_41_load_1">9, 2, 16, 32</column>
+<column name="ap_sig_allocacmp_C_out_42_load_1">9, 2, 16, 32</column>
+<column name="ap_sig_allocacmp_C_out_load73">9, 2, 16, 32</column>
+<column name="cycle_fu_258">9, 2, 4, 8</column>
+<column name="in_b_61_fu_298">9, 2, 16, 32</column>
+<column name="in_b_62_fu_302">9, 2, 16, 32</column>
+<column name="in_b_63_fu_306">9, 2, 16, 32</column>
+<column name="in_b_64_fu_310">9, 2, 16, 32</column>
+<column name="in_b_65_fu_314">9, 2, 16, 32</column>
+<column name="in_b_fu_262">9, 2, 16, 32</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="B_in_fu_318">16, 0, 16, 0</column>
+<column name="C_out_36_fu_266">16, 0, 16, 0</column>
+<column name="C_out_37_fu_270">16, 0, 16, 0</column>
+<column name="C_out_38_fu_274">16, 0, 16, 0</column>
+<column name="C_out_39_fu_278">16, 0, 16, 0</column>
+<column name="C_out_40_fu_282">16, 0, 16, 0</column>
+<column name="C_out_41_fu_286">16, 0, 16, 0</column>
+<column name="C_out_42_fu_290">16, 0, 16, 0</column>
+<column name="C_out_fu_294">16, 0, 16, 0</column>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter2_reg">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter3_reg">1, 0, 1, 0</column>
+<column name="cycle_fu_258">4, 0, 4, 0</column>
+<column name="icmp_ln22_reg_2332">1, 0, 1, 0</column>
+<column name="icmp_ln22_reg_2332_pp0_iter2_reg">1, 0, 1, 0</column>
+<column name="in_b_61_fu_298">16, 0, 16, 0</column>
+<column name="in_b_62_fu_302">16, 0, 16, 0</column>
+<column name="in_b_63_fu_306">16, 0, 16, 0</column>
+<column name="in_b_64_fu_310">16, 0, 16, 0</column>
+<column name="in_b_65_fu_314">16, 0, 16, 0</column>
+<column name="in_b_fu_262">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, run_mac_tile&lt;2&gt;_Pipeline_PUMP_LOOP, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, run_mac_tile&lt;2&gt;_Pipeline_PUMP_LOOP, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, run_mac_tile&lt;2&gt;_Pipeline_PUMP_LOOP, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, run_mac_tile&lt;2&gt;_Pipeline_PUMP_LOOP, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, run_mac_tile&lt;2&gt;_Pipeline_PUMP_LOOP, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, run_mac_tile&lt;2&gt;_Pipeline_PUMP_LOOP, return value</column>
+<column name="W_0_0_val">in, 4, ap_none, W_0_0_val, scalar</column>
+<column name="W_0_1_val">in, 4, ap_none, W_0_1_val, scalar</column>
+<column name="W_0_2_val">in, 4, ap_none, W_0_2_val, scalar</column>
+<column name="W_0_3_val">in, 4, ap_none, W_0_3_val, scalar</column>
+<column name="W_0_4_val">in, 4, ap_none, W_0_4_val, scalar</column>
+<column name="W_0_5_val">in, 4, ap_none, W_0_5_val, scalar</column>
+<column name="W_0_6_val">in, 4, ap_none, W_0_6_val, scalar</column>
+<column name="W_0_7_val">in, 4, ap_none, W_0_7_val, scalar</column>
+<column name="X_0_val">in, 16, ap_none, X_0_val, scalar</column>
+<column name="X_1_val">in, 16, ap_none, X_1_val, scalar</column>
+<column name="X_2_val">in, 16, ap_none, X_2_val, scalar</column>
+<column name="X_3_val">in, 16, ap_none, X_3_val, scalar</column>
+<column name="X_4_val">in, 16, ap_none, X_4_val, scalar</column>
+<column name="X_5_val">in, 16, ap_none, X_5_val, scalar</column>
+<column name="X_6_val">in, 16, ap_none, X_6_val, scalar</column>
+<column name="X_7_val">in, 16, ap_none, X_7_val, scalar</column>
+<column name="W_1_0_val">in, 4, ap_none, W_1_0_val, scalar</column>
+<column name="W_1_1_val">in, 4, ap_none, W_1_1_val, scalar</column>
+<column name="W_1_2_val">in, 4, ap_none, W_1_2_val, scalar</column>
+<column name="W_1_3_val">in, 4, ap_none, W_1_3_val, scalar</column>
+<column name="W_1_4_val">in, 4, ap_none, W_1_4_val, scalar</column>
+<column name="W_1_5_val">in, 4, ap_none, W_1_5_val, scalar</column>
+<column name="W_1_6_val">in, 4, ap_none, W_1_6_val, scalar</column>
+<column name="W_1_7_val">in, 4, ap_none, W_1_7_val, scalar</column>
+<column name="W_2_0_val">in, 4, ap_none, W_2_0_val, scalar</column>
+<column name="W_2_1_val">in, 4, ap_none, W_2_1_val, scalar</column>
+<column name="W_2_2_val">in, 4, ap_none, W_2_2_val, scalar</column>
+<column name="W_2_3_val">in, 4, ap_none, W_2_3_val, scalar</column>
+<column name="W_2_4_val">in, 4, ap_none, W_2_4_val, scalar</column>
+<column name="W_2_5_val">in, 4, ap_none, W_2_5_val, scalar</column>
+<column name="W_2_6_val">in, 4, ap_none, W_2_6_val, scalar</column>
+<column name="W_2_7_val">in, 4, ap_none, W_2_7_val, scalar</column>
+<column name="W_3_0_val">in, 4, ap_none, W_3_0_val, scalar</column>
+<column name="W_3_1_val">in, 4, ap_none, W_3_1_val, scalar</column>
+<column name="W_3_2_val">in, 4, ap_none, W_3_2_val, scalar</column>
+<column name="W_3_3_val">in, 4, ap_none, W_3_3_val, scalar</column>
+<column name="W_3_4_val">in, 4, ap_none, W_3_4_val, scalar</column>
+<column name="W_3_5_val">in, 4, ap_none, W_3_5_val, scalar</column>
+<column name="W_3_6_val">in, 4, ap_none, W_3_6_val, scalar</column>
+<column name="W_3_7_val">in, 4, ap_none, W_3_7_val, scalar</column>
+<column name="W_4_0_val">in, 4, ap_none, W_4_0_val, scalar</column>
+<column name="W_4_1_val">in, 4, ap_none, W_4_1_val, scalar</column>
+<column name="W_4_2_val">in, 4, ap_none, W_4_2_val, scalar</column>
+<column name="W_4_3_val">in, 4, ap_none, W_4_3_val, scalar</column>
+<column name="W_4_4_val">in, 4, ap_none, W_4_4_val, scalar</column>
+<column name="W_4_5_val">in, 4, ap_none, W_4_5_val, scalar</column>
+<column name="W_4_6_val">in, 4, ap_none, W_4_6_val, scalar</column>
+<column name="W_4_7_val">in, 4, ap_none, W_4_7_val, scalar</column>
+<column name="W_5_0_val">in, 4, ap_none, W_5_0_val, scalar</column>
+<column name="W_5_1_val">in, 4, ap_none, W_5_1_val, scalar</column>
+<column name="W_5_2_val">in, 4, ap_none, W_5_2_val, scalar</column>
+<column name="W_5_3_val">in, 4, ap_none, W_5_3_val, scalar</column>
+<column name="W_5_4_val">in, 4, ap_none, W_5_4_val, scalar</column>
+<column name="W_5_5_val">in, 4, ap_none, W_5_5_val, scalar</column>
+<column name="W_5_6_val">in, 4, ap_none, W_5_6_val, scalar</column>
+<column name="W_5_7_val">in, 4, ap_none, W_5_7_val, scalar</column>
+<column name="W_6_0_val">in, 4, ap_none, W_6_0_val, scalar</column>
+<column name="W_6_1_val">in, 4, ap_none, W_6_1_val, scalar</column>
+<column name="W_6_2_val">in, 4, ap_none, W_6_2_val, scalar</column>
+<column name="W_6_3_val">in, 4, ap_none, W_6_3_val, scalar</column>
+<column name="W_6_4_val">in, 4, ap_none, W_6_4_val, scalar</column>
+<column name="W_6_5_val">in, 4, ap_none, W_6_5_val, scalar</column>
+<column name="W_6_6_val">in, 4, ap_none, W_6_6_val, scalar</column>
+<column name="W_6_7_val">in, 4, ap_none, W_6_7_val, scalar</column>
+<column name="W_7_0_val">in, 4, ap_none, W_7_0_val, scalar</column>
+<column name="W_7_1_val">in, 4, ap_none, W_7_1_val, scalar</column>
+<column name="W_7_2_val">in, 4, ap_none, W_7_2_val, scalar</column>
+<column name="W_7_3_val">in, 4, ap_none, W_7_3_val, scalar</column>
+<column name="W_7_4_val">in, 4, ap_none, W_7_4_val, scalar</column>
+<column name="W_7_5_val">in, 4, ap_none, W_7_5_val, scalar</column>
+<column name="W_7_6_val">in, 4, ap_none, W_7_6_val, scalar</column>
+<column name="W_7_7_val">in, 4, ap_none, W_7_7_val, scalar</column>
+<column name="C_out_out">out, 16, ap_vld, C_out_out, pointer</column>
+<column name="C_out_out_ap_vld">out, 1, ap_vld, C_out_out, pointer</column>
+<column name="C_out_456_out">out, 16, ap_vld, C_out_456_out, pointer</column>
+<column name="C_out_456_out_ap_vld">out, 1, ap_vld, C_out_456_out, pointer</column>
+<column name="C_out_457_out">out, 16, ap_vld, C_out_457_out, pointer</column>
+<column name="C_out_457_out_ap_vld">out, 1, ap_vld, C_out_457_out, pointer</column>
+<column name="C_out_465_out">out, 16, ap_vld, C_out_465_out, pointer</column>
+<column name="C_out_465_out_ap_vld">out, 1, ap_vld, C_out_465_out, pointer</column>
+<column name="C_out_473_out">out, 16, ap_vld, C_out_473_out, pointer</column>
+<column name="C_out_473_out_ap_vld">out, 1, ap_vld, C_out_473_out, pointer</column>
+<column name="C_out_481_out">out, 16, ap_vld, C_out_481_out, pointer</column>
+<column name="C_out_481_out_ap_vld">out, 1, ap_vld, C_out_481_out, pointer</column>
+<column name="C_out_489_out">out, 16, ap_vld, C_out_489_out, pointer</column>
+<column name="C_out_489_out_ap_vld">out, 1, ap_vld, C_out_489_out, pointer</column>
+<column name="C_out_497_out">out, 16, ap_vld, C_out_497_out, pointer</column>
+<column name="C_out_497_out_ap_vld">out, 1, ap_vld, C_out_497_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

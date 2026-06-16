@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Mon Jun 15 23:11:41 2026",
- "timestampMillis": "1781545301420",
+ "dateTimestamp": "Tue Jun 16 19:09:32 2026",
+ "timestampMillis": "1781617172029",
  "buildStep": {
-  "cmdId": "d435cb8a-96d6-48a8-b8e4-ef07c909dd68",
+  "cmdId": "0a276376-1b03-4d7e-b7a4-534938bedd96",
   "name": "vitis-run",
   "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/logs/tpu_integrated_accel.steps.log",
   "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/hls_config.cfg --work_dir tpu_integrated_accel ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun 15 23:11:41 2026",
- "timestampMillis": "1781545301420",
+ "dateTimestamp": "Tue Jun 16 19:09:32 2026",
+ "timestampMillis": "1781617172029",
  "status": {
-  "cmdId": "d435cb8a-96d6-48a8-b8e4-ef07c909dd68",
+  "cmdId": "0a276376-1b03-4d7e-b7a4-534938bedd96",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Mon Jun 15 23:11:50 2026",
- "timestampMillis": "1781545310821",
+ "dateTimestamp": "Tue Jun 16 19:09:41 2026",
+ "timestampMillis": "1781617181273",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -65,8 +65,7 @@
     },
     "sources": [
      "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_accel.cpp",
-     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/pe.cpp",
-     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/systolic_8x8.cpp"
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/pe.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -82,10 +81,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Jun 15 23:11:50 2026",
- "timestampMillis": "1781545310823",
+ "dateTimestamp": "Tue Jun 16 19:09:41 2026",
+ "timestampMillis": "1781617181275",
  "buildStep": {
-  "cmdId": "f0afc1b7-4492-4667-aacc-044dc5d191b0",
+  "cmdId": "df987d62-6327-4e5d-a1ad-bba8d13ad8f5",
   "name": "",
   "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/tpu_integrated_accel/tpu_integrated_accel/hls/hls.log",
   "commandLine": "",
@@ -98,10 +97,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun 15 23:11:50 2026",
- "timestampMillis": "1781545310823",
+ "dateTimestamp": "Tue Jun 16 19:09:41 2026",
+ "timestampMillis": "1781617181275",
  "status": {
-  "cmdId": "f0afc1b7-4492-4667-aacc-044dc5d191b0",
+  "cmdId": "df987d62-6327-4e5d-a1ad-bba8d13ad8f5",
   "state": "CS_RUNNING"
  }
 }
@@ -109,10 +108,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun 15 23:12:06 2026",
- "timestampMillis": "1781545326039",
+ "dateTimestamp": "Tue Jun 16 19:09:52 2026",
+ "timestampMillis": "1781617192773",
  "status": {
-  "cmdId": "f0afc1b7-4492-4667-aacc-044dc5d191b0",
+  "cmdId": "df987d62-6327-4e5d-a1ad-bba8d13ad8f5",
   "state": "CS_PASSED"
  }
 }
@@ -120,10 +119,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Jun 15 23:12:06 2026",
- "timestampMillis": "1781545326355",
+ "dateTimestamp": "Tue Jun 16 19:09:53 2026",
+ "timestampMillis": "1781617193083",
  "status": {
-  "cmdId": "d435cb8a-96d6-48a8-b8e4-ef07c909dd68",
+  "cmdId": "0a276376-1b03-4d7e-b7a4-534938bedd96",
   "state": "CS_PASSED"
  }
 }
@@ -131,8 +130,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun 15 23:12:06 2026",
- "timestampMillis": "1781545326357",
+ "dateTimestamp": "Tue Jun 16 19:09:53 2026",
+ "timestampMillis": "1781617193084",
  "report": {
   "path": "",
   "name": "",
@@ -145,8 +144,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Jun 15 23:12:06 2026",
- "timestampMillis": "1781545326362",
+ "dateTimestamp": "Tue Jun 16 19:09:53 2026",
+ "timestampMillis": "1781617193085",
  "report": {
   "path": "",
   "name": "",
