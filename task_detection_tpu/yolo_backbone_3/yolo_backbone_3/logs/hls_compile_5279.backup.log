@@ -1,0 +1,33 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./yolo_backbone_3.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./yolo_backbone_3_tb.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=yolo_backbone_v3' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 5.22 seconds. CPU system time: 0.82 seconds. Elapsed time: 8.63 seconds; current allocated memory: 273.629 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'yolo_backbone_3.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (yolo_backbone_3.cpp:283:9)
+Resolution: For help on HLS 214-114 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file yolo_backbone_3.cpp
+Resolution: For help on HLS 200-471 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 15.81 seconds. CPU system time: 1.35 seconds. Elapsed time: 18.74 seconds; current allocated memory: 275.828 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 3,056 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3/hls/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 200-1995] There were 532,471 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3/hls/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 200-1995] There were 172,412 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3/hls/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 200-1995] There were 144,571 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3/hls/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 200-1995] There were 144,569 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_3/yolo_backbone_3/hls/syn/report/csynth_design_size.rpt:2)

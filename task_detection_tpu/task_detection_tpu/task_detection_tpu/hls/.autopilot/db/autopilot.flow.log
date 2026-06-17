@@ -2303,3 +2303,105 @@ Execute   close_project
 Execute     close_solution 
 Execute       cleanup_all 
 Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 /home/dlohchab/Xilinx/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /home/dlohchab/Xilinx/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls opened at Wed Jun 17 16:17:29 IST 2026
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+Execute       apply_ini hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=./task_detection_accel.cpp' from hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./task_detection_accel.cpp' from hls_config.cfg(8)
+Execute         add_files /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp 
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=mlp_engine.cpp' from hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=mlp_engine.cpp' from hls_config.cfg(9)
+Execute         add_files /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp 
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/mlp_engine.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=./tpu_core.cpp' from hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./tpu_core.cpp' from hls_config.cfg(10)
+Execute         add_files /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_core.cpp 
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_core.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=./task_detection_accel_tb.cpp' from hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./task_detection_accel_tb.cpp' from hls_config.cfg(11)
+Execute         add_files -tb /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_accel_tb.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=tpu_tb.cpp' from hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tpu_tb.cpp' from hls_config.cfg(12)
+Execute         add_files -tb /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/tpu_tb.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=task_detection_accel' from hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=task_detection_accel' from hls_config.cfg(7)
+Execute         set_top task_detection_accel 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7k325tffg900-2' from hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+Execute         set_part xc7k325tffg900-2 
+Execute           create_platform xc7k325tffg900-2 -board  
+DBG:HLSDevice: Trying to load device library: /home/dlohchab/Xilinx/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/dlohchab/Xilinx/2025.2/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+Command           create_platform done; 3.02 sec.
+Execute           source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.13 sec.
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Command           ap_source done; 0.2 sec.
+Execute           ap_part_info -name xc7k325t-ffg900-2 -data info 
+Command           ap_part_info done; 0.15 sec.
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 3.38 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 3.52 sec.
+Execute       write_component -config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/vitis-comp.json
+Command     open_solution done; 3.62 sec.
+Command   open_component done; 3.63 sec.
+Execute   apply_ini /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+Execute     source /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/task_detection_tpu/task_detection_tpu/hls/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Command     ap_part_info done; 0.17 sec.
+INFO-FLOW: AESL_CSIM::c_sim errorInfo:
+
+    while executing
+"::AESL_CSIM::c_sim "$argn" "
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: CSIM Failed
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 1.67 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

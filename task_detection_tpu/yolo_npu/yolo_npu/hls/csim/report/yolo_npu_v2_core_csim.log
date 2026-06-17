@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../yolo_npu_v2_tb.cpp in debug mode
+   Compiling ../../../../yolo_npu_v2.cpp in debug mode
+   Generating csim.exe
+--- Initializing YOLO NPU V2 ---
+Executing Instruction A: 3x3 Spatial Conv...
+Output successfully mapped to address: 10000
+Reconfiguring Engine ISA...
+Executing Instruction B: 1x1 Pointwise Conv...
+Output successfully mapped to address: 40000
+SUCCESS: Unified NPU executed varied layer topologies!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

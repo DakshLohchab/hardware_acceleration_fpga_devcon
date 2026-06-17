@@ -1,0 +1,27 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../yolo_backbone_4_tb.cpp in debug mode
+   Generating csim.exe
+--- Starting YOLO Backbone V4 (64-Channel Folding) ---
+
+--- Final 1x1 Spatial Feature Map (First 16 Channels) ---
+Ch  0: -0.0889
+Ch  1: -0.0947
+Ch  2: -0.0723
+Ch  3: -0.0615
+Ch  4: -0.0742
+Ch  5: -0.0068
+Ch  6: -0.0381
+Ch  7: -0.0459
+Ch  8: -0.0479
+Ch  9: -0.0469
+Ch 10: -0.0420
+Ch 11: -0.0537
+Ch 12: -0.0059
+Ch 13: 0.3281
+Ch 14: -0.0713
+Ch 15: -0.0400
+
+Inference Complete. 55,296 parameters successfully processed.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 36
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

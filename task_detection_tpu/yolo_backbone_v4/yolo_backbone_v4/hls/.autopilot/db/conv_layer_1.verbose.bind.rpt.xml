@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'conv_layer_1'" level="0">
+<item name = "Date">Wed Jun 17 17:44:08 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">yolo_backbone_v4</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k325t-ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.734 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">120, 14124, 1.200 us, 0.141 ms, 120, 14124, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_conv_layer_1_Pipeline_VITIS_LOOP_18_1_fu_3685">conv_layer_1_Pipeline_VITIS_LOOP_18_1, 34, 34, 0.340 us, 0.340 us, 0, 0, loop pipeline stp</column>
+<column name="grp_conv_layer_1_Pipeline_VITIS_LOOP_43_10_fu_4265">conv_layer_1_Pipeline_VITIS_LOOP_43_10, 356, 356, 3.560 us, 3.560 us, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_23_6">84, 14088, 14 ~ 2348, -, -, 6, no</column>
+<column name=" + VITIS_LOOP_24_7">12, 2346, 2 ~ 391, -, -, 6, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

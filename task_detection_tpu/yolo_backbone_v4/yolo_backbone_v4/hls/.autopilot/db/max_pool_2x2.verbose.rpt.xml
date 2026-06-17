@@ -1,0 +1,604 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'max_pool_2x2'" level="0">
+<item name = "Date">Wed Jun 17 17:45:48 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">yolo_backbone_v4</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k325t-ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.204 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">6, 6, 60.000 ns, 60.000 ns, 4, 4, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_175_1_VITIS_LOOP_179_2">4, 4, 2, 1, 1, 4, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 5081, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 99, -</column>
+<column name="Register">-, -, 3086, -, -</column>
+<specialColumn name="Available">890, 840, 407600, 203800, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln175_fu_1545_p2">+, 0, 0, 10, 2, 1</column>
+<column name="c_5_fu_3279_p2">+, 0, 0, 10, 2, 1</column>
+<column name="r_6_fu_877_p2">+, 0, 0, 10, 2, 1</column>
+<column name="ap_block_state2_pp0_stage0_iter1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_231">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_2387">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op745_write_state2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln175_fu_3291_p2">icmp, 0, 0, 10, 2, 2</column>
+<column name="icmp_ln179_fu_3285_p2">icmp, 0, 0, 11, 2, 3</column>
+<column name="icmp_ln183_fu_1539_p2">icmp, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln189_10_fu_1883_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_11_fu_1897_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_12_fu_1911_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_13_fu_1925_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_14_fu_1939_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_15_fu_1953_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_16_fu_1967_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_17_fu_1981_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_18_fu_1995_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_19_fu_2009_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_1_fu_1757_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_20_fu_2023_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_21_fu_2037_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_22_fu_2051_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_23_fu_2065_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_24_fu_2079_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_25_fu_2093_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_26_fu_2107_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_27_fu_2121_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_28_fu_2135_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_29_fu_2149_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_2_fu_1771_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_30_fu_2163_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_31_fu_2177_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_32_fu_2191_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_33_fu_2205_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_34_fu_2219_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_35_fu_2233_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_36_fu_2247_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_37_fu_2261_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_38_fu_2275_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_39_fu_2289_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_3_fu_1785_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_40_fu_2303_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_41_fu_2317_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_42_fu_2331_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_43_fu_2345_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_44_fu_2359_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_45_fu_2373_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_46_fu_2387_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_47_fu_2401_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_48_fu_2415_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_49_fu_2429_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_4_fu_1799_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_50_fu_2443_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_51_fu_2457_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_52_fu_2471_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_53_fu_2485_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_54_fu_2499_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_55_fu_2513_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_56_fu_2527_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_57_fu_2541_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_58_fu_2555_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_59_fu_2569_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_5_fu_1813_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_60_fu_2583_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_61_fu_2597_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_62_fu_2611_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_63_fu_2625_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_6_fu_1827_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_7_fu_1841_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_8_fu_1855_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_9_fu_1869_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln189_fu_1743_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln192_fu_899_p2">icmp, 0, 0, 10, 2, 1</column>
+<column name="icmp_ln199_10_fu_3624_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_11_fu_3636_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_12_fu_3648_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_13_fu_3660_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_14_fu_3672_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_15_fu_3684_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_16_fu_3696_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_17_fu_3708_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_18_fu_3720_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_19_fu_3732_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_1_fu_3516_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_20_fu_3744_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_21_fu_3756_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_22_fu_3768_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_23_fu_3780_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_24_fu_3792_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_25_fu_3804_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_26_fu_3816_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_27_fu_3828_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_28_fu_3840_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_29_fu_3852_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_2_fu_3528_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_30_fu_3864_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_31_fu_3876_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_32_fu_3888_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_33_fu_3900_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_34_fu_3912_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_35_fu_3924_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_36_fu_3936_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_37_fu_3948_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_38_fu_3960_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_39_fu_3972_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_3_fu_3540_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_40_fu_3984_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_41_fu_3996_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_42_fu_4008_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_43_fu_4020_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_44_fu_4032_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_45_fu_4044_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_46_fu_4056_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_47_fu_4068_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_48_fu_4080_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_49_fu_4092_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_4_fu_3552_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_50_fu_4104_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_51_fu_4116_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_52_fu_4128_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_53_fu_4140_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_54_fu_4152_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_55_fu_4164_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_56_fu_4176_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_57_fu_4188_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_58_fu_4200_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_59_fu_4212_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_5_fu_3564_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_60_fu_4224_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_61_fu_4236_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_62_fu_4248_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_63_fu_4260_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_6_fu_3576_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_7_fu_3588_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_8_fu_3600_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_9_fu_3612_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln199_fu_3504_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1_pp0_stage0_iter0">or, 0, 0, 2, 1, 1</column>
+<column name="h_max_10_fu_1889_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_11_fu_1903_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_12_fu_1917_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_13_fu_1931_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_14_fu_1945_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_15_fu_1959_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_16_fu_1973_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_17_fu_1987_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_18_fu_2001_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_19_fu_2015_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_1_fu_1763_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_20_fu_2029_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_21_fu_2043_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_22_fu_2057_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_23_fu_2071_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_24_fu_2085_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_25_fu_2099_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_26_fu_2113_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_27_fu_2127_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_28_fu_2141_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_29_fu_2155_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_2_fu_1777_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_30_fu_2169_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_31_fu_2183_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_32_fu_2197_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_33_fu_2211_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_34_fu_2225_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_35_fu_2239_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_36_fu_2253_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_37_fu_2267_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_38_fu_2281_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_39_fu_2295_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_3_fu_1791_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_40_fu_2309_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_41_fu_2323_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_42_fu_2337_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_43_fu_2351_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_44_fu_2365_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_45_fu_2379_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_46_fu_2393_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_47_fu_2407_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_48_fu_2421_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_49_fu_2435_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_4_fu_1805_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_50_fu_2449_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_51_fu_2463_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_52_fu_2477_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_53_fu_2491_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_54_fu_2505_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_55_fu_2519_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_56_fu_2533_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_57_fu_2547_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_58_fu_2561_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_59_fu_2575_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_5_fu_1819_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_60_fu_2589_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_61_fu_2603_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_62_fu_2617_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_63_fu_2631_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_6_fu_1833_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_7_fu_1847_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_8_fu_1861_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_9_fu_1875_p3">select, 0, 0, 16, 1, 16</column>
+<column name="h_max_fu_1749_p3">select, 0, 0, 16, 1, 16</column>
+<column name="r_8_fu_891_p3">select, 0, 0, 2, 1, 2</column>
+<column name="select_ln176_fu_883_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln199_10_fu_3629_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_11_fu_3641_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_12_fu_3653_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_13_fu_3665_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_14_fu_3677_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_15_fu_3689_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_16_fu_3701_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_17_fu_3713_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_18_fu_3725_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_19_fu_3737_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_1_fu_3521_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_20_fu_3749_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_21_fu_3761_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_22_fu_3773_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_23_fu_3785_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_24_fu_3797_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_25_fu_3809_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_26_fu_3821_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_27_fu_3833_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_28_fu_3845_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_29_fu_3857_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_2_fu_3533_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_30_fu_3869_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_31_fu_3881_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_32_fu_3893_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_33_fu_3905_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_34_fu_3917_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_35_fu_3929_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_36_fu_3941_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_37_fu_3953_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_38_fu_3965_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_39_fu_3977_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_3_fu_3545_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_40_fu_3989_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_41_fu_4001_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_42_fu_4013_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_43_fu_4025_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_44_fu_4037_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_45_fu_4049_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_46_fu_4061_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_47_fu_4073_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_48_fu_4085_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_49_fu_4097_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_4_fu_3557_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_50_fu_4109_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_51_fu_4121_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_52_fu_4133_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_53_fu_4145_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_54_fu_4157_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_55_fu_4169_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_56_fu_4181_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_57_fu_4193_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_58_fu_4205_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_59_fu_4217_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_5_fu_3569_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_60_fu_4229_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_61_fu_4241_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_62_fu_4253_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_63_fu_4265_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_6_fu_3581_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_7_fu_3593_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_8_fu_3605_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_9_fu_3617_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln199_fu_3509_p3">select, 0, 0, 16, 1, 16</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">9, 2, 1, 2</column>
+<column name="ap_phi_mux_icmp_ln179133_phi_fu_846_p4">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_c_4">9, 2, 2, 4</column>
+<column name="ap_sig_allocacmp_indvar_flatten2_load">9, 2, 2, 4</column>
+<column name="ap_sig_allocacmp_r_5">9, 2, 2, 4</column>
+<column name="c_fu_314">9, 2, 2, 4</column>
+<column name="indvar_flatten2_fu_306">9, 2, 2, 4</column>
+<column name="r_fu_310">9, 2, 2, 4</column>
+<column name="s_add_out_blk_n">9, 2, 1, 2</column>
+<column name="s_pool_out_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="c_fu_314">2, 0, 2, 0</column>
+<column name="cond_lvalue17613167_fu_570">16, 0, 16, 0</column>
+<column name="cond_lvalue_1022616157_fu_530">16, 0, 16, 0</column>
+<column name="cond_lvalue_1123116456_fu_526">16, 0, 16, 0</column>
+<column name="cond_lvalue_118113466_fu_566">16, 0, 16, 0</column>
+<column name="cond_lvalue_1223616755_fu_522">16, 0, 16, 0</column>
+<column name="cond_lvalue_1324117054_fu_518">16, 0, 16, 0</column>
+<column name="cond_lvalue_1424617353_fu_514">16, 0, 16, 0</column>
+<column name="cond_lvalue_1525117652_fu_510">16, 0, 16, 0</column>
+<column name="cond_lvalue_1625617951_fu_506">16, 0, 16, 0</column>
+<column name="cond_lvalue_1726118250_fu_502">16, 0, 16, 0</column>
+<column name="cond_lvalue_1826618549_fu_498">16, 0, 16, 0</column>
+<column name="cond_lvalue_1927118848_fu_494">16, 0, 16, 0</column>
+<column name="cond_lvalue_2027619147_fu_490">16, 0, 16, 0</column>
+<column name="cond_lvalue_2128119446_fu_486">16, 0, 16, 0</column>
+<column name="cond_lvalue_218613765_fu_562">16, 0, 16, 0</column>
+<column name="cond_lvalue_2228619745_fu_482">16, 0, 16, 0</column>
+<column name="cond_lvalue_2329120044_fu_478">16, 0, 16, 0</column>
+<column name="cond_lvalue_2429620343_fu_474">16, 0, 16, 0</column>
+<column name="cond_lvalue_2530120642_fu_470">16, 0, 16, 0</column>
+<column name="cond_lvalue_2630620941_fu_466">16, 0, 16, 0</column>
+<column name="cond_lvalue_2731121240_fu_462">16, 0, 16, 0</column>
+<column name="cond_lvalue_2831621539_fu_458">16, 0, 16, 0</column>
+<column name="cond_lvalue_2932121838_fu_454">16, 0, 16, 0</column>
+<column name="cond_lvalue_3032622137_fu_450">16, 0, 16, 0</column>
+<column name="cond_lvalue_3133122436_fu_446">16, 0, 16, 0</column>
+<column name="cond_lvalue_319114064_fu_558">16, 0, 16, 0</column>
+<column name="cond_lvalue_3233622735_fu_442">16, 0, 16, 0</column>
+<column name="cond_lvalue_3334123034_fu_438">16, 0, 16, 0</column>
+<column name="cond_lvalue_3434623333_fu_434">16, 0, 16, 0</column>
+<column name="cond_lvalue_3535123632_fu_430">16, 0, 16, 0</column>
+<column name="cond_lvalue_3635623931_fu_426">16, 0, 16, 0</column>
+<column name="cond_lvalue_3736124230_fu_422">16, 0, 16, 0</column>
+<column name="cond_lvalue_3836624529_fu_418">16, 0, 16, 0</column>
+<column name="cond_lvalue_3937124828_fu_414">16, 0, 16, 0</column>
+<column name="cond_lvalue_4037625127_fu_410">16, 0, 16, 0</column>
+<column name="cond_lvalue_4138125426_fu_406">16, 0, 16, 0</column>
+<column name="cond_lvalue_419614363_fu_554">16, 0, 16, 0</column>
+<column name="cond_lvalue_4238625725_fu_402">16, 0, 16, 0</column>
+<column name="cond_lvalue_4339126024_fu_398">16, 0, 16, 0</column>
+<column name="cond_lvalue_4439626323_fu_394">16, 0, 16, 0</column>
+<column name="cond_lvalue_4540126622_fu_390">16, 0, 16, 0</column>
+<column name="cond_lvalue_4640626921_fu_386">16, 0, 16, 0</column>
+<column name="cond_lvalue_4741127220_fu_382">16, 0, 16, 0</column>
+<column name="cond_lvalue_4841627519_fu_378">16, 0, 16, 0</column>
+<column name="cond_lvalue_4942127818_fu_374">16, 0, 16, 0</column>
+<column name="cond_lvalue_5042628117_fu_370">16, 0, 16, 0</column>
+<column name="cond_lvalue_5143128416_fu_366">16, 0, 16, 0</column>
+<column name="cond_lvalue_520114662_fu_550">16, 0, 16, 0</column>
+<column name="cond_lvalue_5243628715_fu_362">16, 0, 16, 0</column>
+<column name="cond_lvalue_5344129014_fu_358">16, 0, 16, 0</column>
+<column name="cond_lvalue_5444629313_fu_354">16, 0, 16, 0</column>
+<column name="cond_lvalue_5545129612_fu_350">16, 0, 16, 0</column>
+<column name="cond_lvalue_5645629911_fu_346">16, 0, 16, 0</column>
+<column name="cond_lvalue_5746130210_fu_342">16, 0, 16, 0</column>
+<column name="cond_lvalue_584663059_fu_338">16, 0, 16, 0</column>
+<column name="cond_lvalue_594713088_fu_334">16, 0, 16, 0</column>
+<column name="cond_lvalue_604763117_fu_330">16, 0, 16, 0</column>
+<column name="cond_lvalue_614813146_fu_326">16, 0, 16, 0</column>
+<column name="cond_lvalue_620614961_fu_546">16, 0, 16, 0</column>
+<column name="cond_lvalue_624863175_fu_322">16, 0, 16, 0</column>
+<column name="cond_lvalue_634913204_fu_318">16, 0, 16, 0</column>
+<column name="cond_lvalue_721115260_fu_542">16, 0, 16, 0</column>
+<column name="cond_lvalue_821615559_fu_538">16, 0, 16, 0</column>
+<column name="cond_lvalue_922115858_fu_534">16, 0, 16, 0</column>
+<column name="h_max_10_reg_5262">16, 0, 16, 0</column>
+<column name="h_max_11_reg_5268">16, 0, 16, 0</column>
+<column name="h_max_12_reg_5274">16, 0, 16, 0</column>
+<column name="h_max_13_reg_5280">16, 0, 16, 0</column>
+<column name="h_max_14_reg_5286">16, 0, 16, 0</column>
+<column name="h_max_15_reg_5292">16, 0, 16, 0</column>
+<column name="h_max_16_reg_5298">16, 0, 16, 0</column>
+<column name="h_max_17_reg_5304">16, 0, 16, 0</column>
+<column name="h_max_18_reg_5310">16, 0, 16, 0</column>
+<column name="h_max_19_reg_5316">16, 0, 16, 0</column>
+<column name="h_max_1_reg_5208">16, 0, 16, 0</column>
+<column name="h_max_20_reg_5322">16, 0, 16, 0</column>
+<column name="h_max_21_reg_5328">16, 0, 16, 0</column>
+<column name="h_max_22_reg_5334">16, 0, 16, 0</column>
+<column name="h_max_23_reg_5340">16, 0, 16, 0</column>
+<column name="h_max_24_reg_5346">16, 0, 16, 0</column>
+<column name="h_max_25_reg_5352">16, 0, 16, 0</column>
+<column name="h_max_26_reg_5358">16, 0, 16, 0</column>
+<column name="h_max_27_reg_5364">16, 0, 16, 0</column>
+<column name="h_max_28_reg_5370">16, 0, 16, 0</column>
+<column name="h_max_29_reg_5376">16, 0, 16, 0</column>
+<column name="h_max_2_reg_5214">16, 0, 16, 0</column>
+<column name="h_max_30_reg_5382">16, 0, 16, 0</column>
+<column name="h_max_31_reg_5388">16, 0, 16, 0</column>
+<column name="h_max_32_reg_5394">16, 0, 16, 0</column>
+<column name="h_max_33_reg_5400">16, 0, 16, 0</column>
+<column name="h_max_34_reg_5406">16, 0, 16, 0</column>
+<column name="h_max_35_reg_5412">16, 0, 16, 0</column>
+<column name="h_max_36_reg_5418">16, 0, 16, 0</column>
+<column name="h_max_37_reg_5424">16, 0, 16, 0</column>
+<column name="h_max_38_reg_5430">16, 0, 16, 0</column>
+<column name="h_max_39_reg_5436">16, 0, 16, 0</column>
+<column name="h_max_3_reg_5220">16, 0, 16, 0</column>
+<column name="h_max_40_reg_5442">16, 0, 16, 0</column>
+<column name="h_max_41_reg_5448">16, 0, 16, 0</column>
+<column name="h_max_42_reg_5454">16, 0, 16, 0</column>
+<column name="h_max_43_reg_5460">16, 0, 16, 0</column>
+<column name="h_max_44_reg_5466">16, 0, 16, 0</column>
+<column name="h_max_45_reg_5472">16, 0, 16, 0</column>
+<column name="h_max_46_reg_5478">16, 0, 16, 0</column>
+<column name="h_max_47_reg_5484">16, 0, 16, 0</column>
+<column name="h_max_48_reg_5490">16, 0, 16, 0</column>
+<column name="h_max_49_reg_5496">16, 0, 16, 0</column>
+<column name="h_max_4_reg_5226">16, 0, 16, 0</column>
+<column name="h_max_50_reg_5502">16, 0, 16, 0</column>
+<column name="h_max_51_reg_5508">16, 0, 16, 0</column>
+<column name="h_max_52_reg_5514">16, 0, 16, 0</column>
+<column name="h_max_53_reg_5520">16, 0, 16, 0</column>
+<column name="h_max_54_reg_5526">16, 0, 16, 0</column>
+<column name="h_max_55_reg_5532">16, 0, 16, 0</column>
+<column name="h_max_56_reg_5538">16, 0, 16, 0</column>
+<column name="h_max_57_reg_5544">16, 0, 16, 0</column>
+<column name="h_max_58_reg_5550">16, 0, 16, 0</column>
+<column name="h_max_59_reg_5556">16, 0, 16, 0</column>
+<column name="h_max_5_reg_5232">16, 0, 16, 0</column>
+<column name="h_max_60_reg_5562">16, 0, 16, 0</column>
+<column name="h_max_61_reg_5568">16, 0, 16, 0</column>
+<column name="h_max_62_reg_5574">16, 0, 16, 0</column>
+<column name="h_max_63_reg_5580">16, 0, 16, 0</column>
+<column name="h_max_6_reg_5238">16, 0, 16, 0</column>
+<column name="h_max_7_reg_5244">16, 0, 16, 0</column>
+<column name="h_max_8_reg_5250">16, 0, 16, 0</column>
+<column name="h_max_9_reg_5256">16, 0, 16, 0</column>
+<column name="h_max_reg_5202">16, 0, 16, 0</column>
+<column name="icmp_ln175_reg_5591">1, 0, 1, 0</column>
+<column name="icmp_ln179_reg_5586">1, 0, 1, 0</column>
+<column name="icmp_ln183_reg_5198">1, 0, 1, 0</column>
+<column name="icmp_ln192_reg_5194">1, 0, 1, 0</column>
+<column name="indvar_flatten2_fu_306">2, 0, 2, 0</column>
+<column name="p_0_0_0_0_02131_fu_826">16, 0, 16, 0</column>
+<column name="p_0_10_0_0_022121_fu_786">16, 0, 16, 0</column>
+<column name="p_0_11_0_0_024120_fu_782">16, 0, 16, 0</column>
+<column name="p_0_12_0_0_026119_fu_778">16, 0, 16, 0</column>
+<column name="p_0_13_0_0_028118_fu_774">16, 0, 16, 0</column>
+<column name="p_0_14_0_0_030117_fu_770">16, 0, 16, 0</column>
+<column name="p_0_15_0_0_032116_fu_766">16, 0, 16, 0</column>
+<column name="p_0_16_0_0_034115_fu_762">16, 0, 16, 0</column>
+<column name="p_0_17_0_0_036114_fu_758">16, 0, 16, 0</column>
+<column name="p_0_18_0_0_038113_fu_754">16, 0, 16, 0</column>
+<column name="p_0_19_0_0_040112_fu_750">16, 0, 16, 0</column>
+<column name="p_0_1_0_0_04130_fu_822">16, 0, 16, 0</column>
+<column name="p_0_20_0_0_042111_fu_746">16, 0, 16, 0</column>
+<column name="p_0_21_0_0_044110_fu_742">16, 0, 16, 0</column>
+<column name="p_0_22_0_0_046109_fu_738">16, 0, 16, 0</column>
+<column name="p_0_23_0_0_048108_fu_734">16, 0, 16, 0</column>
+<column name="p_0_24_0_0_050107_fu_730">16, 0, 16, 0</column>
+<column name="p_0_25_0_0_052106_fu_726">16, 0, 16, 0</column>
+<column name="p_0_26_0_0_054105_fu_722">16, 0, 16, 0</column>
+<column name="p_0_27_0_0_056104_fu_718">16, 0, 16, 0</column>
+<column name="p_0_28_0_0_058103_fu_714">16, 0, 16, 0</column>
+<column name="p_0_29_0_0_060102_fu_710">16, 0, 16, 0</column>
+<column name="p_0_2_0_0_06129_fu_818">16, 0, 16, 0</column>
+<column name="p_0_30_0_0_062101_fu_706">16, 0, 16, 0</column>
+<column name="p_0_31_0_0_064100_fu_702">16, 0, 16, 0</column>
+<column name="p_0_32_0_0_06699_fu_698">16, 0, 16, 0</column>
+<column name="p_0_33_0_0_06898_fu_694">16, 0, 16, 0</column>
+<column name="p_0_34_0_0_07097_fu_690">16, 0, 16, 0</column>
+<column name="p_0_35_0_0_07296_fu_686">16, 0, 16, 0</column>
+<column name="p_0_36_0_0_07495_fu_682">16, 0, 16, 0</column>
+<column name="p_0_37_0_0_07694_fu_678">16, 0, 16, 0</column>
+<column name="p_0_38_0_0_07893_fu_674">16, 0, 16, 0</column>
+<column name="p_0_39_0_0_08092_fu_670">16, 0, 16, 0</column>
+<column name="p_0_3_0_0_08128_fu_814">16, 0, 16, 0</column>
+<column name="p_0_40_0_0_08291_fu_666">16, 0, 16, 0</column>
+<column name="p_0_41_0_0_08490_fu_662">16, 0, 16, 0</column>
+<column name="p_0_42_0_0_08689_fu_658">16, 0, 16, 0</column>
+<column name="p_0_43_0_0_08888_fu_654">16, 0, 16, 0</column>
+<column name="p_0_44_0_0_09087_fu_650">16, 0, 16, 0</column>
+<column name="p_0_45_0_0_09286_fu_646">16, 0, 16, 0</column>
+<column name="p_0_46_0_0_09485_fu_642">16, 0, 16, 0</column>
+<column name="p_0_47_0_0_09684_fu_638">16, 0, 16, 0</column>
+<column name="p_0_48_0_0_09883_fu_634">16, 0, 16, 0</column>
+<column name="p_0_49_0_0_010082_fu_630">16, 0, 16, 0</column>
+<column name="p_0_4_0_0_010127_fu_810">16, 0, 16, 0</column>
+<column name="p_0_50_0_0_010281_fu_626">16, 0, 16, 0</column>
+<column name="p_0_51_0_0_010480_fu_622">16, 0, 16, 0</column>
+<column name="p_0_52_0_0_010679_fu_618">16, 0, 16, 0</column>
+<column name="p_0_53_0_0_010878_fu_614">16, 0, 16, 0</column>
+<column name="p_0_54_0_0_011077_fu_610">16, 0, 16, 0</column>
+<column name="p_0_55_0_0_011276_fu_606">16, 0, 16, 0</column>
+<column name="p_0_56_0_0_011475_fu_602">16, 0, 16, 0</column>
+<column name="p_0_57_0_0_011674_fu_598">16, 0, 16, 0</column>
+<column name="p_0_58_0_0_011873_fu_594">16, 0, 16, 0</column>
+<column name="p_0_59_0_0_012072_fu_590">16, 0, 16, 0</column>
+<column name="p_0_5_0_0_012126_fu_806">16, 0, 16, 0</column>
+<column name="p_0_60_0_0_012271_fu_586">16, 0, 16, 0</column>
+<column name="p_0_61_0_0_012470_fu_582">16, 0, 16, 0</column>
+<column name="p_0_62_0_0_012669_fu_578">16, 0, 16, 0</column>
+<column name="p_0_63_0_0_012868_fu_574">16, 0, 16, 0</column>
+<column name="p_0_6_0_0_014125_fu_802">16, 0, 16, 0</column>
+<column name="p_0_7_0_0_016124_fu_798">16, 0, 16, 0</column>
+<column name="p_0_8_0_0_018123_fu_794">16, 0, 16, 0</column>
+<column name="p_0_9_0_0_020122_fu_790">16, 0, 16, 0</column>
+<column name="r_fu_310">2, 0, 2, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, max_pool_2x2, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, max_pool_2x2, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, max_pool_2x2, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, max_pool_2x2, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, max_pool_2x2, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, max_pool_2x2, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, max_pool_2x2, return value</column>
+<column name="s_add_out_dout">in, 1024, ap_fifo, s_add_out, pointer</column>
+<column name="s_add_out_empty_n">in, 1, ap_fifo, s_add_out, pointer</column>
+<column name="s_add_out_read">out, 1, ap_fifo, s_add_out, pointer</column>
+<column name="s_add_out_num_data_valid">in, 3, ap_fifo, s_add_out, pointer</column>
+<column name="s_add_out_fifo_cap">in, 3, ap_fifo, s_add_out, pointer</column>
+<column name="s_pool_out_din">out, 1024, ap_fifo, s_pool_out, pointer</column>
+<column name="s_pool_out_full_n">in, 1, ap_fifo, s_pool_out, pointer</column>
+<column name="s_pool_out_write">out, 1, ap_fifo, s_pool_out, pointer</column>
+<column name="s_pool_out_num_data_valid">in, 32, ap_fifo, s_pool_out, pointer</column>
+<column name="s_pool_out_fifo_cap">in, 32, ap_fifo, s_pool_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../yolo_npu_tb.cpp in debug mode
+   Compiling ../../../../yolo_npu.cpp in debug mode
+   Generating csim.exe
+--- Initializing YOLO NPU ---
+Executing Instruction A (32->64)...
+Layer A Output mapped to address: 1000
+Reconfiguring Engine...
+Executing Instruction B (64->128)...
+Layer B Output mapped to address: 2000
+SUCCESS: Multiple layers executed on unified hardware!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

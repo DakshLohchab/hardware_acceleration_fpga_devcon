@@ -1,0 +1,3 @@
+relativeroot=/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu
+original_argv=--mode hls --csim --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/hls_config.cfg --work_dir yolo_npu 
+

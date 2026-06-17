@@ -1,0 +1,8 @@
+# Inferred from syn.compile.pipeline_loops=64
+set_directive_pipeline conv_layer_2/VITIS_LOOP_106_1
+set_directive_pipeline conv_layer_1/VITIS_LOOP_18_1
+# Inferred from performance & pipeline pragmas/directives
+set_directive_loop_flatten conv_layer_1/VITIS_LOOP_24_7 -off
+set_directive_loop_flatten split_and_crop/VITIS_LOOP_78_1
+set_directive_loop_flatten conv_layer_2/VITIS_LOOP_112_7 -off
+set_directive_loop_flatten max_pool_2x2/VITIS_LOOP_185_1

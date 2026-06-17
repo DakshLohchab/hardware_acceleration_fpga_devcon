@@ -1,0 +1,592 @@
+---
+MainSourceFile:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          280601
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          281072
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          281544
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          628305
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_18_1:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      18
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2349313
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_18_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_19_2:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      19
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2349350
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_19_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_19_3:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      19
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2349373
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_19_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_20_4:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      20
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2349428
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_20_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_20_5:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      20
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2349451
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_20_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_23_6:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      23
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2349507
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_23_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_24_7:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      24
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2349551
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_24_7: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_27_8:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      27
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2349648
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_27_8: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_29_9:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      29
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2349717
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_29_9: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_43_10:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      43
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2350278
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_43_10: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_46_11:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      46
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2350401
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_46_11: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_48_12:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      48
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2350478
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_48_12: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_50_13:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      50
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2350555
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_50_13: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_69_1:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      69
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2350966
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_69_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_70_2:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      70
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2351010
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_70_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_96_1:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      96
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2351705
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_96_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_97_2:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      97
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2351742
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_97_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_97_3:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      97
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2351765
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_97_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_98_4:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      98
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2351826
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_98_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_98_5:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      98
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2351849
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_98_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_101_6:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      101
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2351905
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_101_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_102_7:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      102
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2351955
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_102_7: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_105_8:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      105
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2352058
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_105_8: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_107_9:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      107
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2352127
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_107_9: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_122_10:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      122
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2352689
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_122_10: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_126_11:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      126
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2352788
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_126_11: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_128_12:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      128
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2352889
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_128_12: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_131_13:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      131
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2353034
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_131_13: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_133_14:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      133
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2353115
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_133_14: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_156_1:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      156
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2353665
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_156_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_162_2:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      162
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2353878
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_162_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_175_1:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      175
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2354318
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_175_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_179_2:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      179
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2354463
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_179_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_184_3:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      184
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2354626
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_184_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_187_4:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      187
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2354758
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_187_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_193_5:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      193
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2354978
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_193_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_196_6:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      196
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2355128
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_196_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_212_1:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      212
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2355535
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_212_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_215_2:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      215
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2355624
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_215_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_221_1:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      221
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2355800
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_221_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_224_2:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      224
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2355945
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_224_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_259_1:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      259
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2357251
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_259_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_264_2:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      264
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2357349
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_264_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_273_3:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      273
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2357578
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_273_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_278_4:  '
+      FilePath:        yolo_backbone_4.cpp
+      FileOffset:      278
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_v4/hls/.autopilot/db/yolo_backbone_4.pp.0.cpp'
+          Offset:          2357676
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_278_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4'
+...

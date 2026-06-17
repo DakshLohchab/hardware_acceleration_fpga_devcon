@@ -1,0 +1,1252 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:304:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-169" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:304:9" msg_body="There are a total of 4 such instances of non-canonical statements in the dataflow region"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:12:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buf complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:13:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buf complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:16:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:28:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_1" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:30:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_1" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:47:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:51:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_1" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:53:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_1" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:55:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_1" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:80:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="split_and_crop" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:100:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buf complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:101:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line_buf complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:104:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:116:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:118:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:135:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:138:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:140:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:142:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="conv_layer_2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:164:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="residual_add_relu" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:170:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="residual_add_relu" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:183:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="max_pool_2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=top_row_max complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:187:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="max_pool_2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=left_pixel complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:190:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="max_pool_2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:195:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="max_pool_2x2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:201:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="max_pool_2x2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:207:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="max_pool_2x2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:213:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="max_pool_2x2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:229:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="load_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:238:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="store_image" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=yolo_backbone_v3" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:251:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=image_in offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:252:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=l1_w_in offset=slave bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:253:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=l1_b_in offset=slave bundle=gmem1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:254:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=l2_w_in offset=slave bundle=gmem2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:255:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=l2_b_in offset=slave bundle=gmem2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:256:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=image_out offset=slave bundle=gmem3" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:257:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:260:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=l1_w cyclic factor=2 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:261:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=l1_w complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:262:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=l1_w complete dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:263:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=l1_w complete dim=4" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:266:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=l1_b cyclic factor=2 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:269:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=l2_w complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:270:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=l2_w complete dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:271:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=l2_w complete dim=4" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:277:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:282:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:291:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:296:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:304:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:310:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_backbone_v3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s_res_sync depth=196" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:240:27" msg_body="Loop 'VITIS_LOOP_240_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_240_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:200:35" msg_body="Loop 'VITIS_LOOP_200_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_200_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:212:39" msg_body="Loop 'VITIS_LOOP_212_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_212_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:206:39" msg_body="Loop 'VITIS_LOOP_206_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_206_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:194:35" msg_body="Loop 'VITIS_LOOP_194_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_194_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:169:27" msg_body="Loop 'VITIS_LOOP_169_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_169_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:137:40" msg_body="Loop 'VITIS_LOOP_137_11' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_137_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:139:44" msg_body="Loop 'VITIS_LOOP_139_12' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_139_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:141:48" msg_body="Loop 'VITIS_LOOP_141_13' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_141_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:50:39" msg_body="Loop 'VITIS_LOOP_50_11' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_50_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:52:43" msg_body="Loop 'VITIS_LOOP_52_12' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_52_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:54:47" msg_body="Loop 'VITIS_LOOP_54_13' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_54_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:231:27" msg_body="Loop 'VITIS_LOOP_231_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_231_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:236:0" msg_body="Unrolling loop 'VITIS_LOOP_240_2' (yolo_backbone_3.cpp:240:27) in function 'store_image' completely with a factor of 32">
+        <args Factor="32" LoopLoc="yolo_backbone_3.cpp:240:27" LoopName="VITIS_LOOP_240_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:181:0" msg_body="Unrolling loop 'VITIS_LOOP_200_4' (yolo_backbone_3.cpp:200:35) in function 'max_pool_2x2' completely with a factor of 32">
+        <args Factor="32" LoopLoc="yolo_backbone_3.cpp:200:35" LoopName="VITIS_LOOP_200_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:181:0" msg_body="Unrolling loop 'VITIS_LOOP_212_6' (yolo_backbone_3.cpp:212:39) in function 'max_pool_2x2' completely with a factor of 32">
+        <args Factor="32" LoopLoc="yolo_backbone_3.cpp:212:39" LoopName="VITIS_LOOP_212_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:181:0" msg_body="Unrolling loop 'VITIS_LOOP_206_5' (yolo_backbone_3.cpp:206:39) in function 'max_pool_2x2' completely with a factor of 32">
+        <args Factor="32" LoopLoc="yolo_backbone_3.cpp:206:39" LoopName="VITIS_LOOP_206_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:181:0" msg_body="Unrolling loop 'VITIS_LOOP_194_3' (yolo_backbone_3.cpp:194:35) in function 'max_pool_2x2' completely with a factor of 32">
+        <args Factor="32" LoopLoc="yolo_backbone_3.cpp:194:35" LoopName="VITIS_LOOP_194_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:162:0" msg_body="Unrolling loop 'VITIS_LOOP_169_2' (yolo_backbone_3.cpp:169:27) in function 'residual_add_relu' completely with a factor of 32">
+        <args Factor="32" LoopLoc="yolo_backbone_3.cpp:169:27" LoopName="VITIS_LOOP_169_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:98:0" msg_body="Unrolling loop 'VITIS_LOOP_115_8' (yolo_backbone_3.cpp:115:31) in function 'conv_layer_2' completely with a factor of 32">
+        <args Factor="32" LoopLoc="yolo_backbone_3.cpp:115:31" LoopName="VITIS_LOOP_115_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:98:0" msg_body="Unrolling loop 'VITIS_LOOP_117_9' (yolo_backbone_3.cpp:117:35) in function 'conv_layer_2' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_backbone_3.cpp:117:35" LoopName="VITIS_LOOP_117_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:98:0" msg_body="Unrolling loop 'VITIS_LOOP_137_11' (yolo_backbone_3.cpp:137:40) in function 'conv_layer_2' completely with a factor of 32">
+        <args Factor="32" LoopLoc="yolo_backbone_3.cpp:137:40" LoopName="VITIS_LOOP_137_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:98:0" msg_body="Unrolling loop 'VITIS_LOOP_139_12' (yolo_backbone_3.cpp:139:44) in function 'conv_layer_2' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_backbone_3.cpp:139:44" LoopName="VITIS_LOOP_139_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:98:0" msg_body="Unrolling loop 'VITIS_LOOP_141_13' (yolo_backbone_3.cpp:141:48) in function 'conv_layer_2' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_backbone_3.cpp:141:48" LoopName="VITIS_LOOP_141_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_27_8' (yolo_backbone_3.cpp:27:30) in function 'conv_layer_1' completely with a factor of 16">
+        <args Factor="16" LoopLoc="yolo_backbone_3.cpp:27:30" LoopName="VITIS_LOOP_27_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_29_9' (yolo_backbone_3.cpp:29:34) in function 'conv_layer_1' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_backbone_3.cpp:29:34" LoopName="VITIS_LOOP_29_9"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_50_11' (yolo_backbone_3.cpp:50:39) in function 'conv_layer_1' completely with a factor of 16">
+        <args Factor="16" LoopLoc="yolo_backbone_3.cpp:50:39" LoopName="VITIS_LOOP_50_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_52_12' (yolo_backbone_3.cpp:52:43) in function 'conv_layer_1' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_backbone_3.cpp:52:43" LoopName="VITIS_LOOP_52_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_54_13' (yolo_backbone_3.cpp:54:47) in function 'conv_layer_1' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_backbone_3.cpp:54:47" LoopName="VITIS_LOOP_54_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:227:0" msg_body="Unrolling loop 'VITIS_LOOP_231_2' (yolo_backbone_3.cpp:231:27) in function 'load_image' completely with a factor of 16">
+        <args Factor="16" LoopLoc="yolo_backbone_3.cpp:231:27" LoopName="VITIS_LOOP_231_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:250:0" msg_body="Skipping array undecay on variable length array 'image_in'.">
+        <args ArrayName="image_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:250:0" msg_body="Skipping array undecay on variable length array 'image_out'.">
+        <args ArrayName="image_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="line_buf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:15:12" msg_body="Applying array_partition to 'window': Complete partitioning on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
+        <args Dim="islist 1 2 3" Mode="islist Complete Complete Complete" UOName="window"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="line_buf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:103:12" msg_body="Applying array_partition to 'window': Complete partitioning on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
+        <args Dim="islist 1 2 3" Mode="islist Complete Complete Complete" UOName="window"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:182:12" msg_body="Applying array_partition to 'top_row_max': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="top_row_max"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:186:16" msg_body="Applying array_partition to 'left_pixel': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="left_pixel"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:259:12" msg_body="Applying array_partition to 'l1_w': Cyclic partitioning with factor 2 on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3. Complete partitioning on dimension 4.">
+        <args Dim="islist 1 2 3 4" Factor="2" Mode="islist Cyclic Complete Complete Complete" UOName="l1_w"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:265:12" msg_body="Applying array_partition to 'l1_b': Cyclic partitioning with factor 2 on dimension 1.">
+        <args Dim="1" Factor="2" Mode="Cyclic" UOName="l1_b"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:268:12" msg_body="Applying array_partition to 'l2_w': Complete partitioning on dimension 2. Complete partitioning on dimension 3. Complete partitioning on dimension 4.">
+        <args Dim="islist 2 3 4" Mode="islist Complete Complete Complete" UOName="l2_w"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:314:29" msg_body="Aggregating fifo (hls::stream) variable 's_pool_out' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="s_pool_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:313:29" msg_body="Aggregating fifo (hls::stream) variable 's_add_out' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="s_add_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:309:29" msg_body="Aggregating fifo (hls::stream) variable 's_res_sync' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="s_res_sync"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:312:29" msg_body="Aggregating fifo (hls::stream) variable 's_l2_out' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="s_l2_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:307:29" msg_body="Aggregating fifo (hls::stream) variable 's_conv2_in' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="s_conv2_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:306:29" msg_body="Aggregating fifo (hls::stream) variable 's_l1_out' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="s_l1_out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:305:29" msg_body="Aggregating fifo (hls::stream) variable 's_img_in' with compact=bit mode in 256-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="256" HwTyName="fifo (hls::stream)" Name="s_img_in"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:106:23" msg_body="pipeline   1 conv_layer_2 config_compile -pipeline_loops 64VITIS_LOOP_106_1 yolo_backbone_3.cpp:106:23">
+        <args LoopLoc="yolo_backbone_3.cpp:106:23" LoopLoc-DebugLoc="File yolo_backbone_3.cpp Line 106 Column 23" LoopName="VITIS_LOOP_106_1" PragmaFunction="conv_layer_2" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:18:22" msg_body="pipeline   1 conv_layer_1 config_compile -pipeline_loops 64VITIS_LOOP_18_1 yolo_backbone_3.cpp:18:22">
+        <args LoopLoc="yolo_backbone_3.cpp:18:22" LoopLoc-DebugLoc="File yolo_backbone_3.cpp Line 18 Column 22" LoopName="VITIS_LOOP_18_1" PragmaFunction="conv_layer_1" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:107:27" msg_body="Loop 'VITIS_LOOP_107_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_107_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:107:68" msg_body="Loop 'VITIS_LOOP_107_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_107_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:108:27" msg_body="Loop 'VITIS_LOOP_108_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_108_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:108:68" msg_body="Loop 'VITIS_LOOP_108_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_108_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:19:26" msg_body="Loop 'VITIS_LOOP_19_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_19_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:19:66" msg_body="Loop 'VITIS_LOOP_19_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_19_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:20:26" msg_body="Loop 'VITIS_LOOP_20_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_20_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:20:66" msg_body="Loop 'VITIS_LOOP_20_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_20_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:98:0" msg_body="Unrolling loop 'VITIS_LOOP_107_2' (yolo_backbone_3.cpp:107:27) in function 'conv_layer_2' completely with a factor of 2">
+        <args Factor="2" LoopLoc="yolo_backbone_3.cpp:107:27" LoopName="VITIS_LOOP_107_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:98:0" msg_body="Unrolling loop 'VITIS_LOOP_107_3' (yolo_backbone_3.cpp:107:68) in function 'conv_layer_2' completely with a factor of 14">
+        <args Factor="14" LoopLoc="yolo_backbone_3.cpp:107:68" LoopName="VITIS_LOOP_107_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:98:0" msg_body="Unrolling loop 'VITIS_LOOP_108_4' (yolo_backbone_3.cpp:108:27) in function 'conv_layer_2' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_backbone_3.cpp:108:27" LoopName="VITIS_LOOP_108_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:98:0" msg_body="Unrolling loop 'VITIS_LOOP_108_5' (yolo_backbone_3.cpp:108:68) in function 'conv_layer_2' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_backbone_3.cpp:108:68" LoopName="VITIS_LOOP_108_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_19_2' (yolo_backbone_3.cpp:19:26) in function 'conv_layer_1' completely with a factor of 2">
+        <args Factor="2" LoopLoc="yolo_backbone_3.cpp:19:26" LoopName="VITIS_LOOP_19_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_19_3' (yolo_backbone_3.cpp:19:66) in function 'conv_layer_1' completely with a factor of 16">
+        <args Factor="16" LoopLoc="yolo_backbone_3.cpp:19:66" LoopName="VITIS_LOOP_19_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_20_4' (yolo_backbone_3.cpp:20:26) in function 'conv_layer_1' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_backbone_3.cpp:20:26" LoopName="VITIS_LOOP_20_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:10:0" msg_body="Unrolling loop 'VITIS_LOOP_20_5' (yolo_backbone_3.cpp:20:66) in function 'conv_layer_1' completely with a factor of 3">
+        <args Factor="3" LoopLoc="yolo_backbone_3.cpp:20:66" LoopName="VITIS_LOOP_20_5"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:24:26" msg_body="Disabling loop flattening for loop 'VITIS_LOOP_24_7'.">
+        <args LoopName="VITIS_LOOP_24_7"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:24:26" msg_body="loop_flatten off  1 conv_layer_1 yolo_backbone_3.cpp:47:1VITIS_LOOP_24_7 yolo_backbone_3.cpp:24:26">
+        <args LoopLoc="yolo_backbone_3.cpp:24:26" LoopLoc-DebugLoc="File yolo_backbone_3.cpp Line 24 Column 26" LoopName="VITIS_LOOP_24_7" PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="off" PragmaSrcLoc="yolo_backbone_3.cpp:47:1" PragmaSrcLoc-DebugLoc="File yolo_backbone_3.cpp Line 47 Column 1" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:112:27" msg_body="Disabling loop flattening for loop 'VITIS_LOOP_112_7'.">
+        <args LoopName="VITIS_LOOP_112_7"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:112:27" msg_body="loop_flatten off  1 conv_layer_2 yolo_backbone_3.cpp:135:1VITIS_LOOP_112_7 yolo_backbone_3.cpp:112:27">
+        <args LoopLoc="yolo_backbone_3.cpp:112:27" LoopLoc-DebugLoc="File yolo_backbone_3.cpp Line 112 Column 27" LoopName="VITIS_LOOP_112_7" PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="off" PragmaSrcLoc="yolo_backbone_3.cpp:135:1" PragmaSrcLoc-DebugLoc="File yolo_backbone_3.cpp Line 135 Column 1" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_0_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_0_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_0_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_0_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_0_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_0_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_0_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_0_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_0_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_0_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_0_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_0_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_10_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_10_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_10_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_10_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_10_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_10_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_10_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_10_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_10_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_10_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_10_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_10_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_11_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_11_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_11_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_11_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_11_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_11_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_11_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_11_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_11_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_11_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_11_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_11_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_12_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_12_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_12_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_12_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_12_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_12_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_12_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_12_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_12_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_12_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_12_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_12_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_13_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_13_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_13_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_13_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_13_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_13_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_13_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_13_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_13_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_13_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_13_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_13_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_14_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_14_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_14_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_14_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_14_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_14_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_14_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_14_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_14_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_14_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_14_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_14_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_15_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_15_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_15_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_15_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_15_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_15_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_15_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_15_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_15_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_15_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_15_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_15_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_1_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_1_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_1_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_1_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_1_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_1_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_1_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_1_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_1_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_1_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_1_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_1_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_2_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_2_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_2_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_2_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_2_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_2_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_2_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_2_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_2_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_2_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_2_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_2_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_3_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_3_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_3_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_3_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_3_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_3_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_3_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_3_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_3_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_3_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_3_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_3_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_4_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_4_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_4_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_4_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_4_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_4_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_4_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_4_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_4_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_4_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_4_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_4_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_5_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_5_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_5_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_5_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_5_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_5_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_5_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_5_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_5_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_5_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_5_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_5_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_6_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_6_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_6_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_6_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_6_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_6_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_6_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_6_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_6_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_6_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_6_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_6_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_7_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_7_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_7_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_7_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_7_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_7_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_7_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_7_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_7_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_7_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_7_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_7_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_8_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_8_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_8_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_8_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_8_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_8_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_8_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_8_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_8_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_8_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_8_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_8_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_9_0 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_9_0">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_9_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_9_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_9_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_9_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_9_1 1 conv_layer_1 yolo_backbone_3.cpp:11:12 line_buf_9_1">
+        <args PragmaFunction="conv_layer_1" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_9_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:11:12" VarName="line_buf_9_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_9_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_9_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_0_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_0_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_0_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_0_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_0_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_0_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_0_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_0_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_0_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_0_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_0_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_0_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_10_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_10_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_10_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_10_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_10_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_10_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_10_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_10_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_10_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_10_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_10_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_10_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_11_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_11_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_11_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_11_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_11_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_11_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_11_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_11_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_11_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_11_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_11_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_11_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_12_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_12_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_12_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_12_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_12_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_12_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_12_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_12_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_12_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_12_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_12_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_12_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_13_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_13_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_13_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_13_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_13_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_13_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_13_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_13_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_13_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_13_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_13_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_13_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_14_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_14_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_14_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_14_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_14_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_14_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_14_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_14_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_14_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_14_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_14_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_14_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_15_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_15_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_15_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_15_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_15_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_15_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_15_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_15_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_15_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_15_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_15_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_15_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_16_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_16_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_16_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_16_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_16_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_16_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_16_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_16_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_16_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_16_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_16_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_16_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_17_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_17_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_17_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_17_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_17_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_17_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_17_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_17_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_17_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_17_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_17_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_17_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_18_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_18_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_18_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_18_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_18_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_18_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_18_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_18_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_18_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_18_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_18_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_18_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_19_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_19_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_19_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_19_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_19_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_19_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_19_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_19_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_19_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_19_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_19_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_19_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_1_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_1_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_1_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_1_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_1_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_1_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_1_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_1_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_1_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_1_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_1_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_1_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_20_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_20_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_20_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_20_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_20_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_20_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_20_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_20_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_20_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_20_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_20_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_20_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_21_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_21_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_21_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_21_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_21_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_21_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_21_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_21_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_21_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_21_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_21_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_21_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_22_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_22_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_22_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_22_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_22_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_22_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_22_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_22_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_22_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_22_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_22_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_22_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_23_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_23_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_23_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_23_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_23_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_23_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_23_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_23_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_23_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_23_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_23_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_23_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_24_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_24_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_24_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_24_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_24_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_24_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_24_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_24_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_24_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_24_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_24_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_24_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_25_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_25_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_25_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_25_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_25_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_25_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_25_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_25_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_25_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_25_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_25_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_25_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_26_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_26_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_26_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_26_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_26_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_26_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_26_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_26_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_26_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_26_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_26_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_26_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_27_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_27_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_27_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_27_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_27_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_27_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_27_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_27_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_27_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_27_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_27_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_27_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_28_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_28_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_28_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_28_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_28_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_28_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_28_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_28_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_28_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_28_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_28_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_28_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_29_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_29_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_29_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_29_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_29_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_29_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_29_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_29_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_29_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_29_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_29_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_29_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_2_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_2_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_2_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_2_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_2_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_2_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_2_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_2_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_2_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_2_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_2_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_2_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_30_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_30_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_30_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_30_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_30_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_30_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_30_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_30_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_30_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_30_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_30_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_30_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_31_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_31_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_31_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_31_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_31_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_31_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_31_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_31_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_31_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_31_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_31_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_31_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_3_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_3_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_3_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_3_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_3_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_3_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_3_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_3_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_3_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_3_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_3_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_3_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_4_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_4_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_4_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_4_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_4_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_4_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_4_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_4_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_4_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_4_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_4_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_4_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_5_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_5_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_5_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_5_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_5_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_5_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_5_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_5_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_5_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_5_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_5_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_5_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_6_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_6_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_6_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_6_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_6_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_6_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_6_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_6_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_6_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_6_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_6_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_6_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_7_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_7_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_7_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_7_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_7_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_7_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_7_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_7_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_7_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_7_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_7_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_7_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_8_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_8_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_8_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_8_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_8_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_8_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_8_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_8_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_8_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_8_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_8_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_8_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_9_0 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_9_0">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_9_0" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_9_0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_9_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_9_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="array_partition dim=1 type=complete  variable=line_buf_9_1 1 conv_layer_2 yolo_backbone_3.cpp:99:12 line_buf_9_1">
+        <args PragmaFunction="conv_layer_2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=line_buf_9_1" PragmaType="array_partition" VarLoc="yolo_backbone_3.cpp:99:12" VarName="line_buf_9_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'line_buf_9_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="line_buf_9_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_0_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_0_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_0_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_0_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_1_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_1_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_1_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_1_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_2_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_2_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_2_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_2_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_3_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_3_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_3_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_3_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_4_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_4_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_4_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_4_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_5_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_5_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_5_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_5_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_6_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_6_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_6_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_6_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_7_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_7_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_7_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_7_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_8_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_8_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_8_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_8_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_9_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_9_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_9_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_9_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_10_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_10_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_10_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_10_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_11_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_11_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_11_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_11_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_12_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_12_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_12_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_12_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_13_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_13_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_13_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_13_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_14_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_14_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_14_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_14_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_15_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_15_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:11:12" msg_body="Applying array_partition to 'line_buf_15_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_15_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_0_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_0_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_0_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_0_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_1_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_1_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_1_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_1_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_2_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_2_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_2_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_2_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_3_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_3_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_3_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_3_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_4_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_4_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_4_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_4_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_5_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_5_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_5_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_5_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_6_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_6_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_6_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_6_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_7_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_7_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_7_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_7_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_8_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_8_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_8_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_8_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_9_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_9_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_9_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_9_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_10_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_10_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_10_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_10_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_11_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_11_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_11_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_11_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_12_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_12_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_12_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_12_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_13_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_13_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_13_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_13_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_14_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_14_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_14_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_14_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_15_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_15_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_15_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_15_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_16_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_16_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_16_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_16_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_17_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_17_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_17_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_17_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_18_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_18_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_18_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_18_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_19_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_19_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_19_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_19_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_20_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_20_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_20_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_20_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_21_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_21_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_21_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_21_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_22_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_22_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_22_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_22_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_23_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_23_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_23_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_23_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_24_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_24_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_24_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_24_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_25_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_25_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_25_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_25_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_26_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_26_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_26_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_26_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_27_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_27_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_27_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_27_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_28_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_28_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_28_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_28_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_29_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_29_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_29_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_29_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_30_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_30_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_30_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_30_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_31_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_31_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:99:12" msg_body="Applying array_partition to 'line_buf_31_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="line_buf_31_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-455" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:276:23" msg_body="Changing loop 'Loop_VITIS_LOOP_276_1_proc' (yolo_backbone_3.cpp:276:23) to a process function for dataflow in function 'yolo_backbone_v3'">
+        <args LoopLoc="yolo_backbone_3.cpp:276:23" LoopName="Loop_VITIS_LOOP_276_1_proc" Name="yolo_backbone_v3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-455" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:281:23" msg_body="Changing loop 'Loop_VITIS_LOOP_281_2_proc' (yolo_backbone_3.cpp:281:23) to a process function for dataflow in function 'yolo_backbone_v3'">
+        <args LoopLoc="yolo_backbone_3.cpp:281:23" LoopName="Loop_VITIS_LOOP_281_2_proc" Name="yolo_backbone_v3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-455" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:290:23" msg_body="Changing loop 'Loop_VITIS_LOOP_290_3_proc' (yolo_backbone_3.cpp:290:23) to a process function for dataflow in function 'yolo_backbone_v3'">
+        <args LoopLoc="yolo_backbone_3.cpp:290:23" LoopName="Loop_VITIS_LOOP_290_3_proc" Name="yolo_backbone_v3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-455" msg_severity="INFO" msg_loc="yolo_backbone_3.cpp:295:23" msg_body="Changing loop 'Loop_VITIS_LOOP_295_4_proc' (yolo_backbone_3.cpp:295:23) to a process function for dataflow in function 'yolo_backbone_v3'">
+        <args LoopLoc="yolo_backbone_3.cpp:295:23" LoopName="Loop_VITIS_LOOP_295_4_proc" Name="yolo_backbone_v3"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-475" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:250:0" msg_body="Merging processes 'Loop_VITIS_LOOP_281_2_proc' and 'Loop_VITIS_LOOP_276_1_proc' in function 'yolo_backbone_v3' due to reads on 'gmem1'">
+        <args FName="yolo_backbone_v3"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-475" msg_severity="WARNING" msg_loc="yolo_backbone_3.cpp:250:0" msg_body="Merging processes 'Loop_VITIS_LOOP_295_4_proc' and 'Loop_VITIS_LOOP_290_3_proc' in function 'yolo_backbone_v3' due to reads on 'gmem2'">
+        <args FName="yolo_backbone_v3"/>
+    </msg>
+</xilinx:hls_fe_msgs>

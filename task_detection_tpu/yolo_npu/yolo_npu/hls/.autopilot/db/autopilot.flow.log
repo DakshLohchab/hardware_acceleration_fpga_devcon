@@ -1,0 +1,274 @@
+Execute       source -notrace -encoding utf-8 /home/dlohchab/Xilinx/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /home/dlohchab/Xilinx/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls opened at Wed Jun 17 18:07:44 IST 2026
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+Execute       apply_ini hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=./yolo_npu.cpp' from hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./yolo_npu.cpp' from hls_config.cfg(7)
+Execute         add_files /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu.cpp 
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=./yolo_npu_tb.cpp' from hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./yolo_npu_tb.cpp' from hls_config.cfg(8)
+Execute         add_files -tb /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_tb.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=yolo_npu_core' from hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=yolo_npu_core' from hls_config.cfg(9)
+Execute         set_top yolo_npu_core 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xcvu9p-flga2104-2-i' from hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xcvu9p-flga2104-2-i' from hls_config.cfg(1)
+Execute         set_part xcvu9p-flga2104-2-i 
+Execute           create_platform xcvu9p-flga2104-2-i -board  
+DBG:HLSDevice: Trying to load device library: /home/dlohchab/Xilinx/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/dlohchab/Xilinx/2025.2/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+ERROR: [HLS 200-1023] Part 'xcvu9p-flga2104-2-i' is not installed.
+Command           create_platform done; error code: 1; 0.9 sec.
+INFO-FLOW: Caught error in set_part: command 'create_platform' returned error code
+    while executing
+"create_platform $value -board $board"
+    (procedure "ap_internal_set_part" line 28)
+    invoked from within
+"ap_internal_set_part "
+Command         set_part done; error code: 2; 0.9 sec.
+Execute         send_msg_by_id ERROR @200-1912@%s 'part=xcvu9p-flga2104-2-i' from hls_config.cfg(1): command 'create_platform' returned error code 
+ERROR: [HLS 200-1912] Problem with config ini entry 'part=xcvu9p-flga2104-2-i' from hls_config.cfg(1): command 'create_platform' returned error code
+INFO-FLOW: Caught error in apply_ini: problem with 'part=xcvu9p-flga2104-2-i' from hls_config.cfg(1): command 'create_platform' returned error code
+    while executing
+"error "problem with $errmsg""
+    (procedure "run_single_ini_cmd" line 47)
+    invoked from within
+"run_single_ini_cmd $cmd $ini $verbosity $origcwd $show_ini $hide_stack"
+    ("foreach" body line 3)
+    invoked from within
+"foreach cmdinfo $cmd_ini_list {
+            lassign $cmdinfo cmd ini
+            run_single_ini_cmd $cmd $ini $verbosity $origcwd $show_ini $hide_stac..."
+    (procedure "::HLS_INI::apply_inilist" line 21)
+    invoked from within
+"::HLS_INI::apply_inilist "apply_ini" $inilist $apply_searchdirs $verbosity"
+    (procedure "ap_internal_apply_ini" line 59)
+    invoked from within
+"ap_internal_apply_ini "
+Command       apply_ini done; error code: 2; 0.93 sec.
+INFO-FLOW: Caught error in open_solution: problem with 'part=xcvu9p-flga2104-2-i' from hls_config.cfg(1): command 'create_platform' returned error code
+    while executing
+"ap_internal_open_solution "
+Command     open_solution done; error code: 2; 0.99 sec.
+Execute     close_project 
+Execute       close_solution 
+Execute         cleanup_all 
+Execute         cleanup_all 
+Execute       source -notrace -encoding utf-8 /home/dlohchab/Xilinx/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /home/dlohchab/Xilinx/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls opened at Wed Jun 17 18:08:37 IST 2026
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+Execute       apply_ini hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=./yolo_npu.cpp' from hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./yolo_npu.cpp' from hls_config.cfg(7)
+Execute         add_files /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu.cpp 
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=./yolo_npu_tb.cpp' from hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./yolo_npu_tb.cpp' from hls_config.cfg(8)
+Execute         add_files -tb /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_tb.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=yolo_npu_core' from hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=yolo_npu_core' from hls_config.cfg(9)
+Execute         set_top yolo_npu_core 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7k325tffg900-2' from hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+Execute         set_part xc7k325tffg900-2 
+Execute           create_platform xc7k325tffg900-2 -board  
+DBG:HLSDevice: Trying to load device library: /home/dlohchab/Xilinx/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/dlohchab/Xilinx/2025.2/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+Command           create_platform done; 0.6 sec.
+Execute           source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.12 sec.
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Command           ap_source done; 0.16 sec.
+Execute           ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.8 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 0.83 sec.
+Execute       write_component -config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/vitis-comp.json
+Command     open_solution done; 0.89 sec.
+Command   open_component done; 0.9 sec.
+Execute   apply_ini /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.54 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 8.31 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 /home/dlohchab/Xilinx/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /home/dlohchab/Xilinx/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls opened at Wed Jun 17 18:15:49 IST 2026
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+Execute       apply_ini hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=./yolo_npu_v2.cpp' from hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./yolo_npu_v2.cpp' from hls_config.cfg(8)
+Execute         add_files /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp 
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=./yolo_npu_v2_tb.cpp' from hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./yolo_npu_v2_tb.cpp' from hls_config.cfg(9)
+Execute         add_files -tb /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2_tb.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=' from hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=' from hls_config.cfg(7)
+Execute         set_top 
+ERROR: [HLS 200-101] set_top: Not enough required positional arguments.
+Execute           ::HLS_INI_HELP::ininames_for_cmd_iniglob set_top * 0
+Execute           ::HLS_INI_HELP::inilhs2maninfo syn.top
+Command         set_top done; error code: 1; 
+Execute         send_msg_by_id ERROR @200-1912@%s 'syn.top=' from hls_config.cfg(7): command 'set_top' returned error code 
+ERROR: [HLS 200-1912] Problem with config ini entry 'syn.top=' from hls_config.cfg(7): command 'set_top' returned error code
+INFO-FLOW: Caught error in apply_ini: problem with 'syn.top=' from hls_config.cfg(7): command 'set_top' returned error code
+    while executing
+"error "problem with $errmsg""
+    (procedure "run_single_ini_cmd" line 47)
+    invoked from within
+"run_single_ini_cmd $cmd $ini $verbosity $origcwd $show_ini $hide_stack"
+    ("foreach" body line 3)
+    invoked from within
+"foreach cmdinfo $cmd_ini_list {
+            lassign $cmdinfo cmd ini
+            run_single_ini_cmd $cmd $ini $verbosity $origcwd $show_ini $hide_stac..."
+    (procedure "::HLS_INI::apply_inilist" line 21)
+    invoked from within
+"::HLS_INI::apply_inilist "apply_ini" $inilist $apply_searchdirs $verbosity"
+    (procedure "ap_internal_apply_ini" line 59)
+    invoked from within
+"ap_internal_apply_ini "
+Command       apply_ini done; error code: 2; 
+INFO-FLOW: Caught error in open_solution: problem with 'syn.top=' from hls_config.cfg(7): command 'set_top' returned error code
+    while executing
+"ap_internal_open_solution "
+Command     open_solution done; error code: 2; 
+Execute     close_project 
+Execute       close_solution 
+Execute         cleanup_all 
+Execute         cleanup_all 
+Execute       source -notrace -encoding utf-8 /home/dlohchab/Xilinx/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 /home/dlohchab/Xilinx/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+INFO-FLOW: Workspace /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls opened at Wed Jun 17 18:17:51 IST 2026
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+Execute       apply_ini hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=./yolo_npu_v2.cpp' from hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./yolo_npu_v2.cpp' from hls_config.cfg(8)
+Execute         add_files /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp 
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=./yolo_npu_v2_tb.cpp' from hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./yolo_npu_v2_tb.cpp' from hls_config.cfg(9)
+Execute         add_files -tb /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2_tb.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=yolo_npu_v2_core' from hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=yolo_npu_v2_core' from hls_config.cfg(7)
+Execute         set_top yolo_npu_v2_core 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7k325tffg900-2' from hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7k325tffg900-2' from hls_config.cfg(1)
+Execute         set_part xc7k325tffg900-2 
+Execute           create_platform xc7k325tffg900-2 -board  
+DBG:HLSDevice: Trying to load device library: /home/dlohchab/Xilinx/2025.2/Vitis/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/dlohchab/Xilinx/2025.2/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg900-2'
+Command           create_platform done; 0.82 sec.
+Execute           source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command             ap_source done; 0.16 sec.
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.11 sec.
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/dlohchab/Xilinx/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Command           ap_source done; 0.32 sec.
+Execute           ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 1.18 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 1.22 sec.
+Execute       write_component -config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/vitis-comp.json
+Command     open_solution done; 1.3 sec.
+Command   open_component done; 1.31 sec.
+Execute   apply_ini /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file csim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+Execute     send_msg_by_id INFO @200-2191@%s%s C-Simulation clang-16 
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 2.06 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 10.18 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

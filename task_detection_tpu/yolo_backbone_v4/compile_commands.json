@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4",
+    "arguments": [
+      "/home/dlohchab/Xilinx/2025.2/Vitis/lnx64/tools/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=yolo_backbone_v4",
+      "-c",
+      "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_4.cpp"
+    ],
+    "file": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_4.cpp"
+  },
+  {
+    "directory": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4",
+    "arguments": [
+      "/home/dlohchab/Xilinx/2025.2/Vitis/lnx64/tools/vcxx/libexec/clang++",
+      "--gcc-toolchain=/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/home/dlohchab/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_4_tb.cpp"
+    ],
+    "file": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_backbone_v4/yolo_backbone_4_tb.cpp"
+  }
+]

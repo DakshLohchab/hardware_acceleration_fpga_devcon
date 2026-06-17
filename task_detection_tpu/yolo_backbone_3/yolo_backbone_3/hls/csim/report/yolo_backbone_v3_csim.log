@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../yolo_backbone_3.cpp in debug mode
+   Generating csim.exe
+--- Starting Complete YOLO Backbone Block Inference ---
+
+--- Output Feature Map Sample (Output Channel 0) ---
+-0.0400  -0.0430  -0.0469  -0.0488  -0.0498  -0.0537  
+-0.0430  -0.0469  -0.0488  -0.0498  -0.0537  -0.0557  
+-0.0469  -0.0488  -0.0498  -0.0537  -0.0557  -0.0605  
+-0.0488  -0.0498  -0.0537  -0.0557  -0.0605  -0.0625  
+-0.0498  -0.0537  -0.0557  -0.0605  -0.0625  -0.0645  
+-0.0537  -0.0557  -0.0605  -0.0625  -0.0645  -0.0664  
+
+Inference Complete. Observe the variance in the grid above to confirm full tensor processing.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 256
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -26,11 +26,6 @@ INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Ve
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
 INFO: [HLS 200-2036] Building debug C Simulation binaries
-   Compiling ../../../../tpu_tb.cpp in debug mode
-   Compiling ../../../../task_detection_accel_tb.cpp in debug mode
-   Compiling ../../../../tpu_core.cpp in debug mode
-   Compiling ../../../../mlp_engine.cpp in debug mode
-   Compiling ../../../../task_detection_accel.cpp in debug mode
    Generating csim.exe
 ld.lld: error: duplicate symbol: main
 >>> defined at tpu_tb.cpp:5 (../../../../tpu_tb.cpp:5)
@@ -42,4 +37,4 @@ make: *** [Makefile.rules:333: csim.exe] Error 1
 ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 211-3] *************** CSIM finish ***************
 ERROR: CSIM Failed
-INFO: [HLS 200-112] Total CPU user time: 17.94 seconds. Total CPU system time: 1.92 seconds. Total elapsed time: 30.31 seconds; peak allocated memory: 269.520 MB.
+INFO: [HLS 200-112] Total CPU user time: 2.84 seconds. Total CPU system time: 0.98 seconds. Total elapsed time: 9.3 seconds; peak allocated memory: 269.648 MB.

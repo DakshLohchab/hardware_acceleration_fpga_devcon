@@ -1,0 +1,17 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./yolo_npu_v2.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./yolo_npu_v2_tb.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=' from hls_config.cfg(7)
+ERROR: [HLS 200-101] set_top: Not enough required positional arguments.
+[1mSYNTAX [0m[1msyn.top[0m=[1mname[0m=<string> 
+ERROR: [HLS 200-1912] Problem with config ini entry 'syn.top=' from hls_config.cfg(7): command 'set_top' returned error code
+ERROR: problem with 'syn.top=' from hls_config.cfg(7): command 'set_top' returned error code
+INFO: [HLS 200-112] Total CPU user time: 1.13 seconds. Total CPU system time: 0.3 seconds. Total elapsed time: 1.7 seconds; peak allocated memory: 149.195 MB.
