@@ -1,0 +1,3 @@
+relativeroot=/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu
+original_argv=--mode hls --package --config hls_config.cfg --work_dir yolo_npu 
+

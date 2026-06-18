@@ -17,4 +17,5 @@ obj/yolo_npu_v2_tb.o: ../../../../yolo_npu_v2_tb.cpp \
   /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_int_ref.h \
   /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_int_special.h \
   /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_ref.h \
-  /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_special.h
+  /home/dlohchab/Xilinx/2025.2/Vitis/include/etc/ap_fixed_special.h \
+  ../../../../npu_program.h

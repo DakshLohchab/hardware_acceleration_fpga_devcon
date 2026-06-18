@@ -1,0 +1,352 @@
+---
+MainSourceFile:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          280589
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          281060
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          281532
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          628293
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_29_1:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      29
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2346097
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_29_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_36_2:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      36
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2346283
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_36_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_38_3:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      38
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2346366
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_38_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_40_4:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      40
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2346453
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_40_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_58_5:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      58
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2347204
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_58_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_60_6:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      60
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2347280
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_60_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_62_7:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      62
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2347360
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_62_7: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_73_8:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      73
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2347594
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_73_8: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_75_9:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      75
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2347699
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_75_9: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_85_10:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      85
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2348028
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_85_10: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_86_11:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2348093
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_86_11: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_87_12:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      87
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2348162
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_87_12: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_89_13:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      89
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2348269
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_89_13: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_109_14:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      109
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2349262
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_109_14: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_111_15:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      111
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2349346
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_111_15: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_116_16:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      116
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2349527
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_116_16: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_118_17:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      118
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2349634
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_118_17: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_120_18:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      120
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2349738
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_120_18: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_129_19:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      129
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2350128
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_129_19: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_139_20:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      139
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2350631
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_139_20: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_141_21:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      141
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2350728
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_141_21: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_158_22:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      158
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2351572
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_158_22: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_176_23:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      176
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2352089
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_176_23: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_178_24:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      178
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2352164
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_178_24: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_180_25:  '
+      FilePath:        yolo_npu_v2.cpp
+      FileOffset:      180
+      Replacements:
+        - FilePath:        '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp'
+          Offset:          2352243
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_180_25: '
+    Level:           Remark
+    BuildDirectory:  '/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu'
+...

@@ -1,0 +1,22 @@
+{
+  "0": {
+    "basicblocks": 2396,
+    "calls": "",
+    "control_depth": 5,
+    "def_use_depth": 54,
+    "file": "yolo_npu_v2.cpp",
+    "fileloc": 4,
+    "instructions": 281490,
+    "loads": {
+      "L": 731,
+      "T": 4
+    },
+    "memory_accesses": 2405,
+    "name": "yolo_npu_v2_core",
+    "stores": {
+      "L": 1792,
+      "T": 1
+    },
+    "total_instructions": 281490
+  }
+}

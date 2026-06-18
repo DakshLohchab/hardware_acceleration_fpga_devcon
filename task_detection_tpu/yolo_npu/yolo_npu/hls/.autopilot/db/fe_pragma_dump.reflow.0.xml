@@ -1,0 +1,110 @@
+<pragmas>
+<pragma file="yolo_npu_v2.cpp" line="177" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="179" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="182" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="181" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
+<pragma file="yolo_npu_v2.cpp" line="74" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="8" avg="4"/>
+<pragma file="yolo_npu_v2.cpp" line="76" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="110" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="112" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="88" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="3" avg="1"/>
+<pragma file="yolo_npu_v2.cpp" line="119" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="5" avg="2"/>
+<pragma file="yolo_npu_v2.cpp" line="159" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
+<pragma file="yolo_npu_v2.cpp" line="91" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="90" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="3" avg="1"/>
+<pragma file="yolo_npu_v2.cpp" line="122" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="121" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="5" avg="2"/>
+<pragma file="yolo_npu_v2.cpp" line="130" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
+<pragma file="yolo_npu_v2.cpp" line="140" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
+<pragma file="yolo_npu_v2.cpp" line="142" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
+<pragma file="yolo_npu_v2.cpp" line="59" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="61" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="64" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="63" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
+<pragma file="yolo_npu_v2.cpp" line="37" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="39" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="42" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="41" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
+<pragma file="yolo_npu_v2.cpp" line="31" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="30" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
+<pragma file="yolo_npu_v2.cpp" line="8" pragmaType="interface" parentfunction="yolo_npu_v2_core" mode="m_axi" port="ddr_mem" bundle="gmem" offset="slave" name="" depth="100000" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="yolo_npu_v2.cpp" line="9" pragmaType="interface" parentfunction="yolo_npu_v2_core" mode="s_axilite" port="cmd" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="yolo_npu_v2.cpp" line="10" pragmaType="interface" parentfunction="yolo_npu_v2_core" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="yolo_npu_v2.cpp" line="16" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="32" mode="cyclic" dynamic="0" variable="sp_bias"/>
+<pragma file="yolo_npu_v2.cpp" line="20" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="3" factor="16" mode="cyclic" dynamic="0" variable="sp_in_fm"/>
+<pragma file="yolo_npu_v2.cpp" line="23" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="3" factor="32" mode="cyclic" dynamic="0" variable="sp_out_fm"/>
+<pragma file="yolo_npu_v2.cpp" line="81" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="0" mode="complete" dynamic="0" variable="weight_tile"/>
+<pragma file="yolo_npu_v2.cpp" line="82" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="2" factor="0" mode="complete" dynamic="0" variable="weight_tile"/>
+<pragma file="yolo_npu_v2.cpp" line="115" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="0" mode="complete" dynamic="0" variable="acc"/>
+<pragma file="yolo_npu_v2.cpp" line="128" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="0" mode="complete" dynamic="0" variable="in_val"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<17, 7, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator><16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 6, true>::mult ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 6, true>::plus ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<54, true>::operator-() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<42, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<42, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDB33_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<33, 13, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 12, true>::plus ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator><32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<42, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi42ELb1EEC2EDB42_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi17ELb1EEC2EDB17_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi13ELb1EEC2EDB13_" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi12ELb1EEC2EDB12_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<13, true>::ap_int_base<12, true>(ap_int_base<12, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<13, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<13>::ap_int<13, true>(ap_int_base<13, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(float)" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi55ELb1EEC2EDB55_" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="530" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDU1_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<13, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<16, true>::ssdm_int(short)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<55, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_common.h" line="720" pragmaType="inline" parentfunction="doubleToRawBits" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator><16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<11, false>::RType<12, true>::minus operator-<11, false, 12, true>(ap_int_base<11, false> const&, ap_int_base<12, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(float)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 12, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<12, true>& ap_int_base<12, true>::operator=<13, true>(ap_int_base<13, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 13, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+</pragmas>

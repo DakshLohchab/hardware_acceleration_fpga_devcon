@@ -1,0 +1,82 @@
+<ENTRY>
+{
+ "thisFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jun 18 10:18:10 2026",
+ "timestampMillis": "1781758090465",
+ "buildStep": {
+  "cmdId": "a2c0ad5f-1480-4c05-b91f-e8dbb10576da",
+  "name": "vitis-run",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/logs/yolo_npu.steps.log",
+  "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config hls_config.cfg --work_dir yolo_npu ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "hls_config.cfg",
+   "--work_dir",
+   "yolo_npu"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 18 10:18:10 2026",
+ "timestampMillis": "1781758090466",
+ "status": {
+  "cmdId": "a2c0ad5f-1480-4c05-b91f-e8dbb10576da",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jun 18 10:18:15 2026",
+ "timestampMillis": "1781758095566",
+ "status": {
+  "cmdId": "a2c0ad5f-1480-4c05-b91f-e8dbb10576da",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 18 10:18:15 2026",
+ "timestampMillis": "1781758095567",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jun 18 10:18:15 2026",
+ "timestampMillis": "1781758095567",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

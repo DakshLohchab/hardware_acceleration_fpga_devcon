@@ -1,0 +1,1135 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 129, Column: 48 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_129_19
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 139, Column: 48 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_139_20
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 141, Column: 52 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_129_19
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:129:48'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_139_20
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:139:48'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_141_21
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:141:52'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_158_22
+  - String:          ''' ('
+  - LoopLoc:         'yolo_npu_v2.cpp:158:40'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_npu_v2_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_yolo_npu_v2_core_ir
+Args:            
+  - Callee:          yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_yolo_npu_v2_core_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 15, Column: 12 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          sp_bias
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '32'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 19, Column: 12 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          sp_in_fm
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 22, Column: 12 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          sp_out_fm
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '32'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 80, Column: 20 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          weight_tile
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 114, Column: 28 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          acc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 127, Column: 36 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          in_val
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 29, Column: 26 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       ddr_mem
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_29_1
+  - String:          ' '
+  - LoopLoc:         'yolo_npu_v2.cpp:29:26'
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 32, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.73
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 40, Column: 30 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep1379seq
+  - ArrayName:       ddr_mem
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_4
+  - String:          ' '
+  - LoopLoc:         'yolo_npu_v2.cpp:40:30'
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 49, Column: 36 }
+  - OrigDirection:   read
+  - OrigID:          for.body15.load.45
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 87, Column: 43 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep1382seq
+  - ArrayName:       ddr_mem
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_87_12
+  - String:          ' '
+  - LoopLoc:         'yolo_npu_v2.cpp:87:43'
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 98, Column: 73 }
+  - OrigDirection:   read
+  - OrigID:          if.then139.load.4
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 40, Column: 30 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 40, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          scevgep1379seq
+  - ArrayName:       ddr_mem
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_38_3
+  - String:          ' '
+  - LoopLoc:         'yolo_npu_v2.cpp:38:26'
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 87, Column: 43 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Access '
+  - Access:          call
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 87, Column: 43 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 87, Column: 43 }
+  - OrigDirection:   read
+  - OrigID:          scevgep1382seq
+  - ArrayName:       ddr_mem
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_86_11
+  - String:          ' '
+  - LoopLoc:         'yolo_npu_v2.cpp:86:39'
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 194, Column: 25 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 200, Column: 34 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 194, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          if.then429.load.3
+  - ArrayName:       ddr_mem
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 200, Column: 34 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 194, Column: 25 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 200, Column: 34 }
+  - OrigDirection:   write
+  - OrigID:          for.inc449.store.5
+  - ArrayName:       ddr_mem
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 40, Column: 30 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 40, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          scevgep1379seq
+  - ArrayName:       ddr_mem
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_4
+  - String:          ' '
+  - LoopLoc:         'yolo_npu_v2.cpp:40:30'
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 29, Column: 26 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 29, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       ddr_mem
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_29_1
+  - String:          ' '
+  - LoopLoc:         'yolo_npu_v2.cpp:29:26'
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_116_16
+  - String:          '> at '
+  - LoopLoc:         'yolo_npu_v2.cpp:116:40'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 116, Column: 40 }
+Function:        yolo_npu_v2_core
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  yolo_npu_v2_core
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_116_16
+  - String:          ' '
+  - LoopLoc:         'yolo_npu_v2.cpp:116:40'
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 116, Column: 40 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 29, Column: 26 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_29_1
+  - String:          ' '
+  - LoopLoc:         'yolo_npu_v2.cpp:29:26'
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 29, Column: 26 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_29_1
+  - String:          '''('
+  - LoopLoc:         'yolo_npu_v2.cpp:29:26'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 40, Column: 30 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_40_4
+  - String:          ' '
+  - LoopLoc:         'yolo_npu_v2.cpp:40:30'
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 40, Column: 30 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_40_4
+  - String:          '''('
+  - LoopLoc:         'yolo_npu_v2.cpp:40:30'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 87, Column: 43 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        yolo_npu_v2_core
+    DebugLoc:        { File: yolo_npu_v2.cpp, Line: 7, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: yolo_npu_v2.cpp, Line: 87, Column: 43 }
+Function:        yolo_npu_v2_core
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

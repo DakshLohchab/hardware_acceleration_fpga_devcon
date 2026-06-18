@@ -1,0 +1,145 @@
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:2269:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:2269:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:2283:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:2283:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:2297:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:2297:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:5836:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:5836:7: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54908:9: remark: Added loop label VITIS_LOOP_29_1:   [xilinx-label-all-loops]
+        for(int oc = 0; oc < cmd.out_channels; oc++) {
+        ^
+        VITIS_LOOP_29_1: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54908:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54915:5: remark: Added loop label VITIS_LOOP_36_2:   [xilinx-label-all-loops]
+    for(int r = 0; r < cmd.feature_h; r++) {
+    ^
+    VITIS_LOOP_36_2: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54915:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54917:9: remark: Added loop label VITIS_LOOP_38_3:   [xilinx-label-all-loops]
+        for(int c = 0; c < cmd.feature_w; c++) {
+        ^
+        VITIS_LOOP_38_3: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54917:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54919:13: remark: Added loop label VITIS_LOOP_40_4:   [xilinx-label-all-loops]
+            for(int ic = 0; ic < cmd.in_channels; ic++) {
+            ^
+            VITIS_LOOP_40_4: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54919:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54937:5: remark: Added loop label VITIS_LOOP_58_5:   [xilinx-label-all-loops]
+    for (int r = 0; r < out_h; r++) {
+    ^
+    VITIS_LOOP_58_5: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54937:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54939:9: remark: Added loop label VITIS_LOOP_60_6:   [xilinx-label-all-loops]
+        for (int c = 0; c < out_w; c++) {
+        ^
+        VITIS_LOOP_60_6: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54939:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54941:13: remark: Added loop label VITIS_LOOP_62_7:   [xilinx-label-all-loops]
+            for (int oc = 0; oc < cmd.out_channels; oc++) {
+            ^
+            VITIS_LOOP_62_7: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54941:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54952:5: remark: Added loop label VITIS_LOOP_73_8:   [xilinx-label-all-loops]
+    for (int oc_blk = 0; oc_blk < cmd.out_channels; oc_blk += 32) {
+    ^
+    VITIS_LOOP_73_8: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54952:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54954:9: remark: Added loop label VITIS_LOOP_75_9:   [xilinx-label-all-loops]
+        for (int ic_blk = 0; ic_blk < cmd.in_channels; ic_blk += 16) {
+        ^
+        VITIS_LOOP_75_9: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54954:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54964:17: remark: Added loop label VITIS_LOOP_85_10:   [xilinx-label-all-loops]
+                for(int oc_idx = 0; oc_idx < 32; oc_idx++) {
+                ^
+                VITIS_LOOP_85_10: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54964:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54965:21: remark: Added loop label VITIS_LOOP_86_11:   [xilinx-label-all-loops]
+                    for(int ic_idx = 0; ic_idx < 16; ic_idx++) {
+                    ^
+                    VITIS_LOOP_86_11: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54965:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54966:25: remark: Added loop label VITIS_LOOP_87_12:   [xilinx-label-all-loops]
+                        for(int kr = 0; kr < cmd.kernel_size; kr++) {
+                        ^
+                        VITIS_LOOP_87_12: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54966:25: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54968:29: remark: Added loop label VITIS_LOOP_89_13:   [xilinx-label-all-loops]
+                            for(int kc = 0; kc < cmd.kernel_size; kc++) {
+                            ^
+                            VITIS_LOOP_89_13: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54968:29: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54988:13: remark: Added loop label VITIS_LOOP_109_14:   [xilinx-label-all-loops]
+            for (int r = 0; r < out_h; r++) {
+            ^
+            VITIS_LOOP_109_14: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54988:13: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54990:17: remark: Added loop label VITIS_LOOP_111_15:   [xilinx-label-all-loops]
+                for (int c = 0; c < out_w; c++) {
+                ^
+                VITIS_LOOP_111_15: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54990:17: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54995:21: remark: Added loop label VITIS_LOOP_116_16:   [xilinx-label-all-loops]
+                    for(int i = 0; i < 32; i++) acc[i] = cmd.apply_maxpool ? (data_t)-32.0 : (data_t)0.0;
+                    ^
+                    VITIS_LOOP_116_16: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54995:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54997:21: remark: Added loop label VITIS_LOOP_118_17:   [xilinx-label-all-loops]
+                    for (int kr = 0; kr < cmd.kernel_size; kr++) {
+                    ^
+                    VITIS_LOOP_118_17: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54997:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54999:25: remark: Added loop label VITIS_LOOP_120_18:   [xilinx-label-all-loops]
+                        for (int kc = 0; kc < cmd.kernel_size; kc++) {
+                        ^
+                        VITIS_LOOP_120_18: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:54999:25: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55008:29: remark: Added loop label VITIS_LOOP_129_19:   [xilinx-label-all-loops]
+                            for(int ic_idx = 0; ic_idx < 16; ic_idx++) {
+                            ^
+                            VITIS_LOOP_129_19: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55008:29: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55018:29: remark: Added loop label VITIS_LOOP_139_20:   [xilinx-label-all-loops]
+                            for (int oc_idx = 0; oc_idx < 32; oc_idx++) {
+                            ^
+                            VITIS_LOOP_139_20: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55018:29: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55020:33: remark: Added loop label VITIS_LOOP_141_21:   [xilinx-label-all-loops]
+                                for (int ic_idx = 0; ic_idx < 16; ic_idx++) {
+                                ^
+                                VITIS_LOOP_141_21: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55020:33: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55037:21: remark: Added loop label VITIS_LOOP_158_22:   [xilinx-label-all-loops]
+                    for(int i = 0; i < 32; i++) {
+                    ^
+                    VITIS_LOOP_158_22: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55037:21: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55055:5: remark: Added loop label VITIS_LOOP_176_23:   [xilinx-label-all-loops]
+    for(int r = 0; r < out_h; r++) {
+    ^
+    VITIS_LOOP_176_23: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55055:5: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55057:9: remark: Added loop label VITIS_LOOP_178_24:   [xilinx-label-all-loops]
+        for(int c = 0; c < out_w; c++) {
+        ^
+        VITIS_LOOP_178_24: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55057:9: note: FIX-IT applied suggested code changes
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55059:13: remark: Added loop label VITIS_LOOP_180_25:   [xilinx-label-all-loops]
+            for(int oc = 0; oc < cmd.out_channels; oc++) {
+            ^
+            VITIS_LOOP_180_25: 
+/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/.autopilot/db/yolo_npu_v2.pp.0.cpp:55059:13: note: FIX-IT applied suggested code changes
