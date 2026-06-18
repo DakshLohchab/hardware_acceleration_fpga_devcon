@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Thu Jun 18 20:51:45 2026
+//Date        : Thu Jun 18 21:19:05 2026
 //Host        : localhost.localdomain running 64-bit Red Hat Enterprise Linux 10.2 (Coughlan)"
 //RELEASE_TYPE=stable
 //Command     : generate_target design_1.bd
@@ -11,7 +11,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=3,da_bram_cntlr_cnt=2,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=4,da_bram_cntlr_cnt=2,da_clkrst_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (clk_100MHz,
     interrupt_0,
@@ -167,11 +167,9 @@ module design_1
   wire [3:0]axi_vip_0_M_AXI_WSTRB;
   wire axi_vip_0_M_AXI_WVALID;
   wire clk_100MHz;
-  wire clk_wiz_clk_out1;
-  wire clk_wiz_locked;
   wire interrupt_0;
   wire reset_rtl_0;
-  wire [0:0]rst_clk_wiz_100M_peripheral_aresetn;
+  wire [0:0]rst_clk_100MHz_100M_peripheral_aresetn;
   wire [6:0]s_axi_control_0_araddr;
   wire s_axi_control_0_arready;
   wire s_axi_control_0_arvalid;
@@ -259,11 +257,11 @@ module design_1
         .bram_we_b(axi_bram_ctrl_0_BRAM_PORTB_WE),
         .bram_wrdata_a(axi_bram_ctrl_0_BRAM_PORTA_DIN),
         .bram_wrdata_b(axi_bram_ctrl_0_BRAM_PORTB_DIN),
-        .s_axi_aclk(clk_wiz_clk_out1),
+        .s_axi_aclk(clk_100MHz),
         .s_axi_araddr(axi_smc_M00_AXI_ARADDR),
         .s_axi_arburst(axi_smc_M00_AXI_ARBURST),
         .s_axi_arcache(axi_smc_M00_AXI_ARCACHE),
-        .s_axi_aresetn(rst_clk_wiz_100M_peripheral_aresetn),
+        .s_axi_aresetn(rst_clk_100MHz_100M_peripheral_aresetn),
         .s_axi_arlen(axi_smc_M00_AXI_ARLEN),
         .s_axi_arlock(axi_smc_M00_AXI_ARLOCK),
         .s_axi_arprot(axi_smc_M00_AXI_ARPROT),
@@ -409,11 +407,11 @@ module design_1
         .S01_AXI_wready(axi_vip_0_M_AXI_WREADY),
         .S01_AXI_wstrb(axi_vip_0_M_AXI_WSTRB),
         .S01_AXI_wvalid(axi_vip_0_M_AXI_WVALID),
-        .aclk(clk_wiz_clk_out1),
-        .aresetn(rst_clk_wiz_100M_peripheral_aresetn));
+        .aclk(clk_100MHz),
+        .aresetn(rst_clk_100MHz_100M_peripheral_aresetn));
   design_1_axi_vip_0_0 axi_vip_0
-       (.aclk(clk_wiz_clk_out1),
-        .aresetn(rst_clk_wiz_100M_peripheral_aresetn),
+       (.aclk(clk_100MHz),
+        .aresetn(rst_clk_100MHz_100M_peripheral_aresetn),
         .m_axi_araddr(axi_vip_0_M_AXI_ARADDR),
         .m_axi_arburst(axi_vip_0_M_AXI_ARBURST),
         .m_axi_arcache(axi_vip_0_M_AXI_ARCACHE),
@@ -473,21 +471,16 @@ module design_1
         .s_axi_wlast(1'b0),
         .s_axi_wstrb({1'b1,1'b1,1'b1,1'b1}),
         .s_axi_wvalid(1'b0));
-  design_1_clk_wiz_0 clk_wiz
-       (.clk_in1(clk_100MHz),
-        .clk_out1(clk_wiz_clk_out1),
-        .locked(clk_wiz_locked),
-        .reset(reset_rtl_0));
-  design_1_rst_clk_wiz_100M_0 rst_clk_wiz_100M
+  design_1_rst_clk_100MHz_100M_0 rst_clk_100MHz_100M
        (.aux_reset_in(1'b1),
-        .dcm_locked(clk_wiz_locked),
+        .dcm_locked(1'b1),
         .ext_reset_in(reset_rtl_0),
         .mb_debug_sys_rst(1'b0),
-        .peripheral_aresetn(rst_clk_wiz_100M_peripheral_aresetn),
-        .slowest_sync_clk(clk_wiz_clk_out1));
+        .peripheral_aresetn(rst_clk_100MHz_100M_peripheral_aresetn),
+        .slowest_sync_clk(clk_100MHz));
   design_1_yolo_npu_v2_core_0_0 yolo_npu_v2_core_0
-       (.ap_clk(clk_wiz_clk_out1),
-        .ap_rst_n(rst_clk_wiz_100M_peripheral_aresetn),
+       (.ap_clk(clk_100MHz),
+        .ap_rst_n(rst_clk_100MHz_100M_peripheral_aresetn),
         .interrupt(interrupt_0),
         .m_axi_gmem_ARADDR(yolo_npu_v2_core_0_m_axi_gmem_ARADDR),
         .m_axi_gmem_ARBURST(yolo_npu_v2_core_0_m_axi_gmem_ARBURST),

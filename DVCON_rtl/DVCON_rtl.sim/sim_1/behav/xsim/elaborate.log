@@ -5,7 +5,7 @@ Running: /home/dlohchab/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab --incr 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/dlohchab/projects/Verilog/DVCON/DVCON_rtl/DVCON_rtl.ip_user_files/bd/design_1/sim/design_1.v:481]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/dlohchab/projects/Verilog/DVCON/DVCON_rtl/DVCON_rtl.ip_user_files/bd/design_1/sim/design_1.v:474]
 WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/dlohchab/projects/Verilog/DVCON/DVCON_rtl/DVCON_rtl.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v:1317]
 Completed static elaboration
 Starting simulation data flow analysis
@@ -124,14 +124,9 @@ Compiling module xilinx_vip.cb
 Compiling module xilinx_vip.axi_vip_if_default
 Compiling module axi_vip_v1_1_22.axi_vip_v1_1_22_top_default
 Compiling module xil_defaultlib.design_1_axi_vip_0_0
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.design_1_clk_wiz_0_clk_wiz
-Compiling module xil_defaultlib.design_1_clk_wiz_0
 Compiling architecture imp of entity proc_sys_reset_v5_0_17.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
 Compiling architecture imp of entity proc_sys_reset_v5_0_17.proc_sys_reset [\proc_sys_reset(c_family="kintex...]
-Compiling architecture design_1_rst_clk_wiz_100m_0_arch of entity xil_defaultlib.design_1_rst_clk_wiz_100M_0 [design_1_rst_clk_wiz_100m_0_defa...]
+Compiling architecture design_1_rst_clk_100mhz_100m_0_arch of entity xil_defaultlib.design_1_rst_clk_100MHz_100M_0 [design_1_rst_clk_100mhz_100m_0_d...]
 Compiling module xil_defaultlib.yolo_npu_v2_core_sp_bias_RAM_AUT...
 Compiling module xil_defaultlib.yolo_npu_v2_core_sp_in_fm_RAM_AU...
 Compiling module xil_defaultlib.yolo_npu_v2_core_sp_out_fm_RAM_A...

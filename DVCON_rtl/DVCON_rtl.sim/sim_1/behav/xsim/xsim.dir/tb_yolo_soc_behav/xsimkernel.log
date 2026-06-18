@@ -1,4 +1,4 @@
-Running: xsim.dir/tb_yolo_soc_behav/xsimk -simmode gui -wdb tb_yolo_soc_behav.wdb -simrunnum 0 -socket 40397
+Running: xsim.dir/tb_yolo_soc_behav/xsimk -simmode gui -wdb tb_yolo_soc_behav.wdb -simrunnum 0 -socket 34843
 Design successfully loaded
-Design Loading Memory Usage: 445272 KB (Peak: 445404 KB)
-Design Loading CPU Usage: 2650 ms
+Design Loading Memory Usage: 444608 KB (Peak: 444740 KB)
+Design Loading CPU Usage: 2640 ms

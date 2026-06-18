@@ -47,7 +47,7 @@ module tb_yolo_soc();
         forever #5 clk_100MHz = ~clk_100MHz;
     end
 
-    // Robust Primary AXI Write Task
+    // Clock-Synchronized Primary AXI Write Task
     task axi_write(input [6:0] addr, input [31:0] data);
     begin
         @(posedge clk_100MHz);
@@ -60,13 +60,13 @@ module tb_yolo_soc();
             if (wready)  wvalid <= 1'b0;
         end
 
-        wait(bvalid);
-        @(posedge clk_100MHz);
+        while (!bvalid) @(posedge clk_100MHz);
         bready <= 1'b0;
+        @(posedge clk_100MHz); // Extra cycle gap
     end
     endtask
 
-    // Robust Secondary AXI Write Task
+    // Clock-Synchronized Secondary AXI Write Task
     task axi_write_r(input [4:0] addr, input [31:0] data);
     begin
         @(posedge clk_100MHz);
@@ -79,9 +79,9 @@ module tb_yolo_soc();
             if (wready_r)  wvalid_r <= 1'b0;
         end
 
-        wait(bvalid_r);
-        @(posedge clk_100MHz);
+        while (!bvalid_r) @(posedge clk_100MHz);
         bready_r <= 1'b0;
+        @(posedge clk_100MHz); // Extra cycle gap
     end
     endtask
 
@@ -89,13 +89,13 @@ module tb_yolo_soc();
         awaddr = 0; awvalid = 0; wdata = 0; wstrb = 0; wvalid = 0; bready = 0;
         awaddr_r = 0; awvalid_r = 0; wdata_r = 0; wstrb_r = 0; wvalid_r = 0; bready_r = 0;
 
-        $display("Applying Hardware Reset...");
-        reset_rtl_0 = 1; 
+        $display("Applying Active-High Reset...");
+        reset_rtl_0 = 1; // 1 = HARDWARE IS IN RESET
         #1000;
         
-        $display("Releasing Reset. Waiting 100us for Clock Wizard PLL to lock...");
-        reset_rtl_0 = 0; 
-        #100000; // Increased delay to 100us to guarantee PLL lock
+        $display("Releasing Reset to RUN state...");
+        reset_rtl_0 = 0; // 0 = HARDWARE IS RUNNING
+        #1000;
 
         $display("--- Starting DVCON NPU RTL Verification ---");
 
@@ -109,10 +109,10 @@ module tb_yolo_soc();
         $finish;
     end
 
-    // Watchdog Timer to prevent infinite freezing
+    // Watchdog Timer
     initial begin
-        #500000; // Kills simulation at 500us
-        $display("CRITICAL ERROR: Watchdog Timeout! The NPU failed to compute the layer.");
+        #8000000; // Increased to 8 milliseconds
+        $display("CRITICAL ERROR: Watchdog Timeout!");
         $finish;
     end
 

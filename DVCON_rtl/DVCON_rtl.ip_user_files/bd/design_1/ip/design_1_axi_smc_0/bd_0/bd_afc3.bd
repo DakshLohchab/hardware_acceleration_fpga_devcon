@@ -85,7 +85,7 @@
           },
           "CLK_DOMAIN": {
             "value": "/clk_wiz_clk_out1",
-            "value_src": "ip_prop"
+            "value_src": "user_prop"
           },
           "DATA_WIDTH": {
             "value": "32",
@@ -93,7 +93,7 @@
           },
           "FREQ_HZ": {
             "value": "100000000",
-            "value_src": "ip_prop"
+            "value_src": "user_prop"
           },
           "HAS_BRESP": {
             "value": "1",
@@ -159,7 +159,7 @@
           },
           "PHASE": {
             "value": "0.0",
-            "value_src": "ip_prop"
+            "value_src": "default_prop"
           },
           "PROTOCOL": {
             "value": "AXI4",
@@ -232,7 +232,7 @@
           },
           "CLK_DOMAIN": {
             "value": "/clk_wiz_clk_out1",
-            "value_src": "ip_prop"
+            "value_src": "user_prop"
           },
           "DATA_WIDTH": {
             "value": "32",
@@ -240,7 +240,7 @@
           },
           "FREQ_HZ": {
             "value": "100000000",
-            "value_src": "ip_prop"
+            "value_src": "user_prop"
           },
           "HAS_BRESP": {
             "value": "1",
@@ -306,7 +306,7 @@
           },
           "PHASE": {
             "value": "0.0",
-            "value_src": "ip_prop"
+            "value_src": "default_prop"
           },
           "PROTOCOL": {
             "value": "AXI4",
@@ -379,7 +379,7 @@
           },
           "CLK_DOMAIN": {
             "value": "/clk_wiz_clk_out1",
-            "value_src": "ip_prop"
+            "value_src": "user_prop"
           },
           "DATA_WIDTH": {
             "value": "32",
@@ -387,7 +387,7 @@
           },
           "FREQ_HZ": {
             "value": "100000000",
-            "value_src": "ip_prop"
+            "value_src": "user_prop"
           },
           "HAS_BRESP": {
             "value": "1",
@@ -450,7 +450,7 @@
           },
           "PHASE": {
             "value": "0.0",
-            "value_src": "ip_prop"
+            "value_src": "default_prop"
           },
           "PROTOCOL": {
             "value": "AXI4",
@@ -501,11 +501,11 @@
           },
           "CLK_DOMAIN": {
             "value": "/clk_wiz_clk_out1",
-            "value_src": "ip_prop"
+            "value_src": "user_prop"
           },
           "FREQ_HZ": {
             "value": "100000000",
-            "value_src": "ip_prop"
+            "value_src": "user_prop"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -517,7 +517,7 @@
           },
           "PHASE": {
             "value": "0.0",
-            "value_src": "ip_prop"
+            "value_src": "default_prop"
           }
         }
       },
