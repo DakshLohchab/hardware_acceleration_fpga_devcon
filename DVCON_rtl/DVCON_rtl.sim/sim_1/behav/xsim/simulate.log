@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_yolo_soc.DUT.design_1_i.axi_bram_ctrl_0_bram.inst.native_mem_mapped_module.blk_mem_gen_v8_4_12_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+XilinxAXIVIP: Found at Path: tb_yolo_soc.DUT.design_1_i.axi_vip_0.inst
+This AXI VIP is in passthrough mode
+Applying Hardware Reset...
+Releasing Reset. Waiting 100us for Clock Wizard PLL to lock...
+--- Starting DVCON NPU RTL Verification ---
+Initializing DDR Base Pointer Configuration...
+CRITICAL ERROR: Watchdog Timeout! The NPU failed to compute the layer.
+Executing Axi4 End Of Simulation checks
+$finish called at time : 500 us : File "/home/dlohchab/projects/Verilog/DVCON/DVCON_rtl/DVCON_rtl.srcs/sim_1/new/tb_yolo_soc.sv" Line 116
