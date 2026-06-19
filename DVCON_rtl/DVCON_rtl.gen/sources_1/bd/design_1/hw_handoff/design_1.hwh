@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun 18 21:19:08 2026" VIVADOVERSION="2025.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jun 19 22:23:53 2026" VIVADOVERSION="2025.2">
 
   <SYSTEMINFO ARCH="kintex7" DEVICE="7k325t" NAME="design_1" PACKAGE="ffg900" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100MHz" SIGIS="clk" SIGNAME="External_Ports_clk_100MHz">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="yolo_npu_v2_core_0" PORT="ap_clk"/>
         <CONNECTION INSTANCE="axi_smc" PORT="aclk"/>
         <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="s_axi_aclk"/>
         <CONNECTION INSTANCE="axi_vip_0" PORT="aclk"/>
         <CONNECTION INSTANCE="rst_clk_100MHz_100M" PORT="slowest_sync_clk"/>
+        <CONNECTION INSTANCE="yolo_npu_v2_core_0" PORT="ap_clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="interrupt_0" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="yolo_npu_v2_core_0_interrupt">
@@ -2462,10 +2462,10 @@
         <PORT DIR="O" NAME="mb_reset" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="rst" SIGNAME="rst_clk_100MHz_100M_peripheral_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="yolo_npu_v2_core_0" PORT="ap_rst_n"/>
             <CONNECTION INSTANCE="axi_bram_ctrl_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_smc" PORT="aresetn"/>
             <CONNECTION INSTANCE="axi_vip_0" PORT="aresetn"/>
+            <CONNECTION INSTANCE="yolo_npu_v2_core_0" PORT="ap_rst_n"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst"/>
@@ -2477,7 +2477,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="2114658739" FULLNAME="/yolo_npu_v2_core_0" HWVERSION="1.0" INSTANCE="yolo_npu_v2_core_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="yolo_npu_v2_core" VLNV="xilinx.com:hls:yolo_npu_v2_core:1.0">
+    <MODULE COREREVISION="2114660893" FULLNAME="/yolo_npu_v2_core_0" HWVERSION="1.0" INSTANCE="yolo_npu_v2_core_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="yolo_npu_v2_core" VLNV="xilinx.com:hls:yolo_npu_v2_core:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_M_AXI_GMEM_ADDR_WIDTH" VALUE="64"/>

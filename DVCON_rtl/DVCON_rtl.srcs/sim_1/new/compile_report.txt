@@ -1,0 +1,28 @@
+================================================================================
+YOLO AND MLP TO NPU COMPILATION REPORT
+================================================================================
+
+MODEL ARCHITECTURE
+YOLO Layer Count              : 453
+MLP Layer Count               : 4
+
+PARAMETERS
+YOLO Parameters               : 2406372
+MLP Parameters                : 87553
+Total Parameters              : 2493925
+
+INSTRUCTION SCHEDULE
+Primitive Instruction Count   : 159
+  - Conv Instructions         : 100
+  - Linear Instructions       : 4
+  - ADD Instructions          : 17
+  - CONCAT Instructions       : 33
+  - UPSAMPLE Instructions     : 2
+  - MAXPOOL Instructions      : 3
+
+DDR USAGE AND MEMORY ALLOCATION
+Peak Feature Memory (Elements): 32291649
+Weight Memory Allocation      : 2484960
+Bias Memory Allocation        : 8965
+
+STATUS: Compilation Successful

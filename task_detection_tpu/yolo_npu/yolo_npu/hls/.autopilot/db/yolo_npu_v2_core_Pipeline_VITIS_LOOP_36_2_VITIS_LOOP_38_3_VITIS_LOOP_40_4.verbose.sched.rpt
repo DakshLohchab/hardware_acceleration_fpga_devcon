@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_36_2_VITIS_LOOP_38_3_VITIS_LOOP_40_4'
 ================================================================
-* Date:           Thu Jun 18 10:08:41 2026
+* Date:           Fri Jun 19 21:54:15 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        yolo_npu
@@ -333,8 +333,8 @@ The critical path consists of the following:
 
  <State 13>: 2.266ns
 The critical path consists of the following:
-	'getelementptr' operation 12 bit ('sp_in_fm_11_addr', yolo_npu_v2.cpp:49) [126]  (0.000 ns)
-	'store' operation ('store_ln49', yolo_npu_v2.cpp:49) of variable 'gmem_addr_read', yolo_npu_v2.cpp:49 16 bit on array 'sp_in_fm_11' [143]  (2.266 ns)
+	'getelementptr' operation 12 bit ('sp_in_fm_9_addr', yolo_npu_v2.cpp:49) [124]  (0.000 ns)
+	'store' operation ('store_ln49', yolo_npu_v2.cpp:49) of variable 'gmem_addr_read', yolo_npu_v2.cpp:49 16 bit on array 'sp_in_fm_9' [149]  (2.266 ns)
 
 
 ============================================================

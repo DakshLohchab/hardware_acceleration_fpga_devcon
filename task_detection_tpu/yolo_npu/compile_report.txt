@@ -1,0 +1,22 @@
+================================================================================
+YOLO TO NPU COMPILATION REPORT
+================================================================================
+
+MODEL ARCHITECTURE
+Original PyTorch Conv2d Count : 126
+Total Fused & Quantized Params: 2406372
+
+INSTRUCTION SCHEDULE
+Total Primitive Instructions  : 155
+  - CONV     (OP_0)           : 100
+  - ADD      (OP_1)           : 17
+  - CONCAT   (OP_2)           : 33
+  - UPSAMPLE (OP_3)           : 2
+  - MAXPOOL  (OP_4)           : 3
+
+MEMORY ALLOCATION
+Highest Feature Map Offset    : 32291200
+Highest Weight Offset         : 3397856
+Highest Bias Offset           : 2008516
+
+STATUS: COMPILATION SUCCESSFUL

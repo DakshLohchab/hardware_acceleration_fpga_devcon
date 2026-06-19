@@ -46,37 +46,37 @@ vcom -work xpm -93  -incr \
 "/home/dlohchab/Xilinx/2025.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/00fe/hdl/verilog" "+incdir+../../../../../../../../Xilinx/2025.2/data/rsb/busdef" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ip/design_1_yolo_npu_v2_core_0_0/drivers/yolo_npu_v2_core_v1_0/src" "+incdir+/home/dlohchab/Xilinx/2025.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_22 -l axi_bram_ctrl_v4_1_13 -l blk_mem_gen_v8_4_12 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_register_slice_v2_1_36 \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_control_r_s_axi.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_control_s_axi.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_flow_control_loop_pipe_sequential_init.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_gmem_m_axi.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mac_muladd_16s_16s_26s_26_4_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_16s_8ns_24_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_31ns_31ns_62_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_31ns_32ns_63_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_31ns_32s_32_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_31ns_32s_62_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_31ns_32s_63_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_31ns_62ns_93_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_32ns_31ns_63_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_32ns_32ns_63_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_32s_32s_32_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_62ns_32s_63_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_mul_63s_63s_63_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_sdiv_32ns_32s_32_36_seq_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_sp_bias_RAM_AUTO_1R1W.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_sp_in_fm_RAM_AUTO_1R1W.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_sp_out_fm_RAM_AUTO_1R1W.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_sparsemux_65_5_16_1_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_weight_tile_RAM_AUTO_1R1W.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_29_1.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_36_2_VITIS_LOOP_38_3_VITIS_LOOP_40_4.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_58_5_VITIS_LOOP_60_6_VITIS_LOOP_62_7.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_85_10_VITIS_LOOP_86_11_VITIS_LOOP_87_12_VIT.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_116_16.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25.v" \
-"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/1cea/hdl/verilog/yolo_npu_v2_core.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_control_r_s_axi.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_control_s_axi.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_flow_control_loop_pipe_sequential_init.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_gmem_m_axi.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mac_muladd_16s_16s_26s_26_4_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_16s_8ns_24_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_31ns_31ns_62_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_31ns_32ns_63_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_31ns_32s_32_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_31ns_32s_62_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_31ns_32s_63_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_31ns_62ns_93_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_32ns_31ns_63_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_32ns_32ns_63_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_32s_32s_32_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_62ns_32s_63_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_mul_63s_63s_63_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_sdiv_32ns_32s_32_36_seq_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_sp_bias_RAM_AUTO_1R1W.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_sp_in_fm_RAM_AUTO_1R1W.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_sp_out_fm_RAM_AUTO_1R1W.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_sparsemux_65_5_16_1_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_weight_tile_RAM_AUTO_1R1W.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_29_1.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_36_2_VITIS_LOOP_38_3_VITIS_LOOP_40_4.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_58_5_VITIS_LOOP_60_6_VITIS_LOOP_62_7.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_85_10_VITIS_LOOP_86_11_VITIS_LOOP_87_12_VIT.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_116_16.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core_yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25.v" \
+"../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/bbe3/hdl/verilog/yolo_npu_v2_core.v" \
 "../../../bd/design_1/ip/design_1_yolo_npu_v2_core_0_0/sim/design_1_yolo_npu_v2_core_0_0.v" \
 
 vlog -work axi_infrastructure_v1_1_0  -incr -v2k5 "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/00fe/hdl/verilog" "+incdir+../../../../../../../../Xilinx/2025.2/data/rsb/busdef" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ip/design_1_yolo_npu_v2_core_0_0/drivers/yolo_npu_v2_core_v1_0/src" "+incdir+/home/dlohchab/Xilinx/2025.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_22 -l axi_bram_ctrl_v4_1_13 -l blk_mem_gen_v8_4_12 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_register_slice_v2_1_36 \
@@ -193,11 +193,11 @@ vlog -work axi_register_slice_v2_1_36  -incr -v2k5 "+incdir+../../../../DVCON_rt
 vlog -work xil_defaultlib  -incr "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/00fe/hdl/verilog" "+incdir+../../../../../../../../Xilinx/2025.2/data/rsb/busdef" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ip/design_1_yolo_npu_v2_core_0_0/drivers/yolo_npu_v2_core_v1_0/src" "+incdir+/home/dlohchab/Xilinx/2025.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_22 -l axi_bram_ctrl_v4_1_13 -l blk_mem_gen_v8_4_12 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_register_slice_v2_1_36 \
 "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.sv" \
 
-vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/00fe/hdl/verilog" "+incdir+../../../../../../../../Xilinx/2025.2/data/rsb/busdef" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ip/design_1_yolo_npu_v2_core_0_0/drivers/yolo_npu_v2_core_v1_0/src" "+incdir+/home/dlohchab/Xilinx/2025.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_22 -l axi_bram_ctrl_v4_1_13 -l blk_mem_gen_v8_4_12 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_register_slice_v2_1_36 \
-"../../../bd/design_1/sim/design_1.v" \
-
 vcom -work xil_defaultlib -93  -incr \
 "../../../bd/design_1/ip/design_1_rst_clk_100MHz_100M_0/sim/design_1_rst_clk_100MHz_100M_0.vhd" \
+
+vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ipshared/00fe/hdl/verilog" "+incdir+../../../../../../../../Xilinx/2025.2/data/rsb/busdef" "+incdir+../../../../DVCON_rtl.gen/sources_1/bd/design_1/ip/design_1_yolo_npu_v2_core_0_0/drivers/yolo_npu_v2_core_v1_0/src" "+incdir+/home/dlohchab/Xilinx/2025.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l xil_defaultlib -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_22 -l axi_bram_ctrl_v4_1_13 -l blk_mem_gen_v8_4_12 -l proc_sys_reset_v5_0_17 -l smartconnect_v1_0 -l axi_register_slice_v2_1_36 \
+"../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

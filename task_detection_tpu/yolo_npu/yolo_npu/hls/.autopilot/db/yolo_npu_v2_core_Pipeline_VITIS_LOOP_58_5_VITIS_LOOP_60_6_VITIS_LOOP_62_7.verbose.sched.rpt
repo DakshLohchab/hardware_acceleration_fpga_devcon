@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_58_5_VITIS_LOOP_60_6_VITIS_LOOP_62_7'
 ================================================================
-* Date:           Thu Jun 18 10:08:42 2026
+* Date:           Fri Jun 19 21:54:15 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        yolo_npu
@@ -371,7 +371,7 @@ The critical path consists of the following:
 	'load' operation 16 bit ('sp_bias_load', yolo_npu_v2.cpp:65) on array 'sp_bias' [184]  (1.148 ns)
 	'sparsemux' operation 16 bit ('tmp_s', yolo_npu_v2.cpp:65) [216]  (1.719 ns)
 	'select' operation 16 bit ('ref_tmp_0', yolo_npu_v2.cpp:65) [217]  (0.390 ns)
-	'store' operation ('store_ln65', yolo_npu_v2.cpp:65) of variable 'ref_tmp_0', yolo_npu_v2.cpp:65 16 bit on array 'sp_out_fm_30' [220]  (2.266 ns)
+	'store' operation ('store_ln65', yolo_npu_v2.cpp:65) of variable 'ref_tmp_0', yolo_npu_v2.cpp:65 16 bit on array 'sp_out_fm_28' [226]  (2.266 ns)
 
 
 ============================================================

@@ -493,7 +493,7 @@
     "components": {
       "yolo_npu_v2_core_0": {
         "vlnv": "xilinx.com:hls:yolo_npu_v2_core:1.0",
-        "ip_revision": "2114658739",
+        "ip_revision": "2114660893",
         "xci_name": "design_1_yolo_npu_v2_core_0_0",
         "xci_path": "ip/design_1_yolo_npu_v2_core_0_0/design_1_yolo_npu_v2_core_0_0.xci",
         "inst_hier_path": "yolo_npu_v2_core_0",
@@ -753,11 +753,11 @@
       "clk_wiz_clk_out1": {
         "ports": [
           "clk_100MHz",
-          "yolo_npu_v2_core_0/ap_clk",
           "axi_smc/aclk",
           "axi_bram_ctrl_0/s_axi_aclk",
           "axi_vip_0/aclk",
-          "rst_clk_100MHz_100M/slowest_sync_clk"
+          "rst_clk_100MHz_100M/slowest_sync_clk",
+          "yolo_npu_v2_core_0/ap_clk"
         ]
       },
       "reset_rtl_0_1": {
@@ -769,10 +769,10 @@
       "rst_clk_100MHz_100M_peripheral_aresetn": {
         "ports": [
           "rst_clk_100MHz_100M/peripheral_aresetn",
-          "yolo_npu_v2_core_0/ap_rst_n",
           "axi_bram_ctrl_0/s_axi_aresetn",
           "axi_smc/aresetn",
-          "axi_vip_0/aresetn"
+          "axi_vip_0/aresetn",
+          "yolo_npu_v2_core_0/ap_rst_n"
         ]
       },
       "yolo_npu_v2_core_0_interrupt": {

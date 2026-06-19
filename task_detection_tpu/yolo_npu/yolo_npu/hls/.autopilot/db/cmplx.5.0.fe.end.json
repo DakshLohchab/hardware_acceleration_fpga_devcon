@@ -1,44 +1,66 @@
 {
     "1": {
-        "name": "yolo_npu_v2_core_Pipeline_VITIS_LOOP_116_16",
+        "name": "yolo_npu_v2_core_Pipeline_VITIS_LOOP_85_10_VITIS_LOOP_86_11_VITIS_LOOP_87_12_VIT",
         "file": "yolo_npu_v2.cpp",
-        "fileloc": "114",
-        "instructions": "176",
-        "total_instructions": "176",
+        "fileloc": "85",
+        "instructions": "1742",
+        "total_instructions": "1742",
         "calls": "",
-        "basicblocks": "37",
-        "memory_accesses": "34",
-        "control_depth": "2",
-        "def_use_depth": "1",
+        "basicblocks": "587",
+        "memory_accesses": "528",
+        "control_depth": "3",
+        "def_use_depth": "3",
         "loads": {
-            "L": "33"
+            "L": "7"
         },
         "stores": {
-            "L": "34"
+            "L": "526"
         },
         "loops": {
             "L": "1"
         }
     },
     "2": {
-        "name": "yolo_npu_v2_core_Pipeline_VITIS_LOOP_58_5_VITIS_LOOP_60_6_VITIS_LOOP_62_7",
+        "name": "yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18",
         "file": "yolo_npu_v2.cpp",
-        "fileloc": "58",
-        "instructions": "222",
-        "total_instructions": "222",
+        "fileloc": "114",
+        "instructions": "4169",
+        "total_instructions": "4169",
         "calls": "",
-        "basicblocks": "37",
-        "memory_accesses": "74",
-        "control_depth": "2",
-        "def_use_depth": "2",
+        "basicblocks": "4",
+        "memory_accesses": "598",
+        "control_depth": "1",
+        "def_use_depth": "1",
         "loads": {
-            "L": "37"
+            "L": "595"
         },
         "stores": {
-            "L": "42"
+            "L": "70"
         },
         "loops": {
             "L": "1"
+        }
+    },
+    "0": {
+        "name": "yolo_npu_v2_core",
+        "file": "yolo_npu_v2.cpp",
+        "fileloc": "4",
+        "instructions": "1466",
+        "total_instructions": "8225",
+        "calls": "6 5 4 7 2 1 3",
+        "basicblocks": "243",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "9",
+        "loads": {
+            "L": "101"
+        },
+        "stores": {
+            "L": "68"
+        },
+        "loops": {
+            "L": "1",
+            "N": "3"
         }
     },
     "3": {
@@ -62,29 +84,28 @@
             "L": "1"
         }
     },
-    "0": {
-        "name": "yolo_npu_v2_core",
+    "4": {
+        "name": "yolo_npu_v2_core_Pipeline_VITIS_LOOP_58_5_VITIS_LOOP_60_6_VITIS_LOOP_62_7",
         "file": "yolo_npu_v2.cpp",
-        "fileloc": "4",
-        "instructions": "1466",
-        "total_instructions": "8225",
-        "calls": "7 4 2 1 6 5 3",
-        "basicblocks": "243",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "9",
+        "fileloc": "58",
+        "instructions": "222",
+        "total_instructions": "222",
+        "calls": "",
+        "basicblocks": "37",
+        "memory_accesses": "74",
+        "control_depth": "2",
+        "def_use_depth": "2",
         "loads": {
-            "L": "101"
+            "L": "37"
         },
         "stores": {
-            "L": "68"
+            "L": "42"
         },
         "loops": {
-            "L": "1",
-            "N": "3"
+            "L": "1"
         }
     },
-    "4": {
+    "5": {
         "name": "yolo_npu_v2_core_Pipeline_VITIS_LOOP_36_2_VITIS_LOOP_38_3_VITIS_LOOP_40_4",
         "file": "yolo_npu_v2.cpp",
         "fileloc": "36",
@@ -105,49 +126,7 @@
             "L": "1"
         }
     },
-    "5": {
-        "name": "yolo_npu_v2_core_Pipeline_VITIS_LOOP_85_10_VITIS_LOOP_86_11_VITIS_LOOP_87_12_VIT",
-        "file": "yolo_npu_v2.cpp",
-        "fileloc": "85",
-        "instructions": "1742",
-        "total_instructions": "1742",
-        "calls": "",
-        "basicblocks": "587",
-        "memory_accesses": "528",
-        "control_depth": "3",
-        "def_use_depth": "3",
-        "loads": {
-            "L": "7"
-        },
-        "stores": {
-            "L": "526"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
     "6": {
-        "name": "yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18",
-        "file": "yolo_npu_v2.cpp",
-        "fileloc": "114",
-        "instructions": "4169",
-        "total_instructions": "4169",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "598",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "595"
-        },
-        "stores": {
-            "L": "70"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "7": {
         "name": "yolo_npu_v2_core_Pipeline_VITIS_LOOP_29_1",
         "file": "yolo_npu_v2.cpp",
         "fileloc": "29",
@@ -160,6 +139,27 @@
         "def_use_depth": "1",
         "loads": {
             "L": "1"
+        },
+        "stores": {
+            "L": "34"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "yolo_npu_v2_core_Pipeline_VITIS_LOOP_116_16",
+        "file": "yolo_npu_v2.cpp",
+        "fileloc": "114",
+        "instructions": "176",
+        "total_instructions": "176",
+        "calls": "",
+        "basicblocks": "37",
+        "memory_accesses": "34",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "33"
         },
         "stores": {
             "L": "34"

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25'" level="0">
-<item name = "Date">Thu Jun 18 10:09:32 2026
+<item name = "Date">Fri Jun 19 21:54:46 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">yolo_npu</item>

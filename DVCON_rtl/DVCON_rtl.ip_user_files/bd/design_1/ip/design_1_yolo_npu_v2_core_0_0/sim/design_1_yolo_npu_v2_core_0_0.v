@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:yolo_npu_v2_core:1.0
-// IP Revision: 2114658739
+// IP Revision: 2114660893
 
 `timescale 1ns/1ps
 

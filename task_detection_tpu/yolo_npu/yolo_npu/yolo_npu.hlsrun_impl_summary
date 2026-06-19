@@ -1,0 +1,190 @@
+<ENTRY>
+{
+ "thisFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/yolo_npu.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Jun 19 22:01:42 2026",
+ "timestampMillis": "1781886702846",
+ "buildStep": {
+  "cmdId": "c80f7ded-ea5b-4111-b6ad-f64ddc1e9c51",
+  "name": "vitis-run",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/logs/yolo_npu.steps.log",
+  "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --impl --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/hls_config.cfg --work_dir yolo_npu ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/hls_config.cfg",
+   "--work_dir",
+   "yolo_npu"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jun 19 22:01:42 2026",
+ "timestampMillis": "1781886702847",
+ "status": {
+  "cmdId": "c80f7ded-ea5b-4111-b6ad-f64ddc1e9c51",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Jun 19 22:01:48 2026",
+ "timestampMillis": "1781886708931",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "yolo_npu_v2_core",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Jun 19 22:01:48 2026",
+ "timestampMillis": "1781886708933",
+ "buildStep": {
+  "cmdId": "3def95a0-5391-482f-9035-75f2ecba0c11",
+  "name": "",
+  "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jun 19 22:01:48 2026",
+ "timestampMillis": "1781886708933",
+ "status": {
+  "cmdId": "3def95a0-5391-482f-9035-75f2ecba0c11",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 19 22:01:48 2026",
+ "timestampMillis": "1781886708935",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 19 22:01:48 2026",
+ "timestampMillis": "1781886708935",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/impl/report/verilog/export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 19 22:01:48 2026",
+ "timestampMillis": "1781886708936",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/impl/report/verilog/export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 19 22:01:48 2026",
+ "timestampMillis": "1781886708936",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 19 22:01:48 2026",
+ "timestampMillis": "1781886708936",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/impl/report/verilog/export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jun 19 22:01:48 2026",
+ "timestampMillis": "1781886708936",
+ "report": {
+  "path": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/impl/report/verilog/export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

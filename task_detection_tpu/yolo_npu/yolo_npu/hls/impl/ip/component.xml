@@ -4039,8 +4039,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Yolo_npu_v2_core</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114658739</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-06-18T04:49:29Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114660893</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-06-19T16:44:15Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

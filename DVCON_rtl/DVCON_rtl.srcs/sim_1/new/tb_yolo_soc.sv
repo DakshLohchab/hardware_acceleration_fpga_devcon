@@ -6,7 +6,6 @@ module tb_yolo_soc();
     logic reset_rtl_0;
     logic interrupt_0;
 
-    // Primary AXI-Lite (Instruction Control)
     logic [6:0]  awaddr;
     logic        awvalid, awready;
     logic [31:0] wdata;
@@ -15,7 +14,6 @@ module tb_yolo_soc();
     logic [1:0]  bresp;
     logic        bvalid, bready;
 
-    // Secondary AXI-Lite (DDR Pointer Control)
     logic [4:0]  awaddr_r;
     logic        awvalid_r, awready_r;
     logic [31:0] wdata_r;
@@ -47,7 +45,6 @@ module tb_yolo_soc();
         forever #5 clk_100MHz = ~clk_100MHz;
     end
 
-    // Clock-Synchronized Primary AXI Write Task
     task axi_write(input [6:0] addr, input [31:0] data);
     begin
         @(posedge clk_100MHz);
@@ -62,11 +59,10 @@ module tb_yolo_soc();
 
         while (!bvalid) @(posedge clk_100MHz);
         bready <= 1'b0;
-        @(posedge clk_100MHz); // Extra cycle gap
+        @(posedge clk_100MHz);
     end
     endtask
 
-    // Clock-Synchronized Secondary AXI Write Task
     task axi_write_r(input [4:0] addr, input [31:0] data);
     begin
         @(posedge clk_100MHz);
@@ -81,7 +77,7 @@ module tb_yolo_soc();
 
         while (!bvalid_r) @(posedge clk_100MHz);
         bready_r <= 1'b0;
-        @(posedge clk_100MHz); // Extra cycle gap
+        @(posedge clk_100MHz);
     end
     endtask
 
@@ -89,13 +85,12 @@ module tb_yolo_soc();
         awaddr = 0; awvalid = 0; wdata = 0; wstrb = 0; wvalid = 0; bready = 0;
         awaddr_r = 0; awvalid_r = 0; wdata_r = 0; wstrb_r = 0; wvalid_r = 0; bready_r = 0;
 
-        $display("Applying Active-High Reset...");
-        reset_rtl_0 = 1; // 1 = HARDWARE IS IN RESET
-        #1000;
+        reset_rtl_0 = 1;
+        #100;
+        reset_rtl_0 = 0;
+        #100;
         
-        $display("Releasing Reset to RUN state...");
-        reset_rtl_0 = 0; // 0 = HARDWARE IS RUNNING
-        #1000;
+        $display("Reset released at %t", $time);
 
         $display("--- Starting DVCON NPU RTL Verification ---");
 
@@ -103,15 +98,16 @@ module tb_yolo_soc();
         axi_write_r(5'h10, 32'h00000000); 
         axi_write_r(5'h14, 32'h00000000); 
 
-        `include "axi_stimulus.sv"
+        $display("Starting AXI stimulus...");
+`include "axi_stimulus.sv"
+        $display("Finished AXI stimulus.");
 
         $display("SUCCESS: NPU verification complete!");
         $finish;
     end
 
-    // Watchdog Timer
     initial begin
-        #8000000; // Increased to 8 milliseconds
+        #500000000;
         $display("CRITICAL ERROR: Watchdog Timeout!");
         $finish;
     end

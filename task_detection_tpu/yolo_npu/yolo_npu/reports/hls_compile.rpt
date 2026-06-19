@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'yolo_npu_v2_core'
 ================================================================
 + General Information: 
-    * Date:           Thu Jun 18 10:09:58 2026
+    * Date:           Fri Jun 19 21:55:03 2026
     * Version:        2025.2 (Build 6295257 on Nov 14 2025)
     * Project:        yolo_npu
     * Solution:       hls (Vivado IP Flow Target)

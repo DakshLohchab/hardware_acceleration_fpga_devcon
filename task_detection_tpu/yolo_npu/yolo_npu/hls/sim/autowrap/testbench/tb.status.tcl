@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/./sim/autowrap/testbench/yolo_npu_v2.cpp_pre.cpp.tb.cpp
