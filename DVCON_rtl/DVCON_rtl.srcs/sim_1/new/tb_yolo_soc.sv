@@ -1,5 +1,13 @@
 `timescale 1ns / 1ps
 
+// --- VERBOSITY CONTROL ---
+// By default, per-transaction AXI $display calls are OFF so a full
+// 5621-instruction run doesn't drown in console I/O.
+// To re-enable detailed per-beat logging for short debug runs, compile with:
+//   xvlog ... +define+AXI_VERBOSE
+// or uncomment the line below.
+// `define AXI_VERBOSE
+
 module tb_yolo_soc();
 
     logic clk_100MHz;
@@ -56,7 +64,9 @@ module tb_yolo_soc();
     begin
         @(posedge clk_100MHz);
 
+`ifdef AXI_VERBOSE
         $display("[%0t] AXI WRITE addr=%h data=%h", $time, addr, data);
+`endif
 
         awaddr  <= addr;
         wdata   <= data;
@@ -84,7 +94,9 @@ module tb_yolo_soc();
             end
         end
 
+`ifdef AXI_VERBOSE
         $display("[%0t] AXI WRITE COMPLETE addr=%h", $time, addr);
+`endif
 
         bready <= 0;
         @(posedge clk_100MHz);
@@ -99,7 +111,9 @@ module tb_yolo_soc();
     begin
         @(posedge clk_100MHz);
 
+`ifdef AXI_VERBOSE
         $display("[%0t] AXI READ  addr=%h", $time, addr);
+`endif
 
         araddr  <= addr;
         arvalid <= 1'b1;
@@ -129,7 +143,9 @@ module tb_yolo_soc();
         end
 
         out_data = rdata;
+`ifdef AXI_VERBOSE
         $display("[%0t] AXI READ COMPLETE addr=%h data=%h resp=%b", $time, addr, rdata, rresp);
+`endif
 
         @(posedge clk_100MHz);
         rready <= 1'b0;
@@ -142,7 +158,9 @@ module tb_yolo_soc();
     begin
         @(posedge clk_100MHz);
 
+`ifdef AXI_VERBOSE
         $display("[%0t] AXI WRITE_R addr=%h data=%h", $time, addr, data);
+`endif
 
         awaddr_r  <= addr;
         wdata_r   <= data;
@@ -170,7 +188,9 @@ module tb_yolo_soc();
             end
         end
 
+`ifdef AXI_VERBOSE
         $display("[%0t] AXI WRITE_R COMPLETE addr=%h", $time, addr);
+`endif
 
         bready_r <= 1'b0;
         @(posedge clk_100MHz);
