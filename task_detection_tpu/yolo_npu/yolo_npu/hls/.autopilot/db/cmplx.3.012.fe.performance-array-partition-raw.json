@@ -1,15 +1,15 @@
 {
   "0": {
-    "basicblocks": 1054,
+    "basicblocks": 1087,
     "calls": "",
     "control_depth": 4,
     "def_use_depth": 53,
     "file": "yolo_npu_v2.cpp",
     "fileloc": 4,
-    "instructions": 14845,
+    "instructions": 15755,
     "loads": {
       "L": 624,
-      "T": 1
+      "T": 2
     },
     "memory_accesses": 1226,
     "name": "yolo_npu_v2_core",
@@ -17,6 +17,6 @@
       "L": 688,
       "T": 1
     },
-    "total_instructions": 14845
+    "total_instructions": 15755
   }
 }

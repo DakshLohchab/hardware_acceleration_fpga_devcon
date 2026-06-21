@@ -25,7 +25,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>8</integer>
+      <integer>9</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -41,11 +41,11 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>9</integer>
+      <integer>10</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=s_axilite port=cmd bundle=control_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=m_axi port=descriptor_table offset=slave bundle=gmem depth=100000_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -57,7 +57,23 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>10</integer>
+      <integer>11</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=s_axilite port=descriptor_count bundle=control_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>yolo_npu_v2.cpp</string>
+      <key>line</key>
+      <integer>12</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -73,27 +89,11 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>16</integer>
+      <integer>15</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=sp_bias cyclic factor=32 dim=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>yolo_npu_v2.cpp</string>
-      <key>line</key>
-      <integer>20</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=sp_in_fm cyclic factor=16 dim=3_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=6000_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -109,7 +109,23 @@
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=sp_out_fm cyclic factor=32 dim=3_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=sp_bias cyclic factor=32 dim=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>yolo_npu_v2.cpp</string>
+      <key>line</key>
+      <integer>27</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=sp_in_fm cyclic factor=16 dim=3_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -125,23 +141,7 @@
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=256_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>yolo_npu_v2.cpp</string>
-      <key>line</key>
-      <integer>31</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=sp_out_fm cyclic factor=32 dim=3_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -157,38 +157,6 @@
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=16_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>yolo_npu_v2.cpp</string>
-      <key>line</key>
-      <integer>39</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=16_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>yolo_npu_v2.cpp</string>
-      <key>line</key>
-      <integer>41</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
       <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=256_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
@@ -201,7 +169,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>42</integer>
+      <integer>38</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -217,7 +185,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>59</integer>
+      <integer>44</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -233,7 +201,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>61</integer>
+      <integer>46</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -249,7 +217,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>63</integer>
+      <integer>48</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -265,7 +233,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>64</integer>
+      <integer>49</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -281,11 +249,11 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>74</integer>
+      <integer>66</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=8_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=16_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -297,11 +265,43 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>76</integer>
+      <integer>68</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
       <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=16_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>yolo_npu_v2.cpp</string>
+      <key>line</key>
+      <integer>70</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=256_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>yolo_npu_v2.cpp</string>
+      <key>line</key>
+      <integer>71</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -317,7 +317,7 @@
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=weight_tile complete dim=1_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=8_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -329,11 +329,11 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>82</integer>
+      <integer>83</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=weight_tile complete dim=2_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=16_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -349,7 +349,7 @@
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=3_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=weight_tile complete dim=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -361,7 +361,23 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>90</integer>
+      <integer>89</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=weight_tile complete dim=2_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>yolo_npu_v2.cpp</string>
+      <key>line</key>
+      <integer>95</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -377,7 +393,23 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>91</integer>
+      <integer>97</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=3_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>yolo_npu_v2.cpp</string>
+      <key>line</key>
+      <integer>98</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -393,43 +425,11 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>110</integer>
+      <integer>117</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
       <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=16_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>yolo_npu_v2.cpp</string>
-      <key>line</key>
-      <integer>112</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=16_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>yolo_npu_v2.cpp</string>
-      <key>line</key>
-      <integer>115</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=acc complete dim=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -445,23 +445,7 @@
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=5_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>yolo_npu_v2.cpp</string>
-      <key>line</key>
-      <integer>121</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=5_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=16_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -477,7 +461,23 @@
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=acc complete dim=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>yolo_npu_v2.cpp</string>
+      <key>line</key>
+      <integer>126</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=5_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -493,6 +493,38 @@
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=max=5_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>yolo_npu_v2.cpp</string>
+      <key>line</key>
+      <integer>129</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>yolo_npu_v2.cpp</string>
+      <key>line</key>
+      <integer>135</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
       <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=variable=in_val complete dim=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
@@ -505,7 +537,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>130</integer>
+      <integer>137</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -521,23 +553,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>140</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>yolo_npu_v2.cpp</string>
-      <key>line</key>
-      <integer>142</integer>
+      <integer>157</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -569,7 +585,23 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>177</integer>
+      <integer>176</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=yolo_npu_v2_core_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>yolo_npu_v2.cpp</string>
+      <key>line</key>
+      <integer>194</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -585,7 +617,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>179</integer>
+      <integer>196</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -601,7 +633,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>181</integer>
+      <integer>198</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -617,7 +649,7 @@
       <key>filename</key>
       <string>yolo_npu_v2.cpp</string>
       <key>line</key>
-      <integer>182</integer>
+      <integer>199</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>

@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2025.2 (lin64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Fri Jun 19 21:55:08 2026</td></tr>
+<tr><td><b>Date</b></td><td>Sat Jun 20 09:59:12 2026</td></tr>
 <tr><td><b>Host</b></td><td>localhost.localdomain running 64-bit Red Hat Enterprise Linux 10.2 (Coughlan)"
 RELEASE_TYPE=stable</td></tr>
 <tr><td><b>Command</b></td><td>/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/hls_config.cfg --work_dir yolo_npu </td></tr>
@@ -3417,9 +3417,9 @@ RELEASE_TYPE=stable</td></tr>
 <tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
 </table>
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
-<pre>Violations found: 30
+<pre>Violations found: 27
 </pre>
-<pre>Rule Specs Violated: 3
+<pre>Rule Specs Violated: 2
 </pre>
 <a name="VIOLATION DETAILS"></a><h1>2 VIOLATION DETAILS</h1>
 <table border="1">
@@ -3435,89 +3435,7 @@ RELEASE_TYPE=stable</td></tr>
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">13</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18' (loop 'VITIS_LOOP_118_17_VITIS_LOOP_120_18'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 0) between 'store' operation ('acc_write_ln114', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=144">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=150">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">27</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
-<td align="left">The critical path in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25' consists of the following:
-	bus read operation ('gmem_addr_read', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) [211]  (14.600 ns)
-	'add' operation 16 bit ('val', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) [212]  (1.346 ns)
-	'phi' operation 16 bit ('val') with incoming values : ('val', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=186">yolo_npu_v2.cpp</a>) ('val', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) [215]  (0.000 ns)
-	bus write operation ('gmem_addr_1_write_ln200', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) [228]  (14.600 ns)
-
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">17</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25' (loop 'VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus response operation ('gmem_addr_3_resp', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Interface</td>
-<td align="left">Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_40_4'(<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=40">yolo_npu_v2.cpp</a>) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=40">yolo_npu_v2.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">24</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
-<td align="left">Cannot meet target clock period from bus read operation ('gmem_addr_read', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) to bus write operation ('gmem_addr_1_write_ln200', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) (combination delay: 31.379 ns) to honor II or Latency constraint in region 'VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">22</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25' (loop 'VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25'): Unable to enforce a carried dependence constraint (II = 13, distance = 1, offset = 1) between bus response operation ('gmem_addr_3_resp', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
 <td align="left">3</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Interface</td>
-<td align="left">Multiple burst reads of variable length and bit width 16 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=87">yolo_npu_v2.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">25</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3528,13 +3446,65 @@ RELEASE_TYPE=stable</td></tr>
 </tr>
 <tr>
 <td align="left">23</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_125_18_VITIS_LOOP_127_19' (loop 'VITIS_LOOP_125_18_VITIS_LOOP_127_19'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('acc_write_ln121', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=35">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=167">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">22</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
-<td align="left">Cannot meet target clock period from 'add' operation 16 bit ('val', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) to bus write operation ('gmem_addr_1_write_ln200', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) (combination delay: 16.779 ns) to honor II or Latency constraint in region 'VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25'.
+<td align="left">Cannot meet target clock period from bus read operation ('gmem_addr_read', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) to bus write operation ('gmem_addr_1_write_ln217', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) (combination delay: 36.384 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26'.
 </td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_125_18_VITIS_LOOP_127_19' (loop 'VITIS_LOOP_125_18_VITIS_LOOP_127_19'): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 0) between 'store' operation ('acc_write_ln121', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=35">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=167">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
@@ -3544,12 +3514,190 @@ RELEASE_TYPE=stable</td></tr>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18' (loop 'VITIS_LOOP_118_17_VITIS_LOOP_120_18'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('acc_write_ln114', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=144">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=150">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>.
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_125_18_VITIS_LOOP_127_19' (loop 'VITIS_LOOP_125_18_VITIS_LOOP_127_19'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 0) between 'store' operation ('acc_write_ln121', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=35">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=167">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>.
 </td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">30</td>
+<td align="left">4</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26' (loop 'VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus response operation ('empty_41', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_2_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_125_18_VITIS_LOOP_127_19' (loop 'VITIS_LOOP_125_18_VITIS_LOOP_127_19'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('acc_write_ln121', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=35">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=167">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26' (loop 'VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between bus response operation ('empty_41', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_2_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_125_18_VITIS_LOOP_127_19' (loop 'VITIS_LOOP_125_18_VITIS_LOOP_127_19'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('acc_write_ln121', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=35">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=167">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26' (loop 'VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus response operation ('empty_41', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_2_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26' (loop 'VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus response operation ('empty_41', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_2_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
+<td align="left">The critical path in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26' consists of the following:
+	bus read operation ('gmem_addr_read', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) [212]  (14.600 ns)
+	'lshr' operation 1024 bit ('lshr_ln211', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) [216]  (2.790 ns)
+	'add' operation 16 bit ('val', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) [218]  (1.346 ns)
+	'phi' operation 16 bit ('val') with incoming values : ('val', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=203">yolo_npu_v2.cpp</a>) ('val', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) [221]  (0.000 ns)
+	'shl' operation 1024 bit ('shl_ln217_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) [236]  (2.215 ns)
+	bus write operation ('gmem_addr_1_write_ln217', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) [241]  (14.600 ns)
+
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
+<td align="left">Cannot meet target clock period from bus read operation ('gmem_addr_read', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) to 'add' operation 16 bit ('val', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) (combination delay: 18.736 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26'.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26' (loop 'VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus response operation ('empty_41', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_2_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
+<td align="left">Cannot meet target clock period from bus read operation ('gmem_addr_read', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) to 'lshr' operation 1024 bit ('lshr_ln211', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) (combination delay: 17.39 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26'.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left">Kernel</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
+<td align="left">Cannot meet target clock period from 'lshr' operation 1024 bit ('lshr_ln211', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) to bus write operation ('gmem_addr_1_write_ln217', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) (combination delay: 21.784 ns) to honor II or Latency constraint in region 'VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26'.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">26</td>
 <td align="left">Kernel</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3565,71 +3713,8 @@ RELEASE_TYPE=stable</td></tr>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25' (loop 'VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between bus response operation ('gmem_addr_3_resp', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>).
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26' (loop 'VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26'): Unable to enforce a carried dependence constraint (II = 13, distance = 1, offset = 1) between bus response operation ('empty_41', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=217">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_2_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=211">yolo_npu_v2.cpp</a>).
 </td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">11</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18' (loop 'VITIS_LOOP_118_17_VITIS_LOOP_120_18'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('acc_write_ln114', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=144">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=150">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Interface</td>
-<td align="left">Multiple burst reads of variable length and bit width 16 in loop 'VITIS_LOOP_29_1'(<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=29">yolo_npu_v2.cpp</a>) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=29">yolo_npu_v2.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">21</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
-<td align="left">Cannot meet target clock period from bus read operation ('gmem_addr_read', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) to 'add' operation 16 bit ('val', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) (combination delay: 15.946 ns) to honor II or Latency constraint in region 'VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">8</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">28</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Interface</td>
-<td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
@@ -3639,122 +3724,7 @@ RELEASE_TYPE=stable</td></tr>
 <td align="left"><undefined></td>
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18' (loop 'VITIS_LOOP_118_17_VITIS_LOOP_120_18'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('acc_write_ln114', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=144">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=150">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">7</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">29</td>
-<td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">14</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18' (loop 'VITIS_LOOP_118_17_VITIS_LOOP_120_18'): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 0) between 'store' operation ('acc_write_ln114', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=144">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=150">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">18</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25' (loop 'VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus response operation ('gmem_addr_3_resp', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">15</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">19</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25' (loop 'VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus response operation ('gmem_addr_3_resp', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">12</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18' (loop 'VITIS_LOOP_118_17_VITIS_LOOP_120_18'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation ('acc_write_ln114', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=144">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=150">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=114">yolo_npu_v2.cpp</a>.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">26</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Kernel</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">16</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.yolo_npu_v2_core.Throughput</td>
-<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25' (loop 'VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus response operation ('gmem_addr_3_resp', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=200">yolo_npu_v2.cpp</a>) and bus request operation ('gmem_load_req', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>) on port 'gmem' (<a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=194">yolo_npu_v2.cpp</a>).
+<td align="left">The II Violation in module 'yolo_npu_v2_core_Pipeline_VITIS_LOOP_125_18_VITIS_LOOP_127_19' (loop 'VITIS_LOOP_125_18_VITIS_LOOP_127_19'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation ('acc_write_ln121', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>) of variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=35">yolo_npu_v2.cpp</a> 16 bit on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a> and 'load' operation 16 bit ('acc_load_1', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=167">yolo_npu_v2.cpp</a>) on local variable 'acc', <a href="file:///home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu_v2.cpp#line=121">yolo_npu_v2.cpp</a>.
 </td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

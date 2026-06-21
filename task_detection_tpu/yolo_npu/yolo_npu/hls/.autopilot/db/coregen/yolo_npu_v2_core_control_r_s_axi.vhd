@@ -11,7 +11,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity yolo_npu_v2_core_control_r_s_axi is
 generic (
-    C_S_AXI_ADDR_WIDTH    : INTEGER := 5;
+    C_S_AXI_ADDR_WIDTH    : INTEGER := 6;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
     ACLK                  :in   STD_LOGIC;
@@ -34,7 +34,8 @@ port (
     RRESP                 :out  STD_LOGIC_VECTOR(1 downto 0);
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
-    ddr_mem               :out  STD_LOGIC_VECTOR(63 downto 0)
+    ddr_mem               :out  STD_LOGIC_VECTOR(63 downto 0);
+    descriptor_table      :out  STD_LOGIC_VECTOR(63 downto 0)
 );
 end entity yolo_npu_v2_core_control_r_s_axi;
 
@@ -50,6 +51,11 @@ end entity yolo_npu_v2_core_control_r_s_axi;
 -- 0x14 : Data signal of ddr_mem
 --        bit 31~0 - ddr_mem[63:32] (Read/Write)
 -- 0x18 : reserved
+-- 0x1c : Data signal of descriptor_table
+--        bit 31~0 - descriptor_table[31:0] (Read/Write)
+-- 0x20 : Data signal of descriptor_table
+--        bit 31~0 - descriptor_table[63:32] (Read/Write)
+-- 0x24 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of yolo_npu_v2_core_control_r_s_axi is
@@ -59,10 +65,13 @@ attribute DowngradeIPIdentifiedWarnings of behave : architecture is "yes";
     signal wstate  : states := wrreset;
     signal rstate  : states := rdreset;
     signal wnext, rnext: states;
-    constant ADDR_DDR_MEM_DATA_0 : INTEGER := 16#10#;
-    constant ADDR_DDR_MEM_DATA_1 : INTEGER := 16#14#;
-    constant ADDR_DDR_MEM_CTRL   : INTEGER := 16#18#;
-    constant ADDR_BITS         : INTEGER := 5;
+    constant ADDR_DDR_MEM_DATA_0          : INTEGER := 16#10#;
+    constant ADDR_DDR_MEM_DATA_1          : INTEGER := 16#14#;
+    constant ADDR_DDR_MEM_CTRL            : INTEGER := 16#18#;
+    constant ADDR_DESCRIPTOR_TABLE_DATA_0 : INTEGER := 16#1c#;
+    constant ADDR_DESCRIPTOR_TABLE_DATA_1 : INTEGER := 16#20#;
+    constant ADDR_DESCRIPTOR_TABLE_CTRL   : INTEGER := 16#24#;
+    constant ADDR_BITS         : INTEGER := 6;
 
     signal AWREADY_t           : STD_LOGIC;
     signal WREADY_t            : STD_LOGIC;
@@ -78,6 +87,7 @@ attribute DowngradeIPIdentifiedWarnings of behave : architecture is "yes";
     signal raddr               : UNSIGNED(ADDR_BITS-1 downto 0);
     -- internal registers
     signal int_ddr_mem         : UNSIGNED(63 downto 0) := (others => '0');
+    signal int_descriptor_table : UNSIGNED(63 downto 0) := (others => '0');
 
 
 begin
@@ -198,6 +208,10 @@ begin
                         rdata_data <= RESIZE(int_ddr_mem(31 downto 0), 32);
                     when ADDR_DDR_MEM_DATA_1 =>
                         rdata_data <= RESIZE(int_ddr_mem(63 downto 32), 32);
+                    when ADDR_DESCRIPTOR_TABLE_DATA_0 =>
+                        rdata_data <= RESIZE(int_descriptor_table(31 downto 0), 32);
+                    when ADDR_DESCRIPTOR_TABLE_DATA_1 =>
+                        rdata_data <= RESIZE(int_descriptor_table(63 downto 32), 32);
                     when others =>
                         NULL;
                     end case;
@@ -208,6 +222,7 @@ begin
 
 -- ----------------------- Register logic ----------------
     ddr_mem              <= STD_LOGIC_VECTOR(int_ddr_mem);
+    descriptor_table     <= STD_LOGIC_VECTOR(int_descriptor_table);
 
     process (ACLK)
     begin
@@ -230,6 +245,32 @@ begin
             elsif (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_DDR_MEM_DATA_1) then
                     int_ddr_mem(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_ddr_mem(63 downto 32));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ARESET = '1') then
+                int_descriptor_table(31 downto 0) <= (others => '0');
+            elsif (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_DESCRIPTOR_TABLE_DATA_0) then
+                    int_descriptor_table(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_descriptor_table(31 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ARESET = '1') then
+                int_descriptor_table(63 downto 32) <= (others => '0');
+            elsif (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_DESCRIPTOR_TABLE_DATA_1) then
+                    int_descriptor_table(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_descriptor_table(63 downto 32));
                 end if;
             end if;
         end if;

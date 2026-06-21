@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'yolo_npu_v2_core'" level="0">
-<item name = "Date">Fri Jun 19 21:54:47 2026
+<item name = "Date">Sat Jun 20 09:58:57 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">yolo_npu</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">20.00 ns, 30.546 ns, 5.40 ns</column>
+<column name="ap_clk">20.00 ns, 35.551 ns, 5.40 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">45, 17144018, 1.375 us, 0.524 sec, 46, 17144019, no</column>
+<column name="">1, 102864180001, 35.551 ns, 3.7e+03 sec, 2, 102864180002, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,10 +35,11 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_73_8">2, 16160656, 2 ~ 2020082, -, -, 1 ~ 8, no</column>
-<column name=" + VITIS_LOOP_75_9">3, 2020080, 3 ~ 126255, -, -, 1 ~ 16, no</column>
-<column name="  ++ VITIS_LOOP_109_14">0, 121632, 2 ~ 7602, -, -, 0 ~ 16, no</column>
-<column name="   +++ VITIS_LOOP_111_15">0, 7600, 72 ~ 475, -, -, 0 ~ 16, no</column>
+<column name="- VITIS_LOOP_14_1">0, 102864180000, 55 ~ 17144030, -, -, 0 ~ 6000, no</column>
+<column name=" + VITIS_LOOP_80_9">2, 16160656, 2 ~ 2020082, -, -, 1 ~ 8, no</column>
+<column name="  ++ VITIS_LOOP_82_10">3, 2020080, 3 ~ 126255, -, -, 1 ~ 16, no</column>
+<column name="   +++ VITIS_LOOP_116_15">0, 121632, 2 ~ 7602, -, -, 0 ~ 16, no</column>
+<column name="    ++++ VITIS_LOOP_118_16">0, 7600, 72 ~ 475, -, -, 0 ~ 16, no</column>
 </table>
 </item>
 </section>

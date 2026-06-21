@@ -53,10 +53,10 @@
 -- COMP_TAG     ------ Begin cut for COMPONENT Declaration ------
 COMPONENT design_1
   PORT (
-    s_axi_control_0_araddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+    s_axi_control_0_araddr : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
     s_axi_control_0_arready : OUT STD_LOGIC;
     s_axi_control_0_arvalid : IN STD_LOGIC;
-    s_axi_control_0_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
+    s_axi_control_0_awaddr : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
     s_axi_control_0_awready : OUT STD_LOGIC;
     s_axi_control_0_awvalid : IN STD_LOGIC;
     s_axi_control_0_bready : IN STD_LOGIC;
@@ -70,10 +70,10 @@ COMPONENT design_1
     s_axi_control_0_wready : OUT STD_LOGIC;
     s_axi_control_0_wstrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     s_axi_control_0_wvalid : IN STD_LOGIC;
-    s_axi_control_r_0_araddr : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+    s_axi_control_r_0_araddr : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
     s_axi_control_r_0_arready : OUT STD_LOGIC;
     s_axi_control_r_0_arvalid : IN STD_LOGIC;
-    s_axi_control_r_0_awaddr : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+    s_axi_control_r_0_awaddr : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
     s_axi_control_r_0_awready : OUT STD_LOGIC;
     s_axi_control_r_0_awvalid : IN STD_LOGIC;
     s_axi_control_r_0_bready : IN STD_LOGIC;

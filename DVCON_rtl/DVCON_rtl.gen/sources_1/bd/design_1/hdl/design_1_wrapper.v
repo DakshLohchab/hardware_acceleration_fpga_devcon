@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Jun 19 22:23:45 2026
+//Date        : Sat Jun 20 10:27:56 2026
 //Host        : localhost.localdomain running 64-bit Red Hat Enterprise Linux 10.2 (Coughlan)"
 //RELEASE_TYPE=stable
 //Command     : generate_target design_1_wrapper.bd
@@ -52,10 +52,10 @@ module design_1_wrapper
   input clk_100MHz;
   output interrupt_0;
   input reset_rtl_0;
-  input [6:0]s_axi_control_0_araddr;
+  input [4:0]s_axi_control_0_araddr;
   output s_axi_control_0_arready;
   input s_axi_control_0_arvalid;
-  input [6:0]s_axi_control_0_awaddr;
+  input [4:0]s_axi_control_0_awaddr;
   output s_axi_control_0_awready;
   input s_axi_control_0_awvalid;
   input s_axi_control_0_bready;
@@ -69,10 +69,10 @@ module design_1_wrapper
   output s_axi_control_0_wready;
   input [3:0]s_axi_control_0_wstrb;
   input s_axi_control_0_wvalid;
-  input [4:0]s_axi_control_r_0_araddr;
+  input [5:0]s_axi_control_r_0_araddr;
   output s_axi_control_r_0_arready;
   input s_axi_control_r_0_arvalid;
-  input [4:0]s_axi_control_r_0_awaddr;
+  input [5:0]s_axi_control_r_0_awaddr;
   output s_axi_control_r_0_awready;
   input s_axi_control_r_0_awvalid;
   input s_axi_control_r_0_bready;
@@ -90,10 +90,10 @@ module design_1_wrapper
   wire clk_100MHz;
   wire interrupt_0;
   wire reset_rtl_0;
-  wire [6:0]s_axi_control_0_araddr;
+  wire [4:0]s_axi_control_0_araddr;
   wire s_axi_control_0_arready;
   wire s_axi_control_0_arvalid;
-  wire [6:0]s_axi_control_0_awaddr;
+  wire [4:0]s_axi_control_0_awaddr;
   wire s_axi_control_0_awready;
   wire s_axi_control_0_awvalid;
   wire s_axi_control_0_bready;
@@ -107,10 +107,10 @@ module design_1_wrapper
   wire s_axi_control_0_wready;
   wire [3:0]s_axi_control_0_wstrb;
   wire s_axi_control_0_wvalid;
-  wire [4:0]s_axi_control_r_0_araddr;
+  wire [5:0]s_axi_control_r_0_araddr;
   wire s_axi_control_r_0_arready;
   wire s_axi_control_r_0_arvalid;
-  wire [4:0]s_axi_control_r_0_awaddr;
+  wire [5:0]s_axi_control_r_0_awaddr;
   wire s_axi_control_r_0_awready;
   wire s_axi_control_r_0_awvalid;
   wire s_axi_control_r_0_bready;

@@ -8,7 +8,7 @@
 `timescale 1ns/1ps
 (* DowngradeIPIdentifiedWarnings="yes" *) module yolo_npu_v2_core_control_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 7,
+    C_S_AXI_ADDR_WIDTH = 5,
     C_S_AXI_DATA_WIDTH = 32
 )(
     input  wire                          ACLK,
@@ -32,7 +32,7 @@
     output wire                          RVALID,
     input  wire                          RREADY,
     output wire                          interrupt,
-    output wire [639:0]                  cmd,
+    output wire [31:0]                   descriptor_count,
     output wire                          ap_start,
     input  wire                          ap_done,
     input  wire                          ap_ready,
@@ -60,84 +60,27 @@
 //        bit 0 - ap_done (Read/TOW)
 //        bit 1 - ap_ready (Read/TOW)
 //        others - reserved
-// 0x10 : Data signal of cmd
-//        bit 31~0 - cmd[31:0] (Read/Write)
-// 0x14 : Data signal of cmd
-//        bit 31~0 - cmd[63:32] (Read/Write)
-// 0x18 : Data signal of cmd
-//        bit 31~0 - cmd[95:64] (Read/Write)
-// 0x1c : Data signal of cmd
-//        bit 31~0 - cmd[127:96] (Read/Write)
-// 0x20 : Data signal of cmd
-//        bit 31~0 - cmd[159:128] (Read/Write)
-// 0x24 : Data signal of cmd
-//        bit 31~0 - cmd[191:160] (Read/Write)
-// 0x28 : Data signal of cmd
-//        bit 31~0 - cmd[223:192] (Read/Write)
-// 0x2c : Data signal of cmd
-//        bit 31~0 - cmd[255:224] (Read/Write)
-// 0x30 : Data signal of cmd
-//        bit 31~0 - cmd[287:256] (Read/Write)
-// 0x34 : Data signal of cmd
-//        bit 31~0 - cmd[319:288] (Read/Write)
-// 0x38 : Data signal of cmd
-//        bit 31~0 - cmd[351:320] (Read/Write)
-// 0x3c : Data signal of cmd
-//        bit 31~0 - cmd[383:352] (Read/Write)
-// 0x40 : Data signal of cmd
-//        bit 31~0 - cmd[415:384] (Read/Write)
-// 0x44 : Data signal of cmd
-//        bit 31~0 - cmd[447:416] (Read/Write)
-// 0x48 : Data signal of cmd
-//        bit 31~0 - cmd[479:448] (Read/Write)
-// 0x4c : Data signal of cmd
-//        bit 31~0 - cmd[511:480] (Read/Write)
-// 0x50 : Data signal of cmd
-//        bit 31~0 - cmd[543:512] (Read/Write)
-// 0x54 : Data signal of cmd
-//        bit 31~0 - cmd[575:544] (Read/Write)
-// 0x58 : Data signal of cmd
-//        bit 31~0 - cmd[607:576] (Read/Write)
-// 0x5c : Data signal of cmd
-//        bit 31~0 - cmd[639:608] (Read/Write)
-// 0x60 : reserved
+// 0x10 : Data signal of descriptor_count
+//        bit 31~0 - descriptor_count[31:0] (Read/Write)
+// 0x14 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL     = 7'h00,
-    ADDR_GIE         = 7'h04,
-    ADDR_IER         = 7'h08,
-    ADDR_ISR         = 7'h0c,
-    ADDR_CMD_DATA_0  = 7'h10,
-    ADDR_CMD_DATA_1  = 7'h14,
-    ADDR_CMD_DATA_2  = 7'h18,
-    ADDR_CMD_DATA_3  = 7'h1c,
-    ADDR_CMD_DATA_4  = 7'h20,
-    ADDR_CMD_DATA_5  = 7'h24,
-    ADDR_CMD_DATA_6  = 7'h28,
-    ADDR_CMD_DATA_7  = 7'h2c,
-    ADDR_CMD_DATA_8  = 7'h30,
-    ADDR_CMD_DATA_9  = 7'h34,
-    ADDR_CMD_DATA_10 = 7'h38,
-    ADDR_CMD_DATA_11 = 7'h3c,
-    ADDR_CMD_DATA_12 = 7'h40,
-    ADDR_CMD_DATA_13 = 7'h44,
-    ADDR_CMD_DATA_14 = 7'h48,
-    ADDR_CMD_DATA_15 = 7'h4c,
-    ADDR_CMD_DATA_16 = 7'h50,
-    ADDR_CMD_DATA_17 = 7'h54,
-    ADDR_CMD_DATA_18 = 7'h58,
-    ADDR_CMD_DATA_19 = 7'h5c,
-    ADDR_CMD_CTRL    = 7'h60,
-    WRIDLE           = 2'd0,
-    WRDATA           = 2'd1,
-    WRRESP           = 2'd2,
-    WRRESET          = 2'd3,
-    RDIDLE           = 2'd0,
-    RDDATA           = 2'd1,
-    RDRESET          = 2'd2,
-    ADDR_BITS                = 7;
+    ADDR_AP_CTRL                 = 5'h00,
+    ADDR_GIE                     = 5'h04,
+    ADDR_IER                     = 5'h08,
+    ADDR_ISR                     = 5'h0c,
+    ADDR_DESCRIPTOR_COUNT_DATA_0 = 5'h10,
+    ADDR_DESCRIPTOR_COUNT_CTRL   = 5'h14,
+    WRIDLE                       = 2'd0,
+    WRDATA                       = 2'd1,
+    WRRESP                       = 2'd2,
+    WRRESET                      = 2'd3,
+    RDIDLE                       = 2'd0,
+    RDDATA                       = 2'd1,
+    RDRESET                      = 2'd2,
+    ADDR_BITS                = 5;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate = WRRESET;
@@ -166,7 +109,7 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
-    reg  [639:0]                  int_cmd = 'b0;
+    reg  [31:0]                   int_descriptor_count = 'b0;
 
 //------------------------Instantiation------------------
 
@@ -276,65 +219,8 @@ always @(posedge ACLK) begin
                 ADDR_ISR: begin
                     rdata <= int_isr;
                 end
-                ADDR_CMD_DATA_0: begin
-                    rdata <= int_cmd[31:0];
-                end
-                ADDR_CMD_DATA_1: begin
-                    rdata <= int_cmd[63:32];
-                end
-                ADDR_CMD_DATA_2: begin
-                    rdata <= int_cmd[95:64];
-                end
-                ADDR_CMD_DATA_3: begin
-                    rdata <= int_cmd[127:96];
-                end
-                ADDR_CMD_DATA_4: begin
-                    rdata <= int_cmd[159:128];
-                end
-                ADDR_CMD_DATA_5: begin
-                    rdata <= int_cmd[191:160];
-                end
-                ADDR_CMD_DATA_6: begin
-                    rdata <= int_cmd[223:192];
-                end
-                ADDR_CMD_DATA_7: begin
-                    rdata <= int_cmd[255:224];
-                end
-                ADDR_CMD_DATA_8: begin
-                    rdata <= int_cmd[287:256];
-                end
-                ADDR_CMD_DATA_9: begin
-                    rdata <= int_cmd[319:288];
-                end
-                ADDR_CMD_DATA_10: begin
-                    rdata <= int_cmd[351:320];
-                end
-                ADDR_CMD_DATA_11: begin
-                    rdata <= int_cmd[383:352];
-                end
-                ADDR_CMD_DATA_12: begin
-                    rdata <= int_cmd[415:384];
-                end
-                ADDR_CMD_DATA_13: begin
-                    rdata <= int_cmd[447:416];
-                end
-                ADDR_CMD_DATA_14: begin
-                    rdata <= int_cmd[479:448];
-                end
-                ADDR_CMD_DATA_15: begin
-                    rdata <= int_cmd[511:480];
-                end
-                ADDR_CMD_DATA_16: begin
-                    rdata <= int_cmd[543:512];
-                end
-                ADDR_CMD_DATA_17: begin
-                    rdata <= int_cmd[575:544];
-                end
-                ADDR_CMD_DATA_18: begin
-                    rdata <= int_cmd[607:576];
-                end
-                ADDR_CMD_DATA_19: begin
-                    rdata <= int_cmd[639:608];
+                ADDR_DESCRIPTOR_COUNT_DATA_0: begin
+                    rdata <= int_descriptor_count[31:0];
                 end
             endcase
         end
@@ -348,7 +234,7 @@ assign ap_start          = int_ap_start;
 assign task_ap_done      = (ap_done && !auto_restart_status) || auto_restart_done;
 assign task_ap_ready     = ap_ready && !int_auto_restart;
 assign auto_restart_done = auto_restart_status && (ap_idle && !int_ap_idle);
-assign cmd               = int_cmd;
+assign descriptor_count  = int_descriptor_count;
 // int_interrupt
 always @(posedge ACLK) begin
     if (ARESET)
@@ -481,203 +367,13 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_cmd[31:0]
+// int_descriptor_count[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
-        int_cmd[31:0] <= 0;
+        int_descriptor_count[31:0] <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_0)
-            int_cmd[31:0] <= (WDATA[31:0] & wmask) | (int_cmd[31:0] & ~wmask);
-    end
-end
-
-// int_cmd[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_1)
-            int_cmd[63:32] <= (WDATA[31:0] & wmask) | (int_cmd[63:32] & ~wmask);
-    end
-end
-
-// int_cmd[95:64]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[95:64] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_2)
-            int_cmd[95:64] <= (WDATA[31:0] & wmask) | (int_cmd[95:64] & ~wmask);
-    end
-end
-
-// int_cmd[127:96]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[127:96] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_3)
-            int_cmd[127:96] <= (WDATA[31:0] & wmask) | (int_cmd[127:96] & ~wmask);
-    end
-end
-
-// int_cmd[159:128]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[159:128] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_4)
-            int_cmd[159:128] <= (WDATA[31:0] & wmask) | (int_cmd[159:128] & ~wmask);
-    end
-end
-
-// int_cmd[191:160]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[191:160] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_5)
-            int_cmd[191:160] <= (WDATA[31:0] & wmask) | (int_cmd[191:160] & ~wmask);
-    end
-end
-
-// int_cmd[223:192]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[223:192] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_6)
-            int_cmd[223:192] <= (WDATA[31:0] & wmask) | (int_cmd[223:192] & ~wmask);
-    end
-end
-
-// int_cmd[255:224]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[255:224] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_7)
-            int_cmd[255:224] <= (WDATA[31:0] & wmask) | (int_cmd[255:224] & ~wmask);
-    end
-end
-
-// int_cmd[287:256]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[287:256] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_8)
-            int_cmd[287:256] <= (WDATA[31:0] & wmask) | (int_cmd[287:256] & ~wmask);
-    end
-end
-
-// int_cmd[319:288]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[319:288] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_9)
-            int_cmd[319:288] <= (WDATA[31:0] & wmask) | (int_cmd[319:288] & ~wmask);
-    end
-end
-
-// int_cmd[351:320]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[351:320] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_10)
-            int_cmd[351:320] <= (WDATA[31:0] & wmask) | (int_cmd[351:320] & ~wmask);
-    end
-end
-
-// int_cmd[383:352]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[383:352] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_11)
-            int_cmd[383:352] <= (WDATA[31:0] & wmask) | (int_cmd[383:352] & ~wmask);
-    end
-end
-
-// int_cmd[415:384]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[415:384] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_12)
-            int_cmd[415:384] <= (WDATA[31:0] & wmask) | (int_cmd[415:384] & ~wmask);
-    end
-end
-
-// int_cmd[447:416]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[447:416] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_13)
-            int_cmd[447:416] <= (WDATA[31:0] & wmask) | (int_cmd[447:416] & ~wmask);
-    end
-end
-
-// int_cmd[479:448]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[479:448] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_14)
-            int_cmd[479:448] <= (WDATA[31:0] & wmask) | (int_cmd[479:448] & ~wmask);
-    end
-end
-
-// int_cmd[511:480]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[511:480] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_15)
-            int_cmd[511:480] <= (WDATA[31:0] & wmask) | (int_cmd[511:480] & ~wmask);
-    end
-end
-
-// int_cmd[543:512]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[543:512] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_16)
-            int_cmd[543:512] <= (WDATA[31:0] & wmask) | (int_cmd[543:512] & ~wmask);
-    end
-end
-
-// int_cmd[575:544]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[575:544] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_17)
-            int_cmd[575:544] <= (WDATA[31:0] & wmask) | (int_cmd[575:544] & ~wmask);
-    end
-end
-
-// int_cmd[607:576]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[607:576] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_18)
-            int_cmd[607:576] <= (WDATA[31:0] & wmask) | (int_cmd[607:576] & ~wmask);
-    end
-end
-
-// int_cmd[639:608]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_cmd[639:608] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_CMD_DATA_19)
-            int_cmd[639:608] <= (WDATA[31:0] & wmask) | (int_cmd[639:608] & ~wmask);
+        if (w_hs && waddr == ADDR_DESCRIPTOR_COUNT_DATA_0)
+            int_descriptor_count[31:0] <= (WDATA[31:0] & wmask) | (int_descriptor_count[31:0] & ~wmask);
     end
 end
 

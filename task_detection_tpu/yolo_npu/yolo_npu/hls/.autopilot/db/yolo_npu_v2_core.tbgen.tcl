@@ -20,17 +20,19 @@ set C_modelName {yolo_npu_v2_core}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 set C_modelArgList {
-	{ gmem int 16 regular {axi_master 2}  }
+	{ gmem int 1024 regular {axi_master 2}  }
 	{ ddr_mem int 64 regular {axi_slave 0}  }
-	{ cmd int 640 regular {axi_slave 0}  }
+	{ descriptor_table int 64 regular {axi_slave 0}  }
+	{ descriptor_count int 32 regular {axi_slave 0}  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "gmem", "interface" : "axi_master", "bitwidth" : 16, "direction" : "READWRITE", "id_num" : 1, "bitSlice":[ {"cElement": [{"cName": "ddr_mem","offset": { "type": "dynamic","port_name": "ddr_mem","bundle": "control_r"},"direction": "READWRITE"}]}]} , 
+	{ "Name" : "gmem", "interface" : "axi_master", "bitwidth" : 1024, "direction" : "READWRITE", "id_num" : 1, "bitSlice":[ {"cElement": [{"cName": "ddr_mem","offset": { "type": "dynamic","port_name": "ddr_mem","bundle": "control_r"},"direction": "READWRITE"},{"cName": "descriptor_table","offset": { "type": "dynamic","port_name": "descriptor_table","bundle": "control_r"},"direction": "READONLY"}]}]} , 
  	{ "Name" : "ddr_mem", "interface" : "axi_slave", "bundle":"control_r","type":"ap_none","bitwidth" : 64, "direction" : "READONLY", "offset" : {"in":16}, "offset_end" : {"in":27}} , 
- 	{ "Name" : "cmd", "interface" : "axi_slave", "bundle":"control","type":"ap_none","bitwidth" : 640, "direction" : "READONLY", "offset" : {"in":16}, "offset_end" : {"in":99}} ]}
+ 	{ "Name" : "descriptor_table", "interface" : "axi_slave", "bundle":"control_r","type":"ap_none","bitwidth" : 64, "direction" : "READONLY", "offset" : {"in":28}, "offset_end" : {"in":39}} , 
+ 	{ "Name" : "descriptor_count", "interface" : "axi_slave", "bundle":"control","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":16}, "offset_end" : {"in":23}} ]}
 # RTL Port declarations: 
 set portNum 82
 set portList { 
@@ -51,8 +53,8 @@ set portList {
 	{ m_axi_gmem_AWUSER sc_out sc_lv 1 signal 0 } 
 	{ m_axi_gmem_WVALID sc_out sc_logic 1 signal 0 } 
 	{ m_axi_gmem_WREADY sc_in sc_logic 1 signal 0 } 
-	{ m_axi_gmem_WDATA sc_out sc_lv 32 signal 0 } 
-	{ m_axi_gmem_WSTRB sc_out sc_lv 4 signal 0 } 
+	{ m_axi_gmem_WDATA sc_out sc_lv 1024 signal 0 } 
+	{ m_axi_gmem_WSTRB sc_out sc_lv 128 signal 0 } 
 	{ m_axi_gmem_WLAST sc_out sc_logic 1 signal 0 } 
 	{ m_axi_gmem_WID sc_out sc_lv 1 signal 0 } 
 	{ m_axi_gmem_WUSER sc_out sc_lv 1 signal 0 } 
@@ -71,7 +73,7 @@ set portList {
 	{ m_axi_gmem_ARUSER sc_out sc_lv 1 signal 0 } 
 	{ m_axi_gmem_RVALID sc_in sc_logic 1 signal 0 } 
 	{ m_axi_gmem_RREADY sc_out sc_logic 1 signal 0 } 
-	{ m_axi_gmem_RDATA sc_in sc_lv 32 signal 0 } 
+	{ m_axi_gmem_RDATA sc_in sc_lv 1024 signal 0 } 
 	{ m_axi_gmem_RLAST sc_in sc_logic 1 signal 0 } 
 	{ m_axi_gmem_RID sc_in sc_lv 1 signal 0 } 
 	{ m_axi_gmem_RUSER sc_in sc_lv 1 signal 0 } 
@@ -83,14 +85,14 @@ set portList {
 	{ m_axi_gmem_BUSER sc_in sc_lv 1 signal 0 } 
 	{ s_axi_control_AWVALID sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_AWREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_control_AWADDR sc_in sc_lv 7 signal -1 } 
+	{ s_axi_control_AWADDR sc_in sc_lv 5 signal -1 } 
 	{ s_axi_control_WVALID sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_WREADY sc_out sc_logic 1 signal -1 } 
 	{ s_axi_control_WDATA sc_in sc_lv 32 signal -1 } 
 	{ s_axi_control_WSTRB sc_in sc_lv 4 signal -1 } 
 	{ s_axi_control_ARVALID sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_ARREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_control_ARADDR sc_in sc_lv 7 signal -1 } 
+	{ s_axi_control_ARADDR sc_in sc_lv 5 signal -1 } 
 	{ s_axi_control_RVALID sc_out sc_logic 1 signal -1 } 
 	{ s_axi_control_RREADY sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_RDATA sc_out sc_lv 32 signal -1 } 
@@ -101,14 +103,14 @@ set portList {
 	{ interrupt sc_out sc_logic 1 signal -1 } 
 	{ s_axi_control_r_AWVALID sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_r_AWREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_control_r_AWADDR sc_in sc_lv 5 signal -1 } 
+	{ s_axi_control_r_AWADDR sc_in sc_lv 6 signal -1 } 
 	{ s_axi_control_r_WVALID sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_r_WREADY sc_out sc_logic 1 signal -1 } 
 	{ s_axi_control_r_WDATA sc_in sc_lv 32 signal -1 } 
 	{ s_axi_control_r_WSTRB sc_in sc_lv 4 signal -1 } 
 	{ s_axi_control_r_ARVALID sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_r_ARREADY sc_out sc_logic 1 signal -1 } 
-	{ s_axi_control_r_ARADDR sc_in sc_lv 5 signal -1 } 
+	{ s_axi_control_r_ARADDR sc_in sc_lv 6 signal -1 } 
 	{ s_axi_control_r_RVALID sc_out sc_logic 1 signal -1 } 
 	{ s_axi_control_r_RREADY sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_r_RDATA sc_out sc_lv 32 signal -1 } 
@@ -118,14 +120,14 @@ set portList {
 	{ s_axi_control_r_BRESP sc_out sc_lv 2 signal -1 } 
 }
 set NewPortList {[ 
-	{ "name": "s_axi_control_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "control", "role": "AWADDR" },"address":[{"name":"yolo_npu_v2_core","role":"start","value":"0","valid_bit":"0"},{"name":"yolo_npu_v2_core","role":"continue","value":"0","valid_bit":"4"},{"name":"yolo_npu_v2_core","role":"auto_start","value":"0","valid_bit":"7"},{"name":"cmd","role":"data","value":"16"}] },
+	{ "name": "s_axi_control_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "control", "role": "AWADDR" },"address":[{"name":"yolo_npu_v2_core","role":"start","value":"0","valid_bit":"0"},{"name":"yolo_npu_v2_core","role":"continue","value":"0","valid_bit":"4"},{"name":"yolo_npu_v2_core","role":"auto_start","value":"0","valid_bit":"7"},{"name":"descriptor_count","role":"data","value":"16"}] },
 	{ "name": "s_axi_control_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "AWVALID" } },
 	{ "name": "s_axi_control_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "AWREADY" } },
 	{ "name": "s_axi_control_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "WVALID" } },
 	{ "name": "s_axi_control_WREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "WREADY" } },
 	{ "name": "s_axi_control_WDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "control", "role": "WDATA" } },
 	{ "name": "s_axi_control_WSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "control", "role": "WSTRB" } },
-	{ "name": "s_axi_control_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "control", "role": "ARADDR" },"address":[{"name":"yolo_npu_v2_core","role":"start","value":"0","valid_bit":"0"},{"name":"yolo_npu_v2_core","role":"done","value":"0","valid_bit":"1"},{"name":"yolo_npu_v2_core","role":"idle","value":"0","valid_bit":"2"},{"name":"yolo_npu_v2_core","role":"ready","value":"0","valid_bit":"3"},{"name":"yolo_npu_v2_core","role":"auto_start","value":"0","valid_bit":"7"}] },
+	{ "name": "s_axi_control_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "control", "role": "ARADDR" },"address":[{"name":"yolo_npu_v2_core","role":"start","value":"0","valid_bit":"0"},{"name":"yolo_npu_v2_core","role":"done","value":"0","valid_bit":"1"},{"name":"yolo_npu_v2_core","role":"idle","value":"0","valid_bit":"2"},{"name":"yolo_npu_v2_core","role":"ready","value":"0","valid_bit":"3"},{"name":"yolo_npu_v2_core","role":"auto_start","value":"0","valid_bit":"7"}] },
 	{ "name": "s_axi_control_ARVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "ARVALID" } },
 	{ "name": "s_axi_control_ARREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "ARREADY" } },
 	{ "name": "s_axi_control_RVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "RVALID" } },
@@ -136,14 +138,14 @@ set NewPortList {[
 	{ "name": "s_axi_control_BREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "BREADY" } },
 	{ "name": "s_axi_control_BRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "control", "role": "BRESP" } },
 	{ "name": "interrupt", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "interrupt" } },
-	{ "name": "s_axi_control_r_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "control_r", "role": "AWADDR" },"address":[{"name":"ddr_mem","role":"data","value":"16"}] },
+	{ "name": "s_axi_control_r_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "control_r", "role": "AWADDR" },"address":[{"name":"ddr_mem","role":"data","value":"16"},{"name":"descriptor_table","role":"data","value":"28"}] },
 	{ "name": "s_axi_control_r_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control_r", "role": "AWVALID" } },
 	{ "name": "s_axi_control_r_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control_r", "role": "AWREADY" } },
 	{ "name": "s_axi_control_r_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control_r", "role": "WVALID" } },
 	{ "name": "s_axi_control_r_WREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control_r", "role": "WREADY" } },
 	{ "name": "s_axi_control_r_WDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "control_r", "role": "WDATA" } },
 	{ "name": "s_axi_control_r_WSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "control_r", "role": "WSTRB" } },
-	{ "name": "s_axi_control_r_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "control_r", "role": "ARADDR" },"address":[] },
+	{ "name": "s_axi_control_r_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "control_r", "role": "ARADDR" },"address":[] },
 	{ "name": "s_axi_control_r_ARVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control_r", "role": "ARVALID" } },
 	{ "name": "s_axi_control_r_ARREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control_r", "role": "ARREADY" } },
 	{ "name": "s_axi_control_r_RVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control_r", "role": "RVALID" } },
@@ -170,8 +172,8 @@ set NewPortList {[
  	{ "name": "m_axi_gmem_AWUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "AWUSER" }} , 
  	{ "name": "m_axi_gmem_WVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "WVALID" }} , 
  	{ "name": "m_axi_gmem_WREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "WREADY" }} , 
- 	{ "name": "m_axi_gmem_WDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "gmem", "role": "WDATA" }} , 
- 	{ "name": "m_axi_gmem_WSTRB", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem", "role": "WSTRB" }} , 
+ 	{ "name": "m_axi_gmem_WDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":1024, "type": "signal", "bundle":{"name": "gmem", "role": "WDATA" }} , 
+ 	{ "name": "m_axi_gmem_WSTRB", "direction": "out", "datatype": "sc_lv", "bitwidth":128, "type": "signal", "bundle":{"name": "gmem", "role": "WSTRB" }} , 
  	{ "name": "m_axi_gmem_WLAST", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "WLAST" }} , 
  	{ "name": "m_axi_gmem_WID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "WID" }} , 
  	{ "name": "m_axi_gmem_WUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "WUSER" }} , 
@@ -190,7 +192,7 @@ set NewPortList {[
  	{ "name": "m_axi_gmem_ARUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "ARUSER" }} , 
  	{ "name": "m_axi_gmem_RVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "RVALID" }} , 
  	{ "name": "m_axi_gmem_RREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "RREADY" }} , 
- 	{ "name": "m_axi_gmem_RDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "gmem", "role": "RDATA" }} , 
+ 	{ "name": "m_axi_gmem_RDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":1024, "type": "signal", "bundle":{"name": "gmem", "role": "RDATA" }} , 
  	{ "name": "m_axi_gmem_RLAST", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "RLAST" }} , 
  	{ "name": "m_axi_gmem_RID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "RID" }} , 
  	{ "name": "m_axi_gmem_RUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "RUSER" }} , 
@@ -205,47 +207,56 @@ set ArgLastReadFirstWriteLatency {
 	yolo_npu_v2_core {
 		gmem {Type IO LastRead 11 FirstWrite -1}
 		ddr_mem {Type I LastRead 0 FirstWrite -1}
-		cmd {Type I LastRead 0 FirstWrite -1}}
-	yolo_npu_v2_core_Pipeline_VITIS_LOOP_29_1 {
-		gmem {Type I LastRead 1 FirstWrite -1}
+		descriptor_table {Type I LastRead 0 FirstWrite -1}
+		descriptor_count {Type I LastRead 0 FirstWrite -1}}
+	yolo_npu_v2_core_Pipeline_VITIS_LOOP_36_2 {
+		gmem {Type I LastRead 9 FirstWrite -1}
 		cmd_out_channels {Type I LastRead 0 FirstWrite -1}
-		sext_ln29_1 {Type I LastRead 0 FirstWrite -1}
-		sp_bias_31 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_30 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_29 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_28 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_27 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_26 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_25 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_24 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_23 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_22 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_21 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_20 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_19 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_18 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_17 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_16 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_15 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_14 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_13 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_12 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_11 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_10 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_9 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_8 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_7 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_6 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_5 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_4 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_3 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_2 {Type O LastRead -1 FirstWrite 2}
-		sp_bias_1 {Type O LastRead -1 FirstWrite 2}
-		sp_bias {Type O LastRead -1 FirstWrite 2}}
-	yolo_npu_v2_core_Pipeline_VITIS_LOOP_36_2_VITIS_LOOP_38_3_VITIS_LOOP_40_4 {
+		sp_bias_31 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_30 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_29 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_28 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_27 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_26 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_25 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_24 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_23 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_22 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_21 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_20 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_19 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_18 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_17 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_16 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_15 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_14 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_13 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_12 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_11 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_10 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_9 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_8 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_7 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_6 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_5 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_4 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_3 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_2 {Type O LastRead -1 FirstWrite 10}
+		sp_bias_1 {Type O LastRead -1 FirstWrite 10}
+		sp_bias {Type O LastRead -1 FirstWrite 10}
+		ddr_mem {Type I LastRead 0 FirstWrite -1}
+		sext_ln36 {Type I LastRead 0 FirstWrite -1}}
+	yolo_npu_v2_core_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_45_4_VITIS_LOOP_47_5 {
 		gmem {Type I LastRead 11 FirstWrite -1}
-		empty_17 {Type I LastRead 0 FirstWrite -1}
-		mul_ln45_1 {Type I LastRead 0 FirstWrite -1}
+		cmd_apply_upsample {Type I LastRead 0 FirstWrite -1}
+		empty_19 {Type I LastRead 0 FirstWrite -1}
+		mul_ln50_1 {Type I LastRead 0 FirstWrite -1}
+		mul_ln50 {Type I LastRead 0 FirstWrite -1}
+		empty {Type I LastRead 0 FirstWrite -1}
+		read_w {Type I LastRead 0 FirstWrite -1}
+		cmd_in_total_channels {Type I LastRead 0 FirstWrite -1}
+		cmd_in_offset {Type I LastRead 0 FirstWrite -1}
+		sext_ln43_1 {Type I LastRead 0 FirstWrite -1}
 		sp_in_fm {Type O LastRead -1 FirstWrite 12}
 		sp_in_fm_1 {Type O LastRead -1 FirstWrite 12}
 		sp_in_fm_2 {Type O LastRead -1 FirstWrite 12}
@@ -262,19 +273,13 @@ set ArgLastReadFirstWriteLatency {
 		sp_in_fm_13 {Type O LastRead -1 FirstWrite 12}
 		sp_in_fm_14 {Type O LastRead -1 FirstWrite 12}
 		sp_in_fm_15 {Type O LastRead -1 FirstWrite 12}
-		zext_ln40 {Type I LastRead 0 FirstWrite -1}
-		mul_ln45 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln40 {Type I LastRead 0 FirstWrite -1}
-		empty {Type I LastRead 0 FirstWrite -1}
-		read_w {Type I LastRead 0 FirstWrite -1}
-		cmd_in_total_channels {Type I LastRead 0 FirstWrite -1}
-		cmd_in_offset {Type I LastRead 0 FirstWrite -1}
-		sext_ln36_1 {Type I LastRead 0 FirstWrite -1}
 		ddr_mem {Type I LastRead 0 FirstWrite -1}}
-	yolo_npu_v2_core_Pipeline_VITIS_LOOP_58_5_VITIS_LOOP_60_6_VITIS_LOOP_62_7 {
+	yolo_npu_v2_core_Pipeline_VITIS_LOOP_65_6_VITIS_LOOP_67_7_VITIS_LOOP_69_8 {
+		cmd_apply_maxpool {Type I LastRead 0 FirstWrite -1}
 		cmd_out_channels {Type I LastRead 0 FirstWrite -1}
-		mul_ln36_1 {Type I LastRead 0 FirstWrite -1}
-		mul_ln36 {Type I LastRead 0 FirstWrite -1}
+		mul_ln43_1 {Type I LastRead 0 FirstWrite -1}
+		mul_ln43 {Type I LastRead 0 FirstWrite -1}
+		empty {Type I LastRead 0 FirstWrite -1}
 		sp_out_fm {Type O LastRead -1 FirstWrite 2}
 		sp_out_fm_1 {Type O LastRead -1 FirstWrite 2}
 		sp_out_fm_2 {Type O LastRead -1 FirstWrite 2}
@@ -338,20 +343,20 @@ set ArgLastReadFirstWriteLatency {
 		sp_bias_28 {Type I LastRead 1 FirstWrite -1}
 		sp_bias_29 {Type I LastRead 1 FirstWrite -1}
 		sp_bias_30 {Type I LastRead 1 FirstWrite -1}
-		sp_bias_31 {Type I LastRead 1 FirstWrite -1}
-		empty {Type I LastRead 0 FirstWrite -1}}
-	yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25 {
+		sp_bias_31 {Type I LastRead 1 FirstWrite -1}}
+	yolo_npu_v2_core_Pipeline_VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26 {
 		gmem {Type IO LastRead 11 FirstWrite 10}
+		cmd_apply_residual {Type I LastRead 0 FirstWrite -1}
 		cmd_out_channels {Type I LastRead 0 FirstWrite -1}
-		mul_ln36_1 {Type I LastRead 0 FirstWrite -1}
-		sext_ln176 {Type I LastRead 0 FirstWrite -1}
-		sext_ln176_5 {Type I LastRead 0 FirstWrite -1}
+		mul_ln43_1 {Type I LastRead 0 FirstWrite -1}
+		sext_ln193 {Type I LastRead 0 FirstWrite -1}
+		sext_ln193_5 {Type I LastRead 0 FirstWrite -1}
 		ddr_mem {Type I LastRead 0 FirstWrite -1}
-		mul_ln36 {Type I LastRead 0 FirstWrite -1}
-		icmp_ln73 {Type I LastRead 0 FirstWrite -1}
-		sext_ln58_1 {Type I LastRead 0 FirstWrite -1}
-		sext_ln176_2 {Type I LastRead 0 FirstWrite -1}
-		sext_ln176_4 {Type I LastRead 0 FirstWrite -1}
+		mul_ln43 {Type I LastRead 0 FirstWrite -1}
+		empty {Type I LastRead 0 FirstWrite -1}
+		sext_ln65 {Type I LastRead 0 FirstWrite -1}
+		sext_ln193_2 {Type I LastRead 0 FirstWrite -1}
+		sext_ln193_4 {Type I LastRead 0 FirstWrite -1}
 		sp_out_fm {Type I LastRead 1 FirstWrite -1}
 		sp_out_fm_1 {Type I LastRead 1 FirstWrite -1}
 		sp_out_fm_2 {Type I LastRead 1 FirstWrite -1}
@@ -384,18 +389,25 @@ set ArgLastReadFirstWriteLatency {
 		sp_out_fm_29 {Type I LastRead 1 FirstWrite -1}
 		sp_out_fm_30 {Type I LastRead 1 FirstWrite -1}
 		sp_out_fm_31 {Type I LastRead 1 FirstWrite -1}
-		xor_ln186 {Type I LastRead 0 FirstWrite -1}
-		empty_18 {Type I LastRead 0 FirstWrite -1}
-		empty {Type I LastRead 0 FirstWrite -1}
-		sext_ln176_1 {Type I LastRead 0 FirstWrite -1}
-		sext_ln176_3 {Type I LastRead 0 FirstWrite -1}}
-	yolo_npu_v2_core_Pipeline_VITIS_LOOP_85_10_VITIS_LOOP_86_11_VITIS_LOOP_87_12_VIT {
+		icmp_ln35 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln203 {Type I LastRead 0 FirstWrite -1}
+		sext_ln193_1 {Type I LastRead 0 FirstWrite -1}
+		sext_ln193_3 {Type I LastRead 0 FirstWrite -1}}
+	yolo_npu_v2_core_Pipeline_VITIS_LOOP_92_11_VITIS_LOOP_93_12_VITIS_LOOP_94_13_VIT {
 		gmem {Type I LastRead 11 FirstWrite -1}
+		tmp_18 {Type I LastRead 0 FirstWrite -1}
+		tmp_19 {Type I LastRead 0 FirstWrite -1}
 		cmd_kernel_size {Type I LastRead 0 FirstWrite -1}
-		tmp_14 {Type I LastRead 0 FirstWrite -1}
-		tmp_15 {Type I LastRead 0 FirstWrite -1}
-		sext_ln58 {Type I LastRead 0 FirstWrite -1}
-		empty_16 {Type I LastRead 0 FirstWrite -1}
+		mul_ln82 {Type I LastRead 0 FirstWrite -1}
+		empty_18 {Type I LastRead 0 FirstWrite -1}
+		cmd_out_channels {Type I LastRead 0 FirstWrite -1}
+		shl_ln5 {Type I LastRead 0 FirstWrite -1}
+		zext_ln80 {Type I LastRead 0 FirstWrite -1}
+		shl_ln6 {Type I LastRead 0 FirstWrite -1}
+		tmp11 {Type I LastRead 0 FirstWrite -1}
+		ic_blk {Type I LastRead 0 FirstWrite -1}
+		empty {Type I LastRead 0 FirstWrite -1}
+		zext_ln123_1 {Type I LastRead 0 FirstWrite -1}
 		weight_tile {Type O LastRead -1 FirstWrite 12}
 		weight_tile_1 {Type O LastRead -1 FirstWrite 12}
 		weight_tile_2 {Type O LastRead -1 FirstWrite 12}
@@ -908,17 +920,9 @@ set ArgLastReadFirstWriteLatency {
 		weight_tile_509 {Type O LastRead -1 FirstWrite 12}
 		weight_tile_510 {Type O LastRead -1 FirstWrite 12}
 		weight_tile_511 {Type O LastRead -1 FirstWrite 12}
-		mul_ln87 {Type I LastRead 0 FirstWrite -1}
-		oc_blk {Type I LastRead 0 FirstWrite -1}
-		shl_ln2 {Type I LastRead 0 FirstWrite -1}
-		zext_ln36 {Type I LastRead 0 FirstWrite -1}
-		shl_ln3 {Type I LastRead 0 FirstWrite -1}
-		mul_ln73 {Type I LastRead 0 FirstWrite -1}
-		sext_ln86 {Type I LastRead 0 FirstWrite -1}
-		ddr_mem {Type I LastRead 0 FirstWrite -1}
-		ic_blk {Type I LastRead 0 FirstWrite -1}
-		empty {Type I LastRead 0 FirstWrite -1}}
-	yolo_npu_v2_core_Pipeline_VITIS_LOOP_116_16 {
+		sext_ln80 {Type I LastRead 0 FirstWrite -1}
+		ddr_mem {Type I LastRead 0 FirstWrite -1}}
+	yolo_npu_v2_core_Pipeline_VITIS_LOOP_123_17 {
 		acc_32 {Type I LastRead 0 FirstWrite -1}
 		acc_31_out {Type O LastRead -1 FirstWrite 0}
 		acc_30_out {Type O LastRead -1 FirstWrite 0}
@@ -952,7 +956,7 @@ set ArgLastReadFirstWriteLatency {
 		acc_2_out {Type O LastRead -1 FirstWrite 0}
 		acc_1_out {Type O LastRead -1 FirstWrite 0}
 		acc_out {Type O LastRead -1 FirstWrite 0}}
-	yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18 {
+	yolo_npu_v2_core_Pipeline_VITIS_LOOP_125_18_VITIS_LOOP_127_19 {
 		acc_31_reload {Type I LastRead 0 FirstWrite -1}
 		acc_30_reload {Type I LastRead 0 FirstWrite -1}
 		acc_29_reload {Type I LastRead 0 FirstWrite -1}
@@ -985,61 +989,62 @@ set ArgLastReadFirstWriteLatency {
 		acc_2_reload {Type I LastRead 0 FirstWrite -1}
 		acc_1_reload {Type I LastRead 0 FirstWrite -1}
 		acc_reload {Type I LastRead 0 FirstWrite -1}
-		or_ln132_13 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_29 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_12 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_28 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_11 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_27 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_10 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_26 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_s {Type I LastRead 0 FirstWrite -1}
-		or_ln144_25 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_9 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_24 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_8 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_23 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_7 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_22 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_6 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_21 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_5 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_20 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_4 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_19 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_3 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_18 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_2 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_17 {Type I LastRead 0 FirstWrite -1}
-		or_ln132_1 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_16 {Type I LastRead 0 FirstWrite -1}
+		cmd_apply_maxpool {Type I LastRead 0 FirstWrite -1}
+		or_ln161_29 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_13 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_28 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_12 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_27 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_11 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_26 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_10 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_25 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_s {Type I LastRead 0 FirstWrite -1}
+		or_ln161_24 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_9 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_23 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_8 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_22 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_7 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_21 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_6 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_20 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_5 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_19 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_4 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_18 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_3 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_17 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_2 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_16 {Type I LastRead 0 FirstWrite -1}
+		or_ln138_1 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_15 {Type I LastRead 0 FirstWrite -1}
 		or_ln1 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_15 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_14 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_14 {Type I LastRead 0 FirstWrite -1}
 		ic_blk {Type I LastRead 0 FirstWrite -1}
-		or_ln144_13 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_12 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_11 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_10 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_s {Type I LastRead 0 FirstWrite -1}
-		or_ln144_9 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_8 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_7 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_6 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_5 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_4 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_3 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_2 {Type I LastRead 0 FirstWrite -1}
-		or_ln144_1 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_13 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_12 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_11 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_10 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_s {Type I LastRead 0 FirstWrite -1}
+		or_ln161_9 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_8 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_7 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_6 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_5 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_4 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_3 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_2 {Type I LastRead 0 FirstWrite -1}
+		or_ln161_1 {Type I LastRead 0 FirstWrite -1}
 		or_ln {Type I LastRead 0 FirstWrite -1}
 		oc_blk {Type I LastRead 0 FirstWrite -1}
 		cmd_kernel_size {Type I LastRead 0 FirstWrite -1}
-		mul_ln87 {Type I LastRead 0 FirstWrite -1}
-		sub_ln124 {Type I LastRead 0 FirstWrite -1}
-		cmd_feature_h_cast {Type I LastRead 0 FirstWrite -1}
-		mul_ln125 {Type I LastRead 0 FirstWrite -1}
-		sext_ln73 {Type I LastRead 0 FirstWrite -1}
-		zext_ln75_1 {Type I LastRead 0 FirstWrite -1}
+		mul_ln82 {Type I LastRead 0 FirstWrite -1}
+		sub_ln131 {Type I LastRead 0 FirstWrite -1}
+		sext_ln47_1 {Type I LastRead 0 FirstWrite -1}
+		mul_ln132 {Type I LastRead 0 FirstWrite -1}
+		sext_ln80_1 {Type I LastRead 0 FirstWrite -1}
+		zext_ln82_2 {Type I LastRead 0 FirstWrite -1}
 		sp_in_fm {Type I LastRead 1 FirstWrite -1}
 		sp_in_fm_1 {Type I LastRead 1 FirstWrite -1}
 		sp_in_fm_2 {Type I LastRead 1 FirstWrite -1}
@@ -1056,8 +1061,22 @@ set ArgLastReadFirstWriteLatency {
 		sp_in_fm_13 {Type I LastRead 1 FirstWrite -1}
 		sp_in_fm_14 {Type I LastRead 1 FirstWrite -1}
 		sp_in_fm_15 {Type I LastRead 1 FirstWrite -1}
-		cmd_feature_w_cast {Type I LastRead 0 FirstWrite -1}
-		acc_32 {Type I LastRead 0 FirstWrite -1}
+		sext_ln47 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_1 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_2 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_3 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_4 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_5 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_6 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_7 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_8 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_9 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_10 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_11 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_12 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_13 {Type I LastRead 0 FirstWrite -1}
+		icmp_ln144_14 {Type I LastRead 0 FirstWrite -1}
 		weight_tile {Type I LastRead 1 FirstWrite -1}
 		weight_tile_1 {Type I LastRead 1 FirstWrite -1}
 		weight_tile_2 {Type I LastRead 1 FirstWrite -1}
@@ -1570,7 +1589,6 @@ set ArgLastReadFirstWriteLatency {
 		weight_tile_509 {Type I LastRead 1 FirstWrite -1}
 		weight_tile_510 {Type I LastRead 1 FirstWrite -1}
 		weight_tile_511 {Type I LastRead 1 FirstWrite -1}
-		empty {Type I LastRead 0 FirstWrite -1}
 		acc_96_out {Type O LastRead -1 FirstWrite 4}
 		acc_95_out {Type O LastRead -1 FirstWrite 4}
 		acc_94_out {Type O LastRead -1 FirstWrite 4}
@@ -1607,15 +1625,15 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "45", "Max" : "17144018"}
-	, {"Name" : "Interval", "Min" : "46", "Max" : "17144019"}
+	{"Name" : "Latency", "Min" : "1", "Max" : "102864180001"}
+	, {"Name" : "Interval", "Min" : "2", "Max" : "102864180002"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	gmem { m_axi {  { m_axi_gmem_AWVALID VALID 1 1 }  { m_axi_gmem_AWREADY READY 0 1 }  { m_axi_gmem_AWADDR ADDR 1 64 }  { m_axi_gmem_AWID ID 1 1 }  { m_axi_gmem_AWLEN SIZE 1 8 }  { m_axi_gmem_AWSIZE BURST 1 3 }  { m_axi_gmem_AWBURST LOCK 1 2 }  { m_axi_gmem_AWLOCK CACHE 1 2 }  { m_axi_gmem_AWCACHE PROT 1 4 }  { m_axi_gmem_AWPROT QOS 1 3 }  { m_axi_gmem_AWQOS REGION 1 4 }  { m_axi_gmem_AWREGION USER 1 4 }  { m_axi_gmem_AWUSER DATA 1 1 }  { m_axi_gmem_WVALID VALID 1 1 }  { m_axi_gmem_WREADY READY 0 1 }  { m_axi_gmem_WDATA FIFONUM 1 32 }  { m_axi_gmem_WSTRB STRB 1 4 }  { m_axi_gmem_WLAST LAST 1 1 }  { m_axi_gmem_WID ID 1 1 }  { m_axi_gmem_WUSER DATA 1 1 }  { m_axi_gmem_ARVALID VALID 1 1 }  { m_axi_gmem_ARREADY READY 0 1 }  { m_axi_gmem_ARADDR ADDR 1 64 }  { m_axi_gmem_ARID ID 1 1 }  { m_axi_gmem_ARLEN SIZE 1 8 }  { m_axi_gmem_ARSIZE BURST 1 3 }  { m_axi_gmem_ARBURST LOCK 1 2 }  { m_axi_gmem_ARLOCK CACHE 1 2 }  { m_axi_gmem_ARCACHE PROT 1 4 }  { m_axi_gmem_ARPROT QOS 1 3 }  { m_axi_gmem_ARQOS REGION 1 4 }  { m_axi_gmem_ARREGION USER 1 4 }  { m_axi_gmem_ARUSER DATA 1 1 }  { m_axi_gmem_RVALID VALID 0 1 }  { m_axi_gmem_RREADY READY 1 1 }  { m_axi_gmem_RDATA FIFONUM 0 32 }  { m_axi_gmem_RLAST LAST 0 1 }  { m_axi_gmem_RID ID 0 1 }  { m_axi_gmem_RUSER DATA 0 1 }  { m_axi_gmem_RRESP RESP 0 2 }  { m_axi_gmem_BVALID VALID 0 1 }  { m_axi_gmem_BREADY READY 1 1 }  { m_axi_gmem_BRESP RESP 0 2 }  { m_axi_gmem_BID ID 0 1 }  { m_axi_gmem_BUSER DATA 0 1 } } }
+	gmem { m_axi {  { m_axi_gmem_AWVALID VALID 1 1 }  { m_axi_gmem_AWREADY READY 0 1 }  { m_axi_gmem_AWADDR ADDR 1 64 }  { m_axi_gmem_AWID ID 1 1 }  { m_axi_gmem_AWLEN SIZE 1 8 }  { m_axi_gmem_AWSIZE BURST 1 3 }  { m_axi_gmem_AWBURST LOCK 1 2 }  { m_axi_gmem_AWLOCK CACHE 1 2 }  { m_axi_gmem_AWCACHE PROT 1 4 }  { m_axi_gmem_AWPROT QOS 1 3 }  { m_axi_gmem_AWQOS REGION 1 4 }  { m_axi_gmem_AWREGION USER 1 4 }  { m_axi_gmem_AWUSER DATA 1 1 }  { m_axi_gmem_WVALID VALID 1 1 }  { m_axi_gmem_WREADY READY 0 1 }  { m_axi_gmem_WDATA FIFONUM 1 1024 }  { m_axi_gmem_WSTRB STRB 1 128 }  { m_axi_gmem_WLAST LAST 1 1 }  { m_axi_gmem_WID ID 1 1 }  { m_axi_gmem_WUSER DATA 1 1 }  { m_axi_gmem_ARVALID VALID 1 1 }  { m_axi_gmem_ARREADY READY 0 1 }  { m_axi_gmem_ARADDR ADDR 1 64 }  { m_axi_gmem_ARID ID 1 1 }  { m_axi_gmem_ARLEN SIZE 1 8 }  { m_axi_gmem_ARSIZE BURST 1 3 }  { m_axi_gmem_ARBURST LOCK 1 2 }  { m_axi_gmem_ARLOCK CACHE 1 2 }  { m_axi_gmem_ARCACHE PROT 1 4 }  { m_axi_gmem_ARPROT QOS 1 3 }  { m_axi_gmem_ARQOS REGION 1 4 }  { m_axi_gmem_ARREGION USER 1 4 }  { m_axi_gmem_ARUSER DATA 1 1 }  { m_axi_gmem_RVALID VALID 0 1 }  { m_axi_gmem_RREADY READY 1 1 }  { m_axi_gmem_RDATA FIFONUM 0 1024 }  { m_axi_gmem_RLAST LAST 0 1 }  { m_axi_gmem_RID ID 0 1 }  { m_axi_gmem_RUSER DATA 0 1 }  { m_axi_gmem_RRESP RESP 0 2 }  { m_axi_gmem_BVALID VALID 0 1 }  { m_axi_gmem_BREADY READY 1 1 }  { m_axi_gmem_BRESP RESP 0 2 }  { m_axi_gmem_BID ID 0 1 }  { m_axi_gmem_BUSER DATA 0 1 } } }
 }
 
 set maxi_interface_dict [dict create]

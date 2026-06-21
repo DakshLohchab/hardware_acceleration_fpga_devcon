@@ -1,12 +1,12 @@
 {
   "0": {
-    "basicblocks": 1054,
+    "basicblocks": 1086,
     "calls": "",
     "control_depth": 4,
     "def_use_depth": 53,
     "file": "yolo_npu_v2.cpp",
     "fileloc": 4,
-    "instructions": 14863,
+    "instructions": 15810,
     "loads": {
       "L": 624
     },
@@ -15,6 +15,6 @@
     "stores": {
       "L": 688
     },
-    "total_instructions": 14863
+    "total_instructions": 15810
   }
 }

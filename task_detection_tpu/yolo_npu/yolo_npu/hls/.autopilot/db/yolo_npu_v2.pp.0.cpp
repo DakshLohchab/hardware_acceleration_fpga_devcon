@@ -157,6 +157,242 @@ extern "C" {
 
 
 
+# 1 "/home/dlohchab/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 1 3
+# 52 "/home/dlohchab/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 3
+# 1 "/usr/include/stdint.h" 1 3 4
+# 26 "/usr/include/stdint.h" 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
+# 33 "/usr/include/bits/libc-header-start.h" 3 4
+# 1 "/usr/include/features.h" 1 3 4
+# 394 "/usr/include/features.h" 3 4
+# 1 "/usr/include/features-time64.h" 1 3 4
+# 20 "/usr/include/features-time64.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 21 "/usr/include/features-time64.h" 2 3 4
+# 1 "/usr/include/bits/timesize.h" 1 3 4
+# 19 "/usr/include/bits/timesize.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/bits/timesize.h" 2 3 4
+# 22 "/usr/include/features-time64.h" 2 3 4
+# 395 "/usr/include/features.h" 2 3 4
+# 481 "/usr/include/features.h" 3 4
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 482 "/usr/include/features.h" 2 3 4
+# 503 "/usr/include/features.h" 3 4
+# 1 "/usr/include/sys/cdefs.h" 1 3 4
+# 576 "/usr/include/sys/cdefs.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 577 "/usr/include/sys/cdefs.h" 2 3 4
+# 1 "/usr/include/bits/long-double.h" 1 3 4
+# 578 "/usr/include/sys/cdefs.h" 2 3 4
+# 504 "/usr/include/features.h" 2 3 4
+# 527 "/usr/include/features.h" 3 4
+# 1 "/usr/include/gnu/stubs.h" 1 3 4
+# 10 "/usr/include/gnu/stubs.h" 3 4
+# 1 "/usr/include/gnu/stubs-64.h" 1 3 4
+# 11 "/usr/include/gnu/stubs.h" 2 3 4
+# 528 "/usr/include/features.h" 2 3 4
+# 34 "/usr/include/bits/libc-header-start.h" 2 3 4
+# 27 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/bits/types.h" 1 3 4
+# 27 "/usr/include/bits/types.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/bits/types.h" 2 3 4
+# 1 "/usr/include/bits/timesize.h" 1 3 4
+# 19 "/usr/include/bits/timesize.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/bits/timesize.h" 2 3 4
+# 29 "/usr/include/bits/types.h" 2 3 4
+
+
+typedef unsigned char __u_char;
+typedef unsigned short int __u_short;
+typedef unsigned int __u_int;
+typedef unsigned long int __u_long;
+
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short int __int16_t;
+typedef unsigned short int __uint16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
+
+typedef signed long int __int64_t;
+typedef unsigned long int __uint64_t;
+
+
+
+
+
+
+typedef __int8_t __int_least8_t;
+typedef __uint8_t __uint_least8_t;
+typedef __int16_t __int_least16_t;
+typedef __uint16_t __uint_least16_t;
+typedef __int32_t __int_least32_t;
+typedef __uint32_t __uint_least32_t;
+typedef __int64_t __int_least64_t;
+typedef __uint64_t __uint_least64_t;
+
+
+
+typedef long int __quad_t;
+typedef unsigned long int __u_quad_t;
+
+
+
+
+
+
+
+typedef long int __intmax_t;
+typedef unsigned long int __uintmax_t;
+# 141 "/usr/include/bits/types.h" 3 4
+# 1 "/usr/include/bits/typesizes.h" 1 3 4
+# 142 "/usr/include/bits/types.h" 2 3 4
+# 1 "/usr/include/bits/time64.h" 1 3 4
+# 143 "/usr/include/bits/types.h" 2 3 4
+
+
+typedef unsigned long int __dev_t;
+typedef unsigned int __uid_t;
+typedef unsigned int __gid_t;
+typedef unsigned long int __ino_t;
+typedef unsigned long int __ino64_t;
+typedef unsigned int __mode_t;
+typedef unsigned long int __nlink_t;
+typedef long int __off_t;
+typedef long int __off64_t;
+typedef int __pid_t;
+typedef struct { int __val[2]; } __fsid_t;
+typedef long int __clock_t;
+typedef unsigned long int __rlim_t;
+typedef unsigned long int __rlim64_t;
+typedef unsigned int __id_t;
+typedef long int __time_t;
+typedef unsigned int __useconds_t;
+typedef long int __suseconds_t;
+typedef long int __suseconds64_t;
+
+typedef int __daddr_t;
+typedef int __key_t;
+
+
+typedef int __clockid_t;
+
+
+typedef void * __timer_t;
+
+
+typedef long int __blksize_t;
+
+
+
+
+typedef long int __blkcnt_t;
+typedef long int __blkcnt64_t;
+
+
+typedef unsigned long int __fsblkcnt_t;
+typedef unsigned long int __fsblkcnt64_t;
+
+
+typedef unsigned long int __fsfilcnt_t;
+typedef unsigned long int __fsfilcnt64_t;
+
+
+typedef long int __fsword_t;
+
+typedef long int __ssize_t;
+
+
+typedef long int __syscall_slong_t;
+
+typedef unsigned long int __syscall_ulong_t;
+
+
+
+typedef __off64_t __loff_t;
+typedef char *__caddr_t;
+
+
+typedef long int __intptr_t;
+
+
+typedef unsigned int __socklen_t;
+
+
+
+
+typedef int __sig_atomic_t;
+# 28 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/bits/wchar.h" 1 3 4
+# 29 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 30 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+# 1 "/usr/include/bits/stdint-intn.h" 1 3 4
+# 24 "/usr/include/bits/stdint-intn.h" 3 4
+typedef __int8_t int8_t;
+typedef __int16_t int16_t;
+typedef __int32_t int32_t;
+typedef __int64_t int64_t;
+# 35 "/usr/include/stdint.h" 2 3 4
+
+
+# 1 "/usr/include/bits/stdint-uintn.h" 1 3 4
+# 24 "/usr/include/bits/stdint-uintn.h" 3 4
+typedef __uint8_t uint8_t;
+typedef __uint16_t uint16_t;
+typedef __uint32_t uint32_t;
+typedef __uint64_t uint64_t;
+# 38 "/usr/include/stdint.h" 2 3 4
+
+
+
+# 1 "/usr/include/bits/stdint-least.h" 1 3 4
+# 25 "/usr/include/bits/stdint-least.h" 3 4
+typedef __int_least8_t int_least8_t;
+typedef __int_least16_t int_least16_t;
+typedef __int_least32_t int_least32_t;
+typedef __int_least64_t int_least64_t;
+
+
+typedef __uint_least8_t uint_least8_t;
+typedef __uint_least16_t uint_least16_t;
+typedef __uint_least32_t uint_least32_t;
+typedef __uint_least64_t uint_least64_t;
+# 42 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+
+typedef signed char int_fast8_t;
+
+typedef long int int_fast16_t;
+typedef long int int_fast32_t;
+typedef long int int_fast64_t;
+# 60 "/usr/include/stdint.h" 3 4
+typedef unsigned char uint_fast8_t;
+
+typedef unsigned long int uint_fast16_t;
+typedef unsigned long int uint_fast32_t;
+typedef unsigned long int uint_fast64_t;
+# 76 "/usr/include/stdint.h" 3 4
+typedef long int intptr_t;
+
+
+typedef unsigned long int uintptr_t;
+# 90 "/usr/include/stdint.h" 3 4
+typedef __intmax_t intmax_t;
+typedef __uintmax_t uintmax_t;
+# 53 "/home/dlohchab/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 2 3
+# 5 "./yolo_npu_v2.h" 2
 # 1 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/ap_fixed.h" 1
 
 
@@ -2657,37 +2893,6 @@ namespace __gnu_cxx
 }
 # 508 "/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
 # 1 "/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 1 3
-# 39 "/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 3
-# 1 "/usr/include/features.h" 1 3 4
-# 394 "/usr/include/features.h" 3 4
-# 1 "/usr/include/features-time64.h" 1 3 4
-# 20 "/usr/include/features-time64.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 21 "/usr/include/features-time64.h" 2 3 4
-# 1 "/usr/include/bits/timesize.h" 1 3 4
-# 19 "/usr/include/bits/timesize.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/bits/timesize.h" 2 3 4
-# 22 "/usr/include/features-time64.h" 2 3 4
-# 395 "/usr/include/features.h" 2 3 4
-# 481 "/usr/include/features.h" 3 4
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 482 "/usr/include/features.h" 2 3 4
-# 503 "/usr/include/features.h" 3 4
-# 1 "/usr/include/sys/cdefs.h" 1 3 4
-# 576 "/usr/include/sys/cdefs.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 577 "/usr/include/sys/cdefs.h" 2 3 4
-# 1 "/usr/include/bits/long-double.h" 1 3 4
-# 578 "/usr/include/sys/cdefs.h" 2 3 4
-# 504 "/usr/include/features.h" 2 3 4
-# 527 "/usr/include/features.h" 3 4
-# 1 "/usr/include/gnu/stubs.h" 1 3 4
-# 10 "/usr/include/gnu/stubs.h" 3 4
-# 1 "/usr/include/gnu/stubs-64.h" 1 3 4
-# 11 "/usr/include/gnu/stubs.h" 2 3 4
-# 528 "/usr/include/features.h" 2 3 4
-# 40 "/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 2 3
 # 509 "/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
 
 
@@ -14492,139 +14697,7 @@ extern long int a64l (const char *__s)
 # 27 "/usr/include/sys/types.h" 3 4
 extern "C" {
 
-# 1 "/usr/include/bits/types.h" 1 3 4
-# 27 "/usr/include/bits/types.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 28 "/usr/include/bits/types.h" 2 3 4
-# 1 "/usr/include/bits/timesize.h" 1 3 4
-# 19 "/usr/include/bits/timesize.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/bits/timesize.h" 2 3 4
-# 29 "/usr/include/bits/types.h" 2 3 4
 
-
-typedef unsigned char __u_char;
-typedef unsigned short int __u_short;
-typedef unsigned int __u_int;
-typedef unsigned long int __u_long;
-
-
-typedef signed char __int8_t;
-typedef unsigned char __uint8_t;
-typedef signed short int __int16_t;
-typedef unsigned short int __uint16_t;
-typedef signed int __int32_t;
-typedef unsigned int __uint32_t;
-
-typedef signed long int __int64_t;
-typedef unsigned long int __uint64_t;
-
-
-
-
-
-
-typedef __int8_t __int_least8_t;
-typedef __uint8_t __uint_least8_t;
-typedef __int16_t __int_least16_t;
-typedef __uint16_t __uint_least16_t;
-typedef __int32_t __int_least32_t;
-typedef __uint32_t __uint_least32_t;
-typedef __int64_t __int_least64_t;
-typedef __uint64_t __uint_least64_t;
-
-
-
-typedef long int __quad_t;
-typedef unsigned long int __u_quad_t;
-
-
-
-
-
-
-
-typedef long int __intmax_t;
-typedef unsigned long int __uintmax_t;
-# 141 "/usr/include/bits/types.h" 3 4
-# 1 "/usr/include/bits/typesizes.h" 1 3 4
-# 142 "/usr/include/bits/types.h" 2 3 4
-# 1 "/usr/include/bits/time64.h" 1 3 4
-# 143 "/usr/include/bits/types.h" 2 3 4
-
-
-typedef unsigned long int __dev_t;
-typedef unsigned int __uid_t;
-typedef unsigned int __gid_t;
-typedef unsigned long int __ino_t;
-typedef unsigned long int __ino64_t;
-typedef unsigned int __mode_t;
-typedef unsigned long int __nlink_t;
-typedef long int __off_t;
-typedef long int __off64_t;
-typedef int __pid_t;
-typedef struct { int __val[2]; } __fsid_t;
-typedef long int __clock_t;
-typedef unsigned long int __rlim_t;
-typedef unsigned long int __rlim64_t;
-typedef unsigned int __id_t;
-typedef long int __time_t;
-typedef unsigned int __useconds_t;
-typedef long int __suseconds_t;
-typedef long int __suseconds64_t;
-
-typedef int __daddr_t;
-typedef int __key_t;
-
-
-typedef int __clockid_t;
-
-
-typedef void * __timer_t;
-
-
-typedef long int __blksize_t;
-
-
-
-
-typedef long int __blkcnt_t;
-typedef long int __blkcnt64_t;
-
-
-typedef unsigned long int __fsblkcnt_t;
-typedef unsigned long int __fsblkcnt64_t;
-
-
-typedef unsigned long int __fsfilcnt_t;
-typedef unsigned long int __fsfilcnt64_t;
-
-
-typedef long int __fsword_t;
-
-typedef long int __ssize_t;
-
-
-typedef long int __syscall_slong_t;
-
-typedef unsigned long int __syscall_ulong_t;
-
-
-
-typedef __off64_t __loff_t;
-typedef char *__caddr_t;
-
-
-typedef long int __intptr_t;
-
-
-typedef unsigned int __socklen_t;
-
-
-
-
-typedef int __sig_atomic_t;
-# 30 "/usr/include/sys/types.h" 2 3 4
 
 
 
@@ -14778,13 +14851,7 @@ typedef unsigned int uint;
 
 
 
-# 1 "/usr/include/bits/stdint-intn.h" 1 3 4
-# 24 "/usr/include/bits/stdint-intn.h" 3 4
-typedef __int8_t int8_t;
-typedef __int16_t int16_t;
-typedef __int32_t int32_t;
-typedef __int64_t int64_t;
-# 156 "/usr/include/sys/types.h" 2 3 4
+
 
 
 typedef __uint8_t u_int8_t;
@@ -31623,15 +31690,7 @@ typedef __builtin_va_list __gnuc_va_list;
 
 
 typedef __gnuc_va_list va_list;
-
-
-
-
-
-
-
-# 1 "/usr/include/bits/wchar.h" 1 3 4
-# 52 "/usr/include/wchar.h" 2 3 4
+# 52 "/usr/include/wchar.h" 3 4
 # 1 "/usr/include/bits/types/wint_t.h" 1 3 4
 # 20 "/usr/include/bits/types/wint_t.h" 3 4
 typedef unsigned int wint_t;
@@ -33141,84 +33200,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 # 1 "/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 1 3
 # 33 "/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 3
-
-
-
-
-
-
-
-
-# 1 "/home/dlohchab/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 1 3
-# 52 "/home/dlohchab/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 3
-# 1 "/usr/include/stdint.h" 1 3 4
-# 26 "/usr/include/stdint.h" 3 4
-# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
-# 27 "/usr/include/stdint.h" 2 3 4
-
-
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 30 "/usr/include/stdint.h" 2 3 4
-
-
-
-
-
-
-
-# 1 "/usr/include/bits/stdint-uintn.h" 1 3 4
-# 24 "/usr/include/bits/stdint-uintn.h" 3 4
-typedef __uint8_t uint8_t;
-typedef __uint16_t uint16_t;
-typedef __uint32_t uint32_t;
-typedef __uint64_t uint64_t;
-# 38 "/usr/include/stdint.h" 2 3 4
-
-
-
-# 1 "/usr/include/bits/stdint-least.h" 1 3 4
-# 25 "/usr/include/bits/stdint-least.h" 3 4
-typedef __int_least8_t int_least8_t;
-typedef __int_least16_t int_least16_t;
-typedef __int_least32_t int_least32_t;
-typedef __int_least64_t int_least64_t;
-
-
-typedef __uint_least8_t uint_least8_t;
-typedef __uint_least16_t uint_least16_t;
-typedef __uint_least32_t uint_least32_t;
-typedef __uint_least64_t uint_least64_t;
-# 42 "/usr/include/stdint.h" 2 3 4
-
-
-
-
-
-typedef signed char int_fast8_t;
-
-typedef long int int_fast16_t;
-typedef long int int_fast32_t;
-typedef long int int_fast64_t;
-# 60 "/usr/include/stdint.h" 3 4
-typedef unsigned char uint_fast8_t;
-
-typedef unsigned long int uint_fast16_t;
-typedef unsigned long int uint_fast32_t;
-typedef unsigned long int uint_fast64_t;
-# 76 "/usr/include/stdint.h" 3 4
-typedef long int intptr_t;
-
-
-typedef unsigned long int uintptr_t;
-# 90 "/usr/include/stdint.h" 3 4
-typedef __intmax_t intmax_t;
-typedef __uintmax_t uintmax_t;
-# 53 "/home/dlohchab/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 2 3
-# 42 "/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 2 3
-
-
-
-
+# 46 "/home/dlohchab/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 3
 namespace std
 {
   using ::int8_t;
@@ -54826,7 +54808,7 @@ operator/(const complex<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> &__x, cons
 
 }
 # 491 "/home/dlohchab/Xilinx/2025.2/Vitis/common/technology/autopilot/ap_fixed.h" 2
-# 5 "./yolo_npu_v2.h" 2
+# 6 "./yolo_npu_v2.h" 2
 
 
 typedef ap_fixed<16,6> data_t;
@@ -54845,11 +54827,11 @@ struct LayerConfig {
     int kernel_size;
     int stride;
     int padding;
-    bool apply_leaky_relu;
+    uint32_t apply_leaky_relu;
 
 
-    bool apply_maxpool;
-    bool apply_upsample;
+    uint32_t apply_maxpool;
+    uint32_t apply_upsample;
 
 
     int in_offset;
@@ -54864,219 +54846,241 @@ struct LayerConfig {
     int out_total_channels;
 
 
-    bool apply_residual;
+    uint32_t apply_residual;
     int res_offset;
     int res_channel_offset;
     int res_total_channels;
 };
 
 extern "C" {
-    __attribute__((sdx_kernel("yolo_npu_v2_core", 0))) void yolo_npu_v2_core(data_t* ddr_mem, LayerConfig cmd);
+__attribute__((sdx_kernel("yolo_npu_v2_core", 0))) void yolo_npu_v2_core(
+    data_t* ddr_mem,
+    LayerConfig* descriptor_table,
+    int descriptor_count
+);
 }
 # 2 "yolo_npu_v2.cpp" 2
 
 extern "C" {
 __attribute__((sdx_kernel("yolo_npu_v2_core", 0))) void yolo_npu_v2_core(
     data_t* ddr_mem,
-    LayerConfig cmd
+    LayerConfig* descriptor_table,
+    int descriptor_count
 ) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=yolo_npu_v2_core
-# 7 "yolo_npu_v2.cpp"
+# 8 "yolo_npu_v2.cpp"
 
 #pragma HLS INTERFACE m_axi port=ddr_mem offset=slave bundle=gmem depth=100000
-#pragma HLS INTERFACE s_axilite port=cmd bundle=control
+#pragma HLS INTERFACE m_axi port=descriptor_table offset=slave bundle=gmem depth=100000
+#pragma HLS INTERFACE s_axilite port=descriptor_count bundle=control
 #pragma HLS INTERFACE s_axilite port=return bundle=control
 
+    VITIS_LOOP_14_1: for (int pc = 0; pc < descriptor_count; pc++) {
+#pragma HLS LOOP_TRIPCOUNT max=6000
+
+        LayerConfig cmd = descriptor_table[pc];
 
 
 
-    data_t sp_bias[256];
+
+        data_t sp_bias[256];
 #pragma HLS ARRAY_PARTITION variable=sp_bias cyclic factor=32 dim=1
 
 
-    data_t sp_in_fm[16][16][256];
+        data_t sp_in_fm[16][16][256];
 #pragma HLS ARRAY_PARTITION variable=sp_in_fm cyclic factor=16 dim=3
 
-    data_t sp_out_fm[16][16][256];
+        data_t sp_out_fm[16][16][256];
 #pragma HLS ARRAY_PARTITION variable=sp_out_fm cyclic factor=32 dim=3
 
 
 
 
-    if (!cmd.apply_maxpool) {
-        VITIS_LOOP_29_1: for(int oc = 0; oc < cmd.out_channels; oc++) {
+        if (!cmd.apply_maxpool) {
+            VITIS_LOOP_36_2: for(int oc = 0; oc < cmd.out_channels; oc++) {
 #pragma HLS LOOP_TRIPCOUNT max=256
 #pragma HLS PIPELINE II=1
-            sp_bias[oc] = ddr_mem[cmd.bias_offset + oc];
-        }
-    }
-
-    VITIS_LOOP_36_2: for(int r = 0; r < cmd.feature_h; r++) {
-#pragma HLS LOOP_TRIPCOUNT max=16
-        VITIS_LOOP_38_3: for(int c = 0; c < cmd.feature_w; c++) {
-#pragma HLS LOOP_TRIPCOUNT max=16
-            VITIS_LOOP_40_4: for(int ic = 0; ic < cmd.in_channels; ic++) {
-#pragma HLS LOOP_TRIPCOUNT max=256
-#pragma HLS PIPELINE II=1
-                int read_r = cmd.apply_upsample ? (r / 2) : r;
-                int read_c = cmd.apply_upsample ? (c / 2) : c;
-                int read_w = cmd.apply_upsample ? (cmd.feature_w / 2) : cmd.feature_w;
-
-                int mem_ic = cmd.in_channel_offset + ic;
-                int mem_idx = cmd.in_offset + ((read_r * read_w + read_c) * cmd.in_total_channels) + mem_ic;
-                sp_in_fm[r][c][ic] = ddr_mem[mem_idx];
+                sp_bias[oc] = ddr_mem[cmd.bias_offset + oc];
             }
         }
-    }
 
-
-    int out_h = (cmd.feature_h - cmd.kernel_size + 2 * cmd.padding) / cmd.stride + 1;
-    int out_w = (cmd.feature_w - cmd.kernel_size + 2 * cmd.padding) / cmd.stride + 1;
-
-    VITIS_LOOP_58_5: for (int r = 0; r < out_h; r++) {
+        VITIS_LOOP_43_3: for(int r = 0; r < cmd.feature_h; r++) {
 #pragma HLS LOOP_TRIPCOUNT max=16
-        VITIS_LOOP_60_6: for (int c = 0; c < out_w; c++) {
+            VITIS_LOOP_45_4: for(int c = 0; c < cmd.feature_w; c++) {
 #pragma HLS LOOP_TRIPCOUNT max=16
-            VITIS_LOOP_62_7: for (int oc = 0; oc < cmd.out_channels; oc++) {
+                VITIS_LOOP_47_5: for(int ic = 0; ic < cmd.in_channels; ic++) {
 #pragma HLS LOOP_TRIPCOUNT max=256
 #pragma HLS PIPELINE II=1
-                sp_out_fm[r][c][oc] = cmd.apply_maxpool ? (data_t)-32.0 : sp_bias[oc];
+                    int read_r = cmd.apply_upsample ? (r / 2) : r;
+                    int read_c = cmd.apply_upsample ? (c / 2) : c;
+                    int read_w = cmd.apply_upsample ? (cmd.feature_w / 2) : cmd.feature_w;
+
+                    int mem_ic = cmd.in_channel_offset + ic;
+                    int mem_idx = cmd.in_offset + ((read_r * read_w + read_c) * cmd.in_total_channels) + mem_ic;
+                    sp_in_fm[r][c][ic] = ddr_mem[mem_idx];
+                }
             }
         }
-    }
+
+
+        int out_h = (cmd.feature_h - cmd.kernel_size + 2 * cmd.padding) / cmd.stride + 1;
+        int out_w = (cmd.feature_w - cmd.kernel_size + 2 * cmd.padding) / cmd.stride + 1;
+
+        VITIS_LOOP_65_6: for (int r = 0; r < out_h; r++) {
+#pragma HLS LOOP_TRIPCOUNT max=16
+            VITIS_LOOP_67_7: for (int c = 0; c < out_w; c++) {
+#pragma HLS LOOP_TRIPCOUNT max=16
+                VITIS_LOOP_69_8: for (int oc = 0; oc < cmd.out_channels; oc++) {
+#pragma HLS LOOP_TRIPCOUNT max=256
+#pragma HLS PIPELINE II=1
+                    sp_out_fm[r][c][oc] = cmd.apply_maxpool ? (data_t)-32.0 : sp_bias[oc];
+                }
+            }
+        }
 
 
 
 
-    VITIS_LOOP_73_8: for (int oc_blk = 0; oc_blk < cmd.out_channels; oc_blk += 32) {
+        VITIS_LOOP_80_9: for (int oc_blk = 0; oc_blk < cmd.out_channels; oc_blk += 32) {
 #pragma HLS LOOP_TRIPCOUNT max=8
-        VITIS_LOOP_75_9: for (int ic_blk = 0; ic_blk < cmd.in_channels; ic_blk += 16) {
+            VITIS_LOOP_82_10: for (int ic_blk = 0; ic_blk < cmd.in_channels; ic_blk += 16) {
 #pragma HLS LOOP_TRIPCOUNT max=16
 
 
 
-            data_t weight_tile[32][16][3][3];
+                data_t weight_tile[32][16][3][3];
 #pragma HLS ARRAY_PARTITION variable=weight_tile complete dim=1
 #pragma HLS ARRAY_PARTITION variable=weight_tile complete dim=2
 
-            if (!cmd.apply_maxpool) {
-                VITIS_LOOP_85_10: for(int oc_idx = 0; oc_idx < 32; oc_idx++) {
-                    VITIS_LOOP_86_11: for(int ic_idx = 0; ic_idx < 16; ic_idx++) {
-                        VITIS_LOOP_87_12: for(int kr = 0; kr < cmd.kernel_size; kr++) {
+                if (!cmd.apply_maxpool) {
+                    VITIS_LOOP_92_11: for(int oc_idx = 0; oc_idx < 32; oc_idx++) {
+                        VITIS_LOOP_93_12: for(int ic_idx = 0; ic_idx < 16; ic_idx++) {
+                            VITIS_LOOP_94_13: for(int kr = 0; kr < cmd.kernel_size; kr++) {
 #pragma HLS LOOP_TRIPCOUNT max=3
-                            VITIS_LOOP_89_13: for(int kc = 0; kc < cmd.kernel_size; kc++) {
+                                VITIS_LOOP_96_14: for(int kc = 0; kc < cmd.kernel_size; kc++) {
 #pragma HLS LOOP_TRIPCOUNT max=3
 #pragma HLS PIPELINE II=1
-                                int abs_oc = oc_blk + oc_idx;
-                                int abs_ic = ic_blk + ic_idx;
-                                if (abs_oc < cmd.out_channels && abs_ic < cmd.in_channels) {
-                                    int w_idx = (abs_oc * cmd.in_channels * cmd.kernel_size * cmd.kernel_size) +
-                                                (abs_ic * cmd.kernel_size * cmd.kernel_size) +
-                                                (kr * cmd.kernel_size) + kc;
-                                    weight_tile[oc_idx][ic_idx][kr][kc] = ddr_mem[cmd.weight_offset + w_idx];
-                                } else {
-                                    weight_tile[oc_idx][ic_idx][kr][kc] = 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-
-            VITIS_LOOP_109_14: for (int r = 0; r < out_h; r++) {
-#pragma HLS LOOP_TRIPCOUNT max=16
-                VITIS_LOOP_111_15: for (int c = 0; c < out_w; c++) {
-#pragma HLS LOOP_TRIPCOUNT max=16
-
-                    data_t acc[32];
-#pragma HLS ARRAY_PARTITION variable=acc complete dim=1
-                    VITIS_LOOP_116_16: for(int i = 0; i < 32; i++) acc[i] = cmd.apply_maxpool ? (data_t)-32.0 : (data_t)0.0;
-
-                    VITIS_LOOP_118_17: for (int kr = 0; kr < cmd.kernel_size; kr++) {
-#pragma HLS LOOP_TRIPCOUNT max=5
-                        VITIS_LOOP_120_18: for (int kc = 0; kc < cmd.kernel_size; kc++) {
-#pragma HLS LOOP_TRIPCOUNT max=5
-#pragma HLS PIPELINE II=1
-
-                            int in_r = r * cmd.stride + kr - cmd.padding;
-                            int in_c = c * cmd.stride + kc - cmd.padding;
-
-                            data_t in_val[16];
-#pragma HLS ARRAY_PARTITION variable=in_val complete dim=1
-                            VITIS_LOOP_129_19: for(int ic_idx = 0; ic_idx < 16; ic_idx++) {
-#pragma HLS UNROLL
-                                if (in_r >= 0 && in_r < cmd.feature_h && in_c >= 0 && in_c < cmd.feature_w) {
-                                    in_val[ic_idx] = sp_in_fm[in_r][in_c][ic_blk + ic_idx];
-                                } else {
-                                    in_val[ic_idx] = cmd.apply_maxpool ? (data_t)-32.0 : (data_t)0.0;
-                                }
-                            }
-
-
-                            VITIS_LOOP_139_20: for (int oc_idx = 0; oc_idx < 32; oc_idx++) {
-#pragma HLS UNROLL
-                                VITIS_LOOP_141_21: for (int ic_idx = 0; ic_idx < 16; ic_idx++) {
-#pragma HLS UNROLL
-                                    if (cmd.apply_maxpool) {
-                                        if ((oc_blk + oc_idx) == (ic_blk + ic_idx)) {
-                                            if (in_val[ic_idx] > acc[oc_idx]) acc[oc_idx] = in_val[ic_idx];
-                                        }
+                                    int abs_oc = oc_blk + oc_idx;
+                                    int abs_ic = ic_blk + ic_idx;
+                                    if (abs_oc < cmd.out_channels && abs_ic < cmd.in_channels) {
+                                        int w_idx = (abs_oc * cmd.in_channels * cmd.kernel_size * cmd.kernel_size) +
+                                                    (abs_ic * cmd.kernel_size * cmd.kernel_size) +
+                                                    (kr * cmd.kernel_size) + kc;
+                                        weight_tile[oc_idx][ic_idx][kr][kc] = ddr_mem[cmd.weight_offset + w_idx];
                                     } else {
-                                        int safe_kr = (kr < 3) ? kr : 0;
-                                        int safe_kc = (kc < 3) ? kc : 0;
-                                        acc[oc_idx] += in_val[ic_idx] * weight_tile[oc_idx][ic_idx][safe_kr][safe_kc];
+                                        weight_tile[oc_idx][ic_idx][kr][kc] = 0;
                                     }
                                 }
                             }
                         }
                     }
+                }
 
 
-                    VITIS_LOOP_158_22: for(int i = 0; i < 32; i++) {
+                VITIS_LOOP_116_15: for (int r = 0; r < out_h; r++) {
+#pragma HLS LOOP_TRIPCOUNT max=16
+                    VITIS_LOOP_118_16: for (int c = 0; c < out_w; c++) {
+#pragma HLS LOOP_TRIPCOUNT max=16
+
+                        data_t acc[32];
+#pragma HLS ARRAY_PARTITION variable=acc complete dim=1
+                        VITIS_LOOP_123_17: for(int i = 0; i < 32; i++) acc[i] = cmd.apply_maxpool ? (data_t)-32.0 : (data_t)0.0;
+
+                        VITIS_LOOP_125_18: for (int kr = 0; kr < cmd.kernel_size; kr++) {
+#pragma HLS LOOP_TRIPCOUNT max=5
+                            VITIS_LOOP_127_19: for (int kc = 0; kc < cmd.kernel_size; kc++) {
+#pragma HLS LOOP_TRIPCOUNT max=5
+#pragma HLS PIPELINE II=1
+
+                                int in_r = r * cmd.stride + kr - cmd.padding;
+                                int in_c = c * cmd.stride + kc - cmd.padding;
+
+                                data_t in_val[16];
+#pragma HLS ARRAY_PARTITION variable=in_val complete dim=1
+                                VITIS_LOOP_136_20: for(int ic_idx = 0; ic_idx < 16; ic_idx++) {
 #pragma HLS UNROLL
-                        if (oc_blk + i < cmd.out_channels) {
-                            if (cmd.apply_maxpool) {
-                                if (acc[i] > sp_out_fm[r][c][oc_blk + i]) sp_out_fm[r][c][oc_blk + i] = acc[i];
-                            } else {
-                                sp_out_fm[r][c][oc_blk + i] += acc[i];
+                                    int abs_ic = ic_blk + ic_idx;
+
+                                    if (in_r >= 0 &&
+                                        in_r < cmd.feature_h &&
+                                        in_c >= 0 &&
+                                        in_c < cmd.feature_w &&
+                                        abs_ic < cmd.in_channels)
+                                    {
+                                        in_val[ic_idx] =
+                                            sp_in_fm[in_r][in_c][abs_ic];
+                                    }
+                                    else
+                                    {
+                                        in_val[ic_idx] = 0;
+                                    }
+                                }
+
+
+                                VITIS_LOOP_156_21: for (int oc_idx = 0; oc_idx < 32; oc_idx++) {
+#pragma HLS UNROLL
+                                    VITIS_LOOP_158_22: for (int ic_idx = 0; ic_idx < 16; ic_idx++) {
+#pragma HLS UNROLL
+                                        if (cmd.apply_maxpool) {
+                                            if ((oc_blk + oc_idx) == (ic_blk + ic_idx)) {
+                                                if (in_val[ic_idx] > acc[oc_idx]) acc[oc_idx] = in_val[ic_idx];
+                                            }
+                                        } else {
+                                            int safe_kr = (kr < 3) ? kr : 0;
+                                            int safe_kc = (kc < 3) ? kc : 0;
+                                            acc[oc_idx] += in_val[ic_idx] * weight_tile[oc_idx][ic_idx][safe_kr][safe_kc];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                        VITIS_LOOP_175_23: for(int i = 0; i < 32; i++) {
+#pragma HLS UNROLL
+                            if (oc_blk + i < cmd.out_channels) {
+                                if (cmd.apply_maxpool) {
+                                    if (acc[i] > sp_out_fm[r][c][oc_blk + i]) sp_out_fm[r][c][oc_blk + i] = acc[i];
+                                } else {
+                                    sp_out_fm[r][c][oc_blk + i] += acc[i];
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }
 
 
 
 
-    VITIS_LOOP_176_23: for(int r = 0; r < out_h; r++) {
+        VITIS_LOOP_193_24: for(int r = 0; r < out_h; r++) {
 #pragma HLS LOOP_TRIPCOUNT max=16
-        VITIS_LOOP_178_24: for(int c = 0; c < out_w; c++) {
+            VITIS_LOOP_195_25: for(int c = 0; c < out_w; c++) {
 #pragma HLS LOOP_TRIPCOUNT max=16
-            VITIS_LOOP_180_25: for(int oc = 0; oc < cmd.out_channels; oc++) {
+                VITIS_LOOP_197_26: for(int oc = 0; oc < cmd.out_channels; oc++) {
 #pragma HLS LOOP_TRIPCOUNT max=256
 #pragma HLS PIPELINE II=1
-                data_t val = sp_out_fm[r][c][oc];
+                    data_t val = sp_out_fm[r][c][oc];
 
 
-                if (cmd.apply_leaky_relu && !cmd.apply_maxpool) {
-                    val = (val > 0) ? val : (data_t)(val * (data_t)0.1f);
+                    if (cmd.apply_leaky_relu && !cmd.apply_maxpool) {
+                        val = (val > 0) ? val : (data_t)(val * (data_t)0.1f);
+                    }
+
+
+                    if (cmd.apply_residual) {
+                        int res_oc = cmd.res_channel_offset + oc;
+                        int res_idx = cmd.res_offset + ((r * out_w + c) * cmd.res_total_channels) + res_oc;
+                        val += ddr_mem[res_idx];
+                    }
+
+
+                    int out_oc = cmd.out_channel_offset + oc;
+                    int mem_idx = cmd.out_offset + ((r * out_w + c) * cmd.out_total_channels) + out_oc;
+                    ddr_mem[mem_idx] = val;
                 }
-
-
-                if (cmd.apply_residual) {
-                    int res_oc = cmd.res_channel_offset + oc;
-                    int res_idx = cmd.res_offset + ((r * out_w + c) * cmd.res_total_channels) + res_oc;
-                    val += ddr_mem[res_idx];
-                }
-
-
-                int out_oc = cmd.out_channel_offset + oc;
-                int mem_idx = cmd.out_offset + ((r * out_w + c) * cmd.out_total_channels) + out_oc;
-                ddr_mem[mem_idx] = val;
             }
         }
     }

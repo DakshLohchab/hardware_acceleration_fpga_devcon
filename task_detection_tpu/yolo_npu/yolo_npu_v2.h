@@ -1,6 +1,7 @@
 #ifndef YOLO_NPU_V2_H
 #define YOLO_NPU_V2_H
 
+#include <stdint.h>
 #include <ap_fixed.h>
 
 // 1 sign bit, 5 integer bits, 10 fractional bits. Min value is -32.0
@@ -20,11 +21,11 @@ struct LayerConfig {
     int kernel_size;
     int stride;
     int padding;
-    bool apply_leaky_relu;
+    uint32_t apply_leaky_relu;
     
     // Core NPU Modes
-    bool apply_maxpool;
-    bool apply_upsample; // Nearest-Neighbor Upsampling for Neck
+    uint32_t apply_maxpool;
+    uint32_t apply_upsample; // Nearest-Neighbor Upsampling for Neck
     
     // Base DDR Addresses
     int in_offset;
@@ -39,14 +40,18 @@ struct LayerConfig {
     int out_total_channels;
 
     // Residual Additions (CSP Bottlenecks)
-    bool apply_residual;
+    uint32_t apply_residual;
     int res_offset;
     int res_channel_offset;
     int res_total_channels;
 };
 
 extern "C" {
-    void yolo_npu_v2_core(data_t* ddr_mem, LayerConfig cmd);
+void yolo_npu_v2_core(
+    data_t* ddr_mem,
+    LayerConfig* descriptor_table,
+    int descriptor_count
+);
 }
 
 #endif

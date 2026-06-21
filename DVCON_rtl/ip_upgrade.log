@@ -1,6 +1,67 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sat Jun 20 10:27:40 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux 10.2 (Coughlan)"
+RELEASE_TYPE=stable
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_npu_v2_core_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_npu_v2_core_0_0 (xilinx.com:hls:yolo_npu_v2_core:1.0) from (Rev. 2114661440) to (Rev. 2114661608)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_npu_v2_core_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_control_ARADDR' width 5 differs from original width 7
+
+-Upgraded port 's_axi_control_AWADDR' width 5 differs from original width 7
+
+-Upgraded port 's_axi_control_r_ARADDR' width 6 differs from original width 5
+
+-Upgraded port 's_axi_control_r_AWADDR' width 6 differs from original width 5
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Sat Jun 20 07:22:55 2026
+| Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux 10.2 (Coughlan)"
+RELEASE_TYPE=stable
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_npu_v2_core_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_yolo_npu_v2_core_0_0 (xilinx.com:hls:yolo_npu_v2_core:1.0) from (Rev. 2114660893) to (Rev. 2114661440)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
 | Date         : Fri Jun 19 22:16:40 2026
 | Host         : localhost.localdomain running 64-bit Red Hat Enterprise Linux 10.2 (Coughlan)"
 RELEASE_TYPE=stable

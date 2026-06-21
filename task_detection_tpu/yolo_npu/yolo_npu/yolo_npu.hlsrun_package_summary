@@ -9,19 +9,19 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Fri Jun 19 22:13:43 2026",
- "timestampMillis": "1781887423785",
+ "dateTimestamp": "Sat Jun 20 10:08:23 2026",
+ "timestampMillis": "1781930303478",
  "buildStep": {
-  "cmdId": "c23d739a-2de1-44b6-83a0-44993d4eac4f",
+  "cmdId": "5dcd4f4e-e4e3-4040-b7dc-189475ca8b16",
   "name": "vitis-run",
   "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/logs/yolo_npu.steps.log",
-  "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config hls_config.cfg --work_dir yolo_npu ",
+  "commandLine": "/home/dlohchab/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/hls_config.cfg --work_dir yolo_npu ",
   "args": [
    "--mode",
    "hls",
    "--package",
    "--config",
-   "hls_config.cfg",
+   "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/hls_config.cfg",
    "--work_dir",
    "yolo_npu"
   ],
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jun 19 22:13:43 2026",
- "timestampMillis": "1781887423786",
+ "dateTimestamp": "Sat Jun 20 10:08:23 2026",
+ "timestampMillis": "1781930303480",
  "status": {
-  "cmdId": "c23d739a-2de1-44b6-83a0-44993d4eac4f",
+  "cmdId": "5dcd4f4e-e4e3-4040-b7dc-189475ca8b16",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Fri Jun 19 22:13:49 2026",
- "timestampMillis": "1781887429314",
+ "dateTimestamp": "Sat Jun 20 10:08:38 2026",
+ "timestampMillis": "1781930318204",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -80,10 +80,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Jun 19 22:13:49 2026",
- "timestampMillis": "1781887429316",
+ "dateTimestamp": "Sat Jun 20 10:08:38 2026",
+ "timestampMillis": "1781930318206",
  "buildStep": {
-  "cmdId": "ce734461-043e-49d1-a693-35c6d726823e",
+  "cmdId": "528a029a-c1cc-432a-85dc-b439c7886448",
   "name": "",
   "logFile": "/home/dlohchab/projects/Verilog/DVCON/task_detection_tpu/yolo_npu/yolo_npu/hls/hls.log",
   "commandLine": "",
@@ -96,10 +96,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jun 19 22:13:49 2026",
- "timestampMillis": "1781887429316",
+ "dateTimestamp": "Sat Jun 20 10:08:38 2026",
+ "timestampMillis": "1781930318207",
  "status": {
-  "cmdId": "ce734461-043e-49d1-a693-35c6d726823e",
+  "cmdId": "528a029a-c1cc-432a-85dc-b439c7886448",
   "state": "CS_RUNNING"
  }
 }
@@ -107,10 +107,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jun 19 22:14:16 2026",
- "timestampMillis": "1781887456157",
+ "dateTimestamp": "Sat Jun 20 10:09:26 2026",
+ "timestampMillis": "1781930366834",
  "status": {
-  "cmdId": "ce734461-043e-49d1-a693-35c6d726823e",
+  "cmdId": "528a029a-c1cc-432a-85dc-b439c7886448",
   "state": "CS_PASSED"
  }
 }
@@ -118,10 +118,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Jun 19 22:14:16 2026",
- "timestampMillis": "1781887456534",
+ "dateTimestamp": "Sat Jun 20 10:09:27 2026",
+ "timestampMillis": "1781930367453",
  "status": {
-  "cmdId": "c23d739a-2de1-44b6-83a0-44993d4eac4f",
+  "cmdId": "5dcd4f4e-e4e3-4040-b7dc-189475ca8b16",
   "state": "CS_PASSED"
  }
 }
@@ -129,8 +129,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Jun 19 22:14:16 2026",
- "timestampMillis": "1781887456541",
+ "dateTimestamp": "Sat Jun 20 10:09:27 2026",
+ "timestampMillis": "1781930367466",
  "report": {
   "path": "",
   "name": "",
@@ -143,8 +143,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Jun 19 22:14:16 2026",
- "timestampMillis": "1781887456550",
+ "dateTimestamp": "Sat Jun 20 10:09:27 2026",
+ "timestampMillis": "1781930367472",
  "report": {
   "path": "",
   "name": "",

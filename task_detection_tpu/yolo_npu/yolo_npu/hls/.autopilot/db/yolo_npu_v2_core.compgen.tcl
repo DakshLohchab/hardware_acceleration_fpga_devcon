@@ -1,11 +1,5 @@
 # This script segment is generated automatically by AutoPilot
 
-set name yolo_npu_v2_core_mul_31ns_31ns_62_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
-}
-
-
 set name yolo_npu_v2_core_mul_31ns_32ns_63_1_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
@@ -70,13 +64,13 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 set axilite_register_dict [dict create]
 set port_control {
-cmd { 
+descriptor_count { 
 	dir I
-	width 640
+	width 32
 	depth 1
 	mode ap_none
 	offset 16
-	offset_end 99
+	offset_end 23
 }
 ap_start { }
 ap_done { }
@@ -92,7 +86,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 1938 \
+			id 1955 \
 			corename yolo_npu_v2_core_control_axilite \
 			name yolo_npu_v2_core_control_s_axi \
 			ports {$port_control} \
@@ -122,6 +116,14 @@ ddr_mem {
 	offset 16
 	offset_end 27
 }
+descriptor_table { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 28
+	offset_end 39
+}
 }
 dict set axilite_register_dict control_r $port_control_r
 
@@ -130,7 +132,7 @@ dict set axilite_register_dict control_r $port_control_r
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 1939 \
+			id 1956 \
 			corename yolo_npu_v2_core_control_r_axilite \
 			name yolo_npu_v2_core_control_r_s_axi \
 			ports {$port_control_r} \

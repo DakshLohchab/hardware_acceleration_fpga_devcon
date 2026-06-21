@@ -243,23 +243,32 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-struct __cosim_s80__ { char data[80]; };
 struct __cosim_s128__ { char data[128]; };
-extern "C" void yolo_npu_v2_core(Byte<2>*, int, __cosim_s80__*);
-extern "C" void apatb_yolo_npu_v2_core_hw(volatile void * __xlx_apatb_param_ddr_mem, __cosim_s80__* __xlx_apatb_param_cmd) {
+extern "C" void yolo_npu_v2_core(Byte<128>*, int, int, int);
+extern "C" void apatb_yolo_npu_v2_core_hw(volatile void * __xlx_apatb_param_ddr_mem, volatile void * __xlx_apatb_param_descriptor_table, int __xlx_apatb_param_descriptor_count) {
 using hls::sim::createStream;
-  // Collect __xlx_ddr_mem__tmp_vec
-std::vector<Byte<2>> __xlx_ddr_mem__tmp_vec;
-for (size_t i = 0; i < 100000; ++i){
-__xlx_ddr_mem__tmp_vec.push_back(((Byte<2>*)__xlx_apatb_param_ddr_mem)[i]);
+  // Collect __xlx_ddr_mem_descriptor_table__tmp_vec
+std::vector<Byte<128>> __xlx_ddr_mem_descriptor_table__tmp_vec;
+for (size_t i = 0; i < 1563; ++i){
+__xlx_ddr_mem_descriptor_table__tmp_vec.push_back(((Byte<128>*)__xlx_apatb_param_ddr_mem)[i]);
 }
-  int __xlx_size_param_ddr_mem = 100000;
+  int __xlx_size_param_ddr_mem = 1563;
   int __xlx_offset_param_ddr_mem = 0;
-  int __xlx_offset_byte_param_ddr_mem = 0*2;
+  int __xlx_offset_byte_param_ddr_mem = 0*128;
+for (size_t i = 0; i < 68750; ++i){
+__xlx_ddr_mem_descriptor_table__tmp_vec.push_back(((Byte<128>*)__xlx_apatb_param_descriptor_table)[i]);
+}
+  int __xlx_size_param_descriptor_table = 68750;
+  int __xlx_offset_param_descriptor_table = 1563;
+  int __xlx_offset_byte_param_descriptor_table = 1563*128;
   // DUT call
-  yolo_npu_v2_core(__xlx_ddr_mem__tmp_vec.data(), __xlx_offset_byte_param_ddr_mem, __xlx_apatb_param_cmd);
+  yolo_npu_v2_core(__xlx_ddr_mem_descriptor_table__tmp_vec.data(), __xlx_offset_byte_param_ddr_mem, __xlx_offset_byte_param_descriptor_table, __xlx_apatb_param_descriptor_count);
 // print __xlx_apatb_param_ddr_mem
 for (size_t i = 0; i < __xlx_size_param_ddr_mem; ++i) {
-((Byte<2>*)__xlx_apatb_param_ddr_mem)[i] = __xlx_ddr_mem__tmp_vec[__xlx_offset_param_ddr_mem+i];
+((Byte<128>*)__xlx_apatb_param_ddr_mem)[i] = __xlx_ddr_mem_descriptor_table__tmp_vec[__xlx_offset_param_ddr_mem+i];
+}
+// print __xlx_apatb_param_descriptor_table
+for (size_t i = 0; i < __xlx_size_param_descriptor_table; ++i) {
+((Byte<128>*)__xlx_apatb_param_descriptor_table)[i] = __xlx_ddr_mem_descriptor_table__tmp_vec[__xlx_offset_param_descriptor_table+i];
 }
 }

@@ -23,8 +23,10 @@ using namespace std;
 // wrapc file define:
 #define AUTOTB_TVIN_ddr_mem "../tv/cdatafile/c.yolo_npu_v2_core.autotvin_ddr_mem.dat"
 #define AUTOTB_TVOUT_ddr_mem "../tv/cdatafile/c.yolo_npu_v2_core.autotvout_ddr_mem.dat"
-#define AUTOTB_TVIN_cmd "../tv/cdatafile/c.yolo_npu_v2_core.autotvin_cmd.dat"
-#define AUTOTB_TVOUT_cmd "../tv/cdatafile/c.yolo_npu_v2_core.autotvout_cmd.dat"
+#define AUTOTB_TVIN_descriptor_table "../tv/cdatafile/c.yolo_npu_v2_core.autotvin_descriptor_table.dat"
+#define AUTOTB_TVOUT_descriptor_table "../tv/cdatafile/c.yolo_npu_v2_core.autotvout_descriptor_table.dat"
+#define AUTOTB_TVIN_descriptor_count "../tv/cdatafile/c.yolo_npu_v2_core.autotvin_descriptor_count.dat"
+#define AUTOTB_TVOUT_descriptor_count "../tv/cdatafile/c.yolo_npu_v2_core.autotvout_descriptor_count.dat"
 #define AUTOTB_TVIN_gmem "../tv/cdatafile/c.yolo_npu_v2_core.autotvin_gmem.dat"
 #define AUTOTB_TVOUT_gmem "../tv/cdatafile/c.yolo_npu_v2_core.autotvout_gmem.dat"
 
@@ -1255,10 +1257,10 @@ namespace hls::sim
 
 
 extern "C"
-void yolo_npu_v2_core_hw_stub_wrapper(void*, hls::sim::Byte<80>*);
+void yolo_npu_v2_core_hw_stub_wrapper(void*, void*, hls::sim::Byte<4>);
 
 extern "C"
-void apatb_yolo_npu_v2_core_hw(void* __xlx_apatb_param_ddr_mem, hls::sim::Byte<80>* __xlx_apatb_param_cmd)
+void apatb_yolo_npu_v2_core_hw(void* __xlx_apatb_param_ddr_mem, void* __xlx_apatb_param_descriptor_table, hls::sim::Byte<4> __xlx_apatb_param_descriptor_count)
 {
   static hls::sim::Byte<4> __xlx_offset_byte_param_ddr_mem;
   static hls::sim::Register port0 {
@@ -1272,24 +1274,36 @@ void apatb_yolo_npu_v2_core_hw(void* __xlx_apatb_param_ddr_mem, hls::sim::Byte<8
   };
   port0.param = &__xlx_offset_byte_param_ddr_mem;
 
+  static hls::sim::Byte<4> __xlx_offset_byte_param_descriptor_table;
   static hls::sim::Register port1 {
-    .name = "cmd",
-    .width = 640,
+    .name = "descriptor_table",
+    .width = 32,
 #ifdef POST_CHECK
 #else
     .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_cmd),
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_descriptor_table),
 #endif
   };
-  port1.param = __xlx_apatb_param_cmd;
+  port1.param = &__xlx_offset_byte_param_descriptor_table;
+
+  static hls::sim::Register port2 {
+    .name = "descriptor_count",
+    .width = 32,
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_descriptor_count),
+#endif
+  };
+  port2.param = &__xlx_apatb_param_descriptor_count;
 
 #ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port2 {
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port3 {
 #else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port2 {
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
 #endif
-    .width = 16,
-    .asize = 2,
+    .width = 1024,
+    .asize = 128,
     .hbm = false,
     .name = { "gmem" },
 #ifdef POST_CHECK
@@ -1310,31 +1324,45 @@ void apatb_yolo_npu_v2_core_hw(void* __xlx_apatb_param_ddr_mem, hls::sim::Byte<8
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_gmem),
 #endif
 #endif
-    .hasWrite = { true },
-    .max_nbytes = { 0 },
+    .hasWrite = { true, true },
+    .max_nbytes = { 0, 0 },
   };
-  port2.param = { __xlx_apatb_param_ddr_mem };
-  port2.mname = { "ddr_mem" };
-  port2.nbytes = { 200000 };
+  port3.param = { __xlx_apatb_param_ddr_mem, __xlx_apatb_param_descriptor_table };
+  port3.mname = { "ddr_mem", "descriptor_table" };
+  port3.nbytes = { 200000, 8800000 };
+  for (size_t i = 0; i < port3.nbytes.size(); ++i) {
+    if (port3.nbytes[i] > port3.max_nbytes[i]) {
+      port3.max_nbytes[i] = port3.nbytes[i];
+    }
+  }
+  port3.offset.clear();
+  for (size_t off = 0, i = 0; i < port3.nbytes.size(); ++i) {
+    port3.offset.push_back(off);
+    off += hls::sim::divide_ceil(port3.max_nbytes[i], port3.asize);
+  }
+  __xlx_offset_byte_param_ddr_mem = port3.offset[0]*128;
+  __xlx_offset_byte_param_descriptor_table = port3.offset[1]*128;
 
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
-    check(port2);
+    check(port3);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     tcl.containsVLA = 0;
     CodeState = DUMP_INPUTS;
     delay_dump(port0, port0.iwriter, tcl.AESL_transaction);
-    dump(port1, port1.iwriter, tcl.AESL_transaction);
+    delay_dump(port1, port1.iwriter, tcl.AESL_transaction);
     dump(port2, port2.iwriter, tcl.AESL_transaction);
+    dump(port3, port3.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
     port2.doTCL(tcl);
+    port3.doTCL(tcl);
     CodeState = CALL_C_DUT;
-    yolo_npu_v2_core_hw_stub_wrapper(__xlx_apatb_param_ddr_mem, __xlx_apatb_param_cmd);
+    yolo_npu_v2_core_hw_stub_wrapper(__xlx_apatb_param_ddr_mem, __xlx_apatb_param_descriptor_table, __xlx_apatb_param_descriptor_count);
     CodeState = DUMP_OUTPUTS;
-    dump(port2, port2.owriter, tcl.AESL_transaction);
+    dump(port3, port3.owriter, tcl.AESL_transaction);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

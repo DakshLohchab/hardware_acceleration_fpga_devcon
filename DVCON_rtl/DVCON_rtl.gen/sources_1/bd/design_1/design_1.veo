@@ -54,10 +54,10 @@
 
 // INST_TAG     ------ Begin cut for INSTANTIATION Template ------
 design_1 your_instance_name (
-  .s_axi_control_0_araddr(s_axi_control_0_araddr), // input wire [6:0] s_axi_control_0_araddr
+  .s_axi_control_0_araddr(s_axi_control_0_araddr), // input wire [4:0] s_axi_control_0_araddr
   .s_axi_control_0_arready(s_axi_control_0_arready), // output wire s_axi_control_0_arready
   .s_axi_control_0_arvalid(s_axi_control_0_arvalid), // input wire s_axi_control_0_arvalid
-  .s_axi_control_0_awaddr(s_axi_control_0_awaddr), // input wire [6:0] s_axi_control_0_awaddr
+  .s_axi_control_0_awaddr(s_axi_control_0_awaddr), // input wire [4:0] s_axi_control_0_awaddr
   .s_axi_control_0_awready(s_axi_control_0_awready), // output wire s_axi_control_0_awready
   .s_axi_control_0_awvalid(s_axi_control_0_awvalid), // input wire s_axi_control_0_awvalid
   .s_axi_control_0_bready(s_axi_control_0_bready), // input wire s_axi_control_0_bready
@@ -71,10 +71,10 @@ design_1 your_instance_name (
   .s_axi_control_0_wready(s_axi_control_0_wready), // output wire s_axi_control_0_wready
   .s_axi_control_0_wstrb(s_axi_control_0_wstrb), // input wire [3:0] s_axi_control_0_wstrb
   .s_axi_control_0_wvalid(s_axi_control_0_wvalid), // input wire s_axi_control_0_wvalid
-  .s_axi_control_r_0_araddr(s_axi_control_r_0_araddr), // input wire [4:0] s_axi_control_r_0_araddr
+  .s_axi_control_r_0_araddr(s_axi_control_r_0_araddr), // input wire [5:0] s_axi_control_r_0_araddr
   .s_axi_control_r_0_arready(s_axi_control_r_0_arready), // output wire s_axi_control_r_0_arready
   .s_axi_control_r_0_arvalid(s_axi_control_r_0_arvalid), // input wire s_axi_control_r_0_arvalid
-  .s_axi_control_r_0_awaddr(s_axi_control_r_0_awaddr), // input wire [4:0] s_axi_control_r_0_awaddr
+  .s_axi_control_r_0_awaddr(s_axi_control_r_0_awaddr), // input wire [5:0] s_axi_control_r_0_awaddr
   .s_axi_control_r_0_awready(s_axi_control_r_0_awready), // output wire s_axi_control_r_0_awready
   .s_axi_control_r_0_awvalid(s_axi_control_r_0_awvalid), // input wire s_axi_control_r_0_awvalid
   .s_axi_control_r_0_bready(s_axi_control_r_0_bready), // input wire s_axi_control_r_0_bready

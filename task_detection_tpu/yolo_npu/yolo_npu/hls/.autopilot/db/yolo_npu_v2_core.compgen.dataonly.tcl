@@ -2,13 +2,13 @@
 
 set axilite_register_dict [dict create]
 set port_control {
-cmd { 
+descriptor_count { 
 	dir I
-	width 640
+	width 32
 	depth 1
 	mode ap_none
 	offset 16
-	offset_end 99
+	offset_end 23
 }
 ap_start { }
 ap_done { }
@@ -28,6 +28,14 @@ ddr_mem {
 	mode ap_none
 	offset 16
 	offset_end 27
+}
+descriptor_table { 
+	dir I
+	width 64
+	depth 1
+	mode ap_none
+	offset 28
+	offset_end 39
 }
 }
 dict set axilite_register_dict control_r $port_control_r

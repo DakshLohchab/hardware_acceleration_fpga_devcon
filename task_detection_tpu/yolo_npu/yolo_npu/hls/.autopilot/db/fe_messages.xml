@@ -2,160 +2,166 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=yolo_npu_v2_core" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:8:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:9:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=ddr_mem offset=slave bundle=gmem depth=100000" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:9:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=cmd bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:10:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=descriptor_table offset=slave bundle=gmem depth=100000" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:11:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=descriptor_count bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:12:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:16:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sp_bias cyclic factor=32 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:20:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sp_in_fm cyclic factor=16 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:15:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=6000" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:23:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sp_out_fm cyclic factor=32 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sp_bias cyclic factor=32 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:27:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sp_in_fm cyclic factor=16 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:30:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:31:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sp_out_fm cyclic factor=32 dim=3" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:37:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:39:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:41:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:42:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:38:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:59:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:44:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:61:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:46:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:63:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:48:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:64:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:49:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:74:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=8" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:76:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:66:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:68:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:70:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:71:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:81:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weight_tile complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=8" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:82:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weight_tile complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:83:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:88:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weight_tile complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:89:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weight_tile complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:95:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=3" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:90:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:97:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=3" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:91:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:98:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:110:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:117:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:112:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:115:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:119:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=5" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:121:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=5" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:122:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:126:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=5" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:128:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=5" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:129:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:135:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_val complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:130:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:137:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:140:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:142:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:157:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:159:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:177:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:176:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:194:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:179:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:196:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:181:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:198:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:182:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="yolo_npu_v2.cpp:199:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="yolo_npu_v2_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:129:48" msg_body="Loop 'VITIS_LOOP_129_19' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_129_19"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:136:52" msg_body="Loop 'VITIS_LOOP_136_20' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_136_20"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:139:48" msg_body="Loop 'VITIS_LOOP_139_20' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_139_20"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:156:52" msg_body="Loop 'VITIS_LOOP_156_21' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_156_21"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:141:52" msg_body="Loop 'VITIS_LOOP_141_21' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_141_21"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:158:56" msg_body="Loop 'VITIS_LOOP_158_22' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_158_22"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_129_19' (yolo_npu_v2.cpp:129:48) in function 'yolo_npu_v2_core' completely with a factor of 16">
-        <args Factor="16" LoopLoc="yolo_npu_v2.cpp:129:48" LoopName="VITIS_LOOP_129_19"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_136_20' (yolo_npu_v2.cpp:136:52) in function 'yolo_npu_v2_core' completely with a factor of 16">
+        <args Factor="16" LoopLoc="yolo_npu_v2.cpp:136:52" LoopName="VITIS_LOOP_136_20"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_139_20' (yolo_npu_v2.cpp:139:48) in function 'yolo_npu_v2_core' completely with a factor of 32">
-        <args Factor="32" LoopLoc="yolo_npu_v2.cpp:139:48" LoopName="VITIS_LOOP_139_20"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_156_21' (yolo_npu_v2.cpp:156:52) in function 'yolo_npu_v2_core' completely with a factor of 32">
+        <args Factor="32" LoopLoc="yolo_npu_v2.cpp:156:52" LoopName="VITIS_LOOP_156_21"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_141_21' (yolo_npu_v2.cpp:141:52) in function 'yolo_npu_v2_core' completely with a factor of 16">
-        <args Factor="16" LoopLoc="yolo_npu_v2.cpp:141:52" LoopName="VITIS_LOOP_141_21"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_158_22' (yolo_npu_v2.cpp:158:56) in function 'yolo_npu_v2_core' completely with a factor of 16">
+        <args Factor="16" LoopLoc="yolo_npu_v2.cpp:158:56" LoopName="VITIS_LOOP_158_22"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_158_22' (yolo_npu_v2.cpp:158:40) in function 'yolo_npu_v2_core' completely with a factor of 32">
-        <args Factor="32" LoopLoc="yolo_npu_v2.cpp:158:40" LoopName="VITIS_LOOP_158_22"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_175_23' (yolo_npu_v2.cpp:175:44) in function 'yolo_npu_v2_core' completely with a factor of 32">
+        <args Factor="32" LoopLoc="yolo_npu_v2.cpp:175:44" LoopName="VITIS_LOOP_175_23"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:15:12" msg_body="Applying array_partition to 'sp_bias': Cyclic partitioning with factor 32 on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:22:16" msg_body="Applying array_partition to 'sp_bias': Cyclic partitioning with factor 32 on dimension 1.">
         <args Dim="1" Factor="32" Mode="Cyclic" UOName="sp_bias"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:19:12" msg_body="Applying array_partition to 'sp_in_fm': Cyclic partitioning with factor 16 on dimension 3.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:26:16" msg_body="Applying array_partition to 'sp_in_fm': Cyclic partitioning with factor 16 on dimension 3.">
         <args Dim="3" Factor="16" Mode="Cyclic" UOName="sp_in_fm"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:22:12" msg_body="Applying array_partition to 'sp_out_fm': Cyclic partitioning with factor 32 on dimension 3.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:29:16" msg_body="Applying array_partition to 'sp_out_fm': Cyclic partitioning with factor 32 on dimension 3.">
         <args Dim="3" Factor="32" Mode="Cyclic" UOName="sp_out_fm"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:80:20" msg_body="Applying array_partition to 'weight_tile': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:87:24" msg_body="Applying array_partition to 'weight_tile': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
         <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="weight_tile"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:114:28" msg_body="Applying array_partition to 'acc': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:121:32" msg_body="Applying array_partition to 'acc': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="acc"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:127:36" msg_body="Applying array_partition to 'in_val': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:134:40" msg_body="Applying array_partition to 'in_val': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="in_val"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:116:40" msg_body="pipeline   1 yolo_npu_v2_core config_compile -pipeline_loops 64VITIS_LOOP_116_16 yolo_npu_v2.cpp:116:40">
-        <args LoopLoc="yolo_npu_v2.cpp:116:40" LoopLoc-DebugLoc="File yolo_npu_v2.cpp Line 116 Column 40" LoopName="VITIS_LOOP_116_16" PragmaFunction="yolo_npu_v2_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="yolo_npu_v2.cpp:123:44" msg_body="pipeline   1 yolo_npu_v2_core config_compile -pipeline_loops 64VITIS_LOOP_123_17 yolo_npu_v2.cpp:123:44">
+        <args LoopLoc="yolo_npu_v2.cpp:123:44" LoopLoc-DebugLoc="File yolo_npu_v2.cpp Line 123 Column 44" LoopName="VITIS_LOOP_123_17" PragmaFunction="yolo_npu_v2_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
     </msg>
 </xilinx:hls_fe_msgs>

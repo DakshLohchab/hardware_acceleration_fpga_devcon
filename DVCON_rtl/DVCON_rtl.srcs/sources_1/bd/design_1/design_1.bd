@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xADCD0855D8407500",
+      "boundary_crc": "0xC181D6CB7F9721",
       "device": "xc7k325tffg900-2",
       "gen_directory": "../../../../DVCON_rtl.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -145,7 +145,7 @@
           "ARADDR": {
             "physical_name": "s_axi_control_0_araddr",
             "direction": "I",
-            "left": "6",
+            "left": "4",
             "right": "0"
           },
           "ARREADY": {
@@ -159,7 +159,7 @@
           "AWADDR": {
             "physical_name": "s_axi_control_0_awaddr",
             "direction": "I",
-            "left": "6",
+            "left": "4",
             "right": "0"
           },
           "AWREADY": {
@@ -352,7 +352,7 @@
           "ARADDR": {
             "physical_name": "s_axi_control_r_0_araddr",
             "direction": "I",
-            "left": "4",
+            "left": "5",
             "right": "0"
           },
           "ARREADY": {
@@ -366,7 +366,7 @@
           "AWADDR": {
             "physical_name": "s_axi_control_r_0_awaddr",
             "direction": "I",
-            "left": "4",
+            "left": "5",
             "right": "0"
           },
           "AWREADY": {
@@ -493,11 +493,16 @@
     "components": {
       "yolo_npu_v2_core_0": {
         "vlnv": "xilinx.com:hls:yolo_npu_v2_core:1.0",
-        "ip_revision": "2114660893",
+        "ip_revision": "2114661608",
         "xci_name": "design_1_yolo_npu_v2_core_0_0",
         "xci_path": "ip/design_1_yolo_npu_v2_core_0_0/design_1_yolo_npu_v2_core_0_0.xci",
         "inst_hier_path": "yolo_npu_v2_core_0",
         "has_run_ip_tcl": "true",
+        "parameters": {
+          "C_M_AXI_GMEM_DATA_WIDTH": {
+            "value": "32"
+          }
+        },
         "interface_ports": {
           "m_axi_gmem": {
             "bd_attributes": {

@@ -4,13 +4,13 @@
     "xci_name": "design_1_yolo_npu_v2_core_0_0",
     "cell_name": "yolo_npu_v2_core_0",
     "component_reference": "xilinx.com:hls:yolo_npu_v2_core:1.0",
-    "ip_revision": "2114660893",
+    "ip_revision": "2114661608",
     "gen_directory": "../../../../../../DVCON_rtl.gen/sources_1/bd/design_1/ip/design_1_yolo_npu_v2_core_0_0",
     "parameters": {
       "component_parameters": {
         "C_M_AXI_GMEM_ENABLE_ID_PORTS": [ { "value": "true", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "C_M_AXI_GMEM_ID_WIDTH": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "C_M_AXI_GMEM_DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "C_M_AXI_GMEM_DATA_WIDTH": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_M_AXI_GMEM_ENABLE_USER_PORTS": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "C_M_AXI_GMEM_AWUSER_WIDTH": [ { "value": "1", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_M_AXI_GMEM_WUSER_WIDTH": [ { "value": "1", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
@@ -24,13 +24,13 @@
         "clk_period": [ { "value": "20", "enabled": false, "usage": "all" } ],
         "machine": [ { "value": "64", "enabled": false, "usage": "all" } ],
         "combinational": [ { "value": "0", "enabled": false, "usage": "all" } ],
-        "latency": [ { "value": "45", "enabled": false, "usage": "all" } ],
-        "II": [ { "value": "46 ~ 17144019", "enabled": false, "usage": "all" } ]
+        "latency": [ { "value": "1", "enabled": false, "usage": "all" } ],
+        "II": [ { "value": "2 ~ 102864180002", "enabled": false, "usage": "all" } ]
       },
       "model_parameters": {
-        "C_S_AXI_CONTROL_ADDR_WIDTH": [ { "value": "7", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_S_AXI_CONTROL_ADDR_WIDTH": [ { "value": "5", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S_AXI_CONTROL_DATA_WIDTH": [ { "value": "32", "format": "long", "usage": "all" } ],
-        "C_S_AXI_CONTROL_R_ADDR_WIDTH": [ { "value": "5", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_S_AXI_CONTROL_R_ADDR_WIDTH": [ { "value": "6", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S_AXI_CONTROL_R_DATA_WIDTH": [ { "value": "32", "format": "long", "usage": "all" } ],
         "C_M_AXI_GMEM_ID_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_M_AXI_GMEM_ADDR_WIDTH": [ { "value": "64", "format": "long", "usage": "all" } ],
@@ -59,7 +59,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114660893" } ],
+        "IPREVISION": [ { "value": "2114661608" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../DVCON_rtl.gen/sources_1/bd/design_1/ip/design_1_yolo_npu_v2_core_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -70,10 +70,10 @@
     },
     "boundary": {
       "ports": {
-        "s_axi_control_ARADDR": [ { "direction": "in", "size_left": "6", "size_right": "0" } ],
+        "s_axi_control_ARADDR": [ { "direction": "in", "size_left": "4", "size_right": "0" } ],
         "s_axi_control_ARREADY": [ { "direction": "out" } ],
         "s_axi_control_ARVALID": [ { "direction": "in" } ],
-        "s_axi_control_AWADDR": [ { "direction": "in", "size_left": "6", "size_right": "0" } ],
+        "s_axi_control_AWADDR": [ { "direction": "in", "size_left": "4", "size_right": "0" } ],
         "s_axi_control_AWREADY": [ { "direction": "out" } ],
         "s_axi_control_AWVALID": [ { "direction": "in" } ],
         "s_axi_control_BREADY": [ { "direction": "in" } ],
@@ -87,10 +87,10 @@
         "s_axi_control_WREADY": [ { "direction": "out" } ],
         "s_axi_control_WSTRB": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
         "s_axi_control_WVALID": [ { "direction": "in" } ],
-        "s_axi_control_r_ARADDR": [ { "direction": "in", "size_left": "4", "size_right": "0" } ],
+        "s_axi_control_r_ARADDR": [ { "direction": "in", "size_left": "5", "size_right": "0" } ],
         "s_axi_control_r_ARREADY": [ { "direction": "out" } ],
         "s_axi_control_r_ARVALID": [ { "direction": "in" } ],
-        "s_axi_control_r_AWADDR": [ { "direction": "in", "size_left": "4", "size_right": "0" } ],
+        "s_axi_control_r_AWADDR": [ { "direction": "in", "size_left": "5", "size_right": "0" } ],
         "s_axi_control_r_AWREADY": [ { "direction": "out" } ],
         "s_axi_control_r_AWVALID": [ { "direction": "in" } ],
         "s_axi_control_r_BREADY": [ { "direction": "in" } ],
@@ -155,7 +155,7 @@
           "mode": "slave",
           "memory_map_ref": "s_axi_control",
           "parameters": {
-            "ADDR_WIDTH": [ { "value": "7", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "ADDR_WIDTH": [ { "value": "5", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "DATA_WIDTH": [ { "value": "32", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "PROTOCOL": [ { "value": "AXI4LITE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "READ_WRITE_MODE": [ { "value": "READ_WRITE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
@@ -213,7 +213,7 @@
           "mode": "slave",
           "memory_map_ref": "s_axi_control_r",
           "parameters": {
-            "ADDR_WIDTH": [ { "value": "5", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "ADDR_WIDTH": [ { "value": "6", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "DATA_WIDTH": [ { "value": "32", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "PROTOCOL": [ { "value": "AXI4LITE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "READ_WRITE_MODE": [ { "value": "READ_WRITE", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
@@ -552,322 +552,18 @@
                     }
                   }
                 },
-                "cmd_1": {
+                "descriptor_count": {
                   "address_offset": "16",
                   "size": 32,
-                  "display_name": "cmd_1",
-                  "description": "Data signal of cmd",
+                  "display_name": "descriptor_count",
+                  "description": "Data signal of descriptor_count",
                   "access": "write-only",
                   "reset_value": "0",
                   "fields": {
-                    "cmd": {
+                    "descriptor_count": {
                       "bit_offset": 0,
                       "bit_width": 32,
-                      "description": "Bit 31 to 0 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_2": {
-                  "address_offset": "20",
-                  "size": 32,
-                  "display_name": "cmd_2",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 63 to 32 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_3": {
-                  "address_offset": "24",
-                  "size": 32,
-                  "display_name": "cmd_3",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 95 to 64 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_4": {
-                  "address_offset": "28",
-                  "size": 32,
-                  "display_name": "cmd_4",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 127 to 96 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_5": {
-                  "address_offset": "32",
-                  "size": 32,
-                  "display_name": "cmd_5",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 159 to 128 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_6": {
-                  "address_offset": "36",
-                  "size": 32,
-                  "display_name": "cmd_6",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 191 to 160 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_7": {
-                  "address_offset": "40",
-                  "size": 32,
-                  "display_name": "cmd_7",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 223 to 192 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_8": {
-                  "address_offset": "44",
-                  "size": 32,
-                  "display_name": "cmd_8",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 255 to 224 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_9": {
-                  "address_offset": "48",
-                  "size": 32,
-                  "display_name": "cmd_9",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 287 to 256 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_10": {
-                  "address_offset": "52",
-                  "size": 32,
-                  "display_name": "cmd_10",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 319 to 288 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_11": {
-                  "address_offset": "56",
-                  "size": 32,
-                  "display_name": "cmd_11",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 351 to 320 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_12": {
-                  "address_offset": "60",
-                  "size": 32,
-                  "display_name": "cmd_12",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 383 to 352 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_13": {
-                  "address_offset": "64",
-                  "size": 32,
-                  "display_name": "cmd_13",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 415 to 384 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_14": {
-                  "address_offset": "68",
-                  "size": 32,
-                  "display_name": "cmd_14",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 447 to 416 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_15": {
-                  "address_offset": "72",
-                  "size": 32,
-                  "display_name": "cmd_15",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 479 to 448 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_16": {
-                  "address_offset": "76",
-                  "size": 32,
-                  "display_name": "cmd_16",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 511 to 480 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_17": {
-                  "address_offset": "80",
-                  "size": 32,
-                  "display_name": "cmd_17",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 543 to 512 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_18": {
-                  "address_offset": "84",
-                  "size": 32,
-                  "display_name": "cmd_18",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 575 to 544 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_19": {
-                  "address_offset": "88",
-                  "size": 32,
-                  "display_name": "cmd_19",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 607 to 576 of cmd",
-                      "access": "write-only"
-                    }
-                  }
-                },
-                "cmd_20": {
-                  "address_offset": "92",
-                  "size": 32,
-                  "display_name": "cmd_20",
-                  "description": "Data signal of cmd",
-                  "access": "write-only",
-                  "reset_value": "0",
-                  "fields": {
-                    "cmd": {
-                      "bit_offset": 0,
-                      "bit_width": 32,
-                      "description": "Bit 639 to 608 of cmd",
+                      "description": "Bit 31 to 0 of descriptor_count",
                       "access": "write-only"
                     }
                   }
@@ -919,6 +615,38 @@
                       "access": "write-only"
                     }
                   }
+                },
+                "descriptor_table_1": {
+                  "address_offset": "28",
+                  "size": 32,
+                  "display_name": "descriptor_table_1",
+                  "description": "Data signal of descriptor_table",
+                  "access": "write-only",
+                  "reset_value": "0",
+                  "fields": {
+                    "descriptor_table": {
+                      "bit_offset": 0,
+                      "bit_width": 32,
+                      "description": "Bit 31 to 0 of descriptor_table",
+                      "access": "write-only"
+                    }
+                  }
+                },
+                "descriptor_table_2": {
+                  "address_offset": "32",
+                  "size": 32,
+                  "display_name": "descriptor_table_2",
+                  "description": "Data signal of descriptor_table",
+                  "access": "write-only",
+                  "reset_value": "0",
+                  "fields": {
+                    "descriptor_table": {
+                      "bit_offset": 0,
+                      "bit_width": 32,
+                      "description": "Bit 63 to 32 of descriptor_table",
+                      "access": "write-only"
+                    }
+                  }
                 }
               }
             }
@@ -927,5 +655,5 @@
       }
     }
   },
-  "checksum": "3a99d7ff"
+  "checksum": "284619b0"
 }

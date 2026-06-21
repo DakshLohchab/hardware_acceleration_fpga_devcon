@@ -1,42 +1,44 @@
 <pragmas>
-<pragma file="yolo_npu_v2.cpp" line="177" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
-<pragma file="yolo_npu_v2.cpp" line="179" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
-<pragma file="yolo_npu_v2.cpp" line="182" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
-<pragma file="yolo_npu_v2.cpp" line="181" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
-<pragma file="yolo_npu_v2.cpp" line="74" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="8" avg="4"/>
-<pragma file="yolo_npu_v2.cpp" line="76" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
-<pragma file="yolo_npu_v2.cpp" line="110" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
-<pragma file="yolo_npu_v2.cpp" line="112" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
-<pragma file="yolo_npu_v2.cpp" line="88" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="3" avg="1"/>
-<pragma file="yolo_npu_v2.cpp" line="119" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="5" avg="2"/>
+<pragma file="yolo_npu_v2.cpp" line="15" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="6000" avg="3000"/>
+<pragma file="yolo_npu_v2.cpp" line="38" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="37" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
+<pragma file="yolo_npu_v2.cpp" line="44" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="66" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="81" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="8" avg="4"/>
+<pragma file="yolo_npu_v2.cpp" line="194" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="46" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="68" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="83" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="196" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="49" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="48" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
+<pragma file="yolo_npu_v2.cpp" line="71" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="70" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
+<pragma file="yolo_npu_v2.cpp" line="117" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="199" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="198" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
+<pragma file="yolo_npu_v2.cpp" line="119" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
+<pragma file="yolo_npu_v2.cpp" line="95" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="3" avg="1"/>
+<pragma file="yolo_npu_v2.cpp" line="126" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="5" avg="2"/>
+<pragma file="yolo_npu_v2.cpp" line="176" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
+<pragma file="yolo_npu_v2.cpp" line="98" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="97" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="3" avg="1"/>
+<pragma file="yolo_npu_v2.cpp" line="129" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="yolo_npu_v2.cpp" line="128" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="5" avg="2"/>
+<pragma file="yolo_npu_v2.cpp" line="137" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
+<pragma file="yolo_npu_v2.cpp" line="157" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
 <pragma file="yolo_npu_v2.cpp" line="159" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
-<pragma file="yolo_npu_v2.cpp" line="91" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
-<pragma file="yolo_npu_v2.cpp" line="90" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="3" avg="1"/>
-<pragma file="yolo_npu_v2.cpp" line="122" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
-<pragma file="yolo_npu_v2.cpp" line="121" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="5" avg="2"/>
-<pragma file="yolo_npu_v2.cpp" line="130" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
-<pragma file="yolo_npu_v2.cpp" line="140" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
-<pragma file="yolo_npu_v2.cpp" line="142" pragmaType="unroll" parentfunction="yolo_npu_v2_core" factor="-1" skip_exit_check="0"/>
-<pragma file="yolo_npu_v2.cpp" line="59" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
-<pragma file="yolo_npu_v2.cpp" line="61" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
-<pragma file="yolo_npu_v2.cpp" line="64" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
-<pragma file="yolo_npu_v2.cpp" line="63" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
-<pragma file="yolo_npu_v2.cpp" line="37" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
-<pragma file="yolo_npu_v2.cpp" line="39" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="16" avg="8"/>
-<pragma file="yolo_npu_v2.cpp" line="42" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
-<pragma file="yolo_npu_v2.cpp" line="41" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
-<pragma file="yolo_npu_v2.cpp" line="31" pragmaType="pipeline" parentfunction="yolo_npu_v2_core" off="0" ii="1" rewind="0" style=""/>
-<pragma file="yolo_npu_v2.cpp" line="30" pragmaType="loop_tripcount" parentfunction="yolo_npu_v2_core" min="0" max="256" avg="128"/>
-<pragma file="yolo_npu_v2.cpp" line="8" pragmaType="interface" parentfunction="yolo_npu_v2_core" mode="m_axi" port="ddr_mem" bundle="gmem" offset="slave" name="" depth="100000" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="yolo_npu_v2.cpp" line="9" pragmaType="interface" parentfunction="yolo_npu_v2_core" mode="s_axilite" port="cmd" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="yolo_npu_v2.cpp" line="10" pragmaType="interface" parentfunction="yolo_npu_v2_core" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="yolo_npu_v2.cpp" line="16" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="32" mode="cyclic" dynamic="0" variable="sp_bias"/>
-<pragma file="yolo_npu_v2.cpp" line="20" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="3" factor="16" mode="cyclic" dynamic="0" variable="sp_in_fm"/>
-<pragma file="yolo_npu_v2.cpp" line="23" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="3" factor="32" mode="cyclic" dynamic="0" variable="sp_out_fm"/>
-<pragma file="yolo_npu_v2.cpp" line="81" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="0" mode="complete" dynamic="0" variable="weight_tile"/>
-<pragma file="yolo_npu_v2.cpp" line="82" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="2" factor="0" mode="complete" dynamic="0" variable="weight_tile"/>
-<pragma file="yolo_npu_v2.cpp" line="115" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="0" mode="complete" dynamic="0" variable="acc"/>
-<pragma file="yolo_npu_v2.cpp" line="128" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="0" mode="complete" dynamic="0" variable="in_val"/>
+<pragma file="yolo_npu_v2.cpp" line="9" pragmaType="interface" parentfunction="yolo_npu_v2_core" mode="m_axi" port="ddr_mem" bundle="gmem" offset="slave" name="" depth="100000" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="yolo_npu_v2.cpp" line="10" pragmaType="interface" parentfunction="yolo_npu_v2_core" mode="m_axi" port="descriptor_table" bundle="gmem" offset="slave" name="" depth="100000" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="yolo_npu_v2.cpp" line="11" pragmaType="interface" parentfunction="yolo_npu_v2_core" mode="s_axilite" port="descriptor_count" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="yolo_npu_v2.cpp" line="12" pragmaType="interface" parentfunction="yolo_npu_v2_core" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="yolo_npu_v2.cpp" line="23" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="32" mode="cyclic" dynamic="0" variable="sp_bias"/>
+<pragma file="yolo_npu_v2.cpp" line="27" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="3" factor="16" mode="cyclic" dynamic="0" variable="sp_in_fm"/>
+<pragma file="yolo_npu_v2.cpp" line="30" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="3" factor="32" mode="cyclic" dynamic="0" variable="sp_out_fm"/>
+<pragma file="yolo_npu_v2.cpp" line="88" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="0" mode="complete" dynamic="0" variable="weight_tile"/>
+<pragma file="yolo_npu_v2.cpp" line="89" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="2" factor="0" mode="complete" dynamic="0" variable="weight_tile"/>
+<pragma file="yolo_npu_v2.cpp" line="122" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="0" mode="complete" dynamic="0" variable="acc"/>
+<pragma file="yolo_npu_v2.cpp" line="135" pragmaType="array_partition" parentfunction="yolo_npu_v2_core" dim="1" factor="0" mode="complete" dynamic="0" variable="in_val"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 6, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<17, 7, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 7, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>

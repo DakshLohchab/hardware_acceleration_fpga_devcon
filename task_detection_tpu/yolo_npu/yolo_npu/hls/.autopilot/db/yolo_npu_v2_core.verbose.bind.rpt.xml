@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'yolo_npu_v2_core'" level="0">
-<item name = "Date">Fri Jun 19 21:54:48 2026
+<item name = "Date">Sat Jun 20 09:58:57 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">yolo_npu</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">20.00 ns, 30.546 ns, 5.40 ns</column>
+<column name="ap_clk">20.00 ns, 35.551 ns, 5.40 ns</column>
 </table>
 </item>
 </section>
@@ -24,28 +24,29 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">45, 17144018, 1.375 us, 0.524 sec, 46, 17144019, no</column>
+<column name="">1, 102864180001, 35.551 ns, 3.7e+03 sec, 2, 102864180002, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_29_1_fu_3379">yolo_npu_v2_core_Pipeline_VITIS_LOOP_29_1, 2, 259, 40.000 ns, 5.180 us, 0, 0, loop pipeline stp</column>
-<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_36_2_VITIS_LOOP_38_3_VITIS_LOOP_40_4_fu_3419">yolo_npu_v2_core_Pipeline_VITIS_LOOP_36_2_VITIS_LOOP_38_3_VITIS_LOOP_40_4, 3, 65548, 60.000 ns, 1.311 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_58_5_VITIS_LOOP_60_6_VITIS_LOOP_62_7_fu_3452">yolo_npu_v2_core_Pipeline_VITIS_LOOP_58_5_VITIS_LOOP_60_6_VITIS_LOOP_62_7, 2, 65538, 40.000 ns, 1.311 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25_fu_3524">yolo_npu_v2_core_Pipeline_VITIS_LOOP_176_23_VITIS_LOOP_178_24_VITIS_LOOP_180_25, 2, 917506, 61.092 ns, 28.026 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_85_10_VITIS_LOOP_86_11_VITIS_LOOP_87_12_VIT_fu_3577">yolo_npu_v2_core_Pipeline_VITIS_LOOP_85_10_VITIS_LOOP_86_11_VITIS_LOOP_87_12_VIT, 2, 4620, 40.000 ns, 92.400 us, 0, 0, loop pipeline stp</column>
-<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_116_16_fu_4110">yolo_npu_v2_core_Pipeline_VITIS_LOOP_116_16, 34, 34, 0.680 us, 0.680 us, 0, 0, loop pipeline stp</column>
-<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18_fu_4147">yolo_npu_v2_core_Pipeline_VITIS_LOOP_118_17_VITIS_LOOP_120_18, 2, 405, 40.000 ns, 8.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_36_2_fu_3458">yolo_npu_v2_core_Pipeline_VITIS_LOOP_36_2, 2, 267, 40.000 ns, 5.340 us, 0, 0, loop pipeline stp</column>
+<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_45_4_VITIS_LOOP_47_5_fu_3499">yolo_npu_v2_core_Pipeline_VITIS_LOOP_43_3_VITIS_LOOP_45_4_VITIS_LOOP_47_5, 2, 65548, 40.000 ns, 1.311 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_65_6_VITIS_LOOP_67_7_VITIS_LOOP_69_8_fu_3531">yolo_npu_v2_core_Pipeline_VITIS_LOOP_65_6_VITIS_LOOP_67_7_VITIS_LOOP_69_8, 2, 65538, 40.000 ns, 1.311 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26_fu_3604">yolo_npu_v2_core_Pipeline_VITIS_LOOP_193_24_VITIS_LOOP_195_25_VITIS_LOOP_197_26, 2, 917506, 71.102 ns, 32.618 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_92_11_VITIS_LOOP_93_12_VITIS_LOOP_94_13_VIT_fu_3657">yolo_npu_v2_core_Pipeline_VITIS_LOOP_92_11_VITIS_LOOP_93_12_VITIS_LOOP_94_13_VIT, 3, 4620, 60.000 ns, 92.400 us, 0, 0, loop pipeline stp</column>
+<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_123_17_fu_4190">yolo_npu_v2_core_Pipeline_VITIS_LOOP_123_17, 34, 34, 0.680 us, 0.680 us, 0, 0, loop pipeline stp</column>
+<column name="grp_yolo_npu_v2_core_Pipeline_VITIS_LOOP_125_18_VITIS_LOOP_127_19_fu_4227">yolo_npu_v2_core_Pipeline_VITIS_LOOP_125_18_VITIS_LOOP_127_19, 2, 405, 40.000 ns, 8.100 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_73_8">2, 16160656, 2 ~ 2020082, -, -, 1 ~ 8, no</column>
-<column name=" + VITIS_LOOP_75_9">3, 2020080, 3 ~ 126255, -, -, 1 ~ 16, no</column>
-<column name="  ++ VITIS_LOOP_109_14">0, 121632, 2 ~ 7602, -, -, 0 ~ 16, no</column>
-<column name="   +++ VITIS_LOOP_111_15">0, 7600, 72 ~ 475, -, -, 0 ~ 16, no</column>
+<column name="- VITIS_LOOP_14_1">0, 102864180000, 55 ~ 17144030, -, -, 0 ~ 6000, no</column>
+<column name=" + VITIS_LOOP_80_9">2, 16160656, 2 ~ 2020082, -, -, 1 ~ 8, no</column>
+<column name="  ++ VITIS_LOOP_82_10">3, 2020080, 3 ~ 126255, -, -, 1 ~ 16, no</column>
+<column name="   +++ VITIS_LOOP_116_15">0, 121632, 2 ~ 7602, -, -, 0 ~ 16, no</column>
+<column name="    ++++ VITIS_LOOP_118_16">0, 7600, 72 ~ 475, -, -, 0 ~ 16, no</column>
 </table>
 </item>
 </section>

@@ -11,7 +11,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity yolo_npu_v2_core_control_s_axi is
 generic (
-    C_S_AXI_ADDR_WIDTH    : INTEGER := 7;
+    C_S_AXI_ADDR_WIDTH    : INTEGER := 5;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
     ACLK                  :in   STD_LOGIC;
@@ -35,7 +35,7 @@ port (
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
     interrupt             :out  STD_LOGIC;
-    cmd                   :out  STD_LOGIC_VECTOR(639 downto 0);
+    descriptor_count      :out  STD_LOGIC_VECTOR(31 downto 0);
     ap_start              :out  STD_LOGIC;
     ap_done               :in   STD_LOGIC;
     ap_ready              :in   STD_LOGIC;
@@ -65,47 +65,9 @@ end entity yolo_npu_v2_core_control_s_axi;
 --        bit 0 - ap_done (Read/TOW)
 --        bit 1 - ap_ready (Read/TOW)
 --        others - reserved
--- 0x10 : Data signal of cmd
---        bit 31~0 - cmd[31:0] (Read/Write)
--- 0x14 : Data signal of cmd
---        bit 31~0 - cmd[63:32] (Read/Write)
--- 0x18 : Data signal of cmd
---        bit 31~0 - cmd[95:64] (Read/Write)
--- 0x1c : Data signal of cmd
---        bit 31~0 - cmd[127:96] (Read/Write)
--- 0x20 : Data signal of cmd
---        bit 31~0 - cmd[159:128] (Read/Write)
--- 0x24 : Data signal of cmd
---        bit 31~0 - cmd[191:160] (Read/Write)
--- 0x28 : Data signal of cmd
---        bit 31~0 - cmd[223:192] (Read/Write)
--- 0x2c : Data signal of cmd
---        bit 31~0 - cmd[255:224] (Read/Write)
--- 0x30 : Data signal of cmd
---        bit 31~0 - cmd[287:256] (Read/Write)
--- 0x34 : Data signal of cmd
---        bit 31~0 - cmd[319:288] (Read/Write)
--- 0x38 : Data signal of cmd
---        bit 31~0 - cmd[351:320] (Read/Write)
--- 0x3c : Data signal of cmd
---        bit 31~0 - cmd[383:352] (Read/Write)
--- 0x40 : Data signal of cmd
---        bit 31~0 - cmd[415:384] (Read/Write)
--- 0x44 : Data signal of cmd
---        bit 31~0 - cmd[447:416] (Read/Write)
--- 0x48 : Data signal of cmd
---        bit 31~0 - cmd[479:448] (Read/Write)
--- 0x4c : Data signal of cmd
---        bit 31~0 - cmd[511:480] (Read/Write)
--- 0x50 : Data signal of cmd
---        bit 31~0 - cmd[543:512] (Read/Write)
--- 0x54 : Data signal of cmd
---        bit 31~0 - cmd[575:544] (Read/Write)
--- 0x58 : Data signal of cmd
---        bit 31~0 - cmd[607:576] (Read/Write)
--- 0x5c : Data signal of cmd
---        bit 31~0 - cmd[639:608] (Read/Write)
--- 0x60 : reserved
+-- 0x10 : Data signal of descriptor_count
+--        bit 31~0 - descriptor_count[31:0] (Read/Write)
+-- 0x14 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of yolo_npu_v2_core_control_s_axi is
@@ -115,32 +77,13 @@ attribute DowngradeIPIdentifiedWarnings of behave : architecture is "yes";
     signal wstate  : states := wrreset;
     signal rstate  : states := rdreset;
     signal wnext, rnext: states;
-    constant ADDR_AP_CTRL     : INTEGER := 16#00#;
-    constant ADDR_GIE         : INTEGER := 16#04#;
-    constant ADDR_IER         : INTEGER := 16#08#;
-    constant ADDR_ISR         : INTEGER := 16#0c#;
-    constant ADDR_CMD_DATA_0  : INTEGER := 16#10#;
-    constant ADDR_CMD_DATA_1  : INTEGER := 16#14#;
-    constant ADDR_CMD_DATA_2  : INTEGER := 16#18#;
-    constant ADDR_CMD_DATA_3  : INTEGER := 16#1c#;
-    constant ADDR_CMD_DATA_4  : INTEGER := 16#20#;
-    constant ADDR_CMD_DATA_5  : INTEGER := 16#24#;
-    constant ADDR_CMD_DATA_6  : INTEGER := 16#28#;
-    constant ADDR_CMD_DATA_7  : INTEGER := 16#2c#;
-    constant ADDR_CMD_DATA_8  : INTEGER := 16#30#;
-    constant ADDR_CMD_DATA_9  : INTEGER := 16#34#;
-    constant ADDR_CMD_DATA_10 : INTEGER := 16#38#;
-    constant ADDR_CMD_DATA_11 : INTEGER := 16#3c#;
-    constant ADDR_CMD_DATA_12 : INTEGER := 16#40#;
-    constant ADDR_CMD_DATA_13 : INTEGER := 16#44#;
-    constant ADDR_CMD_DATA_14 : INTEGER := 16#48#;
-    constant ADDR_CMD_DATA_15 : INTEGER := 16#4c#;
-    constant ADDR_CMD_DATA_16 : INTEGER := 16#50#;
-    constant ADDR_CMD_DATA_17 : INTEGER := 16#54#;
-    constant ADDR_CMD_DATA_18 : INTEGER := 16#58#;
-    constant ADDR_CMD_DATA_19 : INTEGER := 16#5c#;
-    constant ADDR_CMD_CTRL    : INTEGER := 16#60#;
-    constant ADDR_BITS         : INTEGER := 7;
+    constant ADDR_AP_CTRL                 : INTEGER := 16#00#;
+    constant ADDR_GIE                     : INTEGER := 16#04#;
+    constant ADDR_IER                     : INTEGER := 16#08#;
+    constant ADDR_ISR                     : INTEGER := 16#0c#;
+    constant ADDR_DESCRIPTOR_COUNT_DATA_0 : INTEGER := 16#10#;
+    constant ADDR_DESCRIPTOR_COUNT_CTRL   : INTEGER := 16#14#;
+    constant ADDR_BITS         : INTEGER := 5;
 
     signal AWREADY_t           : STD_LOGIC;
     signal WREADY_t            : STD_LOGIC;
@@ -169,7 +112,7 @@ attribute DowngradeIPIdentifiedWarnings of behave : architecture is "yes";
     signal int_gie             : STD_LOGIC := '0';
     signal int_ier             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
-    signal int_cmd             : UNSIGNED(639 downto 0) := (others => '0');
+    signal int_descriptor_count : UNSIGNED(31 downto 0) := (others => '0');
 
 
 begin
@@ -299,46 +242,8 @@ begin
                         rdata_data(1 downto 0) <= int_ier;
                     when ADDR_ISR =>
                         rdata_data(1 downto 0) <= int_isr;
-                    when ADDR_CMD_DATA_0 =>
-                        rdata_data <= RESIZE(int_cmd(31 downto 0), 32);
-                    when ADDR_CMD_DATA_1 =>
-                        rdata_data <= RESIZE(int_cmd(63 downto 32), 32);
-                    when ADDR_CMD_DATA_2 =>
-                        rdata_data <= RESIZE(int_cmd(95 downto 64), 32);
-                    when ADDR_CMD_DATA_3 =>
-                        rdata_data <= RESIZE(int_cmd(127 downto 96), 32);
-                    when ADDR_CMD_DATA_4 =>
-                        rdata_data <= RESIZE(int_cmd(159 downto 128), 32);
-                    when ADDR_CMD_DATA_5 =>
-                        rdata_data <= RESIZE(int_cmd(191 downto 160), 32);
-                    when ADDR_CMD_DATA_6 =>
-                        rdata_data <= RESIZE(int_cmd(223 downto 192), 32);
-                    when ADDR_CMD_DATA_7 =>
-                        rdata_data <= RESIZE(int_cmd(255 downto 224), 32);
-                    when ADDR_CMD_DATA_8 =>
-                        rdata_data <= RESIZE(int_cmd(287 downto 256), 32);
-                    when ADDR_CMD_DATA_9 =>
-                        rdata_data <= RESIZE(int_cmd(319 downto 288), 32);
-                    when ADDR_CMD_DATA_10 =>
-                        rdata_data <= RESIZE(int_cmd(351 downto 320), 32);
-                    when ADDR_CMD_DATA_11 =>
-                        rdata_data <= RESIZE(int_cmd(383 downto 352), 32);
-                    when ADDR_CMD_DATA_12 =>
-                        rdata_data <= RESIZE(int_cmd(415 downto 384), 32);
-                    when ADDR_CMD_DATA_13 =>
-                        rdata_data <= RESIZE(int_cmd(447 downto 416), 32);
-                    when ADDR_CMD_DATA_14 =>
-                        rdata_data <= RESIZE(int_cmd(479 downto 448), 32);
-                    when ADDR_CMD_DATA_15 =>
-                        rdata_data <= RESIZE(int_cmd(511 downto 480), 32);
-                    when ADDR_CMD_DATA_16 =>
-                        rdata_data <= RESIZE(int_cmd(543 downto 512), 32);
-                    when ADDR_CMD_DATA_17 =>
-                        rdata_data <= RESIZE(int_cmd(575 downto 544), 32);
-                    when ADDR_CMD_DATA_18 =>
-                        rdata_data <= RESIZE(int_cmd(607 downto 576), 32);
-                    when ADDR_CMD_DATA_19 =>
-                        rdata_data <= RESIZE(int_cmd(639 downto 608), 32);
+                    when ADDR_DESCRIPTOR_COUNT_DATA_0 =>
+                        rdata_data <= RESIZE(int_descriptor_count(31 downto 0), 32);
                     when others =>
                         NULL;
                     end case;
@@ -353,7 +258,7 @@ begin
     task_ap_done         <= (ap_done and not auto_restart_status) or auto_restart_done;
     task_ap_ready        <= ap_ready and not int_auto_restart;
     auto_restart_done    <= auto_restart_status and (ap_idle and not int_ap_idle);
-    cmd                  <= STD_LOGIC_VECTOR(int_cmd);
+    descriptor_count     <= STD_LOGIC_VECTOR(int_descriptor_count);
 
     process (ACLK)
     begin
@@ -529,257 +434,10 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ARESET = '1') then
-                int_cmd(31 downto 0) <= (others => '0');
+                int_descriptor_count(31 downto 0) <= (others => '0');
             elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_0) then
-                    int_cmd(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(31 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(63 downto 32) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_1) then
-                    int_cmd(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(63 downto 32));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(95 downto 64) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_2) then
-                    int_cmd(95 downto 64) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(95 downto 64));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(127 downto 96) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_3) then
-                    int_cmd(127 downto 96) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(127 downto 96));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(159 downto 128) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_4) then
-                    int_cmd(159 downto 128) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(159 downto 128));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(191 downto 160) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_5) then
-                    int_cmd(191 downto 160) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(191 downto 160));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(223 downto 192) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_6) then
-                    int_cmd(223 downto 192) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(223 downto 192));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(255 downto 224) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_7) then
-                    int_cmd(255 downto 224) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(255 downto 224));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(287 downto 256) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_8) then
-                    int_cmd(287 downto 256) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(287 downto 256));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(319 downto 288) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_9) then
-                    int_cmd(319 downto 288) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(319 downto 288));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(351 downto 320) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_10) then
-                    int_cmd(351 downto 320) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(351 downto 320));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(383 downto 352) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_11) then
-                    int_cmd(383 downto 352) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(383 downto 352));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(415 downto 384) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_12) then
-                    int_cmd(415 downto 384) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(415 downto 384));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(447 downto 416) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_13) then
-                    int_cmd(447 downto 416) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(447 downto 416));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(479 downto 448) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_14) then
-                    int_cmd(479 downto 448) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(479 downto 448));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(511 downto 480) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_15) then
-                    int_cmd(511 downto 480) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(511 downto 480));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(543 downto 512) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_16) then
-                    int_cmd(543 downto 512) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(543 downto 512));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(575 downto 544) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_17) then
-                    int_cmd(575 downto 544) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(575 downto 544));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(607 downto 576) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_18) then
-                    int_cmd(607 downto 576) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(607 downto 576));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_cmd(639 downto 608) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_CMD_DATA_19) then
-                    int_cmd(639 downto 608) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_cmd(639 downto 608));
+                if (w_hs = '1' and waddr = ADDR_DESCRIPTOR_COUNT_DATA_0) then
+                    int_descriptor_count(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_descriptor_count(31 downto 0));
                 end if;
             end if;
         end if;
